@@ -3,7 +3,7 @@
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:nil title:t toc:5
 #+OPTIONS: todo:t |:t
 #+TITLE: BigDataGrapes Ontology Notes
-#+DATE: <2018-06-12>
+#+DATE: <2018-07-02>
 #+AUTHOR: Vladimir Alexiev
 #+EMAIL: vladimir.alexiev@ontotext.com
 #+LANGUAGE: en
@@ -12,6 +12,8 @@
 #+CREATOR: Emacs 25.3.1 (Org mode 9.1.11)
 
 * Intro
+- Github version: 
+- Rendered HTML: https://rawgit.com/BigDataGrapes-EU/ontology/master/notes/README.html
 
 ** Abbreviations and Notes
 Sorted alphabetically (previously I had from generic to specific, but that quickly got messy)
@@ -553,4 +555,4 @@ Take this observation from [[https://drive.google.com/open?id=1_wTOuwYJSyt9yG6CP
 | PLOT |   NDRE |   NDVI |     RE |    NIR |     R | LATITUDE | LONGITUDE | ELEVATION | HDOP | FIXTYPE | DATE      |     TIME | ... |
 |   37 | 0.2252 | 0.7376 | 20.836 | 33.084 | 5.132 | 37.81713 |  22.58971 |     291.5 |  2.8 | GPS     | 5/23/2018 | 10:12:50 | ... |
 
-Using W3C CUBE
+* TODO Using W3C CUBE
