@@ -12,7 +12,7 @@
 #+CREATOR: Emacs 25.3.1 (Org mode 9.1.11)
 
 * Intro
-- Github version: 
+- Github version: https://github.com/BigDataGrapes-EU/ontology/tree/master/notes
 - Rendered HTML: https://rawgit.com/BigDataGrapes-EU/ontology/master/notes/README.html
 
 ** Abbreviations and Notes
