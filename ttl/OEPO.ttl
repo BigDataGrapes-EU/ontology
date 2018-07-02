@@ -1,0 +1,1062 @@
+@prefix oepo:     <http://www.phenome-fppn.fr/vocabulary/2018/oepo#>.
+
+@prefix cc:       <http://creativecommons.org/ns#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/>.
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.phenome-fppn.fr/vocabulary/2018/oepo>
+        rdfs:comment     "INRA MISTEA\nCopyright © - INRA - 2014 - 2018\nThe Object Ontology is licensed by CC 4.0 (http://creativecommons.org/licenses/by-sa/4.0/legalcode)" ;
+        rdfs:label       "OpenSILEX - Ontology for Experimental Phenotypic Objects (OEPO)"@en ;
+        dc:creator       "Anne Tireau, Llorenç Cabrera-Bosquet, Pascal Neveu (INRA Montpellier)" ;
+        owl:versionInfo  "Version 3.1 (2018-06-06) created by INRA - MISTEA - LEPSE" .
+
+[ a                owl:Ontology ;
+  rdfs:comment     "INRA MISTEA\nCopyright © - INRA - 2014 - 2018\nThe Object Ontology is licensed by CC 4.0 (http://creativecommons.org/licenses/by-sa/4.0/legalcode)" ;
+  rdfs:label       "OpenSILEX - Ontology for Experimental Phenotypic Objects (OEPO)"@en ;
+  dc:creator       "Anne Tireau, Llorenç Cabrera-Bosquet, Pascal Neveu (INRA Montpellier)" ;
+  owl:versionInfo  "Version 3.1 (2018-06-06) created by INRA - MISTEA - LEPSE"
+] .
+
+
+<http://bioportal.bioontology.org/ontologies/URI>
+        owl:versionInfo  "http://www.phenome-fppn.fr/vocabulary/2018/oepo" .
+
+<http://bioportal.bioontology.org/ontologies/versionSubject>
+        owl:versionInfo  "releases/2017-12-12" .
+
+#################### OEPO Classes
+
+
+oepo:AccessionName
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:closeMatch http://www.cropontology.org/rdf/CO_020:0000011" ;
+        rdfs:label        "Nom de l'accession"@fr , "Accession name"@en ;
+        rdfs:subClassOf   oepo:GermplasmDescriptor .
+
+oepo:AccessionNumber
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:closeMatch http://www.cropontology.org/rdf/CO_020:0000089" ;
+        rdfs:label        "Numéro d'accession"@fr , "Accession number"@en ;
+        rdfs:subClassOf   oepo:GermplasmDescriptor .
+
+oepo:ActiveSpectroradiometer
+        a                owl:Class ;
+        rdfs:comment     "Active instruments provide their own energy (electromagnetic radiation) to illuminate the object or scene they observe. They send a pulse of energy from the sensor to the object and then receive the radiation that is reflected or backscattered from that object. Scientists use many different types of active remote sensors."@en ;
+        rdfs:label       "Active spectroradiometer"@en ;
+        rdfs:subClassOf  oepo:Spectroradiometer ;
+        dc:source        "https://earthobservatory.nasa.gov/Features/RemoteSensing/remote_08.php"@en .
+
+oepo:Actuator
+        a                owl:Class ;
+        rdfs:comment     "Devices that usually are responsible for moving and controlling a mechanism or system, for example by opening a valve or opening shadows in a greenhouse."@en ;
+        rdfs:label       "Actuator"@en , "Actionneur"@fr ;
+        rdfs:subClassOf  oepo:Device .
+
+oepo:AirConditioning
+        a                owl:Class ;
+        rdfs:label       "Hot or cold air conditioning system"@en , "Aerotherme en chaud ou froid"@fr ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:AirMixer
+        a                owl:Class ;
+        rdfs:label       "Brassage air"@fr , "Air Mixer"@en ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:Area
+        a                owl:Class ;
+        rdfs:comment     "Zone au sens large.\nPeut définir une zone au sens physique ou théorique"@fr ;
+        rdfs:label       "Zone"@fr , "Area"@en ;
+        rdfs:subClassOf  oepo:Equipement .
+
+oepo:CO2Sensor
+        a                owl:Class ;
+        rdfs:label       "CO2 sensor"@en ;
+        rdfs:subClassOf  oepo:SensingDevice .
+
+oepo:Camera
+        a                owl:Class ;
+        rdfs:label       "Caméra"@fr , "Camera"@en ;
+        rdfs:subClassOf  oepo:SensingDevice .
+
+oepo:CapacitanceSensor
+        a                 owl:Class ;
+        rdfs:comment      "certain materials interact with water vapour and undergo a change in capacitance, in relation to ambient humidity." ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#CapacitanceSensor" ;
+        rdfs:label        "Capacitance sensor"@en ;
+        rdfs:subClassOf   oepo:HumiditySensor .
+
+oepo:CapacitiveThinFilmPolymer
+        a                 owl:Class ;
+        rdfs:comment      "Certain materials interact with water vapour and undergo a change in capacitance, in relation to ambient humidity." ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#CapacitiveThinFilmPolymer" ;
+        rdfs:label        "Capacitive - thin film polymer"@en ;
+        rdfs:subClassOf   oepo:CapacitanceSensor .
+
+oepo:CarSupport
+        a                owl:Class ;
+        rdfs:label       "Chariot"@fr , "Car support"@en ;
+        rdfs:subClassOf  oepo:Vector .
+
+oepo:Compartment
+        a                owl:Class ;
+        rdfs:label       "Compartment"@en , "Compartiment"@fr ;
+        rdfs:subClassOf  oepo:ProtectiveStructure .
+
+oepo:ConveyorBelt
+        a                owl:Class ;
+        rdfs:label       "Convoyeur"@fr , "Conveyor belt"@en ;
+        rdfs:subClassOf  oepo:Vector .
+
+oepo:CupAnemometer
+        a                 owl:Class ;
+        rdfs:comment      "The angular velocity of the cup is directly proportional to the component of the wind speed parallel to the axis of rotation." ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#CupAnemometer" ;
+        rdfs:label        "Cup anemometer"@en ;
+        rdfs:subClassOf   oepo:WindSensor .
+
+oepo:DataFile
+        a                owl:Class ;
+        rdfs:label       "Fichier de données"@fr , "Data file"@en ;
+        rdfs:subClassOf  oepo:Document .
+
+oepo:DataSet
+        a                 owl:Class ;
+        rdfs:comment      "A MIAPPE-compliant dataset, derived from a study or investigation"@en ;
+        rdfs:isDefinedBy  "skos:exactMatch https://raw.githubusercontent.com/MIAPPE/MIAPPE-ontology/master/PPEO.owl#PPEO_000003"@en ;
+        rdfs:label        "Data set"@en ;
+        rdfs:subClassOf   oepo:Document .
+
+oepo:Device
+        a                owl:Class ;
+        rdfs:label       "Device"@en ;
+        rdfs:subClassOf  oepo:Equipement .
+
+oepo:Document
+        a                owl:Class ;
+        rdfs:label       "Document"@fr , "Document"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+oepo:Dome
+        a                owl:Class ;
+        rdfs:label       "Dome"@en , "Chapelle"@fr ;
+        rdfs:subClassOf  oepo:ProtectiveStructure .
+
+oepo:EarInflorescence
+        a                 owl:Class ;
+        rdfs:comment      "A pistillate inflorescence  (PO:0025598) in Zea species that is highly compacted and bears the ear spikelets (PO:0006320) on a lateral inflorescence axis   (PO:0020122). [database_cross_reference: MaizeGDB_curator:Leszek_Vincent][database_cross_reference: POC:Laurel_Cooper]"@en ;
+        rdfs:isDefinedBy  "skos:exactMatch http://www.ontobee.org/ontology/rdf/PO?iri=http://purl.obolibrary.org/obo/PO_0020136" ;
+        rdfs:label        "Epi"@fr , "Ear inflorescence"@en ;
+        rdfs:subClassOf   oepo:ScientificObject .
+
+oepo:ElectricalResistanceBlock
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#ElectricalResistanceBlock" ;
+        rdfs:label        "Electrical resistance block"@en ;
+        rdfs:subClassOf   oepo:HumiditySensor .
+
+oepo:ElectricalResistanceHumiditySensor
+        a                 owl:Class ;
+        rdfs:comment      "Certain materials interact with water vapour and undergo a change in electrical resistance, in relation to ambient humidity." ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#ElectricalResistanceHumiditySensor" ;
+        rdfs:label        "Electrical resistance humidity sensor"@en ;
+        rdfs:subClassOf   oepo:HumiditySensor .
+
+oepo:ElectricalResistanceThermometer
+        a                 owl:Class ;
+        rdfs:comment      "For small temperature changes, the increase in resistance of pure metals is proportional to the change in temperature. Often made in Platinum." ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#ElectricalResistanceThermometer" ;
+        rdfs:label        "Electrical resistance thermometer"@en ;
+        rdfs:subClassOf   oepo:TemperatureSensor .
+
+oepo:EnvironmentFeature
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000010" ;
+        rdfs:label        "Environment feature"@en ;
+        rdfs:subClassOf   oepo:Quality .
+
+oepo:Equipement
+        a                owl:Class ;
+        rdfs:comment     "An INSTALLATION is the elementary level for data acquisition in a specific type of experiments. It stands for other frequently used terms such as ‘platform’, ‘facility’ or others."@en ;
+        rdfs:label       "Equipement"@fr , "Equipement"@en ;
+        rdfs:subClassOf  oepo:ExperimentalCondition .
+
+oepo:EuropeanInfrastructure
+        a                owl:Class ;
+        rdfs:comment     "The ESFRI listed project EMPHASIS aims at a synergistic development and long-term operation of plant phenotyping infrastructure in Europe (https://emphasis.plant-phenotyping.eu/) by developing tools and methods for multi-scale phenotyping, allowing one to analyze genotype performance and trait diversity in current and future European environmental conditions."@en ;
+        rdfs:label       "European Infrastructure"@en ;
+        rdfs:subClassOf  oepo:Infrastructure .
+
+oepo:Experiment
+        a                 owl:Class ;
+        rdfs:comment      "An EXPERIMENT is a planned activity carried out by a given set of persons on a given set of observation unit, like plants or microplots (see §2.1), involving a protocol, methods and a resulting dataset."@en ;
+        rdfs:isDefinedBy  "sko:exactMatch <brapi/v1/studies>" , "EMPHASIS ontology" ;
+        rdfs:label        "Expérimentation"@fr , "Experiment"@en ;
+        rdfs:subClassOf   owl:Thing .
+
+oepo:ExperimentalCondition
+        a                 owl:Class ;
+        rdfs:comment      "A set of environmental conditions, infrastructure and supporting equipment or resources necessary to conduct a given experiment and in which plants, plots or group of plants are raised"@en ;
+        rdfs:isDefinedBy  "skos:closeMatch http://www.ontobee.org/ontology/rdf/PECO?iri=http://purl.obolibrary.org/obo/PECO_0007359"@en , "skos:closeMatch http://www.cropontology.org/rdf/CO_715:0000005" ;
+        rdfs:label        "Experimental condition"@en , "Context expérimental"@fr ;
+        rdfs:subClassOf   owl:Thing .
+
+oepo:Fan
+        a                owl:Class ;
+        rdfs:label       "Ventilateur"@fr , "Fan"@en ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:FiberGlassBlock
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#FiberGlassBlock" ;
+        rdfs:label        "Fiber-glass block"@en ;
+        rdfs:subClassOf   oepo:ElectricalResistanceBlock .
+
+oepo:Field
+        a                owl:Class ;
+        rdfs:label       "Field"@en , "Champ"@fr ;
+        rdfs:subClassOf  oepo:Area .
+
+oepo:FieldExperiment
+        a                owl:Class ;
+        rdfs:label       "Field experiment"@en ;
+        rdfs:subClassOf  oepo:Experiment .
+
+oepo:FieldRobot
+        a                owl:Class ;
+        rdfs:label       "Phenomobile"@fr , "Field robot"@en ;
+        rdfs:subClassOf  oepo:Vector .
+
+oepo:Gantry
+        a                owl:Class ;
+        rdfs:label       "Portique"@fr , "Gantry"@en ;
+        rdfs:subClassOf  oepo:Vector .
+
+oepo:Genus
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://www.cropontology.org/rdf/CO_020:0000005" ;
+        rdfs:label        "Genus"@en , "Genre"@fr ;
+        rdfs:subClassOf   oepo:GermplasmDescriptor .
+
+oepo:GermplasmDescriptor
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:closeMatch http://www.cropontology.org/rdf/CO_020:0000000" ;
+        rdfs:label        "Germplasm descriptor information"@en ;
+        rdfs:subClassOf   owl:Thing .
+
+oepo:Greenhouse
+        a                owl:Class ;
+        rdfs:label       "Serre"@fr , "Greenhouse"@en ;
+        rdfs:subClassOf  oepo:ProtectiveStructure .
+
+oepo:GreenhouseExperiment
+        a                owl:Class ;
+        rdfs:label       "Greenhouse experiment"@en ;
+        rdfs:subClassOf  oepo:Experiment .
+
+oepo:GrippingArm
+        a                owl:Class ;
+        rdfs:label       "Gripping arm"@en , "Bras de préhension"@fr ;
+        rdfs:subClassOf  oepo:Vector .
+
+oepo:GrowthChamber
+        a                owl:Class ;
+        rdfs:label       "Growth chamber"@en , "Chambre de culture"@fr ;
+        rdfs:subClassOf  oepo:ProtectiveStructure .
+
+oepo:GrowthChamberExperiment
+        a                owl:Class ;
+        rdfs:label       "Growth chamber experiment"@en ;
+        rdfs:subClassOf  oepo:Experiment .
+
+oepo:GypsumBlock
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#GypsumBlock" ;
+        rdfs:label        "Gypsum block"@en ;
+        rdfs:subClassOf   oepo:ElectricalResistanceBlock .
+
+oepo:HemisphericalCamera
+        a                owl:Class ;
+        rdfs:label       "Hemispherical camera"@en , "Caméra hémisphérique"@fr ;
+        rdfs:subClassOf  oepo:Camera .
+
+oepo:HorizontalScreen
+        a                owl:Class ;
+        rdfs:label       "Ouvrant horizontal"@fr , "Horizontal screen"@en ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:HumiditySensor
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#HumiditySensor" ;
+        rdfs:label        "Humidity sensor"@en , "Capteur d'humidité"@fr ;
+        rdfs:subClassOf   oepo:SensingDevice .
+
+oepo:HyperspectralCamera
+        a                owl:Class ;
+        rdfs:label       "Hyperspectral camera"@en , "Caméra hyperspectrale"@fr ;
+        rdfs:subClassOf  oepo:Camera .
+
+oepo:ImagingCabin
+        a                owl:Class ;
+        rdfs:label       "Imaging cabin"@en ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:Infrastructure
+        a                owl:Class ;
+        rdfs:label       "Infrastructure"@fr , "Infrastructure"@en ;
+        rdfs:subClassOf  oepo:ExperimentalCondition .
+
+oepo:Installation
+        a                owl:Class ;
+        rdfs:comment     "An INSTALLATION is the elementary level for data acquisition in a specific type of experiments. It stands for other frequently used terms such as ‘platform’, ‘facility’ or others."@en ;
+        rdfs:label       "Installation"@fr , "Installation"@en ;
+        rdfs:subClassOf  oepo:Infrastructure .
+
+oepo:IrrigationSystem
+        a                owl:Class ;
+        rdfs:label       "Système d'irrigation"@fr , "Irrigation system"@en ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:LabBook
+        a                owl:Class ;
+        rdfs:label       "Lab book"@en , "Cahier de laboratoire"@fr ;
+        rdfs:subClassOf  oepo:Document .
+
+oepo:Leaf
+        a                 owl:Class ;
+        rdfs:comment      "A phyllome vascular system (PO:0025206) that includes the totality of the portions of  vascular tissue in their specific arrangement in a vascular leaf  (PO:0009025). [database_cross_reference:  POC:Ramona_Walls]"@en ;
+        rdfs:isDefinedBy  "skos:closeMatch http://www.ontobee.org/ontology/rdf/PO?iri=http://purl.obolibrary.org/obo/PO_0000036" ;
+        rdfs:label        "Leaf"@en , "Feuille"@fr ;
+        rdfs:subClassOf   oepo:ScientificObject .
+
+oepo:LevelMeasurementRainGauge
+        a                 owl:Class ;
+        rdfs:comment      "Measuring the water level in a tube" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#LevelMeasurementRainGauge" ;
+        rdfs:label        "Level measurement rain gauge"@en ;
+        rdfs:subClassOf   oepo:PrecipitationSensor .
+
+oepo:Lightning
+        a                owl:Class ;
+        rdfs:label       "Lightning"@en , "Eclairage"@fr ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:LocalInfrastructure
+        a                owl:Class ;
+        rdfs:comment     "A LOCAL INFRASTRUCTURE is a group of installations located in one site depending on one institution (or more), which share governance committees, a common (or at least highly interoperable) information system, common principles for cost calculation and pricing and a common tool for user access."@en ;
+        rdfs:label       "Local infrastructure"@en , "Infrastructure locale"@fr ;
+        rdfs:subClassOf  oepo:Infrastructure .
+
+oepo:Method
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000011" ;
+        rdfs:label        "Method"@en ;
+        rdfs:subClassOf   owl:Thing .
+
+oepo:Multimedia
+        a                owl:Class ;
+        rdfs:label       "Multimedia"@fr , "Multimedia"@en ;
+        rdfs:subClassOf  oepo:Document .
+
+oepo:NationalInfrastructure
+        a                owl:Class ;
+        rdfs:comment     "A NATIONAL INFRASTRUCTURE is an organized group of local infrastructures with governance recognised by national authorities (e.g. respective ministry or national structures)."@en ;
+        rdfs:label       "National infrastructure"@en , "Infrastructure nationale"@fr ;
+        rdfs:subClassOf  oepo:Infrastructure .
+
+oepo:NetRadiometerOrNetPyrradiometerOrNetExchangeRadiometerOrBalancemeter
+        a                 owl:Class ;
+        rdfs:comment      "Net all-wave radiation (net flux of downward and upward total radiation i.e. solar, terrestrial and atmospheric)" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#NetRadiometerOrNetPyrradiometerOrNetExchangeRadiometerOrBalancemeter" ;
+        rdfs:label        "Net radiometer or net pyrradiometer or net exchange radiometer or balancemeter"@en ;
+        rdfs:subClassOf   oepo:RadiationSensor .
+
+oepo:NylonUnits
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#NylonUnits" ;
+        rdfs:label        "Nylon units"@en ;
+        rdfs:subClassOf   oepo:ElectricalResistanceBlock .
+
+oepo:Observation
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000006" ;
+        rdfs:label        "Observation"@en ;
+        rdfs:subClassOf   owl:Thing ;
+        rdfs:subClassOf   [ a                         owl:Restriction ;
+                            owl:onClass               oepo:ObservationVariable ;
+                            owl:onProperty            oepo:hasVariable ;
+                            owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                          ] .
+
+oepo:ObservationVariable
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000007" ;
+        rdfs:label        "Observation variable"@en ;
+        rdfs:subClassOf   owl:Thing ;
+        rdfs:subClassOf   [ a                         owl:Restriction ;
+                            owl:onClass               oepo:Unit ;
+                            owl:onProperty            oepo:hasUnit ;
+                            owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                          ] ;
+        rdfs:subClassOf   [ a                         owl:Restriction ;
+                            owl:onClass               oepo:Quality ;
+                            owl:onProperty            oepo:hasQuality ;
+                            owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                          ] ;
+        rdfs:subClassOf   [ a                         owl:Restriction ;
+                            owl:onClass               oepo:Method ;
+                            owl:onProperty            oepo:hasMethod ;
+                            owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                          ] .
+
+oepo:PassiveSpectroradiometer
+        a                owl:Class ;
+        rdfs:comment     "Passive instruments detect natural energy that is reflected or emitted from the observed scene. Passive instruments sense only radiation emitted by the object being viewed or reflected by the object from a source other than the instrument. Reflected sunlight is the most common external source of radiation sensed by passive instruments. Scientists use a variety of passive remote sensors."@en ;
+        rdfs:label       "Passive spectroradiometer"@en ;
+        rdfs:subClassOf  oepo:Spectroradiometer ;
+        dc:source        "https://earthobservatory.nasa.gov/Features/RemoteSensing/remote_08.php"@en .
+
+oepo:Plant
+        a                 owl:Class ;
+        rdfs:comment      "the continuous organism originating from a single seed, callus, rhizome or any other propagation mean"@en ;
+        rdfs:isDefinedBy  "skos:closeMatch http://www.ontobee.org/ontology/rdf/PO?iri=http://purl.obolibrary.org/obo/PO_0000003" ;
+        rdfs:label        "Plante"@fr , "Plant"@en ;
+        rdfs:subClassOf   oepo:ScientificObject .
+
+oepo:PlantGroup
+        a                owl:Class ;
+        rdfs:label       "Plant group"@en , "Groupe de plantes"@fr ;
+        rdfs:subClassOf  oepo:ScientificObject .
+
+oepo:Plot
+        a                owl:Class ;
+        rdfs:comment     "A community of plants located on a defined area of a field."@en ;
+        rdfs:label       "Plot"@en , "Parcelle"@fr ;
+        rdfs:subClassOf  oepo:ScientificObject .
+
+oepo:Pot
+        a                owl:Class ;
+        rdfs:comment     "Pot de la plante"@fr ;
+        rdfs:label       "Pot"@fr , "Pot"@en ;
+        rdfs:subClassOf  oepo:Vector .
+
+oepo:PrecipitationSensor
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#PrecipitationSensor" ;
+        rdfs:label        "Precipitation sensor"@en , "Capteur de précipitation"@fr ;
+        rdfs:subClassOf   oepo:SensingDevice .
+
+oepo:Project
+        a                owl:Class ;
+        rdfs:comment     "PROJECT (e.g. EU or national projects) involves partners that are in charge of experiments performed in one or more local infrastructures."@en ;
+        rdfs:label       "Projet"@fr , "Project"@en ;
+        rdfs:subClassOf  oepo:ExperimentalCondition .
+
+oepo:PropellerAnemometer
+        a                 owl:Class ;
+        rdfs:comment      "The angular velocity of the propeller rotor is directly proportional to the component of the wind speed parallel to the axis of rotation."@en ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#PropellerAnemometer" ;
+        rdfs:label        "Propeller anemometer"@en ;
+        rdfs:subClassOf   oepo:WindSensor .
+
+oepo:ProtectiveStructure
+        a                owl:Class ;
+        rdfs:label       "Structure protectrice"@fr , "Protective structure"@en ;
+        rdfs:subClassOf  oepo:Equipement .
+
+oepo:Provider
+        a                owl:Class ;
+        rdfs:comment     "An organized group of people who perform experiments, usually together with users, handle equipment and uses a dedicated set of pipelines and procedures for the analysis of the data originating from the installation"@en ;
+        rdfs:label       "Provider"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+oepo:Pyranometer
+        a                 owl:Class ;
+        rdfs:comment      "Total solar irradiance on a horizontal surface" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#Pyranometer" ;
+        rdfs:label        "Pyranometer"@en ;
+        rdfs:subClassOf   oepo:RadiationSensor .
+
+oepo:PyranometerWithShadeRing
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#PyranometerWithShadeRing" ;
+        rdfs:label        "Pyranometer with shade ring"@en ;
+        rdfs:subClassOf   oepo:RadiationSensor .
+
+oepo:Quality
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000008" ;
+        rdfs:label        "Quality"@en ;
+        rdfs:subClassOf   owl:Thing .
+
+oepo:QuantumSensor
+        a                 owl:Class ;
+        rdfs:comment      "Measures the PAR directly in the range 0.4 to 0.7 micrometers" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#QuantumSensor" ;
+        rdfs:label        "Quantum sensor"@en ;
+        rdfs:subClassOf   oepo:RadiationSensor .
+
+oepo:RGBCamera
+        a                owl:Class ;
+        rdfs:label       "RGB camera"@en , "Caméra RGB"@fr ;
+        rdfs:subClassOf  oepo:Camera .
+
+oepo:RadiationSensor
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#RadiationSensor" ;
+        rdfs:label        "Radiation sensor"@en , "Capteur de rayonnement"@fr ;
+        rdfs:subClassOf   oepo:SensingDevice .
+
+oepo:Rootstock
+        a                owl:Class ;
+        rdfs:comment     "Grape variety used as the underground portion of a grafted vine onto which the scion is grafted. Bred to provide pest resistance and/or adaptability to unfavorable soil or environmental conditions."@en ;
+        rdfs:label       "Rootstock"@en , "Porte-greffe"@fr ;
+        rdfs:subClassOf  oepo:ScientificObject .
+
+oepo:Sample
+        a                owl:Class ;
+        rdfs:label       "Sample"@en ;
+        rdfs:subClassOf  oepo:ScientificObject .
+
+oepo:ScientificDocument
+        a                owl:Class ;
+        rdfs:label       "Scientific document"@en , "Document scientifique"@fr ;
+        rdfs:subClassOf  oepo:Document .
+
+oepo:ScientificObject
+        a                 owl:Class ;
+        rdfs:comment      "Defined in MIAPPE, i.e. the level at which traits are measured, calculated and stored in the information system"@en ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000005"@en ;
+        rdfs:label        "Scientific object"@en , "Objet scientifique"@fr ;
+        rdfs:subClassOf   owl:Thing .
+
+oepo:Scion
+        a                owl:Class ;
+        rdfs:comment     "Is the part of the vine, usually Vitis vinifera, that is grafted on the rootstock and from which wine grapes will be harvested from"@en ;
+        rdfs:label       "Scion"@en , "Greffon"@fr ;
+        rdfs:subClassOf  oepo:ScientificObject .
+
+oepo:Seed
+        a                 owl:Class ;
+        rdfs:comment      "A multi-tissue plant  structure (PO:0025496) that develops from a plant ovule   (PO:0020003) and has as parts a plant embryo (PO:0009009)  enclosed in a seed coat (PO:0009088). [database_cross_reference: POC:curators]"@en ;
+        rdfs:isDefinedBy  "skos:exactMatch http://www.ontobee.org/ontology/rdf/PO?iri=http://purl.obolibrary.org/obo/PO_0009010" ;
+        rdfs:label        "Seed"@en , "Graine"@fr ;
+        rdfs:subClassOf   oepo:ScientificObject .
+
+oepo:SeedLot
+        a                owl:Class ;
+        rdfs:label       "Seed lot"@en , "Lot de graine"@fr ;
+        rdfs:subClassOf  oepo:GermplasmDescriptor ;
+        dc:source        "skos:closeMatch http://www.cropontology.org/rdf/CO_020:0000089" .
+
+oepo:SeedLotSample
+        a                owl:Class ;
+        rdfs:label       "Seed lot sample"@en , "Echantillon de lot de graine"@fr ;
+        rdfs:subClassOf  oepo:GermplasmDescriptor .
+
+oepo:SensingDevice
+        a                owl:Class ;
+        rdfs:comment     "Devices providing numerical data, e.g. environment sensors or cameras"@en ;
+        rdfs:label       "Sensing device"@en ;
+        rdfs:subClassOf  oepo:Device .
+
+oepo:Shadows
+        a                owl:Class ;
+        rdfs:label       "Shadows"@en , "Ombrières"@fr ;
+        rdfs:subClassOf  oepo:Actuator .
+
+oepo:Silk
+        a                 owl:Class ;
+        rdfs:comment      "A collective organ part   structure (PO:0025269) that has as parts an elongated stigma (PO:0009073) with stigma papilla (GO:0090397), and an elongated   style (PO:0009074). [database_cross_reference: MID:21345919][database_cross_reference: POC:Laurel_Cooper]"@en ;
+        rdfs:isDefinedBy  "skos:exactMatch http://www.ontobee.org/ontology/rdf/PO?iri=http://purl.obolibrary.org/obo/PO_0006488" ;
+        rdfs:label        "Soie"@fr , "Silk"@fr ;
+        rdfs:subClassOf   oepo:ScientificObject .
+
+oepo:Species
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://www.cropontology.org/terms/CO_020:0000006/species" ;
+        rdfs:label        "Species"@en , "Espèce"@fr ;
+        rdfs:subClassOf   oepo:GermplasmDescriptor .
+
+oepo:Spectroradiometer
+        a                owl:Class ;
+        rdfs:comment     "A radiometer that can measure the intensity of radiation in multiple wavelength bands (i.e., multispectral). Oftentimes the bands are of a high spectral resolution—designed for the remote sensing of specific parameters such as sea surface temperature, cloud characteristics, ocean color, vegetation, trace chemical species in the atmosphere, etc."@en ;
+        rdfs:label       "Spectroradiometer"@en ;
+        rdfs:subClassOf  oepo:SensingDevice ;
+        dc:source        "https://earthobservatory.nasa.gov/Features/RemoteSensing/remote_08.php"@en .
+
+oepo:SubProject
+        a                owl:Class ;
+        rdfs:label       "Sub-project"@en , "Sous-projet"@fr ;
+        rdfs:subClassOf  oepo:Project .
+
+oepo:SurfaceTemperatureRadiometer
+        a                 owl:Class ;
+        rdfs:comment      "Measurements of infra-red radiation emitted from near or remote surfaces" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#SurfaceTemperatureRadiometer" ;
+        rdfs:label        "Surface temperature radiometer"@en ;
+        rdfs:subClassOf   oepo:RadiationSensor .
+
+oepo:TechnicalDocument
+        a                owl:Class ;
+        rdfs:label       "Technical document"@en , "Document technique"@fr ;
+        rdfs:subClassOf  oepo:Document .
+
+oepo:TemperatureSensor
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#TemperatureSensor" ;
+        rdfs:label        "Temperature sensor"@en , "Capteur de température"@fr ;
+        rdfs:subClassOf   oepo:SensingDevice .
+
+oepo:Tensiometer
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#Tensiometer" ;
+        rdfs:label        "Tensiometer"@en ;
+        rdfs:subClassOf   oepo:HumiditySensor .
+
+oepo:Thermistor
+        a                 owl:Class ;
+        rdfs:comment      "Based on the variation of resistance of a semiconductor with a relatively large temperature coefficient of resistance, either positive (PTC) or negative (NTC) depending upon the actual material" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#Thermistor" ;
+        rdfs:label        "Thermistor"@en ;
+        rdfs:subClassOf   oepo:TemperatureSensor .
+
+oepo:Thermocouple
+        a                 owl:Class ;
+        rdfs:comment      "Based on the generation of an electromotive force at the junction between two metals in contact, which is function of the temperature of the two metals" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#Thermocouple" ;
+        rdfs:label        "Thermocouple"@en ;
+        rdfs:subClassOf   oepo:TemperatureSensor .
+
+oepo:Trait
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000009" ;
+        rdfs:label        "Trait"@en ;
+        rdfs:subClassOf   oepo:Quality .
+
+oepo:Treatment
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.org/ppeo/PPEO.owl#PPEO_000018" ;
+        rdfs:label        "Treatment"@en , "Traitement"@fr ;
+        rdfs:subClassOf   oepo:ExperimentalCondition .
+
+oepo:UAV
+        a                owl:Class ;
+        rdfs:comment     "Unmanned Aerial Vehicle (UAV), commonly known as a drone"@en ;
+        rdfs:label       "Unmanned Aerial Vehicle"@en , "Drône"@fr ;
+        rdfs:subClassOf  oepo:Vector .
+
+oepo:UltrasonicWindSensor
+        a                 owl:Class ;
+        rdfs:comment      "A sonic signal is emitted by sensor transducers" ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#SonicRanging" ;
+        rdfs:label        "Ultrasonic wind sensor"@en ;
+        rdfs:subClassOf   oepo:WindSensor .
+
+oepo:Unit
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "http://purl.org/ppeo/PPEO.owl#PPEO_000012" ;
+        rdfs:label        "Unit"@en ;
+        rdfs:subClassOf   owl:Thing .
+
+oepo:Variety
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:closeMatch http://aims.fao.org/aos/agrovoc/c_1423211760123.rdf" ;
+        rdfs:label        "Variété"@fr , "Variety"@en ;
+        rdfs:subClassOf   oepo:GermplasmDescriptor .
+
+oepo:Vector
+        a                owl:Class ;
+        rdfs:comment     "Devices that either transport plants to a given site for phenotyping, or carry sensors in a greenhouse (e.g. conveyor belt, gripping arm, robot) or in the field (e.g. UAV, gantry, field robot). By extension, a vector can also be a group of persons producing manual observations."@en ;
+        rdfs:label       "Vector"@en , "Vecteur"@fr ;
+        rdfs:subClassOf  oepo:Device .
+
+oepo:WeighingScale
+        a                owl:Class ;
+        rdfs:label       "Weighing scale"@en , "Balance"@fr ;
+        rdfs:subClassOf  oepo:SensingDevice .
+
+oepo:WindSensor
+        a                 owl:Class ;
+        rdfs:isDefinedBy  "skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#WindSensor" ;
+        rdfs:label        "Wind sensor"@en , "Anémomètre"@fr ;
+        rdfs:subClassOf   oepo:SensingDevice .
+
+#################### OEPO Properties
+
+oepo:hasAcronym
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Project ;
+        rdfs:label   "has acronym"@en , "Acronyme"@fr .
+
+oepo:hasAdministrativeContact
+        a                   owl:ObjectProperty ;
+        rdfs:label          "has administrative contact"@en , "Contact administratif"@fr ;
+        rdfs:subPropertyOf  oepo:hasContact .
+
+oepo:hasAlias
+        a           owl:DatatypeProperty ;
+        rdfs:label  "Alias"@fr , "Alias"@en .
+
+oepo:hasBrand
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Device .
+
+oepo:hasCarNumber
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Plant ;
+        rdfs:label   "Numéro du chariot"@fr , "Car number"@en ;
+        rdfs:range   xsd:string .
+
+oepo:hasContact
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( oepo:Experiment oepo:Project )
+                     ] ;
+        rdfs:label   "Correspondant"@fr , "Contact"@en ;
+        rdfs:range   foaf:Agent .
+
+oepo:hasDate
+        a           owl:DatatypeProperty ;
+        rdfs:label  "Date"@fr , "Date"@en .
+
+oepo:hasDescription
+        a            owl:DatatypeProperty ;
+        rdfs:domain  owl:Thing ;
+        rdfs:label   "Description"@fr , "Description"@en .
+
+oepo:hasDocument
+        a            owl:DatatypeProperty ;
+        rdfs:domain  owl:Thing .
+
+oepo:hasEndDate
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "End date"@en , "Date de fin"@fr ;
+        rdfs:subPropertyOf  oepo:hasDate .
+
+oepo:hasEnvironmentfeature
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ObservationVariable ;
+        rdfs:range          oepo:EnvironmentFeature ;
+        rdfs:subPropertyOf  oepo:hasQuality .
+
+oepo:hasFilePath
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Document ;
+        rdfs:label   "File path"@en , "Chemin du fichier"@fr ;
+        rdfs:range   xsd:string .
+
+oepo:hasFinancialName
+        a             owl:DatatypeProperty ;
+        rdfs:comment  "Financial code"@en ;
+        rdfs:domain   [ a            owl:Class ;
+                        owl:unionOf  ( oepo:Experiment oepo:Project )
+                      ] ;
+        rdfs:label    "Has financial name"@en , "Financeur"@fr .
+
+oepo:hasFinancialSupport
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:ExperimentalCondition ;
+        rdfs:label   "Type de financement"@fr , "Financial support"@en .
+
+oepo:hasGenus
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ScientificObject ;
+        rdfs:range          oepo:Genus ;
+        rdfs:subPropertyOf  oepo:hasGermplasmDescriptor .
+
+oepo:hasGeometry
+        a                 owl:ObjectProperty ;
+        rdfs:isDefinedBy  "http://www.opengis.net/ont/geosparql#hasGeometry" .
+
+oepo:hasGermplasmDescriptor
+        a            owl:ObjectProperty ;
+        rdfs:domain  oepo:ScientificObject ;
+        rdfs:range   oepo:GermplasmDescriptor .
+
+oepo:hasInitialPosition
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:ScientificObject ;
+        rdfs:label   "Position initiale"@fr , "Initial position"@en .
+
+oepo:hasKeywords
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:ExperimentalCondition ;
+        rdfs:label   "Mot-clés"@fr , "Keywords"@en .
+
+oepo:hasMethod
+        a                 owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain       oepo:ObservationVariable ;
+        rdfs:isDefinedBy  "http://purl.org/ppeo/PPEO.owl#hasMethod" ;
+        rdfs:label        "has method"@en ;
+        rdfs:range        oepo:Method .
+
+oepo:hasModel
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Device .
+
+oepo:hasName
+        a           owl:DatatypeProperty ;
+        rdfs:label  "nom"@fr , "has name"@en .
+
+oepo:hasObjective
+        a            owl:DatatypeProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( oepo:Experiment oepo:Project )
+                     ] ;
+        rdfs:label   "objective"@en .
+
+oepo:hasObservation
+        a            owl:ObjectProperty ;
+        rdfs:domain  oepo:ScientificObject ;
+        rdfs:label   "observation"@fr , "has observation"@en ;
+        rdfs:range   oepo:Observation .
+
+oepo:hasPart
+        a              owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label     "has part"@en , "a pour part"@fr ;
+        owl:inverseOf  oepo:isPartOf .
+
+oepo:hasParticipant
+        a                 owl:ObjectProperty ;
+        rdfs:isDefinedBy  "http://www.ontobee.org/ontology/rdf/RO?iri=http://purl.obolibrary.org/obo/RO_0000057" ;
+        rdfs:label        "has participant"@en ;
+        owl:inverseOf     oepo:participatesIn .
+
+oepo:hasProjectCoordinator
+        a                   owl:ObjectProperty ;
+        rdfs:domain         [ a            owl:Class ;
+                              owl:unionOf  ( oepo:Experiment oepo:Project )
+                            ] ;
+        rdfs:label          "Coordinator"@en , "Coordinateur"@fr ;
+        rdfs:subPropertyOf  oepo:hasContact .
+
+oepo:hasQuality
+        a                 owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain       oepo:ObservationVariable ;
+        rdfs:isDefinedBy  "http://purl.org/ppeo/PPEO.owl#hasMethod" ;
+        rdfs:label        "has quality"@en ;
+        rdfs:range        oepo:Quality .
+
+oepo:hasRepetition
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:ScientificObject ;
+        rdfs:label   "Répétition"@fr , "Repetition"@en ;
+        rdfs:range   xsd:string .
+
+oepo:hasScientificContact
+        a                   owl:ObjectProperty ;
+        rdfs:label          "Scientific contact"@en , "Contact scientifique"@fr ;
+        rdfs:subPropertyOf  oepo:hasContact .
+
+oepo:hasScientificSupervisor
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:Experiment ;
+        rdfs:label          "has scientific supervisor"@en ;
+        rdfs:subPropertyOf  oepo:hasContact .
+
+oepo:hasSeedLot
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ScientificObject ;
+        rdfs:label          "Seed lot"@en , "Lot de graine"@fr ;
+        rdfs:range          oepo:SeedLot ;
+        rdfs:subPropertyOf  oepo:hasGermplasmDescriptor .
+
+oepo:hasSeedLotSample
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ScientificObject ;
+        rdfs:label          "Seed lot sample"@en , "Echantillon de lot de semence"@fr ;
+        rdfs:range          oepo:SeedLotSample ;
+        rdfs:subPropertyOf  oepo:hasGermplasmDescriptor .
+
+oepo:hasSpecies
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ScientificObject ;
+        rdfs:range          oepo:Species ;
+        rdfs:subPropertyOf  oepo:hasGermplasmDescriptor .
+
+oepo:hasStartDate
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "Start date"@en , "Date de début"@fr ;
+        rdfs:subPropertyOf  oepo:hasDate .
+
+oepo:hasTagPattern
+        a             owl:DatatypeProperty ;
+        rdfs:comment  "Alias description"@en ;
+        rdfs:domain   oepo:Experiment ;
+        rdfs:label    "Tag pattern"@en , "Modèle de code barre"@fr .
+
+oepo:hasTareWeight
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Pot , oepo:CarSupport .
+
+oepo:hasTechnicalContact
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ExperimentalCondition ;
+        rdfs:label          "Technical contact"@en , "Contact technique"@fr ;
+        rdfs:subPropertyOf  oepo:hasContact .
+
+oepo:hasTechnicalSupervisor
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:Experiment ;
+        rdfs:label          "has technical supervisor"@en ;
+        rdfs:subPropertyOf  oepo:hasContact .
+
+oepo:hasTrait
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ObservationVariable ;
+        rdfs:range          oepo:Trait ;
+        rdfs:subPropertyOf  oepo:hasQuality .
+
+oepo:hasTreatment
+        a            owl:ObjectProperty ;
+        rdfs:domain  oepo:ScientificObject ;
+        rdfs:label   "has treatment"@en , "Traitement"@fr ;
+        rdfs:range   oepo:Treatment .
+
+oepo:hasTreatmentFactor
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Treatment ;
+        rdfs:label   "has treatment factor"@en , "Facteur"@fr .
+
+oepo:hasTreatmentModality
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Treatment ;
+        rdfs:label   "has treatment modality"@en , "Modalité"@fr .
+
+oepo:hasUnit
+        a                 owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain       oepo:ObservationVariable ;
+        rdfs:isDefinedBy  "http://purl.org/ppeo/PPEO.owl#hasScale" ;
+        rdfs:label        "has unit"@en ;
+        rdfs:range        oepo:Unit .
+
+oepo:hasValue
+        a            owl:DatatypeProperty ;
+        rdfs:domain  oepo:Observation ;
+        rdfs:label   "has value"@en , "Valeur"@fr .
+
+oepo:hasVariable
+        a                 owl:ObjectProperty ;
+        rdfs:domain       oepo:Observation ;
+        rdfs:isDefinedBy  "http://purl.org/ppeo/PPEO.owl#hasVariable" ;
+        rdfs:label        "has variable"@en , "Variable"@fr ;
+        rdfs:range        oepo:ObservationVariable .
+
+oepo:hasVariety
+        a                   owl:ObjectProperty ;
+        rdfs:domain         oepo:ScientificObject ;
+        rdfs:label          "Variety"@en ;
+        rdfs:range          oepo:Variety ;
+        rdfs:subPropertyOf  oepo:hasGermplasmDescriptor .
+
+oepo:hasWebsite
+        a           owl:DatatypeProperty ;
+        rdfs:label  "has website"@en , "Site web"@fr .
+
+oepo:isPartOf
+        a           owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label  "is part of"@en , "est partie de"@fr .
+
+oepo:maxInclusive
+        a                 owl:DatatypeProperty ;
+        rdfs:domain       oepo:ObservationVariable ;
+        rdfs:isDefinedBy  "skos:exactMatch <https://www.w3.org/TR/xmlschema-2/#rf-maxInclusive>" .
+
+oepo:minInclusive
+        a                 owl:DatatypeProperty ;
+        rdfs:domain       oepo:ObservationVariable ;
+        rdfs:isDefinedBy  "skos:exactMatch https://www.w3.org/TR/xmlschema-2/#rf-minInclusive" .
+
+oepo:participatesIn
+        a                 owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain       [ a            owl:Class ;
+                            owl:unionOf  ( oepo:Device oepo:ScientificObject )
+                          ] ;
+        rdfs:isDefinedBy  "http://www.ontobee.org/ontology/rdf/RO?iri=http://purl.obolibrary.org/obo/RO_0000056" ;
+        rdfs:label        "participe à"@fr , "participates in"@en ;
+        rdfs:range        oepo:Experiment .
+
+oepo:sfContains
+        a                 owl:ObjectProperty ;
+        rdfs:isDefinedBy  "http://www.opengis.net/ont/geosparql#sfContains" .
+
+oepo:uses
+        a            owl:ObjectProperty ;
+        rdfs:domain  oepo:Experiment ;
+        rdfs:label   "utilise"@fr , "uses"@en ;
+        rdfs:range   oepo:Installation .
+
+oepo:usesVector
+        a           owl:ObjectProperty ;
+        rdfs:range  [ a            owl:Class ;
+                      owl:unionOf  ( oepo:Device oepo:ScientificObject )
+                    ] .
+
+#################### External Terms
+
+foaf:Agent
+        a                   owl:Class ;
+        rdfs:label          "Agent"@en ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "foaf:Agent" .
+
+cc:license  a   owl:AnnotationProperty .
+
+dc:author  a    owl:AnnotationProperty .
+
+dc:creator  a   owl:AnnotationProperty .
+
+dc:date  a      owl:AnnotationProperty .
+
+dc:description  a  owl:AnnotationProperty .
+
+dc:identifier  a  owl:AnnotationProperty .
+
+dc:rights  a    owl:AnnotationProperty .
+
+dc:source  a    owl:AnnotationProperty .
+
+dc:title  a     owl:AnnotationProperty .
+
+dct:created  a  owl:AnnotationProperty .
+
+dct:modified  a  owl:AnnotationProperty .
+
+metadata:prefixIRI  a  owl:AnnotationProperty .
+
+owl:Thing  metadata:prefixIRI  "owl:Thing" .
+
+owl:deprecated  a  owl:AnnotationProperty .
+
+rdfs:comment  a  owl:AnnotationProperty .
+
+rdfs:isDefinedBy  a  owl:AnnotationProperty .
+
+rdfs:label  a   owl:AnnotationProperty .
+
+rdfs:seeAlso  a  owl:AnnotationProperty .
+
+skos:broadMatch  a  owl:ObjectProperty ;
+        rdfs:label  "has broader match"@en .
+
+skos:closeMatch  a  owl:ObjectProperty ;
+        rdfs:label  "has close match"@en .
+
+skos:exactMatch  a          owl:ObjectProperty ;
+        rdfs:label          "has exact match"@en ;
+        rdfs:subPropertyOf  skos:closeMatch .
+
+skos:narrowMatch  a  owl:ObjectProperty ;
+        rdfs:label  "has narrower match"@en .
+
+skos:notation  a  owl:AnnotationProperty .
+
+skos:relatedMatch  a  owl:ObjectProperty ;
+        rdfs:label  "has related match"@en .

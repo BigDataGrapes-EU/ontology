@@ -1,0 +1,1642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BigDataGrapes Ontology Notes</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Vladimir Alexiev" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style type='text/css'> h1,h2,h3,h4,h5,h6,h7 {font-family: Arial} .author, .date, .creator {-webkit-margin-before: 0em; -webkit-margin-after: 0em} .abstract {margin: 1em; padding: 1em; border: 1px solid black} .abstract:before {content: 'Abstract: '; font-weight: bold} #preamble p {font-size: 110%%; margin-left: auto; margin-right: auto; text-align: center} th.left {text-align:left} th.right {text-align:right} th, td {line-height: 1em; border-width: 1px; border-style: solid solid; border-spacing: 2px 2px; padding: 2px 1px} .CANCELED {color: blue} .MAYBE {color: blue} .POSTPONED {color: blue} .APPLIED {color: orange} .FOLLOW {color: orange} .INPROGRESS {color: orange} .NEXT {color: orange} .IER {color: orange}.underline {text-decoration:underline} </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">BigDataGrapes Ontology Notes</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org13ec1ce">1. Intro</a>
+<ul>
+<li><a href="#org6deab7d">1.1. Abbreviations and Notes</a></li>
+<li><a href="#org6a2e916">1.2. Metrics</a></li>
+<li><a href="#org5041d3b">1.3. Tools</a>
+<ul>
+<li><a href="#org1d229f6">1.3.1. Tool Lists</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org058d94b">2. Ontology Notes</a>
+<ul>
+<li><a href="#orged5347b">2.1. Prefix Problems</a></li>
+<li><a href="#org64e4305">2.2. Information Templates</a>
+<ul>
+<li><a href="#orgb0bac8a">2.2.1. Class</a></li>
+<li><a href="#org83bbda8">2.2.2. Deprecated class</a></li>
+</ul>
+</li>
+<li><a href="#org0297b46">2.3. Dependencies</a></li>
+</ul>
+</li>
+<li><a href="#org01e63fd">3. Specific Ontologies</a>
+<ul>
+<li><a href="#orgdeeab9c">3.1. AGRO</a>
+<ul>
+<li><a href="#orgbbac87f">3.1.1. AGRO-edit</a></li>
+</ul>
+</li>
+<li><a href="#orge66badf">3.2. AT</a></li>
+<li><a href="#org4766bae">3.3. ENVO</a></li>
+<li><a href="#org81bf405">3.4. OEPO</a></li>
+<li><a href="#org38f04b4">3.5. Rice</a></li>
+<li><a href="#org9a16fcb">3.6. Vitis</a>
+<ul>
+<li><a href="#org9d3241c">3.6.1. <span class="todo TODO">TODO</span> Representing Vitis Observations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org266e5d9">4. Mapping</a>
+<ul>
+<li><a href="#orgcf2ab87">4.1. Normalized Difference Vegetation Index (NDVI)</a>
+<ul>
+<li><a href="#orgc957793">4.1.1. NDVI in Linked Open Vocabularies</a></li>
+<li><a href="#org67c7a11">4.1.2. NDVI in Planteome Browser</a></li>
+<li><a href="#org7ff8801">4.1.3. Maize NDVI</a>
+<ul>
+<li><a href="#org9a12168">4.1.3.1. Maize NDVI Full Representation</a></li>
+<li><a href="#orgc1ffcea">4.1.3.2. Maize NDVI Illustration</a></li>
+</ul>
+</li>
+<li><a href="#org5ede38d">4.1.4. Maize NDVI Problems</a></li>
+</ul>
+</li>
+<li><a href="#orgc134ba6">4.2. INRA Samples</a>
+<ul>
+<li><a href="#orgcbd848d">4.2.1. INRA data3</a></li>
+</ul>
+</li>
+<li><a href="#org7f19f1c">4.3. <span class="todo TODO">TODO</span> Soil Electrical Conductivity</a></li>
+<li><a href="#org070b927">4.4. <span class="todo TODO">TODO</span> Representing Observations</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org13ec1ce" class="outline-2">
+<h2 id="org13ec1ce"><span class="section-number-2">1</span> Intro</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org6deab7d" class="outline-3">
+<h3 id="org6deab7d"><span class="section-number-3">1.1</span> Abbreviations and Notes</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Sorted alphabetically (previously I had from generic to specific, but that quickly got messy)
+</p>
+<ul class="org-ul">
+<li>AEO (OAE): Agricultural Experiments Ontology
+<ul class="org-ul">
+<li><a href="http://agroportal.lirmm.fr/ontologies/AEO">http://agroportal.lirmm.fr/ontologies/AEO</a></li>
+</ul></li>
+<li>AFEO: Agri-Food Experiment Ontology
+<ul class="org-ul">
+<li><a href="http://agroportal.lirmm.fr/ontologies/AFEO">http://agroportal.lirmm.fr/ontologies/AFEO</a></li>
+<li><a href="http://agroportal.lirmm.fr/ontologies/AFEO?p=classes#visualization">http://agroportal.lirmm.fr/ontologies/AFEO?p=classes#visualization</a> and other detail tabs give API Key errors. Can you ask LIRMM to fix this?</li>
+</ul></li>
+<li>AGRO: Agronomy Ontology</li>
+<li>BCO: Biological Collection Ontology
+<ul class="org-ul">
+<li><a href="http://purl.obolibrary.org/obo/bco.owl">http://purl.obolibrary.org/obo/bco.owl</a></li>
+</ul></li>
+<li>BFO: Basic Formal Ontology</li>
+<li>ChEBI: Chemical Entities of Biological Interest
+<ul class="org-ul">
+<li>Chebi is "weird". Need everything that is somehow related to class CHEBI_33286 (including classes that belong to the chemical entity hierarchy)</li>
+</ul></li>
+<li>CO: Crop Ontology (series of)</li>
+<li>CO_320: Rice</li>
+<li>CO_322: Maize</li>
+<li>CO_356: Vitis (viticulture)</li>
+<li>EO (ENVO): Environment Ontology. Need these 3 classes (they are the biggest), and maybe we are missing some classes there:
+<ul class="org-ul">
+<li>ENVO_00010483 environmental material</li>
+<li>ENVO_00002297 environmental feature</li>
+<li>ENVO_02500000 environmental system process</li>
+</ul></li>
+<li>IAO: Information Artifact Ontology</li>
+<li>NCBITaxon: NCBI Taxonomy
+<ul class="org-ul">
+<li>Agrovoc cannot be trusted regarding the taxonomy of species. The scientific names hierarchy should come from another standard.</li>
+<li>NCBI Taxonomy is not perfect either, but it is much better in terms of updates (particularly for plants)</li>
+</ul></li>
+<li>OBO: Open Biological and Biomedical Ontology (a big set)</li>
+<li>OEPO: Ontology for Experimental Phenotypic Objects</li>
+<li>OFPE
+<ul class="org-ul">
+<li><a href="http://agroportal.lirmm.fr/ontologies/OFPE">http://agroportal.lirmm.fr/ontologies/OFPE</a></li>
+</ul></li>
+<li>PATO: Phenotypic Quality Ontology
+<ul class="org-ul">
+<li><a href="http://purl.obolibrary.org/obo/pato.owl">http://purl.obolibrary.org/obo/pato.owl</a></li>
+</ul></li>
+<li>PCO: Population and Community Ontology
+<ul class="org-ul">
+<li><a href="http://purl.obolibrary.org/obo/pco.owl">http://purl.obolibrary.org/obo/pco.owl</a></li>
+</ul></li>
+<li>PECO: Plant and Environemental Conditions Ontology
+<ul class="org-ul">
+<li><a href="http://purl.obolibrary.org/obo/peco.owl">http://purl.obolibrary.org/obo/peco.owl</a></li>
+</ul></li>
+<li>PO: Plant Ontology</li>
+<li>RO: Relations Ontology</li>
+<li>SDGIO: SDG-Interface Ontology
+<ul class="org-ul">
+<li><a href="http://purl.unep.org/sdg/sdgio.owl">http://purl.unep.org/sdg/sdgio.owl</a></li>
+</ul></li>
+<li>TO: Trait Ontology</li>
+<li>UO: Unit Ontology</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6a2e916" class="outline-3">
+<h3 id="org6a2e916"><span class="section-number-3">1.2</span> Metrics</h3>
+<div class="outline-text-3" id="text-1-2">
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Classes</th>
+<th scope="col" class="org-right">Properties</th>
+<th scope="col" class="org-right">Individuals</th>
+<th scope="col" class="org-left">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">AEO</td>
+<td class="org-right">56</td>
+<td class="org-right">36</td>
+<td class="org-right">30</td>
+<td class="org-left"><a href="http://agroportal.lirmm.fr/ontologies/AEO">http://agroportal.lirmm.fr/ontologies/AEO</a></td>
+</tr>
+
+<tr>
+<td class="org-left">AFEO</td>
+<td class="org-right">68</td>
+<td class="org-right">8</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="http://agroportal.lirmm.fr/ontologies/AFEO">http://agroportal.lirmm.fr/ontologies/AFEO</a></td>
+</tr>
+
+<tr>
+<td class="org-left">AGRO</td>
+<td class="org-right">1685</td>
+<td class="org-right">709</td>
+<td class="org-right">284</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">BCO</td>
+<td class="org-right">157</td>
+<td class="org-right">279</td>
+<td class="org-right">28</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">BFO</td>
+<td class="org-right">35</td>
+<td class="org-right">20</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">CHEBI</td>
+<td class="org-right">128900</td>
+<td class="org-right">45</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">CO</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">CO_356</td>
+<td class="org-right">814</td>
+<td class="org-right">10</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="https://www.ebi.ac.uk/ols/search?q=*&amp;groupField=iri&amp;start=0&amp;ontology=co_356">https://www.ebi.ac.uk/ols/search?q=*&amp;groupField=iri&amp;start=0&amp;ontology=co_356</a></td>
+</tr>
+
+<tr>
+<td class="org-left">ENVO</td>
+<td class="org-right">8510</td>
+<td class="org-right">241</td>
+<td class="org-right">21</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">FOODON</td>
+<td class="org-right">27050</td>
+<td class="org-right">130</td>
+<td class="org-right">359</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">IAO</td>
+<td class="org-right">219</td>
+<td class="org-right">111</td>
+<td class="org-right">23</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">NCBITaxon</td>
+<td class="org-right">1692930</td>
+<td class="org-right">27</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">OBO</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">OFPE</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://agroportal.lirmm.fr/ontologies/OFPE">http://agroportal.lirmm.fr/ontologies/OFPE</a></td>
+</tr>
+
+<tr>
+<td class="org-left">PATO</td>
+<td class="org-right">2713</td>
+<td class="org-right">61</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">PCO</td>
+<td class="org-right">242</td>
+<td class="org-right">636</td>
+<td class="org-right">20</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">PECO</td>
+<td class="org-right">2974</td>
+<td class="org-right">137</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">PO</td>
+<td class="org-right">2000</td>
+<td class="org-right">63</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">RO</td>
+<td class="org-right">80</td>
+<td class="org-right">650</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">SDGIO</td>
+<td class="org-right">514</td>
+<td class="org-right">171</td>
+<td class="org-right">702</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">TO</td>
+<td class="org-right">5041</td>
+<td class="org-right">201</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">UO</td>
+<td class="org-right">420</td>
+<td class="org-right">35</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">XCO</td>
+<td class="org-right">535</td>
+<td class="org-right">28</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">1874943</td>
+<td class="org-right">3598</td>
+<td class="org-right">1467</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Many ontologies describe imported terms (from external namespaces). 
+Eg AFEO, AEO include fairly complete copies of SKOS and DCT. 
+Not only this constitutes "namespace hijacking", but it also likely inflates the metrics.</li>
+<li>Different numbers are reported for some of the ontologies:</li>
+</ul>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Classes</th>
+<th scope="col" class="org-right">Properties</th>
+<th scope="col" class="org-right">Individuals</th>
+<th scope="col" class="org-left">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">AEO</td>
+<td class="org-right">56</td>
+<td class="org-right">36</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="http://vest.agrisemantics.org/content/agricultural-experiments-ontology">http://vest.agrisemantics.org/content/agricultural-experiments-ontology</a></td>
+</tr>
+
+<tr>
+<td class="org-left">AEO</td>
+<td class="org-right">250</td>
+<td class="org-right">26</td>
+<td class="org-right">0</td>
+<td class="org-left"><a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a></td>
+</tr>
+
+<tr>
+<td class="org-left">TO</td>
+<td class="org-right">4927</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="https://www.ebi.ac.uk/ols/ontologies/to">https://www.ebi.ac.uk/ols/ontologies/to</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org5041d3b" class="outline-3">
+<h3 id="org5041d3b"><span class="section-number-3">1.3</span> Tools</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li><a href="http://www.obofoundry.org/">http://www.obofoundry.org/</a>: list of ontologies, with resource links</li>
+<li><a href="http://browser.planteome.org/amigo">http://browser.planteome.org/amigo</a>: browser for PO, TO, EO
+<ul class="org-ul">
+<li>tree browser: <a href="http://browser.planteome.org/amigo/dd_browse">http://browser.planteome.org/amigo/dd_browse</a></li>
+<li>graph visualization of selected term: <a href="http://browser.planteome.org/visualize?mode=client_amigo">http://browser.planteome.org/visualize?mode=client_amigo</a></li>
+</ul></li>
+<li><a href="http://www.ebi.ac.uk/ols/">http://www.ebi.ac.uk/ols/</a>
+<ul class="org-ul">
+<li>Eg <a href="http://www.ebi.ac.uk/ols/ontologies/agro">http://www.ebi.ac.uk/ols/ontologies/agro</a></li>
+<li>Does have the Crop Ontologies</li>
+<li>Tree browser for classes and properties</li>
+<li>Shows graphs</li>
+<li>Very useful search, eg <a href="https://www.ebi.ac.uk/ols/search?q=Canopy+green+normalized+difference+vegetation+index">https://www.ebi.ac.uk/ols/search?q=Canopy+green+normalized+difference+vegetation+index</a></li>
+<li>From twitter <a href="https://twitter.com/EBIOLS">https://twitter.com/EBIOLS</a>:
+<ul class="org-ul">
+<li>200 ontologies, 5M classes, 16k props, 476k individuals</li>
+<li>Our new Ontology mapping service (OxO) will be integrated into OLS in 2018</li>
+</ul></li>
+</ul></li>
+<li>EMBL-EBI <b>Ontology Xref Service</b> (ontology mapping) (OxO). <a href="https://www.ebi.ac.uk/spot/oxo/">https://www.ebi.ac.uk/spot/oxo/</a>
+<ul class="org-ul">
+<li>TODO: research this!!!</li>
+</ul></li>
+<li>GODAN VEST: AgriSemantics Map of Data Standards
+<ul class="org-ul">
+<li>398 ontologies</li>
+<li>215 Food and agriculture; 180 Generic / peripheral</li>
+<li>76 from AgroPortal, 328 from VEST Registry</li>
+<li>Eg 55 ontologies on <a href="http://vest.agrisemantics.org/advanced-browse?f%5B0%5D=field_domain%3A468">Plant Science and Plant Products</a></li>
+<li>Eg <a href="http://vest.agrisemantics.org/content/agricultural-experiments-ontology">http://vest.agrisemantics.org/content/agricultural-experiments-ontology</a></li>
+</ul></li>
+<li><a href="http://www.ontobee.org">http://www.ontobee.org</a>
+<ul class="org-ul">
+<li>Eg <a href="http://www.ontobee.org/ontology/po">http://www.ontobee.org/ontology/po</a></li>
+<li>Eg <a href="http://www.ontobee.org/ontology/agro">http://www.ontobee.org/ontology/agro</a> (same as <a href="http://www.ontobee.org/browser/index.php?o=agro">http://www.ontobee.org/browser/index.php?o=agro</a>)</li>
+<li>Please note the catalog treats namespaces as case-insensitive, so <a href="http://www.ontobee.org/ontostat/catalog/PO?prefix=PO">http://www.ontobee.org/ontostat/catalog/PO?prefix=PO</a> and <a href="http://www.ontobee.org/ontostat/catalog/PO?prefix=po">http://www.ontobee.org/ontostat/catalog/PO?prefix=po</a> return the same thing (2200 terms, the union of the two namespaces)</li>
+<li>Detailed Statistics (including imported terms) that illustrate the complexity, eg see <a href="http://www.ontobee.org/ontostat/PO">http://www.ontobee.org/ontostat/PO</a></li>
+<li>Total stats <a href="http://www.ontobee.org/ontostat">http://www.ontobee.org/ontostat</a>: 177 ontologies, 4.3M classes, 21k props, 668k individuals</li>
+<li>Doesn't have the Crop Ontologies</li>
+</ul></li>
+<li><a href="http://aber-owl.net">http://aber-owl.net</a>
+<ul class="org-ul">
+<li>Eg <a href="http://aber-owl.net/ontology/AGRO">http://aber-owl.net/ontology/AGRO</a></li>
+<li>Simpler browsing</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org1d229f6" class="outline-4">
+<h4 id="org1d229f6"><span class="section-number-4">1.3.1</span> Tool Lists</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ul class="org-ul">
+<li>25 Tools (and datasets, ontologies) presented during the workshop PhenoHarmonIS 2016:
+<ul class="org-ul">
+<li><a href="https://sites.google.com/a/cgxchange.org/cropontologycommunity/workshop-on-harmonization-semantic-and-integration-of-phenotypic-and-agronomic-data-9-13-may-2016-montpellier-france/tools-presented">https://sites.google.com/a/cgxchange.org/cropontologycommunity/workshop-on-harmonization-semantic-and-integration-of-phenotypic-and-agronomic-data-9-13-may-2016-montpellier-france/tools-presented</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org058d94b" class="outline-2">
+<h2 id="org058d94b"><span class="section-number-2">2</span> Ontology Notes</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Ontology namespace and ontology file differ significantly, eg <code>po:</code> <a href="http://purl.obolibrary.org/obo/po#">http://purl.obolibrary.org/obo/po#</a> vs <a href="http://purl.obolibrary.org/obo/po.owl">http://purl.obolibrary.org/obo/po.owl</a></li>
+<li>Classes, properties and even some ontology files use numeric codes rather than English names. This makes it necessary to implement some search/browse interface to use them efectively.</li>
+<li>Even <code>rdfs:label</code> often uses unreadable abbreviations. Eg <code>CO_322:0001093</code> "EWid_M_mm": it requires digging to find out this is related to <code>CO_322:0001091</code> "Ear width" (CO:acronym "EWid"), <code>CO_322:0001092</code> "EWid - Measurement", and <code>CO_322:0000206</code> "mm" (millimeters)</li>
+<li>Using slash in local names make invalid prefixed names, eg <code>CO_322:0000320/2</code> is value 3="21-30% dead leaf area" of <code>CO_322:0000320</code> "0-10 Senescence scale".</li>
+<li>Using space in local names results in <code>%20</code> and can't use prefixed names, eg <a href="http://www.cropontology.org/rdf/CO_356:Biotic%20stress">http://www.cropontology.org/rdf/CO_356:Biotic stress</a></li>
+<li>Many entities are declared both <code>skos:Concept, owl:NamedIndividual, owl:Class</code> and connected by both <code>rdfs:subClassOf</code> and <code>skos:broaderTransitive</code>. Eg for the above example (value within a scale), both the vlaue and scale are represented in this way. Alhough this may make creating browsers simpler, it is not proper modeling, represents heavy <a href="https://www.w3.org/2007/OWL/wiki/Punning">punning</a> and makes OWL inference impossible.</li>
+<li><p>
+It also leads to redundant expression of class relations, eg
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">CO_322:</span>0000880
+      <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span>          <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000132</span>;
+      <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         [ <span style="color: #a020f0;">a</span>                   <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Restriction</span> ;
+                                <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">onProperty</span>      <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span> ;
+                                <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">someValuesFrom</span>  <span style="color: #228b22;">CO_322:</span>0000132
+                              ] ;
+</pre>
+</div></li>
+<li>Property naming convention (start with lowercase) not followed, eg <code>po:Tomato rdfs:subPropertyOf  oboInOwl:SubsetProperty</code> "Term used for tomato" ;</li>
+</ul>
+</div>
+
+<div id="outline-container-orged5347b" class="outline-3">
+<h3 id="orged5347b"><span class="section-number-3">2.1</span> Prefix Problems</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Empty (this is a bad practice!)</li>
+<li><p>
+Improper (<code>rdf1:</code> where <code>CO:</code> would be better, maize.owl)
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">rdf1:</span><span style="color: #008b8b;"> </span>  <span style="color: #0000ff;">&lt;http://www.cropontology.org/rdf/&gt;</span>
+</pre>
+</div></li>
+<li><p>
+Invalid (to.owl)
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">obo:</span><span style="color: #008b8b;"> </span>  <span style="color: #0000ff;">&lt;http://www.geneontology.org/formats/oboInOwl#http://purl.obolibrary.org/obo/&gt;</span><span style="color: #b22222;"> .    </span>
+</pre>
+</div></li>
+<li><p>
+This also obscures the canonic <code>obo:</code> index
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">obo1:</span><span style="color: #008b8b;"> </span> <span style="color: #0000ff;">&lt;http://purl.obolibrary.org/obo/&gt;</span> .
+</pre>
+</div></li>
+<li><p>
+Different namespaces for the same ontology, eg (to.ttl)
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">to:</span><span style="color: #008b8b;"> </span>   <span style="color: #0000ff;">&lt;http://purl.obolibrary.org/obo/to#&gt;</span><span style="color: #b22222;"> .</span>
+</pre>
+</div>
+<p>
+is used only for a few meta-terms, eg:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">obo:</span><span style="color: #008b8b;">TO_0000807</span> <span style="color: #228b22;">oboInOwl:</span><span style="color: #008b8b;">inSubset</span> <span style="color: #228b22;">to:</span>Allium_porrum
+</pre>
+</div>
+<p>
+Most TO terms are defined eg as <code>obo:TO_0000807</code>, so could use:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">TO:</span><span style="color: #008b8b;"> </span> <span style="color: #0000ff;">&lt;http://purl.obolibrary.org/obo/TO_&gt;</span> .
+</pre>
+</div>
+<ul class="org-ul">
+<li>Similarly (po.ttl): <code>obo:PO_0006440</code> (class) but <code>po:Angiosperm, po:derives_by_manipulation_from, po:Tomato</code> (properties)</li>
+<li><p>
+Similarly (agro-edit.ttl): 
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">UO:</span><span style="color: #008b8b;"> </span>       <span style="color: #0000ff;">&lt;http://purl.obolibrary.org/obo/UO_&gt;</span>.
+<span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">uo:</span><span style="color: #008b8b;"> </span>       <span style="color: #0000ff;">&lt;http://purl.obolibrary.org/obo/uo#&gt;</span><span style="color: #b22222;">.</span>
+</pre>
+</div></li>
+</ul></li>
+<li>vitis.ttl doesn't use any prefixes</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org64e4305" class="outline-3">
+<h3 id="org64e4305"><span class="section-number-3">2.2</span> Information Templates</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-orgb0bac8a" class="outline-4">
+<h4 id="orgb0bac8a"><span class="section-number-4">2.2.1</span> Class</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>rdfs:label: name</li>
+<li>obo:IAO_0000115: definition</li>
+<li>rdfs:comment: scope note</li>
+<li>rdfs:subClassOf: subclasses and restrictions</li>
+<li>owl:equivalentClass: restrictions (eg owl:intersectionOf)</li>
+<li>oboInOwl:created_by</li>
+<li>oboInOwl:creation_date</li>
+<li>oboInOwl:hasDbXref: sources of information (commit, author or publication), eg "NIG:Yukiko_Yamazaki", "FNA:00e30ce4-70bc-489c-86df-73030c9ece1e", "PO_GIT:658", "PO_REF:00002", "POC:curators", "ISBN:9780023681905", "PMID:18978364", "GO:0022611"</li>
+<li>oboInOwl:hasExactSynonym</li>
+<li>oboInOwl:hasOBONamespace</li>
+<li>oboInOwl:id</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org83bbda8" class="outline-4">
+<h4 id="org83bbda8"><span class="section-number-4">2.2.2</span> Deprecated class</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">obo:</span><span style="color: #008b8b;">PO_0006441</span>  <span style="color: #a020f0;">a</span>        <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> ;
+        <span style="color: #228b22;">obo:</span><span style="color: #008b8b;">IAO_0000231</span>  <span style="color: #228b22;">obo:</span><span style="color: #008b8b;">IAO_0000227</span> ;
+        <span style="color: #228b22;">obo:</span><span style="color: #008b8b;">IAO_0100001</span>  <span style="color: #228b22;">obo:</span><span style="color: #008b8b;">PO_0009029</span> ;
+        <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">deprecated</span>   true .
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0297b46" class="outline-3">
+<h3 id="org0297b46"><span class="section-number-3">2.3</span> Dependencies</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+<a href="http://purl.obolibrary.org/obo/po.owl">http://purl.obolibrary.org/obo/po.owl</a> -&gt; <a href="http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl">http://purl.obolibrary.org/obo/po/imports/ncbitaxon_import.owl</a>
+TODO
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org01e63fd" class="outline-2">
+<h2 id="org01e63fd"><span class="section-number-2">3</span> Specific Ontologies</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgdeeab9c" class="outline-3">
+<h3 id="orgdeeab9c"><span class="section-number-3">3.1</span> AGRO</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>source: <a href="https://github.com/AgriculturalSemantics/agro">https://github.com/AgriculturalSemantics/agro</a></li>
+<li>alpha version, no official release yet</li>
+<li><a href="https://github.com/AgriculturalSemantics/agro/blob/master/src/referenceMaterial/AgrO%20variables.xlsx">https://github.com/AgriculturalSemantics/agro/blob/master/src/referenceMaterial/AgrO variables.xlsx</a> could be useful for understanding. Eg "Soil variables" has</li>
+</ul>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Variable name</td>
+<td class="org-left">SoiEle_No contact _mS/meter</td>
+</tr>
+
+<tr>
+<td class="org-left">Parameter</td>
+<td class="org-left">Soil electrical conductivity</td>
+</tr>
+
+<tr>
+<td class="org-left">Entity</td>
+<td class="org-left">Soil</td>
+</tr>
+
+<tr>
+<td class="org-left">Attribute</td>
+<td class="org-left">Electrical conductivity</td>
+</tr>
+
+<tr>
+<td class="org-left">Parameter synonyms</td>
+<td class="org-left">EC</td>
+</tr>
+
+<tr>
+<td class="org-left">Parameter abbreviation Other suggestion</td>
+<td class="org-left">SoiEle</td>
+</tr>
+
+<tr>
+<td class="org-left">Parameter description</td>
+<td class="org-left">Soil electrical conductivity is the ability of soil to conduct electrical current.</td>
+</tr>
+
+<tr>
+<td class="org-left">Parameter description source</td>
+<td class="org-left"><a href="http://ohioline.osu.edu/aex-fact/0565.html">http://ohioline.osu.edu/aex-fact/0565.html</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Parameter class</td>
+<td class="org-left">Soil variable</td>
+</tr>
+
+<tr>
+<td class="org-left">Method abbreviation</td>
+<td class="org-left">No contact</td>
+</tr>
+
+<tr>
+<td class="org-left">Method name</td>
+<td class="org-left">No contact method</td>
+</tr>
+
+<tr>
+<td class="org-left">Tool / procedure</td>
+<td class="org-left">A non contact sensor works on the principle of Electromagnetic Induction (EMI). EMI does not contact the soil surface directly. The instrument is composed of a transmitter and a receiver coil usually installed at opposite ends of a non-conductive bar located at opposite ends of the instrument.</td>
+</tr>
+
+<tr>
+<td class="org-left">Method class: Measurement, Counting, Estimation, Computation, Observation</td>
+<td class="org-left">Measurement</td>
+</tr>
+
+<tr>
+<td class="org-left">Method reference</td>
+<td class="org-left"><a href="http://ohioline.osu.edu/aex-fact/0565.html">http://ohioline.osu.edu/aex-fact/0565.html</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Scale abbreviation</td>
+<td class="org-left">mS/meter</td>
+</tr>
+
+<tr>
+<td class="org-left">Scale name</td>
+<td class="org-left">mS/meter</td>
+</tr>
+
+<tr>
+<td class="org-left">Scale class</td>
+<td class="org-left">Numerical</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Unfortunately, this is not even in agro-edit.owl</li>
+<li>Scale class: Numerical, Nominal, Ordinal, Text, Code, Time, Duration</li>
+</ul>
+<ul class="org-ul">
+<li><a href="https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro.obo">https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro.obo</a> is empty</li>
+<li><p>
+<a href="https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro.owl">https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro.owl</a> has an invalid URL:
+</p>
+<pre class="example">
+riot --formatted=turtle agro.owl  1&gt;agro.ttl
+10:51:21 WARN  riot                 :: [line: 10060, col: 83] 
+  {W107} Bad URI: &lt;http:://en.wikipedia.org/wiki/Mimicry&gt; 
+  Code: 57/REQUIRED_COMPONENT_MISSING in HOST: A component that is required by the scheme is missing.
+</pre></li>
+<li><p>
+defines many terms in other namespaces ("namespace hijacking"), eg UO, RO, etc:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">obo:</span><span style="color: #008b8b;">UO_0000184</span>  <span style="color: #a020f0;">a</span>                 <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> ;
+      <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                <span style="color: #8b2252;">"kilogram per meter"</span> ;  
+</pre>
+</div></li>
+</ul>
+</div>
+<div id="outline-container-orgbbac87f" class="outline-4">
+<h4 id="orgbbac87f"><span class="section-number-4">3.1.1</span> AGRO-edit</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>new version in development: <a href="https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro-edit.owl">https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro-edit.owl</a></li>
+<li>agro-edit.owl is OWL Functional Notation, unlike agro.owl which is RDF/XML but</li>
+<li>need to use <a href="http://mowl-power.cs.man.ac.uk:8080/converter">http://mowl-power.cs.man.ac.uk:8080/converter</a> to convert it.
+<ul class="org-ul">
+<li>Failed because of missing import 
+<a href="http://purl.obolibrary.org/obo/agro/imports/po_import.owl">http://purl.obolibrary.org/obo/agro/imports/po_import.owl</a> -&gt; 
+<a href="https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/imports/po_import.owl">https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/imports/po_import.owl</a>
+<ul class="org-ul">
+<li>This alternative works ok: 
+<a href="https://github.com/AgriculturalSemantics/agro/raw/master/src/ontology/imports/po_import.owl">https://github.com/AgriculturalSemantics/agro/raw/master/src/ontology/imports/po_import.owl</a></li>
+<li>This "parallel" import works ok:
+<a href="https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/imports/chebi_import.owl">https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/imports/chebi_import.owl</a></li>
+<li>An import of the same name (but different content) appears as: 
+<ol class="org-ol">
+<li><a href="https://github.com/FoodOntology/foodon/raw/master/imports/po_import.owl">https://github.com/FoodOntology/foodon/raw/master/imports/po_import.owl</a></li>
+<li><a href="http://www.geneontology.org/ontology/imports/po_import.owl">http://www.geneontology.org/ontology/imports/po_import.owl</a>,</li>
+<li><a href="http://purl.obolibrary.org/obo/envo/imports/po_import.owl">http://purl.obolibrary.org/obo/envo/imports/po_import.owl</a>,</li>
+<li><a href="http://purl.obolibrary.org/obo/go/extensions/po_import.owl">http://purl.obolibrary.org/obo/go/extensions/po_import.owl</a> -&gt; <a href="http://snapshot.geneontology.org/ontology/extensions/po_import.owl">http://snapshot.geneontology.org/ontology/extensions/po_import.owl</a> (not found)</li>
+</ol></li>
+<li>Turns out this missing po-import was a temporary failure.
+But now the Manchester Convertor is down! ;-)</li>
+</ul></li>
+<li><p>
+Opening <a href="https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro-edit.owl">https://github.com/AgriculturalSemantics/agro/blob/master/src/ontology/agro-edit.owl</a> with Protege gives this error in OWLFunctionalSyntaxOWLParser:
+</p>
+<pre class="example">
+Encountered " &lt;ERROR&gt; "&lt; "" at line 7, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)    
+</pre></li>
+<li>Opening <a href="http://purl.obolibrary.org/obo/agro-edit.owl">http://purl.obolibrary.org/obo/agro-edit.owl</a> gives no errors, but loads no ontology either</li>
+<li>Opening the local file AGRO-edit.owl: success (finally!)</li>
+</ul></li>
+<li>Uses simple code generation with Python (called "quality patterns", because they guarantee a bunch of terms are generated consistently.
+Eg <a href="https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/src/ontology/patterns/qualityHier_2Epattern.txt">qualityHier_2Epattern.txt</a> has rows like this:</li>
+</ul>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">iri</td>
+<td class="org-left">iri label</td>
+<td class="org-left">entity1</td>
+<td class="org-left">entity1 label</td>
+<td class="org-left">entity2</td>
+<td class="org-left">entity2 label</td>
+<td class="org-left">attribute</td>
+<td class="org-left">attribute  label</td>
+<td class="org-left">synonym</td>
+<td class="org-left">definition</td>
+</tr>
+
+<tr>
+<td class="org-left">AGRO_2000001</td>
+<td class="org-left">soil water content</td>
+<td class="org-left">ENVO_00001998</td>
+<td class="org-left">soil</td>
+<td class="org-left">CHEBI_46629</td>
+<td class="org-left">water</td>
+<td class="org-left">PATO_0000025</td>
+<td class="org-left">content</td>
+<td class="org-left">Above ground residue moisture</td>
+<td class="org-left">Moisture concentration of the above ground residue</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>(this particular term is not emitted in AGRO-edit.owl)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge66badf" class="outline-3">
+<h3 id="orge66badf"><span class="section-number-3">3.2</span> AT</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+RDF <a href="http://data.ifpri.org/lod/at.owl">http://data.ifpri.org/lod/at.owl</a>, doc <a href="http://data.ifpri.org/lod/at/resource/">http://data.ifpri.org/lod/at/resource/</a>
+</p>
+<ul class="org-ul">
+<li>wrong URL (extraneous <code>#</code>)
+<a href="http://data.ifpri.org/lod/at/resource/#Hybrid_maize_variety_7">http://data.ifpri.org/lod/at/resource/#Hybrid_maize_variety_7</a></li>
+<li><p>
+some bad namespaces, eg
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">j.0:</span><span style="color: #008b8b;"> </span>  <span style="color: #0000ff;">&lt;http://purl.org/dc/terms/&gt;</span> . <span style="color: #b22222;"># should be </span><span style="color: #228b22;">dct:</span>
+</pre>
+</div></li>
+<li><p>
+some unfinished individuals, eg (<code>name_</code> what?)
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">AT:</span><span style="color: #008b8b;">name_</span>  <span style="color: #a020f0;">a</span>               <span style="color: #228b22;">AT:</span><span style="color: #008b8b;">Hybrid_guinea-type_sorghum_variety</span> ;
+      <span style="color: #228b22;">AT:</span><span style="color: #008b8b;">hasTargetCrop</span>  <span style="color: #228b22;">crop:</span><span style="color: #008b8b;">Sorghum</span> .
+</pre>
+</div></li>
+<li><p>
+doesn't conform to naming conventions, eg
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">AT:</span><span style="color: #008b8b;">organization</span>        <span style="color: #a020f0;">a</span>  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> . <span style="color: #b22222;"># should be </span><span style="color: #228b22;">capitalized</span>
+<span style="color: #228b22;">AT:</span><span style="color: #008b8b;">rhizobial_inoculant</span> <span style="color: #a020f0;">a</span>  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> . <span style="color: #b22222;"># should be capitalized</span>
+</pre>
+</div></li>
+<li>uses a few terms from this namespace that doesn't resolve: <a href="http://data.ifpri.org/lod/crop/">http://data.ifpri.org/lod/crop/</a></li>
+<li><p>
+improperly formatted timestamp:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">dc:</span><span style="color: #008b8b;">date</span>              <span style="color: #8b2252;">"Jul 28, 2013 6:56:15 AM"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">dateTime</span> ;
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4766bae" class="outline-3">
+<h3 id="org4766bae"><span class="section-number-3">3.3</span> ENVO</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>reproduces big chunks of CHEBI and UBERON</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org81bf405" class="outline-3">
+<h3 id="org81bf405"><span class="section-number-3">3.4</span> OEPO</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li><p>
+doesn't define and use these prefixes:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">oepo:</span><span style="color: #008b8b;"> </span>    <span style="color: #0000ff;">&lt;http://www.phenome-fppn.fr/vocabulary/2018/oepo#&gt;</span><span style="color: #b22222;">.</span>
+<span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">foaf:</span><span style="color: #008b8b;"> </span>    <span style="color: #0000ff;">&lt;http://xmlns.com/foaf/0.1/&gt;</span>.
+</pre>
+</div></li>
+<li><a href="http://www.phenome-fppn.fr/vocabulary/2018/oepo">http://www.phenome-fppn.fr/vocabulary/2018/oepo</a> is missing <code>a owl:Ontology</code>. Instead, this type (and extra metadata) is attached to a blank node</li>
+<li><p>
+These two nodes are disconnected, i.e. not connected to the ontology itself. Also, using <code>owl:versionInfo</code> for the first one is very strange:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;http://bioportal.bioontology.org/ontologies/URI&gt;</span>
+     <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">versionInfo</span>  <span style="color: #8b2252;">"http://www.phenome-fppn.fr/vocabulary/2018/oepo"</span> <span style="color: #228b22;">.</span>
+<span style="color: #0000ff;">&lt;http://bioportal.bioontology.org/ontologies/versionSubject&gt;</span>
+     <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">versionInfo</span>  <span style="color: #8b2252;">"releases/2017-12-12"</span> .
+</pre>
+</div>
+<ul class="org-ul">
+<li><p>
+The correct way to do this is:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;http://www.phenome-fppn.fr/vocabulary/2018/oepo&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Ontology</span>;
+  <span style="color: #228b22;">vann:</span><span style="color: #008b8b;">preferredNamespacePrefix</span> <span style="color: #8b2252;">"oepo"</span>;
+  <span style="color: #228b22;">vann:</span><span style="color: #008b8b;">preferredNamespaceUri</span> <span style="color: #8b2252;">"http://www.phenome-fppn.fr/vocabulary/2018/oepo#"</span>;
+  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">versionInfo</span>  <span style="color: #8b2252;">"releases/2017-12-12"</span>.
+</pre>
+</div></li>
+</ul></li>
+<li><p>
+The ontology carries its own <code>owl:versionInfo</code>, which should be broken up as follows:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">owl:</span><span style="color: #008b8b;">versionInfo</span> <span style="color: #8b2252;">"Version 3.1"</span><span style="color: #228b22;">;</span>
+<span style="color: #228b22;">dct:</span><span style="color: #008b8b;">modified</span> <span style="color: #8b2252;">"2018-06-06"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">date</span><span style="color: #228b22;">;</span>
+<span style="color: #228b22;">dct:</span><span style="color: #008b8b;">creator</span> <span style="color: #8b2252;">"INRA - MISTEA - LEPSE"</span>.
+</pre>
+</div></li>
+<li>Hijacking (redefinition) of <code>foaf:Agent</code> and a bunch of <code>skos:</code> properties</li>
+<li><p>
+Links are emitted as a strange mixup of properties and URLs into a string:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">oepo:</span>WindSensor
+      <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">isDefinedBy</span>  <span style="color: #8b2252;">"skos:exactMatch http://purl.oclc.org/NET/ssnx/meteo/aws#WindSensor"</span> ;
+</pre>
+</div>
+<p>
+This should be rendered as follows (<code>skos:exactMatch</code> is usually used for concepts):
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">oepo:</span>WindSensor
+      <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">equivalentClass</span> <span style="color: #0000ff;">&lt;http://purl.oclc.org/NET/ssnx/meteo/aws#WindSensor&gt;</span><span style="color: #b22222;"> </span>
+</pre>
+</div>
+<ul class="org-ul">
+<li><p>
+This below is even stranger because it doesn't use the semantic URL
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">oepo:</span>Silk
+    <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">isDefinedBy</span>  <span style="color: #8b2252;">"skos:exactMatch http://www.ontobee.org/ontology/rdf/PO?iri=http://purl.obolibrary.org/obo/PO_0006488"</span> ;
+</pre>
+</div>
+<p>
+Should be
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">oepo:</span>Silk
+    <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">equivalentClass</span> <span style="color: #0000ff;">&lt;http://purl.obolibrary.org/obo/PO_0006488&gt;</span>
+</pre>
+</div></li>
+<li><p>
+This also doesn't use the semantic URL: 
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">oepo:</span>maxInclusive
+    <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">isDefinedBy</span>  <span style="color: #8b2252;">"skos:exactMatch &lt;https://www.w3.org/TR/xmlschema-2/#rf-maxInclusive&gt;"</span>     
+</pre>
+</div>
+<p>
+This is a URL inside some text; the semantic one is <a href="http://www.w3.org/2001/XMLSchema#maxInclusive">http://www.w3.org/2001/XMLSchema#maxInclusive</a>
+</p></li>
+</ul></li>
+<li>Not sure why it has to define things that already exist in other ontologies, eg:
+<ul class="org-ul">
+<li>Isn't <code>oepo:Unit</code> the business of <code>UO</code>?</li>
+<li><code>oepo:sfContains</code> is copied from GeoSPARQL. Why not use the GeoSPARQL property directly?</li>
+</ul></li>
+<li><p>
+This transitive declaration makes no sense since the domain and range are disjoint:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">oepo:</span><span style="color: #008b8b;">participatesIn</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">TransitiveProperty</span>;
+   <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">domain</span> [ <span style="color: #a020f0;">a</span> <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> ; <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">unionOf</span>  ( <span style="color: #228b22;">oepo:</span><span style="color: #008b8b;">Device</span> <span style="color: #228b22;">oepo:</span><span style="color: #008b8b;">ScientificObject</span> )] ;
+   <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span>  <span style="color: #228b22;">oepo:</span><span style="color: #008b8b;">Experiment</span> .
+</pre>
+</div>
+<p>
+There can be no path of 2 consecutive <code>oepo:participatesIn</code>, so the transitive declaration is pointless
+</p></li>
+<li>Many domains and ranges are not specified, which leaves some questions, eg
+<ul class="org-ul">
+<li>What are the expected values of <code>oepo:hasValue</code>?</li>
+<li>What is the domain of <code>oepo:usesVector</code>, and what vectors have to do with <code>oepo:Device | oepo:ScientificObject</code>?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org38f04b4" class="outline-3">
+<h3 id="org38f04b4"><span class="section-number-3">3.5</span> Rice</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>This (and other <code>CO_*</code> ontologies) may not be needed by BDG, but we can use them as examples to extend Vitis, and maybe we can reuse some concepts.</li>
+<li>"Subpart" is a tiny file that defines CO_320:ROOT as a class and concept.</li>
+<li>Uses empty prefix ":" for <a href="http://www.w3.org/2002/07/owl#">http://www.w3.org/2002/07/owl#</a>, which is a bad practice.</li>
+<li>Uses prefix "rdf1:" for <a href="http://www.cropontology.org/rdf/">http://www.cropontology.org/rdf/</a>: rename to something more descriptive eg "crop:".</li>
+<li>Should define prefix "rice:" <a href="http://www.cropontology.org/rdf/CO_320:">http://www.cropontology.org/rdf/CO_320:</a></li>
+<li>Defines concepts with labels that are incomprehensible to me (eg "PanLng_MatAv_UPOV1to3").
+Google search shows <a href="http://test.planteome.org/amigo/term/CO_320:0000824">http://test.planteome.org/amigo/term/CO_320:0000824</a> where on the Graph view or Tree View 
+we can see this is a particular "rice panicle length".</li>
+<li>Uses some URLs with space in them eg <code>rice:Biotic%20stress</code>: bad practice, <code>rice:Biotic_stress</code> is better</li>
+<li>Doesn't define ontology metadata (just a blank node <code>[a owl:Ontology]</code>)</li>
+<li>Uses some value URLs with slash, for which the rice: prefix cannot be used, 
+eg <code>rice:00000321/1</code> is value "1= Strong no bending" of variable <code>rice:00000321</code> "Culm strength scale SES".
+Better to use <code>_1</code> instead of <code>/1</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9a16fcb" class="outline-3">
+<h3 id="org9a16fcb"><span class="section-number-3">3.6</span> Vitis</h3>
+<div class="outline-text-3" id="text-3-6">
+<p>
+Grape Ontology including OIV and bioversity descriptors. INRA July 2017
+</p>
+<ul class="org-ul">
+<li>homepage (curation tool) <a href="http://www.cropontology.org/ontology/CO_356/Vitis">http://www.cropontology.org/ontology/CO_356/Vitis</a>.
+<ul class="org-ul">
+<li>OBO is quite shorter and easier to read <a href="http://www.cropontology.org/obo/CO_356">http://www.cropontology.org/obo/CO_356</a></li>
+<li>Download as Trait Dictionary returns Server Error</li>
+</ul></li>
+<li>Often cite reference: <a href="https://urgi-git.versailles.inra.fr/urgi-is/ontologies/raw/12fa64ac6ae7975cb50fb972f9f009e2c27db18e/vitis/liste_des_descripteus_oiv_pour_les_varietes_et_especes_de_vitis__2e_edition_5langues_04_2008.pdf">Liste_des_descripteus_OIV_pour_les_varietes_et_especes_de_vitis__2e_edition_5langues_04_2008.pdf</a></li>
+<li>Search (EBI) <a href="https://www.ebi.ac.uk/ols/search?ontology=co_356">https://www.ebi.ac.uk/ols/search?ontology=co_356</a></li>
+<li>The structure is quite simple. It defines traits, methods, scales.</li>
+<li>Example: see <a href="#orgcbd848d">4.2.1</a></li>
+</ul>
+
+<p>
+Problems:
+</p>
+<ul class="org-ul">
+<li>A bunch of "name: No method name found" (eg CO_356:0000309)
+<ul class="org-ul">
+<li>Just what is <code>CO_356:0000379</code> "No method name found" used in INRA sample data?</li>
+</ul></li>
+<li>Is <code>CO_356:1000215</code> measured in <b>grams</b> (as suggested by its name "SBER_W_g") or <b>milligrams</b> (as suggested by its relation to <code>CO_356:4000018</code> "mg")?</li>
+<li>Uses invalid prop <code>rdfs:subProperty</code> (it's <code>rdfs:subPropertyOf</code>)</li>
+<li>Invalidly declares several props (<code>CO:method_of</code>, <code>CO:scale_of</code> and <code>CO:variable_of</code>) as  <code>rdfs:subPropertyOf owl:ObjectProperty</code>: should be <code>rdf:type</code></li>
+<li><code>CO_356:4000028</code> "S1_5_by2" is <code>CO:scale_of</code> a bunch of traits. It's invalidly declared a restriction <code>owl:onProperty CO:scale_of</code> with <code>owl:someValuesFrom</code> each of these traits. This means that every instance of the scale "S1_5_by2" must have links <code>CO:scale_of</code> to each of these traits, or else it cannot be classified with the given class. This contradicts the open world assumption, since we may have no data about some of them.</li>
+<li><p>
+Some terms from the OBO format are missing in the NTriples format, eg scale values:
+</p>
+<pre class="example">
+[Term]
+id: CO_356:4000033/1
+name: undefined
+namespace: VitisScale
+synonym: "3-5-7" EXACT []
+is_a: CO_356:4000033
+</pre></li>
+<li><p>
+Similarly, there is extra info in the <a href="http://www.cropontology.org/ontology/CO_356/Vitis">Vitis browser</a> that is not represented in NTriples:
+</p>
+<pre class="example">
+Lower limit 3.0
+Upper limit 7.0 
+</pre></li>
+<li>Many terms required for AUA data are missing, eg "Vegetation" or "NDVI" finds nothing</li>
+</ul>
+</div>
+
+<div id="outline-container-org9d3241c" class="outline-4">
+<h4 id="org9d3241c"><span class="section-number-4">3.6.1</span> <span class="todo TODO">TODO</span> Representing Vitis Observations</h4>
+<div class="outline-text-4" id="text-3-6-1">
+<p>
+Get some example observation data using this ontology!
+</p>
+<ul class="org-ul">
+<li>Eg Trait "Dry weight per shoot" has Necessary complement: "Date" (i.e. it's pointless to record this trait unless a date is also recorded), and we must see some examples of how to lay out this bundle of data.</li>
+<li>I know how to do it with W3C CUBE, but I'm sure the OBO/AGRO community have their established way</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org266e5d9" class="outline-2">
+<h2 id="org266e5d9"><span class="section-number-2">4</span> Mapping</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Let's try to map some of the Grape Table Data fields to the ontologies
+</p>
+</div>
+<div id="outline-container-orgcf2ab87" class="outline-3">
+<h3 id="orgcf2ab87"><span class="section-number-3">4.1</span> Normalized Difference Vegetation Index (NDVI)</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgc957793" class="outline-4">
+<h4 id="orgc957793"><span class="section-number-4">4.1.1</span> NDVI in <a href="https://lov.okfn.org">Linked Open Vocabularies</a></h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+LOV doesn't have <a href="https://lov.okfn.org/dataset/lov/terms?q=Vegetation">anything relevant for Vegetation</a>:
+</p>
+<ul class="org-ul">
+<li><a href="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-edac.owl#Vegetation">edac:Vegetation</a> from ELSEweb is just a class (subclass of edac:EcologicalCommunity).</li>
+<li>ONTO's Proton ontology has a few types of vegetation areas, eg <a href="http://www.ontotext.com/proton/protonext#Grassland">pext:Grassland</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org67c7a11" class="outline-4">
+<h4 id="org67c7a11"><span class="section-number-4">4.1.2</span> NDVI in <a href="http://browser.planteome.org/amigo">Planteome Browser</a></h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>"vegetation index" auto-completes to 1 general and 3 specific terms:
+<ul class="org-ul">
+<li>leaf area index (TO:0012001)</li>
+<li>maize normalized difference vegetation index trait (CO_322:0000132)</li>
+<li>wheat canopy normalized difference vegetation index trait (CO_321:0000301)</li>
+<li>wheat canopy simple ratio trait (CO_321:0000206)</li>
+</ul></li>
+<li>This means OBO people don't bother to advertise on LOV</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7ff8801" class="outline-4">
+<h4 id="org7ff8801"><span class="section-number-4">4.1.3</span> Maize NDVI</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<p>
+Let's take the first specific term. See <a href="http://www.cropontology.org/ontology/CO_322/Maize/owl">CO_322 Maize owl</a> and <a href="http://browser.planteome.org/amigo/term/CO_322:0000880#display-lineage-tab">CO_322:0000880 browse neighborhood</a>
+</p>
+</div>
+<div id="outline-container-org9a12168" class="outline-5">
+<h5 id="org9a12168"><span class="section-number-5">4.1.3.1</span> Maize NDVI Full Representation</h5>
+<div class="outline-text-5" id="text-4-1-3-1">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">CO_322:</span>0000132
+        <span style="color: #a020f0;">a</span>                       <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span> , <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">NamedIndividual</span> , <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"Normalized difference vegetation index"</span>@en ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">Physiological%20traits</span> ;
+        <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">acronym</span>              <span style="color: #8b2252;">"NDVI"</span>@en ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">broaderTransitive</span>  <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">Physiological%20traits</span> ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">definition</span>         <span style="color: #8b2252;">"Canopy normalized difference vegetation index."</span>@en ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span>          <span style="color: #8b2252;">"Normalized difference vegetation index"</span>@en <span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO_322:</span>0000361
+        <span style="color: #a020f0;">a</span>                       <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">NamedIndividual</span> , <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> , <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span> ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"NDVI - Measurement"</span>@en ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Measurement</span> ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         [ <span style="color: #a020f0;">a</span>                   <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Restriction</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">onProperty</span>      <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">method_of</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">someValuesFrom</span>  <span style="color: #228b22;">CO_322:</span>0000132
+                                ] ;
+        <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">method_of</span>            <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000132</span> ; <span style="color: #b22222;"># NDVI trait</span>
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">broaderTransitive</span>  <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Measurement</span> ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span>          <span style="color: #8b2252;">"NDVI - Measurement"</span>@en <span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO_322:</span>0000372
+        <span style="color: #a020f0;">a</span>                       <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span> , <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">NamedIndividual</span> , <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"index"</span>@en ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Numerical</span> ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         [ <span style="color: #a020f0;">a</span>                   <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Restriction</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">onProperty</span>      <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">scale_of</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">someValuesFrom</span>  <span style="color: #228b22;">CO_322:</span>0000361
+                                ] ;
+        <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">scale_of</span>             <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000361</span> ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">broaderTransitive</span>  <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Numerical</span> ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span>          <span style="color: #8b2252;">"index"</span>@en <span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO_322:</span>0000880
+        <span style="color: #a020f0;">a</span>                       <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> , <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span> , <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">NamedIndividual</span> ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"NDVI_M_idx"</span>@en ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Variable</span> ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         [ <span style="color: #a020f0;">a</span>                   <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Restriction</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">onProperty</span>      <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">someValuesFrom</span>  <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000132</span> <span style="color: #b22222;"># maize NDVI trait </span>
+                                ] ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         [ <span style="color: #a020f0;">a</span>                   <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Restriction</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">onProperty</span>      <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">someValuesFrom</span>  <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000372</span> <span style="color: #b22222;"># maize index scale</span>
+                                ] ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         [ <span style="color: #a020f0;">a</span>                   <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Restriction</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">onProperty</span>      <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span> ;
+                                  <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">someValuesFrom</span>  <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000361</span> <span style="color: #b22222;"># maize NDVI measurement method</span>
+                                ] ;
+        <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span>          <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000372</span> , <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000132</span> , <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000361</span> ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">broaderTransitive</span>  <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Variable</span> ;
+        <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span>          <span style="color: #8b2252;">"NDVI_M_idx"</span>@en .
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc1ffcea" class="outline-5">
+<h5 id="orgc1ffcea"><span class="section-number-5">4.1.3.2</span> Maize NDVI Illustration</h5>
+<div class="outline-text-5" id="text-4-1-3-2">
+<p>
+<code>CO:Variable</code> ties up a specific trait (NDVI), scientific method (Measurement) and scale/unit of measure (Index). 
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">CO_322:</span>0000132
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"NDVI"</span>;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">Physiological%20traits</span> <span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO_322:</span>0000361
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"NDVI Measurement"</span>@en ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Measurement</span> ;
+        <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">method_of</span>            <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000132</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO_322:</span>0000372
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"NDVI index"</span>@en ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Numerical</span> ;
+        <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">scale_of</span>             <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000361</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO_322:</span>0000880
+        <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"NDVI measurement expressed as index"</span>;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>              <span style="color: #8b2252;">"NDVI_M_idx"</span>@en ;
+        <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span>         <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">Variable</span> ;
+        <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span>          <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000372</span> , <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000132</span> , <span style="color: #228b22;">CO_322:</span><span style="color: #008b8b;">0000361</span><span style="color: #228b22;">.</span>
+
+<span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">InlineProperty</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span> <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">arrow</span> <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">up</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO:</span><span style="color: #008b8b;">method_of</span>   <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">arrow</span> <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">up</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">CO:</span><span style="color: #008b8b;">scale_of</span>    <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">arrow</span> <span style="color: #228b22;">puml:</span><span style="color: #008b8b;">up-2</span>.
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/maize-ndvi.png" alt="maize-ndvi.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ede38d" class="outline-4">
+<h4 id="org5ede38d"><span class="section-number-4">4.1.4</span> Maize NDVI Problems</h4>
+<div class="outline-text-4" id="text-4-1-4">
+<p>
+Problems:
+</p>
+<ul class="org-ul">
+<li>Why is NDVI expressed specifically for Maize, surely it applies to other crops?</li>
+<li>Why is there no relation to a more generic trait in CO?</li>
+<li>If there is a specific "NDVI Index" scale, what are its values?</li>
+<li>Is the NDVI Index different for Maize and other crops? I doubt it.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc134ba6" class="outline-3">
+<h3 id="orgc134ba6"><span class="section-number-3">4.2</span> INRA Samples</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-orgcbd848d" class="outline-4">
+<h4 id="orgcbd848d"><span class="section-number-4">4.2.1</span> INRA data3</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<p>
+<a href="../INRA/data3/data3-output-minimal.ttl">../INRA/data3/data3-output-minimal.ttl</a>:
+</p>
+<ul class="org-ul">
+<li>please use prefixes!</li>
+<li><p>
+This is invalid datatype, should be <code>xsd:dateTimeStamp</code>. Alternatively, don't pad with a fake time of 0!
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #8b2252;">"2016-09-09T00:00:00.0000000Z"</span><span style="color: #228b22;">^^xsd:</span>date
+</pre>
+</div></li>
+<li><a href="http://www.cropontology.org/ontology/CO_356/Vitis#1000215">http://www.cropontology.org/ontology/CO_356/Vitis#1000215</a> is wrong URL, should be <a href="http://www.cropontology.org/rdf/CO_356:1000215">http://www.cropontology.org/rdf/CO_356:1000215</a></li>
+<li><a href="http://vinnotec.supagro.inra.fr/public/Pr/data/observation1">http://vinnotec.supagro.inra.fr/public/Pr/data/observation1</a> etc are missing <code>rdf:type</code></li>
+</ul>
+<p>
+<a href="../INRA/data4/data3-output-minimal.ttl">../INRA/data4/data3-output-minimal.ttl</a>:
+</p>
+<ul class="org-ul">
+<li>Observation objects eg <a href="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C01_Grappe">http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C01_Grappe</a> are not defined in these files</li>
+</ul>
+
+<p>
+I aggregated the two examples to <a href="./img/inra-data3.ttl">./img/inra-data3.ttl</a>, added the respective definitions from Vitis, and made this illustration.
+INRA data is the top 4 nodes, and the rest is from Vitis:
+</p>
+
+
+<div class="figure">
+<p><img src="./img/inra-data3.png" alt="inra-data3.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org7f19f1c" class="outline-3">
+<h3 id="org7f19f1c"><span class="section-number-3">4.3</span> <span class="todo TODO">TODO</span> Soil Electrical Conductivity</h3>
+</div>
+
+<div id="outline-container-org070b927" class="outline-3">
+<h3 id="org070b927"><span class="section-number-3">4.4</span> <span class="todo TODO">TODO</span> Representing Observations</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+Take this observation from <a href="https://drive.google.com/open?id=1_wTOuwYJSyt9yG6CPUjaUUOUryk3yLxd">WP8/Table Grapes Pilot- AUA/Data/Fasoulis Estate</a>, file "5. Fasoulis_IFG_RapidScan.xlsx"
+</p>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">PLOT</td>
+<td class="org-right">NDRE</td>
+<td class="org-right">NDVI</td>
+<td class="org-right">RE</td>
+<td class="org-right">NIR</td>
+<td class="org-right">R</td>
+<td class="org-right">LATITUDE</td>
+<td class="org-right">LONGITUDE</td>
+<td class="org-right">ELEVATION</td>
+<td class="org-right">HDOP</td>
+<td class="org-left">FIXTYPE</td>
+<td class="org-left">DATE</td>
+<td class="org-right">TIME</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+
+<tr>
+<td class="org-right">37</td>
+<td class="org-right">0.2252</td>
+<td class="org-right">0.7376</td>
+<td class="org-right">20.836</td>
+<td class="org-right">33.084</td>
+<td class="org-right">5.132</td>
+<td class="org-right">37.81713</td>
+<td class="org-right">22.58971</td>
+<td class="org-right">291.5</td>
+<td class="org-right">2.8</td>
+<td class="org-left">GPS</td>
+<td class="org-left">5/23/2018</td>
+<td class="org-right">10:12:50</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Using W3C CUBE
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2018-06-12 Tue 00:00</p>
+<p class="author">Author: Vladimir Alexiev</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

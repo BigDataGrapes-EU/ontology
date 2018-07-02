@@ -1,0 +1,21 @@
+CO_322:0000132
+        rdfs:label              "NDVI";
+        rdfs:subClassOf         CO_322:Physiological%20traits .
+CO_322:0000361
+        rdfs:label              "NDVI Measurement"@en ;
+        rdfs:subClassOf         CO:Measurement ;
+        CO:method_of            CO_322:0000132.
+CO_322:0000372
+        rdfs:label              "NDVI index"@en ;
+        rdfs:subClassOf         CO:Numerical ;
+        CO:scale_of             CO_322:0000361.
+CO_322:0000880
+        puml:label "NDVI measurement expressed as index";
+        rdfs:label              "NDVI_M_idx"@en ;
+        rdfs:subClassOf         CO:Variable ;
+        CO:variable_of          CO_322:0000372 , CO_322:0000132 , CO_322:0000361.
+
+rdfs:subClassOf a puml:InlineProperty.
+CO:variable_of puml:arrow puml:up.
+CO:method_of   puml:arrow puml:up.
+CO:scale_of    puml:arrow puml:up-2.

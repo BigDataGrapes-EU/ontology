@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns="http://example.org/data/data4.csv#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C01_Grappe">
+    <ns0:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation1" xmlns:ns0="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C02_Grappe">
+    <ns1:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation2" xmlns:ns1="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C04_Grappe">
+    <ns2:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation3" xmlns:ns2="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C05_Grappe">
+    <ns3:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation4" xmlns:ns3="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C06_Grappe">
+    <ns4:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation5" xmlns:ns4="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C07_Grappe">
+    <ns5:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation6" xmlns:ns5="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C08_Grappe">
+    <ns6:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation7" xmlns:ns6="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C09_Grappe">
+    <ns7:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation8" xmlns:ns7="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C10_Grappe">
+    <ns8:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation9" xmlns:ns8="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C11_Grappe">
+    <ns9:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation10" xmlns:ns9="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C12_Grappe">
+    <ns10:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation11" xmlns:ns10="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C13_Grappe">
+    <ns11:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation12" xmlns:ns11="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C14_Grappe">
+    <ns12:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation13" xmlns:ns12="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C16_Grappe">
+    <ns13:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation14" xmlns:ns13="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L1_2_C17_Grappe">
+    <ns14:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation15" xmlns:ns14="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C01_Grappe">
+    <ns15:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation16" xmlns:ns15="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C02_Grappe">
+    <ns16:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation17" xmlns:ns16="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C03_Grappe">
+    <ns17:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation18" xmlns:ns17="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C04_Grappe">
+    <ns18:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation19" xmlns:ns18="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C05_Grappe">
+    <ns19:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation20" xmlns:ns19="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C06_Grappe">
+    <ns20:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation21" xmlns:ns20="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C07_Grappe">
+    <ns21:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation22" xmlns:ns21="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C08_Grappe">
+    <ns22:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation23" xmlns:ns22="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C09_Grappe">
+    <ns23:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation24" xmlns:ns23="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C10_Grappe">
+    <ns24:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation25" xmlns:ns24="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C11_Grappe">
+    <ns25:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation26" xmlns:ns25="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C12_Grappe">
+    <ns26:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation27" xmlns:ns26="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C13_Grappe">
+    <ns27:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation28" xmlns:ns27="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C14_Grappe">
+    <ns28:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation29" xmlns:ns28="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C15_Grappe">
+    <ns29:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation30" xmlns:ns29="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C16_Grappe">
+    <ns30:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation31" xmlns:ns30="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_L2_2_C17_Grappe">
+    <ns31:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation32" xmlns:ns31="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C01_Grappe">
+    <ns32:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation33" xmlns:ns32="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C02_Grappe">
+    <ns33:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation34" xmlns:ns33="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C03_Grappe">
+    <ns34:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation35" xmlns:ns34="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C04_Grappe">
+    <ns35:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation36" xmlns:ns35="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C05_Grappe">
+    <ns36:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation37" xmlns:ns36="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C06_Grappe">
+    <ns37:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation38" xmlns:ns37="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C07_Grappe">
+    <ns38:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation39" xmlns:ns38="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C08_Grappe">
+    <ns39:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation40" xmlns:ns39="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C09_Grappe">
+    <ns40:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation41" xmlns:ns40="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C10_Grappe">
+    <ns41:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation42" xmlns:ns41="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C11_Grappe">
+    <ns42:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation43" xmlns:ns42="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C12_Grappe">
+    <ns43:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation44" xmlns:ns43="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C13_Grappe">
+    <ns44:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation45" xmlns:ns44="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C14_Grappe">
+    <ns45:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation46" xmlns:ns45="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C16_Grappe">
+    <ns46:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation47" xmlns:ns46="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C17_Grappe">
+    <ns47:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation48" xmlns:ns47="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vinnotec.supagro.inra.fr/public/Pr/2016_SUNAGRI_T_1_C18_Grappe">
+    <ns48:hasObservation rdf:resource="http://vinnotec.supagro.inra.fr/public/Pr/data/observation49" xmlns:ns48="http://www.phenome-fppn.fr/vocabulary/2018/oepo#" />
+  </rdf:Description>
+</rdf:RDF>

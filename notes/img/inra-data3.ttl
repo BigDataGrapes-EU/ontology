@@ -1,0 +1,36 @@
+CO_356:1000215 rdfs:subClassOf CO:Variable;
+        CO:variable_of          CO_356:2000144 , CO_356:4000018 , CO_356:0000379 ;
+        skos:altLabel           "Single berry weight"@en ;
+        skos:prefLabel          "SBER_W_g"@en .
+
+CO_356:2000144 rdfs:subClassOf CO_356:Agronomical ;
+        CO:acronym              "SBER_W"@en ;
+        skos:prefLabel          "Single berry weight"@en .
+
+CO_356:4000018 rdfs:subClassOf CO:Numerical ;
+        CO:scale_of             CO_356:0000379 ;
+        skos:prefLabel          "mg"@en .
+
+CO_356:0000379
+        rdfs:subClassOf         CO:Method ;
+        CO:method_of            CO_356:2000144 ;
+        skos:prefLabel          "No method name found"@en .
+  
+
+inra_data:observation1
+  oepo:hasDate "2016-09-09T00:00:00.0000000Z"^^xsd:dateTimeStamp;
+  oepo:hasValue 1.19;
+  oepo:hasVariable CO_356:1000215.
+
+inra_data:observation10
+  oepo:hasDate "2016-09-09T00:00:00.0000000Z"^^xsd:dateTimeStamp;
+  oepo:hasValue 0.92;
+  oepo:hasVariable CO_356:1000215.
+
+inra_obj:2016_SUNAGRI_L1_2_C01_Grappe oepo:hasObservation inra_data:observation1.
+
+inra_obj:2016_SUNAGRI_L1_2_C11_Grappe oepo:hasObservation inra_data:observation10.
+
+####################
+
+rdfs:subClassOf a puml:InlineProperty.
