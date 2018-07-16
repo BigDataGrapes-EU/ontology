@@ -1,0 +1,468 @@
+PREFIX agrovoc:		<http://aims.fao.org/aos/agrovoc/>
+PREFIX owl:   		<http://www.w3.org/2002/07/owl#> 
+PREFIX rdf:   		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs:		<http://www.w3.org/2000/01/rdf-schema#>  
+PREFIX skos:  		<http://www.w3.org/2004/02/skos/core#> 
+PREFIX inra_onto:	<http://vinnotec.supagro.inra.fr/public/Pr/onto/>  
+PREFIX CO_356:		<http://www.cropontology.org/rdf/CO_356:>
+PREFIX CO:		<http://www.cropontology.org/rdf/>
+PREFIX UO: 		<http://purl.obolibrary.org/obo/UO_>  
+PREFIX MMO: 		<http://purl.obolibrary.org/obo/MMO_>  
+PREFIX aeo:       	<http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#>
+PREFIX PATO:      	<http://purl.obolibrary.org/obo/PATO_>
+PREFIX STATO:      	<http://purl.obolibrary.org/obo/STATO_>
+PREFIX CHMO:      	<http://purl.obolibrary.org/obo/CHMO_>
+PREFIX CHEBI:     	<http://purl.obolibrary.org/obo/CHEBI_>
+PREFIX TO:        	<http://purl.obolibrary.org/obo/TO_>
+
+CO:variable_of  rdfs:subProperty_of  skos:related ;
+	rdf:type		owl:ObjectProperty .
+
+inra_onto:Poids1Baieg  rdfs:subClassOf         CO:Variable ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000144
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000021
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000157
+                                ] ;
+        CO:variable_of		CO_356:2000144 , UO:0000021 , MMO:0000157 .
+
+inra_onto:NbBaies rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  aeo:Berry
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0001555
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000189
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  STATO:0000047
+                                ] ;
+        CO:variable_of          aeo:Berry , PATO:0001555  , UO:0000189 , STATO:0000047 .
+
+inra_onto:Nbbaiescomptage rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  aeo:Berry
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0001555
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000189
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  STATO:0000047
+                                ] ;
+        CO:variable_of          aeo:Berry , PATO:0001555  , UO:0000189 , STATO:0000047 .
+
+inra_onto:NbBaiescomptage rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  aeo:Berry
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0001555
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000189
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  STATO:0000047
+                                ] ;
+        CO:variable_of          aeo:Berry , PATO:0001555  , UO:0000189 , STATO:0000047 .
+
+inra_onto:GpeseePoidsGrappe rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  aeo:Bunch
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0000128
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000021
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000157
+                                ] ;
+        CO:variable_of          aeo:Bunch , PATO:0000128  , UO:0000021 , MMO:0000157 .
+
+inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  TO:0002742
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000098
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000213
+                                ] ;
+        CO:variable_of          TO:0002742 , UO:0000098 , MMO:0000213 .
+
+inra_onto:Nbgrappescomptage rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  aeo:Bunch
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0001555
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000189
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  STATO:0000047
+                                ] ;
+        CO:variable_of          aeo:Bunch , PATO:0001555  , UO:0000189 , STATO:0000047 .
+
+inra_onto:Poidsvendangekgpesee rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000168
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000009
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000157
+                                ] ;
+        CO:variable_of          CO_356:2000168 , UO:0000009 , MMO:0000157 .
+
+inra_onto:Poidsvendangegpesee rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000168
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000021
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000157
+                                ] ;
+        CO:variable_of          CO_356:2000168 , UO:0000021 , MMO:0000157 .
+
+inra_onto:Glucose.fructoseg.lsequentiel.enzymatique rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000057
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000175
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000388
+                                ] ;
+        CO:variable_of          CO_356:2000057 , UO:0000175 , MMO:0000388 .
+
+inra_onto:Acvolatilegh2so4.Lsequentiel rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHEBI:26836
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000015
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000388
+                                ] ;
+        CO:variable_of          CHEBI:26836 , CO_356:4000015 , MMO:0000388 .
+
+inra_onto:Aciditevolatilegh2so4.L rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHEBI:26836
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000015
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000388
+                                ] ;
+        CO:variable_of          CHEBI:26836 , CO_356:4000015 , MMO:0000388 .
+
+inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000158
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000015
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0002371
+                                ] ;
+        CO:variable_of          CO_356:2000158 , CO_356:4000015 , CHMO:0002371 .
+
+inra_onto:AciditeTotalegH2SO4.lElectrotitrimetrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000158
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000015
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0002371
+                                ] ;
+        CO:variable_of          CO_356:2000158 , CO_356:4000015 , CHMO:0002371 .
+
+inra_onto:Actotalegh2so4.Lpotentiometrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000158
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000015
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0002371
+                                ] ;
+        CO:variable_of          CO_356:2000158 , CO_356:4000015 , CHMO:0002371 .
+
+inra_onto:Degrebrix.brefractometrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000161
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000019
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000019
+                                ] ;
+        CO:variable_of          CO_356:2000161 , CO_356:4000019 , CO_356:4000019 .
+
+inra_onto:Poidsbaiesgpesee rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  aeo:Berry
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0000128
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000021
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000157
+                                ] ;
+        CO:variable_of          aeo:Berry , PATO:0000128  , UO:0000021 , MMO:0000157 .
+
+inra_onto:PoidsBaiesgPesee rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  aeo:Berry
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0000128
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000021
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000157
+                                ] ;
+        CO:variable_of          aeo:Berry , PATO:0000128  , UO:0000021 , MMO:0000157 .
+
+inra_onto:pHpHmetrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000121
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000196
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0002354
+                                ] ;
+        CO:variable_of          CO_356:2000121 , UO:0000196 , CHMO:0002354 .
+
+inra_onto:Phphmetrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000121
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000196
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0002354
+                                ] ;
+        CO:variable_of          CO_356:2000121 , UO:0000196 , CHMO:0002354 .
+
+inra_onto:Sucrestotaux.brixrefractometrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  TO:0000340
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000019
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000019
+                                ] ;
+        CO:variable_of          TO:0000340 , CO_356:4000019 , CO_356:4000019 .
+
+inra_onto:pHpotentiometrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000121
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000196
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0002371
+                                ] ;
+        CO:variable_of          CO_356:2000121 , UO:0000196 , CHMO:0002371 .
+
+inra_onto:Turbiditentuturbidimetrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  PATO:0000957
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000315
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  agrovoc:c_28605
+                                ] ;
+        CO:variable_of          PATO:0000957 , UO:0000315 , agrovoc:c_28605 .
+
+inra_onto:Anthocyanesmg.lspectrometrie.visible rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  TO:0000071
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000273
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000173
+                                ] ;
+        CO:variable_of          TO:0000071 , UO:0000273 , MMO:0000173 .
+
+inra_onto:So2libremgh2so4.Liodometrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000056
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000015
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0001211
+                                ] ;
+        CO:variable_of          CO_356:2000056 , CO_356:4000015 , CHMO:0001211 .
+
+inra_onto:So2totalmgh2so4.Liodometrie rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000160
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:4000015
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CHMO:0001211
+                                ] ;
+        CO:variable_of          CO_356:2000160 , CO_356:4000015 , CHMO:0001211 .
+
+inra_onto:Ac.tartriqueg.lhplc rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000150
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000175
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000394
+                                ] ;
+        CO:variable_of          CO_356:2000150 , UO:0000175 , MMO:0000394 .
+
+inra_onto:Ac.maliqueg.lenzymatique rdfs:subClassOf CO:Variable;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  CO_356:2000065
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  UO:0000175
+                                ] ;
+        rdfs:subClassOf         [ a                   owl:Restriction ;
+                                  owl:onProperty      CO:variable_of ;
+                                  owl:someValuesFrom  MMO:0000388
+                                ] ;
+        CO:variable_of          CO_356:2000065 , UO:0000175 , MMO:0000388 .
+

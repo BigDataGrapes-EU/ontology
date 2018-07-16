@@ -1,0 +1,1202 @@
+PREFIX aeo:        <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#>   
+PREFIX oepo:       <http://www.phenome-fppn.fr/vocabulary/2018/oepo#>   
+PREFIX ofpe:       <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#>   
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   
+PREFIX inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>   
+PREFIX inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/>   
+PREFIX inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/>   
+PREFIX inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/>   
+PREFIX context:    <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>  
+PREFIX dcterms:    <http://purl.org/dc/terms/>  
+PREFIX time:       <http://www.w3.org/2006/time#>  
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#> 
+
+context:instant_41fc6f42-812f-4834-9d0a-e8dd44c9dcaa rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.488526"^^xsd:dateTime .
+inra_data:04df0ade-8b9f-4d71-b484-10f1ce64cc79 rdf:type oepo:Observation ;
+   time:hasTime context:instant_41fc6f42-812f-4834-9d0a-e8dd44c9dcaa ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.35"^^xsd:decimal .
+inra_obj:57-VDQA-G09-B rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:04df0ade-8b9f-4d71-b484-10f1ce64cc79 .
+
+context:instant_28ca8014-78b1-4220-8196-f53f150a5678 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.488658"^^xsd:dateTime .
+inra_data:7961d67d-7eeb-487d-83d8-e336a912360d rdf:type oepo:Observation ;
+   time:hasTime context:instant_28ca8014-78b1-4220-8196-f53f150a5678 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.34"^^xsd:decimal .
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7961d67d-7eeb-487d-83d8-e336a912360d .
+
+context:instant_cbbf4416-a4c2-439f-a30a-a9bd869d8f25 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.488738"^^xsd:dateTime .
+inra_data:2ebecc64-4ad9-4138-adc2-b77eda39013a rdf:type oepo:Observation ;
+   time:hasTime context:instant_cbbf4416-a4c2-439f-a30a-a9bd869d8f25 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "5.36"^^xsd:decimal .
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:2ebecc64-4ad9-4138-adc2-b77eda39013a .
+
+context:instant_c09f2700-d444-4150-a91c-a59f92a9d81a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.488825"^^xsd:dateTime .
+inra_data:816a08f8-c4f5-4067-85ab-e758d2ed8a21 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c09f2700-d444-4150-a91c-a59f92a9d81a ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.13"^^xsd:decimal .
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:816a08f8-c4f5-4067-85ab-e758d2ed8a21 .
+
+context:instant_05ff49d6-c1f0-41e0-874b-dbc63fa39e34 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.488894"^^xsd:dateTime .
+inra_data:cf27f76f-44b4-4af0-aa4b-4174447e1cea rdf:type oepo:Observation ;
+   time:hasTime context:instant_05ff49d6-c1f0-41e0-874b-dbc63fa39e34 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "3.81"^^xsd:decimal .
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:cf27f76f-44b4-4af0-aa4b-4174447e1cea .
+
+context:instant_ab3aac85-80d9-48ae-9f7c-34278983295d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.488965"^^xsd:dateTime .
+inra_data:470df159-c994-434d-98d9-a1889136ff52 rdf:type oepo:Observation ;
+   time:hasTime context:instant_ab3aac85-80d9-48ae-9f7c-34278983295d ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "3.87"^^xsd:decimal .
+inra_obj:85-RUN-3322-178-R10B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:470df159-c994-434d-98d9-a1889136ff52 .
+
+context:instant_d0317ea9-2591-46b3-a89a-58618dabbf81 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489061"^^xsd:dateTime .
+inra_data:504232ae-c908-4c6f-9ee7-8deff7b83714 rdf:type oepo:Observation ;
+   time:hasTime context:instant_d0317ea9-2591-46b3-a89a-58618dabbf81 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "3.65"^^xsd:decimal .
+inra_obj:85-RUN-3322-226-R11B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:504232ae-c908-4c6f-9ee7-8deff7b83714 .
+
+context:instant_dbdbf835-331e-45ac-a880-3eb3c0ef4f1b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489135"^^xsd:dateTime .
+inra_data:7cf4bb7c-6c44-4679-a774-346d68abf450 rdf:type oepo:Observation ;
+   time:hasTime context:instant_dbdbf835-331e-45ac-a880-3eb3c0ef4f1b ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "5.56"^^xsd:decimal .
+inra_obj:85-RUN-3322-285-R11B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7cf4bb7c-6c44-4679-a774-346d68abf450 .
+
+context:instant_c4aba3ff-274c-4db5-a57a-8484d78b0050 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489193"^^xsd:dateTime .
+inra_data:e7ba9b3d-36e2-4919-bcda-767db7344be7 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c4aba3ff-274c-4db5-a57a-8484d78b0050 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.03"^^xsd:decimal .
+inra_obj:85-RUN-3322-343-R11B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:e7ba9b3d-36e2-4919-bcda-767db7344be7 .
+
+context:instant_ebc4a938-69cd-485d-8468-b7fa9921f5cc rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489252"^^xsd:dateTime .
+inra_data:25542b90-75a8-4647-96dd-26b814d0ee2a rdf:type oepo:Observation ;
+   time:hasTime context:instant_ebc4a938-69cd-485d-8468-b7fa9921f5cc ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.78"^^xsd:decimal .
+inra_obj:85-RUN-3328-177-R10B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:25542b90-75a8-4647-96dd-26b814d0ee2a .
+
+context:instant_6e6716ab-6311-42b5-be6f-eb902708ee0f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489308"^^xsd:dateTime .
+inra_data:22ab247a-2682-4ead-b906-2afb67b28437 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6e6716ab-6311-42b5-be6f-eb902708ee0f ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.19"^^xsd:decimal .
+inra_obj:85-RUN-3328-306-R10B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:22ab247a-2682-4ead-b906-2afb67b28437 .
+
+context:instant_c5c007a1-7125-48ba-aee4-0b81d18ef16e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489364"^^xsd:dateTime .
+inra_data:5c41fab7-55c6-4b2e-b50c-ea822949e02c rdf:type oepo:Observation ;
+   time:hasTime context:instant_c5c007a1-7125-48ba-aee4-0b81d18ef16e ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "3.58"^^xsd:decimal .
+inra_obj:85-RUN-3347-320-R12B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:5c41fab7-55c6-4b2e-b50c-ea822949e02c .
+
+context:instant_9539ce40-758c-41cf-b59d-2c299b035a25 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489440"^^xsd:dateTime .
+inra_data:610db799-9c7a-41ad-a3ab-a2a37cff0ecf rdf:type oepo:Observation ;
+   time:hasTime context:instant_9539ce40-758c-41cf-b59d-2c299b035a25 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.13"^^xsd:decimal .
+inra_obj:85-RUN-3347-330-R12B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:610db799-9c7a-41ad-a3ab-a2a37cff0ecf .
+
+context:instant_00b93280-4a55-44d2-95e7-e8cc13ed225a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489507"^^xsd:dateTime .
+inra_data:11f93024-884f-4f3c-ba1b-47983c0eb263 rdf:type oepo:Observation ;
+   time:hasTime context:instant_00b93280-4a55-44d2-95e7-e8cc13ed225a ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "3.58"^^xsd:decimal .
+inra_obj:85-RUN-3347-342-R13B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:11f93024-884f-4f3c-ba1b-47983c0eb263 .
+
+context:instant_54feb896-a96f-4b63-a8c9-7b0c9711654d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489568"^^xsd:dateTime .
+inra_data:9c893bac-15eb-4ae9-b9d7-cf33cf5af7b5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_54feb896-a96f-4b63-a8c9-7b0c9711654d ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.03"^^xsd:decimal .
+inra_obj:85-RUN-3347-364-R11B6 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:9c893bac-15eb-4ae9-b9d7-cf33cf5af7b5 .
+
+context:instant_e9568739-df44-444a-9e43-722131f6abc7 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489637"^^xsd:dateTime .
+inra_data:73bd5141-39c9-4edc-8114-db20c44db960 rdf:type oepo:Observation ;
+   time:hasTime context:instant_e9568739-df44-444a-9e43-722131f6abc7 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "3.14"^^xsd:decimal .
+inra_obj:85-RUN-3347-368-R12B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:73bd5141-39c9-4edc-8114-db20c44db960 .
+
+context:instant_afb68975-419f-4cfe-be8a-3600b184d4d9 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489711"^^xsd:dateTime .
+inra_data:47686ccd-ce73-4cb9-b561-3da9994f4ce9 rdf:type oepo:Observation ;
+   time:hasTime context:instant_afb68975-419f-4cfe-be8a-3600b184d4d9 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "4.27"^^xsd:decimal .
+inra_obj:85-RUN-3347-396-R12B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:47686ccd-ce73-4cb9-b561-3da9994f4ce9 .
+
+context:instant_185ffc4b-26b8-41bf-bd45-beeb5b08c96d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489789"^^xsd:dateTime .
+inra_data:e608c7a9-5415-4eff-a542-3b7b05f09acb rdf:type oepo:Observation ;
+   time:hasTime context:instant_185ffc4b-26b8-41bf-bd45-beeb5b08c96d ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Aciditetotalegh2so4.Lelectrotitrimetrie ;
+   rdf:value "2.87"^^xsd:decimal .
+inra_obj:85-RUN-3347-431-R11B7 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:e608c7a9-5415-4eff-a542-3b7b05f09acb .
+
+context:instant_a6978bf9-bdf7-42d4-ba40-6a0659175777 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489855"^^xsd:dateTime .
+inra_data:4c890828-1051-45d6-8bad-dd956c59b969 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a6978bf9-bdf7-42d4-ba40-6a0659175777 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "20.6"^^xsd:decimal .
+inra_obj:57-VDQA-G09-B rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:4c890828-1051-45d6-8bad-dd956c59b969 .
+
+context:instant_8c6fc148-afd8-457d-bead-b88eac1d403c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489913"^^xsd:dateTime .
+inra_data:890ee6a3-b511-4387-bdd4-0d6884f96248 rdf:type oepo:Observation ;
+   time:hasTime context:instant_8c6fc148-afd8-457d-bead-b88eac1d403c ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "23.8"^^xsd:decimal .
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:890ee6a3-b511-4387-bdd4-0d6884f96248 .
+
+context:instant_6ce89438-d6cb-4344-b249-0cd725051564 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.489971"^^xsd:dateTime .
+inra_data:d8f73e40-7077-458f-b50d-5fc567c7eb10 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6ce89438-d6cb-4344-b249-0cd725051564 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "25.2"^^xsd:decimal .
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:d8f73e40-7077-458f-b50d-5fc567c7eb10 .
+
+context:instant_186373b7-5782-48c5-a55f-7aa35e93d070 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490066"^^xsd:dateTime .
+inra_data:b7274cec-1cc1-46e5-adfe-4691becab149 rdf:type oepo:Observation ;
+   time:hasTime context:instant_186373b7-5782-48c5-a55f-7aa35e93d070 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "24.2"^^xsd:decimal .
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:b7274cec-1cc1-46e5-adfe-4691becab149 .
+
+context:instant_5bad426c-b259-4b06-bea5-5baa340f8569 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490147"^^xsd:dateTime .
+inra_data:2a7e8c52-a471-4aa7-bf37-e319f57f9077 rdf:type oepo:Observation ;
+   time:hasTime context:instant_5bad426c-b259-4b06-bea5-5baa340f8569 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "25.6"^^xsd:decimal .
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:2a7e8c52-a471-4aa7-bf37-e319f57f9077 .
+
+context:instant_897ae877-ea85-437b-8bbd-aae1300c4350 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490210"^^xsd:dateTime .
+inra_data:e2b486a3-f8d6-448a-b98a-9008360f7115 rdf:type oepo:Observation ;
+   time:hasTime context:instant_897ae877-ea85-437b-8bbd-aae1300c4350 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "20.4"^^xsd:decimal .
+inra_obj:85-RUN-3322-178-R10B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:e2b486a3-f8d6-448a-b98a-9008360f7115 .
+
+context:instant_2acf7663-746f-4055-8623-36bc0665145d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490268"^^xsd:dateTime .
+inra_data:1dab8f12-53ec-480a-b164-7498a14b8f5b rdf:type oepo:Observation ;
+   time:hasTime context:instant_2acf7663-746f-4055-8623-36bc0665145d ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "26.0"^^xsd:decimal .
+inra_obj:85-RUN-3322-226-R11B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:1dab8f12-53ec-480a-b164-7498a14b8f5b .
+
+context:instant_f90549ac-6d64-4a99-a80b-063a83a3082e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490374"^^xsd:dateTime .
+inra_data:263fa51d-f7f9-4092-845d-3cb701fffce4 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f90549ac-6d64-4a99-a80b-063a83a3082e ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "25.4"^^xsd:decimal .
+inra_obj:85-RUN-3322-285-R11B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:263fa51d-f7f9-4092-845d-3cb701fffce4 .
+
+context:instant_f07c3a76-586d-4790-b40e-e732e71d11de rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490472"^^xsd:dateTime .
+inra_data:f1354732-5321-466f-8941-18cfce260acc rdf:type oepo:Observation ;
+   time:hasTime context:instant_f07c3a76-586d-4790-b40e-e732e71d11de ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "22.0"^^xsd:decimal .
+inra_obj:85-RUN-3322-343-R11B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:f1354732-5321-466f-8941-18cfce260acc .
+
+context:instant_678ffaff-ee5c-4f50-8aec-6552357febfa rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490559"^^xsd:dateTime .
+inra_data:84726c0c-96f6-4769-ae8b-b4df2433d114 rdf:type oepo:Observation ;
+   time:hasTime context:instant_678ffaff-ee5c-4f50-8aec-6552357febfa ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "25.0"^^xsd:decimal .
+inra_obj:85-RUN-3328-177-R10B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:84726c0c-96f6-4769-ae8b-b4df2433d114 .
+
+context:instant_21bb662b-6a0f-43ea-9c70-df151828d599 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490666"^^xsd:dateTime .
+inra_data:343a22b9-4e7b-47a5-8d82-0e316583fef6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_21bb662b-6a0f-43ea-9c70-df151828d599 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "25.0"^^xsd:decimal .
+inra_obj:85-RUN-3328-306-R10B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:343a22b9-4e7b-47a5-8d82-0e316583fef6 .
+
+context:instant_391b7324-3836-4567-b0eb-acf271f1f136 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490772"^^xsd:dateTime .
+inra_data:d8f366cf-add0-4e79-972d-de077dadab6a rdf:type oepo:Observation ;
+   time:hasTime context:instant_391b7324-3836-4567-b0eb-acf271f1f136 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "23.2"^^xsd:decimal .
+inra_obj:85-RUN-3347-320-R12B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:d8f366cf-add0-4e79-972d-de077dadab6a .
+
+context:instant_0f5fe90a-0536-4cc9-a272-75cf91cfda9d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.490882"^^xsd:dateTime .
+inra_data:ff8935bd-c2e8-482e-a485-f4a7c945ce4a rdf:type oepo:Observation ;
+   time:hasTime context:instant_0f5fe90a-0536-4cc9-a272-75cf91cfda9d ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "24.6"^^xsd:decimal .
+inra_obj:85-RUN-3347-330-R12B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:ff8935bd-c2e8-482e-a485-f4a7c945ce4a .
+
+context:instant_6d07c3da-2100-4d47-8962-45958f9991ae rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491006"^^xsd:dateTime .
+inra_data:35882051-8613-4ce4-8c57-04ad367d9f27 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6d07c3da-2100-4d47-8962-45958f9991ae ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "23.4"^^xsd:decimal .
+inra_obj:85-RUN-3347-342-R13B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:35882051-8613-4ce4-8c57-04ad367d9f27 .
+
+context:instant_95ff8749-f607-43d0-861f-3c40afd9bdba rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491116"^^xsd:dateTime .
+inra_data:535e4672-e438-47d0-9370-c6b4d726c339 rdf:type oepo:Observation ;
+   time:hasTime context:instant_95ff8749-f607-43d0-861f-3c40afd9bdba ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "23.4"^^xsd:decimal .
+inra_obj:85-RUN-3347-364-R11B6 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:535e4672-e438-47d0-9370-c6b4d726c339 .
+
+context:instant_1eaf5ca5-69ce-41fe-8243-6f0943023330 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491222"^^xsd:dateTime .
+inra_data:b459ac2b-e07d-43e3-bec0-e8d2a2bcabb5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_1eaf5ca5-69ce-41fe-8243-6f0943023330 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "25.4"^^xsd:decimal .
+inra_obj:85-RUN-3347-368-R12B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:b459ac2b-e07d-43e3-bec0-e8d2a2bcabb5 .
+
+context:instant_a28e2fa1-851c-4c9b-bab8-7b21617a7dfe rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491327"^^xsd:dateTime .
+inra_data:dddd303d-185b-41ea-8f61-cdb20ceaaff0 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a28e2fa1-851c-4c9b-bab8-7b21617a7dfe ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "23.6"^^xsd:decimal .
+inra_obj:85-RUN-3347-396-R12B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:dddd303d-185b-41ea-8f61-cdb20ceaaff0 .
+
+context:instant_9e762474-c47a-4c11-8427-87080cc50459 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491437"^^xsd:dateTime .
+inra_data:9a9a71d1-01c0-4cfe-8bbe-cf940e2de588 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9e762474-c47a-4c11-8427-87080cc50459 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Degrebrix.brefractometrie ;
+   rdf:value "21.2"^^xsd:decimal .
+inra_obj:85-RUN-3347-431-R11B7 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:9a9a71d1-01c0-4cfe-8bbe-cf940e2de588 .
+
+context:instant_78880c54-69a3-4baf-86b7-0d238e782f54 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491532"^^xsd:dateTime .
+inra_data:c0c3e29c-bf07-4446-b734-4f8088bcd43f rdf:type oepo:Observation ;
+   time:hasTime context:instant_78880c54-69a3-4baf-86b7-0d238e782f54 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:57-VDQA-G09-B rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:c0c3e29c-bf07-4446-b734-4f8088bcd43f .
+
+context:instant_50ba15da-d488-48a4-8c37-cffeb54903b4 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491629"^^xsd:dateTime .
+inra_data:f4f31325-fee8-42a9-8666-505df62726e3 rdf:type oepo:Observation ;
+   time:hasTime context:instant_50ba15da-d488-48a4-8c37-cffeb54903b4 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:f4f31325-fee8-42a9-8666-505df62726e3 .
+
+context:instant_f8556eec-1234-434f-bdf6-bacfc294a1cf rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491752"^^xsd:dateTime .
+inra_data:214ead8e-16cb-48a3-95b7-e63d63fd26c9 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f8556eec-1234-434f-bdf6-bacfc294a1cf ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:214ead8e-16cb-48a3-95b7-e63d63fd26c9 .
+
+context:instant_b5922d81-8378-4ecf-87f5-e65d0a75d4ca rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491872"^^xsd:dateTime .
+inra_data:2554e0a9-ad1b-4838-acc4-efd1e95463c5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_b5922d81-8378-4ecf-87f5-e65d0a75d4ca ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:2554e0a9-ad1b-4838-acc4-efd1e95463c5 .
+
+context:instant_d6cf5a63-fadc-4153-bb4b-b6e171c4c29c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.491977"^^xsd:dateTime .
+inra_data:82b77960-4d67-4227-832d-29ef7e960a64 rdf:type oepo:Observation ;
+   time:hasTime context:instant_d6cf5a63-fadc-4153-bb4b-b6e171c4c29c ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:82b77960-4d67-4227-832d-29ef7e960a64 .
+
+context:instant_e7442089-c998-40c6-b59b-7ef508afd5da rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492085"^^xsd:dateTime .
+inra_data:92579df0-08ce-44bf-815a-d990d5a615b1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_e7442089-c998-40c6-b59b-7ef508afd5da ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3322-178-R10B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:92579df0-08ce-44bf-815a-d990d5a615b1 .
+
+context:instant_726de859-f123-4f92-95e8-2c5338621369 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492191"^^xsd:dateTime .
+inra_data:dfb6fba8-2186-43e4-9009-17fdff5abdb1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_726de859-f123-4f92-95e8-2c5338621369 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3322-226-R11B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:dfb6fba8-2186-43e4-9009-17fdff5abdb1 .
+
+context:instant_034543a6-6dac-41a5-9103-14b43ad572f5 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492293"^^xsd:dateTime .
+inra_data:c4fe9417-d5d0-457c-a91c-1f4af62025a5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_034543a6-6dac-41a5-9103-14b43ad572f5 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3322-285-R11B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:c4fe9417-d5d0-457c-a91c-1f4af62025a5 .
+
+context:instant_def35342-9f42-4091-8e3a-8b1c08bb5271 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492418"^^xsd:dateTime .
+inra_data:7ac6b3aa-bb64-4aec-8a1e-68c8990b9858 rdf:type oepo:Observation ;
+   time:hasTime context:instant_def35342-9f42-4091-8e3a-8b1c08bb5271 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3322-343-R11B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7ac6b3aa-bb64-4aec-8a1e-68c8990b9858 .
+
+context:instant_9dbe7fde-f445-4fe5-853e-70c7bf7022a3 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492514"^^xsd:dateTime .
+inra_data:f3fb8b3f-121e-4cab-941e-786ffb43a6f3 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9dbe7fde-f445-4fe5-853e-70c7bf7022a3 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3328-177-R10B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:f3fb8b3f-121e-4cab-941e-786ffb43a6f3 .
+
+context:instant_cedaa9d9-e4dc-45e3-aed0-81a2bc4c1b63 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492625"^^xsd:dateTime .
+inra_data:02ab4097-f892-4b9b-993b-fae448e28d45 rdf:type oepo:Observation ;
+   time:hasTime context:instant_cedaa9d9-e4dc-45e3-aed0-81a2bc4c1b63 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3328-306-R10B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:02ab4097-f892-4b9b-993b-fae448e28d45 .
+
+context:instant_0b4f682a-c8bc-4b83-b622-47d3de1b75bf rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492733"^^xsd:dateTime .
+inra_data:55d6b03d-71ad-4811-bce4-8fe8d2e1610b rdf:type oepo:Observation ;
+   time:hasTime context:instant_0b4f682a-c8bc-4b83-b622-47d3de1b75bf ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3347-320-R12B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:55d6b03d-71ad-4811-bce4-8fe8d2e1610b .
+
+context:instant_eee80dd3-96e9-4a5a-9382-52fd6b1838e8 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492844"^^xsd:dateTime .
+inra_data:9003c2dc-0955-4e7a-8d24-2acc838b8b9d rdf:type oepo:Observation ;
+   time:hasTime context:instant_eee80dd3-96e9-4a5a-9382-52fd6b1838e8 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3347-330-R12B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:9003c2dc-0955-4e7a-8d24-2acc838b8b9d .
+
+context:instant_40b6078d-7ca8-42ce-a4e4-308933eef06e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.492950"^^xsd:dateTime .
+inra_data:0cd445b6-9d40-4444-a17e-7188f506684e rdf:type oepo:Observation ;
+   time:hasTime context:instant_40b6078d-7ca8-42ce-a4e4-308933eef06e ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3347-342-R13B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:0cd445b6-9d40-4444-a17e-7188f506684e .
+
+context:instant_779952bf-34cb-4eac-9aaf-6b3486a15ec7 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493059"^^xsd:dateTime .
+inra_data:b58497fa-0be3-4af8-8d8e-a74cd65ced7a rdf:type oepo:Observation ;
+   time:hasTime context:instant_779952bf-34cb-4eac-9aaf-6b3486a15ec7 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3347-364-R11B6 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:b58497fa-0be3-4af8-8d8e-a74cd65ced7a .
+
+context:instant_b2593b24-735b-4ad3-82c1-d6780392a765 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493181"^^xsd:dateTime .
+inra_data:384af9f0-5c1a-4cd4-8b96-66058d59593a rdf:type oepo:Observation ;
+   time:hasTime context:instant_b2593b24-735b-4ad3-82c1-d6780392a765 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3347-368-R12B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:384af9f0-5c1a-4cd4-8b96-66058d59593a .
+
+context:instant_28d23cb6-5255-41dd-be4e-dd96f5f8d4a1 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493282"^^xsd:dateTime .
+inra_data:161a9244-80fe-4be0-a0e4-0585e9f8b977 rdf:type oepo:Observation ;
+   time:hasTime context:instant_28d23cb6-5255-41dd-be4e-dd96f5f8d4a1 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3347-396-R12B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:161a9244-80fe-4be0-a0e4-0585e9f8b977 .
+
+context:instant_7d99c3b6-0df0-40a0-b9af-f8003ee70da2 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493388"^^xsd:dateTime .
+inra_data:3b18b6c4-d621-4f3f-8357-3ab19e7f6bb9 rdf:type oepo:Observation ;
+   time:hasTime context:instant_7d99c3b6-0df0-40a0-b9af-f8003ee70da2 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:85-RUN-3347-431-R11B7 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:3b18b6c4-d621-4f3f-8357-3ab19e7f6bb9 .
+
+context:instant_bf9a8f71-1f67-4807-a0ba-7125c87d72a6 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493483"^^xsd:dateTime .
+inra_data:67c29f69-0346-48f8-b6e0-a631cddacc80 rdf:type oepo:Observation ;
+   time:hasTime context:instant_bf9a8f71-1f67-4807-a0ba-7125c87d72a6 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.24"^^xsd:decimal .
+inra_obj:57-VDQA-G09-B rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:67c29f69-0346-48f8-b6e0-a631cddacc80 .
+
+context:instant_c2a165ad-274f-4ec6-92fe-9681989e5190 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493554"^^xsd:dateTime .
+inra_data:a5442dc3-06e5-416f-bf00-4163d7e00957 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c2a165ad-274f-4ec6-92fe-9681989e5190 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.18"^^xsd:decimal .
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:a5442dc3-06e5-416f-bf00-4163d7e00957 .
+
+context:instant_10a358c0-4837-4cde-a91e-fa480ddf66fa rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493629"^^xsd:dateTime .
+inra_data:ee4d6faf-6801-4f56-b5df-c86ece5f76f5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_10a358c0-4837-4cde-a91e-fa480ddf66fa ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.19"^^xsd:decimal .
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:ee4d6faf-6801-4f56-b5df-c86ece5f76f5 .
+
+context:instant_73d5382e-f288-458e-8b96-2c70fcf497a4 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493691"^^xsd:dateTime .
+inra_data:64c8cb33-7a65-49a3-a81b-790727eadb78 rdf:type oepo:Observation ;
+   time:hasTime context:instant_73d5382e-f288-458e-8b96-2c70fcf497a4 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.29"^^xsd:decimal .
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:64c8cb33-7a65-49a3-a81b-790727eadb78 .
+
+context:instant_1c9a02be-be75-40a3-8920-f1111f76bcbb rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493784"^^xsd:dateTime .
+inra_data:2982cb8e-51a8-4be2-ad4b-fd2dce2ff717 rdf:type oepo:Observation ;
+   time:hasTime context:instant_1c9a02be-be75-40a3-8920-f1111f76bcbb ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.19"^^xsd:decimal .
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:2982cb8e-51a8-4be2-ad4b-fd2dce2ff717 .
+
+context:instant_13f15a0c-7f5e-437d-9e4d-7faa2e4d8c11 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493853"^^xsd:dateTime .
+inra_data:b5eec148-7ed9-4b0d-a8eb-8a0a47661cb6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_13f15a0c-7f5e-437d-9e4d-7faa2e4d8c11 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.27"^^xsd:decimal .
+inra_obj:85-RUN-3322-178-R10B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:b5eec148-7ed9-4b0d-a8eb-8a0a47661cb6 .
+
+context:instant_d5077b1e-97e1-49f9-b691-57af5e47e6f8 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.493931"^^xsd:dateTime .
+inra_data:7b3efc0d-d83d-421c-a29e-034dc1f10a58 rdf:type oepo:Observation ;
+   time:hasTime context:instant_d5077b1e-97e1-49f9-b691-57af5e47e6f8 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.37"^^xsd:decimal .
+inra_obj:85-RUN-3322-226-R11B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7b3efc0d-d83d-421c-a29e-034dc1f10a58 .
+
+context:instant_53057d33-cff4-4065-a742-17c732d78283 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.494037"^^xsd:dateTime .
+inra_data:f39d07be-615c-40d2-b522-c6f44be3d7b8 rdf:type oepo:Observation ;
+   time:hasTime context:instant_53057d33-cff4-4065-a742-17c732d78283 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.04"^^xsd:decimal .
+inra_obj:85-RUN-3322-285-R11B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:f39d07be-615c-40d2-b522-c6f44be3d7b8 .
+
+context:instant_88ef8257-fe8a-46b7-8d06-0f668a8faf80 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.494238"^^xsd:dateTime .
+inra_data:715723b3-5687-403d-a0dc-a9e8e9c27c86 rdf:type oepo:Observation ;
+   time:hasTime context:instant_88ef8257-fe8a-46b7-8d06-0f668a8faf80 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.13"^^xsd:decimal .
+inra_obj:85-RUN-3322-343-R11B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:715723b3-5687-403d-a0dc-a9e8e9c27c86 .
+
+context:instant_095b48e0-ea71-4a52-8304-9ccf5c550044 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.494445"^^xsd:dateTime .
+inra_data:7ea4f79e-d676-49fd-853b-6ae9ecc5c1ed rdf:type oepo:Observation ;
+   time:hasTime context:instant_095b48e0-ea71-4a52-8304-9ccf5c550044 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.06"^^xsd:decimal .
+inra_obj:85-RUN-3328-177-R10B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7ea4f79e-d676-49fd-853b-6ae9ecc5c1ed .
+
+context:instant_013940f3-118c-45ff-b199-103ce2cee904 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.494680"^^xsd:dateTime .
+inra_data:44c41657-e33d-43f3-ba24-c5abb3008058 rdf:type oepo:Observation ;
+   time:hasTime context:instant_013940f3-118c-45ff-b199-103ce2cee904 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.11"^^xsd:decimal .
+inra_obj:85-RUN-3328-306-R10B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:44c41657-e33d-43f3-ba24-c5abb3008058 .
+
+context:instant_26cdbb2d-3a46-4ac2-8d4b-26f79494fa7d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.494880"^^xsd:dateTime .
+inra_data:7c92d682-16a4-4f59-8081-6e7bd09beac9 rdf:type oepo:Observation ;
+   time:hasTime context:instant_26cdbb2d-3a46-4ac2-8d4b-26f79494fa7d ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.15"^^xsd:decimal .
+inra_obj:85-RUN-3347-320-R12B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7c92d682-16a4-4f59-8081-6e7bd09beac9 .
+
+context:instant_10601c6b-e5e7-46fd-ad57-4a807ddc2c24 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.495059"^^xsd:dateTime .
+inra_data:b9edfa62-3af8-4532-955c-cb6b12374fd7 rdf:type oepo:Observation ;
+   time:hasTime context:instant_10601c6b-e5e7-46fd-ad57-4a807ddc2c24 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.16"^^xsd:decimal .
+inra_obj:85-RUN-3347-330-R12B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:b9edfa62-3af8-4532-955c-cb6b12374fd7 .
+
+context:instant_f8f7e06b-8a30-407c-9fcd-ac0f38bb24da rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.495185"^^xsd:dateTime .
+inra_data:dfac54ed-62d1-4955-8aab-5b01ea82c984 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f8f7e06b-8a30-407c-9fcd-ac0f38bb24da ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.05"^^xsd:decimal .
+inra_obj:85-RUN-3347-342-R13B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:dfac54ed-62d1-4955-8aab-5b01ea82c984 .
+
+context:instant_3af14116-6a23-4b59-99bc-6a9274e94fc7 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.495304"^^xsd:dateTime .
+inra_data:370cd5fd-3549-48f1-9a12-e9f862bb9bb1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3af14116-6a23-4b59-99bc-6a9274e94fc7 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.07"^^xsd:decimal .
+inra_obj:85-RUN-3347-364-R11B6 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:370cd5fd-3549-48f1-9a12-e9f862bb9bb1 .
+
+context:instant_fdb1baa2-4317-403a-8e0a-90ac41d7691a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.495416"^^xsd:dateTime .
+inra_data:2d652f65-fccd-43fa-a9e6-789b1419b1dd rdf:type oepo:Observation ;
+   time:hasTime context:instant_fdb1baa2-4317-403a-8e0a-90ac41d7691a ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.14"^^xsd:decimal .
+inra_obj:85-RUN-3347-368-R12B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:2d652f65-fccd-43fa-a9e6-789b1419b1dd .
+
+context:instant_2529e7b9-8712-4a31-a9b8-67ef79ff3ca6 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.495542"^^xsd:dateTime .
+inra_data:c2dde25d-0596-4a1e-9206-885ecf46a4eb rdf:type oepo:Observation ;
+   time:hasTime context:instant_2529e7b9-8712-4a31-a9b8-67ef79ff3ca6 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.12"^^xsd:decimal .
+inra_obj:85-RUN-3347-396-R12B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:c2dde25d-0596-4a1e-9206-885ecf46a4eb .
+
+context:instant_c49b0758-a878-4591-8513-62cd3e303d5f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.495721"^^xsd:dateTime .
+inra_data:57bb36f4-eefe-4050-b4f4-b04da6033a42 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c49b0758-a878-4591-8513-62cd3e303d5f ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:pHpHmetrie ;
+   rdf:value "3.14"^^xsd:decimal .
+inra_obj:85-RUN-3347-431-R11B7 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:57bb36f4-eefe-4050-b4f4-b04da6033a42 .
+
+context:instant_db4cf6e5-7483-4c83-9b5d-080ea2794c6a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.495907"^^xsd:dateTime .
+inra_data:12571255-3afa-49e7-b504-f6f4c2e01b1a rdf:type oepo:Observation ;
+   time:hasTime context:instant_db4cf6e5-7483-4c83-9b5d-080ea2794c6a ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "3.43"^^xsd:decimal .
+inra_obj:57-VDQA-G09-B rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:12571255-3afa-49e7-b504-f6f4c2e01b1a .
+
+context:instant_cf2165d3-5a9a-4dc5-b17b-dbcd5d65f032 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496038"^^xsd:dateTime .
+inra_data:41f6788e-ea2f-45c7-8eff-a6b17087fe5d rdf:type oepo:Observation ;
+   time:hasTime context:instant_cf2165d3-5a9a-4dc5-b17b-dbcd5d65f032 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.06"^^xsd:decimal .
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:41f6788e-ea2f-45c7-8eff-a6b17087fe5d .
+
+context:instant_bc02b585-765e-40e8-9bc7-ce8dd7c91ea0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496159"^^xsd:dateTime .
+inra_data:331072ea-a695-4419-86f6-e5d8ca85b4b9 rdf:type oepo:Observation ;
+   time:hasTime context:instant_bc02b585-765e-40e8-9bc7-ce8dd7c91ea0 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.67"^^xsd:decimal .
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:331072ea-a695-4419-86f6-e5d8ca85b4b9 .
+
+context:instant_6d524dfb-9a42-4b94-8659-2947801acc4c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496290"^^xsd:dateTime .
+inra_data:ffaa5453-7f51-4ba5-aa6d-ec80354aae20 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6d524dfb-9a42-4b94-8659-2947801acc4c ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.68"^^xsd:decimal .
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:ffaa5453-7f51-4ba5-aa6d-ec80354aae20 .
+
+context:instant_11184460-2fd5-4a90-be2b-96aa33ad8426 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496443"^^xsd:dateTime .
+inra_data:f98f36fd-dcb5-489a-b105-1622cbd9c7f1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_11184460-2fd5-4a90-be2b-96aa33ad8426 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "0.96"^^xsd:decimal .
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:f98f36fd-dcb5-489a-b105-1622cbd9c7f1 .
+
+context:instant_10503e8d-5354-4004-991a-f5d200da8312 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496551"^^xsd:dateTime .
+inra_data:d8794ede-cbbd-4545-a450-6108759dfa7b rdf:type oepo:Observation ;
+   time:hasTime context:instant_10503e8d-5354-4004-991a-f5d200da8312 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.60"^^xsd:decimal .
+inra_obj:85-RUN-3322-178-R10B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:d8794ede-cbbd-4545-a450-6108759dfa7b .
+
+context:instant_18e5d6c5-f6b5-43cb-a5ff-54cb3cb43ee9 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496698"^^xsd:dateTime .
+inra_data:6ca3b12d-95f0-4343-8a93-5c03c66fb9c6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_18e5d6c5-f6b5-43cb-a5ff-54cb3cb43ee9 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "0.75"^^xsd:decimal .
+inra_obj:85-RUN-3322-226-R11B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:6ca3b12d-95f0-4343-8a93-5c03c66fb9c6 .
+
+context:instant_2b0ac6a8-83b9-4c44-b4d4-c2c64bb724a5 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496825"^^xsd:dateTime .
+inra_data:5376e9e8-673f-429d-9909-f6011796190c rdf:type oepo:Observation ;
+   time:hasTime context:instant_2b0ac6a8-83b9-4c44-b4d4-c2c64bb724a5 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "0.77"^^xsd:decimal .
+inra_obj:85-RUN-3322-285-R11B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:5376e9e8-673f-429d-9909-f6011796190c .
+
+context:instant_cb3d7ff1-7ad4-4291-84aa-b2d1acdc6e46 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.496948"^^xsd:dateTime .
+inra_data:e7e25ca1-a3ec-473f-b989-def46fd802af rdf:type oepo:Observation ;
+   time:hasTime context:instant_cb3d7ff1-7ad4-4291-84aa-b2d1acdc6e46 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.16"^^xsd:decimal .
+inra_obj:85-RUN-3322-343-R11B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:e7e25ca1-a3ec-473f-b989-def46fd802af .
+
+context:instant_9b8452c6-c730-4d34-a051-c7791f5d3c38 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497068"^^xsd:dateTime .
+inra_data:436e3a5d-76f8-4421-8644-9144fe1ba303 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9b8452c6-c730-4d34-a051-c7791f5d3c38 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.18"^^xsd:decimal .
+inra_obj:85-RUN-3328-177-R10B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:436e3a5d-76f8-4421-8644-9144fe1ba303 .
+
+context:instant_d99249fe-1d5b-47a3-99ef-10118afeef8b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497184"^^xsd:dateTime .
+inra_data:bca79d3b-f9f1-42ca-b17f-82b579ed4a79 rdf:type oepo:Observation ;
+   time:hasTime context:instant_d99249fe-1d5b-47a3-99ef-10118afeef8b ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.05"^^xsd:decimal .
+inra_obj:85-RUN-3328-306-R10B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:bca79d3b-f9f1-42ca-b17f-82b579ed4a79 .
+
+context:instant_3c00bc7a-ae50-4551-9a71-79107228066e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497301"^^xsd:dateTime .
+inra_data:9cb642bc-daa3-45df-aaaa-6ef24077f5b3 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3c00bc7a-ae50-4551-9a71-79107228066e ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.13"^^xsd:decimal .
+inra_obj:85-RUN-3347-320-R12B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:9cb642bc-daa3-45df-aaaa-6ef24077f5b3 .
+
+context:instant_b9ebdf6f-236d-4de7-a187-ee48636ac107 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497437"^^xsd:dateTime .
+inra_data:7b8e712e-053e-47b2-a885-1838cfc64aa6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_b9ebdf6f-236d-4de7-a187-ee48636ac107 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "0.99"^^xsd:decimal .
+inra_obj:85-RUN-3347-330-R12B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7b8e712e-053e-47b2-a885-1838cfc64aa6 .
+
+context:instant_5d011c60-4a3e-46ba-90ba-e01a36be09ea rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497543"^^xsd:dateTime .
+inra_data:220f60ef-da9b-4dfb-a534-3a90b403b982 rdf:type oepo:Observation ;
+   time:hasTime context:instant_5d011c60-4a3e-46ba-90ba-e01a36be09ea ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "0.91"^^xsd:decimal .
+inra_obj:85-RUN-3347-342-R13B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:220f60ef-da9b-4dfb-a534-3a90b403b982 .
+
+context:instant_db24eddd-98f8-4a92-af95-02f5ebb74f42 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497653"^^xsd:dateTime .
+inra_data:c3db09b5-aa3c-4baf-87c0-78724cee255f rdf:type oepo:Observation ;
+   time:hasTime context:instant_db24eddd-98f8-4a92-af95-02f5ebb74f42 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.08"^^xsd:decimal .
+inra_obj:85-RUN-3347-364-R11B6 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:c3db09b5-aa3c-4baf-87c0-78724cee255f .
+
+context:instant_fb120698-5c41-4541-9bda-d14a0ae356a7 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497768"^^xsd:dateTime .
+inra_data:5cfea1c2-ed8c-4128-9787-5fb2308bcfdd rdf:type oepo:Observation ;
+   time:hasTime context:instant_fb120698-5c41-4541-9bda-d14a0ae356a7 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "0.90"^^xsd:decimal .
+inra_obj:85-RUN-3347-368-R12B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:5cfea1c2-ed8c-4128-9787-5fb2308bcfdd .
+
+context:instant_c3486876-0d30-40d1-9648-70d686914552 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497862"^^xsd:dateTime .
+inra_data:3622d7d8-3081-4643-8028-183661c1e84f rdf:type oepo:Observation ;
+   time:hasTime context:instant_c3486876-0d30-40d1-9648-70d686914552 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.22"^^xsd:decimal .
+inra_obj:85-RUN-3347-396-R12B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:3622d7d8-3081-4643-8028-183661c1e84f .
+
+context:instant_6dcf19ca-dd33-4abe-9fde-6a567a143d11 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.497975"^^xsd:dateTime .
+inra_data:7c6c04d3-29d4-43a5-b0cb-513972120b9c rdf:type oepo:Observation ;
+   time:hasTime context:instant_6dcf19ca-dd33-4abe-9fde-6a567a143d11 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poids1Baieg ;
+   rdf:value "1.33"^^xsd:decimal .
+inra_obj:85-RUN-3347-431-R11B7 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:7c6c04d3-29d4-43a5-b0cb-513972120b9c .
+
+context:instant_52c311c5-dbef-49b0-a024-011d70cd85f5 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498132"^^xsd:dateTime .
+inra_data:fd38e95a-c65a-441b-8c30-530c8bd3e824 rdf:type oepo:Observation ;
+   time:hasTime context:instant_52c311c5-dbef-49b0-a024-011d70cd85f5 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "686.8"^^xsd:decimal .
+inra_obj:57-VDQA-G09-B rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:fd38e95a-c65a-441b-8c30-530c8bd3e824 .
+
+context:instant_0f37b74c-204d-48b4-95bf-180cdf1e7314 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498260"^^xsd:dateTime .
+inra_data:1c2c2780-2508-4e0e-88c3-faea0fbd063c rdf:type oepo:Observation ;
+   time:hasTime context:instant_0f37b74c-204d-48b4-95bf-180cdf1e7314 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "211.5"^^xsd:decimal .
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:1c2c2780-2508-4e0e-88c3-faea0fbd063c .
+
+context:instant_a30f6a78-48fa-48e9-9b09-a8f22f08d34a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498377"^^xsd:dateTime .
+inra_data:cb8fa468-2de9-4de7-8fc7-628ac4cdaa37 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a30f6a78-48fa-48e9-9b09-a8f22f08d34a ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "333.8"^^xsd:decimal .
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:cb8fa468-2de9-4de7-8fc7-628ac4cdaa37 .
+
+context:instant_233a0090-44c0-4409-820f-6cbedd5a5dba rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498490"^^xsd:dateTime .
+inra_data:3042c5aa-e69f-488a-a6a8-4a27dc6466c2 rdf:type oepo:Observation ;
+   time:hasTime context:instant_233a0090-44c0-4409-820f-6cbedd5a5dba ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "336.0"^^xsd:decimal .
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:3042c5aa-e69f-488a-a6a8-4a27dc6466c2 .
+
+context:instant_76dd8761-1b31-4e5d-9bb1-43504994785c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498595"^^xsd:dateTime .
+inra_data:dab01151-3422-471e-896f-141a9792c203 rdf:type oepo:Observation ;
+   time:hasTime context:instant_76dd8761-1b31-4e5d-9bb1-43504994785c ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "192.8"^^xsd:decimal .
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:dab01151-3422-471e-896f-141a9792c203 .
+
+context:instant_6b6f4ea5-b694-47b8-b45c-2333fcd47287 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498704"^^xsd:dateTime .
+inra_data:21636297-548c-4401-8328-5f8e556d5ca5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6b6f4ea5-b694-47b8-b45c-2333fcd47287 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "319.5"^^xsd:decimal .
+inra_obj:85-RUN-3322-178-R10B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:21636297-548c-4401-8328-5f8e556d5ca5 .
+
+context:instant_952fbcda-f387-4766-bba8-6e54134a20d1 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498817"^^xsd:dateTime .
+inra_data:45a73891-f9ec-41ab-ad88-19a9f936b4ca rdf:type oepo:Observation ;
+   time:hasTime context:instant_952fbcda-f387-4766-bba8-6e54134a20d1 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "149.5"^^xsd:decimal .
+inra_obj:85-RUN-3322-226-R11B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:45a73891-f9ec-41ab-ad88-19a9f936b4ca .
+
+context:instant_1c9c752e-1eb9-4b5a-a2f0-1a2407fa5a58 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498929"^^xsd:dateTime .
+inra_data:55d16c67-eb95-4d4e-87db-d84b34b283bd rdf:type oepo:Observation ;
+   time:hasTime context:instant_1c9c752e-1eb9-4b5a-a2f0-1a2407fa5a58 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "154.3"^^xsd:decimal .
+inra_obj:85-RUN-3322-285-R11B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:55d16c67-eb95-4d4e-87db-d84b34b283bd .
+
+context:instant_8c6f5b17-4e02-4f92-9153-5264fad3e2c3 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.498998"^^xsd:dateTime .
+inra_data:9380ae8e-4e9e-49c2-a511-c9d593041ea1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_8c6f5b17-4e02-4f92-9153-5264fad3e2c3 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "231.9"^^xsd:decimal .
+inra_obj:85-RUN-3322-343-R11B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:9380ae8e-4e9e-49c2-a511-c9d593041ea1 .
+
+context:instant_8d37c86e-8ff5-470a-a615-18ac24395b2f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499061"^^xsd:dateTime .
+inra_data:5e274ba1-325c-4842-99b5-2e2bbac949af rdf:type oepo:Observation ;
+   time:hasTime context:instant_8d37c86e-8ff5-470a-a615-18ac24395b2f ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "236.8"^^xsd:decimal .
+inra_obj:85-RUN-3328-177-R10B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:5e274ba1-325c-4842-99b5-2e2bbac949af .
+
+context:instant_079f6f12-2aeb-4bac-8c80-362e5eff2db3 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499131"^^xsd:dateTime .
+inra_data:b53c911b-758d-4a8d-83b4-0b6e64055ad8 rdf:type oepo:Observation ;
+   time:hasTime context:instant_079f6f12-2aeb-4bac-8c80-362e5eff2db3 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "209.7"^^xsd:decimal .
+inra_obj:85-RUN-3328-306-R10B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:b53c911b-758d-4a8d-83b4-0b6e64055ad8 .
+
+context:instant_c7cbdb7f-0a87-40fc-9095-18cef15e7072 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499205"^^xsd:dateTime .
+inra_data:d9e94115-d337-4efd-98e1-306a7c439325 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c7cbdb7f-0a87-40fc-9095-18cef15e7072 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "225.4"^^xsd:decimal .
+inra_obj:85-RUN-3347-320-R12B3 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:d9e94115-d337-4efd-98e1-306a7c439325 .
+
+context:instant_bdbcd149-af3d-411e-861a-6e096a10041a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499269"^^xsd:dateTime .
+inra_data:0d9c66dd-62f9-4424-bff4-b559f0b4a45b rdf:type oepo:Observation ;
+   time:hasTime context:instant_bdbcd149-af3d-411e-861a-6e096a10041a ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "198.9"^^xsd:decimal .
+inra_obj:85-RUN-3347-330-R12B5 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:0d9c66dd-62f9-4424-bff4-b559f0b4a45b .
+
+context:instant_e4725e15-482b-434c-919b-668468a91602 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499329"^^xsd:dateTime .
+inra_data:b49640c8-bd3b-4322-a5f7-c43d6c99f305 rdf:type oepo:Observation ;
+   time:hasTime context:instant_e4725e15-482b-434c-919b-668468a91602 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "182.7"^^xsd:decimal .
+inra_obj:85-RUN-3347-342-R13B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:b49640c8-bd3b-4322-a5f7-c43d6c99f305 .
+
+context:instant_f471d121-8629-4fcb-8bec-dfd319cf00bb rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499398"^^xsd:dateTime .
+inra_data:a318516f-daa3-4b10-af89-611b5c9ff80a rdf:type oepo:Observation ;
+   time:hasTime context:instant_f471d121-8629-4fcb-8bec-dfd319cf00bb ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "216.7"^^xsd:decimal .
+inra_obj:85-RUN-3347-364-R11B6 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:a318516f-daa3-4b10-af89-611b5c9ff80a .
+
+context:instant_fd9113d3-3387-438c-a88d-b1f43dcdc170 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499460"^^xsd:dateTime .
+inra_data:1db445fc-7874-49d4-80d5-6e169faf34b6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_fd9113d3-3387-438c-a88d-b1f43dcdc170 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "179.5"^^xsd:decimal .
+inra_obj:85-RUN-3347-368-R12B2 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:1db445fc-7874-49d4-80d5-6e169faf34b6 .
+
+context:instant_14baf4ea-a775-499c-af5c-d41c00f7cf9a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499523"^^xsd:dateTime .
+inra_data:4c496728-df43-4995-8668-21c442fc7c21 rdf:type oepo:Observation ;
+   time:hasTime context:instant_14baf4ea-a775-499c-af5c-d41c00f7cf9a ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "244.1"^^xsd:decimal .
+inra_obj:85-RUN-3347-396-R12B4 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:4c496728-df43-4995-8668-21c442fc7c21 .
+
+context:instant_9e0df71d-9262-4c01-9170-6b157705b053 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "2016-09-06T12:00:00+01:00"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:52:00.499586"^^xsd:dateTime .
+inra_data:0fdd506c-212f-4376-bc5b-eddb23f57c66 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9e0df71d-9262-4c01-9170-6b157705b053 ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsbaiesgpesee ;
+   rdf:value "265.9"^^xsd:decimal .
+inra_obj:85-RUN-3347-431-R11B7 rdf:type aeo:subPlot ;
+   oepo:hasObservation inra_data:0fdd506c-212f-4376-bc5b-eddb23f57c66 .
+
+

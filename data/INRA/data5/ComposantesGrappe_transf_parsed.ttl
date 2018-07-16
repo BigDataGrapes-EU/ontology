@@ -1,0 +1,1464 @@
+PREFIX aeo:        <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#>   
+PREFIX oepo:       <http://www.phenome-fppn.fr/vocabulary/2018/oepo#>   
+PREFIX ofpe:       <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#>   
+PREFIX rdf:        <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   
+PREFIX inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>   
+PREFIX inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/>   
+PREFIX inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/>   
+PREFIX inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/>   
+PREFIX inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/>   
+PREFIX context:    <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>  
+PREFIX dcterms:    <http://purl.org/dc/terms/>  
+PREFIX time:       <http://www.w3.org/2006/time#>  
+PREFIX xsd:        <http://www.w3.org/2001/XMLSchema#> 
+
+context:instant_e61e1f13-74d9-4cf3-8242-63ab2b0ae7c0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.902404"^^xsd:dateTime .
+inra_data:ef1a078f-19b9-4fd9-a7c9-a8728e0c4754 rdf:type oepo:Observation ;
+   time:hasTime context:instant_e61e1f13-74d9-4cf3-8242-63ab2b0ae7c0 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "91"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:ef1a078f-19b9-4fd9-a7c9-a8728e0c4754 .
+
+context:instant_69948e5e-152b-4181-8dea-f8074829230c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.902571"^^xsd:dateTime .
+inra_data:94b0c1fe-08e2-4afd-8cbf-326ac309861d rdf:type oepo:Observation ;
+   time:hasTime context:instant_69948e5e-152b-4181-8dea-f8074829230c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "171"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:94b0c1fe-08e2-4afd-8cbf-326ac309861d .
+
+context:instant_76785d82-b046-46c3-871b-23cf917d7e66 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.902663"^^xsd:dateTime .
+inra_data:213e0075-6243-4989-8c18-6c9a2fb2b0fc rdf:type oepo:Observation ;
+   time:hasTime context:instant_76785d82-b046-46c3-871b-23cf917d7e66 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "192"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:213e0075-6243-4989-8c18-6c9a2fb2b0fc .
+
+context:instant_69c270ee-2c60-414c-97a6-c3d3ed380ae9 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.902761"^^xsd:dateTime .
+inra_data:c6186116-ae46-45e8-8c5e-0c892cf8f282 rdf:type oepo:Observation ;
+   time:hasTime context:instant_69c270ee-2c60-414c-97a6-c3d3ed380ae9 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "139"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:c6186116-ae46-45e8-8c5e-0c892cf8f282 .
+
+context:instant_c460ca97-28f1-435c-b1be-e57486fb00d0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.902826"^^xsd:dateTime .
+inra_data:35ade453-542a-4347-a076-2488534c2ac0 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c460ca97-28f1-435c-b1be-e57486fb00d0 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "94"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:35ade453-542a-4347-a076-2488534c2ac0 .
+
+context:instant_a5db6602-5e64-4b6f-aaa8-e1070f3b9de4 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.902910"^^xsd:dateTime .
+inra_data:4d8d4d50-aee4-4ee6-b0f4-75d4cdbf222e rdf:type oepo:Observation ;
+   time:hasTime context:instant_a5db6602-5e64-4b6f-aaa8-e1070f3b9de4 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "144"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:4d8d4d50-aee4-4ee6-b0f4-75d4cdbf222e .
+
+context:instant_d8ee9ecf-91cd-47a4-8ce0-e6587607839f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903036"^^xsd:dateTime .
+inra_data:d03be0d4-a42f-4103-8a36-8abe17281aac rdf:type oepo:Observation ;
+   time:hasTime context:instant_d8ee9ecf-91cd-47a4-8ce0-e6587607839f ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "183"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:d03be0d4-a42f-4103-8a36-8abe17281aac .
+
+context:instant_3244f213-cbd1-4f3b-b70b-0467d681099a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903141"^^xsd:dateTime .
+inra_data:6d4f785d-9d73-4398-92e6-44caf68a5f81 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3244f213-cbd1-4f3b-b70b-0467d681099a ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "200"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:6d4f785d-9d73-4398-92e6-44caf68a5f81 .
+
+context:instant_08faf0d1-3287-4f7a-afa0-e7864bee84c0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903241"^^xsd:dateTime .
+inra_data:c9304f0b-6235-4f42-8cf2-c602e4eb8c1c rdf:type oepo:Observation ;
+   time:hasTime context:instant_08faf0d1-3287-4f7a-afa0-e7864bee84c0 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "283"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:c9304f0b-6235-4f42-8cf2-c602e4eb8c1c .
+
+context:instant_bb486349-bdc4-4cac-9256-3fc9b9d83a4f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903339"^^xsd:dateTime .
+inra_data:900360af-4891-4556-9747-e1565a4f2675 rdf:type oepo:Observation ;
+   time:hasTime context:instant_bb486349-bdc4-4cac-9256-3fc9b9d83a4f ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "195"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:900360af-4891-4556-9747-e1565a4f2675 .
+
+context:instant_a463a370-40ec-4242-a321-35eda2b4f879 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903441"^^xsd:dateTime .
+inra_data:b4212c49-71da-45b0-8809-539aed2f5f0c rdf:type oepo:Observation ;
+   time:hasTime context:instant_a463a370-40ec-4242-a321-35eda2b4f879 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "231"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:b4212c49-71da-45b0-8809-539aed2f5f0c .
+
+context:instant_762e020e-13ea-4e8d-9c0f-039dd03a4a09 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903540"^^xsd:dateTime .
+inra_data:27d5bc7d-3ee3-4f77-b88a-1f0e0f2ec826 rdf:type oepo:Observation ;
+   time:hasTime context:instant_762e020e-13ea-4e8d-9c0f-039dd03a4a09 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "152"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:27d5bc7d-3ee3-4f77-b88a-1f0e0f2ec826 .
+
+context:instant_f41de8dd-e48f-48fa-aa67-a146f19fa2bc rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903624"^^xsd:dateTime .
+inra_data:20486703-2963-4c21-aa10-144d36eb554a rdf:type oepo:Observation ;
+   time:hasTime context:instant_f41de8dd-e48f-48fa-aa67-a146f19fa2bc ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "145"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:20486703-2963-4c21-aa10-144d36eb554a .
+
+context:instant_12bb2104-a463-4a43-8356-3f2ec4b365c0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903710"^^xsd:dateTime .
+inra_data:bb8ee784-2897-468e-b0e7-91a748d04be9 rdf:type oepo:Observation ;
+   time:hasTime context:instant_12bb2104-a463-4a43-8356-3f2ec4b365c0 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "119"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:bb8ee784-2897-468e-b0e7-91a748d04be9 .
+
+context:instant_be3ba632-d226-42ae-a78a-b868d0cce2f3 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903832"^^xsd:dateTime .
+inra_data:b21739ab-4d41-426b-98f1-bbe7c377b8c6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_be3ba632-d226-42ae-a78a-b868d0cce2f3 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "244"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:b21739ab-4d41-426b-98f1-bbe7c377b8c6 .
+
+context:instant_2fc4e51e-b866-4ae8-b068-2eed56d1d59c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.903933"^^xsd:dateTime .
+inra_data:f066ee45-a420-4add-93b2-9cd4596ad3ae rdf:type oepo:Observation ;
+   time:hasTime context:instant_2fc4e51e-b866-4ae8-b068-2eed56d1d59c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "113"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f066ee45-a420-4add-93b2-9cd4596ad3ae .
+
+context:instant_9798538d-0b7f-46cb-bae8-0e4a8e89a8d7 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904023"^^xsd:dateTime .
+inra_data:93dcb72c-37a0-42cc-9215-89889a04b584 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9798538d-0b7f-46cb-bae8-0e4a8e89a8d7 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "142"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:93dcb72c-37a0-42cc-9215-89889a04b584 .
+
+context:instant_03cf7825-7f36-4429-8858-b0f8ba97f472 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904125"^^xsd:dateTime .
+inra_data:f4a90b68-dc0e-4af6-9302-6f2a03fb95e4 rdf:type oepo:Observation ;
+   time:hasTime context:instant_03cf7825-7f36-4429-8858-b0f8ba97f472 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "240"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C03-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f4a90b68-dc0e-4af6-9302-6f2a03fb95e4 .
+
+context:instant_c44daadb-df6e-4d9e-985e-2ba351602fcc rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904226"^^xsd:dateTime .
+inra_data:a3b1df10-78d3-4eb8-9e39-94d69786b17e rdf:type oepo:Observation ;
+   time:hasTime context:instant_c44daadb-df6e-4d9e-985e-2ba351602fcc ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "142"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a3b1df10-78d3-4eb8-9e39-94d69786b17e .
+
+context:instant_fc74af0f-d80a-4a69-8a0b-6e967b1a300d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904326"^^xsd:dateTime .
+inra_data:6a077b28-ae70-4df4-a6a2-fe09a01024bd rdf:type oepo:Observation ;
+   time:hasTime context:instant_fc74af0f-d80a-4a69-8a0b-6e967b1a300d ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "120"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:6a077b28-ae70-4df4-a6a2-fe09a01024bd .
+
+context:instant_39bf7b36-d506-44b1-9726-aa34b9a7f67b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904431"^^xsd:dateTime .
+inra_data:5d75ca23-6df9-45b1-b2e9-5421439c6fd7 rdf:type oepo:Observation ;
+   time:hasTime context:instant_39bf7b36-d506-44b1-9726-aa34b9a7f67b ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "173"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:5d75ca23-6df9-45b1-b2e9-5421439c6fd7 .
+
+context:instant_f4e9e484-a6ec-4a40-a456-b84b3ebbda61 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904545"^^xsd:dateTime .
+inra_data:e50d37e5-8fb6-4ad0-b12c-e8bc2d70a4f8 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f4e9e484-a6ec-4a40-a456-b84b3ebbda61 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "158"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e50d37e5-8fb6-4ad0-b12c-e8bc2d70a4f8 .
+
+context:instant_0d91bb2b-d64b-4ace-ba8b-5d1759c9aa14 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904645"^^xsd:dateTime .
+inra_data:4bf5257a-561e-474b-b0e7-c62394538132 rdf:type oepo:Observation ;
+   time:hasTime context:instant_0d91bb2b-d64b-4ace-ba8b-5d1759c9aa14 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "145"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:4bf5257a-561e-474b-b0e7-c62394538132 .
+
+context:instant_8c8a11ae-d996-48c9-8270-00ffdf3a01fb rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904753"^^xsd:dateTime .
+inra_data:09371bbc-e08f-4cc0-bffe-9ecaeab2525a rdf:type oepo:Observation ;
+   time:hasTime context:instant_8c8a11ae-d996-48c9-8270-00ffdf3a01fb ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "159"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:09371bbc-e08f-4cc0-bffe-9ecaeab2525a .
+
+context:instant_621b73e6-59b6-4cea-90c5-2701ee2d205c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904845"^^xsd:dateTime .
+inra_data:ba168a34-dd96-4cc3-935d-bab5fe99837b rdf:type oepo:Observation ;
+   time:hasTime context:instant_621b73e6-59b6-4cea-90c5-2701ee2d205c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "111"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:ba168a34-dd96-4cc3-935d-bab5fe99837b .
+
+context:instant_261de462-626c-4847-b66b-7462efd2340f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.904949"^^xsd:dateTime .
+inra_data:f1310a38-d651-4afe-9d0e-4eb87f654916 rdf:type oepo:Observation ;
+   time:hasTime context:instant_261de462-626c-4847-b66b-7462efd2340f ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "146"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f1310a38-d651-4afe-9d0e-4eb87f654916 .
+
+context:instant_2afadc10-b2d2-46e5-a25f-29ad65b40c48 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905053"^^xsd:dateTime .
+inra_data:76e760af-c573-407b-bcca-4c50cf9e3253 rdf:type oepo:Observation ;
+   time:hasTime context:instant_2afadc10-b2d2-46e5-a25f-29ad65b40c48 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "143"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:76e760af-c573-407b-bcca-4c50cf9e3253 .
+
+context:instant_87fe2c1d-104e-4df5-b3e1-0bb9f1a3554e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905152"^^xsd:dateTime .
+inra_data:683a3049-5886-466b-93b4-ff54536f74ca rdf:type oepo:Observation ;
+   time:hasTime context:instant_87fe2c1d-104e-4df5-b3e1-0bb9f1a3554e ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "145"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:683a3049-5886-466b-93b4-ff54536f74ca .
+
+context:instant_9ba2d4f0-89a1-4d8c-81b0-63aa569467aa rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905263"^^xsd:dateTime .
+inra_data:09e49600-c2de-4a49-b279-d0de78dfac99 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9ba2d4f0-89a1-4d8c-81b0-63aa569467aa ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "108"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:09e49600-c2de-4a49-b279-d0de78dfac99 .
+
+context:instant_9cafd208-8dfe-4457-a428-bddbffacff7c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905365"^^xsd:dateTime .
+inra_data:562a5b21-fbaf-447c-b836-424624760451 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9cafd208-8dfe-4457-a428-bddbffacff7c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "192"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C15-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:562a5b21-fbaf-447c-b836-424624760451 .
+
+context:instant_3a9b8a08-4bb7-438e-b42e-d48b1e155c8d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905467"^^xsd:dateTime .
+inra_data:803edb76-e221-442f-8278-99a0963e1762 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3a9b8a08-4bb7-438e-b42e-d48b1e155c8d ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "231"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:803edb76-e221-442f-8278-99a0963e1762 .
+
+context:instant_ed873479-af24-4d27-8ce8-4c230132277b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905569"^^xsd:dateTime .
+inra_data:41f34686-213f-43f2-9d64-0cd8d1afd2bf rdf:type oepo:Observation ;
+   time:hasTime context:instant_ed873479-af24-4d27-8ce8-4c230132277b ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "196"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:41f34686-213f-43f2-9d64-0cd8d1afd2bf .
+
+context:instant_ff16ed1d-8a7d-465a-9a4c-a17f4487824f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905676"^^xsd:dateTime .
+inra_data:b494af91-dc8d-40c4-89be-bddbe99f72f5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_ff16ed1d-8a7d-465a-9a4c-a17f4487824f ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "152"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:b494af91-dc8d-40c4-89be-bddbe99f72f5 .
+
+context:instant_17d2d01e-949e-45a4-af0b-6d616c66009c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905769"^^xsd:dateTime .
+inra_data:782b6679-509b-4578-a59a-dc64de58d6b6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_17d2d01e-949e-45a4-af0b-6d616c66009c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "123"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:782b6679-509b-4578-a59a-dc64de58d6b6 .
+
+context:instant_1e1e740d-8ecd-4dd8-875d-270b9a8a7dd9 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905877"^^xsd:dateTime .
+inra_data:f6b3c8ff-f732-4d67-a2fb-3e94c774f1fb rdf:type oepo:Observation ;
+   time:hasTime context:instant_1e1e740d-8ecd-4dd8-875d-270b9a8a7dd9 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "179"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C03-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f6b3c8ff-f732-4d67-a2fb-3e94c774f1fb .
+
+context:instant_f55ccd52-2acd-48f9-9a14-0432b91085dc rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.905987"^^xsd:dateTime .
+inra_data:c570c070-ac81-47da-af7e-ba177b7afd03 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f55ccd52-2acd-48f9-9a14-0432b91085dc ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "188"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:c570c070-ac81-47da-af7e-ba177b7afd03 .
+
+context:instant_05711805-33ee-41ef-9e8e-216a4c84b41c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906091"^^xsd:dateTime .
+inra_data:bcecd206-2430-4573-9293-61d8d1816b93 rdf:type oepo:Observation ;
+   time:hasTime context:instant_05711805-33ee-41ef-9e8e-216a4c84b41c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "140"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:bcecd206-2430-4573-9293-61d8d1816b93 .
+
+context:instant_6a0779de-cfd6-4155-b5c5-eead39f4f5bc rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906194"^^xsd:dateTime .
+inra_data:a6aed885-5aaf-4655-939a-efa17dd02e40 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6a0779de-cfd6-4155-b5c5-eead39f4f5bc ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "93"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a6aed885-5aaf-4655-939a-efa17dd02e40 .
+
+context:instant_b665de59-d11e-4523-bebf-520fe0a975d7 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906295"^^xsd:dateTime .
+inra_data:f131f147-b8f1-4a1d-b427-36dcf41449e1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_b665de59-d11e-4523-bebf-520fe0a975d7 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "122"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f131f147-b8f1-4a1d-b427-36dcf41449e1 .
+
+context:instant_a2954e4e-ed2e-47bd-b98a-e8d118303d1c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906394"^^xsd:dateTime .
+inra_data:97625f13-e304-487e-831e-d7b5644660c4 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a2954e4e-ed2e-47bd-b98a-e8d118303d1c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "144"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:97625f13-e304-487e-831e-d7b5644660c4 .
+
+context:instant_430fa0b0-ad61-4a7d-9721-cfd20bf035b9 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906501"^^xsd:dateTime .
+inra_data:5080e04d-a0be-4a20-92b3-5aa2a8ba5973 rdf:type oepo:Observation ;
+   time:hasTime context:instant_430fa0b0-ad61-4a7d-9721-cfd20bf035b9 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "198"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:5080e04d-a0be-4a20-92b3-5aa2a8ba5973 .
+
+context:instant_a0a8ae0d-2494-42dc-afcc-7aacab06a653 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906593"^^xsd:dateTime .
+inra_data:e84c369a-13c7-41ec-a0ba-ea7fb9e5f33b rdf:type oepo:Observation ;
+   time:hasTime context:instant_a0a8ae0d-2494-42dc-afcc-7aacab06a653 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "155"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e84c369a-13c7-41ec-a0ba-ea7fb9e5f33b .
+
+context:instant_adf92f8b-b874-41ee-9f2e-5b1506e90b3f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906696"^^xsd:dateTime .
+inra_data:c24c5a3c-6b31-4f5b-bd2c-1af6359f121f rdf:type oepo:Observation ;
+   time:hasTime context:instant_adf92f8b-b874-41ee-9f2e-5b1506e90b3f ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "131"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:c24c5a3c-6b31-4f5b-bd2c-1af6359f121f .
+
+context:instant_8040779e-ba2e-4290-a987-7b7385d07160 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906810"^^xsd:dateTime .
+inra_data:a107bd2c-dc00-4de5-92fe-ce14d0ea110b rdf:type oepo:Observation ;
+   time:hasTime context:instant_8040779e-ba2e-4290-a987-7b7385d07160 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "145"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a107bd2c-dc00-4de5-92fe-ce14d0ea110b .
+
+context:instant_19691dd2-8946-4704-b2b3-842fb0d1a781 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.906911"^^xsd:dateTime .
+inra_data:be531e71-3dc0-494b-9808-3930202ec81e rdf:type oepo:Observation ;
+   time:hasTime context:instant_19691dd2-8946-4704-b2b3-842fb0d1a781 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "183"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:be531e71-3dc0-494b-9808-3930202ec81e .
+
+context:instant_0fa2332b-b1d3-4361-8c05-07f36bcab0b0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907013"^^xsd:dateTime .
+inra_data:d7af00fc-fe04-4312-b115-23895e9618bc rdf:type oepo:Observation ;
+   time:hasTime context:instant_0fa2332b-b1d3-4361-8c05-07f36bcab0b0 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "181"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:d7af00fc-fe04-4312-b115-23895e9618bc .
+
+context:instant_5116f91e-8388-427f-8ba5-3fe55951aa5c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907115"^^xsd:dateTime .
+inra_data:338a4c1f-f445-4759-b654-42e6a46e7fbb rdf:type oepo:Observation ;
+   time:hasTime context:instant_5116f91e-8388-427f-8ba5-3fe55951aa5c ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "155"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:338a4c1f-f445-4759-b654-42e6a46e7fbb .
+
+context:instant_39dec42b-9d84-4269-96f6-289d0d0ee782 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907215"^^xsd:dateTime .
+inra_data:4e1956e2-eceb-477f-97a4-d22a919970b1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_39dec42b-9d84-4269-96f6-289d0d0ee782 ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+inra_obj:2016-SUNAGRI-T-1-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:4e1956e2-eceb-477f-97a4-d22a919970b1 .
+
+context:instant_31bb1901-edcb-493d-8a2f-bcb3de0c071b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907320"^^xsd:dateTime .
+inra_data:e167f93a-9a67-4963-b88f-6dc255c6ed95 rdf:type oepo:Observation ;
+   time:hasTime context:instant_31bb1901-edcb-493d-8a2f-bcb3de0c071b ;
+   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+   rdf:value "175"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C18-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e167f93a-9a67-4963-b88f-6dc255c6ed95 .
+
+context:instant_92edf7c5-6a97-40c1-b8ac-41128abb81cb rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907428"^^xsd:dateTime .
+inra_data:2183f65e-115e-4cd3-8201-f94947fe08bc rdf:type oepo:Observation ;
+   time:hasTime context:instant_92edf7c5-6a97-40c1-b8ac-41128abb81cb ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "108.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:2183f65e-115e-4cd3-8201-f94947fe08bc .
+
+context:instant_1d5e9278-94b9-44bc-9b36-a7d8e6f10cf5 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907533"^^xsd:dateTime .
+inra_data:dd1d7ded-57a3-498b-b7f9-95b4668b1aea rdf:type oepo:Observation ;
+   time:hasTime context:instant_1d5e9278-94b9-44bc-9b36-a7d8e6f10cf5 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "207.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:dd1d7ded-57a3-498b-b7f9-95b4668b1aea .
+
+context:instant_dc6b4d80-9173-408c-affc-6100a9ed8fb4 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907639"^^xsd:dateTime .
+inra_data:71ce46af-d844-49c7-a22a-ba260688c319 rdf:type oepo:Observation ;
+   time:hasTime context:instant_dc6b4d80-9173-408c-affc-6100a9ed8fb4 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "195.6"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:71ce46af-d844-49c7-a22a-ba260688c319 .
+
+context:instant_c0bc487c-729d-4095-99fc-1d0ce8b8964f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907743"^^xsd:dateTime .
+inra_data:ec2b88fc-1f28-4f55-b4f0-9ea1c39e0d8f rdf:type oepo:Observation ;
+   time:hasTime context:instant_c0bc487c-729d-4095-99fc-1d0ce8b8964f ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "166.9"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:ec2b88fc-1f28-4f55-b4f0-9ea1c39e0d8f .
+
+context:instant_3b3c2128-0fd0-41fe-bb4b-8e0c45e13202 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907848"^^xsd:dateTime .
+inra_data:792657d5-ed4e-48b9-901c-ce402846d8ac rdf:type oepo:Observation ;
+   time:hasTime context:instant_3b3c2128-0fd0-41fe-bb4b-8e0c45e13202 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "79.3"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:792657d5-ed4e-48b9-901c-ce402846d8ac .
+
+context:instant_f027e1a3-916c-4882-a1d1-f67edfc1821b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.907952"^^xsd:dateTime .
+inra_data:52247d58-3a70-4d74-940a-8ab59f583612 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f027e1a3-916c-4882-a1d1-f67edfc1821b ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "178.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:52247d58-3a70-4d74-940a-8ab59f583612 .
+
+context:instant_91aa6587-bb74-4fcd-a476-b13d4e37f6ec rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908054"^^xsd:dateTime .
+inra_data:db821ccc-0966-4b46-950e-eb38d5e702fb rdf:type oepo:Observation ;
+   time:hasTime context:instant_91aa6587-bb74-4fcd-a476-b13d4e37f6ec ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "235.6"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:db821ccc-0966-4b46-950e-eb38d5e702fb .
+
+context:instant_1064f9c0-ccd9-4465-baf4-d3659109c025 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908154"^^xsd:dateTime .
+inra_data:45db265c-673f-4502-8121-d7115b2959c8 rdf:type oepo:Observation ;
+   time:hasTime context:instant_1064f9c0-ccd9-4465-baf4-d3659109c025 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "251.9"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:45db265c-673f-4502-8121-d7115b2959c8 .
+
+context:instant_0c42941f-0130-4e87-b294-b92cdd5c9f2f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908239"^^xsd:dateTime .
+inra_data:1dafdd16-7ab9-41cd-9cee-bfed0d9fac54 rdf:type oepo:Observation ;
+   time:hasTime context:instant_0c42941f-0130-4e87-b294-b92cdd5c9f2f ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "319.9"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:1dafdd16-7ab9-41cd-9cee-bfed0d9fac54 .
+
+context:instant_d62618a0-c8c2-4a43-ae32-f5061eadabc4 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908344"^^xsd:dateTime .
+inra_data:98e00456-95a8-411d-8220-31df6c7d4ffe rdf:type oepo:Observation ;
+   time:hasTime context:instant_d62618a0-c8c2-4a43-ae32-f5061eadabc4 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "180.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:98e00456-95a8-411d-8220-31df6c7d4ffe .
+
+context:instant_64e0ad12-5ec3-4c9d-9abd-ed240b87e464 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908434"^^xsd:dateTime .
+inra_data:b0af58af-1ef6-41f5-bac2-fd207c92f3ed rdf:type oepo:Observation ;
+   time:hasTime context:instant_64e0ad12-5ec3-4c9d-9abd-ed240b87e464 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "266.1"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:b0af58af-1ef6-41f5-bac2-fd207c92f3ed .
+
+context:instant_7a2eb2ac-d61e-4f52-858b-f4bbbd3ff4aa rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908536"^^xsd:dateTime .
+inra_data:3ecd5a83-9449-4ec2-830b-774f13f5d81b rdf:type oepo:Observation ;
+   time:hasTime context:instant_7a2eb2ac-d61e-4f52-858b-f4bbbd3ff4aa ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "179.1"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:3ecd5a83-9449-4ec2-830b-774f13f5d81b .
+
+context:instant_7f089fb2-e9b6-48de-a531-ad0e9af40690 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908639"^^xsd:dateTime .
+inra_data:48872fdf-c964-4916-8ed8-627b3b5dbf22 rdf:type oepo:Observation ;
+   time:hasTime context:instant_7f089fb2-e9b6-48de-a531-ad0e9af40690 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "180.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:48872fdf-c964-4916-8ed8-627b3b5dbf22 .
+
+context:instant_2fbc5cb5-54ae-4209-b3f4-709ea36c7ed0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908742"^^xsd:dateTime .
+inra_data:8eaab1a2-ab0b-40e4-8ca9-ce296aa2bcaa rdf:type oepo:Observation ;
+   time:hasTime context:instant_2fbc5cb5-54ae-4209-b3f4-709ea36c7ed0 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "144.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:8eaab1a2-ab0b-40e4-8ca9-ce296aa2bcaa .
+
+context:instant_215b5853-2dfe-484b-b405-d39267bc0e82 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908844"^^xsd:dateTime .
+inra_data:e4afa0f0-a57e-40a1-af79-aa3ef6cd597f rdf:type oepo:Observation ;
+   time:hasTime context:instant_215b5853-2dfe-484b-b405-d39267bc0e82 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "346.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e4afa0f0-a57e-40a1-af79-aa3ef6cd597f .
+
+context:instant_d725e4f6-5bdf-44a7-8bd6-deddb2501102 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.908945"^^xsd:dateTime .
+inra_data:842c24e4-a2a9-42b7-8b11-a20a1744eecf rdf:type oepo:Observation ;
+   time:hasTime context:instant_d725e4f6-5bdf-44a7-8bd6-deddb2501102 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "121.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:842c24e4-a2a9-42b7-8b11-a20a1744eecf .
+
+context:instant_c514dc18-25d4-4b69-a218-4869d95c5329 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909056"^^xsd:dateTime .
+inra_data:2bfae41e-4c5d-402f-8987-915adcfbf4ec rdf:type oepo:Observation ;
+   time:hasTime context:instant_c514dc18-25d4-4b69-a218-4869d95c5329 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "152.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:2bfae41e-4c5d-402f-8987-915adcfbf4ec .
+
+context:instant_3ed185df-f339-4d6d-b367-bd45d673ce68 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909159"^^xsd:dateTime .
+inra_data:cad6c46d-6957-4f80-ac76-c5526fbbcbe6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3ed185df-f339-4d6d-b367-bd45d673ce68 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "265.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C03-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:cad6c46d-6957-4f80-ac76-c5526fbbcbe6 .
+
+context:instant_e3a50ee4-9ead-4a0a-8b46-743c9b92a202 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909266"^^xsd:dateTime .
+inra_data:31982246-17a0-489f-9ad4-d123a7f1050d rdf:type oepo:Observation ;
+   time:hasTime context:instant_e3a50ee4-9ead-4a0a-8b46-743c9b92a202 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "148.1"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:31982246-17a0-489f-9ad4-d123a7f1050d .
+
+context:instant_3bf51541-e414-44a5-9481-42e03aa480d5 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909359"^^xsd:dateTime .
+inra_data:f76e5755-60bf-4bde-991e-ac4f8296fc04 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3bf51541-e414-44a5-9481-42e03aa480d5 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "178.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f76e5755-60bf-4bde-991e-ac4f8296fc04 .
+
+context:instant_3e1f4580-c4c3-485d-9fa9-a7eaf476b19e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909463"^^xsd:dateTime .
+inra_data:90de4871-ee62-4096-ba34-15bb1069fd9d rdf:type oepo:Observation ;
+   time:hasTime context:instant_3e1f4580-c4c3-485d-9fa9-a7eaf476b19e ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "190.1"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:90de4871-ee62-4096-ba34-15bb1069fd9d .
+
+context:instant_a6fd464a-ec68-4598-8557-5d5cdd0b1a7e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909565"^^xsd:dateTime .
+inra_data:33637f40-5a7d-4a3b-8ec9-2f84d18331d0 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a6fd464a-ec68-4598-8557-5d5cdd0b1a7e ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "144.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:33637f40-5a7d-4a3b-8ec9-2f84d18331d0 .
+
+context:instant_f6edd48a-bc6e-447a-a148-2ef02009122b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909658"^^xsd:dateTime .
+inra_data:9a865a38-2cca-4ea7-8127-064442359f20 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f6edd48a-bc6e-447a-a148-2ef02009122b ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "191.7"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:9a865a38-2cca-4ea7-8127-064442359f20 .
+
+context:instant_fcbf4550-01fb-4946-8779-a17aee555788 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909772"^^xsd:dateTime .
+inra_data:26daf66c-662f-4f46-99bc-c5effedd0783 rdf:type oepo:Observation ;
+   time:hasTime context:instant_fcbf4550-01fb-4946-8779-a17aee555788 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "177.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:26daf66c-662f-4f46-99bc-c5effedd0783 .
+
+context:instant_5ac05110-efda-4af6-9430-0ce558c40695 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909875"^^xsd:dateTime .
+inra_data:f236fcd6-2b6e-4994-a019-7a557f6c434e rdf:type oepo:Observation ;
+   time:hasTime context:instant_5ac05110-efda-4af6-9430-0ce558c40695 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "113.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f236fcd6-2b6e-4994-a019-7a557f6c434e .
+
+context:instant_e14e87af-e0aa-42e3-99bd-a6b4338f727a rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.909975"^^xsd:dateTime .
+inra_data:26905fd4-ede2-49c0-94ca-14491e2935fd rdf:type oepo:Observation ;
+   time:hasTime context:instant_e14e87af-e0aa-42e3-99bd-a6b4338f727a ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "213.6"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:26905fd4-ede2-49c0-94ca-14491e2935fd .
+
+context:instant_de681af6-f75a-4752-acc7-32e336ff5f46 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910071"^^xsd:dateTime .
+inra_data:4fc381c0-e6c1-446e-8315-1da800e17510 rdf:type oepo:Observation ;
+   time:hasTime context:instant_de681af6-f75a-4752-acc7-32e336ff5f46 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "168.7"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:4fc381c0-e6c1-446e-8315-1da800e17510 .
+
+context:instant_da87fa8a-ca9c-43d4-ad5b-449f24d6c026 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910179"^^xsd:dateTime .
+inra_data:b3b5543a-6670-426d-89c0-652745df7be3 rdf:type oepo:Observation ;
+   time:hasTime context:instant_da87fa8a-ca9c-43d4-ad5b-449f24d6c026 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "151.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:b3b5543a-6670-426d-89c0-652745df7be3 .
+
+context:instant_49a7b719-1fa0-4c32-88cb-b170cf9487cb rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910277"^^xsd:dateTime .
+inra_data:a962c422-6b99-4894-9bb9-3e925bbb25a5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_49a7b719-1fa0-4c32-88cb-b170cf9487cb ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "132.3"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a962c422-6b99-4894-9bb9-3e925bbb25a5 .
+
+context:instant_f299a06a-fff6-42f5-a9a1-b170503e5c5e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910359"^^xsd:dateTime .
+inra_data:03ac2750-de27-40b0-8f40-872ec4f61831 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f299a06a-fff6-42f5-a9a1-b170503e5c5e ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "202.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C15-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:03ac2750-de27-40b0-8f40-872ec4f61831 .
+
+context:instant_7fbd8217-b936-48a9-afce-e4c7c496dbde rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910493"^^xsd:dateTime .
+inra_data:f6162f71-8de8-4326-a64c-e3b89d5804d6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_7fbd8217-b936-48a9-afce-e4c7c496dbde ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "275.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f6162f71-8de8-4326-a64c-e3b89d5804d6 .
+
+context:instant_9f6b9e1f-8df7-4a65-80fb-4c459a0a5165 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910603"^^xsd:dateTime .
+inra_data:33369854-7526-4878-a9f4-16d14e8acf97 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9f6b9e1f-8df7-4a65-80fb-4c459a0a5165 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "256.1"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:33369854-7526-4878-a9f4-16d14e8acf97 .
+
+context:instant_e8f45be0-6a38-4adf-9714-92e3fd8c8b4b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910730"^^xsd:dateTime .
+inra_data:eab382dc-049e-471f-b328-4ded44e79dfd rdf:type oepo:Observation ;
+   time:hasTime context:instant_e8f45be0-6a38-4adf-9714-92e3fd8c8b4b ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "178.3"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:eab382dc-049e-471f-b328-4ded44e79dfd .
+
+context:instant_01279be3-b2e6-4c83-8a17-387457696117 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.910907"^^xsd:dateTime .
+inra_data:d4343485-3369-43ac-92b4-e4d55a7ec002 rdf:type oepo:Observation ;
+   time:hasTime context:instant_01279be3-b2e6-4c83-8a17-387457696117 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "170.7"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:d4343485-3369-43ac-92b4-e4d55a7ec002 .
+
+context:instant_008379e0-491f-495c-84a9-8bf043fccd6c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.911119"^^xsd:dateTime .
+inra_data:e7375f1f-bfd6-42ed-9de0-10302942504b rdf:type oepo:Observation ;
+   time:hasTime context:instant_008379e0-491f-495c-84a9-8bf043fccd6c ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "173.9"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C03-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e7375f1f-bfd6-42ed-9de0-10302942504b .
+
+context:instant_ef96972d-9283-4b00-8d38-9ec1747cbba9 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.911355"^^xsd:dateTime .
+inra_data:1d1aa8b9-f6cb-4327-8e57-2a4f6652d449 rdf:type oepo:Observation ;
+   time:hasTime context:instant_ef96972d-9283-4b00-8d38-9ec1747cbba9 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "203.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:1d1aa8b9-f6cb-4327-8e57-2a4f6652d449 .
+
+context:instant_0a094105-6f6f-46d4-a598-9163dd78818d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.911746"^^xsd:dateTime .
+inra_data:1df5f0cc-7a1c-4412-9e07-de82881503ab rdf:type oepo:Observation ;
+   time:hasTime context:instant_0a094105-6f6f-46d4-a598-9163dd78818d ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "170.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:1df5f0cc-7a1c-4412-9e07-de82881503ab .
+
+context:instant_4d640e1e-92e2-4cd6-83f1-b3ad242c328d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.912502"^^xsd:dateTime .
+inra_data:3dcad8c2-58ce-4d9f-82bd-a7593b4dcb1e rdf:type oepo:Observation ;
+   time:hasTime context:instant_4d640e1e-92e2-4cd6-83f1-b3ad242c328d ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "95.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:3dcad8c2-58ce-4d9f-82bd-a7593b4dcb1e .
+
+context:instant_c80f507c-b08e-4b31-92f2-ea6dfafb8180 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.913117"^^xsd:dateTime .
+inra_data:c889967b-10aa-43e6-b81b-0f7be754aa34 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c80f507c-b08e-4b31-92f2-ea6dfafb8180 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "157.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:c889967b-10aa-43e6-b81b-0f7be754aa34 .
+
+context:instant_36c134d5-24ce-4192-80cb-7f3210607d19 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.913251"^^xsd:dateTime .
+inra_data:a8851d83-0913-4b02-9395-dc87e1185bd1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_36c134d5-24ce-4192-80cb-7f3210607d19 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "153.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a8851d83-0913-4b02-9395-dc87e1185bd1 .
+
+context:instant_10ad6f23-5783-4467-b5b4-eddfb4f5951b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.913369"^^xsd:dateTime .
+inra_data:a4e508d0-7e52-4800-9357-b2a96547e807 rdf:type oepo:Observation ;
+   time:hasTime context:instant_10ad6f23-5783-4467-b5b4-eddfb4f5951b ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "199.6"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a4e508d0-7e52-4800-9357-b2a96547e807 .
+
+context:instant_5aa4b1e4-376e-406f-a317-ee79916e5731 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.913529"^^xsd:dateTime .
+inra_data:06475b88-023b-4784-8d63-dc4a01e01161 rdf:type oepo:Observation ;
+   time:hasTime context:instant_5aa4b1e4-376e-406f-a317-ee79916e5731 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "184.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:06475b88-023b-4784-8d63-dc4a01e01161 .
+
+context:instant_f2b0cffd-fcf5-4dde-a65f-4429d45aebb0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.913672"^^xsd:dateTime .
+inra_data:bf826032-8854-49d4-9ccf-3cc30b41d292 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f2b0cffd-fcf5-4dde-a65f-4429d45aebb0 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "152.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:bf826032-8854-49d4-9ccf-3cc30b41d292 .
+
+context:instant_7947f9f8-1ab2-4fe1-a892-e6273a9ecc15 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.913813"^^xsd:dateTime .
+inra_data:86542295-fb06-4a9e-adb5-43ec99246b82 rdf:type oepo:Observation ;
+   time:hasTime context:instant_7947f9f8-1ab2-4fe1-a892-e6273a9ecc15 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "164.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:86542295-fb06-4a9e-adb5-43ec99246b82 .
+
+context:instant_40808233-65c7-4444-9d13-e3c7d0ae1d8d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.913937"^^xsd:dateTime .
+inra_data:735f183e-4956-4a21-b0b3-6607bc389895 rdf:type oepo:Observation ;
+   time:hasTime context:instant_40808233-65c7-4444-9d13-e3c7d0ae1d8d ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "182.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:735f183e-4956-4a21-b0b3-6607bc389895 .
+
+context:instant_a6421693-0098-4ba5-b2ce-5c4d98897900 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.914102"^^xsd:dateTime .
+inra_data:42e58488-b7ae-4043-9f2f-d12d7d778435 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a6421693-0098-4ba5-b2ce-5c4d98897900 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "207.3"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:42e58488-b7ae-4043-9f2f-d12d7d778435 .
+
+context:instant_9ef9aa6b-8a72-4e2b-bc6a-2726867cfb5e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.914230"^^xsd:dateTime .
+inra_data:9e680f7f-3115-432a-abc2-35ed60d29d63 rdf:type oepo:Observation ;
+   time:hasTime context:instant_9ef9aa6b-8a72-4e2b-bc6a-2726867cfb5e ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "161.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:9e680f7f-3115-432a-abc2-35ed60d29d63 .
+
+context:instant_155dca68-0366-4dee-b75a-e40a5f285a14 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.914359"^^xsd:dateTime .
+inra_data:0e5600bb-b5d3-4be2-a1ab-c40c4f5fd724 rdf:type oepo:Observation ;
+   time:hasTime context:instant_155dca68-0366-4dee-b75a-e40a5f285a14 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+inra_obj:2016-SUNAGRI-T-1-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:0e5600bb-b5d3-4be2-a1ab-c40c4f5fd724 .
+
+context:instant_77e6632e-51c3-4c79-9b77-a2d066dd2c56 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.914482"^^xsd:dateTime .
+inra_data:158d9673-e2b4-421a-971f-289f66262276 rdf:type oepo:Observation ;
+   time:hasTime context:instant_77e6632e-51c3-4c79-9b77-a2d066dd2c56 ;
+   oepo:hasVariable inra_onto:GpeseePoidsGrappe ;
+   rdf:value "196.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-T-1-C18-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:158d9673-e2b4-421a-971f-289f66262276 .
+
+context:instant_b66e2e0a-0108-4a02-a0e8-cc020a157d88 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.914606"^^xsd:dateTime .
+inra_data:da1cc029-3070-4c9e-93e8-71432d998192 rdf:type oepo:Observation ;
+   time:hasTime context:instant_b66e2e0a-0108-4a02-a0e8-cc020a157d88 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "100.7"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:da1cc029-3070-4c9e-93e8-71432d998192 .
+
+context:instant_3ba913b8-4331-4703-b7d2-2a40ed2b7e65 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.914734"^^xsd:dateTime .
+inra_data:a3000ee3-5f08-45d3-88d8-85edbcfb6ba6 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3ba913b8-4331-4703-b7d2-2a40ed2b7e65 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "193.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a3000ee3-5f08-45d3-88d8-85edbcfb6ba6 .
+
+context:instant_ca788e61-5ae3-423e-bdd0-be62c1bd38aa rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.914864"^^xsd:dateTime .
+inra_data:722d9812-7c79-4355-96db-d4da983e6eba rdf:type oepo:Observation ;
+   time:hasTime context:instant_ca788e61-5ae3-423e-bdd0-be62c1bd38aa ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "169.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:722d9812-7c79-4355-96db-d4da983e6eba .
+
+context:instant_3869989b-b759-46a6-8da4-74df36f61b5f rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915007"^^xsd:dateTime .
+inra_data:f6dbc9e9-27a1-4c46-b219-7b53cb6b4067 rdf:type oepo:Observation ;
+   time:hasTime context:instant_3869989b-b759-46a6-8da4-74df36f61b5f ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "152.9"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f6dbc9e9-27a1-4c46-b219-7b53cb6b4067 .
+
+context:instant_d84d561a-ae34-4052-ab8b-ef2269f6e6aa rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915160"^^xsd:dateTime .
+inra_data:240596a0-e996-4451-9e6c-2270c0fd7b46 rdf:type oepo:Observation ;
+   time:hasTime context:instant_d84d561a-ae34-4052-ab8b-ef2269f6e6aa ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "73.6"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:240596a0-e996-4451-9e6c-2270c0fd7b46 .
+
+context:instant_d65b06db-7c19-45ff-ab26-c685cf41ce46 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915247"^^xsd:dateTime .
+inra_data:09e3b652-4e11-4af0-b43a-99e88a6080a3 rdf:type oepo:Observation ;
+   time:hasTime context:instant_d65b06db-7c19-45ff-ab26-c685cf41ce46 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "164.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:09e3b652-4e11-4af0-b43a-99e88a6080a3 .
+
+context:instant_ffc6ca7c-0610-4cb5-9aff-77ebffc0e753 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915343"^^xsd:dateTime .
+inra_data:ebc37c7a-909b-42f4-9a00-b6a69e503ac2 rdf:type oepo:Observation ;
+   time:hasTime context:instant_ffc6ca7c-0610-4cb5-9aff-77ebffc0e753 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "214.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:ebc37c7a-909b-42f4-9a00-b6a69e503ac2 .
+
+context:instant_fbd03da7-5268-484c-aba8-a3ba61f122ac rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915434"^^xsd:dateTime .
+inra_data:1f288282-c322-4f92-be8f-038086658565 rdf:type oepo:Observation ;
+   time:hasTime context:instant_fbd03da7-5268-484c-aba8-a3ba61f122ac ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "219.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:1f288282-c322-4f92-be8f-038086658565 .
+
+context:instant_6f467952-211f-4ba1-acff-d850b37486c5 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915527"^^xsd:dateTime .
+inra_data:e7709ad4-6a72-4823-a26e-40d00784af21 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6f467952-211f-4ba1-acff-d850b37486c5 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "294.1"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e7709ad4-6a72-4823-a26e-40d00784af21 .
+
+context:instant_bb91e446-e39e-4467-a62b-d10894b9d531 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915630"^^xsd:dateTime .
+inra_data:03772158-fd3a-4d45-b556-a7c2cc9294f5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_bb91e446-e39e-4467-a62b-d10894b9d531 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "166.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:03772158-fd3a-4d45-b556-a7c2cc9294f5 .
+
+context:instant_05b75e60-d3bd-4e90-ad15-849fe1375ccb rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915743"^^xsd:dateTime .
+inra_data:9493c895-d575-43b5-bce3-bb99660b3f85 rdf:type oepo:Observation ;
+   time:hasTime context:instant_05b75e60-d3bd-4e90-ad15-849fe1375ccb ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "243.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:9493c895-d575-43b5-bce3-bb99660b3f85 .
+
+context:instant_a981d36e-8a52-4782-b3b5-88a8582ae327 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915869"^^xsd:dateTime .
+inra_data:e08f064d-79de-4bcf-a60e-f407c32bdbe7 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a981d36e-8a52-4782-b3b5-88a8582ae327 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "164.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e08f064d-79de-4bcf-a60e-f407c32bdbe7 .
+
+context:instant_f4fa735e-50ac-4919-8663-71f97ac8c898 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.915984"^^xsd:dateTime .
+inra_data:fc9f0a53-f1f9-426a-92e5-913e643fcd80 rdf:type oepo:Observation ;
+   time:hasTime context:instant_f4fa735e-50ac-4919-8663-71f97ac8c898 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "167.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:fc9f0a53-f1f9-426a-92e5-913e643fcd80 .
+
+context:instant_a068c981-c605-4ac6-a783-c9a99ad59da1 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916096"^^xsd:dateTime .
+inra_data:c461fb00-7479-4d0c-9487-fb7eba8ebfea rdf:type oepo:Observation ;
+   time:hasTime context:instant_a068c981-c605-4ac6-a783-c9a99ad59da1 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "132.7"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:c461fb00-7479-4d0c-9487-fb7eba8ebfea .
+
+context:instant_3b6a9108-7482-4826-b47a-ce4efddf6a2c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916207"^^xsd:dateTime .
+inra_data:40da2a46-c205-4a93-a94d-846016db760d rdf:type oepo:Observation ;
+   time:hasTime context:instant_3b6a9108-7482-4826-b47a-ce4efddf6a2c ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "315.7"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L1-2-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:40da2a46-c205-4a93-a94d-846016db760d .
+
+context:instant_592e3c16-d6e6-4527-854a-db861091b9fb rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916322"^^xsd:dateTime .
+inra_data:cfc4a9f1-9ad5-41cc-b917-fe2aa6cc1a37 rdf:type oepo:Observation ;
+   time:hasTime context:instant_592e3c16-d6e6-4527-854a-db861091b9fb ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "112.6"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:cfc4a9f1-9ad5-41cc-b917-fe2aa6cc1a37 .
+
+context:instant_9275efe1-36c6-454d-b793-46409d6b5be2 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916434"^^xsd:dateTime .
+inra_data:8d577604-b3ec-4270-928d-386bea19a0ba rdf:type oepo:Observation ;
+   time:hasTime context:instant_9275efe1-36c6-454d-b793-46409d6b5be2 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "140.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:8d577604-b3ec-4270-928d-386bea19a0ba .
+
+context:instant_d2c23904-fc06-440f-bed6-1eb53d1edaf8 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916549"^^xsd:dateTime .
+inra_data:12dc34c1-7b80-4fdc-a6dc-591d0818c54e rdf:type oepo:Observation ;
+   time:hasTime context:instant_d2c23904-fc06-440f-bed6-1eb53d1edaf8 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "244.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C03-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:12dc34c1-7b80-4fdc-a6dc-591d0818c54e .
+
+context:instant_b559b093-aa2d-4f91-9996-dd9e9ce499fd rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916668"^^xsd:dateTime .
+inra_data:eaba793e-0194-4aff-b0cd-ba032d5150c7 rdf:type oepo:Observation ;
+   time:hasTime context:instant_b559b093-aa2d-4f91-9996-dd9e9ce499fd ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "137.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:eaba793e-0194-4aff-b0cd-ba032d5150c7 .
+
+context:instant_1ec46625-9a87-4c74-9668-954065be5da0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916768"^^xsd:dateTime .
+inra_data:74eb2030-1cde-4a06-ae3b-e12ab60a58af rdf:type oepo:Observation ;
+   time:hasTime context:instant_1ec46625-9a87-4c74-9668-954065be5da0 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "163.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:74eb2030-1cde-4a06-ae3b-e12ab60a58af .
+
+context:instant_147f8d76-0648-4743-8fba-29fb9432e988 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916883"^^xsd:dateTime .
+inra_data:ec2f3948-a9eb-4ccb-b9b1-f61c59c023a5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_147f8d76-0648-4743-8fba-29fb9432e988 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "175.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:ec2f3948-a9eb-4ccb-b9b1-f61c59c023a5 .
+
+context:instant_c0395cb0-1d39-4e54-90b1-d08842a9fcd0 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.916998"^^xsd:dateTime .
+inra_data:5352a129-d9c3-47cb-b95f-9e507d101efc rdf:type oepo:Observation ;
+   time:hasTime context:instant_c0395cb0-1d39-4e54-90b1-d08842a9fcd0 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "133.4"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:5352a129-d9c3-47cb-b95f-9e507d101efc .
+
+context:instant_0a03ce0e-9da7-48f3-a213-a92234328a11 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917110"^^xsd:dateTime .
+inra_data:cda66d2d-f9e9-4173-98b2-02526b671b79 rdf:type oepo:Observation ;
+   time:hasTime context:instant_0a03ce0e-9da7-48f3-a213-a92234328a11 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "176.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:cda66d2d-f9e9-4173-98b2-02526b671b79 .
+
+context:instant_2467d6aa-95cf-4666-aabc-50de784de180 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917222"^^xsd:dateTime .
+inra_data:4db225f5-5a86-4578-910f-2f2c698385f3 rdf:type oepo:Observation ;
+   time:hasTime context:instant_2467d6aa-95cf-4666-aabc-50de784de180 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "164.1"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:4db225f5-5a86-4578-910f-2f2c698385f3 .
+
+context:instant_ca72cf7b-1f27-4456-9b80-a14074cd28ff rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917347"^^xsd:dateTime .
+inra_data:2f142638-76fe-4797-8a56-90a872a65440 rdf:type oepo:Observation ;
+   time:hasTime context:instant_ca72cf7b-1f27-4456-9b80-a14074cd28ff ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "104.2"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:2f142638-76fe-4797-8a56-90a872a65440 .
+
+context:instant_d6eecb3b-d826-40d1-ad23-f0a9583b38d2 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917460"^^xsd:dateTime .
+inra_data:f38b2662-17ab-4612-9678-e2d07975b700 rdf:type oepo:Observation ;
+   time:hasTime context:instant_d6eecb3b-d826-40d1-ad23-f0a9583b38d2 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "195.9"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:f38b2662-17ab-4612-9678-e2d07975b700 .
+
+context:instant_8387dbcb-f5ee-47f7-a65d-80b69273af74 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917574"^^xsd:dateTime .
+inra_data:34a3afe3-5f88-4bc2-84ad-ed57d6e7455b rdf:type oepo:Observation ;
+   time:hasTime context:instant_8387dbcb-f5ee-47f7-a65d-80b69273af74 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "155.7"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:34a3afe3-5f88-4bc2-84ad-ed57d6e7455b .
+
+context:instant_513008ca-a5dd-420b-a83e-906f1e9f457b rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917683"^^xsd:dateTime .
+inra_data:8eda9da8-bdf0-4ace-99ef-014d3dfe77f3 rdf:type oepo:Observation ;
+   time:hasTime context:instant_513008ca-a5dd-420b-a83e-906f1e9f457b ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "131.8"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:8eda9da8-bdf0-4ace-99ef-014d3dfe77f3 .
+
+context:instant_fe897c9d-1c6d-4208-a3c3-b20322f659c1 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917766"^^xsd:dateTime .
+inra_data:a88a4c46-eee2-4a2e-9154-f84c327118c2 rdf:type oepo:Observation ;
+   time:hasTime context:instant_fe897c9d-1c6d-4208-a3c3-b20322f659c1 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-L2-2-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a88a4c46-eee2-4a2e-9154-f84c327118c2 .
+
+context:instant_73ec4bd4-5265-4aaf-8018-19c73b6153d5 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917874"^^xsd:dateTime .
+inra_data:6bdac33a-37a3-4f4b-91a7-3b14a518b502 rdf:type oepo:Observation ;
+   time:hasTime context:instant_73ec4bd4-5265-4aaf-8018-19c73b6153d5 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-L2-2-C15-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:6bdac33a-37a3-4f4b-91a7-3b14a518b502 .
+
+context:instant_52644524-6822-4d3d-90e2-e57d8fb05721 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.917989"^^xsd:dateTime .
+inra_data:24842c98-1828-455a-b4c1-d2d0248c5fe1 rdf:type oepo:Observation ;
+   time:hasTime context:instant_52644524-6822-4d3d-90e2-e57d8fb05721 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "251.5"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:24842c98-1828-455a-b4c1-d2d0248c5fe1 .
+
+context:instant_78f2e603-69b7-40ab-beea-2096f8145ec3 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918114"^^xsd:dateTime .
+inra_data:33b72173-9771-4003-8681-9ba13f415c77 rdf:type oepo:Observation ;
+   time:hasTime context:instant_78f2e603-69b7-40ab-beea-2096f8145ec3 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+   rdf:value "235.0"^^xsd:decimal .
+inra_obj:2016-SUNAGRI-L2-2-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:33b72173-9771-4003-8681-9ba13f415c77 .
+
+context:instant_26f93b15-790d-435f-aab9-2629cafc6834 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918228"^^xsd:dateTime .
+inra_data:e57be72e-f055-4453-92b3-7d9542f65d69 rdf:type oepo:Observation ;
+   time:hasTime context:instant_26f93b15-790d-435f-aab9-2629cafc6834 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C01-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:e57be72e-f055-4453-92b3-7d9542f65d69 .
+
+context:instant_399e4bbc-b515-4212-8f8e-8639004f3bad rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918341"^^xsd:dateTime .
+inra_data:44538eac-3e52-47a9-9d1a-0245b595ea2c rdf:type oepo:Observation ;
+   time:hasTime context:instant_399e4bbc-b515-4212-8f8e-8639004f3bad ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C02-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:44538eac-3e52-47a9-9d1a-0245b595ea2c .
+
+context:instant_e1eec42e-cb79-4586-928f-f542d8858a64 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918451"^^xsd:dateTime .
+inra_data:9f8e827e-c18f-4d0c-9d9d-205a16e5284c rdf:type oepo:Observation ;
+   time:hasTime context:instant_e1eec42e-cb79-4586-928f-f542d8858a64 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C03-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:9f8e827e-c18f-4d0c-9d9d-205a16e5284c .
+
+context:instant_a32e6bc9-0f7c-4274-b522-26acc5b20384 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918561"^^xsd:dateTime .
+inra_data:beb9a37c-0016-4f6c-b443-89b2d52eaa64 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a32e6bc9-0f7c-4274-b522-26acc5b20384 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C04-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:beb9a37c-0016-4f6c-b443-89b2d52eaa64 .
+
+context:instant_6d514f7e-0d75-4c4f-bd8e-3d061e4a5953 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918678"^^xsd:dateTime .
+inra_data:b664f2f8-a11e-4fba-a449-50ef0c1a9da7 rdf:type oepo:Observation ;
+   time:hasTime context:instant_6d514f7e-0d75-4c4f-bd8e-3d061e4a5953 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C05-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:b664f2f8-a11e-4fba-a449-50ef0c1a9da7 .
+
+context:instant_4ce96471-0b18-4e2f-884d-e084cdb6844c rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918777"^^xsd:dateTime .
+inra_data:82847c5b-2e9c-4eac-b1a5-dfbb3597d1fc rdf:type oepo:Observation ;
+   time:hasTime context:instant_4ce96471-0b18-4e2f-884d-e084cdb6844c ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C06-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:82847c5b-2e9c-4eac-b1a5-dfbb3597d1fc .
+
+context:instant_ed0d46b2-312c-4586-9c13-b4c9e4b973a1 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.918904"^^xsd:dateTime .
+inra_data:d1ad306b-b725-4c55-aea3-da47f58ad34e rdf:type oepo:Observation ;
+   time:hasTime context:instant_ed0d46b2-312c-4586-9c13-b4c9e4b973a1 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C07-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:d1ad306b-b725-4c55-aea3-da47f58ad34e .
+
+context:instant_208d26df-bb94-430b-b79c-022ba629959d rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919042"^^xsd:dateTime .
+inra_data:8119a8a0-8592-4be7-bb10-da9c3b19dad5 rdf:type oepo:Observation ;
+   time:hasTime context:instant_208d26df-bb94-430b-b79c-022ba629959d ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C08-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:8119a8a0-8592-4be7-bb10-da9c3b19dad5 .
+
+context:instant_62a33c87-299f-4c9f-a6ac-c2ef0c529b42 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919154"^^xsd:dateTime .
+inra_data:6b7f11b7-0cd2-4e66-8fba-5f99fc8b9118 rdf:type oepo:Observation ;
+   time:hasTime context:instant_62a33c87-299f-4c9f-a6ac-c2ef0c529b42 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C09-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:6b7f11b7-0cd2-4e66-8fba-5f99fc8b9118 .
+
+context:instant_aa01e90e-5453-4952-bb9d-85c545744324 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919266"^^xsd:dateTime .
+inra_data:42079db5-9a21-444a-9ad4-fce8404060fa rdf:type oepo:Observation ;
+   time:hasTime context:instant_aa01e90e-5453-4952-bb9d-85c545744324 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C10-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:42079db5-9a21-444a-9ad4-fce8404060fa .
+
+context:instant_a3ee040b-9c22-462d-a97a-355751666968 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919378"^^xsd:dateTime .
+inra_data:b9ba2026-4de5-476e-824c-df6b29688448 rdf:type oepo:Observation ;
+   time:hasTime context:instant_a3ee040b-9c22-462d-a97a-355751666968 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C11-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:b9ba2026-4de5-476e-824c-df6b29688448 .
+
+context:instant_cc166777-2aee-4594-ad53-5177d13077c4 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919487"^^xsd:dateTime .
+inra_data:a6daf93d-0346-4798-b60b-c2a51ad14b41 rdf:type oepo:Observation ;
+   time:hasTime context:instant_cc166777-2aee-4594-ad53-5177d13077c4 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C12-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:a6daf93d-0346-4798-b60b-c2a51ad14b41 .
+
+context:instant_710e4556-cc45-4333-94f1-2847738666c6 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919585"^^xsd:dateTime .
+inra_data:96288598-b2c9-4ad9-a31c-6961ef059159 rdf:type oepo:Observation ;
+   time:hasTime context:instant_710e4556-cc45-4333-94f1-2847738666c6 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C13-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:96288598-b2c9-4ad9-a31c-6961ef059159 .
+
+context:instant_68dc36e3-371a-43ee-9fcd-575ff1e0567e rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919659"^^xsd:dateTime .
+inra_data:d0530255-3150-4edd-8134-9a39c9b0cf62 rdf:type oepo:Observation ;
+   time:hasTime context:instant_68dc36e3-371a-43ee-9fcd-575ff1e0567e ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C14-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:d0530255-3150-4edd-8134-9a39c9b0cf62 .
+
+context:instant_c1940df1-e5fa-487f-b849-3baca0dd57cf rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919752"^^xsd:dateTime .
+inra_data:5f2bd5aa-6727-4b5a-8bd8-8e452cbc7ff9 rdf:type oepo:Observation ;
+   time:hasTime context:instant_c1940df1-e5fa-487f-b849-3baca0dd57cf ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C16-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:5f2bd5aa-6727-4b5a-8bd8-8e452cbc7ff9 .
+
+context:instant_429da1cd-1ea8-429f-97b9-a2f5c7bca409 rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919871"^^xsd:dateTime .
+inra_data:aee9e905-94b9-4893-a732-b40875eb2e27 rdf:type oepo:Observation ;
+   time:hasTime context:instant_429da1cd-1ea8-429f-97b9-a2f5c7bca409 ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C17-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:aee9e905-94b9-4893-a732-b40875eb2e27 .
+
+context:instant_dce33bcd-0042-45e2-a877-96ea953849ef rdf:type time:Instant ;
+   time:inXSDDateTimeStamp "09/09/16"^^xsd:dateTimeStamp ;
+   dcterms:created "2018-07-12T18:51:59.919975"^^xsd:dateTime .
+inra_data:16b4a535-ad15-4e54-87c9-ea5d817c1bd2 rdf:type oepo:Observation ;
+   time:hasTime context:instant_dce33bcd-0042-45e2-a877-96ea953849ef ;
+   oepo:hasVariable inra_onto:VolumeBaiesMlvariationvolumeeaueprouvette ;
+inra_obj:2016-SUNAGRI-T-1-C18-Grappe rdf:type aeo:Grappe ;
+   oepo:hasObservation inra_data:16b4a535-ad15-4e54-87c9-ea5d817c1bd2 .
+
+
