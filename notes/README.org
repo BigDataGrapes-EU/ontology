@@ -3,7 +3,7 @@
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:nil title:t toc:5
 #+OPTIONS: todo:t |:t
 #+TITLE: BigDataGrapes Ontology Notes
-#+DATE: <2018-07-02>
+#+DATE: <2018-07-16>
 #+AUTHOR: Vladimir Alexiev
 #+EMAIL: vladimir.alexiev@ontotext.com
 #+LANGUAGE: en
@@ -29,14 +29,20 @@ Sorted alphabetically (previously I had from generic to specific, but that quick
 - ChEBI: Chemical Entities of Biological Interest
   - Chebi is "weird". Need everything that is somehow related to class CHEBI_33286 (including classes that belong to the chemical entity hierarchy) 
 - CO: Crop Ontology (series of)
-- CO_320: Rice
-- CO_322: Maize
-- CO_356: Vitis (viticulture)
+  - CO_320: Rice
+  - CO_322: Maize
+  - CO_356: Vitis (viticulture)
+  - CO_357: Woody Plant
+  - CO_UO: Units Ontology
+    - I can't get the whole CO_UO from neither [[http://www.cropontology.org/rdf/UO:]] nor http://www.cropontology.org/rdf/UO.
+      But individual terms are returned, eg http://www.cropontology.org/rdf/UO:0000021 returns Turtle.
 - EO (ENVO): Environment Ontology. Need these 3 classes (they are the biggest), and maybe we are missing some classes there:
   - ENVO_00010483 environmental material
   - ENVO_00002297 environmental feature
   - ENVO_02500000 environmental system process
 - IAO: Information Artifact Ontology
+- MMO: Measurement Methods Ontology 
+  - http://purl.obolibrary.org/obo/mmo.owl
 - NCBITaxon: NCBI Taxonomy
   - Agrovoc cannot be trusted regarding the taxonomy of species. The scientific names hierarchy should come from another standard.
   - NCBI Taxonomy is not perfect either, but it is much better in terms of updates (particularly for plants)
@@ -71,6 +77,7 @@ Sorted alphabetically (previously I had from generic to specific, but that quick
 | ENVO      |    8510 |        241 |          21 | http://www.ontobee.org/ontostat                                             |
 | FOODON    |   27050 |        130 |         359 | http://www.ontobee.org/ontostat                                             |
 | IAO       |     219 |        111 |          23 | http://www.ontobee.org/ontostat                                             |
+| MMO       |         |            |             |                                                                             |
 | NCBITaxon | 1692930 |         27 |             | http://www.ontobee.org/ontostat                                             |
 | OBO       |         |            |             |                                                                             |
 | OFPE      |         |            |             | http://agroportal.lirmm.fr/ontologies/OFPE                                  |
@@ -388,6 +395,30 @@ RDF http://data.ifpri.org/lod/at.owl, doc http://data.ifpri.org/lod/at/resource/
 - Uses some value URLs with slash, for which the rice: prefix cannot be used, 
   eg ~rice:00000321/1~ is value "1= Strong no bending" of variable ~rice:00000321~ "Culm strength scale SES".
   Better to use ~_1~ instead of ~/1~
+
+** Crop Unit Ontology
+- Defines "grams" relative to some woody plant feature.
+  This is crazy because a gram is a gram, no matter what it's used to measure.
+  #+BEGIN_SRC Turtle
+  CO_UO:0000021 rdfs:label "g"@en; CO:scale_of CO_357:2000105.
+  CO_357:2000105 rdfs:label "Ratio shoot root protocol"@en 
+  #+END_SRC
+
+
+** Woody Plant 
+- http://www.cropontology.org/ontology/CO_357/Woody%20Plant%20Ontology/nt is invalid, because someone was too lazy to put in new lines.
+  Although ugly and non-professional, this works ok for URLs. 
+  But it breaks for blank node IDs:
+  : <http://www.cropontology.org/rdf/UO:0000309> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1._:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+  ~_:genid1._:genid1~ is a valid blank node ID, and this breaks the rest of the parsing
+- Defines values that are unknown. Of course, such are useless:
+  #+BEGIN_SRC Turtle
+  <http://www.cropontology.org/rdf/CO_357:3000065/7>
+        a                       skos:Concept ;
+        rdfs:label              "6 = ?"@en ;
+        rdfs:subClassOf         CO_357:3000065 ;
+        skos:broaderTransitive  CO_357:3000065 .
+  #+END_SRC
 
 ** Vitis 
 Grape Ontology including OIV and bioversity descriptors. INRA July 2017
