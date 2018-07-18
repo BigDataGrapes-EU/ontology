@@ -1,4 +1,25 @@
-First read [[https://docs.google.com/document/d/1TfWhafz2S_Py9rshf8bmaSyNyalelqEDXU7RpxJ4zEw/edit#][data-validation-handling]]
+#+STARTUP: showeverything
+#+OPTIONS: ':nil *:t -:t ::t <:t H:5 \n:nil ^:{} arch:headline author:t broken-links:nil
+#+OPTIONS: c:nil creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:nil
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:nil title:t toc:5
+#+OPTIONS: todo:t |:t
+#+TITLE: INRA data5 errors
+#+DATE: <2018-07-16>
+#+AUTHOR: Vladimir Alexiev
+#+EMAIL: vladimir.alexiev@ontotext.com
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.3.1 (Org mode 9.1.13)
+
+* Instructions
+- HTML-rendered version of this file: https://rawgit.com/BigDataGrapes-EU/ontology/master/data/INRA/data5/README.html
+- First read [[https://docs.google.com/document/d/1TfWhafz2S_Py9rshf8bmaSyNyalelqEDXU7RpxJ4zEw/edit#][data-validation-handling]]
+- This file lists errors/problems found in some of the files.
+  But often the same error applies to several terms in the same file, or even to several files.
+  So check each reported error against all files and all their contents.
+  - Eg the inapplicability of ~dct:created~ to ~time:Instant~ is reported 
+    for the first observation file ~2016vendanges_transf_parsed.ttl~ but applies to all observation files
 
 * Prefixes [0/4]
 ** TODO Turtle prefix format
@@ -42,7 +63,7 @@ inra_data:a7fc3837-9c8b-4e4b-a79d-aad0b2876086 rdf:type oepo:Observation ;
   #+END_SRC
 
 * 2016vendanges_transf_parsed.ttl [0/8]
-Observations
+Harvest observations: ~inra_onto:Poidsvendangegpesee~ (grams harvested)
 ** TODO syntax error
 Some unquoted string
   #+BEGIN_SRC Turtle
@@ -79,7 +100,7 @@ I can't verify whether ~oepo:Observation~ takes ~rdf:value~ because OEPO doesn't
 Using ~rdf:value~ this way is fine, but we should specify it with an RDF Shape
 
 * ComposantesGrappe_transf_parsed.ttl [0/2]
-Observations
+Observations: ~inra_onto:Nbbaiescomptage~ number of counting bays?!?
 ** TODO invalid DateTimeStamp
 : [line: 16, col: 28] Lexical form '09/09/16' not valid for datatype xsd:DateTimeStamp
 ** TODO missing rdf:value
@@ -90,11 +111,11 @@ Observations
 You have no rdf:value for this record, so you should omit the whole record (it's useless without the value).
 
 * ComposantesVendanges_transf_parsed.ttl [0/1]
-Observations
+Observations: ~inra_onto:Nbgrappescomptage~ number of counted clusters?!?
 ** TODO missing rdf:value
 : [line: 50, col: 41] Triples not terminated by DOT
 
-* INRA_Variables.ttl [0/3]
+* INRA_Variables.ttl [0/4]
 Variable definitions
 ** TODO Namespace hijacking
 Don't define terms of other ontologies
@@ -105,8 +126,10 @@ CO:variable_of  rdfs:subProperty_of  skos:related ;
 ** TODO Use English class names
 If you want to be more easily understood, please use English (or else I'll comment in Bulgarian ;-)
 : inra_onto:Poidsvendangegpesee # weight as measured at vine picking
+** TODO Define labels
+Eg inra_onto:Glucose.fructoseg.lsequentiel.enzymatique needs a label such as "Glucose/fructose g/l sequential enzymatic"
 ** TODO Can't use CO_UO "gram"
-Check whether ~inra_onto:Poidsvendangegpesee~ defines everything required to interpret the number.
+Checking whether ~inra_onto:Poidsvendangegpesee~ defines everything required to interpret the number.
 #+BEGIN_SRC Turtle
 inra_onto:Poidsvendangegpesee CO:variable_of CO_356:2000168 , CO_UO:0000021 , MMO:0000157 .
 CO_356:2000168 rdfs:label "Yield"@en .
@@ -116,10 +139,15 @@ MMO:0000157 rdfs:label "digital scale post excision weight measurement" .
 #+END_SRC
 - I can't get the whole CO_UO from neither [[http://www.cropontology.org/rdf/UO:]] nor http://www.cropontology.org/rdf/UO.
   But individual terms are returned, eg http://www.cropontology.org/rdf/UO:0000021 returns Turtle.
-- Unfortunately CO_UO defines "grams" relative to some woody plant feature.
+- Unfortunately ~CO_UO:0000021~ defines "grams" relative to some Woody Plant feature.
   This is crazy because a gram is a gram, no matter what it's used to measure.
 - It means you cannot use this "gram" for grapes. 
-  Better use UO; or even better QUDT, which also defines the relation of "gram" to other units.
+  Better use UO; or even better QUDT, which also defines relations/conversions of "gram" to other units.
+** TODO Missing CO_UO Term
+#+BEGIN_SRC Turtle
+inra_onto:Glucose.fructoseg.lsequentiel.enzymatique CO:variable_of CO_356:2000057, CO_UO:0000175, MMO:0000388 .
+#+END_SRC
+However, http://www.cropontology.org/rdf/UO:0000175 is missing: unlike the above UO:0000021, this one returns nothing.
 
 * fieldsLocalisationPR_parsed.ttl [0/7]
 Plot geometry
@@ -142,7 +170,10 @@ inra_obj:22-SYRAH rdf:type aeo:Plot .
 inra_obj:68-COLLECTION-BLANCS rdf:type aeo:Plot .
 #+END_SRC
 ** TODO Fix polygon geometry
-This includes just 4 coordinates. No way this defines a valid polygon. Even for a simple box you need 4 corners, i.e. 8 coordinates
+No way this defines a valid polygon:
+- It includes just 4 coordinates. Even for a simple box you need 4 corners, i.e. 8 coordinates
+- Coordinates should be +-180 degrees longitude and +-90 degrees latitude, but these are very big numbers
+- You have two pairs of the same number but these should be "lat lon" pairs (or is it "lon lat" pairs, I can never remember) 
 #+BEGIN_SRC Turtle
 gsp:asWKT "POLYGON ((710743.61182814 710743.61182814, 6226766.01933858 6226766.01933858 ))"^^gsp:wktLiteral .
 #+END_SRC
@@ -167,4 +198,32 @@ When fixed, check for validity:
 * MaturiteJus_transf_parsed.ttl
 * MaturiteSunAgri2B_transf_parsed.ttl
 * must_transf_parsed.ttl
+Observations: ~inra_onto:Sucrestotaux.brixrefractometrie~ Total sugars (BRIX refractometry)
+** TODO Syntax error
+#+BEGIN_SRC Turtle
+[line: 28, col: 1 ] Broken token (newline): VIP_Sauvignon rdf:type afeo:Must ;
+#+END_SRC
 * Suivifermentations_transf_parsed.ttl
+Follow-up fermentations of ~ofpe:IntermediateProduct~. 
+Observations of "Glucose/fructose g/l sequential enzymatic".
+** TODO Syntax error
+#+BEGIN_SRC Turtle
+[line: 144, col: 26] Unrecognized: sec
+#+END_SRC
+** TODO Class vs Property
+This is a class not property so it can't be used like this.
+#+BEGIN_SRC Turtle
+inra_data:32757c4a-15dd-4896-a3b9-970f33e6f756 rdf:type oepo:Observation ;
+   foaf:Organization inra_code:16-1841 ;
+#+END_SRC
+~oepo:Observation~ needs some link to Agent, be that Operator or Organization
+** TODO Where are inra_codes defined?
+These codes are used by data, but where are they defined?
+#+BEGIN_SRC Turtle
+inra_code:Cuve_BB1010 # FinFermentationsAlcoolique_transf_parsed
+inra_code:BB1010      # Suivifermentations_transf_parsed
+#+END_SRC
+Codes are also used for organizations, so it may be better to define these as proper classes and call them something else:
+#+BEGIN_SRC Turtle
+ foaf:Organization inra_code:16-1841 ; # Suivifermentations_transf_parsed
+#+END_SRC

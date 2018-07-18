@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>INRA data5 errors</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Vladimir Alexiev" />
 <style type="text/css">
@@ -229,82 +229,110 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
+<h1 class="title">INRA data5 errors</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org92ed739">Prefixes <code>[0/4]</code></a>
+<li><a href="#org7f2a786">Instructions</a></li>
+<li><a href="#org66bbdc2">Prefixes <code>[0/4]</code></a>
 <ul>
-<li><a href="#orgc013403"><span class="todo TODO">TODO</span> Turtle prefix format</a></li>
-<li><a href="#org0c1afe4"><span class="todo TODO">TODO</span> Check against prefixes.ttl</a></li>
-<li><a href="#orga8bacc1"><span class="todo TODO">TODO</span> Namespaces are not suggestive</a></li>
+<li><a href="#org424ccd4"><span class="todo TODO">TODO</span> Turtle prefix format</a></li>
+<li><a href="#org119cf3f"><span class="todo TODO">TODO</span> Check against prefixes.ttl</a></li>
+<li><a href="#org0b10d1b"><span class="todo TODO">TODO</span> Namespaces are not suggestive</a></li>
 </ul>
 </li>
-<li><a href="#orgf66787c">General <code>[0/1]</code></a>
+<li><a href="#orgefe054a">General <code>[0/1]</code></a>
 <ul>
-<li><a href="#orge86eba9"><span class="todo TODO">TODO</span> Should be resolvable</a></li>
-<li><a href="#orgfa2d497"><span class="todo TODO">TODO</span> Leave empty line</a></li>
+<li><a href="#org944cd23"><span class="todo TODO">TODO</span> Should be resolvable</a></li>
+<li><a href="#orgbcab4c2"><span class="todo TODO">TODO</span> Leave empty line</a></li>
 </ul>
 </li>
-<li><a href="#org0bd0909">2016vendanges_transf_parsed.ttl <code>[0/8]</code></a>
+<li><a href="#org6f44fdc">2016vendanges_transf_parsed.ttl <code>[0/8]</code></a>
 <ul>
-<li><a href="#org901d635"><span class="todo TODO">TODO</span> syntax error</a></li>
-<li><a href="#org4fd612c"><span class="todo TODO">TODO</span> dct:created is inappropraite</a></li>
-<li><a href="#orgec28f60"><span class="todo TODO">TODO</span> aeo:involvedIn</a></li>
-<li><a href="#orgfb6e06b"><span class="todo TODO">TODO</span> Class vs Property</a></li>
-<li><a href="#orgf585235"><span class="todo TODO">TODO</span> No georeference?</a></li>
-<li><a href="#org17f0b9e"><span class="todo TODO">TODO</span> rdf:value?</a></li>
+<li><a href="#org8eb7beb"><span class="todo TODO">TODO</span> syntax error</a></li>
+<li><a href="#org2c42f6f"><span class="todo TODO">TODO</span> dct:created is inappropraite</a></li>
+<li><a href="#orgc902471"><span class="todo TODO">TODO</span> aeo:involvedIn</a></li>
+<li><a href="#orgce3b3e8"><span class="todo TODO">TODO</span> Class vs Property</a></li>
+<li><a href="#orgef1d0de"><span class="todo TODO">TODO</span> No georeference?</a></li>
+<li><a href="#org29f9627"><span class="todo TODO">TODO</span> rdf:value?</a></li>
 </ul>
 </li>
-<li><a href="#orga35dc99">ComposantesGrappe_transf_parsed.ttl <code>[0/2]</code></a>
+<li><a href="#orgc16a01c">ComposantesGrappe_transf_parsed.ttl <code>[0/2]</code></a>
 <ul>
-<li><a href="#orgeebb293"><span class="todo TODO">TODO</span> invalid DateTimeStamp</a></li>
-<li><a href="#org98bb6fb"><span class="todo TODO">TODO</span> missing rdf:value</a></li>
+<li><a href="#org7ea2ba9"><span class="todo TODO">TODO</span> invalid DateTimeStamp</a></li>
+<li><a href="#org56aec7a"><span class="todo TODO">TODO</span> missing rdf:value</a></li>
 </ul>
 </li>
-<li><a href="#org51720dd">ComposantesVendanges_transf_parsed.ttl <code>[0/1]</code></a>
+<li><a href="#org7b3ae04">ComposantesVendanges_transf_parsed.ttl <code>[0/1]</code></a>
 <ul>
-<li><a href="#orgafa4380"><span class="todo TODO">TODO</span> missing rdf:value</a></li>
+<li><a href="#org198db19"><span class="todo TODO">TODO</span> missing rdf:value</a></li>
 </ul>
 </li>
-<li><a href="#orge2c0e9b">INRA_Variables.ttl <code>[0/3]</code></a>
+<li><a href="#orgc387ede">INRA_Variables.ttl <code>[0/4]</code></a>
 <ul>
-<li><a href="#orgc259902"><span class="todo TODO">TODO</span> Namespace hijacking</a></li>
-<li><a href="#orgc879a58"><span class="todo TODO">TODO</span> Use English class names</a></li>
-<li><a href="#orgcbe6331"><span class="todo TODO">TODO</span> Can't use CO_UO "gram"</a></li>
+<li><a href="#org69c9595"><span class="todo TODO">TODO</span> Namespace hijacking</a></li>
+<li><a href="#org9837668"><span class="todo TODO">TODO</span> Use English class names</a></li>
+<li><a href="#org4058c72"><span class="todo TODO">TODO</span> Define labels</a></li>
+<li><a href="#org04b7f3e"><span class="todo TODO">TODO</span> Can't use CO_UO "gram"</a></li>
+<li><a href="#org3e5344d"><span class="todo TODO">TODO</span> Missing CO_UO Term</a></li>
 </ul>
 </li>
-<li><a href="#org9a52e71">fieldsLocalisationPR_parsed.ttl <code>[0/7]</code></a>
+<li><a href="#orga34cfd1">fieldsLocalisationPR_parsed.ttl <code>[0/7]</code></a>
 <ul>
-<li><a href="#org96ab714"><span class="todo TODO">TODO</span> Use QUDT not quty</a></li>
-<li><a href="#org7d9ed6b"><span class="todo TODO">TODO</span> Don't use dbo: for units</a></li>
-<li><a href="#org6992c17"><span class="todo TODO">TODO</span> Where is the grape variety indicated?</a></li>
-<li><a href="#org8c7bdf8"><span class="todo TODO">TODO</span> Fix polygon geometry</a></li>
-<li><a href="#org3e2425a"><span class="todo TODO">TODO</span> geo:Polygon vs geo:Geometry</a></li>
-<li><a href="#orgfbfc264"><span class="todo TODO">TODO</span> Declare geo:Feature</a></li>
+<li><a href="#orgd1ce1c2"><span class="todo TODO">TODO</span> Use QUDT not quty</a></li>
+<li><a href="#orgdb7ed92"><span class="todo TODO">TODO</span> Don't use dbo: for units</a></li>
+<li><a href="#orgafa1962"><span class="todo TODO">TODO</span> Where is the grape variety indicated?</a></li>
+<li><a href="#org1c11b3c"><span class="todo TODO">TODO</span> Fix polygon geometry</a></li>
+<li><a href="#org838b9f9"><span class="todo TODO">TODO</span> geo:Polygon vs geo:Geometry</a></li>
+<li><a href="#org0a252a9"><span class="todo TODO">TODO</span> Declare geo:Feature</a></li>
 </ul>
 </li>
-<li><a href="#org722de28">FinFermentationsAlcoolique_transf_parsed.ttl</a></li>
-<li><a href="#orgb127a73">Maturite_transf_parsed.ttl</a></li>
-<li><a href="#org5c1e9b5">MaturiteAnthocyanes_transf_parsed.ttl</a></li>
-<li><a href="#org07a8abd">MaturiteJus_transf_parsed.ttl</a></li>
-<li><a href="#org56980ac">MaturiteSunAgri2B_transf_parsed.ttl</a></li>
-<li><a href="#org4d43cf9">must_transf_parsed.ttl</a></li>
-<li><a href="#org6a0bc2b">Suivifermentations_transf_parsed.ttl</a></li>
+<li><a href="#org066fb01">FinFermentationsAlcoolique_transf_parsed.ttl</a></li>
+<li><a href="#orgd689176">Maturite_transf_parsed.ttl</a></li>
+<li><a href="#org8135de6">MaturiteAnthocyanes_transf_parsed.ttl</a></li>
+<li><a href="#orgc0039e5">MaturiteJus_transf_parsed.ttl</a></li>
+<li><a href="#org6cb655c">MaturiteSunAgri2B_transf_parsed.ttl</a></li>
+<li><a href="#org1601924">must_transf_parsed.ttl</a>
+<ul>
+<li><a href="#org0ee2434"><span class="todo TODO">TODO</span> Syntax error</a></li>
+</ul>
+</li>
+<li><a href="#org63e78a6">Suivifermentations_transf_parsed.ttl</a>
+<ul>
+<li><a href="#org1793fc6"><span class="todo TODO">TODO</span> Syntax error</a></li>
+<li><a href="#org70d6224"><span class="todo TODO">TODO</span> Class vs Property</a></li>
+<li><a href="#org26dfecb"><span class="todo TODO">TODO</span> Where are inra_codes defined?</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
-<p>
-First read <a href="https://docs.google.com/document/d/1TfWhafz2S_Py9rshf8bmaSyNyalelqEDXU7RpxJ4zEw/edit#">data-validation-handling</a>
-</p>
 
-<div id="outline-container-org92ed739" class="outline-2">
-<h2 id="org92ed739">Prefixes <code>[0/4]</code></h2>
-<div class="outline-text-2" id="text-org92ed739">
+<div id="outline-container-org7f2a786" class="outline-2">
+<h2 id="org7f2a786">Instructions</h2>
+<div class="outline-text-2" id="text-org7f2a786">
+<ul class="org-ul">
+<li>HTML-rendered version of this file: <a href="https://rawgit.com/BigDataGrapes-EU/ontology/master/data/INRA/data5/README.html">https://rawgit.com/BigDataGrapes-EU/ontology/master/data/INRA/data5/README.html</a></li>
+<li>First read <a href="https://docs.google.com/document/d/1TfWhafz2S_Py9rshf8bmaSyNyalelqEDXU7RpxJ4zEw/edit#">data-validation-handling</a></li>
+<li>This file lists errors/problems found in some of the files.
+But often the same error applies to several terms in the same file, or even to several files.
+So check each reported error against all files and all their contents.
+<ul class="org-ul">
+<li>Eg the inapplicability of <code>dct:created</code> to <code>time:Instant</code> is reported 
+for the first observation file <code>2016vendanges_transf_parsed.ttl</code> but applies to all observation files</li>
+</ul></li>
+</ul>
 </div>
-<div id="outline-container-orgc013403" class="outline-3">
-<h3 id="orgc013403"><span class="todo TODO">TODO</span> Turtle prefix format</h3>
-<div class="outline-text-3" id="text-orgc013403">
+</div>
+
+<div id="outline-container-org66bbdc2" class="outline-2">
+<h2 id="org66bbdc2">Prefixes <code>[0/4]</code></h2>
+<div class="outline-text-2" id="text-org66bbdc2">
+</div>
+<div id="outline-container-org424ccd4" class="outline-3">
+<h3 id="org424ccd4"><span class="todo TODO">TODO</span> Turtle prefix format</h3>
+<div class="outline-text-3" id="text-org424ccd4">
 <p>
 You use the SPARQL syntax for prefixes
 </p>
@@ -321,9 +349,9 @@ While this is not an error (Turtle 1.1 supports this syntax), it's better to use
 </pre>
 </div>
 </div>
-<div id="outline-container-org0c1afe4" class="outline-3">
-<h3 id="org0c1afe4"><span class="todo TODO">TODO</span> Check against prefixes.ttl</h3>
-<div class="outline-text-3" id="text-org0c1afe4">
+<div id="outline-container-org119cf3f" class="outline-3">
+<h3 id="org119cf3f"><span class="todo TODO">TODO</span> Check against prefixes.ttl</h3>
+<div class="outline-text-3" id="text-org119cf3f">
 <p>
 Check your prefixes against prefixes.ttl and use exactly the same. 
 Consult <a href="http://prefix.cc">http://prefix.cc</a> for the most popular prefixes to use.
@@ -334,9 +362,9 @@ Consult <a href="http://prefix.cc">http://prefix.cc</a> for the most popular pre
 </ul>
 </div>
 </div>
-<div id="outline-container-orga8bacc1" class="outline-3">
-<h3 id="orga8bacc1"><span class="todo TODO">TODO</span> Namespaces are not suggestive</h3>
-<div class="outline-text-3" id="text-orga8bacc1">
+<div id="outline-container-org0b10d1b" class="outline-3">
+<h3 id="org0b10d1b"><span class="todo TODO">TODO</span> Namespaces are not suggestive</h3>
+<div class="outline-text-3" id="text-org0b10d1b">
 <p>
 These namespaces do not suggest they hold time and observations respectively
 </p>
@@ -349,9 +377,9 @@ PREFIX <span style="color: #228b22;">inra_data:</span><span style="color: #008b8
 </div>
 </div>
 
-<div id="outline-container-orgf66787c" class="outline-2">
-<h2 id="orgf66787c">General <code>[0/1]</code></h2>
-<div class="outline-text-2" id="text-orgf66787c">
+<div id="outline-container-orgefe054a" class="outline-2">
+<h2 id="orgefe054a">General <code>[0/1]</code></h2>
+<div class="outline-text-2" id="text-orgefe054a">
 <p>
 These files use the following INRA ontologies/resources
 </p>
@@ -364,9 +392,9 @@ inra_onto:  &lt;http://vinnotec.supagro.inra.fr/public/Pr/onto/&gt;
 
 </pre>
 </div>
-<div id="outline-container-orge86eba9" class="outline-3">
-<h3 id="orge86eba9"><span class="todo TODO">TODO</span> Should be resolvable</h3>
-<div class="outline-text-3" id="text-orge86eba9">
+<div id="outline-container-org944cd23" class="outline-3">
+<h3 id="org944cd23"><span class="todo TODO">TODO</span> Should be resolvable</h3>
+<div class="outline-text-3" id="text-org944cd23">
 <p>
 These (at least the last two) don't resolve, and return this:
 </p>
@@ -379,9 +407,9 @@ I see the latter is defined in <code>INRA_Variables.ttl</code>, but at some poin
 </p>
 </div>
 </div>
-<div id="outline-container-orgfa2d497" class="outline-3">
-<h3 id="orgfa2d497"><span class="todo TODO">TODO</span> Leave empty line</h3>
-<div class="outline-text-3" id="text-orgfa2d497">
+<div id="outline-container-orgbcab4c2" class="outline-3">
+<h3 id="orgbcab4c2"><span class="todo TODO">TODO</span> Leave empty line</h3>
+<div class="outline-text-3" id="text-orgbcab4c2">
 <p>
 Leave empty line between subject blocks ("paragraphs") to better delineate them:
 </p>
@@ -399,16 +427,16 @@ Leave empty line between subject blocks ("paragraphs") to better delineate them:
 </div>
 </div>
 
-<div id="outline-container-org0bd0909" class="outline-2">
-<h2 id="org0bd0909">2016vendanges_transf_parsed.ttl <code>[0/8]</code></h2>
-<div class="outline-text-2" id="text-org0bd0909">
+<div id="outline-container-org6f44fdc" class="outline-2">
+<h2 id="org6f44fdc">2016vendanges_transf_parsed.ttl <code>[0/8]</code></h2>
+<div class="outline-text-2" id="text-org6f44fdc">
 <p>
-Observations
+Harvest observations: <code>inra_onto:Poidsvendangegpesee</code> (grams harvested)
 </p>
 </div>
-<div id="outline-container-org901d635" class="outline-3">
-<h3 id="org901d635"><span class="todo TODO">TODO</span> syntax error</h3>
-<div class="outline-text-3" id="text-org901d635">
+<div id="outline-container-org8eb7beb" class="outline-3">
+<h3 id="org8eb7beb"><span class="todo TODO">TODO</span> syntax error</h3>
+<div class="outline-text-3" id="text-org8eb7beb">
 <p>
 Some unquoted string
 </p>
@@ -419,9 +447,9 @@ Some unquoted string
 </div>
 </div>
 </div>
-<div id="outline-container-org4fd612c" class="outline-3">
-<h3 id="org4fd612c"><span class="todo TODO">TODO</span> dct:created is inappropraite</h3>
-<div class="outline-text-3" id="text-org4fd612c">
+<div id="outline-container-org2c42f6f" class="outline-3">
+<h3 id="org2c42f6f"><span class="todo TODO">TODO</span> dct:created is inappropraite</h3>
+<div class="outline-text-3" id="text-org2c42f6f">
 <p>
 You can't "create" a time instant (it just exists!), so <code>dcterms:created</code> is inappropraite.
 If you want to say when an event was converted (vs occurred), we could use PROV.
@@ -434,9 +462,9 @@ If you want to say when an event was converted (vs occurred), we could use PROV.
 </div>
 </div>
 </div>
-<div id="outline-container-orgec28f60" class="outline-3">
-<h3 id="orgec28f60"><span class="todo TODO">TODO</span> aeo:involvedIn</h3>
-<div class="outline-text-3" id="text-orgec28f60">
+<div id="outline-container-orgc902471" class="outline-3">
+<h3 id="orgc902471"><span class="todo TODO">TODO</span> aeo:involvedIn</h3>
+<div class="outline-text-3" id="text-orgc902471">
 <p>
 Plots are <b>part of</b> Lots, the are not <b>involved in</b> lots.
 <code>aeo:involvedIn</code> is defined as "AgriExperiment involves different instances of AgriActivity and AgriEntity")
@@ -448,9 +476,9 @@ Plots are <b>part of</b> Lots, the are not <b>involved in</b> lots.
 </div>
 </div>
 </div>
-<div id="outline-container-orgfb6e06b" class="outline-3">
-<h3 id="orgfb6e06b"><span class="todo TODO">TODO</span> Class vs Property</h3>
-<div class="outline-text-3" id="text-orgfb6e06b">
+<div id="outline-container-orgce3b3e8" class="outline-3">
+<h3 id="orgce3b3e8"><span class="todo TODO">TODO</span> Class vs Property</h3>
+<div class="outline-text-3" id="text-orgce3b3e8">
 <p>
 This is a class not property so it can't be used like this.
 (In general I notice that all Bio-Agro ontologies have tons of classes but few properties)
@@ -461,9 +489,9 @@ ofpe:Operator inra_agent:fabien.robert ;
 </pre>
 </div>
 </div>
-<div id="outline-container-orgf585235" class="outline-3">
-<h3 id="orgf585235"><span class="todo TODO">TODO</span> No georeference?</h3>
-<div class="outline-text-3" id="text-orgf585235">
+<div id="outline-container-orgef1d0de" class="outline-3">
+<h3 id="orgef1d0de"><span class="todo TODO">TODO</span> No georeference?</h3>
+<div class="outline-text-3" id="text-orgef1d0de">
 <p>
 This binds the observation to the plot: please confirm there's no need for a specific lat/long georeference
 </p>
@@ -474,9 +502,9 @@ This binds the observation to the plot: please confirm there's no need for a spe
 </div>
 </div>
 </div>
-<div id="outline-container-org17f0b9e" class="outline-3">
-<h3 id="org17f0b9e"><span class="todo TODO">TODO</span> rdf:value?</h3>
-<div class="outline-text-3" id="text-org17f0b9e">
+<div id="outline-container-org29f9627" class="outline-3">
+<h3 id="org29f9627"><span class="todo TODO">TODO</span> rdf:value?</h3>
+<div class="outline-text-3" id="text-org29f9627">
 <p>
 I can't verify whether <code>oepo:Observation</code> takes <code>rdf:value</code> because OEPO doesn't define this.
 Using <code>rdf:value</code> this way is fine, but we should specify it with an RDF Shape
@@ -485,25 +513,25 @@ Using <code>rdf:value</code> this way is fine, but we should specify it with an 
 </div>
 </div>
 
-<div id="outline-container-orga35dc99" class="outline-2">
-<h2 id="orga35dc99">ComposantesGrappe_transf_parsed.ttl <code>[0/2]</code></h2>
-<div class="outline-text-2" id="text-orga35dc99">
+<div id="outline-container-orgc16a01c" class="outline-2">
+<h2 id="orgc16a01c">ComposantesGrappe_transf_parsed.ttl <code>[0/2]</code></h2>
+<div class="outline-text-2" id="text-orgc16a01c">
 <p>
-Observations
+Observations: <code>inra_onto:Nbbaiescomptage</code> number of counting bays?!?
 </p>
 </div>
-<div id="outline-container-orgeebb293" class="outline-3">
-<h3 id="orgeebb293"><span class="todo TODO">TODO</span> invalid DateTimeStamp</h3>
-<div class="outline-text-3" id="text-orgeebb293">
+<div id="outline-container-org7ea2ba9" class="outline-3">
+<h3 id="org7ea2ba9"><span class="todo TODO">TODO</span> invalid DateTimeStamp</h3>
+<div class="outline-text-3" id="text-org7ea2ba9">
 <pre class="example">
 [line: 16, col: 28] Lexical form '09/09/16' not valid for datatype xsd:DateTimeStamp
 
 </pre>
 </div>
 </div>
-<div id="outline-container-org98bb6fb" class="outline-3">
-<h3 id="org98bb6fb"><span class="todo TODO">TODO</span> missing rdf:value</h3>
-<div class="outline-text-3" id="text-org98bb6fb">
+<div id="outline-container-org56aec7a" class="outline-3">
+<h3 id="org56aec7a"><span class="todo TODO">TODO</span> missing rdf:value</h3>
+<div class="outline-text-3" id="text-org56aec7a">
 <pre class="example">
 [line: 491, col: 47] Triples not terminated by DOT
 inra_data:4e1956e2-eceb-477f-97a4-d22a919970b1 rdf:type oepo:Observation ;
@@ -518,16 +546,16 @@ You have no rdf:value for this record, so you should omit the whole record (it's
 </div>
 </div>
 
-<div id="outline-container-org51720dd" class="outline-2">
-<h2 id="org51720dd">ComposantesVendanges_transf_parsed.ttl <code>[0/1]</code></h2>
-<div class="outline-text-2" id="text-org51720dd">
+<div id="outline-container-org7b3ae04" class="outline-2">
+<h2 id="org7b3ae04">ComposantesVendanges_transf_parsed.ttl <code>[0/1]</code></h2>
+<div class="outline-text-2" id="text-org7b3ae04">
 <p>
-Observations
+Observations: <code>inra_onto:Nbgrappescomptage</code> number of counted clusters?!?
 </p>
 </div>
-<div id="outline-container-orgafa4380" class="outline-3">
-<h3 id="orgafa4380"><span class="todo TODO">TODO</span> missing rdf:value</h3>
-<div class="outline-text-3" id="text-orgafa4380">
+<div id="outline-container-org198db19" class="outline-3">
+<h3 id="org198db19"><span class="todo TODO">TODO</span> missing rdf:value</h3>
+<div class="outline-text-3" id="text-org198db19">
 <pre class="example">
 [line: 50, col: 41] Triples not terminated by DOT
 
@@ -536,16 +564,16 @@ Observations
 </div>
 </div>
 
-<div id="outline-container-orge2c0e9b" class="outline-2">
-<h2 id="orge2c0e9b">INRA_Variables.ttl <code>[0/3]</code></h2>
-<div class="outline-text-2" id="text-orge2c0e9b">
+<div id="outline-container-orgc387ede" class="outline-2">
+<h2 id="orgc387ede">INRA_Variables.ttl <code>[0/4]</code></h2>
+<div class="outline-text-2" id="text-orgc387ede">
 <p>
 Variable definitions
 </p>
 </div>
-<div id="outline-container-orgc259902" class="outline-3">
-<h3 id="orgc259902"><span class="todo TODO">TODO</span> Namespace hijacking</h3>
-<div class="outline-text-3" id="text-orgc259902">
+<div id="outline-container-org69c9595" class="outline-3">
+<h3 id="org69c9595"><span class="todo TODO">TODO</span> Namespace hijacking</h3>
+<div class="outline-text-3" id="text-org69c9595">
 <p>
 Don't define terms of other ontologies
 </p>
@@ -556,9 +584,9 @@ Don't define terms of other ontologies
 </div>
 </div>
 </div>
-<div id="outline-container-orgc879a58" class="outline-3">
-<h3 id="orgc879a58"><span class="todo TODO">TODO</span> Use English class names</h3>
-<div class="outline-text-3" id="text-orgc879a58">
+<div id="outline-container-org9837668" class="outline-3">
+<h3 id="org9837668"><span class="todo TODO">TODO</span> Use English class names</h3>
+<div class="outline-text-3" id="text-org9837668">
 <p>
 If you want to be more easily understood, please use English (or else I'll comment in Bulgarian ;-)
 </p>
@@ -568,11 +596,19 @@ inra_onto:Poidsvendangegpesee # weight as measured at vine picking
 </pre>
 </div>
 </div>
-<div id="outline-container-orgcbe6331" class="outline-3">
-<h3 id="orgcbe6331"><span class="todo TODO">TODO</span> Can't use CO_UO "gram"</h3>
-<div class="outline-text-3" id="text-orgcbe6331">
+<div id="outline-container-org4058c72" class="outline-3">
+<h3 id="org4058c72"><span class="todo TODO">TODO</span> Define labels</h3>
+<div class="outline-text-3" id="text-org4058c72">
 <p>
-Check whether <code>inra_onto:Poidsvendangegpesee</code> defines everything required to interpret the number.
+Eg inra_onto:Glucose.fructoseg.lsequentiel.enzymatique needs a label such as "Glucose/fructose g/l sequential enzymatic"
+</p>
+</div>
+</div>
+<div id="outline-container-org04b7f3e" class="outline-3">
+<h3 id="org04b7f3e"><span class="todo TODO">TODO</span> Can't use CO_UO "gram"</h3>
+<div class="outline-text-3" id="text-org04b7f3e">
+<p>
+Checking whether <code>inra_onto:Poidsvendangegpesee</code> defines everything required to interpret the number.
 </p>
 <div class="org-src-container">
 <pre class="src src-Turtle"><span style="color: #228b22;">inra_onto:</span><span style="color: #008b8b;">Poidsvendangegpesee</span> <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span> <span style="color: #228b22;">CO_356:</span><span style="color: #008b8b;">2000168</span> , <span style="color: #228b22;">CO_UO:</span><span style="color: #008b8b;">0000021</span> , <span style="color: #228b22;">MMO:</span><span style="color: #008b8b;">0000157</span> <span style="color: #228b22;">.</span>
@@ -585,25 +621,37 @@ Check whether <code>inra_onto:Poidsvendangegpesee</code> defines everything requ
 <ul class="org-ul">
 <li>I can't get the whole CO_UO from neither <a href="http://www.cropontology.org/rdf/UO:">http://www.cropontology.org/rdf/UO:</a> nor <a href="http://www.cropontology.org/rdf/UO">http://www.cropontology.org/rdf/UO</a>.
 But individual terms are returned, eg <a href="http://www.cropontology.org/rdf/UO:0000021">http://www.cropontology.org/rdf/UO:0000021</a> returns Turtle.</li>
-<li>Unfortunately CO_UO defines "grams" relative to some woody plant feature.
+<li>Unfortunately <code>CO_UO:0000021</code> defines "grams" relative to some Woody Plant feature.
 This is crazy because a gram is a gram, no matter what it's used to measure.</li>
 <li>It means you cannot use this "gram" for grapes. 
-Better use UO; or even better QUDT, which also defines the relation of "gram" to other units.</li>
+Better use UO; or even better QUDT, which also defines relations/conversions of "gram" to other units.</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-org3e5344d" class="outline-3">
+<h3 id="org3e5344d"><span class="todo TODO">TODO</span> Missing CO_UO Term</h3>
+<div class="outline-text-3" id="text-org3e5344d">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">inra_onto:</span><span style="color: #008b8b;">Glucose</span>.fructoseg.lsequentiel.enzymatique <span style="color: #228b22;">CO:</span><span style="color: #008b8b;">variable_of</span> <span style="color: #228b22;">CO_356:</span><span style="color: #008b8b;">2000057,</span> <span style="color: #228b22;">CO_UO:</span><span style="color: #008b8b;">0000175,</span> <span style="color: #228b22;">MMO:</span><span style="color: #008b8b;">0000388</span> .
+</pre>
+</div>
+<p>
+However, <a href="http://www.cropontology.org/rdf/UO:0000175">http://www.cropontology.org/rdf/UO:0000175</a> is missing: unlike the above UO:0000021, this one returns nothing.
+</p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9a52e71" class="outline-2">
-<h2 id="org9a52e71">fieldsLocalisationPR_parsed.ttl <code>[0/7]</code></h2>
-<div class="outline-text-2" id="text-org9a52e71">
+<div id="outline-container-orga34cfd1" class="outline-2">
+<h2 id="orga34cfd1">fieldsLocalisationPR_parsed.ttl <code>[0/7]</code></h2>
+<div class="outline-text-2" id="text-orga34cfd1">
 <p>
 Plot geometry
 </p>
 </div>
-<div id="outline-container-org96ab714" class="outline-3">
-<h3 id="org96ab714"><span class="todo TODO">TODO</span> Use QUDT not quty</h3>
-<div class="outline-text-3" id="text-org96ab714">
+<div id="outline-container-orgd1ce1c2" class="outline-3">
+<h3 id="orgd1ce1c2"><span class="todo TODO">TODO</span> Use QUDT not quty</h3>
+<div class="outline-text-3" id="text-orgd1ce1c2">
 <p>
 Uses some units ontology that's unknown to me:
 </p>
@@ -617,9 +665,9 @@ This returns 404 Not Found. Better use QUDT, which is well known and maintained.
 </p>
 </div>
 </div>
-<div id="outline-container-org7d9ed6b" class="outline-3">
-<h3 id="org7d9ed6b"><span class="todo TODO">TODO</span> Don't use dbo: for units</h3>
-<div class="outline-text-3" id="text-org7d9ed6b">
+<div id="outline-container-orgdb7ed92" class="outline-3">
+<h3 id="orgdb7ed92"><span class="todo TODO">TODO</span> Don't use dbo: for units</h3>
+<div class="outline-text-3" id="text-orgdb7ed92">
 <p>
 Use a QUDT unit rather than a DBpedia URL as datatype literal:
 </p>
@@ -629,9 +677,9 @@ Use a QUDT unit rather than a DBpedia URL as datatype literal:
 </div>
 </div>
 </div>
-<div id="outline-container-org6992c17" class="outline-3">
-<h3 id="org6992c17"><span class="todo TODO">TODO</span> Where is the grape variety indicated?</h3>
-<div class="outline-text-3" id="text-org6992c17">
+<div id="outline-container-orgafa1962" class="outline-3">
+<h3 id="orgafa1962"><span class="todo TODO">TODO</span> Where is the grape variety indicated?</h3>
+<div class="outline-text-3" id="text-orgafa1962">
 <p>
 Plots don't seem to indicate the grape variety. Maybe that's in another file?
 </p>
@@ -642,12 +690,17 @@ Plots don't seem to indicate the grape variety. Maybe that's in another file?
 </div>
 </div>
 </div>
-<div id="outline-container-org8c7bdf8" class="outline-3">
-<h3 id="org8c7bdf8"><span class="todo TODO">TODO</span> Fix polygon geometry</h3>
-<div class="outline-text-3" id="text-org8c7bdf8">
+<div id="outline-container-org1c11b3c" class="outline-3">
+<h3 id="org1c11b3c"><span class="todo TODO">TODO</span> Fix polygon geometry</h3>
+<div class="outline-text-3" id="text-org1c11b3c">
 <p>
-This includes just 4 coordinates. No way this defines a valid polygon. Even for a simple box you need 4 corners, i.e. 8 coordinates
+No way this defines a valid polygon:
 </p>
+<ul class="org-ul">
+<li>It includes just 4 coordinates. Even for a simple box you need 4 corners, i.e. 8 coordinates</li>
+<li>Coordinates should be +-180 degrees longitude and +-90 degrees latitude, but these are very big numbers</li>
+<li>You have two pairs of the same number but these should be "lat lon" pairs (or is it "lon lat" pairs, I can never remember)</li>
+</ul>
 <div class="org-src-container">
 <pre class="src src-Turtle"><span style="color: #228b22;">gsp:</span><span style="color: #008b8b;">asWKT</span> <span style="color: #8b2252;">"POLYGON ((710743.61182814 710743.61182814, 6226766.01933858 6226766.01933858 ))"</span><span style="color: #228b22;">^^gsp:</span><span style="color: #008b8b;">wktLiteral</span> .
 </pre>
@@ -662,17 +715,17 @@ When fixed, check for validity:
 </ul>
 </div>
 </div>
-<div id="outline-container-org3e2425a" class="outline-3">
-<h3 id="org3e2425a"><span class="todo TODO">TODO</span> geo:Polygon vs geo:Geometry</h3>
-<div class="outline-text-3" id="text-org3e2425a">
+<div id="outline-container-org838b9f9" class="outline-3">
+<h3 id="org838b9f9"><span class="todo TODO">TODO</span> geo:Polygon vs geo:Geometry</h3>
+<div class="outline-text-3" id="text-org838b9f9">
 <ul class="org-ul">
 <li>There's no class <code>geo:Polygon</code>. Use <code>geo:Geometry</code> instead</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfbfc264" class="outline-3">
-<h3 id="orgfbfc264"><span class="todo TODO">TODO</span> Declare geo:Feature</h3>
-<div class="outline-text-3" id="text-orgfbfc264">
+<div id="outline-container-org0a252a9" class="outline-3">
+<h3 id="org0a252a9"><span class="todo TODO">TODO</span> Declare geo:Feature</h3>
+<div class="outline-text-3" id="text-org0a252a9">
 <ul class="org-ul">
 <li><p>
 <code>geo:hasGeometry</code> has domain <code>geo:Feature</code>, so it would be nice to declare it:
@@ -696,29 +749,95 @@ aeo:Plot &lt; aeo:CultivatedLand &lt; aeo:Area &lt; aeo:AgriEntity &lt; aeo:Agri
 </div>
 </div>
 
-<div id="outline-container-org722de28" class="outline-2">
-<h2 id="org722de28">FinFermentationsAlcoolique_transf_parsed.ttl</h2>
+<div id="outline-container-org066fb01" class="outline-2">
+<h2 id="org066fb01">FinFermentationsAlcoolique_transf_parsed.ttl</h2>
 </div>
-<div id="outline-container-orgb127a73" class="outline-2">
-<h2 id="orgb127a73">Maturite_transf_parsed.ttl</h2>
+<div id="outline-container-orgd689176" class="outline-2">
+<h2 id="orgd689176">Maturite_transf_parsed.ttl</h2>
 </div>
-<div id="outline-container-org5c1e9b5" class="outline-2">
-<h2 id="org5c1e9b5">MaturiteAnthocyanes_transf_parsed.ttl</h2>
+<div id="outline-container-org8135de6" class="outline-2">
+<h2 id="org8135de6">MaturiteAnthocyanes_transf_parsed.ttl</h2>
 </div>
-<div id="outline-container-org07a8abd" class="outline-2">
-<h2 id="org07a8abd">MaturiteJus_transf_parsed.ttl</h2>
+<div id="outline-container-orgc0039e5" class="outline-2">
+<h2 id="orgc0039e5">MaturiteJus_transf_parsed.ttl</h2>
 </div>
-<div id="outline-container-org56980ac" class="outline-2">
-<h2 id="org56980ac">MaturiteSunAgri2B_transf_parsed.ttl</h2>
+<div id="outline-container-org6cb655c" class="outline-2">
+<h2 id="org6cb655c">MaturiteSunAgri2B_transf_parsed.ttl</h2>
 </div>
-<div id="outline-container-org4d43cf9" class="outline-2">
-<h2 id="org4d43cf9">must_transf_parsed.ttl</h2>
+<div id="outline-container-org1601924" class="outline-2">
+<h2 id="org1601924">must_transf_parsed.ttl</h2>
+<div class="outline-text-2" id="text-org1601924">
+<p>
+Observations: <code>inra_onto:Sucrestotaux.brixrefractometrie</code> Total sugars (BRIX refractometry)
+</p>
 </div>
-<div id="outline-container-org6a0bc2b" class="outline-2">
-<h2 id="org6a0bc2b">Suivifermentations_transf_parsed.ttl</h2>
+<div id="outline-container-org0ee2434" class="outline-3">
+<h3 id="org0ee2434"><span class="todo TODO">TODO</span> Syntax error</h3>
+<div class="outline-text-3" id="text-org0ee2434">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">[line:</span><span style="color: #008b8b;"> 28,</span> <span style="color: #228b22;">col:</span><span style="color: #008b8b;"> 1</span> ] Broken token <span style="color: #228b22;">(newline):</span><span style="color: #008b8b;"> VIP_Sauvignon</span> <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">afeo:</span><span style="color: #008b8b;">Must</span> ;
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org63e78a6" class="outline-2">
+<h2 id="org63e78a6">Suivifermentations_transf_parsed.ttl</h2>
+<div class="outline-text-2" id="text-org63e78a6">
+<p>
+Follow-up fermentations of <code>ofpe:IntermediateProduct</code>. 
+Observations of "Glucose/fructose g/l sequential enzymatic".
+</p>
+</div>
+<div id="outline-container-org1793fc6" class="outline-3">
+<h3 id="org1793fc6"><span class="todo TODO">TODO</span> Syntax error</h3>
+<div class="outline-text-3" id="text-org1793fc6">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">[line:</span><span style="color: #008b8b;"> 144,</span> <span style="color: #228b22;">col:</span><span style="color: #008b8b;"> 26]</span> <span style="color: #228b22;">Unrecognized:</span> sec
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org70d6224" class="outline-3">
+<h3 id="org70d6224"><span class="todo TODO">TODO</span> Class vs Property</h3>
+<div class="outline-text-3" id="text-org70d6224">
+<p>
+This is a class not property so it can't be used like this.
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">inra_data:</span><span style="color: #008b8b;">32757c4a-15dd-4896-a3b9-970f33e6f756</span> <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">oepo:</span><span style="color: #008b8b;">Observation</span> ;
+   <span style="color: #228b22;">foaf:</span><span style="color: #008b8b;">Organization</span> <span style="color: #228b22;">inra_code:</span><span style="color: #008b8b;">16-1841</span> ;
+</pre>
+</div>
+<p>
+<code>oepo:Observation</code> needs some link to Agent, be that Operator or Organization
+</p>
+</div>
+</div>
+<div id="outline-container-org26dfecb" class="outline-3">
+<h3 id="org26dfecb"><span class="todo TODO">TODO</span> Where are inra_codes defined?</h3>
+<div class="outline-text-3" id="text-org26dfecb">
+<p>
+These codes are used by data, but where are they defined?
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">inra_code:</span><span style="color: #008b8b;">Cuve_BB1010</span> <span style="color: #b22222;"># </span><span style="color: #228b22;">FinFermentationsAlcoolique_transf_parsed</span>
+<span style="color: #228b22;">inra_code:</span><span style="color: #008b8b;">BB1010</span>      <span style="color: #b22222;"># Suivifermentations_transf_parsed</span>
+</pre>
+</div>
+<p>
+Codes are also used for organizations, so it may be better to define these as proper classes and call them something else:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">foaf:</span><span style="color: #008b8b;">Organization</span> <span style="color: #228b22;">inra_code:</span><span style="color: #008b8b;">16-1841</span> ; <span style="color: #b22222;"># Suivifermentations_transf_parsed</span>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
+<p class="date">Date: 2018-07-16 Mon 00:00</p>
 <p class="author">Author: Vladimir Alexiev</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
