@@ -6,3 +6,8 @@ See extra notes and links at gfolder [BigDataGrapes/WP3](https://drive.google.co
 * [misc](misc): ontology materials in miscellaneous formats (eg xlsx, obo)
 * [notes](notes): various notes on ontologies and data
 
+## riotval
+If you omit prefixes from your Turtle files and use a global `prefixes.ttl` file, use the Perl script `riotval.pl` that prepends `prefixes.ttl`, calls the Jena RIOT validator, then subtracts the number of lines in `prefixes.ttl` from error messages. Put it in your path, then run it like this:
+```sh
+  perl -S riotval.pl <file.ttl>
+```
