@@ -44,9 +44,11 @@ inra_obj:2016-SUNAGRI-L1-1-C03 rdf:type aeo:Plant ;
 context:instant_c97338f1-c21d-4f48-a916-180a61e1c4a2 rdf:type time:Instant ;
    time:inXSDDateTimeStamp "2016-09-09T12:00:00+01:00"^^xsd:dateTimeStamp ;
    dcterms:created "2018-07-12T18:52:01.140949"^^xsd:dateTime .
+
 inra_data:c872e145-ca18-4284-88f8-91f3e7d79e2d rdf:type oepo:Observation ;
    time:hasTime context:instant_c97338f1-c21d-4f48-a916-180a61e1c4a2 ;
-   oepo:hasVariable inra_onto:Nbgrappescomptage ;
+   oepo:hasVariable inra_onto:Nbgrappescomptage .
+
 inra_obj:2016-SUNAGRI-L1-1-C04 rdf:type aeo:Plant ;
    oepo:hasObservation inra_data:c872e145-ca18-4284-88f8-91f3e7d79e2d .
 
@@ -65,7 +67,8 @@ context:instant_4bf0b602-aacd-446e-a723-56e130218d47 rdf:type time:Instant ;
    dcterms:created "2018-07-12T18:52:01.141154"^^xsd:dateTime .
 inra_data:7db39d70-4c20-4b58-88e1-64a40ad9b7c9 rdf:type oepo:Observation ;
    time:hasTime context:instant_4bf0b602-aacd-446e-a723-56e130218d47 ;
-   oepo:hasVariable inra_onto:Nbgrappescomptage ;
+   oepo:hasVariable inra_onto:Nbgrappescomptage .
+   
 inra_obj:2016-SUNAGRI-L1-1-C06 rdf:type aeo:Plant ;
    oepo:hasObservation inra_data:7db39d70-4c20-4b58-88e1-64a40ad9b7c9 .
 
