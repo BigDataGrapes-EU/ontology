@@ -1,0 +1,1443 @@
+
+
+inra_observations:cb427589-1b76-4b67-8b2a-dbdc8d9e9ae5 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:cb427589-1b76-4b67-8b2a-dbdc8d9e9ae5 .
+
+
+inra_observations:dd5c0913-0dcf-4e18-89e6-332e948258ea rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:dd5c0913-0dcf-4e18-89e6-332e948258ea .
+
+
+inra_observations:d6b813c2-b14f-47bb-9c68-839b3d57ce5c rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:d6b813c2-b14f-47bb-9c68-839b3d57ce5c .
+
+
+inra_observations:ac099363-45fe-4126-98ee-7803631edb59 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ac099363-45fe-4126-98ee-7803631edb59 .
+
+
+inra_observations:e58a8b3b-10d6-41a1-9f1c-831b4659f715 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e58a8b3b-10d6-41a1-9f1c-831b4659f715 .
+
+
+inra_observations:30fea133-3568-4d8e-8934-1ffb0968f551 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:30fea133-3568-4d8e-8934-1ffb0968f551 .
+
+
+inra_observations:5b19f618-0e31-4758-846a-9a23d2e632a7 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:5b19f618-0e31-4758-846a-9a23d2e632a7 .
+
+
+inra_observations:9f22ff5f-4b4e-414b-a1f5-86abf2e8261c rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:9f22ff5f-4b4e-414b-a1f5-86abf2e8261c .
+
+
+inra_observations:bc053c90-77ab-4149-aa0a-bf7208f2caf2 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:bc053c90-77ab-4149-aa0a-bf7208f2caf2 .
+
+
+inra_observations:755bee79-43bb-43d4-a8fb-af4a22cd6bb1 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:755bee79-43bb-43d4-a8fb-af4a22cd6bb1 .
+
+
+inra_observations:36be9fdd-32cf-46f4-bdef-9d0245ffbf20 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:36be9fdd-32cf-46f4-bdef-9d0245ffbf20 .
+
+
+inra_observations:b39c249f-196e-496a-a504-9d13ec854e84 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:b39c249f-196e-496a-a504-9d13ec854e84 .
+
+
+inra_observations:4e045854-0f26-4b82-95c1-fc25ac01f1cb rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.9"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:4e045854-0f26-4b82-95c1-fc25ac01f1cb .
+
+
+inra_observations:490ab589-5085-45e4-b7c6-5b6f0d6f86b6 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.9"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:490ab589-5085-45e4-b7c6-5b6f0d6f86b6 .
+
+
+inra_observations:c9560226-7b06-416e-ad83-868b2aa23c7d rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.3"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:c9560226-7b06-416e-ad83-868b2aa23c7d .
+
+
+inra_observations:2b78f9e7-aa93-4712-9d84-2c89dd2b03cf rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.8"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:2b78f9e7-aa93-4712-9d84-2c89dd2b03cf .
+
+
+inra_observations:55cd090e-90d0-4e21-ac1a-9120396e3721 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:55cd090e-90d0-4e21-ac1a-9120396e3721 .
+
+
+inra_observations:44fde076-58f8-4ef5-b455-60b867147e39 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.1"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:44fde076-58f8-4ef5-b455-60b867147e39 .
+
+
+inra_observations:010aa0a6-14fc-4b51-b732-9efb1707e354 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.3"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:010aa0a6-14fc-4b51-b732-9efb1707e354 .
+
+
+inra_observations:c47665ab-b83b-4b01-bd39-a9e5c8307083 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.8"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:c47665ab-b83b-4b01-bd39-a9e5c8307083 .
+
+
+inra_observations:b7fc0e08-ac4f-4a21-9977-aa3263e7e6f4 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.5"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:b7fc0e08-ac4f-4a21-9977-aa3263e7e6f4 .
+
+
+inra_observations:8b284712-1f0b-4fd1-a514-53595b784cdb rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.6"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:8b284712-1f0b-4fd1-a514-53595b784cdb .
+
+
+inra_observations:16bdd5d4-55e7-401d-9a01-3c8415164efb rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:16bdd5d4-55e7-401d-9a01-3c8415164efb .
+
+
+inra_observations:804e31ab-b90b-48df-9fa8-2abfe3014812 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.6"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:804e31ab-b90b-48df-9fa8-2abfe3014812 .
+
+
+inra_observations:bca841ea-9891-4b07-95a8-e2267dd037d5 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:bca841ea-9891-4b07-95a8-e2267dd037d5 .
+
+
+inra_observations:85df6396-d93f-41db-bb05-d844a5988ebd rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:85df6396-d93f-41db-bb05-d844a5988ebd .
+
+
+inra_observations:8f2226d7-55d6-48f1-a8e5-e250f7b13390 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:8f2226d7-55d6-48f1-a8e5-e250f7b13390 .
+
+
+inra_observations:f9362cce-1e10-44b7-b0f7-1cc9d04af0cc rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f9362cce-1e10-44b7-b0f7-1cc9d04af0cc .
+
+
+inra_observations:df14f78b-75c8-4ac3-b872-2efbc5b7439f rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:df14f78b-75c8-4ac3-b872-2efbc5b7439f .
+
+
+inra_observations:f830e4b5-201a-4823-9c74-79ec21888ef8 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.5"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f830e4b5-201a-4823-9c74-79ec21888ef8 .
+
+
+inra_observations:b243fd36-eb89-41d4-acc1-07d16f797950 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:b243fd36-eb89-41d4-acc1-07d16f797950 .
+
+
+inra_observations:7fdcfb65-3b0d-43f0-9318-4f008e886e1e rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.6"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:7fdcfb65-3b0d-43f0-9318-4f008e886e1e .
+
+
+inra_observations:e63f5d3c-ecbf-4e0a-a378-eeeb30638135 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e63f5d3c-ecbf-4e0a-a378-eeeb30638135 .
+
+
+inra_observations:c6585a55-f628-4b99-a738-feff303e6a34 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:c6585a55-f628-4b99-a738-feff303e6a34 .
+
+
+inra_observations:508b8fed-f86b-4e29-af7d-98b21f460a9d rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:508b8fed-f86b-4e29-af7d-98b21f460a9d .
+
+
+inra_observations:89bbd8c3-516d-4ae0-ad0b-ffa8bc063545 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:89bbd8c3-516d-4ae0-ad0b-ffa8bc063545 .
+
+
+inra_observations:a03e335b-0328-4980-adfa-2ef4faf51f78 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:a03e335b-0328-4980-adfa-2ef4faf51f78 .
+
+
+inra_observations:c4434ca7-d75a-491b-9fef-ff2e33e2e47b rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "10.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:c4434ca7-d75a-491b-9fef-ff2e33e2e47b .
+
+
+inra_observations:16949a39-9a3a-4d34-9d3e-d1397ac8acd5 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:16949a39-9a3a-4d34-9d3e-d1397ac8acd5 .
+
+
+inra_observations:686b90b4-8765-4994-8751-0cd8666b223c rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:686b90b4-8765-4994-8751-0cd8666b223c .
+
+
+inra_observations:3c0c67c1-e1f4-4d71-9907-6b808df27429 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:3c0c67c1-e1f4-4d71-9907-6b808df27429 .
+
+
+inra_observations:aa1c71e8-7a0f-4909-9f9d-67f3c6f93b78 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.4"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:aa1c71e8-7a0f-4909-9f9d-67f3c6f93b78 .
+
+
+inra_observations:22fb481e-8e1f-469b-bda2-71293a4553a5 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.3"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:22fb481e-8e1f-469b-bda2-71293a4553a5 .
+
+
+inra_observations:03e31319-be7a-4091-9ccc-58f472bdf6e9 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:03e31319-be7a-4091-9ccc-58f472bdf6e9 .
+
+
+inra_observations:afc910fb-6da5-4cd6-abaa-2023da2e926c rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:afc910fb-6da5-4cd6-abaa-2023da2e926c .
+
+
+inra_observations:fbf66fdd-1020-49d8-8f02-8d5e123262e2 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:fbf66fdd-1020-49d8-8f02-8d5e123262e2 .
+
+
+inra_observations:f1bec59b-3c7b-4ea6-aa8f-000f4b973f90 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f1bec59b-3c7b-4ea6-aa8f-000f4b973f90 .
+
+
+inra_observations:46fb8f04-bc93-41b4-986a-9d5cc88440f1 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:46fb8f04-bc93-41b4-986a-9d5cc88440f1 .
+
+
+inra_observations:d35ddf8b-fd71-4633-8dfd-8040679f3435 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:d35ddf8b-fd71-4633-8dfd-8040679f3435 .
+
+
+inra_observations:fc9b4dd9-08fc-4849-8952-f99ac69818cd rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:fc9b4dd9-08fc-4849-8952-f99ac69818cd .
+
+
+inra_observations:e37a4397-3386-4ae1-b3c3-d61f1d85c94c rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "10.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e37a4397-3386-4ae1-b3c3-d61f1d85c94c .
+
+
+inra_observations:8c0bc658-e329-47ed-8e22-0e2fa3060243 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:8c0bc658-e329-47ed-8e22-0e2fa3060243 .
+
+
+inra_observations:c3fa0be5-8be9-4347-a6de-621c1268db8d rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.6"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:c3fa0be5-8be9-4347-a6de-621c1268db8d .
+
+
+inra_observations:a865b933-e7a0-461b-abab-3c3577287dee rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.5"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:a865b933-e7a0-461b-abab-3c3577287dee .
+
+
+inra_observations:e2b2116f-9fff-4347-9f8a-5549cec58984 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e2b2116f-9fff-4347-9f8a-5549cec58984 .
+
+
+inra_observations:416bc104-a740-43af-838c-d3bc0143d4ce rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:416bc104-a740-43af-838c-d3bc0143d4ce .
+
+
+inra_observations:47c7c4fb-807a-4c2a-9400-1d92c2f0b343 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:47c7c4fb-807a-4c2a-9400-1d92c2f0b343 .
+
+
+inra_observations:a5cab2b8-f7a1-4e4e-aa0a-e5cdea957aab rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.1"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:a5cab2b8-f7a1-4e4e-aa0a-e5cdea957aab .
+
+
+inra_observations:2a99f8ea-d704-4b1b-8e77-c07d767aacb0 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:2a99f8ea-d704-4b1b-8e77-c07d767aacb0 .
+
+
+inra_observations:168221b3-4ce7-454b-9d81-0be2d0a6d64a rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.4"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:168221b3-4ce7-454b-9d81-0be2d0a6d64a .
+
+
+inra_observations:081f9519-3a22-4da4-9023-312826176f07 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:081f9519-3a22-4da4-9023-312826176f07 .
+
+
+inra_observations:92df2cea-7a07-4820-8419-a5830b9854a5 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.3"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:92df2cea-7a07-4820-8419-a5830b9854a5 .
+
+
+inra_observations:021e9f09-89f1-4d3a-8ad1-a213b97bbff8 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:021e9f09-89f1-4d3a-8ad1-a213b97bbff8 .
+
+
+inra_observations:ee75f239-d1cd-453a-9598-f41718bee067 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.4"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ee75f239-d1cd-453a-9598-f41718bee067 .
+
+
+inra_observations:da3ef9ad-018b-4d1a-9dd1-5c6e006b2e71 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:da3ef9ad-018b-4d1a-9dd1-5c6e006b2e71 .
+
+
+inra_observations:ed3f632c-7062-4c89-a1d5-b28d34a1cc3d rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.5"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ed3f632c-7062-4c89-a1d5-b28d34a1cc3d .
+
+
+inra_observations:bfe96e69-3058-43ce-b691-282c6216a324 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:bfe96e69-3058-43ce-b691-282c6216a324 .
+
+
+inra_observations:5d1cf483-322f-43cf-b0dd-ffa1aa0dafc6 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:5d1cf483-322f-43cf-b0dd-ffa1aa0dafc6 .
+
+
+inra_observations:f4cd8f62-11d6-4efc-a52f-d571908a0d87 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.7"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f4cd8f62-11d6-4efc-a52f-d571908a0d87 .
+
+
+inra_observations:f974e163-1d98-4742-990e-19091211e98a rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f974e163-1d98-4742-990e-19091211e98a .
+
+
+inra_observations:e39d9e41-cd55-48e7-8fd3-2315905130a4 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e39d9e41-cd55-48e7-8fd3-2315905130a4 .
+
+
+inra_observations:7e36caca-4f28-42ea-beb9-370b6d965aa0 rdf:type oepo:Observation ;
+   aeo:Repetition "1" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:7e36caca-4f28-42ea-beb9-370b6d965aa0 .
+
+
+inra_observations:47cfe9d8-dcfa-4a12-a59f-6c0577e6308f rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.5"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:47cfe9d8-dcfa-4a12-a59f-6c0577e6308f .
+
+
+inra_observations:c1a9582e-8d65-4eed-9f90-0e8f992dbc4d rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.4"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:c1a9582e-8d65-4eed-9f90-0e8f992dbc4d .
+
+
+inra_observations:bca44cd1-42da-4c4b-9f27-aba4e8bd6269 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:bca44cd1-42da-4c4b-9f27-aba4e8bd6269 .
+
+
+inra_observations:0388cd1c-4d1d-4ef9-aba0-cdb508e8ed7b rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_563 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.8"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:0388cd1c-4d1d-4ef9-aba0-cdb508e8ed7b .
+
+
+inra_observations:9469f30a-f2bf-4791-ad3b-58745377bb45 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:9469f30a-f2bf-4791-ad3b-58745377bb45 .
+
+
+inra_observations:ea5b5ace-f493-4659-95af-c8cb62d27598 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ea5b5ace-f493-4659-95af-c8cb62d27598 .
+
+
+inra_observations:f8b2c415-0e57-4c32-a44c-7536254de551 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f8b2c415-0e57-4c32-a44c-7536254de551 .
+
+
+inra_observations:bc6a5a60-fff2-45bd-b946-38babf8e3545 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_782 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:bc6a5a60-fff2-45bd-b946-38babf8e3545 .
+
+
+inra_observations:4fc0ec37-afcd-465b-9793-50eabe71a5f1 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:4fc0ec37-afcd-465b-9793-50eabe71a5f1 .
+
+
+inra_observations:c3bf7449-f1a8-4bf4-8f7f-e89206b86ed2 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.7"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:c3bf7449-f1a8-4bf4-8f7f-e89206b86ed2 .
+
+
+inra_observations:17f33418-c3f0-41bf-a108-40a65f67e198 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:17f33418-c3f0-41bf-a108-40a65f67e198 .
+
+
+inra_observations:73f00f57-1016-4e6d-a281-6dbab3214b24 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1180 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:73f00f57-1016-4e6d-a281-6dbab3214b24 .
+
+
+inra_observations:8b755ca2-f3d8-43d6-bc9b-033d2415976c rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.7"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:8b755ca2-f3d8-43d6-bc9b-033d2415976c .
+
+
+inra_observations:60763ad1-5e0d-4723-ad08-e375d7bf1583 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.3"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:60763ad1-5e0d-4723-ad08-e375d7bf1583 .
+
+
+inra_observations:8fb3d07a-ec71-45c9-bef6-d05c15924e26 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:8fb3d07a-ec71-45c9-bef6-d05c15924e26 .
+
+
+inra_observations:6a9e7c67-757f-4373-9217-86f61f49c17c rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1286 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:6a9e7c67-757f-4373-9217-86f61f49c17c .
+
+
+inra_observations:75828547-f2fd-41bd-8d13-e584f95f505a rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.6"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:75828547-f2fd-41bd-8d13-e584f95f505a .
+
+
+inra_observations:0e31a2c9-2a67-45f2-88f1-1933012eda5b rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:0e31a2c9-2a67-45f2-88f1-1933012eda5b .
+
+
+inra_observations:f39ecb82-ab82-46b7-a849-cd56b736c65a rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.3"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f39ecb82-ab82-46b7-a849-cd56b736c65a .
+
+
+inra_observations:ccac3138-33c8-4ed1-9629-07915474ab8b rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1489 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.4"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ccac3138-33c8-4ed1-9629-07915474ab8b .
+
+
+inra_observations:1dc765f4-4ce7-4592-b693-1959c076225d rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:1dc765f4-4ce7-4592-b693-1959c076225d .
+
+
+inra_observations:4c3b0c29-7da6-49c8-a2ef-fb63708159c1 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.3"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:4c3b0c29-7da6-49c8-a2ef-fb63708159c1 .
+
+
+inra_observations:ec176a77-7d03-4b51-a2d9-351216158cc9 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ec176a77-7d03-4b51-a2d9-351216158cc9 .
+
+
+inra_observations:a3f44d6d-956b-4ec7-a27b-3b82ba1a295c rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1669 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.9"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:a3f44d6d-956b-4ec7-a27b-3b82ba1a295c .
+
+
+inra_observations:47a61398-003f-49fb-8558-c2ae77187747 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:47a61398-003f-49fb-8558-c2ae77187747 .
+
+
+inra_observations:8c78f31c-32a1-4515-897a-cfb7812a3dfe rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:8c78f31c-32a1-4515-897a-cfb7812a3dfe .
+
+
+inra_observations:d86a244a-368f-4128-afa2-df1d8158b562 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.8"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:d86a244a-368f-4128-afa2-df1d8158b562 .
+
+
+inra_observations:d00b69a3-2c63-418e-b14c-bb48ee9eb8cb rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1899 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:d00b69a3-2c63-418e-b14c-bb48ee9eb8cb .
+
+
+inra_observations:7fa2253b-8946-465d-8ebf-905dd2dd1177 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:7fa2253b-8946-465d-8ebf-905dd2dd1177 .
+
+
+inra_observations:4ac50ba0-1c5d-4fb5-b0ab-a0c9362b70c1 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.4"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:4ac50ba0-1c5d-4fb5-b0ab-a0c9362b70c1 .
+
+
+inra_observations:aafb8704-dd02-403a-be3e-9a6a75875f13 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:aafb8704-dd02-403a-be3e-9a6a75875f13 .
+
+
+inra_observations:b6b27cfc-4c0f-4aa2-a34f-274b7915c8e0 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1904 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.6"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:b6b27cfc-4c0f-4aa2-a34f-274b7915c8e0 .
+
+
+inra_observations:4dec9f2f-a7b9-4543-8512-3a0a48ba4bdb rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:4dec9f2f-a7b9-4543-8512-3a0a48ba4bdb .
+
+
+inra_observations:b3d427ed-64f7-44cd-bef7-79fcc9113c51 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:b3d427ed-64f7-44cd-bef7-79fcc9113c51 .
+
+
+inra_observations:7388cf0f-5ae7-41bd-817d-311f10d55161 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:7388cf0f-5ae7-41bd-817d-311f10d55161 .
+
+
+inra_observations:9be56585-e550-40ef-8e53-09b7a7426f8b rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_1961 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:9be56585-e550-40ef-8e53-09b7a7426f8b .
+
+
+inra_observations:b819a151-a276-406e-8ec0-c2f02d910b14 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:b819a151-a276-406e-8ec0-c2f02d910b14 .
+
+
+inra_observations:cff10e05-5869-4d68-b111-5b0d2c005da9 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:cff10e05-5869-4d68-b111-5b0d2c005da9 .
+
+
+inra_observations:76d51c30-e29c-4f68-a9ec-2a793cc4c8e9 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.8"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:76d51c30-e29c-4f68-a9ec-2a793cc4c8e9 .
+
+
+inra_observations:d6c08e79-5fc7-4659-8e87-59e4877371f8 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2196 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "10.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:d6c08e79-5fc7-4659-8e87-59e4877371f8 .
+
+
+inra_observations:87a93cd2-b69d-4da7-afc2-250af06dfde9 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.3"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:87a93cd2-b69d-4da7-afc2-250af06dfde9 .
+
+
+inra_observations:3abc2e8e-18e9-46cf-82dc-a4789ca921c9 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "4.1"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:3abc2e8e-18e9-46cf-82dc-a4789ca921c9 .
+
+
+inra_observations:5112d9f4-3f2c-4866-b4c6-4dd741685dca rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:5112d9f4-3f2c-4866-b4c6-4dd741685dca .
+
+
+inra_observations:a8367595-9f03-48da-9c26-922a6a0300f4 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2200 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:a8367595-9f03-48da-9c26-922a6a0300f4 .
+
+
+inra_observations:f18d86bf-5c19-4220-9fc2-6161ac25dc60 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.1"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f18d86bf-5c19-4220-9fc2-6161ac25dc60 .
+
+
+inra_observations:0fd14625-76fc-4ce4-b1be-55b9eca5b6df rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:0fd14625-76fc-4ce4-b1be-55b9eca5b6df .
+
+
+inra_observations:fb5d05c5-e2f6-4e54-94d0-2788d6afc593 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:fb5d05c5-e2f6-4e54-94d0-2788d6afc593 .
+
+
+inra_observations:e8a293bf-2f69-4ad6-ba32-90399f6e313a rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2203 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e8a293bf-2f69-4ad6-ba32-90399f6e313a .
+
+
+inra_observations:a9d31cf3-5843-47c8-958a-f98f275ae68b rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.5"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:a9d31cf3-5843-47c8-958a-f98f275ae68b .
+
+
+inra_observations:8bd22b36-a5e1-45cc-b331-8aa01d9e3589 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "5.6"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:8bd22b36-a5e1-45cc-b331-8aa01d9e3589 .
+
+
+inra_observations:ba03415b-cab1-40e3-8228-6ab8ffc22c6a rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ba03415b-cab1-40e3-8228-6ab8ffc22c6a .
+
+
+inra_observations:1d5f1551-526c-4c50-8397-c630fd5c4c84 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2372 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "10.0"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:1d5f1551-526c-4c50-8397-c630fd5c4c84 .
+
+
+inra_observations:bdf07885-00a0-4838-a019-8e1b8fc2be24 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.8"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:bdf07885-00a0-4838-a019-8e1b8fc2be24 .
+
+
+inra_observations:87b1b8af-c58e-436d-a394-b74ffc419121 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:87b1b8af-c58e-436d-a394-b74ffc419121 .
+
+
+inra_observations:adb1e7b9-9728-46b1-97f6-8720c6551cbd rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.4"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:adb1e7b9-9728-46b1-97f6-8720c6551cbd .
+
+
+inra_observations:e37fb9ee-e879-4e1d-b47c-9945ffa0d58a rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2374 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "7.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e37fb9ee-e879-4e1d-b47c-9945ffa0d58a .
+
+
+inra_observations:f8e242ba-268b-4673-8d5d-b230427d673e rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "3.5"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:f8e242ba-268b-4673-8d5d-b230427d673e .
+
+
+inra_observations:1f22a579-9df3-40d4-8c83-591221ac407c rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.6"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:1f22a579-9df3-40d4-8c83-591221ac407c .
+
+
+inra_observations:4144b0b4-6bba-405a-ab99-5e8626c1c15b rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.5"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:4144b0b4-6bba-405a-ab99-5e8626c1c15b .
+
+
+inra_observations:72d951a6-77bf-4640-9ad1-19a7e939b17e rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2375 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.3"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:72d951a6-77bf-4640-9ad1-19a7e939b17e .
+
+
+inra_observations:5186b253-b64d-4c3b-b1ac-d912bb5b4c21 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.7"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:5186b253-b64d-4c3b-b1ac-d912bb5b4c21 .
+
+
+inra_observations:7ed861a9-0f5c-463d-b420-8e37f7c9c484 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.3"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:7ed861a9-0f5c-463d-b420-8e37f7c9c484 .
+
+
+inra_observations:e3a77518-952f-40e1-bbb0-93d4056ef5cc rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:e3a77518-952f-40e1-bbb0-93d4056ef5cc .
+
+
+inra_observations:ed4e4a5b-1bce-4018-a9e3-2e8ed035a292 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2377 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ed4e4a5b-1bce-4018-a9e3-2e8ed035a292 .
+
+
+inra_observations:0ce02174-ee9b-4838-bdd8-73b57c8043e7 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "1.9"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:0ce02174-ee9b-4838-bdd8-73b57c8043e7 .
+
+
+inra_observations:d0ab9890-b942-4876-b5a9-2c655d88d2fe rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.0"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:d0ab9890-b942-4876-b5a9-2c655d88d2fe .
+
+
+inra_observations:30aa08d0-97c0-4754-a070-1a6ee58945bc rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:30aa08d0-97c0-4754-a070-1a6ee58945bc .
+
+
+inra_observations:5db08512-49d8-4eb0-945d-ca97595b3844 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2378 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "0.1"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:5db08512-49d8-4eb0-945d-ca97595b3844 .
+
+
+inra_observations:aeeb3538-dc53-46ac-b3b6-ea359fcaf0a8 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "8.3"^^xsd:decimal .
+
+inra_obj:MAUZAC01A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:aeeb3538-dc53-46ac-b3b6-ea359fcaf0a8 .
+
+
+inra_observations:ece7eee0-1e7d-4e79-abb9-ab45be5de95c rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "9.2"^^xsd:decimal .
+
+inra_obj:MAUZAC01B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:ece7eee0-1e7d-4e79-abb9-ab45be5de95c .
+
+
+inra_observations:a812eb16-ca5b-4b51-86ac-561fe78eb4f7 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "2.7"^^xsd:decimal .
+
+inra_obj:MAUZAC02A rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:a812eb16-ca5b-4b51-86ac-561fe78eb4f7 .
+
+
+inra_observations:667708a1-36ed-4755-9f89-1df695c87123 rdf:type oepo:Observation ;
+   aeo:Repetition "2" ;
+   foaf:Person inra_agent:Juge_2430 ;
+   obo:FOODON_00001301 inra_wineTaste:Amertume ;
+   rdf:value "6.2"^^xsd:decimal .
+
+inra_obj:MAUZAC02B rdf:type afeo:FinishedWine ;
+   oepo:hasObservation inra_observations:667708a1-36ed-4755-9f89-1df695c87123 .
+
+
+

@@ -1,0 +1,1405 @@
+
+
+inra_observations:a244a08c-c67f-4689-b562-3db3f4d15f29 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-24"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "612.5"^^xsd:decimal .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-001 ;
+   oepo:hasObservation inra_observations:a244a08c-c67f-4689-b562-3db3f4d15f29 .
+
+
+inra_observations:52bbd5f6-b006-4aed-b855-c0f15f003016 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "620.9"^^xsd:decimal .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-002 ;
+   oepo:hasObservation inra_observations:52bbd5f6-b006-4aed-b855-c0f15f003016 .
+
+
+inra_observations:fb179199-abc9-4301-8841-dcb497546de6 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-24"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1440"^^xsd:decimal .
+
+inra_obj:78-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-003 ;
+   oepo:hasObservation inra_observations:fb179199-abc9-4301-8841-dcb497546de6 .
+
+
+inra_observations:3b5571f5-fd0c-47df-88cf-44c02eb53fc1 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1865"^^xsd:decimal .
+
+inra_obj:22-FLOT-ROUGE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-004a ;
+   oepo:hasObservation inra_observations:3b5571f5-fd0c-47df-88cf-44c02eb53fc1 .
+
+
+inra_observations:79b77837-8726-4858-9f99-27984d0ec52e rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "295"^^xsd:decimal .
+
+inra_obj:22-PATRICIA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-004b ;
+   oepo:hasObservation inra_observations:79b77837-8726-4858-9f99-27984d0ec52e .
+
+
+inra_observations:746b316e-7c65-4705-b3a5-f9479bb1ab77 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "950"^^xsd:decimal .
+
+inra_obj:51-MUSCAT-ALEXANDRIE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-005 ;
+   oepo:hasObservation inra_observations:746b316e-7c65-4705-b3a5-f9479bb1ab77 .
+
+
+inra_observations:594936f3-f43c-4641-a789-f8a2ade5f84e rdf:type oepo:Observation ;
+   time:hasTime "2016-08-24"^^xsd:date ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "410.5"^^xsd:decimal .
+
+inra_obj:88-VARIETES-JUS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-006a ;
+   oepo:hasObservation inra_observations:594936f3-f43c-4641-a789-f8a2ade5f84e .
+
+
+inra_observations:f5dc9b6c-492b-40c4-b89e-4d998c7598d9 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   ofpe:Operator inra_agent:emmanuelle.zumstein ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "439"^^xsd:decimal .
+
+inra_obj:88-VARIETES-JUS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-006b ;
+   oepo:hasObservation inra_observations:f5dc9b6c-492b-40c4-b89e-4d998c7598d9 .
+
+
+inra_observations:79781441-b4cc-4ccf-94e7-1bdec3064680 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-26"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1010.5"^^xsd:decimal .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-007 ;
+   oepo:hasObservation inra_observations:79781441-b4cc-4ccf-94e7-1bdec3064680 .
+
+
+inra_observations:cf118336-d33d-4f4e-bd70-60d294b846d5 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3725"^^xsd:decimal .
+
+inra_obj:61-MERLOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-008 ;
+   oepo:hasObservation inra_observations:cf118336-d33d-4f4e-bd70-60d294b846d5 .
+
+
+inra_observations:59c635f6-4650-4005-89fb-ee457f490062 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1502.8"^^xsd:decimal .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-009 ;
+   oepo:hasObservation inra_observations:59c635f6-4650-4005-89fb-ee457f490062 .
+
+
+inra_observations:709ce8b7-420a-4b03-9af7-51b40c0abf6f rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   ofpe:Operator inra_agent:hubert.alem ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "16"^^xsd:decimal .
+
+inra_obj:82-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-010 ;
+   oepo:hasObservation inra_observations:709ce8b7-420a-4b03-9af7-51b40c0abf6f .
+
+
+inra_observations:6a8e9468-ad25-4524-9960-ab4bb63ef5d8 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-30"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1198.5"^^xsd:decimal .
+
+inra_obj:JARDIN-AMPELOdiversrouge rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-013 ;
+   oepo:hasObservation inra_observations:6a8e9468-ad25-4524-9960-ab4bb63ef5d8 .
+
+
+inra_observations:3722712d-c261-49dd-9ad1-318a3d6db364 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-30"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "675"^^xsd:decimal .
+
+inra_obj:JARDIN-AMPELOdiversblanc rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-014 ;
+   oepo:hasObservation inra_observations:3722712d-c261-49dd-9ad1-318a3d6db364 .
+
+
+inra_observations:8133021d-0d18-4909-96f6-6ed6143dacb8 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "360"^^xsd:decimal .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015a ;
+   oepo:hasObservation inra_observations:8133021d-0d18-4909-96f6-6ed6143dacb8 .
+
+
+inra_observations:a9ff7bf0-351c-4bcb-ba15-2506a1b07f60 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "180"^^xsd:decimal .
+
+inra_obj:68-ARRILOBA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015b ;
+   oepo:hasObservation inra_observations:a9ff7bf0-351c-4bcb-ba15-2506a1b07f60 .
+
+
+inra_observations:645e5881-64de-43d8-936b-280fe7eadfe0 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "310"^^xsd:decimal .
+
+inra_obj:68-CHENIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015c ;
+   oepo:hasObservation inra_observations:645e5881-64de-43d8-936b-280fe7eadfe0 .
+
+
+inra_observations:95d75761-d3fc-4818-9e0d-b0f051ff7d2b rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "375"^^xsd:decimal .
+
+inra_obj:68-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015d ;
+   oepo:hasObservation inra_observations:95d75761-d3fc-4818-9e0d-b0f051ff7d2b .
+
+
+inra_observations:fcc8ba4b-3a34-4911-9abf-e942a95cab8b rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "375"^^xsd:decimal .
+
+inra_obj:08-PIQUEPOUL-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015e ;
+   oepo:hasObservation inra_observations:fcc8ba4b-3a34-4911-9abf-e942a95cab8b .
+
+
+inra_observations:c5266e7a-f148-4042-ae62-da69d955dcf0 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1504"^^xsd:decimal .
+
+inra_obj:18-MERLOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-016 ;
+   oepo:hasObservation inra_observations:c5266e7a-f148-4042-ae62-da69d955dcf0 .
+
+
+inra_observations:f2a03a44-f5a1-41fb-9e92-07aa4689e9cb rdf:type oepo:Observation ;
+   time:hasTime "2016-09-01"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "4740"^^xsd:decimal .
+
+inra_obj:55-VIOGNIER rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-017 ;
+   oepo:hasObservation inra_observations:f2a03a44-f5a1-41fb-9e92-07aa4689e9cb .
+
+
+inra_observations:2130f2e7-f56f-4e1d-98c9-75ed588fa453 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-01"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "105"^^xsd:decimal .
+
+inra_obj:106-3160N-ESP-HAUT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-018 ;
+   oepo:hasObservation inra_observations:2130f2e7-f56f-4e1d-98c9-75ed588fa453 .
+
+
+inra_observations:bd1e10ee-e194-4af3-a75b-6ee47e189397 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-01"^^xsd:date ;
+   ofpe:Operator inra_agent:hubert.alem ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "6"^^xsd:decimal .
+
+inra_obj:39-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-019 ;
+   oepo:hasObservation inra_observations:bd1e10ee-e194-4af3-a75b-6ee47e189397 .
+
+
+inra_observations:7d94aacd-0b64-498f-9741-365a572301e8 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-02"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "574"^^xsd:decimal .
+
+inra_obj:68-VERMENTINO rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-020 ;
+   oepo:hasObservation inra_observations:7d94aacd-0b64-498f-9741-365a572301e8 .
+
+
+inra_observations:997de1fe-e14f-4e75-9d07-b9bef9bb61be rdf:type oepo:Observation ;
+   time:hasTime "2016-09-02"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "246"^^xsd:decimal .
+
+inra_obj:75-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-021 ;
+   oepo:hasObservation inra_observations:997de1fe-e14f-4e75-9d07-b9bef9bb61be .
+
+
+inra_observations:a6af51c4-4b9d-4408-8445-c67d198b610b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-02"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "877"^^xsd:decimal .
+
+inra_obj:75-NOUVELLES-OBTENTIONS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-022 ;
+   oepo:hasObservation inra_observations:a6af51c4-4b9d-4408-8445-c67d198b610b .
+
+
+inra_observations:e440a03f-f1ff-4d57-894a-bb1161bcd4ff rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "650.5"^^xsd:decimal .
+
+inra_obj:68-ROUSSANNE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-023 ;
+   oepo:hasObservation inra_observations:e440a03f-f1ff-4d57-894a-bb1161bcd4ff .
+
+
+inra_observations:9a7289c5-d56b-4003-a5f0-d04f094cd58b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "30"^^xsd:decimal .
+
+inra_obj:85-RUN-3328-168N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-024a ;
+   oepo:hasObservation inra_observations:9a7289c5-d56b-4003-a5f0-d04f094cd58b .
+
+
+inra_observations:173227d9-ece1-46d8-8ded-59058e95e993 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "21.5"^^xsd:decimal .
+
+inra_obj:85-RUN-3322-339N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-024b ;
+   oepo:hasObservation inra_observations:173227d9-ece1-46d8-8ded-59058e95e993 .
+
+
+inra_observations:86a980dc-bae9-4257-a423-03c493343217 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "771"^^xsd:decimal .
+
+inra_obj:10-SAUVIGNON-BLANC-ESP rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-025a ;
+   oepo:hasObservation inra_observations:86a980dc-bae9-4257-a423-03c493343217 .
+
+
+inra_observations:4fe45b69-ecbb-441d-b23a-1f9b695a4dfb rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1370.5"^^xsd:decimal .
+
+inra_obj:10-SAUVIGNON-BLANC-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-025b ;
+   oepo:hasObservation inra_observations:4fe45b69-ecbb-441d-b23a-1f9b695a4dfb .
+
+
+inra_observations:417f2cf2-04d2-49eb-890a-ee97dcd10dd0 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "93.5"^^xsd:decimal .
+
+inra_obj:57-GENOTYPE-14 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-026a ;
+   oepo:hasObservation inra_observations:417f2cf2-04d2-49eb-890a-ee97dcd10dd0 .
+
+
+inra_observations:ac4a78b0-a55b-497a-b6f1-8a83777ae374 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "99"^^xsd:decimal .
+
+inra_obj:40-GENOTYPE-14 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-026b ;
+   oepo:hasObservation inra_observations:ac4a78b0-a55b-497a-b6f1-8a83777ae374 .
+
+
+inra_observations:6c2a0e3a-a4ea-4d70-adf7-f691497a4b12 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "120.5"^^xsd:decimal .
+
+inra_obj:57-GENOTYPE-05 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-027a ;
+   oepo:hasObservation inra_observations:6c2a0e3a-a4ea-4d70-adf7-f691497a4b12 .
+
+
+inra_observations:d6821e0a-17aa-481e-a530-58b8a996e883 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "98.5"^^xsd:decimal .
+
+inra_obj:40-GENOTYPE-05 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-027b ;
+   oepo:hasObservation inra_observations:d6821e0a-17aa-481e-a530-58b8a996e883 .
+
+
+inra_observations:0add1b46-eb93-4331-abcb-4feea0e86669 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "4405"^^xsd:decimal .
+
+inra_obj:35-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-028 ;
+   oepo:hasObservation inra_observations:0add1b46-eb93-4331-abcb-4feea0e86669 .
+
+
+inra_observations:ad828f34-3d61-4768-a3ce-c60be6e2905b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1507.5"^^xsd:decimal .
+
+inra_obj:22-SYRAH-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-029 ;
+   oepo:hasObservation inra_observations:ad828f34-3d61-4768-a3ce-c60be6e2905b .
+
+
+inra_observations:375f6d1f-d76a-4ea5-a103-01c824c123b5 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "447"^^xsd:decimal .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-030 ;
+   oepo:hasObservation inra_observations:375f6d1f-d76a-4ea5-a103-01c824c123b5 .
+
+
+inra_observations:d35254f5-6a75-4050-993f-6f02fc4c3ead rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "388"^^xsd:decimal .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-031 ;
+   oepo:hasObservation inra_observations:d35254f5-6a75-4050-993f-6f02fc4c3ead .
+
+
+inra_observations:b5529f6a-f5b6-4b70-8882-f61586a36b49 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2320"^^xsd:decimal .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-032 ;
+   oepo:hasObservation inra_observations:b5529f6a-f5b6-4b70-8882-f61586a36b49 .
+
+
+inra_observations:08dc39eb-5865-4ec1-afe5-915435661d7d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "292"^^xsd:decimal .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-033 ;
+   oepo:hasObservation inra_observations:08dc39eb-5865-4ec1-afe5-915435661d7d .
+
+
+inra_observations:7ffc541a-f399-431a-8c20-36b8c5117980 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "76"^^xsd:decimal .
+
+inra_obj:85-RUN-3160-27-4N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-034 ;
+   oepo:hasObservation inra_observations:7ffc541a-f399-431a-8c20-36b8c5117980 .
+
+
+inra_observations:cd7f549e-5604-409c-b2b8-77be8dda7d20 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1969"^^xsd:decimal .
+
+inra_obj:22-SYRAH-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-035 ;
+   oepo:hasObservation inra_observations:cd7f549e-5604-409c-b2b8-77be8dda7d20 .
+
+
+inra_observations:056d5a78-9e41-4761-8c38-6c0855c01a7d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:jn.lacapere ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "115"^^xsd:decimal .
+
+inra_obj:106-3176N-ESP-HAUT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-036 ;
+   oepo:hasObservation inra_observations:056d5a78-9e41-4761-8c38-6c0855c01a7d .
+
+
+inra_observations:8611fd19-5a16-490c-9c8e-8b20edcb11e2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "700"^^xsd:decimal .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037a ;
+   oepo:hasObservation inra_observations:8611fd19-5a16-490c-9c8e-8b20edcb11e2 .
+
+
+inra_observations:6fb5081a-b48a-4e1e-b4a8-2689bf379bca rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "340"^^xsd:decimal .
+
+inra_obj:75-MERLOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037b ;
+   oepo:hasObservation inra_observations:6fb5081a-b48a-4e1e-b4a8-2689bf379bca .
+
+
+inra_observations:2c610871-84b9-464e-8b3d-7e944e929e18 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "190"^^xsd:decimal .
+
+inra_obj:75-EKIGAINA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037c ;
+   oepo:hasObservation inra_observations:2c610871-84b9-464e-8b3d-7e944e929e18 .
+
+
+inra_observations:db06ce26-e778-4a72-842c-7563ee9de27a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "280"^^xsd:decimal .
+
+inra_obj:75-ARINARNOA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037d ;
+   oepo:hasObservation inra_observations:db06ce26-e778-4a72-842c-7563ee9de27a .
+
+
+inra_observations:0e16839e-b55c-4312-9527-3bfcf3f09468 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1400"^^xsd:decimal .
+
+inra_obj:83-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-038a ;
+   oepo:hasObservation inra_observations:0e16839e-b55c-4312-9527-3bfcf3f09468 .
+
+
+inra_observations:285db96e-11c2-4159-b9f3-ae0325f1316b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1875"^^xsd:decimal .
+
+inra_obj:59-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-038b ;
+   oepo:hasObservation inra_observations:285db96e-11c2-4159-b9f3-ae0325f1316b .
+
+
+inra_observations:ef015998-19a0-4f4b-878a-b1af80cf7958 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1172.5"^^xsd:decimal .
+
+inra_obj:106-3159B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-039 ;
+   oepo:hasObservation inra_observations:ef015998-19a0-4f4b-878a-b1af80cf7958 .
+
+
+inra_observations:601044cd-7565-461d-9670-674c02bac45a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1079.5"^^xsd:decimal .
+
+inra_obj:92-GRENACHE-GRIS-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-XXX ;
+   oepo:hasObservation inra_observations:601044cd-7565-461d-9670-674c02bac45a .
+
+
+inra_observations:9d410bb0-b304-46b2-9b91-9e51aa3cf6cb rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "371.5"^^xsd:decimal .
+
+inra_obj:66-MACCABEU rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-040 ;
+   oepo:hasObservation inra_observations:9d410bb0-b304-46b2-9b91-9e51aa3cf6cb .
+
+
+inra_observations:f2ea6a7a-5e3e-4a20-b02d-699271d54715 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2875"^^xsd:decimal .
+
+inra_obj:73-MACCABEU rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-041 ;
+   oepo:hasObservation inra_observations:f2ea6a7a-5e3e-4a20-b02d-699271d54715 .
+
+
+inra_observations:03a5cc6d-4727-4a7f-a6d7-cb3b361c12e2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "14"^^xsd:decimal .
+
+inra_obj:85-RUN-3322-226N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-041bis ;
+   oepo:hasObservation inra_observations:03a5cc6d-4727-4a7f-a6d7-cb3b361c12e2 .
+
+
+inra_observations:d52b95b8-64bd-45f2-911a-9eef3b3b6629 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "20.5"^^xsd:decimal .
+
+inra_obj:40-GENOTYPE-09 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-042 ;
+   oepo:hasObservation inra_observations:d52b95b8-64bd-45f2-911a-9eef3b3b6629 .
+
+
+inra_observations:b1d6d18f-aae7-45ad-bb07-27865d4b5b94 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   ofpe:Operator inra_agent:nans ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "243.3"^^xsd:decimal .
+
+inra_obj:57-GENOTYPE-09 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-043 ;
+   oepo:hasObservation inra_observations:b1d6d18f-aae7-45ad-bb07-27865d4b5b94 .
+
+
+inra_observations:52d4cedd-9391-4d00-8d91-fe6bf7a04314 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "567"^^xsd:decimal .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-044 ;
+   oepo:hasObservation inra_observations:52d4cedd-9391-4d00-8d91-fe6bf7a04314 .
+
+
+inra_observations:dd51fab0-1cb4-4ef2-b046-c9411d764b78 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "339.5"^^xsd:decimal .
+
+inra_obj:75-GRENACHE-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-045 ;
+   oepo:hasObservation inra_observations:dd51fab0-1cb4-4ef2-b046-c9411d764b78 .
+
+
+inra_observations:11b3f408-bb8c-4241-a379-b307eee8d535 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "95.5"^^xsd:decimal .
+
+inra_obj:106-3160N-ESP-HAUT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-046 ;
+   oepo:hasObservation inra_observations:11b3f408-bb8c-4241-a379-b307eee8d535 .
+
+
+inra_observations:63eb00b9-1c2d-4083-94a7-58c4891ed010 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "957.5"^^xsd:decimal .
+
+inra_obj:71-GRENACHE-2015 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-047 ;
+   oepo:hasObservation inra_observations:63eb00b9-1c2d-4083-94a7-58c4891ed010 .
+
+
+inra_observations:734b34f5-55fe-4eea-8cae-ee97b02a5228 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "236.5"^^xsd:decimal .
+
+inra_obj:106-3160N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-047bis ;
+   oepo:hasObservation inra_observations:734b34f5-55fe-4eea-8cae-ee97b02a5228 .
+
+
+inra_observations:ffd8f824-fc87-443f-985d-d50b0e19bbd6 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   ofpe:Operator inra_agent:nicolas.saurin ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "343"^^xsd:decimal .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-048 ;
+   oepo:hasObservation inra_observations:ffd8f824-fc87-443f-985d-d50b0e19bbd6 .
+
+
+inra_observations:e1ea8795-3913-4f27-a6b7-e478777eb440 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "453"^^xsd:decimal .
+
+inra_obj:98-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-049 ;
+   oepo:hasObservation inra_observations:e1ea8795-3913-4f27-a6b7-e478777eb440 .
+
+
+inra_observations:102c8117-a3e2-4e05-b07a-10562aa90148 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "560"^^xsd:decimal .
+
+inra_obj:77-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050a ;
+   oepo:hasObservation inra_observations:102c8117-a3e2-4e05-b07a-10562aa90148 .
+
+
+inra_observations:e989d8fd-9dbf-4c32-8cab-6450df711a28 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "340"^^xsd:decimal .
+
+inra_obj:89-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050b ;
+   oepo:hasObservation inra_observations:e989d8fd-9dbf-4c32-8cab-6450df711a28 .
+
+
+inra_observations:c9d05edc-6ed0-407f-9336-833daceeca43 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "420"^^xsd:decimal .
+
+inra_obj:87-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050c ;
+   oepo:hasObservation inra_observations:c9d05edc-6ed0-407f-9336-833daceeca43 .
+
+
+inra_observations:f553ec7d-27ab-43b9-a56c-fcef994e92b3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2025"^^xsd:decimal .
+
+inra_obj:63-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050d ;
+   oepo:hasObservation inra_observations:f553ec7d-27ab-43b9-a56c-fcef994e92b3 .
+
+
+inra_observations:54adda38-fd62-4a4e-b45a-4153f0d0d00d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "267"^^xsd:decimal .
+
+inra_obj:76-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-051 ;
+   oepo:hasObservation inra_observations:54adda38-fd62-4a4e-b45a-4153f0d0d00d .
+
+
+inra_observations:bd7100f1-c88e-4091-bf7e-b49c6160c68e rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "56.5"^^xsd:decimal .
+
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-052 ;
+   oepo:hasObservation inra_observations:bd7100f1-c88e-4091-bf7e-b49c6160c68e .
+
+
+inra_observations:dabc67f8-fc36-473c-b437-70fdea210df9 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "21.5"^^xsd:decimal .
+
+inra_obj:85-RUN-3347-364B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053a ;
+   oepo:hasObservation inra_observations:dabc67f8-fc36-473c-b437-70fdea210df9 .
+
+
+inra_observations:58737819-a5f7-4311-aac2-c0357c1ca3ce rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "14"^^xsd:decimal .
+
+inra_obj:85-RUN-3347-368B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053b ;
+   oepo:hasObservation inra_observations:58737819-a5f7-4311-aac2-c0357c1ca3ce .
+
+
+inra_observations:4f038eb4-4c61-46b2-a674-1eeb33928242 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "18.5"^^xsd:decimal .
+
+inra_obj:85-RUN-3347-342B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053c ;
+   oepo:hasObservation inra_observations:4f038eb4-4c61-46b2-a674-1eeb33928242 .
+
+
+inra_observations:fc14f5ad-2be7-4379-b12c-31519268014e rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "29"^^xsd:decimal .
+
+inra_obj:85-RUN-3347-431B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053d ;
+   oepo:hasObservation inra_observations:fc14f5ad-2be7-4379-b12c-31519268014e .
+
+
+inra_observations:ae1e5814-bc25-4dee-b5ea-d9ab790d990c rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "53.5"^^xsd:decimal .
+
+inra_obj:85-RUN-3347-320B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053e ;
+   oepo:hasObservation inra_observations:ae1e5814-bc25-4dee-b5ea-d9ab790d990c .
+
+
+inra_observations:05a90942-cd21-485f-aa1a-3007861a59a5 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "50.5"^^xsd:decimal .
+
+inra_obj:85-RUN-3347-330B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053f ;
+   oepo:hasObservation inra_observations:05a90942-cd21-485f-aa1a-3007861a59a5 .
+
+
+inra_observations:8e74ead7-0d5b-431f-ae5c-3ffe39eb638c rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "31"^^xsd:decimal .
+
+inra_obj:85-RUN-3347-396B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053g ;
+   oepo:hasObservation inra_observations:8e74ead7-0d5b-431f-ae5c-3ffe39eb638c .
+
+
+inra_observations:3c0cd12f-9927-423f-b5eb-a5bdb5acd51b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2306"^^xsd:decimal .
+
+inra_obj:COURSAN-COLOMBARD rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-054 ;
+   oepo:hasObservation inra_observations:3c0cd12f-9927-423f-b5eb-a5bdb5acd51b .
+
+
+inra_observations:884b2e5a-7a77-4abc-9e1b-2674b10b13a7 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "250"^^xsd:decimal .
+
+inra_obj:90-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-055a ;
+   oepo:hasObservation inra_observations:884b2e5a-7a77-4abc-9e1b-2674b10b13a7 .
+
+
+inra_observations:29368826-0b0d-40cd-b0e5-66bfccae7d14 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "181"^^xsd:decimal .
+
+inra_obj:91-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-055b ;
+   oepo:hasObservation inra_observations:29368826-0b0d-40cd-b0e5-66bfccae7d14 .
+
+
+inra_observations:e7203bcd-d490-43d7-b0a7-62f6ee68c0d3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1860"^^xsd:decimal .
+
+inra_obj:COURSAN-COLOMBARD rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-056 ;
+   oepo:hasObservation inra_observations:e7203bcd-d490-43d7-b0a7-62f6ee68c0d3 .
+
+
+inra_observations:ebe4d25c-3fe3-4be5-bd3a-67931c0eca77 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "401.5"^^xsd:decimal .
+
+inra_obj:57-GENOTYPE-02 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-057a ;
+   oepo:hasObservation inra_observations:ebe4d25c-3fe3-4be5-bd3a-67931c0eca77 .
+
+
+inra_observations:ff153ff8-8fb2-474b-aef3-39a914058e0c rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "69"^^xsd:decimal .
+
+inra_obj:57-GENOTYPE-07 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-057b ;
+   oepo:hasObservation inra_observations:ff153ff8-8fb2-474b-aef3-39a914058e0c .
+
+
+inra_observations:e05b3ac9-6fd9-4391-9b33-1706a879515c rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3785"^^xsd:decimal .
+
+inra_obj:82-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-058a ;
+   oepo:hasObservation inra_observations:e05b3ac9-6fd9-4391-9b33-1706a879515c .
+
+
+inra_observations:fec88f64-53e9-4edf-b72c-1efd172e5bdc rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3170"^^xsd:decimal .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-058b ;
+   oepo:hasObservation inra_observations:fec88f64-53e9-4edf-b72c-1efd172e5bdc .
+
+
+inra_observations:4d9d3917-3cf2-4725-b451-65c32ba8dded rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "405"^^xsd:decimal .
+
+inra_obj:76-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-058bis ;
+   oepo:hasObservation inra_observations:4d9d3917-3cf2-4725-b451-65c32ba8dded .
+
+
+inra_observations:923444e7-22b0-4711-9fcf-b14fa43a9596 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "102"^^xsd:decimal .
+
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059a ;
+   oepo:hasObservation inra_observations:923444e7-22b0-4711-9fcf-b14fa43a9596 .
+
+
+inra_observations:1535fc4d-7acf-49f5-ae47-3e4612fef1e3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "51"^^xsd:decimal .
+
+inra_obj:85-RUN-3322-343 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059b ;
+   oepo:hasObservation inra_observations:1535fc4d-7acf-49f5-ae47-3e4612fef1e3 .
+
+
+inra_observations:fcc6ce4c-b776-4749-ae44-ae86c5850dde rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "37"^^xsd:decimal .
+
+inra_obj:85-RUN-3322-178 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059c ;
+   oepo:hasObservation inra_observations:fcc6ce4c-b776-4749-ae44-ae86c5850dde .
+
+
+inra_observations:3733c03b-da8d-4889-bca1-3ea1b6b7c57a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "45"^^xsd:decimal .
+
+inra_obj:85-RUN-3328-306 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059d ;
+   oepo:hasObservation inra_observations:3733c03b-da8d-4889-bca1-3ea1b6b7c57a .
+
+
+inra_observations:fe36742a-c74a-412e-a6f2-350e91955c90 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "153.5"^^xsd:decimal .
+
+inra_obj:72-CABESTREL rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-060a ;
+   oepo:hasObservation inra_observations:fe36742a-c74a-412e-a6f2-350e91955c90 .
+
+
+inra_observations:7fc26a55-db32-4e18-8a6e-464570b3c609 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "165.5"^^xsd:decimal .
+
+inra_obj:72-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-060b ;
+   oepo:hasObservation inra_observations:7fc26a55-db32-4e18-8a6e-464570b3c609 .
+
+
+inra_observations:b18aa2a8-0b81-48b0-817e-44e5c222afb8 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-15"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "891.5"^^xsd:decimal .
+
+inra_obj:55-VIOGNIER-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-061 ;
+   oepo:hasObservation inra_observations:b18aa2a8-0b81-48b0-817e-44e5c222afb8 .
+
+
+inra_observations:606b9622-7fa0-45e7-ad76-a6068fe44802 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-15"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.dellova ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "80"^^xsd:decimal .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-062 ;
+   oepo:hasObservation inra_observations:606b9622-7fa0-45e7-ad76-a6068fe44802 .
+
+
+inra_observations:f740d69c-9147-48a1-801c-475248c6b4a2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-15"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.dellova ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3660"^^xsd:decimal .
+
+inra_obj:75-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-063 ;
+   oepo:hasObservation inra_observations:f740d69c-9147-48a1-801c-475248c6b4a2 .
+
+
+inra_observations:f5ccfa66-db97-40ae-a53c-35963569f4c1 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.dellova ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1495"^^xsd:decimal .
+
+inra_obj:76-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-064 ;
+   oepo:hasObservation inra_observations:f5ccfa66-db97-40ae-a53c-35963569f4c1 .
+
+
+inra_observations:637b540a-2b87-47e8-90a9-e8a13514a076 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "585.5"^^xsd:decimal .
+
+inra_obj:106-3159-B-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-065 ;
+   oepo:hasObservation inra_observations:637b540a-2b87-47e8-90a9-e8a13514a076 .
+
+
+inra_observations:e2e6b4c4-763c-4e08-ad9a-1f0313935c48 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "180"^^xsd:decimal .
+
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-066a ;
+   oepo:hasObservation inra_observations:e2e6b4c4-763c-4e08-ad9a-1f0313935c48 .
+
+
+inra_observations:458a9028-a403-40b4-92ed-a3e33922004c rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "197.5"^^xsd:decimal .
+
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-066b ;
+   oepo:hasObservation inra_observations:458a9028-a403-40b4-92ed-a3e33922004c .
+
+
+inra_observations:2ec6e07d-b182-4d02-b04f-d06ae3dc3f20 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "60"^^xsd:decimal .
+
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-067a ;
+   oepo:hasObservation inra_observations:2ec6e07d-b182-4d02-b04f-d06ae3dc3f20 .
+
+
+inra_observations:e383ad61-14bb-42f2-ba69-53e563e63580 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "10"^^xsd:decimal .
+
+inra_obj:85-RUN-3294-57 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-067b ;
+   oepo:hasObservation inra_observations:e383ad61-14bb-42f2-ba69-53e563e63580 .
+
+
+inra_observations:f56f5548-57bc-4e75-acfd-dc51e98bdaf1 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "23"^^xsd:decimal .
+
+inra_obj:85-RUN-3328-177 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-067c ;
+   oepo:hasObservation inra_observations:f56f5548-57bc-4e75-acfd-dc51e98bdaf1 .
+
+
+inra_observations:b3f4e27e-182d-46fc-a280-ae588e55a932 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "321.5"^^xsd:decimal .
+
+inra_obj:106-3160-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-068 ;
+   oepo:hasObservation inra_observations:b3f4e27e-182d-46fc-a280-ae588e55a932 .
+
+
+inra_observations:86f9020a-0983-4ef8-9f98-88781281a74a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "747.5"^^xsd:decimal .
+
+inra_obj:102-SYRAH-ESP rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069a ;
+   oepo:hasObservation inra_observations:86f9020a-0983-4ef8-9f98-88781281a74a .
+
+
+inra_observations:7f5a5b21-0e3a-4b64-a38f-543d29573075 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "579"^^xsd:decimal .
+
+inra_obj:102-SYRAH-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069b ;
+   oepo:hasObservation inra_observations:7f5a5b21-0e3a-4b64-a38f-543d29573075 .
+
+
+inra_observations:9fee9fca-ee2c-401c-95b8-897f4d7521b2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "239"^^xsd:decimal .
+
+inra_obj:89bis-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069c ;
+   oepo:hasObservation inra_observations:9fee9fca-ee2c-401c-95b8-897f4d7521b2 .
+
+
+inra_observations:00da960c-e8ba-44ad-ac8f-3852a29e5127 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "173"^^xsd:decimal .
+
+inra_obj:102-SYRAH-LYRE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069d ;
+   oepo:hasObservation inra_observations:00da960c-e8ba-44ad-ac8f-3852a29e5127 .
+
+
+inra_observations:d68baefc-2092-47db-bfdd-ec77c7fc5074 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "288"^^xsd:decimal .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069bis ;
+   oepo:hasObservation inra_observations:d68baefc-2092-47db-bfdd-ec77c7fc5074 .
+
+
+inra_observations:7a003bed-2720-499f-b4fa-d78667780c9c rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "690"^^xsd:decimal .
+
+inra_obj:95-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-070a ;
+   oepo:hasObservation inra_observations:7a003bed-2720-499f-b4fa-d78667780c9c .
+
+
+inra_observations:e7569733-aca2-446c-8090-7af1e6279f66 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1245"^^xsd:decimal .
+
+inra_obj:74-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-070b ;
+   oepo:hasObservation inra_observations:e7569733-aca2-446c-8090-7af1e6279f66 .
+
+
+inra_observations:3148127a-91de-468d-861b-dc220bfc4a36 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1180"^^xsd:decimal .
+
+inra_obj:79-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-070c ;
+   oepo:hasObservation inra_observations:3148127a-91de-468d-861b-dc220bfc4a36 .
+
+
+inra_observations:d03c83a9-20a0-4bcf-a444-00582635ef43 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "953.5"^^xsd:decimal .
+
+inra_obj:65-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-071 ;
+   oepo:hasObservation inra_observations:d03c83a9-20a0-4bcf-a444-00582635ef43 .
+
+
+inra_observations:15e0cf6c-c628-483e-8604-0084a9557647 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   ofpe:Operator inra_agent:jn.lacapere ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "316"^^xsd:decimal .
+
+inra_obj:39-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-072 ;
+   oepo:hasObservation inra_observations:15e0cf6c-c628-483e-8604-0084a9557647 .
+
+
+inra_observations:42f53cfd-0a25-4cc1-bda0-08640f91b005 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "655.5"^^xsd:decimal .
+
+inra_obj:68-BOURBOULENC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-073 ;
+   oepo:hasObservation inra_observations:42f53cfd-0a25-4cc1-bda0-08640f91b005 .
+
+
+inra_observations:f1b7c5aa-c57e-4146-a7fc-5e54b5dd5ecf rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1562"^^xsd:decimal .
+
+inra_obj:106-3176 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-074 ;
+   oepo:hasObservation inra_observations:f1b7c5aa-c57e-4146-a7fc-5e54b5dd5ecf .
+
+
+inra_observations:4e55b6c5-b191-4603-8a3b-0d15405bd9b3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1910"^^xsd:decimal .
+
+inra_obj:39-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-075 ;
+   oepo:hasObservation inra_observations:4e55b6c5-b191-4603-8a3b-0d15405bd9b3 .
+
+
+inra_observations:1521da1f-20d3-400d-a37b-ceff757bbd81 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2315"^^xsd:decimal .
+
+inra_obj:11-PETIT-VERDOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-076 ;
+   oepo:hasObservation inra_observations:1521da1f-20d3-400d-a37b-ceff757bbd81 .
+
+
+inra_observations:1ad1f310-6a31-4c1a-b42a-e721c68834cc rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "119"^^xsd:decimal .
+
+inra_obj:106-3176 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-077 ;
+   oepo:hasObservation inra_observations:1ad1f310-6a31-4c1a-b42a-e721c68834cc .
+
+
+inra_observations:050b92c1-6420-46ed-92bb-21df94dab576 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "434.5"^^xsd:decimal .
+
+inra_obj:88-VARIETES-JUS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-078 ;
+   oepo:hasObservation inra_observations:050b92c1-6420-46ed-92bb-21df94dab576 .
+
+
+inra_observations:9ac4a944-edfc-43a4-a595-af396068386a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-23"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.degroise ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "8"^^xsd:decimal .
+
+inra_obj:85-RUN-3322-285 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-078bis ;
+   oepo:hasObservation inra_observations:9ac4a944-edfc-43a4-a595-af396068386a .
+
+
+inra_observations:8ea7f424-5ca1-4265-9a74-9f7627f4759e rdf:type oepo:Observation ;
+   time:hasTime "2016-09-26"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1441.5"^^xsd:decimal .
+
+inra_obj:40-GAMAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-079 ;
+   oepo:hasObservation inra_observations:8ea7f424-5ca1-4265-9a74-9f7627f4759e .
+
+
+inra_observations:de1b4e72-f781-4d5e-8f09-9c586b993acb rdf:type oepo:Observation ;
+   time:hasTime "2016-09-27"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "74"^^xsd:decimal .
+
+inra_obj:78-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-080 ;
+   oepo:hasObservation inra_observations:de1b4e72-f781-4d5e-8f09-9c586b993acb .
+
+
+inra_observations:b1913d4f-6707-4a32-8d1b-dde8430c1a77 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-27"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1324"^^xsd:decimal .
+
+inra_obj:72-MOURVEDRE-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-081 ;
+   oepo:hasObservation inra_observations:b1913d4f-6707-4a32-8d1b-dde8430c1a77 .
+
+
+inra_observations:15f614d1-7cbb-470f-8b20-8a8151568cfc rdf:type oepo:Observation ;
+   time:hasTime "2016-09-27"^^xsd:date ;
+   ofpe:Operator inra_agent:nicolas.saurin ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "242"^^xsd:decimal .
+
+inra_obj:11-PETIT-VERDOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-082 ;
+   oepo:hasObservation inra_observations:15f614d1-7cbb-470f-8b20-8a8151568cfc .
+
+
+inra_observations:df63571c-e6c2-4efc-bb99-e74a31afee51 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-26"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1298"^^xsd:decimal .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-083a ;
+   oepo:hasObservation inra_observations:df63571c-e6c2-4efc-bb99-e74a31afee51 .
+
+
+inra_observations:ab8a61dc-dc53-4d08-8131-33fe904d80ae rdf:type oepo:Observation ;
+   time:hasTime "2016-09-26"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "337"^^xsd:decimal .
+
+inra_obj:59-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-083b ;
+   oepo:hasObservation inra_observations:ab8a61dc-dc53-4d08-8131-33fe904d80ae .
+
+
+inra_observations:841494c8-0cc2-4e48-aa16-447207f4958f rdf:type oepo:Observation ;
+   time:hasTime "2016-09-28"^^xsd:date ;
+   ofpe:Operator inra_agent:jj.regadera ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "216.5"^^xsd:decimal .
+
+inra_obj:JARDIN-AMPELO rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-083c ;
+   oepo:hasObservation inra_observations:841494c8-0cc2-4e48-aa16-447207f4958f .
+
+
+inra_observations:23e5ecd5-354d-4eb4-ba96-560df4dee84b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-28"^^xsd:date ;
+   ofpe:Operator inra_agent:jerome.cerutti ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "121"^^xsd:decimal .
+
+inra_obj:102-PIQUEPOUL-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-084 ;
+   oepo:hasObservation inra_observations:23e5ecd5-354d-4eb4-ba96-560df4dee84b .
+
+
+inra_observations:88025611-686e-4f57-89e6-d3dde0df2f9b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-28"^^xsd:date ;
+   ofpe:Operator inra_agent:fabien.robert ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "4731"^^xsd:decimal .
+
+inra_obj:11-PETIT-VERDOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-085 ;
+   oepo:hasObservation inra_observations:88025611-686e-4f57-89e6-d3dde0df2f9b .
+
+
+
