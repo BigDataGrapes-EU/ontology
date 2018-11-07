@@ -1,10 +1,12 @@
 @prefix aeo:       <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#>.
 @prefix afeo:      <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#>.
 @prefix AGRO:      <http://purl.obolibrary.org/obo/AGRO_>.
+@prefix agrovoc:	<http://aims.fao.org/aos/agrovoc/>.
 @prefix at:        <http://data.ifpri.org/lod/at/resource/>.
 @prefix BFO:       <http://purl.obolibrary.org/obo/BFO_>.
 @prefix chebi:     <http://purl.obolibrary.org/obo/chebi#>.
 @prefix CHEBI:     <http://purl.obolibrary.org/obo/CHEBI_>.
+@prefix CHMO:           <http://purl.obolibrary.org/obo/CHMO_>.
 @prefix CO:        <http://www.cropontology.org/rdf/>.
 @prefix CO_320:    <http://www.cropontology.org/rdf/CO_320:>.
 @prefix CO_322:    <http://www.cropontology.org/rdf/CO_322:>.
@@ -27,14 +29,20 @@
 @prefix PATO:      <http://purl.obolibrary.org/obo/PATO_>.
 @prefix po:        <http://purl.obolibrary.org/obo/po#>.
 @prefix PO:        <http://purl.obolibrary.org/obo/PO_>.
+@prefix qudt:	   <http://qudt.org/1.1/schema/qudt#>.
 @prefix RO:        <http://purl.obolibrary.org/obo/RO_>.
+@prefix STATO:     <http://purl.obolibrary.org/obo/STATO_>.
 @prefix to:        <http://purl.obolibrary.org/obo/to#>.
+@prefix time:      <http://www.w3.org/2006/time#>.  
 @prefix uo:        <http://purl.obolibrary.org/obo/uo#>.
 @prefix UO:        <http://purl.obolibrary.org/obo/UO_>.
 @prefix XCO:       <http://purl.obolibrary.org/obo/XCO_>.
 
-@prefix inra_agent: <http://vinnotec.supagro.inra.fr/public/Pr/agent/>
-@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/>
+@prefix inra_observations: <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/>.
+@prefix inra_variables: <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/>.
+@prefix inra_agent: <http://vinnotec.supagro.inra.fr/public/Pr/agent/>.
+@prefix inra_wineTaste: <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/>.
+@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/>.
 @prefix inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/>.
 @prefix inra_gis:   <http://vinnotec.supagro.inra.fr/public/Pr/GIS/>.
 @prefix inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>.
