@@ -3,11 +3,11 @@
 inra_obj:22-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
    geo:hasGeometry inra_gis:polygon_22-SYRAH ;
-   qudt:hasArea inra_gis:area88c923c8-7496-4b81-89ef-314c70a6ec14 .
+   qudt:hasArea inra_gis:areaa773529b-90ca-4286-b85d-d7e511d4e05e .
 
-inra_gis:area88c923c8-7496-4b81-89ef-314c70a6ec14 a qudt:Area;
+inra_gis:areaa773529b-90ca-4286-b85d-d7e511d4e05e a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.37490"^^xsd:string ;
+   qudt:value "1.37490"^^xsd:string .
 
 inra_gis:polygon_22-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710743.61182814 710743.61182814, 6226766.01933858 6226766.01933858 ))"^^geo:wktLiteral .
@@ -15,12 +15,12 @@ inra_gis:polygon_22-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:68-COLLECTION-BLANCS rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_68-COLLECTION-BLANCS .
-   qudt:hasArea inra_gis:area68971883-14c3-4bb7-acbd-63c5b3316986 .
+   geo:hasGeometry inra_gis:polygon_68-COLLECTION-BLANCS ;
+   qudt:hasArea inra_gis:area53779b5f-476d-4928-a758-356f6e618bda .
 
-   inra_gis:area68971883-14c3-4bb7-acbd-63c5b3316986 a qudt:Area;
+inra_gis:area53779b5f-476d-4928-a758-356f6e618bda a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.40800"^^xsd:string ;
+   qudt:value "1.40800"^^xsd:string .
 
 inra_gis:polygon_68-COLLECTION-BLANCS rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710360.04498268 710360.04498268, 6226793.20786328 6226793.20786328 ))"^^geo:wktLiteral .
@@ -28,12 +28,12 @@ inra_gis:polygon_68-COLLECTION-BLANCS rdf:type geo:Polygon ;
 
 inra_obj:JARDIN-AMPELO rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_JARDIN-AMPELO .
-   qudt:hasArea inra_gis:areaaa737b8e-2aad-45bd-991b-5a4b8afe556d .
+   geo:hasGeometry inra_gis:polygon_JARDIN-AMPELO ;
+   qudt:hasArea inra_gis:area6f9482a0-9542-4ba5-8ad2-cd68cc006554 .
 
-   inra_gis:areaaa737b8e-2aad-45bd-991b-5a4b8afe556d a qudt:Area;
+inra_gis:area6f9482a0-9542-4ba5-8ad2-cd68cc006554 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.37820"^^xsd:string ;
+   qudt:value "0.37820"^^xsd:string .
 
 inra_gis:polygon_JARDIN-AMPELO rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710990.38243688 710990.38243688, 6227113.60813601 6227113.60813601 ))"^^geo:wktLiteral .
@@ -41,12 +41,12 @@ inra_gis:polygon_JARDIN-AMPELO rdf:type geo:Polygon ;
 
 inra_obj:18-MERLOT-2016 rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_18-MERLOT-2016 .
-   qudt:hasArea inra_gis:areae9200a84-9c68-427c-a7fc-ac3473ee2bd6 .
+   geo:hasGeometry inra_gis:polygon_18-MERLOT-2016 ;
+   qudt:hasArea inra_gis:area0f714d79-0ad5-49c2-82ab-44f9a4de101e .
 
-   inra_gis:areae9200a84-9c68-427c-a7fc-ac3473ee2bd6 a qudt:Area;
+inra_gis:area0f714d79-0ad5-49c2-82ab-44f9a4de101e a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.81400"^^xsd:string ;
+   qudt:value "0.81400"^^xsd:string .
 
 inra_gis:polygon_18-MERLOT-2016 rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710867.15299618 710867.15299618, 6226598.55146833 6226598.55146833 ))"^^geo:wktLiteral .
@@ -54,12 +54,12 @@ inra_gis:polygon_18-MERLOT-2016 rdf:type geo:Polygon ;
 
 inra_obj:35-CABERNET-FRANC-2016 rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_35-CABERNET-FRANC-2016 .
-   qudt:hasArea inra_gis:aread7b160e6-c035-400d-82b0-50b39e707776 .
+   geo:hasGeometry inra_gis:polygon_35-CABERNET-FRANC-2016 ;
+   qudt:hasArea inra_gis:areaccebb8fa-95e5-44bf-974b-cb12c9aa0b5d .
 
-   inra_gis:aread7b160e6-c035-400d-82b0-50b39e707776 a qudt:Area;
+inra_gis:areaccebb8fa-95e5-44bf-974b-cb12c9aa0b5d a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.72990"^^xsd:string ;
+   qudt:value "0.72990"^^xsd:string .
 
 inra_gis:polygon_35-CABERNET-FRANC-2016 rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710942.22265799 710942.22265799, 6226806.28850684 6226806.28850684 ))"^^geo:wktLiteral .
@@ -67,12 +67,12 @@ inra_gis:polygon_35-CABERNET-FRANC-2016 rdf:type geo:Polygon ;
 
 inra_obj:98-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_98-MUSCAT-PETIT-GRAIN .
-   qudt:hasArea inra_gis:area352ef42f-bb75-4ecd-b038-0ee208010b6e .
+   geo:hasGeometry inra_gis:polygon_98-MUSCAT-PETIT-GRAIN ;
+   qudt:hasArea inra_gis:areabadf9024-2dfc-45d7-a034-83143a3a008e .
 
-   inra_gis:area352ef42f-bb75-4ecd-b038-0ee208010b6e a qudt:Area;
+inra_gis:areabadf9024-2dfc-45d7-a034-83143a3a008e a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.29540"^^xsd:string ;
+   qudt:value "0.29540"^^xsd:string .
 
 inra_gis:polygon_98-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709128.84244875 709128.84244875, 6228381.15159308 6228381.15159308 ))"^^geo:wktLiteral .
@@ -80,12 +80,12 @@ inra_gis:polygon_98-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
 
 inra_obj:89-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_89-SYRAH .
-   qudt:hasArea inra_gis:areac7935bbd-9dc4-4928-86e9-506666a58a10 .
+   geo:hasGeometry inra_gis:polygon_89-SYRAH ;
+   qudt:hasArea inra_gis:area7d2cb2e6-67e0-424c-b9b8-1eaf5e84b9bb .
 
-   inra_gis:areac7935bbd-9dc4-4928-86e9-506666a58a10 a qudt:Area;
+inra_gis:area7d2cb2e6-67e0-424c-b9b8-1eaf5e84b9bb a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.12350"^^xsd:string ;
+   qudt:value "0.12350"^^xsd:string .
 
 inra_gis:polygon_89-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710147.89966959 710147.89966959, 6227085.36960952 6227085.36960952 ))"^^geo:wktLiteral .
@@ -93,12 +93,12 @@ inra_gis:polygon_89-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:89bis-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_89bis-SYRAH .
-   qudt:hasArea inra_gis:area5ec923b6-c3b2-4fd7-8af6-7bcd469c8e67 .
+   geo:hasGeometry inra_gis:polygon_89bis-SYRAH ;
+   qudt:hasArea inra_gis:area616f1bfc-47db-4cde-bde3-1d84ff992def .
 
-   inra_gis:area5ec923b6-c3b2-4fd7-8af6-7bcd469c8e67 a qudt:Area;
+inra_gis:area616f1bfc-47db-4cde-bde3-1d84ff992def a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.14560"^^xsd:string ;
+   qudt:value "0.14560"^^xsd:string .
 
 inra_gis:polygon_89bis-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710232.15721577 710232.15721577, 6227186.75701544 6227186.75701544 ))"^^geo:wktLiteral .
@@ -106,12 +106,12 @@ inra_gis:polygon_89bis-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:87-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_87-SYRAH .
-   qudt:hasArea inra_gis:areaf1b42ce6-213b-4123-9885-4b78cc01026e .
+   geo:hasGeometry inra_gis:polygon_87-SYRAH ;
+   qudt:hasArea inra_gis:area1e1228e8-a248-4414-991e-d6ae57ca146c .
 
-   inra_gis:areaf1b42ce6-213b-4123-9885-4b78cc01026e a qudt:Area;
+inra_gis:area1e1228e8-a248-4414-991e-d6ae57ca146c a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.21290"^^xsd:string ;
+   qudt:value "0.21290"^^xsd:string .
 
 inra_gis:polygon_87-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709905.65351481 709905.65351481, 6227089.81564420 6227089.81564420 ))"^^geo:wktLiteral .
@@ -119,12 +119,12 @@ inra_gis:polygon_87-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:85-RUN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_85-RUN .
-   qudt:hasArea inra_gis:areab93895b8-4ca1-45e9-a33e-c017c2fd25e5 .
+   geo:hasGeometry inra_gis:polygon_85-RUN ;
+   qudt:hasArea inra_gis:area025a83e8-a25e-4603-a167-edc134d65db0 .
 
-   inra_gis:areab93895b8-4ca1-45e9-a33e-c017c2fd25e5 a qudt:Area;
+inra_gis:area025a83e8-a25e-4603-a167-edc134d65db0 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.26940"^^xsd:string ;
+   qudt:value "0.26940"^^xsd:string .
 
 inra_gis:polygon_85-RUN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709950.64172059 709950.64172059, 6227276.63103209 6227276.63103209 ))"^^geo:wktLiteral .
@@ -132,12 +132,12 @@ inra_gis:polygon_85-RUN rdf:type geo:Polygon ;
 
 inra_obj:85-RESDUR rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_85-RESDUR .
-   qudt:hasArea inra_gis:areacc09e1fb-982d-4356-bbbb-0d3b7de414f6 .
+   geo:hasGeometry inra_gis:polygon_85-RESDUR ;
+   qudt:hasArea inra_gis:areaa4ec92d8-8302-467f-add2-5673a862d220 .
 
-   inra_gis:areacc09e1fb-982d-4356-bbbb-0d3b7de414f6 a qudt:Area;
+inra_gis:areaa4ec92d8-8302-467f-add2-5673a862d220 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.32320"^^xsd:string ;
+   qudt:value "0.32320"^^xsd:string .
 
 inra_gis:polygon_85-RESDUR rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709990.92564402 709990.92564402, 6227330.40762576 6227330.40762576 ))"^^geo:wktLiteral .
@@ -145,12 +145,12 @@ inra_gis:polygon_85-RESDUR rdf:type geo:Polygon ;
 
 inra_obj:83-MARSELAN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_83-MARSELAN .
-   qudt:hasArea inra_gis:areaa48d0b4c-6a85-4e77-b694-e5d8434d6baf .
+   geo:hasGeometry inra_gis:polygon_83-MARSELAN ;
+   qudt:hasArea inra_gis:area807cf6c0-ff1c-407a-9420-0ad291c29569 .
 
-   inra_gis:areaa48d0b4c-6a85-4e77-b694-e5d8434d6baf a qudt:Area;
+inra_gis:area807cf6c0-ff1c-407a-9420-0ad291c29569 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.27870"^^xsd:string ;
+   qudt:value "0.27870"^^xsd:string .
 
 inra_gis:polygon_83-MARSELAN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709825.03607797 709825.03607797, 6227293.49780522 6227293.49780522 ))"^^geo:wktLiteral .
@@ -158,12 +158,12 @@ inra_gis:polygon_83-MARSELAN rdf:type geo:Polygon ;
 
 inra_obj:79-GRENACHE rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_79-GRENACHE .
-   qudt:hasArea inra_gis:area6911e359-7e0f-4618-9754-95234d20e621 .
+   geo:hasGeometry inra_gis:polygon_79-GRENACHE ;
+   qudt:hasArea inra_gis:areacfb1352b-beb4-4a28-86a3-49bed5656839 .
 
-   inra_gis:area6911e359-7e0f-4618-9754-95234d20e621 a qudt:Area;
+inra_gis:areacfb1352b-beb4-4a28-86a3-49bed5656839 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.09820"^^xsd:string ;
+   qudt:value "0.09820"^^xsd:string .
 
 inra_gis:polygon_79-GRENACHE rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709473.91323931 709473.91323931, 6227015.96637165 6227015.96637165 ))"^^geo:wktLiteral .
@@ -171,12 +171,12 @@ inra_gis:polygon_79-GRENACHE rdf:type geo:Polygon ;
 
 inra_obj:79-CARIGNAN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_79-CARIGNAN .
-   qudt:hasArea inra_gis:areab55d2df7-4eaa-4e0f-9108-3e9c5114ee20 .
+   geo:hasGeometry inra_gis:polygon_79-CARIGNAN ;
+   qudt:hasArea inra_gis:areaef84846b-9f5a-4422-81e1-4189baaf1c1c .
 
-   inra_gis:areab55d2df7-4eaa-4e0f-9108-3e9c5114ee20 a qudt:Area;
+inra_gis:areaef84846b-9f5a-4422-81e1-4189baaf1c1c a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.50400"^^xsd:string ;
+   qudt:value "0.50400"^^xsd:string .
 
 inra_gis:polygon_79-CARIGNAN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709517.46660611 709517.46660611, 6227028.46595764 6227028.46595764 ))"^^geo:wktLiteral .
@@ -184,12 +184,12 @@ inra_gis:polygon_79-CARIGNAN rdf:type geo:Polygon ;
 
 inra_obj:02-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_02-SYRAH .
-   qudt:hasArea inra_gis:areac50d5bfe-14d7-4a17-8ee6-517cb97c08d5 .
+   geo:hasGeometry inra_gis:polygon_02-SYRAH ;
+   qudt:hasArea inra_gis:area39e853ec-a2f3-4730-96f9-300553a26012 .
 
-   inra_gis:areac50d5bfe-14d7-4a17-8ee6-517cb97c08d5 a qudt:Area;
+inra_gis:area39e853ec-a2f3-4730-96f9-300553a26012 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.12730"^^xsd:string ;
+   qudt:value "0.12730"^^xsd:string .
 
 inra_gis:polygon_02-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710645.61861238 710645.61861238, 6226593.34181715 6226593.34181715 ))"^^geo:wktLiteral .
@@ -197,12 +197,12 @@ inra_gis:polygon_02-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:10-SAUVIGNON-2016 rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_10-SAUVIGNON-2016 .
-   qudt:hasArea inra_gis:area3a6f6e42-d47c-4943-b7fc-94e093207fe7 .
+   geo:hasGeometry inra_gis:polygon_10-SAUVIGNON-2016 ;
+   qudt:hasArea inra_gis:areaf2b65b11-109a-448a-9671-fb2274e6b56c .
 
-   inra_gis:area3a6f6e42-d47c-4943-b7fc-94e093207fe7 a qudt:Area;
+inra_gis:areaf2b65b11-109a-448a-9671-fb2274e6b56c a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.44170"^^xsd:string ;
+   qudt:value "0.44170"^^xsd:string .
 
 inra_gis:polygon_10-SAUVIGNON-2016 rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710684.66077934 710684.66077934, 6226504.42773456 6226504.42773456 ))"^^geo:wktLiteral .
@@ -210,12 +210,12 @@ inra_gis:polygon_10-SAUVIGNON-2016 rdf:type geo:Polygon ;
 
 inra_obj:40-GAMAY rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_40-GAMAY .
-   qudt:hasArea inra_gis:areab7a65628-3188-48e4-bd2d-a8ac49584f64 .
+   geo:hasGeometry inra_gis:polygon_40-GAMAY ;
+   qudt:hasArea inra_gis:areaac75ada6-a929-413f-a719-e1804df2852a .
 
-   inra_gis:areab7a65628-3188-48e4-bd2d-a8ac49584f64 a qudt:Area;
+inra_gis:areaac75ada6-a929-413f-a719-e1804df2852a a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.42160"^^xsd:string ;
+   qudt:value "0.42160"^^xsd:string .
 
 inra_gis:polygon_40-GAMAY rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710826.27722230 710826.27722230, 6227009.77835582 6227009.77835582 ))"^^geo:wktLiteral .
@@ -223,12 +223,12 @@ inra_gis:polygon_40-GAMAY rdf:type geo:Polygon ;
 
 inra_obj:39-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_39-CABERNET-SAUVIGNON .
-   qudt:hasArea inra_gis:area70e810a5-b68d-49b1-989f-6e96a2b1d291 .
+   geo:hasGeometry inra_gis:polygon_39-CABERNET-SAUVIGNON ;
+   qudt:hasArea inra_gis:area40b39b38-6ec1-4a1a-a58d-e97e0a58e200 .
 
-   inra_gis:area70e810a5-b68d-49b1-989f-6e96a2b1d291 a qudt:Area;
+inra_gis:area40b39b38-6ec1-4a1a-a58d-e97e0a58e200 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.32590"^^xsd:string ;
+   qudt:value "0.32590"^^xsd:string .
 
 inra_gis:polygon_39-CABERNET-SAUVIGNON rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710828.12738268 710828.12738268, 6226921.85679685 6226921.85679685 ))"^^geo:wktLiteral .
@@ -236,12 +236,12 @@ inra_gis:polygon_39-CABERNET-SAUVIGNON rdf:type geo:Polygon ;
 
 inra_obj:23-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_23-SYRAH .
-   qudt:hasArea inra_gis:area5c63b907-ce20-4252-a98b-3b331e79ea19 .
+   geo:hasGeometry inra_gis:polygon_23-SYRAH ;
+   qudt:hasArea inra_gis:aread5006210-84f2-44a3-b501-b8801af3ba08 .
 
-   inra_gis:area5c63b907-ce20-4252-a98b-3b331e79ea19 a qudt:Area;
+inra_gis:aread5006210-84f2-44a3-b501-b8801af3ba08 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.11710"^^xsd:string ;
+   qudt:value "0.11710"^^xsd:string .
 
 inra_gis:polygon_23-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710703.89526235 710703.89526235, 6226807.58949984 6226807.58949984 ))"^^geo:wktLiteral .
@@ -249,12 +249,12 @@ inra_gis:polygon_23-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:55-VIOGNIER rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_55-VIOGNIER .
-   qudt:hasArea inra_gis:area1638587f-b525-467e-9b1b-a25cffc5effa .
+   geo:hasGeometry inra_gis:polygon_55-VIOGNIER ;
+   qudt:hasArea inra_gis:area46a4c10c-d09b-4b25-bdbf-c61ec91eb56c .
 
-   inra_gis:area1638587f-b525-467e-9b1b-a25cffc5effa a qudt:Area;
+inra_gis:area46a4c10c-d09b-4b25-bdbf-c61ec91eb56c a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.04550"^^xsd:string ;
+   qudt:value "1.04550"^^xsd:string .
 
 inra_gis:polygon_55-VIOGNIER rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710889.03575212 710889.03575212, 6227146.87977986 6227146.87977986 ))"^^geo:wktLiteral .
@@ -262,12 +262,12 @@ inra_gis:polygon_55-VIOGNIER rdf:type geo:Polygon ;
 
 inra_obj:57-MERLOT rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_57-MERLOT .
-   qudt:hasArea inra_gis:area0d685bff-d051-4712-9e3f-56a676ec9f69 .
+   geo:hasGeometry inra_gis:polygon_57-MERLOT ;
+   qudt:hasArea inra_gis:area33767435-abdb-41ec-9c4f-93e965de0e54 .
 
-   inra_gis:area0d685bff-d051-4712-9e3f-56a676ec9f69 a qudt:Area;
+inra_gis:area33767435-abdb-41ec-9c4f-93e965de0e54 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.55360"^^xsd:string ;
+   qudt:value "0.55360"^^xsd:string .
 
 inra_gis:polygon_57-MERLOT rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((711035.58980888 711035.58980888, 6227232.52105535 6227232.52105535 ))"^^geo:wktLiteral .
@@ -275,12 +275,12 @@ inra_gis:polygon_57-MERLOT rdf:type geo:Polygon ;
 
 inra_obj:51-MUSCAT-ALEXANDRIE-2 rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_51-MUSCAT-ALEXANDRIE-2 .
-   qudt:hasArea inra_gis:area1e373243-ff4f-4753-b6f5-8aed26d3de20 .
+   geo:hasGeometry inra_gis:polygon_51-MUSCAT-ALEXANDRIE-2 ;
+   qudt:hasArea inra_gis:area580db7a9-1598-40ef-86e3-d37fd8ce6fe6 .
 
-   inra_gis:area1e373243-ff4f-4753-b6f5-8aed26d3de20 a qudt:Area;
+inra_gis:area580db7a9-1598-40ef-86e3-d37fd8ce6fe6 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.24470"^^xsd:string ;
+   qudt:value "0.24470"^^xsd:string .
 
 inra_gis:polygon_51-MUSCAT-ALEXANDRIE-2 rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((711119.23892101 711119.23892101, 6227025.19921745 6227025.19921745 ))"^^geo:wktLiteral .
@@ -288,12 +288,12 @@ inra_gis:polygon_51-MUSCAT-ALEXANDRIE-2 rdf:type geo:Polygon ;
 
 inra_obj:72-MOURVEDRE rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_72-MOURVEDRE .
-   qudt:hasArea inra_gis:area0761f0bf-3951-4b77-92dd-9496615db37f .
+   geo:hasGeometry inra_gis:polygon_72-MOURVEDRE ;
+   qudt:hasArea inra_gis:area35523254-3ac8-49ab-986b-dcbd6bbddeb2 .
 
-   inra_gis:area0761f0bf-3951-4b77-92dd-9496615db37f a qudt:Area;
+inra_gis:area35523254-3ac8-49ab-986b-dcbd6bbddeb2 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.16920"^^xsd:string ;
+   qudt:value "1.16920"^^xsd:string .
 
 inra_gis:polygon_72-MOURVEDRE rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710075.95435113 710075.95435113, 6226930.02647511 6226930.02647511 ))"^^geo:wktLiteral .
@@ -301,12 +301,12 @@ inra_gis:polygon_72-MOURVEDRE rdf:type geo:Polygon ;
 
 inra_obj:73-MACCABEU rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_73-MACCABEU .
-   qudt:hasArea inra_gis:area05318431-35d3-44fe-bda7-143cbd30737a .
+   geo:hasGeometry inra_gis:polygon_73-MACCABEU ;
+   qudt:hasArea inra_gis:areae28f7ac2-4cb4-46bd-9801-5c56f5667bb3 .
 
-   inra_gis:area05318431-35d3-44fe-bda7-143cbd30737a a qudt:Area;
+inra_gis:areae28f7ac2-4cb4-46bd-9801-5c56f5667bb3 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.48080"^^xsd:string ;
+   qudt:value "0.48080"^^xsd:string .
 
 inra_gis:polygon_73-MACCABEU rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709992.85438402 709992.85438402, 6226953.01429921 6226953.01429921 ))"^^geo:wktLiteral .
@@ -314,12 +314,12 @@ inra_gis:polygon_73-MACCABEU rdf:type geo:Polygon ;
 
 inra_obj:74-CONS-CARIGNAN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_74-CONS-CARIGNAN .
-   qudt:hasArea inra_gis:area6316a9b2-ec68-4696-8f4f-c312fdb1934a .
+   geo:hasGeometry inra_gis:polygon_74-CONS-CARIGNAN ;
+   qudt:hasArea inra_gis:areaa03ae2dc-cf3e-40a5-bad1-3392bb5e236a .
 
-   inra_gis:area6316a9b2-ec68-4696-8f4f-c312fdb1934a a qudt:Area;
+inra_gis:areaa03ae2dc-cf3e-40a5-bad1-3392bb5e236a a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.32780"^^xsd:string ;
+   qudt:value "0.32780"^^xsd:string .
 
 inra_gis:polygon_74-CONS-CARIGNAN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709967.31714003 709967.31714003, 6226914.48626332 6226914.48626332 ))"^^geo:wktLiteral .
@@ -327,12 +327,12 @@ inra_gis:polygon_74-CONS-CARIGNAN rdf:type geo:Polygon ;
 
 inra_obj:75-NVLLES-OBTENTIONS-INRA rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_75-NVLLES-OBTENTIONS-INRA .
-   qudt:hasArea inra_gis:area11c7efc9-f7be-4bd8-aad8-9dcbcbc3da74 .
+   geo:hasGeometry inra_gis:polygon_75-NVLLES-OBTENTIONS-INRA ;
+   qudt:hasArea inra_gis:areaf0093a77-0873-43d1-ae10-b74271cb9c71 .
 
-   inra_gis:area11c7efc9-f7be-4bd8-aad8-9dcbcbc3da74 a qudt:Area;
+inra_gis:areaf0093a77-0873-43d1-ae10-b74271cb9c71 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.40680"^^xsd:string ;
+   qudt:value "1.40680"^^xsd:string .
 
 inra_gis:polygon_75-NVLLES-OBTENTIONS-INRA rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709899.86549201 709899.86549201, 6226803.07903424 6226803.07903424 ))"^^geo:wktLiteral .
@@ -340,12 +340,12 @@ inra_gis:polygon_75-NVLLES-OBTENTIONS-INRA rdf:type geo:Polygon ;
 
 inra_obj:76-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_76-SYRAH .
-   qudt:hasArea inra_gis:areaa7c8c82e-70b2-4b39-900d-b281d9b748fb .
+   geo:hasGeometry inra_gis:polygon_76-SYRAH ;
+   qudt:hasArea inra_gis:area596270fb-c02a-4221-9028-851fa0c77efd .
 
-   inra_gis:areaa7c8c82e-70b2-4b39-900d-b281d9b748fb a qudt:Area;
+inra_gis:area596270fb-c02a-4221-9028-851fa0c77efd a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.22740"^^xsd:string ;
+   qudt:value "1.22740"^^xsd:string .
 
 inra_gis:polygon_76-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709800.99265994 709800.99265994, 6226839.48957994 6226839.48957994 ))"^^geo:wktLiteral .
@@ -353,12 +353,12 @@ inra_gis:polygon_76-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:64-GRENACHE-2017 rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_64-GRENACHE-2017 .
-   qudt:hasArea inra_gis:areace4dab53-98f2-496e-81da-6245022bd53d .
+   geo:hasGeometry inra_gis:polygon_64-GRENACHE-2017 ;
+   qudt:hasArea inra_gis:area37a2691f-1d8e-484c-a7c8-5b9e0038a0f0 .
 
-   inra_gis:areace4dab53-98f2-496e-81da-6245022bd53d a qudt:Area;
+inra_gis:area37a2691f-1d8e-484c-a7c8-5b9e0038a0f0 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.88520"^^xsd:string ;
+   qudt:value "0.88520"^^xsd:string .
 
 inra_gis:polygon_64-GRENACHE-2017 rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710652.23640680 710652.23640680, 6227083.30394115 6227083.30394115 ))"^^geo:wktLiteral .
@@ -366,12 +366,12 @@ inra_gis:polygon_64-GRENACHE-2017 rdf:type geo:Polygon ;
 
 inra_obj:82-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_82-SYRAH .
-   qudt:hasArea inra_gis:area74af47cd-9d68-4009-b8bb-2a29e5cc1aeb .
+   geo:hasGeometry inra_gis:polygon_82-SYRAH ;
+   qudt:hasArea inra_gis:area172afd7b-6156-4af9-b6d6-a6a2a788957a .
 
-   inra_gis:area74af47cd-9d68-4009-b8bb-2a29e5cc1aeb a qudt:Area;
+inra_gis:area172afd7b-6156-4af9-b6d6-a6a2a788957a a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.94640"^^xsd:string ;
+   qudt:value "0.94640"^^xsd:string .
 
 inra_gis:polygon_82-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709562.26369874 709562.26369874, 6227215.39532971 6227215.39532971 ))"^^geo:wktLiteral .
@@ -379,12 +379,12 @@ inra_gis:polygon_82-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:11-PETIT-VERDOT rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_11-PETIT-VERDOT .
-   qudt:hasArea inra_gis:area6c1e155e-914a-4901-a6a0-3cfb71bbb0e6 .
+   geo:hasGeometry inra_gis:polygon_11-PETIT-VERDOT ;
+   qudt:hasArea inra_gis:areaeb48d1ec-2a75-4080-b16d-05b986d56760 .
 
-   inra_gis:area6c1e155e-914a-4901-a6a0-3cfb71bbb0e6 a qudt:Area;
+inra_gis:areaeb48d1ec-2a75-4080-b16d-05b986d56760 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.60070"^^xsd:string ;
+   qudt:value "0.60070"^^xsd:string .
 
 inra_gis:polygon_11-PETIT-VERDOT rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710691.50625287 710691.50625287, 6226616.90476507 6226616.90476507 ))"^^geo:wktLiteral .
@@ -392,12 +392,12 @@ inra_gis:polygon_11-PETIT-VERDOT rdf:type geo:Polygon ;
 
 inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_81-CHARDONNAY .
-   qudt:hasArea inra_gis:area46dfe215-4c5c-4fd2-a85a-2d5febdc5800 .
+   geo:hasGeometry inra_gis:polygon_81-CHARDONNAY ;
+   qudt:hasArea inra_gis:areae7eda09e-adfd-4376-af4f-85e6338dd2ee .
 
-   inra_gis:area46dfe215-4c5c-4fd2-a85a-2d5febdc5800 a qudt:Area;
+inra_gis:areae7eda09e-adfd-4376-af4f-85e6338dd2ee a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.20600"^^xsd:string ;
+   qudt:value "1.20600"^^xsd:string .
 
 inra_gis:polygon_81-CHARDONNAY rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709434.90169528 709434.90169528, 6227177.31495054 6227177.31495054 ))"^^geo:wktLiteral .
@@ -405,12 +405,12 @@ inra_gis:polygon_81-CHARDONNAY rdf:type geo:Polygon ;
 
 inra_obj:63-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_63-SYRAH .
-   qudt:hasArea inra_gis:areadcf08129-d665-4fda-920c-f31d6357791e .
+   geo:hasGeometry inra_gis:polygon_63-SYRAH ;
+   qudt:hasArea inra_gis:area9a01b24e-238a-4311-afe8-69c522b8cede .
 
-   inra_gis:areadcf08129-d665-4fda-920c-f31d6357791e a qudt:Area;
+inra_gis:area9a01b24e-238a-4311-afe8-69c522b8cede a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.96360"^^xsd:string ;
+   qudt:value "0.96360"^^xsd:string .
 
 inra_gis:polygon_63-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710701.00849424 710701.00849424, 6227237.15834308 6227237.15834308 ))"^^geo:wktLiteral .
@@ -418,12 +418,12 @@ inra_gis:polygon_63-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:66-ARAMON rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_66-ARAMON .
-   qudt:hasArea inra_gis:area1024fa07-97e8-404b-819b-9a6d592f5dd4 .
+   geo:hasGeometry inra_gis:polygon_66-ARAMON ;
+   qudt:hasArea inra_gis:areafdf0f7ce-e598-4b24-9466-dda6319f7a0b .
 
-   inra_gis:area1024fa07-97e8-404b-819b-9a6d592f5dd4 a qudt:Area;
+inra_gis:areafdf0f7ce-e598-4b24-9466-dda6319f7a0b a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.11020"^^xsd:string ;
+   qudt:value "0.11020"^^xsd:string .
 
 inra_gis:polygon_66-ARAMON rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710727.56202408 710727.56202408, 6227387.58451456 6227387.58451456 ))"^^geo:wktLiteral .
@@ -431,12 +431,12 @@ inra_gis:polygon_66-ARAMON rdf:type geo:Polygon ;
 
 inra_obj:66-MACCABEU rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_66-MACCABEU .
-   qudt:hasArea inra_gis:area50c7c7f6-7f14-49ff-8a25-f6dfaa6b4a11 .
+   geo:hasGeometry inra_gis:polygon_66-MACCABEU ;
+   qudt:hasArea inra_gis:area623657b7-d559-4f8f-bb3d-8daebaebe024 .
 
-   inra_gis:area50c7c7f6-7f14-49ff-8a25-f6dfaa6b4a11 a qudt:Area;
+inra_gis:area623657b7-d559-4f8f-bb3d-8daebaebe024 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.08660"^^xsd:string ;
+   qudt:value "0.08660"^^xsd:string .
 
 inra_gis:polygon_66-MACCABEU rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710721.75235635 710721.75235635, 6227372.02468666 6227372.02468666 ))"^^geo:wktLiteral .
@@ -444,12 +444,12 @@ inra_gis:polygon_66-MACCABEU rdf:type geo:Polygon ;
 
 inra_obj:65-CARIGNAN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_65-CARIGNAN .
-   qudt:hasArea inra_gis:area60e869f5-f9d7-4cc5-b5ef-c596955fee79 .
+   geo:hasGeometry inra_gis:polygon_65-CARIGNAN ;
+   qudt:hasArea inra_gis:area3390e8f0-03b5-4a4a-882f-324d0c8a71e2 .
 
-   inra_gis:area60e869f5-f9d7-4cc5-b5ef-c596955fee79 a qudt:Area;
+inra_gis:area3390e8f0-03b5-4a4a-882f-324d0c8a71e2 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.36490"^^xsd:string ;
+   qudt:value "0.36490"^^xsd:string .
 
 inra_gis:polygon_65-CARIGNAN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710740.36099173 710740.36099173, 6227288.13057360 6227288.13057360 ))"^^geo:wktLiteral .
@@ -457,12 +457,12 @@ inra_gis:polygon_65-CARIGNAN rdf:type geo:Polygon ;
 
 inra_obj:71-GRENACHE-2015 rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_71-GRENACHE-2015 .
-   qudt:hasArea inra_gis:area4f4ff25c-0182-43d6-ae0b-226e0952831e .
+   geo:hasGeometry inra_gis:polygon_71-GRENACHE-2015 ;
+   qudt:hasArea inra_gis:area9a2600d7-a051-467c-b1ed-73dc898346a6 .
 
-   inra_gis:area4f4ff25c-0182-43d6-ae0b-226e0952831e a qudt:Area;
+inra_gis:area9a2600d7-a051-467c-b1ed-73dc898346a6 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.72690"^^xsd:string ;
+   qudt:value "0.72690"^^xsd:string .
 
 inra_gis:polygon_71-GRENACHE-2015 rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710222.54592926 710222.54592926, 6226884.58631891 6226884.58631891 ))"^^geo:wktLiteral .
@@ -470,12 +470,12 @@ inra_gis:polygon_71-GRENACHE-2015 rdf:type geo:Polygon ;
 
 inra_obj:77-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_77-SYRAH .
-   qudt:hasArea inra_gis:area9babc81a-09ad-497f-9140-12998faa0857 .
+   geo:hasGeometry inra_gis:polygon_77-SYRAH ;
+   qudt:hasArea inra_gis:area905d75ff-6813-4498-8111-7ce4d9b851e7 .
 
-   inra_gis:area9babc81a-09ad-497f-9140-12998faa0857 a qudt:Area;
+inra_gis:area905d75ff-6813-4498-8111-7ce4d9b851e7 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.28460"^^xsd:string ;
+   qudt:value "0.28460"^^xsd:string .
 
 inra_gis:polygon_77-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709844.63831381 709844.63831381, 6227001.04850454 6227001.04850454 ))"^^geo:wktLiteral .
@@ -483,12 +483,12 @@ inra_gis:polygon_77-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:78-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_78-MUSCAT-PETIT-GRAIN .
-   qudt:hasArea inra_gis:area9184f338-1a3c-4e82-9b5c-60ce769e2f22 .
+   geo:hasGeometry inra_gis:polygon_78-MUSCAT-PETIT-GRAIN ;
+   qudt:hasArea inra_gis:areaf6d6ff9d-fc82-4cf6-ab08-3f42506f010c .
 
-   inra_gis:area9184f338-1a3c-4e82-9b5c-60ce769e2f22 a qudt:Area;
+inra_gis:areaf6d6ff9d-fc82-4cf6-ab08-3f42506f010c a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.42560"^^xsd:string ;
+   qudt:value "0.42560"^^xsd:string .
 
 inra_gis:polygon_78-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709770.59471892 709770.59471892, 6227065.70190205 6227065.70190205 ))"^^geo:wktLiteral .
@@ -496,12 +496,12 @@ inra_gis:polygon_78-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
 
 inra_obj:90-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_90-MUSCAT-PETIT-GRAIN .
-   qudt:hasArea inra_gis:areabed91e00-abc6-4f6c-b429-9739b3d9ba96 .
+   geo:hasGeometry inra_gis:polygon_90-MUSCAT-PETIT-GRAIN ;
+   qudt:hasArea inra_gis:areaf668e80f-7733-40ff-a85b-8c5856c3f4a5 .
 
-   inra_gis:areabed91e00-abc6-4f6c-b429-9739b3d9ba96 a qudt:Area;
+inra_gis:areaf668e80f-7733-40ff-a85b-8c5856c3f4a5 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.33250"^^xsd:string ;
+   qudt:value "0.33250"^^xsd:string .
 
 inra_gis:polygon_90-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709099.69739703 709099.69739703, 6228054.21987709 6228054.21987709 ))"^^geo:wktLiteral .
@@ -509,12 +509,12 @@ inra_gis:polygon_90-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
 
 inra_obj:91-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_91-MUSCAT-PETIT-GRAIN .
-   qudt:hasArea inra_gis:area74c30b6e-ccd2-403e-b8ec-714c030a28ef .
+   geo:hasGeometry inra_gis:polygon_91-MUSCAT-PETIT-GRAIN ;
+   qudt:hasArea inra_gis:areacf3f794c-6109-4ba0-a8bc-a2cfeef6d5ae .
 
-   inra_gis:area74c30b6e-ccd2-403e-b8ec-714c030a28ef a qudt:Area;
+inra_gis:areacf3f794c-6109-4ba0-a8bc-a2cfeef6d5ae a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.26220"^^xsd:string ;
+   qudt:value "0.26220"^^xsd:string .
 
 inra_gis:polygon_91-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709092.12007859 709092.12007859, 6228117.82365872 6228117.82365872 ))"^^geo:wktLiteral .
@@ -522,12 +522,12 @@ inra_gis:polygon_91-MUSCAT-PETIT-GRAIN rdf:type geo:Polygon ;
 
 inra_obj:92-GRENACHE-GRIS-BLANC rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_92-GRENACHE-GRIS-BLANC .
-   qudt:hasArea inra_gis:area2f1e1c27-6590-40a7-af3e-90928ac8cd7c .
+   geo:hasGeometry inra_gis:polygon_92-GRENACHE-GRIS-BLANC ;
+   qudt:hasArea inra_gis:areaf55562da-ee27-4198-8efc-607119f683e7 .
 
-   inra_gis:area2f1e1c27-6590-40a7-af3e-90928ac8cd7c a qudt:Area;
+inra_gis:areaf55562da-ee27-4198-8efc-607119f683e7 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.66310"^^xsd:string ;
+   qudt:value "0.66310"^^xsd:string .
 
 inra_gis:polygon_92-GRENACHE-GRIS-BLANC rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709102.66289162 709102.66289162, 6228178.78067048 6228178.78067048 ))"^^geo:wktLiteral .
@@ -535,12 +535,12 @@ inra_gis:polygon_92-GRENACHE-GRIS-BLANC rdf:type geo:Polygon ;
 
 inra_obj:95-CARIGNAN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_95-CARIGNAN .
-   qudt:hasArea inra_gis:area350fa3c6-ea1a-42cd-af65-d0775aa42064 .
+   geo:hasGeometry inra_gis:polygon_95-CARIGNAN ;
+   qudt:hasArea inra_gis:areaae3de0bc-25bc-44fa-b358-d771c95438af .
 
-   inra_gis:area350fa3c6-ea1a-42cd-af65-d0775aa42064 a qudt:Area;
+inra_gis:areaae3de0bc-25bc-44fa-b358-d771c95438af a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.65600"^^xsd:string ;
+   qudt:value "0.65600"^^xsd:string .
 
 inra_gis:polygon_95-CARIGNAN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709010.51940012 709010.51940012, 6228267.20003153 6228267.20003153 ))"^^geo:wktLiteral .
@@ -548,12 +548,12 @@ inra_gis:polygon_95-CARIGNAN rdf:type geo:Polygon ;
 
 inra_obj:102-SYRAH rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_102-SYRAH .
-   qudt:hasArea inra_gis:areafed7e153-05eb-4ca7-a081-a490909814c4 .
+   geo:hasGeometry inra_gis:polygon_102-SYRAH ;
+   qudt:hasArea inra_gis:area9850ba81-9e1c-4325-b636-147e477ac41d .
 
-   inra_gis:areafed7e153-05eb-4ca7-a081-a490909814c4 a qudt:Area;
+inra_gis:area9850ba81-9e1c-4325-b636-147e477ac41d a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.55940"^^xsd:string ;
+   qudt:value "0.55940"^^xsd:string .
 
 inra_gis:polygon_102-SYRAH rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709376.39219617 709376.39219617, 6228500.61960991 6228500.61960991 ))"^^geo:wktLiteral .
@@ -561,12 +561,12 @@ inra_gis:polygon_102-SYRAH rdf:type geo:Polygon ;
 
 inra_obj:106-RV-BOUQUET rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_106-RV-BOUQUET .
-   qudt:hasArea inra_gis:area0d97b9a1-114c-4a33-8793-2e0af4827687 .
+   geo:hasGeometry inra_gis:polygon_106-RV-BOUQUET ;
+   qudt:hasArea inra_gis:areaa2669714-6023-417d-a842-428be0e64e68 .
 
-   inra_gis:area0d97b9a1-114c-4a33-8793-2e0af4827687 a qudt:Area;
+inra_gis:areaa2669714-6023-417d-a842-428be0e64e68 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "1.36190"^^xsd:string ;
+   qudt:value "1.36190"^^xsd:string .
 
 inra_gis:polygon_106-RV-BOUQUET rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709534.04349392 709534.04349392, 6228655.28003472 6228655.28003472 ))"^^geo:wktLiteral .
@@ -574,12 +574,12 @@ inra_gis:polygon_106-RV-BOUQUET rdf:type geo:Polygon ;
 
 inra_obj:102-PIQUEPOUL-BLANC rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_102-PIQUEPOUL-BLANC .
-   qudt:hasArea inra_gis:area7a3c544d-c542-4d87-9615-32288a881fe5 .
+   geo:hasGeometry inra_gis:polygon_102-PIQUEPOUL-BLANC ;
+   qudt:hasArea inra_gis:area12382efc-3c06-4384-b715-6a9061844792 .
 
-   inra_gis:area7a3c544d-c542-4d87-9615-32288a881fe5 a qudt:Area;
+inra_gis:area12382efc-3c06-4384-b715-6a9061844792 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.29630"^^xsd:string ;
+   qudt:value "0.29630"^^xsd:string .
 
 inra_gis:polygon_102-PIQUEPOUL-BLANC rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709332.79947572 709332.79947572, 6228516.84073091 6228516.84073091 ))"^^geo:wktLiteral .
@@ -587,12 +587,12 @@ inra_gis:polygon_102-PIQUEPOUL-BLANC rdf:type geo:Polygon ;
 
 inra_obj:61-MERLOT rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_61-MERLOT .
-   qudt:hasArea inra_gis:areab84ae36a-9c43-4969-9541-23ac5b448b31 .
+   geo:hasGeometry inra_gis:polygon_61-MERLOT ;
+   qudt:hasArea inra_gis:area8c33b63e-2431-4b6c-bd97-9ec0d0c4ff88 .
 
-   inra_gis:areab84ae36a-9c43-4969-9541-23ac5b448b31 a qudt:Area;
+inra_gis:area8c33b63e-2431-4b6c-bd97-9ec0d0c4ff88 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.88760"^^xsd:string ;
+   qudt:value "0.88760"^^xsd:string .
 
 inra_gis:polygon_61-MERLOT rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710956.78097657 710956.78097657, 6227399.46182454 6227399.46182454 ))"^^geo:wktLiteral .
@@ -600,12 +600,12 @@ inra_gis:polygon_61-MERLOT rdf:type geo:Polygon ;
 
 inra_obj:39-PATRICIA rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_39-PATRICIA .
-   qudt:hasArea inra_gis:areaa8f286a1-7560-4d0b-941f-8eb86b473c4d .
+   geo:hasGeometry inra_gis:polygon_39-PATRICIA ;
+   qudt:hasArea inra_gis:areaf8fe746b-581f-4887-af69-ec597b8e57e8 .
 
-   inra_gis:areaa8f286a1-7560-4d0b-941f-8eb86b473c4d a qudt:Area;
+inra_gis:areaf8fe746b-581f-4887-af69-ec597b8e57e8 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.17700"^^xsd:string ;
+   qudt:value "0.17700"^^xsd:string .
 
 inra_gis:polygon_39-PATRICIA rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710802.43370082 710802.43370082, 6226928.96925752 6226928.96925752 ))"^^geo:wktLiteral .
@@ -613,12 +613,12 @@ inra_gis:polygon_39-PATRICIA rdf:type geo:Polygon ;
 
 inra_obj:39-FLOT-ROUGE rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_39-FLOT-ROUGE .
-   qudt:hasArea inra_gis:area4ff151a2-a762-42cb-b594-5e43dd3a2c96 .
+   geo:hasGeometry inra_gis:polygon_39-FLOT-ROUGE ;
+   qudt:hasArea inra_gis:area13740006-e4f2-46ea-b6f9-0c5b9020c3cc .
 
-   inra_gis:area4ff151a2-a762-42cb-b594-5e43dd3a2c96 a qudt:Area;
+inra_gis:area13740006-e4f2-46ea-b6f9-0c5b9020c3cc a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.39380"^^xsd:string ;
+   qudt:value "0.39380"^^xsd:string .
 
 inra_gis:polygon_39-FLOT-ROUGE rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((710771.42579772 710771.42579772, 6226942.91631380 6226942.91631380 ))"^^geo:wktLiteral .
@@ -626,12 +626,12 @@ inra_gis:polygon_39-FLOT-ROUGE rdf:type geo:Polygon ;
 
 inra_obj:97-VDQA-G14-N rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_97-VDQA-G14-N .
-   qudt:hasArea inra_gis:area0444a965-dfa2-45fa-9fb7-8232c8b4604b .
+   geo:hasGeometry inra_gis:polygon_97-VDQA-G14-N ;
+   qudt:hasArea inra_gis:areac83da4e5-522f-4a32-9ae6-90c204894193 .
 
-   inra_gis:area0444a965-dfa2-45fa-9fb7-8232c8b4604b a qudt:Area;
+inra_gis:areac83da4e5-522f-4a32-9ae6-90c204894193 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.20330"^^xsd:string ;
+   qudt:value "0.20330"^^xsd:string .
 
 inra_gis:polygon_97-VDQA-G14-N rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709032.49470706 709032.49470706, 6228362.96147458 6228362.96147458 ))"^^geo:wktLiteral .
@@ -639,12 +639,12 @@ inra_gis:polygon_97-VDQA-G14-N rdf:type geo:Polygon ;
 
 inra_obj:100-FLOREAL rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_100-FLOREAL .
-   qudt:hasArea inra_gis:area44b84f25-bf8f-4f37-9d68-476feba3bfca .
+   geo:hasGeometry inra_gis:polygon_100-FLOREAL ;
+   qudt:hasArea inra_gis:area583f8f94-86bc-474a-956c-d91efc90dfe2 .
 
-   inra_gis:area44b84f25-bf8f-4f37-9d68-476feba3bfca a qudt:Area;
+inra_gis:area583f8f94-86bc-474a-956c-d91efc90dfe2 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.20580"^^xsd:string ;
+   qudt:value "0.20580"^^xsd:string .
 
 inra_gis:polygon_100-FLOREAL rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709151.84398639 709151.84398639, 6228441.36730496 6228441.36730496 ))"^^geo:wktLiteral .
@@ -652,12 +652,12 @@ inra_gis:polygon_100-FLOREAL rdf:type geo:Polygon ;
 
 inra_obj:99-VDQA-G5-B rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_99-VDQA-G5-B .
-   qudt:hasArea inra_gis:area8ed8af54-8b80-49a4-968d-18cde01fe291 .
+   geo:hasGeometry inra_gis:polygon_99-VDQA-G5-B ;
+   qudt:hasArea inra_gis:areacec71ee2-8aee-45eb-af31-6d4f774226e6 .
 
-   inra_gis:area8ed8af54-8b80-49a4-968d-18cde01fe291 a qudt:Area;
+inra_gis:areacec71ee2-8aee-45eb-af31-6d4f774226e6 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.28890"^^xsd:string ;
+   qudt:value "0.28890"^^xsd:string .
 
 inra_gis:polygon_99-VDQA-G5-B rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709211.19268461 709211.19268461, 6228421.39754727 6228421.39754727 ))"^^geo:wktLiteral .
@@ -665,12 +665,12 @@ inra_gis:polygon_99-VDQA-G5-B rdf:type geo:Polygon ;
 
 inra_obj:101-VDQA-G5-B rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_101-VDQA-G5-B .
-   qudt:hasArea inra_gis:area12a6f140-1e09-4826-824c-bf4f013a1231 .
+   geo:hasGeometry inra_gis:polygon_101-VDQA-G5-B ;
+   qudt:hasArea inra_gis:areac6cbbbf5-38c9-469e-a44e-b6d7451141e3 .
 
-   inra_gis:area12a6f140-1e09-4826-824c-bf4f013a1231 a qudt:Area;
+inra_gis:areac6cbbbf5-38c9-469e-a44e-b6d7451141e3 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.15340"^^xsd:string ;
+   qudt:value "0.15340"^^xsd:string .
 
 inra_gis:polygon_101-VDQA-G5-B rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709274.98728624 709274.98728624, 6228451.88800023 6228451.88800023 ))"^^geo:wktLiteral .
@@ -678,12 +678,12 @@ inra_gis:polygon_101-VDQA-G5-B rdf:type geo:Polygon ;
 
 inra_obj:53-CHARDONNAY rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_53-CHARDONNAY .
-   qudt:hasArea inra_gis:area3b7ae655-2934-4912-a058-1fb2d752e0fa .
+   geo:hasGeometry inra_gis:polygon_53-CHARDONNAY ;
+   qudt:hasArea inra_gis:area00d6f24a-a991-4d31-839f-f4cd613cef49 .
 
-   inra_gis:area3b7ae655-2934-4912-a058-1fb2d752e0fa a qudt:Area;
+inra_gis:area00d6f24a-a991-4d31-839f-f4cd613cef49 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.68240"^^xsd:string ;
+   qudt:value "0.68240"^^xsd:string .
 
 inra_gis:polygon_53-CHARDONNAY rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((711053.25077448 711053.25077448, 6227068.31377618 6227068.31377618 ))"^^geo:wktLiteral .
@@ -691,12 +691,12 @@ inra_gis:polygon_53-CHARDONNAY rdf:type geo:Polygon ;
 
 inra_obj:103-ARTABAN rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_103-ARTABAN .
-   qudt:hasArea inra_gis:areab600efc3-87a1-4cbf-a727-3bb3851760cf .
+   geo:hasGeometry inra_gis:polygon_103-ARTABAN ;
+   qudt:hasArea inra_gis:area8f93a0df-185f-49f1-b288-23d0ce481465 .
 
-   inra_gis:areab600efc3-87a1-4cbf-a727-3bb3851760cf a qudt:Area;
+inra_gis:area8f93a0df-185f-49f1-b288-23d0ce481465 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.35700"^^xsd:string ;
+   qudt:value "0.35700"^^xsd:string .
 
 inra_gis:polygon_103-ARTABAN rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709415.82940180 709415.82940180, 6228588.54497744 6228588.54497744 ))"^^geo:wktLiteral .
@@ -704,12 +704,12 @@ inra_gis:polygon_103-ARTABAN rdf:type geo:Polygon ;
 
 inra_obj:94-GRENACHE rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_94-GRENACHE .
-   qudt:hasArea inra_gis:area975ad131-9aa2-4777-a4a4-df2d0547f710 .
+   geo:hasGeometry inra_gis:polygon_94-GRENACHE ;
+   qudt:hasArea inra_gis:areab5de17cf-8cda-491a-9bf1-66c3c404e748 .
 
-   inra_gis:area975ad131-9aa2-4777-a4a4-df2d0547f710 a qudt:Area;
+inra_gis:areab5de17cf-8cda-491a-9bf1-66c3c404e748 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.44870"^^xsd:string ;
+   qudt:value "0.44870"^^xsd:string .
 
 inra_gis:polygon_94-GRENACHE rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709269.17995930 709269.17995930, 6228241.22303055 6228241.22303055 ))"^^geo:wktLiteral .
@@ -717,12 +717,12 @@ inra_gis:polygon_94-GRENACHE rdf:type geo:Polygon ;
 
 inra_obj:84-GRENACHE rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_84-GRENACHE .
-   qudt:hasArea inra_gis:areab8d67e58-26fb-4f99-a241-434ce6b4c1b4 .
+   geo:hasGeometry inra_gis:polygon_84-GRENACHE ;
+   qudt:hasArea inra_gis:area7f6dad1f-76fe-4544-b6ab-b1a7c91368ef .
 
-   inra_gis:areab8d67e58-26fb-4f99-a241-434ce6b4c1b4 a qudt:Area;
+inra_gis:area7f6dad1f-76fe-4544-b6ab-b1a7c91368ef a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.19540"^^xsd:string ;
+   qudt:value "0.19540"^^xsd:string .
 
 inra_gis:polygon_84-GRENACHE rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709815.88530338 709815.88530338, 6227254.76014991 6227254.76014991 ))"^^geo:wktLiteral .
@@ -730,12 +730,12 @@ inra_gis:polygon_84-GRENACHE rdf:type geo:Polygon ;
 
 inra_obj:58-ANTARES rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_58-ANTARES .
-   qudt:hasArea inra_gis:area42f7dc53-351f-419e-b518-ca22f83fc0f5 .
+   geo:hasGeometry inra_gis:polygon_58-ANTARES ;
+   qudt:hasArea inra_gis:area309ebec0-364b-465e-afb7-0682db32d6f4 .
 
-   inra_gis:area42f7dc53-351f-419e-b518-ca22f83fc0f5 a qudt:Area;
+inra_gis:area309ebec0-364b-465e-afb7-0682db32d6f4 a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.15440"^^xsd:string ;
+   qudt:value "0.15440"^^xsd:string .
 
 inra_gis:polygon_58-ANTARES rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((711083.78948194 711083.78948194, 6227159.79848054 6227159.79848054 ))"^^geo:wktLiteral .
@@ -743,12 +743,12 @@ inra_gis:polygon_58-ANTARES rdf:type geo:Polygon ;
 
 inra_obj:85-UDINE rdf:type aeo:Plot ;
    rdf:type geo:Feature ;
-   geo:hasGeometry inra_gis:polygon_85-UDINE .
-   qudt:hasArea inra_gis:areab75bbac2-7d2d-4112-aa1a-bec9f351f963 .
+   geo:hasGeometry inra_gis:polygon_85-UDINE ;
+   qudt:hasArea inra_gis:area111a3d90-7f2b-43d9-a8da-98d7dd99e8bd .
 
-   inra_gis:areab75bbac2-7d2d-4112-aa1a-bec9f351f963 a qudt:Area;
+inra_gis:area111a3d90-7f2b-43d9-a8da-98d7dd99e8bd a qudt:Area ;
    qudt:unit qudt:Hectare ;
-   qudt:value "0.11380"^^xsd:string ;
+   qudt:value "0.11380"^^xsd:string .
 
 inra_gis:polygon_85-UDINE rdf:type geo:Polygon ;
     geo:asWKT "POLYGON ((709972.30047426 709972.30047426, 6227312.90425604 6227312.90425604 ))"^^geo:wktLiteral .
