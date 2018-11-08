@@ -3,7 +3,7 @@
 inra_observations:af3ba2d8-0a5e-4a36-90ee-387f774f9612 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_563 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -13,7 +13,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:63e0ef12-56c1-44ef-9f5c-a116fda6d0ca rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_563 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -23,7 +23,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:94eae053-bb4b-446c-97e1-0274f70c8926 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_563 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -33,7 +33,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:9d529ba4-25cc-413c-8085-c67eb86a0ceb rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_563 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -43,7 +43,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:55cbc97e-39e7-495a-88e2-3d8309c870d6 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_563 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.2"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -53,7 +53,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:d142903b-f289-4f6c-b336-4184cc510340 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_563 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.2"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -63,7 +63,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:ce33e5bd-a86b-45bc-a63b-096989305a03 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_782 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -73,7 +73,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:92a75f72-c5c1-4773-a67c-b91fdc574fce rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_782 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -83,7 +83,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:ef90704b-b757-4b92-89da-34b8cbd4f081 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_782 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.7"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -93,7 +93,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:afddf4ca-1b59-46ae-9747-424f0226b232 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_782 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.4"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -103,7 +103,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:7699b4f3-0375-4d82-86ac-03d2734b9ca7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_782 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -113,7 +113,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:56d48edc-13a6-46b1-b918-9fab9209fc6e rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_782 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -123,7 +123,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:19dbb573-3e1f-4ae8-b940-1b297344a8bb rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1180 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -133,7 +133,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:35c899e2-1ff4-4e64-8399-6a5f0ae81ac7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1180 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "5.6"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -143,7 +143,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:c8dd34e5-e49c-4c13-9a3c-d69348afcacc rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1180 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -153,7 +153,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:a4a17099-06e5-4982-ad45-2574f3989697 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1180 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -163,7 +163,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:139ade37-7a8d-44d7-9776-d115e5758ee7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1180 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -173,7 +173,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:a47ee154-d900-4332-8f79-1e283092df7f rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1180 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -183,7 +183,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:8ae7992c-2b58-4ca5-9553-bb050f0cd176 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1286 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "4.7"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -193,7 +193,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:6e218f5b-9177-4a90-8a86-26acae699562 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1286 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -203,7 +203,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:fa071c57-0815-46e9-89c6-9afe6773ace6 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1286 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.8"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -213,7 +213,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:c88dd2f6-c7a9-4585-8f2a-21a5d5b44e50 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1286 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.9"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -223,7 +223,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:674dfce0-479c-4b82-87d8-7efa5a236e7c rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1286 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -233,7 +233,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:0548396e-a348-40eb-919d-d045817fc0e7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1286 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.0"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -243,7 +243,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:588f9a0b-47b5-4bf5-b685-424cd0efd4c7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1489 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -253,7 +253,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:86d8e6e2-4721-4bc9-b430-12ec966c0660 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1489 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "5.7"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -263,7 +263,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:80462f4b-3056-4914-9308-55b94373f099 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1489 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.6"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -273,7 +273,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:1166c66c-8abd-45c5-baa8-ff37acc8fcb9 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1489 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.2"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -283,7 +283,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:170e42ee-36e9-4848-a4d1-7a82bffdbb67 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1489 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.2"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -293,7 +293,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:85e1a181-8323-4ede-97f0-7af3cff5f3f3 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1489 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -303,7 +303,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:5eae337a-e277-461f-a26d-30d4642acc2f rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1642 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.7"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -313,7 +313,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:d77dc551-ee22-400d-a614-c37df9248a2f rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1642 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.6"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -323,7 +323,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:a966c056-940c-4ca2-8e04-af8a4df47287 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1642 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -333,7 +333,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:848fd23b-be27-4968-abe7-90f216ab020b rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1642 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -343,7 +343,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:ce253a8b-c131-4441-9e99-196ce6abd574 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1642 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.3"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -353,7 +353,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:d4aa7e5b-9967-49e5-b3cd-9537305942dd rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1642 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "6.7"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -363,7 +363,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:c3458496-d55e-4b04-b598-59b6d419c562 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1669 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.8"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -373,7 +373,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:1bcff8f1-55cf-4c18-9343-53fedebac7f2 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1669 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -383,7 +383,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:5809b4d0-89ca-4703-b255-0414172a76c6 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1669 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "6.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -393,7 +393,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:2b6b3b48-d407-4f7f-98d1-16f974a5b512 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1669 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -403,7 +403,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:ce44a5c7-6969-460b-96d8-8eaf7bc8db0e rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1669 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -413,7 +413,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:5d19fc29-c5d3-48f1-824f-6ef6ab60e786 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1669 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.0"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -423,7 +423,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:35243e4c-044c-40ed-83ec-b50b5d21bc63 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1807 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.8"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -433,7 +433,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:61e6e599-2382-4234-aab8-a97c6cfec10e rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1807 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "6.1"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -443,7 +443,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:eaf4cd18-b693-4b46-89b2-2bf44b968647 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1807 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -453,7 +453,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:8f469428-2fea-4a46-bd1b-17a4fbf28582 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1807 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.3"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -463,7 +463,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:813d7984-df99-427a-8708-647b40fbf6d3 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1807 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -473,7 +473,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:b3a013bd-68b3-4ce1-8067-4db859bec7e9 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1807 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -483,7 +483,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:a97af473-c892-42a3-af4f-3d419feedec0 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1899 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.6"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -493,7 +493,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:040c3f5e-2422-4c4e-876c-56903a57e891 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1899 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -503,7 +503,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:b66f58c8-ac66-41c2-8b9b-d49697d7f730 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1899 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -513,7 +513,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:63111f5a-5d0f-4809-bbdb-d72a06efe75d rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1899 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -523,7 +523,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:341f65a0-edb8-4ce0-8e54-d698cbb53136 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1899 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -533,7 +533,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:b3bca880-143e-418d-920d-62b6e4cc1adf rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1899 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -543,7 +543,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:aa3984fe-9882-4bb8-a705-a02b809e7a53 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1900 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.9"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -553,7 +553,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:7065df11-72d6-4cef-8e8f-222e55392ce6 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1900 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.2"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -563,7 +563,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:e3e04adc-f9c9-4798-a2e4-6e485846df45 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1900 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.3"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -573,7 +573,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:640163cf-b638-45f9-b0c2-518a02577e73 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1900 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -583,7 +583,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:3da6e8a5-b3a5-4a56-b8ca-f7328bbc0972 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1900 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -593,7 +593,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:a4e69043-bbfe-436c-9521-c6357403db95 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1900 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.2"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -603,7 +603,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:bc994baf-fcbc-4e5b-9fa1-39a1354a8577 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1904 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.2"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -613,7 +613,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:131d5769-02c8-46bf-a188-1929ee9dd9c0 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1904 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -623,7 +623,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:1e1fabb8-d424-4b5f-85c1-c8659f74f6af rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1904 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "6.7"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -633,7 +633,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:72e715e8-b36a-4b74-a737-0552d3471830 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1904 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.2"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -643,7 +643,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:17f4d9a6-01a1-4166-9cb3-a64a963eef01 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1904 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.6"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -653,7 +653,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:15c57a7e-bf74-417f-960b-e1beee00c09f rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1904 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "6.3"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -663,7 +663,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:f66262cc-9c00-4bba-b3c0-4344abe33413 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1961 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.9"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -673,7 +673,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:a7d8def0-4302-46f9-834a-9b62aec4f46e rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1961 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -683,7 +683,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:cb8de51a-62ac-48a6-85c6-1e6cfaeaa127 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1961 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.8"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -693,7 +693,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:610ad3ea-13c0-4daa-8250-01f9fc8d6fec rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1961 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -703,7 +703,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:aab98ed0-6b20-4892-a952-5dc344f360f1 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1961 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -713,7 +713,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:c593a2c6-c6c0-4909-a494-6531b7c6e4d4 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_1961 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -723,7 +723,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:140eea52-35c1-47a2-a67b-236288af040d rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2196 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "4.1"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -733,7 +733,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:65f88f4f-1033-4dea-af30-6ac3a043a0e6 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2196 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -743,7 +743,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:4accf90a-3445-43d5-aecb-a640ae7c6287 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2196 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.1"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -753,7 +753,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:df456e41-da79-4159-a02d-7e85635c9e34 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2196 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.6"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -763,7 +763,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:9702113d-32c5-43b6-b449-8b6d59e46cf7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2196 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -773,7 +773,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:33173976-1249-4a8e-9c8b-3e91f507353d rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2196 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -783,7 +783,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:1c9c3637-57cd-44b4-939d-198d2998dda7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2203 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -793,7 +793,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:469bf216-9b9a-4004-a7f2-08e0c1da6674 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2203 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "4.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -803,7 +803,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:67699460-6dd5-4d71-a9b5-43d4a78aa504 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2203 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "5.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -813,7 +813,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:e050d2e2-3bff-4444-ae02-afe6b361a75f rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2203 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -823,7 +823,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:d85a7629-5407-4332-9db9-304c6adf4c0e rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2203 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -833,7 +833,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:d0fa9e57-e298-418f-b815-c5fdbef60d6b rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2203 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "6.9"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -843,7 +843,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:cc0a922e-a43c-4687-8c17-fb7a34eed170 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2371 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.2"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -853,7 +853,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:e8ea61ef-dd26-4ebd-a395-6c70396db9c3 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2371 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.3"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -863,7 +863,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:0aef90af-8a01-4efe-855c-ffa643740b06 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2371 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.4"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -873,7 +873,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:7f8ab953-9364-427d-b993-eeeb1de01996 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2371 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.1"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -883,7 +883,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:cd56b850-56e5-4be1-8580-17d0fc9d33f7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2371 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -893,7 +893,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:36c6e4db-e572-467a-9dc8-9099f7f0dc48 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2371 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.9"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -903,7 +903,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:651edd8e-8c35-462a-b594-43c824ddf4c7 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2372 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -913,7 +913,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:9e0da55d-258c-4f50-8c41-5dc28686c2ab rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2372 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -923,7 +923,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:eb4ae2b9-77d4-4d72-9b6f-892a10b61b0d rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2372 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -933,7 +933,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:518fbfd3-5ac1-45b2-b6a7-604c2baf9791 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2372 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -943,7 +943,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:35a5c0d8-5971-4849-87eb-7c55c52936a8 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2372 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -953,7 +953,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:464c3d57-c42e-4e1f-92ce-86f8cbc73f86 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2372 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -963,7 +963,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:671cac16-7532-495f-ad5e-0db0ebab0380 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2373 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -973,7 +973,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:d72d8c9b-33da-4144-9be1-d0498517a154 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2373 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -983,7 +983,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:acdbc3c6-59f5-4b00-934b-d516b0b5c752 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2373 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -993,7 +993,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:1155a56e-5d9a-46b0-9d44-d3240a696a30 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2373 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -1003,7 +1003,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:9e8ccc86-29e4-4ce8-a4e7-1b1ed86b40dd rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2373 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -1013,7 +1013,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:0f5d7d8f-54e1-4cce-beca-981ab008e9ac rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2373 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.2"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -1023,7 +1023,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:21d46f39-c5d8-493f-b34c-a3ab85b12be5 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2374 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -1033,7 +1033,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:f3983f77-b7fa-40f6-8fe3-e848ed97b8e2 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2374 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "5.8"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -1043,7 +1043,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:4a932382-a37c-43ce-9f49-c7c117e1ade6 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2374 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.0"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -1053,7 +1053,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:5a894a9e-5ef8-407d-b361-19f70feac27a rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2374 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.3"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -1063,7 +1063,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:78bb9520-f158-4eab-ae93-c19bba7286ea rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2374 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -1073,7 +1073,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:4a616a02-eea5-4156-8cb3-9db40f73ae7c rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2374 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -1083,7 +1083,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:6be187c1-be18-441b-8584-e697dd48f246 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2375 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.7"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -1093,7 +1093,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:949db71f-ec85-43e0-b359-0f680af7920f rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2375 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.8"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -1103,7 +1103,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:f0d6dbe9-21a9-4dce-ae46-96c1dc5f6a53 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2375 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -1113,7 +1113,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:cdef6c6e-75dc-47b9-8f72-eb0adae02c82 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2375 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "2.2"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -1123,7 +1123,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:21ce7ba0-6f22-4dd3-b332-40f5ab17f57e rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2375 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -1133,7 +1133,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:2cf7f137-6507-445e-b963-225b6fb72dd4 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2375 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -1143,7 +1143,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:0a1ed2d0-550d-4be8-9c4a-fa1b8395c5de rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2377 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "9.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -1153,7 +1153,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:021f2461-daf4-4a3e-bb2c-8599d398e6a2 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2377 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -1163,7 +1163,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:2501a6d8-9ec5-4ce9-a81c-9fef11474131 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2377 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -1173,7 +1173,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:393e552f-2d5e-4e41-b1a4-49b955b7aed4 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2377 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -1183,7 +1183,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:9ce5c90b-9f94-4cfa-95e4-0e12a0a91f8b rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2377 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.4"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -1193,7 +1193,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:4a767287-9727-4e90-8607-d1915d4eca4d rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2377 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -1203,7 +1203,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:64c95edb-5979-4ece-9167-744678f515f5 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2378 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -1213,7 +1213,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:46924f7f-9b62-4af8-a62b-93e3ca246cf9 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2378 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -1223,7 +1223,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:2415bd9b-29a6-4c71-ad70-63ff482175e9 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2378 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -1233,7 +1233,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:d4226b8a-0050-46fa-bcf3-0c875b6ad5c2 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2378 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.5"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -1243,7 +1243,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:102cadfc-d2c6-4395-9723-ca3144aba66b rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2378 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.4"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -1253,7 +1253,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:4ab5b883-5076-4dca-b02c-b1632486636f rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2378 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.3"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
@@ -1263,7 +1263,7 @@ inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:e2fd7316-44c6-4a54-b939-3b51a1afd222 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2430 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
@@ -1273,7 +1273,7 @@ inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:b0857056-a07b-4a0d-9b61-5b0d0778b9ac rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2430 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "1.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
@@ -1283,7 +1283,7 @@ inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
 inra_observations:b6710bfd-782f-4841-a7c8-10b5717f1b74 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2430 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "8.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
@@ -1293,7 +1293,7 @@ inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
 inra_observations:f0cf04dd-c94f-4bbd-a6ef-514dd8bf1025 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2430 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "3.5"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
@@ -1303,7 +1303,7 @@ inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
 inra_observations:d1f3abd9-e8c8-4f99-939d-d642c7908bcf rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2430 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
@@ -1313,7 +1313,7 @@ inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
 inra_observations:23b3a5e7-fd1c-4dc6-befb-2e7b649486d1 rdf:type oepo:Observation ;
    aeo:hasReplicationNumber "1" ;
    foaf:maker inra_agent:Juge_2430 ;
-   FOODON:00001301 inra_wineTaste:Nuance ;
+   obo:FOODON_00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
