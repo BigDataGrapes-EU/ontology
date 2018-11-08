@@ -1,1323 +1,1323 @@
 
 
-inra_observations:3e1511ff-9efc-4d94-959a-8387b54526cf rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_563 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:af3ba2d8-0a5e-4a36-90ee-387f774f9612 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_563 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:3e1511ff-9efc-4d94-959a-8387b54526cf .
+   oepo:hasObservation inra_observations:af3ba2d8-0a5e-4a36-90ee-387f774f9612 .
 
 
-inra_observations:fd44fa3b-56d7-4cb6-8d1c-53706dfd0bb9 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_563 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:63e0ef12-56c1-44ef-9f5c-a116fda6d0ca rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_563 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:fd44fa3b-56d7-4cb6-8d1c-53706dfd0bb9 .
+   oepo:hasObservation inra_observations:63e0ef12-56c1-44ef-9f5c-a116fda6d0ca .
 
 
-inra_observations:bad6f240-0915-4978-8f77-2a858485eeeb rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_563 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:94eae053-bb4b-446c-97e1-0274f70c8926 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_563 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:bad6f240-0915-4978-8f77-2a858485eeeb .
+   oepo:hasObservation inra_observations:94eae053-bb4b-446c-97e1-0274f70c8926 .
 
 
-inra_observations:d5cf8c89-f0cd-432a-b7cf-264e13d078e5 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_563 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:9d529ba4-25cc-413c-8085-c67eb86a0ceb rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_563 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:d5cf8c89-f0cd-432a-b7cf-264e13d078e5 .
+   oepo:hasObservation inra_observations:9d529ba4-25cc-413c-8085-c67eb86a0ceb .
 
 
-inra_observations:88e049ff-f28f-4152-924b-59cba5181904 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_563 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:55cbc97e-39e7-495a-88e2-3d8309c870d6 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_563 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.2"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:88e049ff-f28f-4152-924b-59cba5181904 .
+   oepo:hasObservation inra_observations:55cbc97e-39e7-495a-88e2-3d8309c870d6 .
 
 
-inra_observations:ab393a22-cae3-4305-a831-aafd8ef8576e rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_563 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d142903b-f289-4f6c-b336-4184cc510340 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_563 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.2"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:ab393a22-cae3-4305-a831-aafd8ef8576e .
+   oepo:hasObservation inra_observations:d142903b-f289-4f6c-b336-4184cc510340 .
 
 
-inra_observations:c1090b70-02a8-40da-b29f-99bb775d5b16 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_782 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:ce33e5bd-a86b-45bc-a63b-096989305a03 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_782 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:c1090b70-02a8-40da-b29f-99bb775d5b16 .
+   oepo:hasObservation inra_observations:ce33e5bd-a86b-45bc-a63b-096989305a03 .
 
 
-inra_observations:98d9babe-aceb-463e-b1fb-035afca8edf8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_782 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:92a75f72-c5c1-4773-a67c-b91fdc574fce rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_782 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:98d9babe-aceb-463e-b1fb-035afca8edf8 .
+   oepo:hasObservation inra_observations:92a75f72-c5c1-4773-a67c-b91fdc574fce .
 
 
-inra_observations:97da769d-7172-4b9e-8d09-5154d78221fb rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_782 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:ef90704b-b757-4b92-89da-34b8cbd4f081 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_782 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.7"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:97da769d-7172-4b9e-8d09-5154d78221fb .
+   oepo:hasObservation inra_observations:ef90704b-b757-4b92-89da-34b8cbd4f081 .
 
 
-inra_observations:c8bf163e-1357-452e-85ae-b58cee7239e6 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_782 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:afddf4ca-1b59-46ae-9747-424f0226b232 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_782 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.4"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:c8bf163e-1357-452e-85ae-b58cee7239e6 .
+   oepo:hasObservation inra_observations:afddf4ca-1b59-46ae-9747-424f0226b232 .
 
 
-inra_observations:69479db6-e50e-41f9-a3ed-fbb2fa20b550 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_782 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:7699b4f3-0375-4d82-86ac-03d2734b9ca7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_782 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:69479db6-e50e-41f9-a3ed-fbb2fa20b550 .
+   oepo:hasObservation inra_observations:7699b4f3-0375-4d82-86ac-03d2734b9ca7 .
 
 
-inra_observations:a0b3d32e-1f73-483a-be8b-594b1f685373 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_782 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:56d48edc-13a6-46b1-b918-9fab9209fc6e rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_782 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a0b3d32e-1f73-483a-be8b-594b1f685373 .
+   oepo:hasObservation inra_observations:56d48edc-13a6-46b1-b918-9fab9209fc6e .
 
 
-inra_observations:83e50eed-ae08-42ee-8b5b-824f8994f1b8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1180 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:19dbb573-3e1f-4ae8-b940-1b297344a8bb rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1180 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:83e50eed-ae08-42ee-8b5b-824f8994f1b8 .
+   oepo:hasObservation inra_observations:19dbb573-3e1f-4ae8-b940-1b297344a8bb .
 
 
-inra_observations:8a79b7ce-4028-4bcc-8e9a-acf1f9952bb9 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1180 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:35c899e2-1ff4-4e64-8399-6a5f0ae81ac7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1180 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "5.6"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:8a79b7ce-4028-4bcc-8e9a-acf1f9952bb9 .
+   oepo:hasObservation inra_observations:35c899e2-1ff4-4e64-8399-6a5f0ae81ac7 .
 
 
-inra_observations:0bbbabbd-1e93-4ded-958a-53d33ff425c9 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1180 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:c8dd34e5-e49c-4c13-9a3c-d69348afcacc rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1180 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:0bbbabbd-1e93-4ded-958a-53d33ff425c9 .
+   oepo:hasObservation inra_observations:c8dd34e5-e49c-4c13-9a3c-d69348afcacc .
 
 
-inra_observations:74aa1ee4-24cc-4207-85bd-71eaa08a704a rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1180 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:a4a17099-06e5-4982-ad45-2574f3989697 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1180 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.9"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:74aa1ee4-24cc-4207-85bd-71eaa08a704a .
+   oepo:hasObservation inra_observations:a4a17099-06e5-4982-ad45-2574f3989697 .
 
 
-inra_observations:bb8532af-537f-4b45-83e1-b280b85bb92d rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1180 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:139ade37-7a8d-44d7-9776-d115e5758ee7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1180 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:bb8532af-537f-4b45-83e1-b280b85bb92d .
+   oepo:hasObservation inra_observations:139ade37-7a8d-44d7-9776-d115e5758ee7 .
 
 
-inra_observations:5f659059-a974-4e51-9473-3451276633b4 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1180 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:a47ee154-d900-4332-8f79-1e283092df7f rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1180 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:5f659059-a974-4e51-9473-3451276633b4 .
+   oepo:hasObservation inra_observations:a47ee154-d900-4332-8f79-1e283092df7f .
 
 
-inra_observations:1334834e-4546-4c32-85e4-f5f20cc6a439 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1286 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:8ae7992c-2b58-4ca5-9553-bb050f0cd176 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1286 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "4.7"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:1334834e-4546-4c32-85e4-f5f20cc6a439 .
+   oepo:hasObservation inra_observations:8ae7992c-2b58-4ca5-9553-bb050f0cd176 .
 
 
-inra_observations:94e1f50a-45af-41ce-874e-84f9c6a9d199 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1286 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:6e218f5b-9177-4a90-8a86-26acae699562 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1286 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:94e1f50a-45af-41ce-874e-84f9c6a9d199 .
+   oepo:hasObservation inra_observations:6e218f5b-9177-4a90-8a86-26acae699562 .
 
 
-inra_observations:7df88143-b106-476a-a2e4-91168119d518 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1286 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:fa071c57-0815-46e9-89c6-9afe6773ace6 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1286 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.8"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:7df88143-b106-476a-a2e4-91168119d518 .
+   oepo:hasObservation inra_observations:fa071c57-0815-46e9-89c6-9afe6773ace6 .
 
 
-inra_observations:f76f0cb3-781e-4c37-88a1-feb77bf3b8b2 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1286 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:c88dd2f6-c7a9-4585-8f2a-21a5d5b44e50 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1286 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.9"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:f76f0cb3-781e-4c37-88a1-feb77bf3b8b2 .
+   oepo:hasObservation inra_observations:c88dd2f6-c7a9-4585-8f2a-21a5d5b44e50 .
 
 
-inra_observations:dd796226-0be3-4c40-b9b7-45af7b1b55d2 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1286 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:674dfce0-479c-4b82-87d8-7efa5a236e7c rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1286 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:dd796226-0be3-4c40-b9b7-45af7b1b55d2 .
+   oepo:hasObservation inra_observations:674dfce0-479c-4b82-87d8-7efa5a236e7c .
 
 
-inra_observations:1a5edb2a-8dd4-4e48-b906-c794585157d4 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1286 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:0548396e-a348-40eb-919d-d045817fc0e7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1286 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.0"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:1a5edb2a-8dd4-4e48-b906-c794585157d4 .
+   oepo:hasObservation inra_observations:0548396e-a348-40eb-919d-d045817fc0e7 .
 
 
-inra_observations:32cf9556-06cb-40b7-b360-3b57842a57a3 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1489 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:588f9a0b-47b5-4bf5-b685-424cd0efd4c7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1489 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:32cf9556-06cb-40b7-b360-3b57842a57a3 .
+   oepo:hasObservation inra_observations:588f9a0b-47b5-4bf5-b685-424cd0efd4c7 .
 
 
-inra_observations:f3a97695-0a40-47db-9285-f80960a13221 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1489 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:86d8e6e2-4721-4bc9-b430-12ec966c0660 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1489 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "5.7"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:f3a97695-0a40-47db-9285-f80960a13221 .
+   oepo:hasObservation inra_observations:86d8e6e2-4721-4bc9-b430-12ec966c0660 .
 
 
-inra_observations:14856dd6-9308-4207-8d85-62cd7d57d165 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1489 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:80462f4b-3056-4914-9308-55b94373f099 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1489 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.6"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:14856dd6-9308-4207-8d85-62cd7d57d165 .
+   oepo:hasObservation inra_observations:80462f4b-3056-4914-9308-55b94373f099 .
 
 
-inra_observations:eaea98af-8745-4f9e-8e35-ed2bca26ed3c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1489 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:1166c66c-8abd-45c5-baa8-ff37acc8fcb9 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1489 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.2"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:eaea98af-8745-4f9e-8e35-ed2bca26ed3c .
+   oepo:hasObservation inra_observations:1166c66c-8abd-45c5-baa8-ff37acc8fcb9 .
 
 
-inra_observations:240db77c-6855-4c95-9d19-9b9a477b71b6 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1489 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:170e42ee-36e9-4848-a4d1-7a82bffdbb67 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1489 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.2"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:240db77c-6855-4c95-9d19-9b9a477b71b6 .
+   oepo:hasObservation inra_observations:170e42ee-36e9-4848-a4d1-7a82bffdbb67 .
 
 
-inra_observations:bad6fae9-7bb7-40f3-bb14-7fcdc35b32ed rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1489 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:85e1a181-8323-4ede-97f0-7af3cff5f3f3 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1489 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:bad6fae9-7bb7-40f3-bb14-7fcdc35b32ed .
+   oepo:hasObservation inra_observations:85e1a181-8323-4ede-97f0-7af3cff5f3f3 .
 
 
-inra_observations:78eb502a-f51d-4747-8b60-d5ac79e1b45c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1642 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:5eae337a-e277-461f-a26d-30d4642acc2f rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1642 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.7"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:78eb502a-f51d-4747-8b60-d5ac79e1b45c .
+   oepo:hasObservation inra_observations:5eae337a-e277-461f-a26d-30d4642acc2f .
 
 
-inra_observations:6dd84aa7-1034-41d1-9259-993f77b1a84b rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1642 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d77dc551-ee22-400d-a614-c37df9248a2f rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1642 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.6"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:6dd84aa7-1034-41d1-9259-993f77b1a84b .
+   oepo:hasObservation inra_observations:d77dc551-ee22-400d-a614-c37df9248a2f .
 
 
-inra_observations:ca3b4b69-95ea-41b7-a26a-c8dfd30a3ab9 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1642 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:a966c056-940c-4ca2-8e04-af8a4df47287 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1642 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:ca3b4b69-95ea-41b7-a26a-c8dfd30a3ab9 .
+   oepo:hasObservation inra_observations:a966c056-940c-4ca2-8e04-af8a4df47287 .
 
 
-inra_observations:f261dc8d-3575-40bb-aace-ce28bdd7507f rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1642 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:848fd23b-be27-4968-abe7-90f216ab020b rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1642 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:f261dc8d-3575-40bb-aace-ce28bdd7507f .
+   oepo:hasObservation inra_observations:848fd23b-be27-4968-abe7-90f216ab020b .
 
 
-inra_observations:380f7862-ac97-4d24-bf04-776790b82dd6 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1642 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:ce253a8b-c131-4441-9e99-196ce6abd574 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1642 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.3"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:380f7862-ac97-4d24-bf04-776790b82dd6 .
+   oepo:hasObservation inra_observations:ce253a8b-c131-4441-9e99-196ce6abd574 .
 
 
-inra_observations:03a9666e-c32c-4f60-9207-18e2f6e19bd9 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1642 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d4aa7e5b-9967-49e5-b3cd-9537305942dd rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1642 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "6.7"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:03a9666e-c32c-4f60-9207-18e2f6e19bd9 .
+   oepo:hasObservation inra_observations:d4aa7e5b-9967-49e5-b3cd-9537305942dd .
 
 
-inra_observations:9bf360ff-a0ed-418d-9185-7c95258cc6da rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1669 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:c3458496-d55e-4b04-b598-59b6d419c562 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1669 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.8"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:9bf360ff-a0ed-418d-9185-7c95258cc6da .
+   oepo:hasObservation inra_observations:c3458496-d55e-4b04-b598-59b6d419c562 .
 
 
-inra_observations:d7295abd-e780-4b5f-9d40-7d86795e02b6 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1669 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:1bcff8f1-55cf-4c18-9343-53fedebac7f2 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1669 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:d7295abd-e780-4b5f-9d40-7d86795e02b6 .
+   oepo:hasObservation inra_observations:1bcff8f1-55cf-4c18-9343-53fedebac7f2 .
 
 
-inra_observations:a4081d72-c05f-4bec-a9e6-2886da34c62b rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1669 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:5809b4d0-89ca-4703-b255-0414172a76c6 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1669 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "6.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a4081d72-c05f-4bec-a9e6-2886da34c62b .
+   oepo:hasObservation inra_observations:5809b4d0-89ca-4703-b255-0414172a76c6 .
 
 
-inra_observations:0164df39-6527-4a43-bb2f-900e7d87acc3 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1669 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:2b6b3b48-d407-4f7f-98d1-16f974a5b512 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1669 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:0164df39-6527-4a43-bb2f-900e7d87acc3 .
+   oepo:hasObservation inra_observations:2b6b3b48-d407-4f7f-98d1-16f974a5b512 .
 
 
-inra_observations:6e8f14f6-232f-4c8e-8658-7da6198e7e98 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1669 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:ce44a5c7-6969-460b-96d8-8eaf7bc8db0e rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1669 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:6e8f14f6-232f-4c8e-8658-7da6198e7e98 .
+   oepo:hasObservation inra_observations:ce44a5c7-6969-460b-96d8-8eaf7bc8db0e .
 
 
-inra_observations:0ca7ab5d-a75d-4bcd-b3af-03bd6048212b rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1669 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:5d19fc29-c5d3-48f1-824f-6ef6ab60e786 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1669 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.0"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:0ca7ab5d-a75d-4bcd-b3af-03bd6048212b .
+   oepo:hasObservation inra_observations:5d19fc29-c5d3-48f1-824f-6ef6ab60e786 .
 
 
-inra_observations:a341be72-2024-4906-8144-3ec3e76831b4 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1807 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:35243e4c-044c-40ed-83ec-b50b5d21bc63 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1807 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.8"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a341be72-2024-4906-8144-3ec3e76831b4 .
+   oepo:hasObservation inra_observations:35243e4c-044c-40ed-83ec-b50b5d21bc63 .
 
 
-inra_observations:3e57eab9-c905-40c5-8a2c-cc7fb923d3ed rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1807 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:61e6e599-2382-4234-aab8-a97c6cfec10e rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1807 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "6.1"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:3e57eab9-c905-40c5-8a2c-cc7fb923d3ed .
+   oepo:hasObservation inra_observations:61e6e599-2382-4234-aab8-a97c6cfec10e .
 
 
-inra_observations:9bb743be-95b9-4ea8-ac1b-31b6ad063dca rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1807 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:eaf4cd18-b693-4b46-89b2-2bf44b968647 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1807 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:9bb743be-95b9-4ea8-ac1b-31b6ad063dca .
+   oepo:hasObservation inra_observations:eaf4cd18-b693-4b46-89b2-2bf44b968647 .
 
 
-inra_observations:2c4f402c-f630-4a97-bd49-7c6df29a4c2d rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1807 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:8f469428-2fea-4a46-bd1b-17a4fbf28582 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1807 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.3"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:2c4f402c-f630-4a97-bd49-7c6df29a4c2d .
+   oepo:hasObservation inra_observations:8f469428-2fea-4a46-bd1b-17a4fbf28582 .
 
 
-inra_observations:370f789d-3008-49ba-b34c-8a585208d012 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1807 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:813d7984-df99-427a-8708-647b40fbf6d3 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1807 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:370f789d-3008-49ba-b34c-8a585208d012 .
+   oepo:hasObservation inra_observations:813d7984-df99-427a-8708-647b40fbf6d3 .
 
 
-inra_observations:ff1b2881-77a8-4163-bafe-2d0fef52bf9a rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1807 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:b3a013bd-68b3-4ce1-8067-4db859bec7e9 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1807 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:ff1b2881-77a8-4163-bafe-2d0fef52bf9a .
+   oepo:hasObservation inra_observations:b3a013bd-68b3-4ce1-8067-4db859bec7e9 .
 
 
-inra_observations:ca11bb7c-9528-4cbd-97ff-32665d8f98cf rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1899 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:a97af473-c892-42a3-af4f-3d419feedec0 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1899 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.6"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:ca11bb7c-9528-4cbd-97ff-32665d8f98cf .
+   oepo:hasObservation inra_observations:a97af473-c892-42a3-af4f-3d419feedec0 .
 
 
-inra_observations:1c477384-7d23-4323-a113-660214bfbe3c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1899 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:040c3f5e-2422-4c4e-876c-56903a57e891 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1899 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:1c477384-7d23-4323-a113-660214bfbe3c .
+   oepo:hasObservation inra_observations:040c3f5e-2422-4c4e-876c-56903a57e891 .
 
 
-inra_observations:b540ea2d-6d77-4e36-97ec-c54f4b3b4abd rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1899 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:b66f58c8-ac66-41c2-8b9b-d49697d7f730 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1899 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:b540ea2d-6d77-4e36-97ec-c54f4b3b4abd .
+   oepo:hasObservation inra_observations:b66f58c8-ac66-41c2-8b9b-d49697d7f730 .
 
 
-inra_observations:358b5d05-c946-4174-adab-46cbf509ae8a rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1899 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:63111f5a-5d0f-4809-bbdb-d72a06efe75d rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1899 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:358b5d05-c946-4174-adab-46cbf509ae8a .
+   oepo:hasObservation inra_observations:63111f5a-5d0f-4809-bbdb-d72a06efe75d .
 
 
-inra_observations:06baecba-059d-4cb9-832c-29e605b1acaa rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1899 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:341f65a0-edb8-4ce0-8e54-d698cbb53136 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1899 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:06baecba-059d-4cb9-832c-29e605b1acaa .
+   oepo:hasObservation inra_observations:341f65a0-edb8-4ce0-8e54-d698cbb53136 .
 
 
-inra_observations:03c58a6e-bbd7-4b55-b311-56a127bc6d95 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1899 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:b3bca880-143e-418d-920d-62b6e4cc1adf rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1899 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:03c58a6e-bbd7-4b55-b311-56a127bc6d95 .
+   oepo:hasObservation inra_observations:b3bca880-143e-418d-920d-62b6e4cc1adf .
 
 
-inra_observations:37ef6538-5eb7-4c9f-a81e-9ef144ae2eae rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1900 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:aa3984fe-9882-4bb8-a705-a02b809e7a53 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1900 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.9"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:37ef6538-5eb7-4c9f-a81e-9ef144ae2eae .
+   oepo:hasObservation inra_observations:aa3984fe-9882-4bb8-a705-a02b809e7a53 .
 
 
-inra_observations:78f68d6c-6d79-4962-98d2-cf8cbfc33366 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1900 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:7065df11-72d6-4cef-8e8f-222e55392ce6 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1900 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.2"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:78f68d6c-6d79-4962-98d2-cf8cbfc33366 .
+   oepo:hasObservation inra_observations:7065df11-72d6-4cef-8e8f-222e55392ce6 .
 
 
-inra_observations:a3b74a86-60a0-4113-9789-105b6231674c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1900 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:e3e04adc-f9c9-4798-a2e4-6e485846df45 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1900 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.3"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a3b74a86-60a0-4113-9789-105b6231674c .
+   oepo:hasObservation inra_observations:e3e04adc-f9c9-4798-a2e4-6e485846df45 .
 
 
-inra_observations:4915a302-2348-4aad-8aa1-a5abbc78b847 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1900 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:640163cf-b638-45f9-b0c2-518a02577e73 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1900 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:4915a302-2348-4aad-8aa1-a5abbc78b847 .
+   oepo:hasObservation inra_observations:640163cf-b638-45f9-b0c2-518a02577e73 .
 
 
-inra_observations:4a7a90a5-bc35-4b5f-9e4d-0f249802f987 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1900 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:3da6e8a5-b3a5-4a56-b8ca-f7328bbc0972 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1900 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:4a7a90a5-bc35-4b5f-9e4d-0f249802f987 .
+   oepo:hasObservation inra_observations:3da6e8a5-b3a5-4a56-b8ca-f7328bbc0972 .
 
 
-inra_observations:cec5d6e9-f2b3-46e1-b3d5-d7e5db4d120e rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1900 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:a4e69043-bbfe-436c-9521-c6357403db95 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1900 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.2"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:cec5d6e9-f2b3-46e1-b3d5-d7e5db4d120e .
+   oepo:hasObservation inra_observations:a4e69043-bbfe-436c-9521-c6357403db95 .
 
 
-inra_observations:edd7020e-9e5d-4b64-96df-cf1d62f7228d rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1904 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:bc994baf-fcbc-4e5b-9fa1-39a1354a8577 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1904 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.2"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:edd7020e-9e5d-4b64-96df-cf1d62f7228d .
+   oepo:hasObservation inra_observations:bc994baf-fcbc-4e5b-9fa1-39a1354a8577 .
 
 
-inra_observations:305241f9-ac7b-46e9-96b8-e12570f76847 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1904 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:131d5769-02c8-46bf-a188-1929ee9dd9c0 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1904 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:305241f9-ac7b-46e9-96b8-e12570f76847 .
+   oepo:hasObservation inra_observations:131d5769-02c8-46bf-a188-1929ee9dd9c0 .
 
 
-inra_observations:0cd3ac95-7361-4897-861a-6604c9d6a948 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1904 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:1e1fabb8-d424-4b5f-85c1-c8659f74f6af rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1904 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "6.7"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:0cd3ac95-7361-4897-861a-6604c9d6a948 .
+   oepo:hasObservation inra_observations:1e1fabb8-d424-4b5f-85c1-c8659f74f6af .
 
 
-inra_observations:fedeee97-19bf-41ca-8015-9b03e954fa96 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1904 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:72e715e8-b36a-4b74-a737-0552d3471830 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1904 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.2"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:fedeee97-19bf-41ca-8015-9b03e954fa96 .
+   oepo:hasObservation inra_observations:72e715e8-b36a-4b74-a737-0552d3471830 .
 
 
-inra_observations:014144f3-6a95-4ec9-9bfe-c2c023d18db4 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1904 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:17f4d9a6-01a1-4166-9cb3-a64a963eef01 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1904 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.6"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:014144f3-6a95-4ec9-9bfe-c2c023d18db4 .
+   oepo:hasObservation inra_observations:17f4d9a6-01a1-4166-9cb3-a64a963eef01 .
 
 
-inra_observations:270f005a-3aca-47f9-b594-65256047aaa6 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1904 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:15c57a7e-bf74-417f-960b-e1beee00c09f rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1904 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "6.3"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:270f005a-3aca-47f9-b594-65256047aaa6 .
+   oepo:hasObservation inra_observations:15c57a7e-bf74-417f-960b-e1beee00c09f .
 
 
-inra_observations:ee11a417-236c-4527-bc0b-11458d0e5e59 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1961 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:f66262cc-9c00-4bba-b3c0-4344abe33413 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1961 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.9"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:ee11a417-236c-4527-bc0b-11458d0e5e59 .
+   oepo:hasObservation inra_observations:f66262cc-9c00-4bba-b3c0-4344abe33413 .
 
 
-inra_observations:57fec4e5-16fc-4e82-b3d2-c0c566279ff7 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1961 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:a7d8def0-4302-46f9-834a-9b62aec4f46e rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1961 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:57fec4e5-16fc-4e82-b3d2-c0c566279ff7 .
+   oepo:hasObservation inra_observations:a7d8def0-4302-46f9-834a-9b62aec4f46e .
 
 
-inra_observations:e69238c7-db3d-4ab8-b31e-79f81870cbe8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1961 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:cb8de51a-62ac-48a6-85c6-1e6cfaeaa127 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1961 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.8"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:e69238c7-db3d-4ab8-b31e-79f81870cbe8 .
+   oepo:hasObservation inra_observations:cb8de51a-62ac-48a6-85c6-1e6cfaeaa127 .
 
 
-inra_observations:f2bc2738-80af-4d53-9175-fae8121d771d rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1961 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:610ad3ea-13c0-4daa-8250-01f9fc8d6fec rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1961 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:f2bc2738-80af-4d53-9175-fae8121d771d .
+   oepo:hasObservation inra_observations:610ad3ea-13c0-4daa-8250-01f9fc8d6fec .
 
 
-inra_observations:70f77257-1952-4f59-b56b-f429720fc3fe rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1961 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:aab98ed0-6b20-4892-a952-5dc344f360f1 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1961 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:70f77257-1952-4f59-b56b-f429720fc3fe .
+   oepo:hasObservation inra_observations:aab98ed0-6b20-4892-a952-5dc344f360f1 .
 
 
-inra_observations:d717c414-381e-437c-b2a5-f1096bc2d2b0 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_1961 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:c593a2c6-c6c0-4909-a494-6531b7c6e4d4 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_1961 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:d717c414-381e-437c-b2a5-f1096bc2d2b0 .
+   oepo:hasObservation inra_observations:c593a2c6-c6c0-4909-a494-6531b7c6e4d4 .
 
 
-inra_observations:8e1b313a-ba8d-4237-8f30-4e778c910684 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2196 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:140eea52-35c1-47a2-a67b-236288af040d rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2196 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "4.1"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:8e1b313a-ba8d-4237-8f30-4e778c910684 .
+   oepo:hasObservation inra_observations:140eea52-35c1-47a2-a67b-236288af040d .
 
 
-inra_observations:461dfa3c-9dfa-4282-b139-ff795c7eb9fe rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2196 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:65f88f4f-1033-4dea-af30-6ac3a043a0e6 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2196 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:461dfa3c-9dfa-4282-b139-ff795c7eb9fe .
+   oepo:hasObservation inra_observations:65f88f4f-1033-4dea-af30-6ac3a043a0e6 .
 
 
-inra_observations:620f43cd-9b89-4d46-8b8b-4365262a52f8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2196 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:4accf90a-3445-43d5-aecb-a640ae7c6287 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2196 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.1"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:620f43cd-9b89-4d46-8b8b-4365262a52f8 .
+   oepo:hasObservation inra_observations:4accf90a-3445-43d5-aecb-a640ae7c6287 .
 
 
-inra_observations:419aadf8-cc13-4873-9278-4eeaface5998 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2196 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:df456e41-da79-4159-a02d-7e85635c9e34 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2196 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.6"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:419aadf8-cc13-4873-9278-4eeaface5998 .
+   oepo:hasObservation inra_observations:df456e41-da79-4159-a02d-7e85635c9e34 .
 
 
-inra_observations:28fa6dae-6660-45f8-99c0-963964458f4c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2196 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:9702113d-32c5-43b6-b449-8b6d59e46cf7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2196 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:28fa6dae-6660-45f8-99c0-963964458f4c .
+   oepo:hasObservation inra_observations:9702113d-32c5-43b6-b449-8b6d59e46cf7 .
 
 
-inra_observations:0eaba28e-088c-444c-861b-2106a11fc6be rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2196 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:33173976-1249-4a8e-9c8b-3e91f507353d rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2196 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:0eaba28e-088c-444c-861b-2106a11fc6be .
+   oepo:hasObservation inra_observations:33173976-1249-4a8e-9c8b-3e91f507353d .
 
 
-inra_observations:d6608450-4b42-406f-b333-ede8f59dd2f7 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2203 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:1c9c3637-57cd-44b4-939d-198d2998dda7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2203 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:d6608450-4b42-406f-b333-ede8f59dd2f7 .
+   oepo:hasObservation inra_observations:1c9c3637-57cd-44b4-939d-198d2998dda7 .
 
 
-inra_observations:e637f976-522b-490a-a7ba-857d69e98604 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2203 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:469bf216-9b9a-4004-a7f2-08e0c1da6674 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2203 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "4.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:e637f976-522b-490a-a7ba-857d69e98604 .
+   oepo:hasObservation inra_observations:469bf216-9b9a-4004-a7f2-08e0c1da6674 .
 
 
-inra_observations:52e34c38-0939-4761-8108-43345cf08ab8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2203 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:67699460-6dd5-4d71-a9b5-43d4a78aa504 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2203 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "5.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:52e34c38-0939-4761-8108-43345cf08ab8 .
+   oepo:hasObservation inra_observations:67699460-6dd5-4d71-a9b5-43d4a78aa504 .
 
 
-inra_observations:40fe53a7-03bf-4642-8980-5445d84d7ed4 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2203 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:e050d2e2-3bff-4444-ae02-afe6b361a75f rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2203 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:40fe53a7-03bf-4642-8980-5445d84d7ed4 .
+   oepo:hasObservation inra_observations:e050d2e2-3bff-4444-ae02-afe6b361a75f .
 
 
-inra_observations:eac727b1-ddd7-45ae-8f75-634ba32e3b3c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2203 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d85a7629-5407-4332-9db9-304c6adf4c0e rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2203 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:eac727b1-ddd7-45ae-8f75-634ba32e3b3c .
+   oepo:hasObservation inra_observations:d85a7629-5407-4332-9db9-304c6adf4c0e .
 
 
-inra_observations:7b4929da-8a28-4515-ba35-da034ceb7fb2 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2203 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d0fa9e57-e298-418f-b815-c5fdbef60d6b rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2203 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "6.9"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:7b4929da-8a28-4515-ba35-da034ceb7fb2 .
+   oepo:hasObservation inra_observations:d0fa9e57-e298-418f-b815-c5fdbef60d6b .
 
 
-inra_observations:3d49acf1-4a66-45c3-b00b-986517e2de52 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2371 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:cc0a922e-a43c-4687-8c17-fb7a34eed170 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2371 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.2"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:3d49acf1-4a66-45c3-b00b-986517e2de52 .
+   oepo:hasObservation inra_observations:cc0a922e-a43c-4687-8c17-fb7a34eed170 .
 
 
-inra_observations:c3103712-fe66-4a0e-aacc-de16fa6c8d08 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2371 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:e8ea61ef-dd26-4ebd-a395-6c70396db9c3 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2371 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.3"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:c3103712-fe66-4a0e-aacc-de16fa6c8d08 .
+   oepo:hasObservation inra_observations:e8ea61ef-dd26-4ebd-a395-6c70396db9c3 .
 
 
-inra_observations:bfeceb9b-f1cd-4a98-889f-6c021ebcc23a rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2371 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:0aef90af-8a01-4efe-855c-ffa643740b06 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2371 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.4"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:bfeceb9b-f1cd-4a98-889f-6c021ebcc23a .
+   oepo:hasObservation inra_observations:0aef90af-8a01-4efe-855c-ffa643740b06 .
 
 
-inra_observations:e9243c5e-7c7a-4f07-872e-1eb714f7fef9 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2371 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:7f8ab953-9364-427d-b993-eeeb1de01996 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2371 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.1"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:e9243c5e-7c7a-4f07-872e-1eb714f7fef9 .
+   oepo:hasObservation inra_observations:7f8ab953-9364-427d-b993-eeeb1de01996 .
 
 
-inra_observations:119fbd16-d4ac-4a5a-9709-c2e5260ba69c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2371 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:cd56b850-56e5-4be1-8580-17d0fc9d33f7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2371 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:119fbd16-d4ac-4a5a-9709-c2e5260ba69c .
+   oepo:hasObservation inra_observations:cd56b850-56e5-4be1-8580-17d0fc9d33f7 .
 
 
-inra_observations:43a7a531-9250-4f5b-aa7c-b15c12c9cb2d rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2371 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:36c6e4db-e572-467a-9dc8-9099f7f0dc48 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2371 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.9"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:43a7a531-9250-4f5b-aa7c-b15c12c9cb2d .
+   oepo:hasObservation inra_observations:36c6e4db-e572-467a-9dc8-9099f7f0dc48 .
 
 
-inra_observations:5d9c77ec-d944-4720-a40e-7fb597c3c843 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2372 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:651edd8e-8c35-462a-b594-43c824ddf4c7 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2372 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:5d9c77ec-d944-4720-a40e-7fb597c3c843 .
+   oepo:hasObservation inra_observations:651edd8e-8c35-462a-b594-43c824ddf4c7 .
 
 
-inra_observations:3da8dd46-1363-4f26-bae8-2c5ac37c1d53 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2372 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:9e0da55d-258c-4f50-8c41-5dc28686c2ab rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2372 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:3da8dd46-1363-4f26-bae8-2c5ac37c1d53 .
+   oepo:hasObservation inra_observations:9e0da55d-258c-4f50-8c41-5dc28686c2ab .
 
 
-inra_observations:72e87e33-87df-41d3-9735-9740c9d7f537 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2372 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:eb4ae2b9-77d4-4d72-9b6f-892a10b61b0d rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2372 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:72e87e33-87df-41d3-9735-9740c9d7f537 .
+   oepo:hasObservation inra_observations:eb4ae2b9-77d4-4d72-9b6f-892a10b61b0d .
 
 
-inra_observations:f2d307cd-b552-4524-ac9f-7ef55c4662cb rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2372 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:518fbfd3-5ac1-45b2-b6a7-604c2baf9791 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2372 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:f2d307cd-b552-4524-ac9f-7ef55c4662cb .
+   oepo:hasObservation inra_observations:518fbfd3-5ac1-45b2-b6a7-604c2baf9791 .
 
 
-inra_observations:e8a4e0dd-e210-4b38-bbe7-68ff9addef59 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2372 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:35a5c0d8-5971-4849-87eb-7c55c52936a8 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2372 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:e8a4e0dd-e210-4b38-bbe7-68ff9addef59 .
+   oepo:hasObservation inra_observations:35a5c0d8-5971-4849-87eb-7c55c52936a8 .
 
 
-inra_observations:9d0cfe64-db05-4695-aef0-9a6b15c6e0cf rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2372 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:464c3d57-c42e-4e1f-92ce-86f8cbc73f86 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2372 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:9d0cfe64-db05-4695-aef0-9a6b15c6e0cf .
+   oepo:hasObservation inra_observations:464c3d57-c42e-4e1f-92ce-86f8cbc73f86 .
 
 
-inra_observations:a6b36d1a-7a28-49d7-affc-c7790546707c rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2373 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:671cac16-7532-495f-ad5e-0db0ebab0380 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2373 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a6b36d1a-7a28-49d7-affc-c7790546707c .
+   oepo:hasObservation inra_observations:671cac16-7532-495f-ad5e-0db0ebab0380 .
 
 
-inra_observations:c2161840-24c6-4e93-b4e2-3f1a083d49b3 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2373 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d72d8c9b-33da-4144-9be1-d0498517a154 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2373 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:c2161840-24c6-4e93-b4e2-3f1a083d49b3 .
+   oepo:hasObservation inra_observations:d72d8c9b-33da-4144-9be1-d0498517a154 .
 
 
-inra_observations:a24c2192-96de-495d-ba69-cbe459c4eea4 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2373 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:acdbc3c6-59f5-4b00-934b-d516b0b5c752 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2373 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.9"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a24c2192-96de-495d-ba69-cbe459c4eea4 .
+   oepo:hasObservation inra_observations:acdbc3c6-59f5-4b00-934b-d516b0b5c752 .
 
 
-inra_observations:a9eac35f-6f35-4587-8579-58cebf5af9ec rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2373 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:1155a56e-5d9a-46b0-9d44-d3240a696a30 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2373 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a9eac35f-6f35-4587-8579-58cebf5af9ec .
+   oepo:hasObservation inra_observations:1155a56e-5d9a-46b0-9d44-d3240a696a30 .
 
 
-inra_observations:ba327d16-7c9a-4c04-93c7-40ab56aa9a63 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2373 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:9e8ccc86-29e4-4ce8-a4e7-1b1ed86b40dd rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2373 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:ba327d16-7c9a-4c04-93c7-40ab56aa9a63 .
+   oepo:hasObservation inra_observations:9e8ccc86-29e4-4ce8-a4e7-1b1ed86b40dd .
 
 
-inra_observations:2e5405e7-6fda-4aaf-9eee-7a8716708024 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2373 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:0f5d7d8f-54e1-4cce-beca-981ab008e9ac rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2373 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.2"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:2e5405e7-6fda-4aaf-9eee-7a8716708024 .
+   oepo:hasObservation inra_observations:0f5d7d8f-54e1-4cce-beca-981ab008e9ac .
 
 
-inra_observations:48cc584d-bffd-4ddd-8a5a-ebbdbd484006 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2374 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:21d46f39-c5d8-493f-b34c-a3ab85b12be5 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2374 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:48cc584d-bffd-4ddd-8a5a-ebbdbd484006 .
+   oepo:hasObservation inra_observations:21d46f39-c5d8-493f-b34c-a3ab85b12be5 .
 
 
-inra_observations:89a83b41-b38b-45a4-a91f-7a7f77f8ef37 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2374 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:f3983f77-b7fa-40f6-8fe3-e848ed97b8e2 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2374 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "5.8"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:89a83b41-b38b-45a4-a91f-7a7f77f8ef37 .
+   oepo:hasObservation inra_observations:f3983f77-b7fa-40f6-8fe3-e848ed97b8e2 .
 
 
-inra_observations:f87cab92-5205-4e1c-8d04-7d4b2d3c226f rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2374 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:4a932382-a37c-43ce-9f49-c7c117e1ade6 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2374 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.0"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:f87cab92-5205-4e1c-8d04-7d4b2d3c226f .
+   oepo:hasObservation inra_observations:4a932382-a37c-43ce-9f49-c7c117e1ade6 .
 
 
-inra_observations:e0eeadc2-1f9a-4f20-bd91-0f4da98f3a4e rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2374 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:5a894a9e-5ef8-407d-b361-19f70feac27a rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2374 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.3"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:e0eeadc2-1f9a-4f20-bd91-0f4da98f3a4e .
+   oepo:hasObservation inra_observations:5a894a9e-5ef8-407d-b361-19f70feac27a .
 
 
-inra_observations:2cd445d2-41e3-4aad-be34-20617d874e30 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2374 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:78bb9520-f158-4eab-ae93-c19bba7286ea rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2374 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:2cd445d2-41e3-4aad-be34-20617d874e30 .
+   oepo:hasObservation inra_observations:78bb9520-f158-4eab-ae93-c19bba7286ea .
 
 
-inra_observations:853a964e-1e2a-4076-bef5-c68db913c9a6 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2374 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:4a616a02-eea5-4156-8cb3-9db40f73ae7c rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2374 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.5"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:853a964e-1e2a-4076-bef5-c68db913c9a6 .
+   oepo:hasObservation inra_observations:4a616a02-eea5-4156-8cb3-9db40f73ae7c .
 
 
-inra_observations:042615ca-862c-4ca2-9f7e-4fad6a2f7b1f rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2375 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:6be187c1-be18-441b-8584-e697dd48f246 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2375 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.7"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:042615ca-862c-4ca2-9f7e-4fad6a2f7b1f .
+   oepo:hasObservation inra_observations:6be187c1-be18-441b-8584-e697dd48f246 .
 
 
-inra_observations:7b1617e8-ea27-4bc7-a2c4-390939909ea2 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2375 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:949db71f-ec85-43e0-b359-0f680af7920f rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2375 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.8"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:7b1617e8-ea27-4bc7-a2c4-390939909ea2 .
+   oepo:hasObservation inra_observations:949db71f-ec85-43e0-b359-0f680af7920f .
 
 
-inra_observations:39b9e032-cfab-497d-a6f3-1277007163e0 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2375 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:f0d6dbe9-21a9-4dce-ae46-96c1dc5f6a53 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2375 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:39b9e032-cfab-497d-a6f3-1277007163e0 .
+   oepo:hasObservation inra_observations:f0d6dbe9-21a9-4dce-ae46-96c1dc5f6a53 .
 
 
-inra_observations:129ccd59-d2d6-4b3e-8afd-1d078e8b2090 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2375 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:cdef6c6e-75dc-47b9-8f72-eb0adae02c82 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2375 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "2.2"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:129ccd59-d2d6-4b3e-8afd-1d078e8b2090 .
+   oepo:hasObservation inra_observations:cdef6c6e-75dc-47b9-8f72-eb0adae02c82 .
 
 
-inra_observations:26e55951-2c0b-4f3d-863b-5482314ab798 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2375 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:21ce7ba0-6f22-4dd3-b332-40f5ab17f57e rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2375 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.1"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:26e55951-2c0b-4f3d-863b-5482314ab798 .
+   oepo:hasObservation inra_observations:21ce7ba0-6f22-4dd3-b332-40f5ab17f57e .
 
 
-inra_observations:3141f7cd-e4ed-4e7d-bbe9-76ccfeeb9ae2 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2375 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:2cf7f137-6507-445e-b963-225b6fb72dd4 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2375 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:3141f7cd-e4ed-4e7d-bbe9-76ccfeeb9ae2 .
+   oepo:hasObservation inra_observations:2cf7f137-6507-445e-b963-225b6fb72dd4 .
 
 
-inra_observations:f248f51b-ee1d-4694-9abe-e5f50f316fda rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2377 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:0a1ed2d0-550d-4be8-9c4a-fa1b8395c5de rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2377 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "9.3"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:f248f51b-ee1d-4694-9abe-e5f50f316fda .
+   oepo:hasObservation inra_observations:0a1ed2d0-550d-4be8-9c4a-fa1b8395c5de .
 
 
-inra_observations:fb41babb-7ce7-4e14-a2d2-5483551e24e6 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2377 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:021f2461-daf4-4a3e-bb2c-8599d398e6a2 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2377 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:fb41babb-7ce7-4e14-a2d2-5483551e24e6 .
+   oepo:hasObservation inra_observations:021f2461-daf4-4a3e-bb2c-8599d398e6a2 .
 
 
-inra_observations:1c94eb08-f073-4371-9708-7f41aaedbe18 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2377 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:2501a6d8-9ec5-4ce9-a81c-9fef11474131 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2377 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:1c94eb08-f073-4371-9708-7f41aaedbe18 .
+   oepo:hasObservation inra_observations:2501a6d8-9ec5-4ce9-a81c-9fef11474131 .
 
 
-inra_observations:a3571c5e-f769-4258-8990-a2e9ed2238b8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2377 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:393e552f-2d5e-4e41-b1a4-49b955b7aed4 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2377 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.8"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:a3571c5e-f769-4258-8990-a2e9ed2238b8 .
+   oepo:hasObservation inra_observations:393e552f-2d5e-4e41-b1a4-49b955b7aed4 .
 
 
-inra_observations:fb03b03c-2233-4a34-80db-913bb2d9016d rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2377 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:9ce5c90b-9f94-4cfa-95e4-0e12a0a91f8b rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2377 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.4"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:fb03b03c-2233-4a34-80db-913bb2d9016d .
+   oepo:hasObservation inra_observations:9ce5c90b-9f94-4cfa-95e4-0e12a0a91f8b .
 
 
-inra_observations:6d89709f-28cc-4735-b2c4-ecf03cde64b8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2377 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:4a767287-9727-4e90-8607-d1915d4eca4d rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2377 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.6"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:6d89709f-28cc-4735-b2c4-ecf03cde64b8 .
+   oepo:hasObservation inra_observations:4a767287-9727-4e90-8607-d1915d4eca4d .
 
 
-inra_observations:57bf637f-1ff0-43dd-8bc5-5c2c1d602cf0 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2378 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:64c95edb-5979-4ece-9167-744678f515f5 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2378 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:57bf637f-1ff0-43dd-8bc5-5c2c1d602cf0 .
+   oepo:hasObservation inra_observations:64c95edb-5979-4ece-9167-744678f515f5 .
 
 
-inra_observations:775b8e4f-841f-4a15-9edd-f5b8abf5608b rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2378 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:46924f7f-9b62-4af8-a62b-93e3ca246cf9 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2378 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.5"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:775b8e4f-841f-4a15-9edd-f5b8abf5608b .
+   oepo:hasObservation inra_observations:46924f7f-9b62-4af8-a62b-93e3ca246cf9 .
 
 
-inra_observations:9edbbf97-5a1a-4188-af81-1c4267724369 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2378 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:2415bd9b-29a6-4c71-ad70-63ff482175e9 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2378 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:9edbbf97-5a1a-4188-af81-1c4267724369 .
+   oepo:hasObservation inra_observations:2415bd9b-29a6-4c71-ad70-63ff482175e9 .
 
 
-inra_observations:4a4d2e83-4550-4304-b28e-2bd9425e6506 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2378 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d4226b8a-0050-46fa-bcf3-0c875b6ad5c2 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2378 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.5"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:4a4d2e83-4550-4304-b28e-2bd9425e6506 .
+   oepo:hasObservation inra_observations:d4226b8a-0050-46fa-bcf3-0c875b6ad5c2 .
 
 
-inra_observations:bf0d3da7-53a6-4b83-a358-254ab955aed2 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2378 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:102cadfc-d2c6-4395-9723-ca3144aba66b rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2378 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.4"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:bf0d3da7-53a6-4b83-a358-254ab955aed2 .
+   oepo:hasObservation inra_observations:102cadfc-d2c6-4395-9723-ca3144aba66b .
 
 
-inra_observations:ed874955-99f0-47f6-aa9e-0704db09d320 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2378 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:4ab5b883-5076-4dca-b02c-b1632486636f rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2378 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.3"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:ed874955-99f0-47f6-aa9e-0704db09d320 .
+   oepo:hasObservation inra_observations:4ab5b883-5076-4dca-b02c-b1632486636f .
 
 
-inra_observations:0c1bee93-815c-4fe0-8603-7fe38bafd6b8 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2430 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:e2fd7316-44c6-4a54-b939-3b51a1afd222 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2430 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "10.0"^^xsd:decimal .
 
 inra_obj:MAC01T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:0c1bee93-815c-4fe0-8603-7fe38bafd6b8 .
+   oepo:hasObservation inra_observations:e2fd7316-44c6-4a54-b939-3b51a1afd222 .
 
 
-inra_observations:9deab3eb-536b-48e7-80a0-5c2da4922151 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2430 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:b0857056-a07b-4a0d-9b61-5b0d0778b9ac rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2430 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "1.4"^^xsd:decimal .
 
 inra_obj:MAC01T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:9deab3eb-536b-48e7-80a0-5c2da4922151 .
+   oepo:hasObservation inra_observations:b0857056-a07b-4a0d-9b61-5b0d0778b9ac .
 
 
-inra_observations:5c6ff5ed-1b52-4a93-b254-22283cdfd498 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2430 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:b6710bfd-782f-4841-a7c8-10b5717f1b74 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2430 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "8.2"^^xsd:decimal .
 
 inra_obj:MAC01T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:5c6ff5ed-1b52-4a93-b254-22283cdfd498 .
+   oepo:hasObservation inra_observations:b6710bfd-782f-4841-a7c8-10b5717f1b74 .
 
 
-inra_observations:fc072395-10a9-42af-ae2e-a01eb472c52e rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2430 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:f0cf04dd-c94f-4bbd-a6ef-514dd8bf1025 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2430 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "3.5"^^xsd:decimal .
 
 inra_obj:MAC04T0T4 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:fc072395-10a9-42af-ae2e-a01eb472c52e .
+   oepo:hasObservation inra_observations:f0cf04dd-c94f-4bbd-a6ef-514dd8bf1025 .
 
 
-inra_observations:77e41f7e-41c5-4b5a-b3c2-4a9ebe420e21 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2430 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:d1f3abd9-e8c8-4f99-939d-d642c7908bcf rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2430 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "0.0"^^xsd:decimal .
 
 inra_obj:MAC04T5A rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:77e41f7e-41c5-4b5a-b3c2-4a9ebe420e21 .
+   oepo:hasObservation inra_observations:d1f3abd9-e8c8-4f99-939d-d642c7908bcf .
 
 
-inra_observations:34b83acb-99e9-4d29-8d49-f127e3f551e9 rdf:type oepo:Observation ;
-   aeo:Repetition "1" ;
-   foaf:Person inra_agent:Juge_2430 ;
-   obo:FOODON_00001301 inra_wineTaste:Nuance ;
+inra_observations:23b3a5e7-fd1c-4dc6-befb-2e7b649486d1 rdf:type oepo:Observation ;
+   aeo:hasReplicationNumber "1" ;
+   foaf:maker inra_agent:Juge_2430 ;
+   FOODON:00001301 inra_wineTaste:Nuance ;
    rdf:value "7.4"^^xsd:decimal .
 
 inra_obj:MAC04T5T6 rdf:type afeo:FinishedWine ;
-   oepo:hasObservation inra_observations:34b83acb-99e9-4d29-8d49-f127e3f551e9 .
+   oepo:hasObservation inra_observations:23b3a5e7-fd1c-4dc6-befb-2e7b649486d1 .
 
 
 
