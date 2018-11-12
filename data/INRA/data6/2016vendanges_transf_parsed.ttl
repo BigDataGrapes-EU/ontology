@@ -1,0 +1,1938 @@
+
+
+inra_observations:dcfba189-4e53-4016-92e7-39c820711d46 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-24"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "612.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:dcfba189-4e53-4016-92e7-39c820711d46 .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-001 ;
+   oepo:hasObservation inra_observations:dcfba189-4e53-4016-92e7-39c820711d46 .
+
+
+inra_observations:20ea5e56-2d16-4ecb-a077-01c01cac4a5a rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "620.9"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:20ea5e56-2d16-4ecb-a077-01c01cac4a5a .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-002 ;
+   oepo:hasObservation inra_observations:20ea5e56-2d16-4ecb-a077-01c01cac4a5a .
+
+
+inra_observations:aa4230b4-9815-4550-93df-6c2a6c65796f rdf:type oepo:Observation ;
+   time:hasTime "2016-08-24"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1440"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:aa4230b4-9815-4550-93df-6c2a6c65796f .
+
+inra_obj:78-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-003 ;
+   oepo:hasObservation inra_observations:aa4230b4-9815-4550-93df-6c2a6c65796f .
+
+
+inra_observations:74cb870b-70bd-4d9f-8fd6-6a49603898da rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1865"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:74cb870b-70bd-4d9f-8fd6-6a49603898da .
+
+inra_obj:22-FLOT-ROUGE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-004a ;
+   oepo:hasObservation inra_observations:74cb870b-70bd-4d9f-8fd6-6a49603898da .
+
+
+inra_observations:16553e9a-ab7e-4edb-9a23-f005e9be90f8 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "295"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:16553e9a-ab7e-4edb-9a23-f005e9be90f8 .
+
+inra_obj:22-PATRICIA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-004b ;
+   oepo:hasObservation inra_observations:16553e9a-ab7e-4edb-9a23-f005e9be90f8 .
+
+
+inra_observations:97e8d7bc-4525-4e27-a169-7a2588664b73 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "950"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:97e8d7bc-4525-4e27-a169-7a2588664b73 .
+
+inra_obj:51-MUSCAT-ALEXANDRIE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-005 ;
+   oepo:hasObservation inra_observations:97e8d7bc-4525-4e27-a169-7a2588664b73 .
+
+
+inra_observations:5cdff587-9cf2-4be6-8194-771d1953930e rdf:type oepo:Observation ;
+   time:hasTime "2016-08-24"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "410.5"^^xsd:decimal .
+
+inra_agent:emmanuelle.zumstein rdf:type foaf:Person ;
+   foaf:familyName "zumstein"^^xsd:string ;
+   foaf:givenName "emmanuelle"^^xsd:string ;
+   foaf:made inra_observations:5cdff587-9cf2-4be6-8194-771d1953930e .
+
+inra_obj:88-VARIETES-JUS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-006a ;
+   oepo:hasObservation inra_observations:5cdff587-9cf2-4be6-8194-771d1953930e .
+
+
+inra_observations:bfafd5b0-649a-46b0-a7ed-969e7af17d26 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-25"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "439"^^xsd:decimal .
+
+inra_agent:emmanuelle.zumstein rdf:type foaf:Person ;
+   foaf:familyName "zumstein"^^xsd:string ;
+   foaf:givenName "emmanuelle"^^xsd:string ;
+   foaf:made inra_observations:bfafd5b0-649a-46b0-a7ed-969e7af17d26 .
+
+inra_obj:88-VARIETES-JUS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-006b ;
+   oepo:hasObservation inra_observations:bfafd5b0-649a-46b0-a7ed-969e7af17d26 .
+
+
+inra_observations:faffc509-95b2-41c1-a773-8f1540e4f99a rdf:type oepo:Observation ;
+   time:hasTime "2016-08-26"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1010.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:faffc509-95b2-41c1-a773-8f1540e4f99a .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-007 ;
+   oepo:hasObservation inra_observations:faffc509-95b2-41c1-a773-8f1540e4f99a .
+
+
+inra_observations:7ea13eb5-81b4-4b12-a140-d88a1372c999 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3725"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:7ea13eb5-81b4-4b12-a140-d88a1372c999 .
+
+inra_obj:61-MERLOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-008 ;
+   oepo:hasObservation inra_observations:7ea13eb5-81b4-4b12-a140-d88a1372c999 .
+
+
+inra_observations:47667f09-e875-4fa7-86a4-e16184afe6a1 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1502.8"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:47667f09-e875-4fa7-86a4-e16184afe6a1 .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-009 ;
+   oepo:hasObservation inra_observations:47667f09-e875-4fa7-86a4-e16184afe6a1 .
+
+
+inra_observations:3bba2bab-36ca-47fa-8967-635f3f428d14 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-29"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "16"^^xsd:decimal .
+
+inra_agent:hubert.alem rdf:type foaf:Person ;
+   foaf:familyName "alem"^^xsd:string ;
+   foaf:givenName "hubert"^^xsd:string ;
+   foaf:made inra_observations:3bba2bab-36ca-47fa-8967-635f3f428d14 .
+
+inra_obj:82-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-010 ;
+   oepo:hasObservation inra_observations:3bba2bab-36ca-47fa-8967-635f3f428d14 .
+
+
+inra_observations:9fb85357-dd6c-4bc6-a932-a5be9a322272 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-30"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1198.5"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:9fb85357-dd6c-4bc6-a932-a5be9a322272 .
+
+inra_obj:JARDIN-AMPELOdiversrouge rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-013 ;
+   oepo:hasObservation inra_observations:9fb85357-dd6c-4bc6-a932-a5be9a322272 .
+
+
+inra_observations:66f697db-4981-4f68-8cd2-2ffa75f2d291 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-30"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "675"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:66f697db-4981-4f68-8cd2-2ffa75f2d291 .
+
+inra_obj:JARDIN-AMPELOdiversblanc rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-014 ;
+   oepo:hasObservation inra_observations:66f697db-4981-4f68-8cd2-2ffa75f2d291 .
+
+
+inra_observations:68efc680-51d7-4f2b-bda0-b4af9817082d rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "360"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:68efc680-51d7-4f2b-bda0-b4af9817082d .
+
+inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015a ;
+   oepo:hasObservation inra_observations:68efc680-51d7-4f2b-bda0-b4af9817082d .
+
+
+inra_observations:50330e6d-c066-423d-9035-8c2d006104a5 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "180"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:50330e6d-c066-423d-9035-8c2d006104a5 .
+
+inra_obj:68-ARRILOBA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015b ;
+   oepo:hasObservation inra_observations:50330e6d-c066-423d-9035-8c2d006104a5 .
+
+
+inra_observations:aa08e8c8-a8b3-4100-8073-c41f725eaa7e rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "310"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:aa08e8c8-a8b3-4100-8073-c41f725eaa7e .
+
+inra_obj:68-CHENIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015c ;
+   oepo:hasObservation inra_observations:aa08e8c8-a8b3-4100-8073-c41f725eaa7e .
+
+
+inra_observations:cddf9629-2d93-4d6c-9572-c1f4f963abd0 rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "375"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:cddf9629-2d93-4d6c-9572-c1f4f963abd0 .
+
+inra_obj:68-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015d ;
+   oepo:hasObservation inra_observations:cddf9629-2d93-4d6c-9572-c1f4f963abd0 .
+
+
+inra_observations:39f31b37-1494-4013-83d1-38f22b1db76e rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "375"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:39f31b37-1494-4013-83d1-38f22b1db76e .
+
+inra_obj:08-PIQUEPOUL-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-015e ;
+   oepo:hasObservation inra_observations:39f31b37-1494-4013-83d1-38f22b1db76e .
+
+
+inra_observations:25eff525-2f7d-432e-ad9c-97e1f5472d7e rdf:type oepo:Observation ;
+   time:hasTime "2016-08-31"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1504"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:25eff525-2f7d-432e-ad9c-97e1f5472d7e .
+
+inra_obj:18-MERLOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-016 ;
+   oepo:hasObservation inra_observations:25eff525-2f7d-432e-ad9c-97e1f5472d7e .
+
+
+inra_observations:6b58a451-bae7-47da-b3b2-aca11247b7da rdf:type oepo:Observation ;
+   time:hasTime "2016-09-01"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "4740"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:6b58a451-bae7-47da-b3b2-aca11247b7da .
+
+inra_obj:55-VIOGNIER rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-017 ;
+   oepo:hasObservation inra_observations:6b58a451-bae7-47da-b3b2-aca11247b7da .
+
+
+inra_observations:39fb50cf-2a47-4a39-abd0-2484d498ff46 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-01"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "105"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:39fb50cf-2a47-4a39-abd0-2484d498ff46 .
+
+inra_obj:106-3160N-ESP-HAUT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-018 ;
+   oepo:hasObservation inra_observations:39fb50cf-2a47-4a39-abd0-2484d498ff46 .
+
+
+inra_observations:2741f7a3-c75c-4bbf-ab9f-72be131457dd rdf:type oepo:Observation ;
+   time:hasTime "2016-09-01"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "6"^^xsd:decimal .
+
+inra_agent:hubert.alem rdf:type foaf:Person ;
+   foaf:familyName "alem"^^xsd:string ;
+   foaf:givenName "hubert"^^xsd:string ;
+   foaf:made inra_observations:2741f7a3-c75c-4bbf-ab9f-72be131457dd .
+
+inra_obj:39-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-019 ;
+   oepo:hasObservation inra_observations:2741f7a3-c75c-4bbf-ab9f-72be131457dd .
+
+
+inra_observations:9fba918a-2d43-4798-aa79-bad23fa8a63f rdf:type oepo:Observation ;
+   time:hasTime "2016-09-02"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "574"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:9fba918a-2d43-4798-aa79-bad23fa8a63f .
+
+inra_obj:68-VERMENTINO rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-020 ;
+   oepo:hasObservation inra_observations:9fba918a-2d43-4798-aa79-bad23fa8a63f .
+
+
+inra_observations:98c097ad-3b7e-4771-80a1-2abf8134a7ca rdf:type oepo:Observation ;
+   time:hasTime "2016-09-02"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "246"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:98c097ad-3b7e-4771-80a1-2abf8134a7ca .
+
+inra_obj:75-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-021 ;
+   oepo:hasObservation inra_observations:98c097ad-3b7e-4771-80a1-2abf8134a7ca .
+
+
+inra_observations:0201b033-d9b4-40b2-8183-dd53d9b1cff2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-02"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "877"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:0201b033-d9b4-40b2-8183-dd53d9b1cff2 .
+
+inra_obj:75-NOUVELLES-OBTENTIONS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-022 ;
+   oepo:hasObservation inra_observations:0201b033-d9b4-40b2-8183-dd53d9b1cff2 .
+
+
+inra_observations:acbb1024-130d-4ba5-899f-15890ef4cbd3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "650.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:acbb1024-130d-4ba5-899f-15890ef4cbd3 .
+
+inra_obj:68-ROUSSANNE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-023 ;
+   oepo:hasObservation inra_observations:acbb1024-130d-4ba5-899f-15890ef4cbd3 .
+
+
+inra_observations:406c65fd-46f1-4fa3-931e-f6a578ce0106 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "30"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:406c65fd-46f1-4fa3-931e-f6a578ce0106 .
+
+inra_obj:85-RUN-3328-168N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-024a ;
+   oepo:hasObservation inra_observations:406c65fd-46f1-4fa3-931e-f6a578ce0106 .
+
+
+inra_observations:eab9934e-5fa9-41b1-920a-b232dcc55761 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "21.5"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:eab9934e-5fa9-41b1-920a-b232dcc55761 .
+
+inra_obj:85-RUN-3322-339N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-024b ;
+   oepo:hasObservation inra_observations:eab9934e-5fa9-41b1-920a-b232dcc55761 .
+
+
+inra_observations:96ab6473-8f9f-436b-80d1-58f1a26e1be3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "771"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:96ab6473-8f9f-436b-80d1-58f1a26e1be3 .
+
+inra_obj:10-SAUVIGNON-BLANC-ESP rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-025a ;
+   oepo:hasObservation inra_observations:96ab6473-8f9f-436b-80d1-58f1a26e1be3 .
+
+
+inra_observations:4a0aefac-f242-4489-9d10-8d2dfcf6ad7b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1370.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:4a0aefac-f242-4489-9d10-8d2dfcf6ad7b .
+
+inra_obj:10-SAUVIGNON-BLANC-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-025b ;
+   oepo:hasObservation inra_observations:4a0aefac-f242-4489-9d10-8d2dfcf6ad7b .
+
+
+inra_observations:479759c2-845b-412e-9502-6693a86d4d0b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "93.5"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:479759c2-845b-412e-9502-6693a86d4d0b .
+
+inra_obj:57-GENOTYPE-14 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-026a ;
+   oepo:hasObservation inra_observations:479759c2-845b-412e-9502-6693a86d4d0b .
+
+
+inra_observations:109cb761-324a-4779-a786-1873c965e7bd rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "99"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:109cb761-324a-4779-a786-1873c965e7bd .
+
+inra_obj:40-GENOTYPE-14 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-026b ;
+   oepo:hasObservation inra_observations:109cb761-324a-4779-a786-1873c965e7bd .
+
+
+inra_observations:4c4ca7b4-7c25-4c4a-90dd-4232e75a5fec rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "120.5"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:4c4ca7b4-7c25-4c4a-90dd-4232e75a5fec .
+
+inra_obj:57-GENOTYPE-05 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-027a ;
+   oepo:hasObservation inra_observations:4c4ca7b4-7c25-4c4a-90dd-4232e75a5fec .
+
+
+inra_observations:2d035a0f-7d91-4d80-893e-79fea9a247b5 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "98.5"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:2d035a0f-7d91-4d80-893e-79fea9a247b5 .
+
+inra_obj:40-GENOTYPE-05 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-027b ;
+   oepo:hasObservation inra_observations:2d035a0f-7d91-4d80-893e-79fea9a247b5 .
+
+
+inra_observations:785e8884-820a-4c66-af48-e2c3ddd0e3b3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "4405"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:785e8884-820a-4c66-af48-e2c3ddd0e3b3 .
+
+inra_obj:35-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-028 ;
+   oepo:hasObservation inra_observations:785e8884-820a-4c66-af48-e2c3ddd0e3b3 .
+
+
+inra_observations:06552a24-2565-4bb3-ba1e-b7ad917e46e7 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1507.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:06552a24-2565-4bb3-ba1e-b7ad917e46e7 .
+
+inra_obj:22-SYRAH-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-029 ;
+   oepo:hasObservation inra_observations:06552a24-2565-4bb3-ba1e-b7ad917e46e7 .
+
+
+inra_observations:75353bfc-0c2f-4d8d-a2ec-dcc06c86c238 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "447"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:75353bfc-0c2f-4d8d-a2ec-dcc06c86c238 .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-030 ;
+   oepo:hasObservation inra_observations:75353bfc-0c2f-4d8d-a2ec-dcc06c86c238 .
+
+
+inra_observations:eeacae7d-6f5d-45fa-a5cc-a4e83a58234a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-05"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "388"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:eeacae7d-6f5d-45fa-a5cc-a4e83a58234a .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-031 ;
+   oepo:hasObservation inra_observations:eeacae7d-6f5d-45fa-a5cc-a4e83a58234a .
+
+
+inra_observations:9169f89f-f7ea-490b-bfdd-10771e4e0d09 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2320"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:9169f89f-f7ea-490b-bfdd-10771e4e0d09 .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-032 ;
+   oepo:hasObservation inra_observations:9169f89f-f7ea-490b-bfdd-10771e4e0d09 .
+
+
+inra_observations:12c65693-6a7e-427b-9ab9-0fb69072cb70 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-06"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "292"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:12c65693-6a7e-427b-9ab9-0fb69072cb70 .
+
+inra_obj:64-GRENACHE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-033 ;
+   oepo:hasObservation inra_observations:12c65693-6a7e-427b-9ab9-0fb69072cb70 .
+
+
+inra_observations:87d68079-4c85-4aa7-97ce-bd55708889b3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "76"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:87d68079-4c85-4aa7-97ce-bd55708889b3 .
+
+inra_obj:85-RUN-3160-27-4N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-034 ;
+   oepo:hasObservation inra_observations:87d68079-4c85-4aa7-97ce-bd55708889b3 .
+
+
+inra_observations:60aa7e3b-fc57-4cd9-b02c-63deb3df0afe rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1969"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:60aa7e3b-fc57-4cd9-b02c-63deb3df0afe .
+
+inra_obj:22-SYRAH-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-035 ;
+   oepo:hasObservation inra_observations:60aa7e3b-fc57-4cd9-b02c-63deb3df0afe .
+
+
+inra_observations:6414ee79-29d5-488f-ad8d-4a753b9e78d0 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "115"^^xsd:decimal .
+
+inra_agent:jn.lacapere rdf:type foaf:Person ;
+   foaf:familyName "lacapere"^^xsd:string ;
+   foaf:givenName "jn"^^xsd:string ;
+   foaf:made inra_observations:6414ee79-29d5-488f-ad8d-4a753b9e78d0 .
+
+inra_obj:106-3176N-ESP-HAUT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-036 ;
+   oepo:hasObservation inra_observations:6414ee79-29d5-488f-ad8d-4a753b9e78d0 .
+
+
+inra_observations:280b0dad-0d78-47c6-a658-15d8c7b1b881 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "700"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:280b0dad-0d78-47c6-a658-15d8c7b1b881 .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037a ;
+   oepo:hasObservation inra_observations:280b0dad-0d78-47c6-a658-15d8c7b1b881 .
+
+
+inra_observations:05d9cacf-df2c-4c83-90f7-04e245f876e2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "340"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:05d9cacf-df2c-4c83-90f7-04e245f876e2 .
+
+inra_obj:75-MERLOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037b ;
+   oepo:hasObservation inra_observations:05d9cacf-df2c-4c83-90f7-04e245f876e2 .
+
+
+inra_observations:d51bd744-1774-4ab0-acb2-ee6ef631f138 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "190"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:d51bd744-1774-4ab0-acb2-ee6ef631f138 .
+
+inra_obj:75-EKIGAINA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037c ;
+   oepo:hasObservation inra_observations:d51bd744-1774-4ab0-acb2-ee6ef631f138 .
+
+
+inra_observations:65c8ab2d-3017-4e58-8589-d0dedff85d5e rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "280"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:65c8ab2d-3017-4e58-8589-d0dedff85d5e .
+
+inra_obj:75-ARINARNOA rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-037d ;
+   oepo:hasObservation inra_observations:65c8ab2d-3017-4e58-8589-d0dedff85d5e .
+
+
+inra_observations:181d2527-8c29-4665-943d-90c963717eb3 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1400"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:181d2527-8c29-4665-943d-90c963717eb3 .
+
+inra_obj:83-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-038a ;
+   oepo:hasObservation inra_observations:181d2527-8c29-4665-943d-90c963717eb3 .
+
+
+inra_observations:16629d5c-6fae-4380-b329-f938801b3236 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1875"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:16629d5c-6fae-4380-b329-f938801b3236 .
+
+inra_obj:59-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-038b ;
+   oepo:hasObservation inra_observations:16629d5c-6fae-4380-b329-f938801b3236 .
+
+
+inra_observations:d5c5213f-446a-427f-9834-6aaf5eb765e9 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1172.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:d5c5213f-446a-427f-9834-6aaf5eb765e9 .
+
+inra_obj:106-3159B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-039 ;
+   oepo:hasObservation inra_observations:d5c5213f-446a-427f-9834-6aaf5eb765e9 .
+
+
+inra_observations:b7d2ed7f-e2c0-40eb-b66f-16ecea5e47ee rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1079.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:b7d2ed7f-e2c0-40eb-b66f-16ecea5e47ee .
+
+inra_obj:92-GRENACHE-GRIS-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-XXX ;
+   oepo:hasObservation inra_observations:b7d2ed7f-e2c0-40eb-b66f-16ecea5e47ee .
+
+
+inra_observations:a7d0189f-4621-4e25-acda-2b80d40d7aed rdf:type oepo:Observation ;
+   time:hasTime "2016-09-07"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "371.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:a7d0189f-4621-4e25-acda-2b80d40d7aed .
+
+inra_obj:66-MACCABEU rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-040 ;
+   oepo:hasObservation inra_observations:a7d0189f-4621-4e25-acda-2b80d40d7aed .
+
+
+inra_observations:cd2ff73b-ba05-453a-a3ef-9f8f6566d92e rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2875"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:cd2ff73b-ba05-453a-a3ef-9f8f6566d92e .
+
+inra_obj:73-MACCABEU rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-041 ;
+   oepo:hasObservation inra_observations:cd2ff73b-ba05-453a-a3ef-9f8f6566d92e .
+
+
+inra_observations:e846c78f-4144-4f45-976b-07ce2f311f19 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "14"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:e846c78f-4144-4f45-976b-07ce2f311f19 .
+
+inra_obj:85-RUN-3322-226N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-041bis ;
+   oepo:hasObservation inra_observations:e846c78f-4144-4f45-976b-07ce2f311f19 .
+
+
+inra_observations:61fef591-f851-472d-98c1-b7788d99b427 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "20.5"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:61fef591-f851-472d-98c1-b7788d99b427 .
+
+inra_obj:40-GENOTYPE-09 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-042 ;
+   oepo:hasObservation inra_observations:61fef591-f851-472d-98c1-b7788d99b427 .
+
+
+inra_observations:75ed114c-6008-433d-ab52-59214c59d2b5 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "243.3"^^xsd:decimal .
+
+inra_agent:nans rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "nans"^^xsd:string ;
+   foaf:made inra_observations:75ed114c-6008-433d-ab52-59214c59d2b5 .
+
+inra_obj:57-GENOTYPE-09 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-043 ;
+   oepo:hasObservation inra_observations:75ed114c-6008-433d-ab52-59214c59d2b5 .
+
+
+inra_observations:1edbb425-0c2d-40a6-868a-4d488035b627 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-08"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "567"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:1edbb425-0c2d-40a6-868a-4d488035b627 .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-044 ;
+   oepo:hasObservation inra_observations:1edbb425-0c2d-40a6-868a-4d488035b627 .
+
+
+inra_observations:c805a622-573e-4ace-a6df-42823e68a418 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "339.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:c805a622-573e-4ace-a6df-42823e68a418 .
+
+inra_obj:75-GRENACHE-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-045 ;
+   oepo:hasObservation inra_observations:c805a622-573e-4ace-a6df-42823e68a418 .
+
+
+inra_observations:3a447e04-f252-414e-806d-8c54a37f7e47 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "95.5"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:3a447e04-f252-414e-806d-8c54a37f7e47 .
+
+inra_obj:106-3160N-ESP-HAUT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-046 ;
+   oepo:hasObservation inra_observations:3a447e04-f252-414e-806d-8c54a37f7e47 .
+
+
+inra_observations:e24b12ac-ca54-4352-8ab3-1e58fd0d651d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "957.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:e24b12ac-ca54-4352-8ab3-1e58fd0d651d .
+
+inra_obj:71-GRENACHE-2015 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-047 ;
+   oepo:hasObservation inra_observations:e24b12ac-ca54-4352-8ab3-1e58fd0d651d .
+
+
+inra_observations:9a8e8454-1f75-45cc-9230-3f1d2253b77d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "236.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:9a8e8454-1f75-45cc-9230-3f1d2253b77d .
+
+inra_obj:106-3160N rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-047bis ;
+   oepo:hasObservation inra_observations:9a8e8454-1f75-45cc-9230-3f1d2253b77d .
+
+
+inra_observations:6d2e2d76-bf2d-4901-b206-a191f50e92b9 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-09"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "343"^^xsd:decimal .
+
+inra_agent:nicolas.saurin rdf:type foaf:Person ;
+   foaf:familyName "saurin"^^xsd:string ;
+   foaf:givenName "nicolas"^^xsd:string ;
+   foaf:made inra_observations:6d2e2d76-bf2d-4901-b206-a191f50e92b9 .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-048 ;
+   oepo:hasObservation inra_observations:6d2e2d76-bf2d-4901-b206-a191f50e92b9 .
+
+
+inra_observations:3872b7b2-0937-4c9e-8d75-f40eae37f67b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "453"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:3872b7b2-0937-4c9e-8d75-f40eae37f67b .
+
+inra_obj:98-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-049 ;
+   oepo:hasObservation inra_observations:3872b7b2-0937-4c9e-8d75-f40eae37f67b .
+
+
+inra_observations:83a7f146-079e-4952-9f69-251c399c1987 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "560"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:83a7f146-079e-4952-9f69-251c399c1987 .
+
+inra_obj:77-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050a ;
+   oepo:hasObservation inra_observations:83a7f146-079e-4952-9f69-251c399c1987 .
+
+
+inra_observations:38b3a759-0ebb-45cf-b071-9f7a2db31b28 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "340"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:38b3a759-0ebb-45cf-b071-9f7a2db31b28 .
+
+inra_obj:89-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050b ;
+   oepo:hasObservation inra_observations:38b3a759-0ebb-45cf-b071-9f7a2db31b28 .
+
+
+inra_observations:37ee7b69-4b86-4813-a5ce-d273895a0a65 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "420"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:37ee7b69-4b86-4813-a5ce-d273895a0a65 .
+
+inra_obj:87-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050c ;
+   oepo:hasObservation inra_observations:37ee7b69-4b86-4813-a5ce-d273895a0a65 .
+
+
+inra_observations:e4656ecc-0c25-40f9-bda3-14c4d6cc0872 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2025"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:e4656ecc-0c25-40f9-bda3-14c4d6cc0872 .
+
+inra_obj:63-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-050d ;
+   oepo:hasObservation inra_observations:e4656ecc-0c25-40f9-bda3-14c4d6cc0872 .
+
+
+inra_observations:628f142c-175e-4fee-a387-d2384d78c622 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "267"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:628f142c-175e-4fee-a387-d2384d78c622 .
+
+inra_obj:76-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-051 ;
+   oepo:hasObservation inra_observations:628f142c-175e-4fee-a387-d2384d78c622 .
+
+
+inra_observations:591f6d29-8318-45fd-835f-3c48779f0457 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "56.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:591f6d29-8318-45fd-835f-3c48779f0457 .
+
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-052 ;
+   oepo:hasObservation inra_observations:591f6d29-8318-45fd-835f-3c48779f0457 .
+
+
+inra_observations:df09f0e3-f9cc-48df-8dea-7d0ca2dff03a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "21.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:df09f0e3-f9cc-48df-8dea-7d0ca2dff03a .
+
+inra_obj:85-RUN-3347-364B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053a ;
+   oepo:hasObservation inra_observations:df09f0e3-f9cc-48df-8dea-7d0ca2dff03a .
+
+
+inra_observations:c0daadcf-633b-492b-bb52-fccf7230734a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "14"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:c0daadcf-633b-492b-bb52-fccf7230734a .
+
+inra_obj:85-RUN-3347-368B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053b ;
+   oepo:hasObservation inra_observations:c0daadcf-633b-492b-bb52-fccf7230734a .
+
+
+inra_observations:97ea0d72-d49b-47cb-b75e-675f723d13b7 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "18.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:97ea0d72-d49b-47cb-b75e-675f723d13b7 .
+
+inra_obj:85-RUN-3347-342B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053c ;
+   oepo:hasObservation inra_observations:97ea0d72-d49b-47cb-b75e-675f723d13b7 .
+
+
+inra_observations:93dd2dd9-ee71-4041-aa21-8f79a9c5130a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "29"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:93dd2dd9-ee71-4041-aa21-8f79a9c5130a .
+
+inra_obj:85-RUN-3347-431B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053d ;
+   oepo:hasObservation inra_observations:93dd2dd9-ee71-4041-aa21-8f79a9c5130a .
+
+
+inra_observations:0333cdc2-3e0e-4ba4-a99d-51a9fcad91f1 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "53.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:0333cdc2-3e0e-4ba4-a99d-51a9fcad91f1 .
+
+inra_obj:85-RUN-3347-320B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053e ;
+   oepo:hasObservation inra_observations:0333cdc2-3e0e-4ba4-a99d-51a9fcad91f1 .
+
+
+inra_observations:9904629d-7427-4391-8b7f-abb3df45a703 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "50.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:9904629d-7427-4391-8b7f-abb3df45a703 .
+
+inra_obj:85-RUN-3347-330B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053f ;
+   oepo:hasObservation inra_observations:9904629d-7427-4391-8b7f-abb3df45a703 .
+
+
+inra_observations:652c0f2a-d1ca-4d73-b4a1-e40b23b7eec5 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-12"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "31"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:652c0f2a-d1ca-4d73-b4a1-e40b23b7eec5 .
+
+inra_obj:85-RUN-3347-396B rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-053g ;
+   oepo:hasObservation inra_observations:652c0f2a-d1ca-4d73-b4a1-e40b23b7eec5 .
+
+
+inra_observations:8bf1df11-5746-4e64-82f1-064a154e8f6a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2306"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:8bf1df11-5746-4e64-82f1-064a154e8f6a .
+
+inra_obj:COURSAN-COLOMBARD rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-054 ;
+   oepo:hasObservation inra_observations:8bf1df11-5746-4e64-82f1-064a154e8f6a .
+
+
+inra_observations:78857885-4c54-4c5a-bda0-2b743279b8fb rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "250"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:78857885-4c54-4c5a-bda0-2b743279b8fb .
+
+inra_obj:90-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-055a ;
+   oepo:hasObservation inra_observations:78857885-4c54-4c5a-bda0-2b743279b8fb .
+
+
+inra_observations:0290062b-7936-4de7-af85-dc606acb26ba rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "181"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:0290062b-7936-4de7-af85-dc606acb26ba .
+
+inra_obj:91-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-055b ;
+   oepo:hasObservation inra_observations:0290062b-7936-4de7-af85-dc606acb26ba .
+
+
+inra_observations:220a036b-f222-4281-86b8-5118d57ad4ed rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1860"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:220a036b-f222-4281-86b8-5118d57ad4ed .
+
+inra_obj:COURSAN-COLOMBARD rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-056 ;
+   oepo:hasObservation inra_observations:220a036b-f222-4281-86b8-5118d57ad4ed .
+
+
+inra_observations:883f9fb7-7052-42ec-9794-f8e666493542 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "401.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:883f9fb7-7052-42ec-9794-f8e666493542 .
+
+inra_obj:57-GENOTYPE-02 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-057a ;
+   oepo:hasObservation inra_observations:883f9fb7-7052-42ec-9794-f8e666493542 .
+
+
+inra_observations:13694cb1-4e36-43b2-b384-6ddf0c63fc5b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-13"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "69"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:13694cb1-4e36-43b2-b384-6ddf0c63fc5b .
+
+inra_obj:57-GENOTYPE-07 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-057b ;
+   oepo:hasObservation inra_observations:13694cb1-4e36-43b2-b384-6ddf0c63fc5b .
+
+
+inra_observations:a026a533-fde8-4a6b-97a1-5bf660e26d01 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3785"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:a026a533-fde8-4a6b-97a1-5bf660e26d01 .
+
+inra_obj:82-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-058a ;
+   oepo:hasObservation inra_observations:a026a533-fde8-4a6b-97a1-5bf660e26d01 .
+
+
+inra_observations:4d86766a-8f52-4ff7-b4d4-3abfde3480d0 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3170"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:4d86766a-8f52-4ff7-b4d4-3abfde3480d0 .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-058b ;
+   oepo:hasObservation inra_observations:4d86766a-8f52-4ff7-b4d4-3abfde3480d0 .
+
+
+inra_observations:7ed68566-896a-4ed0-acdb-ab0a8051f413 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "405"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:7ed68566-896a-4ed0-acdb-ab0a8051f413 .
+
+inra_obj:76-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-058bis ;
+   oepo:hasObservation inra_observations:7ed68566-896a-4ed0-acdb-ab0a8051f413 .
+
+
+inra_observations:464cd11b-28b2-48b5-92d1-0cd7b10e32e2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "102"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:464cd11b-28b2-48b5-92d1-0cd7b10e32e2 .
+
+inra_obj:85-RUN-3161-22-4 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059a ;
+   oepo:hasObservation inra_observations:464cd11b-28b2-48b5-92d1-0cd7b10e32e2 .
+
+
+inra_observations:405e18a0-260d-4a24-9416-161f8141da39 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "51"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:405e18a0-260d-4a24-9416-161f8141da39 .
+
+inra_obj:85-RUN-3322-343 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059b ;
+   oepo:hasObservation inra_observations:405e18a0-260d-4a24-9416-161f8141da39 .
+
+
+inra_observations:c40334ff-282c-4c57-98e2-151de50b2f95 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "37"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:c40334ff-282c-4c57-98e2-151de50b2f95 .
+
+inra_obj:85-RUN-3322-178 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059c ;
+   oepo:hasObservation inra_observations:c40334ff-282c-4c57-98e2-151de50b2f95 .
+
+
+inra_observations:e68b0e42-3cbe-477d-bbd8-a45107fda992 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "45"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:e68b0e42-3cbe-477d-bbd8-a45107fda992 .
+
+inra_obj:85-RUN-3328-306 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-059d ;
+   oepo:hasObservation inra_observations:e68b0e42-3cbe-477d-bbd8-a45107fda992 .
+
+
+inra_observations:b3450a18-acb4-4b6d-9e50-897b4982af98 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "153.5"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:b3450a18-acb4-4b6d-9e50-897b4982af98 .
+
+inra_obj:72-CABESTREL rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-060a ;
+   oepo:hasObservation inra_observations:b3450a18-acb4-4b6d-9e50-897b4982af98 .
+
+
+inra_observations:e555795b-84c2-427d-9ba7-164a7845fa6e rdf:type oepo:Observation ;
+   time:hasTime "2016-09-14"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "165.5"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:e555795b-84c2-427d-9ba7-164a7845fa6e .
+
+inra_obj:72-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-060b ;
+   oepo:hasObservation inra_observations:e555795b-84c2-427d-9ba7-164a7845fa6e .
+
+
+inra_observations:f1675f3a-1a29-442c-923d-9e60a554cbc4 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-15"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "891.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:f1675f3a-1a29-442c-923d-9e60a554cbc4 .
+
+inra_obj:55-VIOGNIER-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-061 ;
+   oepo:hasObservation inra_observations:f1675f3a-1a29-442c-923d-9e60a554cbc4 .
+
+
+inra_observations:6c0d6dcd-78de-4ee5-9717-05e1195b80fe rdf:type oepo:Observation ;
+   time:hasTime "2016-09-15"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "80"^^xsd:decimal .
+
+inra_agent:fabien.dellova rdf:type foaf:Person ;
+   foaf:familyName "dellova"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:6c0d6dcd-78de-4ee5-9717-05e1195b80fe .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-062 ;
+   oepo:hasObservation inra_observations:6c0d6dcd-78de-4ee5-9717-05e1195b80fe .
+
+
+inra_observations:5d1c057e-0c76-4f5d-a534-7efabea19e9b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-15"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "3660"^^xsd:decimal .
+
+inra_agent:fabien.dellova rdf:type foaf:Person ;
+   foaf:familyName "dellova"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:5d1c057e-0c76-4f5d-a534-7efabea19e9b .
+
+inra_obj:75-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-063 ;
+   oepo:hasObservation inra_observations:5d1c057e-0c76-4f5d-a534-7efabea19e9b .
+
+
+inra_observations:2f82577e-943f-4cfa-befe-69cfa4940163 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1495"^^xsd:decimal .
+
+inra_agent:fabien.dellova rdf:type foaf:Person ;
+   foaf:familyName "dellova"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:2f82577e-943f-4cfa-befe-69cfa4940163 .
+
+inra_obj:76-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-064 ;
+   oepo:hasObservation inra_observations:2f82577e-943f-4cfa-befe-69cfa4940163 .
+
+
+inra_observations:f0913a9f-38c5-4bc2-8c2d-1cf35496e751 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "585.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:f0913a9f-38c5-4bc2-8c2d-1cf35496e751 .
+
+inra_obj:106-3159-B-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-065 ;
+   oepo:hasObservation inra_observations:f0913a9f-38c5-4bc2-8c2d-1cf35496e751 .
+
+
+inra_observations:daa3e932-e06c-410b-b34d-ffc3ad399c85 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "180"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:daa3e932-e06c-410b-b34d-ffc3ad399c85 .
+
+inra_obj:85-RUN-3180-16-8 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-066a ;
+   oepo:hasObservation inra_observations:daa3e932-e06c-410b-b34d-ffc3ad399c85 .
+
+
+inra_observations:6eb29156-9dd6-429f-bb9b-020e51304087 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "197.5"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:6eb29156-9dd6-429f-bb9b-020e51304087 .
+
+inra_obj:85-RUN-3084-2-46 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-066b ;
+   oepo:hasObservation inra_observations:6eb29156-9dd6-429f-bb9b-020e51304087 .
+
+
+inra_observations:9adad210-5657-4701-94de-815f266ab5c2 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "60"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:9adad210-5657-4701-94de-815f266ab5c2 .
+
+inra_obj:85-RUN-3160-27-4 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-067a ;
+   oepo:hasObservation inra_observations:9adad210-5657-4701-94de-815f266ab5c2 .
+
+
+inra_observations:cf48151a-b962-453a-9dbf-62210e77e79e rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "10"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:cf48151a-b962-453a-9dbf-62210e77e79e .
+
+inra_obj:85-RUN-3294-57 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-067b ;
+   oepo:hasObservation inra_observations:cf48151a-b962-453a-9dbf-62210e77e79e .
+
+
+inra_observations:aaaea002-53c1-4f30-b500-139a9e478f7b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "23"^^xsd:decimal .
+
+inra_agent:unknown rdf:type foaf:Person ;
+   foaf:familyName "unknown"^^xsd:string ;
+   foaf:givenName "unknown"^^xsd:string ;
+   foaf:made inra_observations:aaaea002-53c1-4f30-b500-139a9e478f7b .
+
+inra_obj:85-RUN-3328-177 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-067c ;
+   oepo:hasObservation inra_observations:aaaea002-53c1-4f30-b500-139a9e478f7b .
+
+
+inra_observations:c343d3df-25a9-45b2-b27c-6cb103735884 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-19"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "321.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:c343d3df-25a9-45b2-b27c-6cb103735884 .
+
+inra_obj:106-3160-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-068 ;
+   oepo:hasObservation inra_observations:c343d3df-25a9-45b2-b27c-6cb103735884 .
+
+
+inra_observations:621c80b1-ca63-48a7-9f0f-fb0b8ea2f727 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "747.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:621c80b1-ca63-48a7-9f0f-fb0b8ea2f727 .
+
+inra_obj:102-SYRAH-ESP rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069a ;
+   oepo:hasObservation inra_observations:621c80b1-ca63-48a7-9f0f-fb0b8ea2f727 .
+
+
+inra_observations:12101d95-9866-4a07-9b97-95ff8e79973f rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "579"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:12101d95-9866-4a07-9b97-95ff8e79973f .
+
+inra_obj:102-SYRAH-TM rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069b ;
+   oepo:hasObservation inra_observations:12101d95-9866-4a07-9b97-95ff8e79973f .
+
+
+inra_observations:5065061e-09e5-449d-bf3d-0a8fc0e6358d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "239"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:5065061e-09e5-449d-bf3d-0a8fc0e6358d .
+
+inra_obj:89bis-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069c ;
+   oepo:hasObservation inra_observations:5065061e-09e5-449d-bf3d-0a8fc0e6358d .
+
+
+inra_observations:c0c563e7-b6c5-49cc-ad09-2233a8333bba rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "173"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:c0c563e7-b6c5-49cc-ad09-2233a8333bba .
+
+inra_obj:102-SYRAH-LYRE rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069d ;
+   oepo:hasObservation inra_observations:c0c563e7-b6c5-49cc-ad09-2233a8333bba .
+
+
+inra_observations:6eb99a09-e536-4a05-a78b-c86fa4c1cd51 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "288"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:6eb99a09-e536-4a05-a78b-c86fa4c1cd51 .
+
+inra_obj:72-SYRAH rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-069bis ;
+   oepo:hasObservation inra_observations:6eb99a09-e536-4a05-a78b-c86fa4c1cd51 .
+
+
+inra_observations:2aad83bb-4c8e-4b4f-8761-4eeaad1fc6fe rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "690"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:2aad83bb-4c8e-4b4f-8761-4eeaad1fc6fe .
+
+inra_obj:95-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-070a ;
+   oepo:hasObservation inra_observations:2aad83bb-4c8e-4b4f-8761-4eeaad1fc6fe .
+
+
+inra_observations:05e22f51-6a95-4a0f-879b-4ce2777af217 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1245"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:05e22f51-6a95-4a0f-879b-4ce2777af217 .
+
+inra_obj:74-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-070b ;
+   oepo:hasObservation inra_observations:05e22f51-6a95-4a0f-879b-4ce2777af217 .
+
+
+inra_observations:e753b2a2-50fb-4c9d-8077-2005bdf9fb53 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1180"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:e753b2a2-50fb-4c9d-8077-2005bdf9fb53 .
+
+inra_obj:79-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-070c ;
+   oepo:hasObservation inra_observations:e753b2a2-50fb-4c9d-8077-2005bdf9fb53 .
+
+
+inra_observations:8e63349d-acb9-4a0d-bd05-95d2404fda58 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-20"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "953.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:8e63349d-acb9-4a0d-bd05-95d2404fda58 .
+
+inra_obj:65-CARIGNAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-071 ;
+   oepo:hasObservation inra_observations:8e63349d-acb9-4a0d-bd05-95d2404fda58 .
+
+
+inra_observations:0b4a5722-e9cf-44d5-8cb1-b36ed2675f2d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "316"^^xsd:decimal .
+
+inra_agent:jn.lacapere rdf:type foaf:Person ;
+   foaf:familyName "lacapere"^^xsd:string ;
+   foaf:givenName "jn"^^xsd:string ;
+   foaf:made inra_observations:0b4a5722-e9cf-44d5-8cb1-b36ed2675f2d .
+
+inra_obj:39-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-072 ;
+   oepo:hasObservation inra_observations:0b4a5722-e9cf-44d5-8cb1-b36ed2675f2d .
+
+
+inra_observations:160c919a-eb56-4593-8cec-61da4c562ffb rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "655.5"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:160c919a-eb56-4593-8cec-61da4c562ffb .
+
+inra_obj:68-BOURBOULENC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-073 ;
+   oepo:hasObservation inra_observations:160c919a-eb56-4593-8cec-61da4c562ffb .
+
+
+inra_observations:3b75e057-6b64-4d22-8fe8-f964e6848663 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1562"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:3b75e057-6b64-4d22-8fe8-f964e6848663 .
+
+inra_obj:106-3176 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-074 ;
+   oepo:hasObservation inra_observations:3b75e057-6b64-4d22-8fe8-f964e6848663 .
+
+
+inra_observations:2b91b9cf-f6a6-422d-967c-e5cdaca9261f rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1910"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:2b91b9cf-f6a6-422d-967c-e5cdaca9261f .
+
+inra_obj:39-CABERNET-SAUVIGNON rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-075 ;
+   oepo:hasObservation inra_observations:2b91b9cf-f6a6-422d-967c-e5cdaca9261f .
+
+
+inra_observations:9edd1e64-9544-41d4-afa3-03a3f4003132 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "2315"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:9edd1e64-9544-41d4-afa3-03a3f4003132 .
+
+inra_obj:11-PETIT-VERDOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-076 ;
+   oepo:hasObservation inra_observations:9edd1e64-9544-41d4-afa3-03a3f4003132 .
+
+
+inra_observations:b571210f-70d1-48bb-aeaf-536121626203 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-22"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "119"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:b571210f-70d1-48bb-aeaf-536121626203 .
+
+inra_obj:106-3176 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-077 ;
+   oepo:hasObservation inra_observations:b571210f-70d1-48bb-aeaf-536121626203 .
+
+
+inra_observations:243bdbb9-e458-42fe-bffa-d5b20d410902 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-21"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "434.5"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:243bdbb9-e458-42fe-bffa-d5b20d410902 .
+
+inra_obj:88-VARIETES-JUS rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-078 ;
+   oepo:hasObservation inra_observations:243bdbb9-e458-42fe-bffa-d5b20d410902 .
+
+
+inra_observations:34fc7e1a-22a0-4d62-a8ae-85a58f495a5d rdf:type oepo:Observation ;
+   time:hasTime "2016-09-23"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "8"^^xsd:decimal .
+
+inra_agent:jerome.degroise rdf:type foaf:Person ;
+   foaf:familyName "degroise"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:34fc7e1a-22a0-4d62-a8ae-85a58f495a5d .
+
+inra_obj:85-RUN-3322-285 rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-078bis ;
+   oepo:hasObservation inra_observations:34fc7e1a-22a0-4d62-a8ae-85a58f495a5d .
+
+
+inra_observations:c7168f28-b519-4739-acef-5a68ba972c4a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-26"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1441.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:c7168f28-b519-4739-acef-5a68ba972c4a .
+
+inra_obj:40-GAMAY rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-079 ;
+   oepo:hasObservation inra_observations:c7168f28-b519-4739-acef-5a68ba972c4a .
+
+
+inra_observations:010e66fe-b395-47ac-8142-54f64f40343c rdf:type oepo:Observation ;
+   time:hasTime "2016-09-27"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "74"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:010e66fe-b395-47ac-8142-54f64f40343c .
+
+inra_obj:78-MUSCAT-PETIT-GRAIN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-080 ;
+   oepo:hasObservation inra_observations:010e66fe-b395-47ac-8142-54f64f40343c .
+
+
+inra_observations:d7ad31ca-6f97-4c44-98d7-b38bce1a2d5a rdf:type oepo:Observation ;
+   time:hasTime "2016-09-27"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1324"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:d7ad31ca-6f97-4c44-98d7-b38bce1a2d5a .
+
+inra_obj:72-MOURVEDRE-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-081 ;
+   oepo:hasObservation inra_observations:d7ad31ca-6f97-4c44-98d7-b38bce1a2d5a .
+
+
+inra_observations:c3c4a135-e681-4c74-aa3e-1a1aa944db6b rdf:type oepo:Observation ;
+   time:hasTime "2016-09-27"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "242"^^xsd:decimal .
+
+inra_agent:nicolas.saurin rdf:type foaf:Person ;
+   foaf:familyName "saurin"^^xsd:string ;
+   foaf:givenName "nicolas"^^xsd:string ;
+   foaf:made inra_observations:c3c4a135-e681-4c74-aa3e-1a1aa944db6b .
+
+inra_obj:11-PETIT-VERDOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-082 ;
+   oepo:hasObservation inra_observations:c3c4a135-e681-4c74-aa3e-1a1aa944db6b .
+
+
+inra_observations:2c91bb65-eb18-4013-a9cb-fa85d432e2fe rdf:type oepo:Observation ;
+   time:hasTime "2016-09-26"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "1298"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:2c91bb65-eb18-4013-a9cb-fa85d432e2fe .
+
+inra_obj:57-MERLOT-sp rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-083a ;
+   oepo:hasObservation inra_observations:2c91bb65-eb18-4013-a9cb-fa85d432e2fe .
+
+
+inra_observations:dc13d862-31b6-4bda-ad49-bec194978fa9 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-26"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "337"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:dc13d862-31b6-4bda-ad49-bec194978fa9 .
+
+inra_obj:59-MARSELAN rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-083b ;
+   oepo:hasObservation inra_observations:dc13d862-31b6-4bda-ad49-bec194978fa9 .
+
+
+inra_observations:d05d0155-3540-4d33-b538-94d5fe5703cc rdf:type oepo:Observation ;
+   time:hasTime "2016-09-28"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "216.5"^^xsd:decimal .
+
+inra_agent:jj.regadera rdf:type foaf:Person ;
+   foaf:familyName "regadera"^^xsd:string ;
+   foaf:givenName "jj"^^xsd:string ;
+   foaf:made inra_observations:d05d0155-3540-4d33-b538-94d5fe5703cc .
+
+inra_obj:JARDIN-AMPELO rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-083c ;
+   oepo:hasObservation inra_observations:d05d0155-3540-4d33-b538-94d5fe5703cc .
+
+
+inra_observations:197b2234-318e-4f7b-8821-fb3049d8f8a5 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-28"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "121"^^xsd:decimal .
+
+inra_agent:jerome.cerutti rdf:type foaf:Person ;
+   foaf:familyName "cerutti"^^xsd:string ;
+   foaf:givenName "jerome"^^xsd:string ;
+   foaf:made inra_observations:197b2234-318e-4f7b-8821-fb3049d8f8a5 .
+
+inra_obj:102-PIQUEPOUL-BLANC rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-084 ;
+   oepo:hasObservation inra_observations:197b2234-318e-4f7b-8821-fb3049d8f8a5 .
+
+
+inra_observations:b27c62bf-9d0a-4652-9dff-bba80b60ee56 rdf:type oepo:Observation ;
+   time:hasTime "2016-09-28"^^xsd:date ;
+   oepo:hasVariable inra_onto:Poidsvendangegpesee ;
+   rdf:value "4731"^^xsd:decimal .
+
+inra_agent:fabien.robert rdf:type foaf:Person ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:givenName "fabien"^^xsd:string ;
+   foaf:made inra_observations:b27c62bf-9d0a-4652-9dff-bba80b60ee56 .
+
+inra_obj:11-PETIT-VERDOT rdf:type aeo:Plot ;
+   aeo:involvedIn inra_code:Lot_FV-2016-085 ;
+   oepo:hasObservation inra_observations:b27c62bf-9d0a-4652-9dff-bba80b60ee56 .
+
+
+
