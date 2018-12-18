@@ -2,8 +2,9 @@
 #+OPTIONS: c:nil creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:nil title:t toc:5
 #+OPTIONS: todo:t |:t
+#+STARTUP: showeverything
 #+TITLE: BigDataGrapes Ontology Notes
-#+DATE: <2018-07-16>
+#+DATE: <2018-07-18>
 #+AUTHOR: Vladimir Alexiev
 #+EMAIL: vladimir.alexiev@ontotext.com
 #+LANGUAGE: en
@@ -23,6 +24,8 @@ Sorted alphabetically (previously I had from generic to specific, but that quick
   - http://agroportal.lirmm.fr/ontologies/AFEO
   - http://agroportal.lirmm.fr/ontologies/AFEO?p=classes#visualization and other detail tabs give API Key errors. Can you ask LIRMM to fix this? 
 - AGRO: Agronomy Ontology
+- AT: Agricultural Technology Ontology
+  - http://data.ifpri.org/lod/at/resource/
 - BCO: Biological Collection Ontology
   - http://purl.obolibrary.org/obo/bco.owl
 - BFO: Basic Formal Ontology
@@ -48,7 +51,7 @@ Sorted alphabetically (previously I had from generic to specific, but that quick
   - NCBI Taxonomy is not perfect either, but it is much better in terms of updates (particularly for plants)
 - OBO: Open Biological and Biomedical Ontology (a big set)
 - OEPO: Ontology for Experimental Phenotypic Objects
-- OFPE
+- OFPE: Ontology for Food Processing Experiments
   - http://agroportal.lirmm.fr/ontologies/OFPE
 - PATO: Phenotypic Quality Ontology
   - http://purl.obolibrary.org/obo/pato.owl
@@ -80,7 +83,7 @@ Sorted alphabetically (previously I had from generic to specific, but that quick
 | MMO       |         |            |             |                                                                             |
 | NCBITaxon | 1692930 |         27 |             | http://www.ontobee.org/ontostat                                             |
 | OBO       |         |            |             |                                                                             |
-| OFPE      |         |            |             | http://agroportal.lirmm.fr/ontologies/OFPE                                  |
+| OFPE      |      71 |        149 |          58 | http://agroportal.lirmm.fr/ontologies/OFPE                                  |
 | PATO      |    2713 |         61 |             | http://www.ontobee.org/ontostat                                             |
 | PCO       |     242 |        636 |          20 | http://www.ontobee.org/ontostat                                             |
 | PECO      |    2974 |        137 |             | http://www.ontobee.org/ontostat                                             |

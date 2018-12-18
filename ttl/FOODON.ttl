@@ -10,6 +10,15 @@
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
+obo:foodon.owl  a                   owl:Ontology ;
+        dc:date                     "2018-04-30"^^xsd:date ;
+        dc:description              "FoodOn (http://foodon.org) is a consortium-driven project to build a comprehensive and easily accessible global farm-to-fork ontology about food, that accurately and consistently describes foods commonly known in cultures from around the world."@en ;
+        dc:license                  <http://creativecommons.org/licenses/by/3.0/> ;
+        dc:title                    "Food Ontology"@en ;
+        oboInOwl:default-namespace  "FOODON" ;
+        owl:imports                 <http://purl.obolibrary.org/obo/foodon/imports/gaz_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/po_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/obi_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.owl> , <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ro_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/uberon_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ancestro_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/langual_deprecated_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/geem_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/langual_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/metadata_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/product_type_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/envo_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/eo_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ecocore_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/pato_import.owl> ;
+        owl:versionIRI              <http://purl.obolibrary.org/obo/foodon/releases/2018-04-30/foodon.owl> .
+
 obo:FOODON_03430169  a      owl:Class ;
         rdfs:label          "parenteral preparation"@en ;
         rdfs:subClassOf     obo:FOODON_03430165 ;
@@ -8945,14 +8954,6 @@ obo:FOODON_03510199  a      owl:Class ;
         obo:IAO_0000412     "http://langual.org" ;
         oboInOwl:hasDbXref  "LANGUAL:P0199" .
 
-obo:foodon.owl  a                   owl:Ontology ;
-        dc:date                     "2018-04-30"^^xsd:date ;
-        dc:description              "FoodOn (http://foodon.org) is a consortium-driven project to build a comprehensive and easily accessible global farm-to-fork ontology about food, that accurately and consistently describes foods commonly known in cultures from around the world."@en ;
-        dc:license                  <http://creativecommons.org/licenses/by/3.0/> ;
-        dc:title                    "Food Ontology"@en ;
-        oboInOwl:default-namespace  "FOODON" ;
-        owl:imports                 <http://purl.obolibrary.org/obo/foodon/imports/gaz_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/po_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/obi_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.owl> , <http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ro_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/uberon_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ancestro_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/langual_deprecated_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/geem_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/langual_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/metadata_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/product_type_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/envo_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/eo_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/ecocore_import.owl> , <http://purl.obolibrary.org/obo/foodon/imports/pato_import.owl> ;
-        owl:versionIRI              <http://purl.obolibrary.org/obo/foodon/releases/2018-04-30/foodon.owl> .
 
 obo:FOODON_00002390  a            owl:Class ;
         rdfs:comment              "Shiro an is sometimes used to make yokan, especially mizu yokan, however it is not, strictly speaking, yokan. Sugar is often added when this is used as a dessert ingredient or a dessert."@en ;
