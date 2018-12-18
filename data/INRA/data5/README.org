@@ -4,7 +4,7 @@
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:nil title:t toc:5
 #+OPTIONS: todo:t |:t
 #+TITLE: INRA data5 errors
-#+DATE: <2018-10-11>
+#+DATE: <2018-11-16>
 #+AUTHOR: Vladimir Alexiev
 #+EMAIL: vladimir.alexiev@ontotext.com
 #+LANGUAGE: en
@@ -174,11 +174,13 @@ Uses some units ontology that's unknown to me:
 #+END_SRC
 This returns 404 Not Found. Better use QUDT, which is well known and maintained.
 (TODO Vladimir: post my presentation of Unit ontologies)
+
 ** TODO Don't use dbo: for units
 Use a QUDT unit rather than a DBpedia URL as datatype literal:
 #+BEGIN_SRC Turtle
    quty:area "1.37490"^^dbo:hectare
 #+END_SRC
+
 ** TODO Where is the grape variety indicated?
 Plots don't seem to indicate the grape variety. Maybe that's in another file?
 #+BEGIN_SRC Turtle
@@ -214,27 +216,36 @@ Discussion:
   : aeo:Plot < aeo:CultivatedLand < aeo:Area < aeo:AgriEntity < aeo:AgriEntity
   (the last reflexive subclass is totally useless)
 
-* FinFermentationsAlcoolique_transf_parsed.ttl
-* Maturite_transf_parsed.ttl
-* MaturiteAnthocyanes_transf_parsed.ttl
-* MaturiteJus_transf_parsed.ttl
-* MaturiteSunAgri2B_transf_parsed.ttl
-* must_transf_parsed.ttl
+* TODO FinFermentationsAlcoolique_transf_parsed.ttl
+
+* TODO Maturite_transf_parsed.ttl
+
+* TODO MaturiteAnthocyanes_transf_parsed.ttl
+
+* TODO MaturiteJus_transf_parsed.ttl
+
+* TODO MaturiteSunAgri2B_transf_parsed.ttl
+
+* must_transf_parsed.ttl [0/1]
 Observations: ~inra_onto:Sucrestotaux.brixrefractometrie~ Total sugars (BRIX refractometry)
+
 ** TODO Syntax error
 #+BEGIN_SRC Turtle
 [line: 28, col: 1 ] Broken token (newline): VIP_Sauvignon rdf:type afeo:Must ;
 #+END_SRC
 This is caused by an apostrophe in the plot name: ~inra_obj:2016_SO'VIP_Sauvignon~.
 Replace spaces, apostrophes and other special cahrs in plot names with "_"
-* Suivifermentations_transf_parsed.ttl
+
+* Suivifermentations_transf_parsed.ttl [0/4]
 Follow-up fermentations of ~ofpe:IntermediateProduct~. 
 Observations of "Glucose/fructose g/l sequential enzymatic".
+
 ** TODO Syntax error
 #+BEGIN_SRC Turtle
 [line: 144, col: 26] Unrecognized: sec
 #+END_SRC
 Caused by space in the plot name: ~inra_obj:2016_HE1_Muscat sec~.
+
 ** TODO Class vs Property
 This is a class not property so it can't be used like this.
 #+BEGIN_SRC Turtle
@@ -242,6 +253,7 @@ inra_data:32757c4a-15dd-4896-a3b9-970f33e6f756 rdf:type oepo:Observation ;
    foaf:Organization inra_code:16-1841 ;
 #+END_SRC
 ~oepo:Observation~ needs some link to Agent, be that Operator or Organization
+
 ** TODO Where are inra_codes defined?
 These codes are used by data, but where are they defined?
 #+BEGIN_SRC Turtle
@@ -253,7 +265,20 @@ Codes are also used for organizations, so it may be better to define these as pr
  foaf:Organization inra_code:16-1841 ; # Suivifermentations_transf_parsed
 #+END_SRC
 
-* Scratch Pad
+** TODO Inconsistent URLs for some codes
+- ~inra_code:Lab_16-1841~ in FinFermentationsAlcoolique_transf_parsed.ttl, but merely 
+- ~inra_code:16-1841~ in Suivifermentations_transf_parsed.ttl
+One way to solve: 
+#+BEGIN_SRC Turtle
+# prefixes.ttl
+@prefix inra_lab <...~inra_code/Lab_> .
+
+# in data
+inra_lab:16-1841 a foaf:Organization
+#+END_SRC
+
+* Scratch Pad [/]
+
 ** Capturing All Plot Data
 ~2016,HE1,Muscat sec~ should be converted to somethign like
 #+BEGIN_SRC Turtle
@@ -267,3 +292,7 @@ inra_obj:2016_HE1_Muscat_sec a oepo:Experiment;
 inra_variety:Muscat_sec a GrapeVariety;
   ...
 #+END_SRC
+
+** TODO Minor things
+- add newline before each heading
+- add new files to first-level headings

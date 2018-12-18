@@ -14,7 +14,7 @@
 @prefix CO_357:    <http://www.cropontology.org/rdf/CO_357:>.
 @prefix CO_UO:     <http://www.cropontology.org/rdf/UO:>.
 @prefix crop:      <http://data.ifpri.org/lod/crop/>.
-@prefix dbo:      <http://dbpedia.org/ontology/>.
+@prefix crop:      <http://dbpedia.org/ontology/>.
 @prefix envo:      <http://purl.obolibrary.org/obo/envo#>.
 @prefix ENVO:      <http://purl.obolibrary.org/obo/ENVO_>.
 @prefix IAO:       <http://purl.obolibrary.org/obo/IAO_>.
