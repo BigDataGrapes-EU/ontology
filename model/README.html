@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BigDataGrapes Semantic Model</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Vladimir Alexiev" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style type='text/css'> h1,h2,h3,h4,h5,h6,h7 {font-family: Arial} .author, .date, .creator {-webkit-margin-before: 0em; -webkit-margin-after: 0em} .abstract {margin: 1em; padding: 1em; border: 1px solid black} .abstract:before {content: 'Abstract: '; font-weight: bold} #preamble p {font-size: 110%%; margin-left: auto; margin-right: auto; text-align: center} th.left {text-align:left} th.right {text-align:right} th, td {line-height: 1em; border-width: 1px; border-style: solid solid; border-spacing: 2px 2px; padding: 2px 1px} .CANCELED {color: blue} .MAYBE {color: blue} .POSTPONED {color: blue} .SAME {color: blue} .APPLIED {color: orange} .FOLLOW {color: orange} .INPROGRESS {color: orange} .NEXT {color: orange} .IER {color: orange}.underline {text-decoration:underline} </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">BigDataGrapes Semantic Model</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgb3696fb">1. Intro</a>
+<ul>
+<li><a href="#org8262262">1.1. <span class="todo TODO">TODO</span> Units of Measure Ontologies</a>
+<ul>
+<li><a href="#orgd96d1c6">1.1.1. QUDT</a></li>
+</ul>
+</li>
+<li><a href="#org71dd2d9">1.2. Property Sources</a>
+<ul>
+<li><a href="#orgc6178f6">1.2.1. <span class="todo TODO">TODO</span> Agricultural Properties</a></li>
+<li><a href="#org7b60983">1.2.2. <span class="todo TODO">TODO</span> Statistical Operations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8fa113c">2. Data Mapping</a>
+<ul>
+<li><a href="#org56d8018">2.1. Properties/Variables</a>
+<ul>
+<li><a href="#org4681c03">2.1.1. Geospatial and Temporal Reference</a>
+<ul>
+<li><a href="#orgfc47d64">2.1.1.1. Position</a></li>
+</ul>
+</li>
+<li><a href="#org32ac258">2.1.2. Position Qualifiers</a></li>
+<li><a href="#org85e4d5f">2.1.3. Features of Interest</a>
+<ul>
+<li><a href="#org603860c">2.1.3.1. Measurement Contexts</a></li>
+</ul>
+</li>
+<li><a href="#orga436f1e">2.1.4. Observable Properties</a>
+<ul>
+<li><a href="#org9097266">2.1.4.1. Soil Conductivity</a></li>
+<li><a href="#org686dd52">2.1.4.2. Canopy Characteristics</a></li>
+<li><a href="#orgb5dafee">2.1.4.3. Derived Vegetation Indices</a></li>
+<li><a href="#org4a8b288">2.1.4.4. Statistical Summaries of Vegetation Indices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8f48586">2.2. Devices/Sensors</a></li>
+<li><a href="#org5447eee">2.3. Plots/Geometries</a></li>
+<li><a href="#org5b3d0a4">2.4. Data Structure Definition</a></li>
+<li><a href="#org5b08ddb">2.5. Datasets</a></li>
+<li><a href="#orgf2a4b28">2.6. Observations</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb3696fb" class="outline-2">
+<h2 id="orgb3696fb"><span class="section-number-2">1</span> Intro</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+We develop the BigDataGrapes Semantic Model by way of example, starting from AUA Table Grapes tabular data.
+After this example is approved, we'll follow similar modeling for other kinds of observations.
+</p>
+<ul class="org-ul">
+<li>We work with <a href="https://docs.google.com/document/d/1_id0r5pEH-VgQXZnXBN9C5-7SJn-q0J3uM3JHUzl8LU/edit">AUA Table Grapes Data</a></li>
+<li>The data is in <a href="https://drive.google.com/drive/folders/16p63tgyPaR7BRiOY-_D1T983y2yfr4X4">WP8/Table Grapes Pilot- AUA/Data</a>, in particular we work with the Fasoulis estate, Geotrisi plot (sub-estate)</li>
+<li>Look in <a href="https://docs.google.com/document/d/19-6qKtuDx7EoZBNbjmDBqFdToq1mCvEyLtA5xKinO7I/edit">D8.1 Piloting Plan: BigDataGrapes_Piloting Plan-AUA</a> for descriptions of equipment and measured indicators</li>
+<li>We're trying to convert to W3C ontologies <a href="https://docs.google.com/document/d/1f5wJljke0J7ztM3YioyRhKPLbAKwKoq4ipDBaS6Z28I/edit#heading=h.uqcdo9n3ri9l">as described here</a>: SOSA, SSN, QB, QB4ST, EO QB; SKOS, QUDT.</li>
+</ul>
+</div>
+
+<div id="outline-container-org8262262" class="outline-3">
+<h3 id="org8262262"><span class="section-number-3">1.1</span> <span class="todo TODO">TODO</span> Units of Measure Ontologies</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Which ontology should we use to represent Units of Measure (UoM)?
+See two survey papers in gdoc UoM.
+</p>
+</div>
+
+<div id="outline-container-orgd96d1c6" class="outline-4">
+<h4 id="orgd96d1c6"><span class="section-number-4">1.1.1</span> QUDT</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+For the time being we use QUDT 2.0, which is sponsored by NASA and has an extensive set of 80 ontologies covering Units of Measure, Quantity Kinds, Dimensions and Types.
+</p>
+
+<p>
+QUDT semantics is based on dimensional analysis expressed in OWL, which relates each unit to a system of base units using numeric factors and a vector of exponents defined over a set of fundamental dimensions.
+This is expressed as attributes <code>qudt:dimensionExponentFor</code> in class <code>qudt:QuantityDimensionVector</code>, where <code>*</code> is one of <code>AmountOfSubstance, ElectricCurrent, Length, LuminousIntensity, Mass, ThermodynamicTemperature, Time</code>, and <code>qudt:dimensionlessExponent</code>.
+</p>
+<ul class="org-ul">
+<li>Each <code>qudt:QuantityKind</code> is also linked to a respective <code>qudt:hasReferenceQuantityKind</code>: the fundamental unit for that dimension vector.</li>
+<li>Each unit has <code>qudt:conversionMultiplier</code> to its respective fundamental unit, allowing precise unit conversions if needed.</li>
+<li>There is also <code>qudt:conversionOffset</code> to allow for units with different scale origin (like Kelvin vs Fahrenheit vs Celsius)</li>
+</ul>
+<p>
+Resources:
+</p>
+<ul class="org-ul">
+<li><a href="http://www.qudt.org/pages/QUDToverviewPage.html">QUDT Overview</a></li>
+<li><a href="http://www.qudt.org/release2/qudt-catalog.html">QUDT Catalog</a>. We have downloaded the following ontologies that may be relevant to BDG:
+<ul class="org-ul">
+<li>SCHEMA_QUDT-DATATYPES-v2.0.ttl: not used</li>
+<li>SCHEMA_QUDT-SCIENCE-v2.0.ttl: eg <code>qudt:ConductanceUnit</code></li>
+<li>SCHEMA_QUDT-v2.0.ttl: base ontology</li>
+<li>VOCAB_QUDT-UNITS-BASE-v2.0.ttl: eg <code>unit:Milli</code></li>
+<li>VOCAB_QUDT-UNITS-ELECTROMAGNETISM-v2.0.ttl: eg <code>unit:S-PER-M</code> "Siemens per meter"</li>
+<li>VOCAB_QUDT-UNITS-SPACE-AND-TIME-v2.0.ttl</li>
+</ul></li>
+</ul>
+<p>
+There is a number of ontologies that are in progress or in QA and not yet available for download. Amongst those, the following may be relevant
+</p>
+<ul class="org-ul">
+<li><a href="http://qudt.org/2.0/schema/qudt/engineering">http://qudt.org/2.0/schema/qudt/engineering</a></li>
+<li><a href="http://qudt.org/2.0/vocab/quantitykind/telebiometrics">http://qudt.org/2.0/vocab/quantitykind/telebiometrics</a></li>
+<li><a href="http://qudt.org/2.0/vocab/quantitykind/lifesciences">http://qudt.org/2.0/vocab/quantitykind/lifesciences</a></li>
+</ul>
+<p>
+Resolvability:
+</p>
+<ul class="org-ul">
+<li>Ontology URLs (eg <a href="http://qudt.org/schema/qudt">http://qudt.org/schema/qudt</a>) resolve but return only RDF/XML (the HTML version of that ontology is <a href="http://qudt.org/doc/2017/DOC_SCHEMA-QUDT-v2.0.html">http://qudt.org/doc/2017/DOC_SCHEMA-QUDT-v2.0.html</a>)</li>
+<li>Individual terms (eg <a href="http://qudt.org/schema/qudt/GlossaryTerm">http://qudt.org/schema/qudt/GlossaryTerm</a>) don't resolve.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org71dd2d9" class="outline-3">
+<h3 id="org71dd2d9"><span class="section-number-3">1.2</span> Property Sources</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgc6178f6" class="outline-4">
+<h4 id="orgc6178f6"><span class="section-number-4">1.2.1</span> <span class="todo TODO">TODO</span> Agricultural Properties</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>NIR, RE, RED; NDVI, NDRE, LAI</li>
+<li>Soil electrical conductivity</li>
+</ul>
+
+<p>
+I've looked previously for NDVI and couldn't find a satisfactory definition (independent of crop type).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b60983" class="outline-4">
+<h4 id="org7b60983"><span class="section-number-4">1.2.2</span> <span class="todo TODO">TODO</span> Statistical Operations</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+AUA data includes derived properties produced with the following statistical operations
+</p>
+<ul class="org-ul">
+<li>Minimum</li>
+<li>Maximum</li>
+<li>Standard Deviation</li>
+<li>Coefficient of Variation</li>
+</ul>
+
+<p>
+<a href="https://lov.linkeddata.es/dataset/lov/terms?q=deviation">Searching for deviation</a> in Linked Open Vocabularies:
+</p>
+<ul class="org-ul">
+<li><a href="http://semanticscience.org/resource/SIO_000770">SIO:000770</a> (SemanticScience Integrated Ontology) "standard deviation".
+Also has <a href="http://semanticscience.org/resource/SIO_001114">SIO:001114</a> "maximal value" and <a href="http://semanticscience.org/resource/SIO_001113">SIO:001113</a> "minimal value",
+but these are defined as SIO:000011 "attribute" of a SIO:000616 "collection".
+No var.</li>
+<li><a href="http://purl.obolibrary.org/obo/OBI_0200121">OBI:0200121</a> (Ontology for Biomedical Investigations): "standard deviation calculation".
+Includes 10 <a href="http://purl.obolibrary.org/obo/OBI_0200184">descriptive statistical calculation data transformation</a> including kurtosis, skewness, variance. But not min/max/var.</li>
+<li><a href="https://w3id.org/seas/StandardDeviationEvaluation">seas-stats:StandardDeviationEvaluation</a>.
+SEAS includes an alternative ontology of sensors and observations (see gdoc "SEAS").
+Also has DistributionMaximumEvaluation and DistributionMinimumEvaluation but not var.</li>
+<li><a href="https://w3id.org/saref4ee#StandardDeviationValue">s4ee:StandardDeviationValue</a> (Smart Appliances REFerence, extension for EEBus and Energy@Home) "Standard deviation value".
+Also has AverageValue, MinValue, MaxValue but not var.</li>
+<li>(DICOM has a lot of terms matching this word, but they are not appropriate)</li>
+<li><a href="http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-lifemapper-parameters.owl#StandardDeviations">lswpm:StandardDeviations</a> (elseweb-lifemapper-parameters: the Earth, Life and Semantic Web (ELSeWeb) project integrates the NASA-funded Earth Data Analysis Center with an analytical Web Service platform, Lifemapper, which models potential future species distributions under scenarios of climate change).
+No min/max, not appropriate</li>
+<li><a href="http://mex.aksw.org/mex-perf#standardDeviation">mexperf:standardDeviation</a> (Performance Values for Machine Learning Problems):
+no min/max</li>
+<li><a href="http://vocab.datex.org/terms#standardDeviation">datex:standardDeviation</a> (EU standard for Exchange of Traffic Related Data):
+no min/max</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8fa113c" class="outline-2">
+<h2 id="org8fa113c"><span class="section-number-2">2</span> Data Mapping</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org56d8018" class="outline-3">
+<h3 id="org56d8018"><span class="section-number-3">2.1</span> Properties/Variables</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+The properties that we need fall in the following groups.
+For each one we state the <code>qb:concept</code> (statistical concept) that the property relates to.
+</p>
+</div>
+
+<div id="outline-container-org4681c03" class="outline-4">
+<h4 id="org4681c03"><span class="section-number-4">2.1.1</span> Geospatial and Temporal Reference</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+We represent these as DimensionProperties, since they identify the measurement (the measurement is a function of all dimension values).
+</p>
+<ul class="org-ul">
+<li><p>
+Estate: we don't represent this, since it is implied by Plot.
+TODO: Alternatively, we could represent it as a hierarchical level, using <code>subdivides</code> for the hierarchical relation:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">estate</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">RefArea</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Estate"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Estate of a measurement"</span><span style="color: #228b22;">.</span>
+
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span> <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">subdivides</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">estate</span>.
+</pre>
+</div>
+<p>
+Or we could follow QB4OLAP ideas to represent the hierarchical aspect.
+</p></li>
+<li><p>
+Plot
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">RefArea</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Plot"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Plot (sub-estate) of a measurement"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">refArea</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">Plot</span>.
+</pre>
+</div></li>
+<li><p>
+Date, Time.
+We use <code>Date</code> to mark the temporal coverage of the dataset (see <a href="#org5b08ddb">2.5</a>),
+and <code>Date+Time</code> to represent the dateTime of observation.
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">dateTime</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DimensionProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Date-time"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Date-time of the observation"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">timePeriod</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">xsd:</span><span style="color: #008b8b;">dateTime</span>.
+</pre>
+</div>
+<p>
+Note: <code>qb4st:TemporalProperty</code> refers to the use of <code>time:Interval</code> but we prefer to use a simple literal.
+EO QB uses <code>qb4st:TemporalProperty</code> with a simple literal, which is not consistent: <a href="https://github.com/w3c/sdw/issues/1108">sdw#1108</a>.
+</p></li>
+<li><p>
+Sensor.
+In AUA data we always know the sensor that took the observation (implicitly).
+If that is not the case for some datasets, then we must use an (optional) <code>qb:AttributeProperty</code>, like EO QB does.
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">sensor</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DimensionProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Sensor"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Sensor/Instrument that took the observation"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">collMethod</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">ssn:</span><span style="color: #008b8b;">Sensor</span>.
+</pre>
+</div></li>
+</ul>
+</div>
+
+<div id="outline-container-orgfc47d64" class="outline-5">
+<h5 id="orgfc47d64"><span class="section-number-5">2.1.1.1</span> Position</h5>
+<div class="outline-text-5" id="text-2-1-1-1">
+<p>
+The observation's position is expressed in two ways depending on the dataset:
+</p>
+<ul class="org-ul">
+<li>Latitude, Longitude (Degrees), Elevation (m) in CRS WGS84</li>
+<li>Northing, Easting (Degrees) in (presumably) in CRS EPSG 32634 (see sec <a href="#org5447eee">2.3</a> for details)</li>
+</ul>
+<p>
+Elevation is a bit special because:
+</p>
+<ul class="org-ul">
+<li>It's functionally dependent on the Plot and Latitude/Longitude:
+the plot's terrain determines the elevation.
+Different sensors could report different elevations for the same point,
+but that would be due to measurement error</li>
+<li>It's missing from some of the datasets</li>
+</ul>
+<p>
+Therefore Elevation cannot be a dimension.
+</p>
+
+<p>
+We could represent the coordinates as separate properties but we prefer to represent them as GeoSPARQL literals because:
+</p>
+<ul class="org-ul">
+<li>The individual coordinates are represented in different CRS, therefore not directly comparable</li>
+<li>Allows automatic comparison of northing/easting to canonical latitude/longitude</li>
+<li>The special status of Elevation as described above</li>
+</ul>
+<p>
+Note: QB4ST does not define a position dimension (only defines <code>qb4st:PositionMeasure</code>),
+so we use the slightly more generic <code>qb4st:SpatialDimension</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">SpatialDimension</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Position"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"A GeoSPARQL literal"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">refArea</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subPropertyOf</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">hasSerialization</span>;
+  <span style="color: #228b22;">schema:</span><span style="color: #008b8b;">rangeIncludes</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">wktLiteral,</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">gmlLiteral</span>.
+</pre>
+</div>
+<p>
+TODO: Currently GraphDB cannot work with <code>geo:wktLiteral</code> expressed in non-default CRS.
+So we should either:
+</p>
+<ul class="org-ul">
+<li>Use GML literals only (which are more complex), OR</li>
+<li>Convert WKT literals to CRS84</li>
+</ul>
+
+<p>
+Deprecated: this needs an extra intermediate node (<code>geo:Point</code>) so it's not so good.
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">SpatialDimension</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Position"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"""Position of the observation, </span><span style="color: #a020f0;">a</span><span style="color: #8b2252;"> </span><span style="color: #228b22;">geo:</span><span style="color: #008b8b;">Point</span><span style="color: #8b2252;">.</span>
+<span style="color: #8b2252;">Must have </span><span style="color: #a020f0;">a</span><span style="color: #8b2252;"> geometry with </span><span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">crs</span><span style="color: #8b2252;"> to easily access the CRS, and optionally </span><span style="color: #a020f0;">a</span><span style="color: #8b2252;"> geometry in the default/canonical CRS WGS84 for easy comparison"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">refArea</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">Point</span>.
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org32ac258" class="outline-4">
+<h4 id="org32ac258"><span class="section-number-4">2.1.2</span> Position Qualifiers</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+We represent these as AttributeProperties, since they qualify the measurement.
+</p>
+<ul class="org-ul">
+<li><p>
+FIXTYPE.
+We represent this as a simple Boolean (false "Fix not valid", true "GPS").
+TODO: if there are more values, we should use a codelist and rename appropriately (eg to <code>fixType</code>).
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">hasGpsFix</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">AttributeProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Has GPS fix"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"If the measurement doesn't have a GPS fix, it is invalid and should be discarded"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsStatus</span>; <span style="color: #b22222;"># Information on the quality of </span><span style="color: #a020f0;">a</span><span style="color: #b22222;"> value or an unusual or missing value</span>
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">xsd:</span><span style="color: #008b8b;">boolean</span>.
+</pre>
+</div></li>
+<li><p>
+Sat
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">satellites</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">AttributeProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Satellites"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Number of tracked satellites that provided the GPS fix"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span> <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">collMethod</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">xsd:</span><span style="color: #008b8b;">int</span>.
+</pre>
+</div>
+<p>
+TODO: If instead this means "number of satellite that provided the fix", we should rename it.
+Since we don't have info what exactly this number refers to, we should again map it to a simple int, not to <code>ssn:Platform</code>.
+</p></li>
+<li><p>
+HDOP (Horizontal Dilution of Precision)
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">HDOP</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">AttributeProperty</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span> <span style="color: #8b2252;">"HDOP"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Horizontal dilution of precision"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"""GPS reception </span><span style="color: #228b22;">quality:</span>
+<span style="color: #0000ff;">&lt;1 Ideal, 1-2 Excellent, 2-5 Good, 5-10 Moderate, 10-20 Fair, &gt;</span><span style="color: #8b2252;">20 Poor"""</span>;
+  <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">dataValSource</span>; <span style="color: #228b22;">#:</span><span style="color: #008b8b;"> discrepancies</span><span style="color: #b22222;"> and other problems related to source dat</span><span style="color: #a020f0;">a</span>
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">xsd:</span><span style="color: #008b8b;">int</span>.
+</pre>
+</div></li>
+<li><p>
+Quality indicator.
+This is a coded property, so we also provide the respective codelist.
+It is represented both as a <code>skos:ConceptScheme</code> and a <code>rdfs:Class</code> to enable <code>rdfs:range</code> checking.
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">positionQuality</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">AttributeProperty,</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">CodedProperty</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">codeList</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>;
+  <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">dataValSource</span>; <span style="color: #228b22;">#:</span><span style="color: #008b8b;"> discrepancies</span><span style="color: #b22222;"> and other problems related to source dat</span><span style="color: #a020f0;">a</span>
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Position quality"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"GPS position quality"</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">PositionQuality</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">PositionQuality</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">Class</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Position Quality codelist class"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Provides code values for Position Quality"</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">seeAlso</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span> <span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">ConceptScheme</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Position Quality codelist scheme"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Provides code values for Position Quality"</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">seeAlso</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">PositionQuality</span> <span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality-0</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">PositionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span> <span style="color: #8b2252;">"0"</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"no position"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">scopeNote</span> <span style="color: #8b2252;">"Observations without position should be discarded"</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality-1</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">PositionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span> <span style="color: #8b2252;">"1"</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"raw, not differentially corrected position"</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality-2</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">PositionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span> <span style="color: #8b2252;">"2"</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"differentially corrected position"</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality-9</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">PositionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #228b22;">bdg-code:</span><span style="color: #008b8b;">positionQuality</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span> <span style="color: #8b2252;">"9"</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"position computed using almanac information)"</span>.
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org85e4d5f" class="outline-4">
+<h4 id="org85e4d5f"><span class="section-number-4">2.1.3</span> Features of Interest</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<p>
+Features of interest are AgroBio entities for which we may want to observe some properties:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;feature/Soil&gt;</span>   <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">FeatureOfInterest</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Soil"</span>.
+<span style="color: #0000ff;">&lt;feature/Canopy&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">FeatureOfInterest</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Canopy"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">description</span> <span style="color: #8b2252;">"The leaf mass of some crop"</span><span style="color: #228b22;">.</span>
+
+<span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty</span>.
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org603860c" class="outline-5">
+<h5 id="org603860c"><span class="section-number-5">2.1.3.1</span> Measurement Contexts</h5>
+<div class="outline-text-5" id="text-2-1-3-1">
+<p>
+We define some measurement contexts (qualifiers). Following QB practice, we put them in a codelist.
+Observations
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">measurementContext</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">AttributeProperty</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">codeList</span> <span style="color: #0000ff;">&lt;measurementContext&gt;</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MeasurementContext</span><span style="color: #228b22;">.</span>
+
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MeasurementContext</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">Class</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Measurement Context - codelist class"</span>.
+
+<span style="color: #0000ff;">&lt;measurementContext&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">conceptScheme</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Measurement Context - codelist scheme"</span>.
+
+<span style="color: #0000ff;">&lt;feature/Soil/separation-1m&gt;</span>   <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span>; <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MeasurementContext</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #0000ff;">&lt;measurementContext&gt;</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #0000ff;">&lt;measurementContext&gt;</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Soil, separation 1m"</span>.
+<span style="color: #0000ff;">&lt;feature/Soil/separation-0.5m&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span>; <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MeasurementContext</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #0000ff;">&lt;measurementContext&gt;</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #0000ff;">&lt;measurementContext&gt;</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Soil, separation 0.5m"</span>.
+</pre>
+</div>
+<p>
+TODO: Not sure what "separation" is: I suspect it could mean "depth".
+Depending on the meaning, it may be appropriate to map this to <code>sosa:Sample</code>:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;feature/Soil/depth-1m&gt;</span>   <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">Sample</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Soil at depth 1m"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">isSampleOf</span> <span style="color: #0000ff;">&lt;feature/Soil&gt;</span>.
+<span style="color: #0000ff;">&lt;feature/Soil/depth-0.5m&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">Sample</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Soil at depth 0.5m"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">isSampleOf</span> <span style="color: #0000ff;">&lt;feature/Soil&gt;</span>.
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga436f1e" class="outline-4">
+<h4 id="orga436f1e"><span class="section-number-4">2.1.4</span> Observable Properties</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<p>
+The following sub-sections define several properties to hold the observed values.
+We declare them <code>sosa:ObservableProperty</code> because they are observed by a <code>sosa:Sensor</code>,
+and <code>qb:MeasureProperty</code> because they hold the observed/measured value.
+These properties bind together:
+</p>
+<ul class="org-ul">
+<li><b>what</b> is being observed (<code>FeatureOfInterest</code>)</li>
+<li><b>which</b> property is observed (<code>Property</code>)</li>
+<li><b>unit</b> of measure (<code>unitMeasure</code>) and <b>multiplier</b> (<code>unitMult</code>)</li>
+<li><b>context</b> of observation, if needed</li>
+</ul>
+<p>
+To do this binding we use attributes (<code>qb:AttributeProperty</code>)
+that are attached to the measure property (see <a href="#org5b3d0a4">2.4</a>).
+TODO: I notice that each dataset observes only one feature (Soil or Canopy),
+so we could simplify by attaching to the dataset. However:
+</p>
+<ul class="org-ul">
+<li>Attaching to the property is more self-contained (NDVI is always about Canopy)</li>
+<li>We might get a sensor that observes several features at the same time.</li>
+</ul>
+</div>
+
+<div id="outline-container-org9097266" class="outline-5">
+<h5 id="org9097266"><span class="section-number-5">2.1.4.1</span> Soil Conductivity</h5>
+<div class="outline-text-5" id="text-2-1-4-1">
+<p>
+We have two properties that differ only by context:
+</p>
+<ul class="org-ul">
+<li>CV05m (soil conductivity, separation 0.5 m) (mS/m)</li>
+<li>CV1m (soil conductivity, separation 1.0 m) (mS/m)</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CV1m</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Soil Electric Conductivity, separation 1m"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"CV1m"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Soil&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">measurementContext</span>     <span style="color: #0000ff;">&lt;feature/Soil/separation-1m&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">ElectricConductivity</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">S-PER-M</span>; <span style="color: #b22222;"># Siemens per meter</span>
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMult</span>    <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">Milli</span>; <span style="color: #b22222;"># 10^-3</span>
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CV05m</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Soil Electric Conductivity, separation 0.5m"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"CV0.5m"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Soil&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">measurementContext</span>     <span style="color: #0000ff;">&lt;feature/Soil/separation-0.5m&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">ElectricConductivity</span>.
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">S-PER-M</span> <span style="color: #b22222;"># Siemens per meter</span>
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMult</span>    <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">Milli</span>; <span style="color: #b22222;"># 10^-3</span>
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span>.
+</pre>
+</div>
+<p>
+Notes:
+</p>
+<ul class="org-ul">
+<li>We abuse <code>sosa:hasFeatureOfInterest</code>, which is intended to be applied to <code>sosa:Observation</code> not <code>sosa:ObservableProperty</code>
+<ul class="org-ul">
+<li>This allows us to find easily all properties that pertain to a given feature of interest</li>
+<li>There is no formal violation because <code>sosa:hasFeatureOfInterest</code>
+doesn't use the prescriptive <code>rdfs:domain</code> but the descriptive <code>rdfs:domainIncludes</code></li>
+</ul></li>
+<li>We slightly abuse <code>sdmx-attribute:unitMult</code> by using <code>unit:Milli</code> as its value.
+<ul class="org-ul">
+<li>SDMX defines a codelist <code>sdmx-code:unitMult</code>, but it doesn't have fractional miltipliers
+(population statistics deals with thousands and millions, not with <b>thousandths</b>)</li>
+<li><code>sdmx-attribute:unitMult</code> doesn't actually declare a <code>qb:codeList</code>, so that's ok</li>
+</ul></li>
+<li><a href="http://qudt.org/2.0/schema/qudt/science">http://qudt.org/2.0/schema/qudt/science</a> defines <code>qudt:DecimalScaledUnit</code>
+but <a href="http://qudt.org/2.0/vocab/unit/electromagnetism">http://qudt.org/2.0/vocab/unit/electromagnetism</a> defines decimal fractions only of Ampere and Coulomb, not Siemens.</li>
+<li><p>
+TODO: alternatively, we could define <code>Milli-S-PER-M</code> ourselves:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg-unit:</span><span style="color: #008b8b;">Milli-S-PER-M</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">DecimalScaledUnit,</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">DerivedUnit,</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">ConductanceUnit,</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">Unit</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasMultiplier</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">Milli</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionMultiplier</span> 1.0e-3 ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionOffset</span> <span style="color: #8b2252;">"0.0"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span> <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">ElectricConductivity</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">isScalingOf</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">S-PER-M</span> ;
+  <span style="color: #228b22;">prov:</span><span style="color: #008b8b;">wasDerivedFrom</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">S-PER-M</span> .
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org686dd52" class="outline-5">
+<h5 id="org686dd52"><span class="section-number-5">2.1.4.2</span> Canopy Characteristics</h5>
+<div class="outline-text-5" id="text-2-1-4-2">
+<p>
+These are primary observation data:
+</p>
+<ul class="org-ul">
+<li>NIRi (NIR Incident) (%)</li>
+<li>NIRr (NIR Reflected) (%)</li>
+<li>RE (Red Edge) (%)</li>
+<li>REDi (RED Incident) (%)</li>
+<li>REDr (RED Reflected) (%)</li>
+</ul>
+<p>
+TODO: these labels are incomplete, they should say "percentage of radiation" or something.
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRi</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"NIR Incident"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"NIRi"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">PERCENT</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRr</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"NIR Reflected"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"NIRr"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">PERCENT</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RE</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Red Edge"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"RE"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">PERCENT</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDi</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"RED Incident"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"REDi"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">PERCENT</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDr</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"RED Reflected"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"REDr"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">PERCENT</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span>.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb5dafee" class="outline-5">
+<h5 id="orgb5dafee"><span class="section-number-5">2.1.4.3</span> Derived Vegetation Indices</h5>
+<div class="outline-text-5" id="text-2-1-4-3">
+<p>
+These are derived observations computed from primary observations.
+As such they are redundant and in principle could be omitted,
+but some sensors emit only the derived
+</p>
+<ul class="org-ul">
+<li>LAI (Leaf Area Index) = 0.014*(exp(6.192*NDVI)</li>
+<li>NDRE (Normalized Difference Red Edge Index) = (NIR-RedEdge)/(NIR+RedEdge)</li>
+<li>NDVI (Normalized Difference Vegetation Index) = (NIR-RED)/(NIR+RED)</li>
+<li>NIR (Near Infrared) = NIRr/NIRi</li>
+<li>RED (Red spectrum) = REDr/REDi</li>
+</ul>
+<p>
+We record the primary observations from which this one is derived,
+and the formula in <code>qudt:mathDefinition</code> (that is basically a comment),
+</p>
+<ul class="org-ul">
+<li>TODO: I'm not sure whether these are considered percentages or simply dimensionless.
+It doesn't make a lot of difference because percentages are dimensionless anyway.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">LAI</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Leaf Area Index"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"LAI"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">mathDefinition</span>        <span style="color: #8b2252;">"0.014*(exp(6.192*NDVI)"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Normalized Difference Red Edge Index"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"NDRE"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">mathDefinition</span>        <span style="color: #8b2252;">"(NIR-RE)/(NIR+RE)"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RE</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Normalized Difference Vegetation Index"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"NDVI"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">mathDefinition</span>        <span style="color: #8b2252;">"(NIR-RED)/(NIR+RED)"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Near Infrared"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"NIR"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">mathDefinition</span>        <span style="color: #8b2252;">"NIRr/NIRi"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRr,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRi</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Red spectrum"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"RED"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">mathDefinition</span>        <span style="color: #8b2252;">"REDr/REDi"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDr,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDi</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span>.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4a8b288" class="outline-5">
+<h5 id="org4a8b288"><span class="section-number-5">2.1.4.4</span> Statistical Summaries of Vegetation Indices</h5>
+<div class="outline-text-5" id="text-2-1-4-4">
+<p>
+These are secondary observations providing statistical summaries of a primary observation:
+</p>
+<ul class="org-ul">
+<li>CVNDRE (Coefficient of variation NDRE)</li>
+<li>CVNDVI (Coefficient of variation NDVI)</li>
+<li>MAXNDRE (Maximum value NDRE)</li>
+<li>MAXNDV (Maximum value NDVI)</li>
+<li>MINNDRE (Minimum value NDRE)</li>
+<li>MINNDVI (Minimum value NDVI)</li>
+<li>STDNDRE (Standard deviation NDRE)</li>
+<li>STDNDVI (Standard deviation NDVI)</li>
+</ul>
+<p>
+We record both the primary observation, and the statistical summary operation:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDRE</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Coefficient of variation NDRE"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"CVNDRE"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/CoefficientOfVariation&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDVI</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Coefficient of variation NDVI"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"CVNDVI"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/CoefficientOfVariation&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDRE</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Maximum value NDRE"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"MAXNDRE"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/Maximum&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDV</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Maximum value NDVI"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"MAXNDV"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/Maximum&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDRE</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Minimum value NDRE"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"MINNDRE"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/Minimum&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDVI</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Minimum value NDVI"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"MINNDVI"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/Minimum&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDRE</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Standard deviation NDRE"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"STDNDRE"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/StandardDeviation&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDVI</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">MeasureProperty,</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">ObservableProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span>                 <span style="color: #8b2252;">"Standard deviation NDVI"</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">notation</span>              <span style="color: #8b2252;">"STDNDVI"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  <span style="color: #0000ff;">&lt;feature/Canopy&gt;</span>;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Dimensionless</span>;
+  <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">NUM</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span>     <span style="color: #0000ff;">&lt;statisticalSummary/StandardDeviation&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">derivedFrom</span>            <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">concept</span>                 <span style="color: #228b22;">sdmx-concept:</span><span style="color: #008b8b;">obsValue</span>.
+</pre>
+</div>
+
+<p>
+We define statistical summary operations as a codelist: ConceptScheme, and corresponding class to enable <code>rdfs:range</code> checking
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">statisticalSummary</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">AttributeProperty,</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">CodedProperty</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Statistical Summary"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Summary operation used on a property to derive another"</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">codeList</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">range</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">StatisticalSummary</span>.
+<span style="color: #0000ff;">&lt;statisticalSummary&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">ConceptScheme</span>;                         <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Statistical Summary - codelist scheme"</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">Statisticalsummary</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">Class</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Statistical Summary - codelist class"</span>.
+<span style="color: #0000ff;">&lt;statisticalSummary/Minimum&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">StatisticalSummary</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"Minimum"</span>.
+<span style="color: #0000ff;">&lt;statisticalSummary/Maximum&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">StatisticalSummary</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"Maximum"</span>.
+<span style="color: #0000ff;">&lt;statisticalSummary/CoefficientOfVariation&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">StatisticalSummary</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"Coefficient of variation"</span>;
+<span style="color: #0000ff;">&lt;statisticalSummary/StandardDeviation&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">Concept,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">StatisticalSummary</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">inScheme</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>; <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">topConceptOf</span> <span style="color: #0000ff;">&lt;statisticalSummary&gt;</span>;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"Maximum"</span>.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8f48586" class="outline-3">
+<h3 id="org8f48586"><span class="section-number-3">2.2</span> Devices/Sensors</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+We defne 4 sensors:
+</p>
+<ul class="org-ul">
+<li>RTK GPS</li>
+<li>EM38 mk2</li>
+<li>RapidScan CS-45</li>
+<li>SpectroSense 2+</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;sensor/RTK-GPS&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">Sensor</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"RTK GPS"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">observes</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position</span>.
+<span style="color: #0000ff;">&lt;sensor/EM38-mk2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">Sensor</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"EM38 mk2"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">observes</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">positionQuality,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">satellite,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">HDOP,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CV1m,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CV05m</span>.
+<span style="color: #0000ff;">&lt;sensor/RapidScan-CS-45&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">Sensor</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"RapidScan CS-45"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">observes</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">HDOP,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">hasGpsFix,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RE,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDRE,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDV,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDRE,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDVI,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDRE,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDVI,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDRE,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDVI</span>.
+<span style="color: #0000ff;">&lt;sensor/SpectroSense-2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">Sensor</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"SpectroSense 2+"</span>;
+  <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">observes</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDi,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRi,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDr,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRr,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI,</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">LAI</span>.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5447eee" class="outline-3">
+<h3 id="org5447eee"><span class="section-number-3">2.3</span> Plots/Geometries</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+<code>1. Fasoulis_RTKGPS_Boundaries.xls</code>
+</p>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Estate</th>
+<th scope="col" class="org-left">Estate-Segment</th>
+<th scope="col" class="org-right">Boundary Point</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Northing (mN)</th>
+<th scope="col" class="org-right">Easting (mE)</th>
+<th scope="col" class="org-right">Elevation (m)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">geotrhsh</td>
+<td class="org-right">4186414.498</td>
+<td class="org-right">639833.509</td>
+<td class="org-right">297.154</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">geotrhsh</td>
+<td class="org-right">4186380.300</td>
+<td class="org-right">639865.047</td>
+<td class="org-right">297.726</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">geotrhsh</td>
+<td class="org-right">4186404.724</td>
+<td class="org-right">639931.511</td>
+<td class="org-right">298.354</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">geotrhsh</td>
+<td class="org-right">4186437.593</td>
+<td class="org-right">639900.538</td>
+<td class="org-right">297.565</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">geotrhsh</td>
+<td class="org-right">4186436.262</td>
+<td class="org-right">639898.365</td>
+<td class="org-right">297.644</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">geotrhsh</td>
+<td class="org-right">4186444.820</td>
+<td class="org-right">639890.154</td>
+<td class="org-right">297.424</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Estate-Segments are also called Plots</li>
+<li>It's important to use consistent names for them (eg always Geotrisi)</li>
+</ul>
+
+<p>
+We establish a simple hierarchy of estates and plots.
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">Estate</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">Class</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClasssOf</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">Feature,</span> <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">RefArea</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Estate"</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Grape producing estate"</span><span style="color: #228b22;">.</span>
+<span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">Plot</span>   <span style="color: #a020f0;">a</span> <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">Class</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClasssOf</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">Feature,</span> <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">RefArea</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Plot"</span>;   <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">comment</span> <span style="color: #8b2252;">"Part of an estate on which measurements are conducted"</span>.
+
+<span style="color: #0000ff;">&lt;AUA/estate/Fasoulis&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">Estate</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Fasoulis"</span>.
+<span style="color: #0000ff;">&lt;AUA/estate/Fasoulis/Geotrisi&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">Plot</span>; <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Fasoulis-Geotrisi"</span>;
+  <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">sfWithin</span> <span style="color: #0000ff;">&lt;AUA/estate/Fasoulis&gt;</span>.
+</pre>
+</div>
+
+<p>
+We represent the geometry using <code>geoSPARQL</code>
+</p>
+<ul class="org-ul">
+<li>Following <a href="https://www.w3.org/TR/sdw-bp/#bp-crs">SDW-BP State how coordinate values are encoded</a>, we specify explicitly the used Coordinate Reference System.
+We assume it's <a href="https://epsg.io/32634">https://epsg.io/32634</a> in this case, but that needs to be checked.
+In addition to giving the CRS URL in <code>geo:asWKT</code> (a GeoSPARQL requirement),
+we also give it as a separate property <code>qb4st:crs</code> so we can filter geometries by CRS</li>
+<li>Please note that we have repeated the last point because GeoSPARQL polygons must be topologically closed.</li>
+<li>The plot boundary is described using a 3D polygon (lat/long/alt).
+We followed <a href="https://en.wikipedia.org/wiki/Well-known_text">https://en.wikipedia.org/wiki/Well-known_text</a> to select the type <code>Polygon Z</code>.</li>
+<li>GraphDB supports such 3D literals and spatial relations (eg <code>geo:sfWithin</code>) work correctly:
+the altitude Z is ignored for such comparison (<a href="https://jira.ontotext.com/browse/GDB-3142">GDB-3142</a>).</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;AUA/estate/Fasoulis/Geotrisi&gt;</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">hasGeometry</span> <span style="color: #0000ff;">&lt;AUA/estate/Fasoulis/Geotrisi/geo&gt;</span>.
+<span style="color: #0000ff;">&lt;AUA/estate/Fasoulis/Geotrisi/geo&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">Geometry</span>;
+  <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">crs</span> <span style="color: #228b22;">crs-epsg:</span><span style="color: #008b8b;">32634</span>;
+  <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">asWKT</span> <span style="color: #8b2252;">""</span><span style="color: #228b22;">"</span><span style="color: #0000ff;">&lt;http://www.opengis.net/def/crs/EPSG/0/32634&gt;</span>
+<span style="color: #8b2252;">     Polygon Z ((</span>
+<span style="color: #8b2252;">       4186414.498 639833.509 297.154,</span>
+<span style="color: #8b2252;">       4186380.300 639865.047 297.726,</span>
+<span style="color: #8b2252;">       4186404.724 639931.511 298.354,</span>
+<span style="color: #8b2252;">       4186437.593 639900.538 297.565,</span>
+<span style="color: #8b2252;">       4186436.262 639898.365 297.644,</span>
+<span style="color: #8b2252;">       4186444.820 639890.154 297.424,</span>
+<span style="color: #8b2252;">       4186414.498 639833.509 297.154</span>
+<span style="color: #8b2252;">     ))</span>
+<span style="color: #8b2252;">  ""</span><span style="color: #228b22;">"^^geo:</span><span style="color: #008b8b;">wktLiteral</span>.
+</pre>
+</div>
+<ul class="org-ul">
+<li>TODO: GraphDB does not support alternative CRS in <code>geo:asWKT</code> (<a href="https://jira.ontotext.com/browse/GDB-3142">GDB-3142</a>) but only in <code>geo:asGML</code></li>
+</ul>
+<p>
+So we have two options:
+</p>
+<ul class="org-ul">
+<li>Use <code>geo:asGML</code>, which is a more complex XML-based literal format.</li>
+<li>Convert the geometry to the most commonly used CRS, namely lat/long in CRS84 (<a href="https://epsg.io/4326">https://epsg.io/4326</a>),
+following <a href="https://www.w3.org/TR/sdw-bp/#bp-crs-choice">SDW-BP Choose the coordinate reference system to suit your user's applications</a>.
+It is the default in GeoSPARQL, so doesn't need to be specified in the literal.</li>
+<li>There are easily available software libraries to do the conversion,
+though there are no GeoSPARQL functions to expose such conversions</li>
+</ul>
+<p>
+Note: in the example below, I haven't performed an actual conversion, so the coordinates are not correct
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;AUA/estate/Fasoulis/Geotrisi/geo2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">Geometry</span>;
+  <span style="color: #228b22;">qb4st:</span><span style="color: #008b8b;">crs</span> <span style="color: #228b22;">crs-ogc:</span><span style="color: #008b8b;">CRS84</span>;
+  <span style="color: #228b22;">geo:</span><span style="color: #008b8b;">asWKT</span> <span style="color: #8b2252;">"""</span>
+<span style="color: #8b2252;">     Polygon Z ((</span>
+<span style="color: #8b2252;">       37.414498 22.33509 297.154,</span>
+<span style="color: #8b2252;">       37.380300 22.65047 297.726,</span>
+<span style="color: #8b2252;">       37.404724 22.31511 298.354,</span>
+<span style="color: #8b2252;">       37.437593 22.00538 297.565,</span>
+<span style="color: #8b2252;">       37.436262 22.98365 297.644,</span>
+<span style="color: #8b2252;">       37.444820 22.90154 297.424,</span>
+<span style="color: #8b2252;">       37.414498 22.33509 297.154</span>
+<span style="color: #8b2252;">     ))</span>
+<span style="color: #8b2252;">  ""</span><span style="color: #228b22;">"^^geo:</span><span style="color: #008b8b;">wktLiteral</span>.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5b3d0a4" class="outline-3">
+<h3 id="org5b3d0a4"><span class="section-number-3">2.4</span> Data Structure Definition</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+We define dataset structures (DSD) per sensor.
+</p>
+<ul class="org-ul">
+<li>These structures describe the components of each observation, as defined in sec <a href="#org56d8018">2.1</a>:
+<ul class="org-ul">
+<li>dimensions: identifying properties of the observation, whcih functionally determine the measures.
+All of these are required</li>
+<li>attributes: additional qualifiers, including Units of Measure, position quality, etc.
+These are optional by default, unless marked with <code>qb:componentRequired true</code></li>
+<li>measures: the values that were observed.
+All of these are required</li>
+</ul></li>
+<li><code>bdg:plot</code> and <code>bdg:sensor</code> are fixed for each data file, so we attach them to the <code>qb:DataSet</code>
+(No need to use <code>qb:Slice</code> for this because there's a single fixed value)</li>
+<li>TODO: If wanted, we could also fix the date in this way (but it's implied by <code>bdg:dateTime</code>)</li>
+<li>We use the <a href="https://www.w3.org/TR/vocab-data-cube/#h4_dsd-mm-obs">Multi-measure observations</a> QB pattern:
+"This approach allows multiple observed values to be attached to an individual observation.
+It is suited to representation of things like sensor data and OLAP cubes".</li>
+<li>We fix some attributes to each measure (UoM, featureOfInterest, etc):
+"Attributes can be attached directly to the <code>qb:MeasureProperty</code> itself
+(e.g. to indicate the unit of measure for that measure)
+but that attachment applies to the whole data set
+(indeed any data set using that measure property)
+and cannot vary for different observations"</li>
+<li>RTK GPS doesn't need a DSD since plot geometries (sec <a href="#org5447eee">2.3</a>) are not represented using QB.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;DSD/EM38-mk2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DataStructureDefinition</span>;
+  <span style="color: #228b22;">qb:</span>component
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span>                   ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>DataSet],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">sensor</span>                 ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>DataSet],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position],</span> <span style="color: #b22222;"># including Elevation, which is ignored for comparison</span>
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span>dateTime],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">bdg:</span>positionQuality],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">bdg:</span>satellites],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">bdg:</span>HDOP],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">measurementContext</span>     ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMult</span>    ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>CV1m],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CV05m]</span>;
+<span style="color: #0000ff;">&lt;DSD/RapidScan-CS-45&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DataStructureDefinition</span>;
+  <span style="color: #228b22;">qb:</span>component
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span>                   ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>DataSet],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">sensor</span>                 ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>DataSet],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position],</span> <span style="color: #b22222;"># including Elevation, which is ignored for comparison</span>
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span>dateTime],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">bdg:</span>HDOP],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">bdg:</span>hasGpsFix],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>NDRE],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>NDVI],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>RE],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>NIR],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>RED],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>MAXNDRE],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>MAXNDV],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>MINNDRE],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>MINNDVI],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>STDNDRE],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>STDNDVI],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>CVNDRE],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDVI]</span>.
+<span style="color: #0000ff;">&lt;DSD/SpectroSense-2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DataStructureDefinition</span>;
+  <span style="color: #228b22;">qb:</span>component
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span>                   ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>DataSet],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">sensor</span>                 ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>DataSet],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position],</span> <span style="color: #b22222;"># in Northing/Easting, or converted to CRS84 lat/long</span>
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">dimension</span> <span style="color: #228b22;">bdg:</span>dateTime],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">sosa:</span><span style="color: #008b8b;">hasFeatureOfInterest</span>  ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span>       ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">attribute</span> <span style="color: #228b22;">sdmx-attribute:</span><span style="color: #008b8b;">unitMeasure</span> ; <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">componentAttachment</span> <span style="color: #228b22;">qb:</span>MeasureProperty],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>REDi],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>NIRi],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>REDr],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>NIRr],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>RED],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>NIR],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span>NDVI],
+    <span style="color: #228b22;">[qb:</span><span style="color: #008b8b;">measure</span>   <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">LAI]</span>.
+</pre>
+</div>
+<p>
+TODO: <code>qb4st:SpatioTemporalDSD</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5b08ddb" class="outline-3">
+<h3 id="org5b08ddb"><span class="section-number-3">2.5</span> Datasets</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Now we define 3 datasets that observe the parameters described above, for one plot and one instrument.
+</p>
+<ul class="org-ul">
+<li>TODO: provide QB4ST spatio-temporal metadata about the dataset (see issue <a href="https://github.com/w3c/sdw/issues/1110">sdw#1110</a>)</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/EM38-mk2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DataSet</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Table grapes data about Fasoulis/Geotrisi from sensor EM38-mk2"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">sensor</span> <span style="color: #0000ff;">&lt;sensor/EM38-mk2&gt;</span>
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span> <span style="color: #0000ff;">&lt;estate/Fasoulis/Geotrisi&gt;</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">structure</span> <span style="color: #0000ff;">&lt;DSD/EM38-mk2&gt;</span>.
+<span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DataSet</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Table grapes data about Fasoulis/Geotrisi from sensor RapidScan CS-45"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">sensor</span> <span style="color: #0000ff;">&lt;sensor/RapidScan-CS-45&gt;</span>
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span> <span style="color: #0000ff;">&lt;estate/Fasoulis/Geotrisi&gt;</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">structure</span> <span style="color: #0000ff;">&lt;DSD/RapidScan-CS-45&gt;</span>.
+<span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">DataSet</span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Table grapes data about Fasoulis/Geotrisi from sensor SpectroSense 2+"</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">sensor</span> <span style="color: #0000ff;">&lt;sensor/SpectroSense-2&gt;</span>
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">plot</span> <span style="color: #0000ff;">&lt;estate/Fasoulis/Geotrisi&gt;</span>;
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">structure</span> <span style="color: #0000ff;">&lt;DSD/SpectroSense-2&gt;</span>.
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>TODO: Should we split the datasets per date?</li>
+<li>TODO: If so, should we represent the date explicitly at the dataset level?
+It's implied by <code>bdg:dateTime</code> of each observation, but I think we should have it explicit for convenience.</li>
+<li>TODO: Similarly, the estate is not represented explicitly since it's implied by <code>bdg:plot</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf2a4b28" class="outline-3">
+<h3 id="orgf2a4b28"><span class="section-number-3">2.6</span> Observations</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Now that we have datasets defined, it's easy to capture all observations.
+</p>
+<ul class="org-ul">
+<li>Each obseration links to its dataset, whose DSD determines the expected properties
+and the fixed properties (those attached to <code>qb:DataSet</code> or <code>qb:MeasureProperty</code>)</li>
+<li>Observation URL: we use the dataset URL as prefix, and append the dateTime and a row-number to make the URL unique.</li>
+<li>DateTimes are converted to <code>xsd:dateTime</code> format</li>
+</ul>
+
+<p>
+<code>2. Fasoulis_Geotrisi_EM38.xlsx</code>
+</p>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">Longitude</td>
+<td class="org-right">Latitude</td>
+<td class="org-right">CV1m</td>
+<td class="org-right">CV05m</td>
+<td class="org-right">Quality</td>
+<td class="org-right">Sat</td>
+<td class="org-right">HDOP</td>
+<td class="org-right">Elevation</td>
+<td class="org-right">Time</td>
+<td class="org-left">Date</td>
+</tr>
+
+<tr>
+<td class="org-right">22.590</td>
+<td class="org-right">37.816</td>
+<td class="org-right">144.699</td>
+<td class="org-right">106.74</td>
+<td class="org-right">1</td>
+<td class="org-right">12</td>
+<td class="org-right">0.69</td>
+<td class="org-right">299.612</td>
+<td class="org-right">12:26:30</td>
+<td class="org-left">23/05/2018</td>
+</tr>
+</tbody>
+</table>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/1&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span>Observation
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">dataSet</span>          <span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/EM38-mk2&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position</span>        <span style="color: #8b2252;">"Point Z(22.590 37.816 299.612)"</span><span style="color: #228b22;">^^geo:</span><span style="color: #008b8b;">wktLiteral</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">dateTime</span>        <span style="color: #8b2252;">"2018-05-23T12:26:30"</span><span style="color: #008b8b;">^^xsd:dateTime</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">positionQuality</span> <span style="color: #0000ff;">&lt;positionQuality-1&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">satellites</span>      12;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">HDOP</span>            0.69;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CV1m</span>            144.699;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CV05m</span>           106.74.
+</pre>
+</div>
+
+<p>
+<code>1. Fasoulis_Geotrisi_RapidScan_230518.xlsx</code>
+</p>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Estate</td>
+<td class="org-left">Estate-Segment</td>
+<td class="org-right">NDRE</td>
+<td class="org-right">NDVI</td>
+<td class="org-right">RE</td>
+<td class="org-right">NIR</td>
+<td class="org-right">R</td>
+<td class="org-right">LATITUDE</td>
+<td class="org-right">LONGITUDE</td>
+<td class="org-right">ELEVATION</td>
+<td class="org-right">HDOP</td>
+<td class="org-left">FIXTYPE</td>
+<td class="org-left">DATE</td>
+<td class="org-right">TIME</td>
+<td class="org-right">MAXNDRE</td>
+<td class="org-right">MAXNDV</td>
+<td class="org-right">MINNDRE</td>
+<td class="org-right">MINNDVI</td>
+<td class="org-right">STDNDRE</td>
+<td class="org-right">STDNDVI</td>
+<td class="org-right">CVNDRE</td>
+<td class="org-right">CVNDVI</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">Geotrisi</td>
+<td class="org-right">0.274</td>
+<td class="org-right">0.817</td>
+<td class="org-right">20.099</td>
+<td class="org-right">35.383</td>
+<td class="org-right">3.512</td>
+<td class="org-right">&#x2014;.-------</td>
+<td class="org-right">&#x2014;.-------</td>
+<td class="org-right">---</td>
+<td class="org-right">---</td>
+<td class="org-left">Fix not valid</td>
+<td class="org-left">23/05/2018</td>
+<td class="org-right">0.446</td>
+<td class="org-right">0.367</td>
+<td class="org-right">0.897</td>
+<td class="org-right">0.127</td>
+<td class="org-right">0.492</td>
+<td class="org-right">4.65E-2</td>
+<td class="org-right">6.759E-2</td>
+<td class="org-right">0.169</td>
+<td class="org-right">8.260E-2</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">Geotrisi</td>
+<td class="org-right">0.260</td>
+<td class="org-right">0.812</td>
+<td class="org-right">20.257</td>
+<td class="org-right">34.606</td>
+<td class="org-right">3.556</td>
+<td class="org-right">37.817</td>
+<td class="org-right">22.589</td>
+<td class="org-right">-34.799</td>
+<td class="org-right">2.9</td>
+<td class="org-left">GPS</td>
+<td class="org-left">23/05/2018</td>
+<td class="org-right">0.454</td>
+<td class="org-right">0.325</td>
+<td class="org-right">0.894</td>
+<td class="org-right">0.185</td>
+<td class="org-right">0.714</td>
+<td class="org-right">2.93E-2</td>
+<td class="org-right">3.350E-2</td>
+<td class="org-right">0.112</td>
+<td class="org-right">4.130E-2</td>
+</tr>
+
+<tr>
+<td class="org-left">Fasoulis</td>
+<td class="org-left">Geotrisi</td>
+<td class="org-right">0.242</td>
+<td class="org-right">0.739</td>
+<td class="org-right">20.530</td>
+<td class="org-right">33.792</td>
+<td class="org-right">5.118</td>
+<td class="org-right">37.817</td>
+<td class="org-right">22.590</td>
+<td class="org-right">283.899</td>
+<td class="org-right">2.299</td>
+<td class="org-left">GPS</td>
+<td class="org-left">23/05/2018</td>
+<td class="org-right">0.457</td>
+<td class="org-right">0.352</td>
+<td class="org-right">0.865</td>
+<td class="org-right">-0.221</td>
+<td class="org-right">-4.270E-2</td>
+<td class="org-right">5.269E-2</td>
+<td class="org-right">0.116</td>
+<td class="org-right">0.216</td>
+<td class="org-right">0.157</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li><b>TIME</b> is rendered in some invalid Excel format. We assume this will be fixed before conversion</li>
+<li>Please note that the first observation here is invalid since it doesn't have GPS fix, nor position.
+It violates QB integrity constraints, which say that each dimension is mandatory.</li>
+<li>The second observation is also de-facto invalid,
+because the negative Elevation shows the sensor has not yet made a reliable satellite connection.
+This cannot be expressed in QB: TODO: define RDF Shapes to validate that case.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:46/1&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span>Observation
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">dataSet</span>    <span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">dateTime</span>  <span style="color: #8b2252;">"2018-05-23T12:04:46"</span><span style="color: #008b8b;">^^xsd:dateTime</span>;
+<span style="color: #b22222;"># bdg:position  "Point Z(---.------- ---.------- ---)"^^geo:wktLiteral; # this invalid literal must not be formed!</span>
+<span style="color: #b22222;"># bdg:HDOP      ---;                                                    # this invalid literal must not be formed!</span>
+<span style="color: #b22222;"># bdg:hasGpsFix false;                                                  # thus the observation is invalid</span>
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span>      0.274;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>      0.817;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RE</span>        20.099;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR</span>       35.383;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED</span>       3.512;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDRE</span>   0.367;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDV</span>    0.897;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDRE</span>   0.127;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDVI</span>   0.492;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDRE</span>   4.65E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDVI</span>   6.759E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDRE</span>    0.169;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDVI</span>    <span style="color: #228b22;">8.260E-2.</span>
+<span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:54/2&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span>Observation
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">dataSet</span>    <span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">dateTime</span>  <span style="color: #8b2252;">"2018-05-23T12:04:54"</span><span style="color: #008b8b;">^^xsd:dateTime</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position</span>  <span style="color: #8b2252;">"Point Z(37.817 22.589 -34.799)"</span><span style="color: #228b22;">^^geo:</span><span style="color: #008b8b;">wktLiteral</span>; <span style="color: #b22222;"># negative Latitude indicates invalid observation</span>
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">HDOP</span>      2.9;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">hasGpsFix</span> true;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span>      0.260;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>      0.812;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RE</span>        20.257;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR</span>       34.606;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED</span>       3.556;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDRE</span>   0.325;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDV</span>    0.894;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDRE</span>   0.185;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDVI</span>   0.714;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDRE</span>   2.93E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDVI</span>   3.350E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDRE</span>    0.112;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDVI</span>    <span style="color: #228b22;">4.130E-2.</span>
+<span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:57/3&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span>Observation
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">dataSet</span>    <span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">dateTime</span>  <span style="color: #8b2252;">"2018-05-23T12:04:57"</span><span style="color: #008b8b;">^^xsd:dateTime</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position</span>  <span style="color: #8b2252;">"Point Z(37.817 22.590 283.899)"</span><span style="color: #228b22;">^^geo:</span><span style="color: #008b8b;">wktLiteral</span>; <span style="color: #b22222;"># valid observation</span>
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">HDOP</span>      2.299;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">hasGpsFix</span> true;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDRE</span>      0.242;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>      0.739;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RE</span>        20.530;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR</span>       33.792;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED</span>       5.118;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDRE</span>   0.352;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MAXNDV</span>    0.865;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDRE</span>   -0.221;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">MINNDVI</span>   -4.270E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDRE</span>   5.269E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">STDNDVI</span>   0.116;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDRE</span>    0.216;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">CVNDVI</span>    0.157.
+</pre>
+</div>
+
+<p>
+<code>2. Fasoulis_Geotrisi_SpectroSense_230518.xlsx</code>
+</p>
+<table border="1" cellspacing="0" cellpadding="2" rules="all" frame="box">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">Northing</td>
+<td class="org-right">Easting</td>
+<td class="org-right">Time</td>
+<td class="org-right">Date</td>
+<td class="org-right">REDi</td>
+<td class="org-right">NIRi</td>
+<td class="org-right">REDr</td>
+<td class="org-right">NIRr</td>
+<td class="org-right">RED</td>
+<td class="org-right">NIR</td>
+<td class="org-right">NDVI</td>
+<td class="org-right">LAI</td>
+</tr>
+
+<tr>
+<td class="org-right">37.816</td>
+<td class="org-right">22.590</td>
+<td class="org-right">0.464</td>
+<td class="org-right">0.962</td>
+<td class="org-right">66.34</td>
+<td class="org-right">59.638</td>
+<td class="org-right">1.778</td>
+<td class="org-right">5.401</td>
+<td class="org-right">2.681E-2</td>
+<td class="org-right">9.057E-2</td>
+<td class="org-right">0.543</td>
+<td class="org-right">0.427</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Here both date and time are represented in some invalid Excel format and need to be fixed prior to conversion</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2/2018-05-23T12:04:57/1&gt;</span> <span style="color: #a020f0;">a</span> <span style="color: #228b22;">qb:</span>Observation
+  <span style="color: #228b22;">qb:</span><span style="color: #008b8b;">dataSet</span>    <span style="color: #0000ff;">&lt;data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2&gt;</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">dateTime</span>  <span style="color: #8b2252;">"2018-05-23T12:04:57"</span><span style="color: #008b8b;">^^xsd:dateTime</span>;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">position</span>  <span style="color: #8b2252;">""</span><span style="color: #228b22;">"</span><span style="color: #0000ff;">&lt;http://www.opengis.net/def/crs/EPSG/0/32634&gt;</span><span style="color: #8b2252;"> </span>
+<span style="color: #8b2252;">                   Point(37.816 </span><span style="color: #228b22;">22.590)</span><span style="color: #8b2252;">""</span><span style="color: #228b22;">"^^geo:</span><span style="color: #008b8b;">wktLiteral</span>; <span style="color: #b22222;"># </span><span style="color: #228b22;">TODO:</span><span style="color: #008b8b;"> non-default</span><span style="color: #b22222;"> CRS not supported by GraphDB in WKT</span>
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDi</span>      66.34;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRi</span>      59.638;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">REDr</span>      1.778;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIRr</span>      5.401;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">RED</span>       2.681E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NIR</span>       9.057E-2;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">NDVI</span>      0.543;
+  <span style="color: #228b22;">bdg:</span><span style="color: #008b8b;">LAI</span>       0.427.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2019-01-03 Thu 00:00</p>
+<p class="author">Author: Vladimir Alexiev</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

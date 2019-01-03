@@ -1,0 +1,482 @@
+bdg:plot a qb4st:RefArea;
+  rdfs:label "Plot"; rdfs:comment "Plot (sub-estate) of a measurement";
+  qb:concept sdmx-concept:refArea;
+  rdfs:range bdg:Plot.
+
+bdg:dateTime a qb:DimensionProperty;
+  rdfs:label "Date-time"; rdfs:comment "Date-time of the observation";
+  qb:concept sdmx-concept:timePeriod;
+  rdfs:range xsd:dateTime.
+
+bdg:sensor a qb:DimensionProperty;
+  rdfs:label "Sensor"; rdfs:comment "Sensor/Instrument that took the observation";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range ssn:Sensor.
+
+bdg:position a qb4st:SpatialDimension;
+  rdfs:label "Position"; rdfs:comment "A GeoSPARQL literal";
+  qb:concept sdmx-concept:refArea;
+  rdfs:subPropertyOf geo:hasSerialization;
+  schema:rangeIncludes geo:wktLiteral, geo:gmlLiteral.
+
+bdg:hasGpsFix a qb:AttributeProperty;
+  rdfs:label "Has GPS fix"; rdfs:comment "If the measurement doesn't have a GPS fix, it is invalid and should be discarded";
+  qb:concept sdmx-concept:obsStatus; # Information on the quality of a value or an unusual or missing value
+  rdfs:range xsd:boolean.
+
+bdg:satellites a qb:AttributeProperty;
+  rdfs:label "Satellites"; rdfs:comment "Number of tracked satellites that provided the GPS fix";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range xsd:int.
+
+bdg:HDOP a qb:AttributeProperty;
+  skos:notation "HDOP"; rdfs:label "Horizontal dilution of precision"; rdfs:comment """GPS reception quality:
+<1 Ideal, 1-2 Excellent, 2-5 Good, 5-10 Moderate, 10-20 Fair, >20 Poor""";
+  sdmx-concept:dataValSource; #: discrepancies and other problems related to source data
+  rdfs:range xsd:int.
+
+bdg:positionQuality a qb:AttributeProperty, qb:CodedProperty;
+  qb:codeList bdg-code:positionQuality;
+  sdmx-concept:dataValSource; #: discrepancies and other problems related to source data
+  rdfs:label "Position quality"; rdfs:comment "GPS position quality";
+  rdfs:range bdg-code:PositionQuality.
+bdg-code:PositionQuality a rdfs:Class;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Position Quality codelist class"; rdfs:comment "Provides code values for Position Quality";
+  rdfs:seeAlso bdg-code:positionQuality .
+bdg-code:positionQuality a skos:ConceptScheme;
+  rdfs:label "Position Quality codelist scheme"; rdfs:comment "Provides code values for Position Quality";
+  rdfs:seeAlso bdg-code:PositionQuality .
+bdg-code:positionQuality-0 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "0"; skos:prefLabel "no position";
+  skos:scopeNote "Observations without position should be discarded".
+bdg-code:positionQuality-1 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "1"; skos:prefLabel "raw, not differentially corrected position".
+bdg-code:positionQuality-2 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "2"; skos:prefLabel "differentially corrected position".
+bdg-code:positionQuality-9 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "9"; skos:prefLabel "position computed using almanac information)".
+
+<feature/Soil>   a sosa:FeatureOfInterest; rdfs:label "Soil".
+<feature/Canopy> a sosa:FeatureOfInterest; rdfs:label "Canopy"; rdfs:description "The leaf mass of some crop".
+
+sosa:hasFeatureOfInterest a qb:MeasureProperty.
+
+bdg:measurementContext a qb:AttributeProperty;
+  qb:codeList <measurementContext>;
+  rdfs:range bdg:MeasurementContext.
+
+bdg:MeasurementContext a rdfs:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Measurement Context - codelist class".
+
+<measurementContext> a skos:conceptScheme;
+  rdfs:label "Measurement Context - codelist scheme".
+
+<feature/Soil/separation-1m>   a skos:Concept; bdg:MeasurementContext;
+  skos:inScheme <measurementContext>; skos:topConceptOf <measurementContext>;
+  rdfs:label "Soil, separation 1m".
+<feature/Soil/separation-0.5m> a skos:Concept; bdg:MeasurementContext;
+  skos:inScheme <measurementContext>; skos:topConceptOf <measurementContext>;
+  rdfs:label "Soil, separation 0.5m".
+
+bdg:CV1m a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Soil Electric Conductivity, separation 1m";
+  skos:notation              "CV1m";
+  sosa:hasFeatureOfInterest  <feature/Soil>;
+  bdg:measurementContext     <feature/Soil/separation-1m>;
+  qudt:hasQuantityKind       quantitykind:ElectricConductivity;
+  sdmx-attribute:unitMeasure unit:S-PER-M; # Siemens per meter
+  sdmx-attribute:unitMult    unit:Milli; # 10^-3
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:CV05m a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Soil Electric Conductivity, separation 0.5m";
+  skos:notation              "CV0.5m";
+  sosa:hasFeatureOfInterest  <feature/Soil>;
+  bdg:measurementContext     <feature/Soil/separation-0.5m>;
+  qudt:hasQuantityKind       quantitykind:ElectricConductivity.
+  sdmx-attribute:unitMeasure unit:S-PER-M # Siemens per meter
+  sdmx-attribute:unitMult    unit:Milli; # 10^-3
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:NIRi a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "NIR Incident";
+  skos:notation              "NIRi";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NIRr a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "NIR Reflected";
+  skos:notation              "NIRr";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:RE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Red Edge";
+  skos:notation              "RE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:REDi a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "RED Incident";
+  skos:notation              "REDi";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:REDr a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "RED Reflected";
+  skos:notation              "REDr";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:LAI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Leaf Area Index";
+  skos:notation              "LAI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "0.014*(exp(6.192*NDVI)";
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Normalized Difference Red Edge Index";
+  skos:notation              "NDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "(NIR-RE)/(NIR+RE)";
+  bdg:derivedFrom            bdg:NIR, bdg:RE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Normalized Difference Vegetation Index";
+  skos:notation              "NDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "(NIR-RED)/(NIR+RED)";
+  bdg:derivedFrom            bdg:NIR, bdg:RED;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NIR a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Near Infrared";
+  skos:notation              "NIR";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "NIRr/NIRi";
+  bdg:derivedFrom            bdg:NIRr, bdg:NIRi;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:RED a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Red spectrum";
+  skos:notation              "RED";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "REDr/REDi";
+  bdg:derivedFrom            bdg:REDr, bdg:REDi;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:CVNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Coefficient of variation NDRE";
+  skos:notation              "CVNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/CoefficientOfVariation>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:CVNDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Coefficient of variation NDVI";
+  skos:notation              "CVNDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/CoefficientOfVariation>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MAXNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Maximum value NDRE";
+  skos:notation              "MAXNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Maximum>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MAXNDV a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Maximum value NDVI";
+  skos:notation              "MAXNDV";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Maximum>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MINNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Minimum value NDRE";
+  skos:notation              "MINNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Minimum>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MINNDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Minimum value NDVI";
+  skos:notation              "MINNDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Minimum>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:STDNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Standard deviation NDRE";
+  skos:notation              "STDNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/StandardDeviation>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:STDNDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Standard deviation NDVI";
+  skos:notation              "STDNDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/StandardDeviation>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:statisticalSummary a qb:AttributeProperty, qb:CodedProperty;
+  rdfs:label "Statistical Summary"; rdfs:comment "Summary operation used on a property to derive another";
+  qb:codeList <statisticalSummary>;
+  rdfs:range bdg:StatisticalSummary.
+<statisticalSummary> a skos:ConceptScheme;                         rdfs:label "Statistical Summary - codelist scheme".
+bdg:Statisticalsummary a rdfs:Class; rdfs:subClassOf skos:Concept; rdfs:label "Statistical Summary - codelist class".
+<statisticalSummary/Minimum> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Minimum".
+<statisticalSummary/Maximum> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Maximum".
+<statisticalSummary/CoefficientOfVariation> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Coefficient of variation";
+<statisticalSummary/StandardDeviation> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Maximum".
+
+<sensor/RTK-GPS> a sosa:Sensor; rdfs:label "RTK GPS";
+  sosa:observes bdg:position.
+<sensor/EM38-mk2> a sosa:Sensor; rdfs:label "EM38 mk2";
+  sosa:observes bdg:position, bdg:positionQuality, bdg:satellite, bdg:HDOP, bdg:CV1m, bdg:CV05m.
+<sensor/RapidScan-CS-45> a sosa:Sensor; rdfs:label "RapidScan CS-45";
+  sosa:observes bdg:position, bdg:HDOP, bdg:hasGpsFix, bdg:NDRE, bdg:NDVI, bdg:RE, bdg:NIR, bdg:RED, bdg:MAXNDRE, bdg:MAXNDV, bdg:MINNDRE, bdg:MINNDVI, bdg:STDNDRE, bdg:STDNDVI, bdg:CVNDRE, bdg:CVNDVI.
+<sensor/SpectroSense-2> a sosa:Sensor; rdfs:label "SpectroSense 2+";
+  sosa:observes bdg:position, bdg:REDi, bdg:NIRi, bdg:REDr, bdg:NIRr, bdg:RED, bdg:NIR, bdg:NDVI, bdg:LAI.
+
+bdg:Estate a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
+  rdfs:label "Estate"; rdfs:comment "Grape producing estate".
+bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
+  rdfs:label "Plot";   rdfs:comment "Part of an estate on which measurements are conducted".
+
+<AUA/estate/Fasoulis> a bdg:Estate; rdfs:label "Fasoulis".
+<AUA/estate/Fasoulis/Geotrisi> a bdg:Plot; rdfs:label "Fasoulis-Geotrisi";
+  geo:sfWithin <AUA/estate/Fasoulis>.
+
+<AUA/estate/Fasoulis/Geotrisi> geo:hasGeometry <AUA/estate/Fasoulis/Geotrisi/geo>.
+<AUA/estate/Fasoulis/Geotrisi/geo> a geo:Geometry;
+  qb4st:crs crs-epsg:32634;
+  geo:asWKT """<http://www.opengis.net/def/crs/EPSG/0/32634>
+     Polygon Z ((
+       4186414.498 639833.509 297.154,
+       4186380.300 639865.047 297.726,
+       4186404.724 639931.511 298.354,
+       4186437.593 639900.538 297.565,
+       4186436.262 639898.365 297.644,
+       4186444.820 639890.154 297.424,
+       4186414.498 639833.509 297.154
+     ))
+  """^^geo:wktLiteral.
+
+<AUA/estate/Fasoulis/Geotrisi/geo2> a geo:Geometry;
+  qb4st:crs crs-ogc:CRS84;
+  geo:asWKT """
+     Polygon Z ((
+       37.414498 22.33509 297.154,
+       37.380300 22.65047 297.726,
+       37.404724 22.31511 298.354,
+       37.437593 22.00538 297.565,
+       37.436262 22.98365 297.644,
+       37.444820 22.90154 297.424,
+       37.414498 22.33509 297.154
+     ))
+  """^^geo:wktLiteral.
+
+<DSD/EM38-mk2> a qb:DataStructureDefinition;
+  qb:component
+    [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:sensor                 ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:position], # including Elevation, which is ignored for comparison
+    [qb:dimension bdg:dateTime],
+    [qb:attribute bdg:positionQuality],
+    [qb:attribute bdg:satellites],
+    [qb:attribute bdg:HDOP],
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute bdg:measurementContext     ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMult    ; qb:componentAttachment qb:MeasureProperty],
+    [qb:measure   bdg:CV1m],
+    [qb:measure   bdg:CV05m];
+<DSD/RapidScan-CS-45> a qb:DataStructureDefinition;
+  qb:component
+    [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:sensor                 ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:position], # including Elevation, which is ignored for comparison
+    [qb:dimension bdg:dateTime],
+    [qb:attribute bdg:HDOP],
+    [qb:attribute bdg:hasGpsFix],
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:measure   bdg:NDRE],
+    [qb:measure   bdg:NDVI],
+    [qb:measure   bdg:RE],
+    [qb:measure   bdg:NIR],
+    [qb:measure   bdg:RED],
+    [qb:measure   bdg:MAXNDRE],
+    [qb:measure   bdg:MAXNDV],
+    [qb:measure   bdg:MINNDRE],
+    [qb:measure   bdg:MINNDVI],
+    [qb:measure   bdg:STDNDRE],
+    [qb:measure   bdg:STDNDVI],
+    [qb:measure   bdg:CVNDRE],
+    [qb:measure   bdg:CVNDVI].
+<DSD/SpectroSense-2> a qb:DataStructureDefinition;
+  qb:component
+    [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:sensor                 ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:position], # in Northing/Easting, or converted to CRS84 lat/long
+    [qb:dimension bdg:dateTime],
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:measure   bdg:REDi],
+    [qb:measure   bdg:NIRi],
+    [qb:measure   bdg:REDr],
+    [qb:measure   bdg:NIRr],
+    [qb:measure   bdg:RED],
+    [qb:measure   bdg:NIR],
+    [qb:measure   bdg:NDVI],
+    [qb:measure   bdg:LAI].
+
+<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2> a qb:DataSet;
+  rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor EM38-mk2";
+  bdg:sensor <sensor/EM38-mk2>
+  bdg:plot <estate/Fasoulis/Geotrisi>;
+  qb:structure <DSD/EM38-mk2>.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45> a qb:DataSet;
+  rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor RapidScan CS-45";
+  bdg:sensor <sensor/RapidScan-CS-45>
+  bdg:plot <estate/Fasoulis/Geotrisi>;
+  qb:structure <DSD/RapidScan-CS-45>.
+<data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2> a qb:DataSet;
+  rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor SpectroSense 2+";
+  bdg:sensor <sensor/SpectroSense-2>
+  bdg:plot <estate/Fasoulis/Geotrisi>;
+  qb:structure <DSD/SpectroSense-2>.
+
+<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/1> a qb:Observation
+  qb:dataSet          <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2>;
+  bdg:position        "Point Z(22.590 37.816 299.612)"^^geo:wktLiteral;
+  bdg:dateTime        "2018-05-23T12:26:30"^^xsd:dateTime;
+  bdg:positionQuality <positionQuality-1>;
+  bdg:satellites      12;
+  bdg:HDOP            0.69;
+  bdg:CV1m            144.699;
+  bdg:CV05m           106.74.
+
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:46/1> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:46"^^xsd:dateTime;
+# bdg:position  "Point Z(---.------- ---.------- ---)"^^geo:wktLiteral; # this invalid literal must not be formed!
+# bdg:HDOP      ---;                                                    # this invalid literal must not be formed!
+# bdg:hasGpsFix false;                                                  # thus the observation is invalid
+  bdg:NDRE      0.274;
+  bdg:NDVI      0.817;
+  bdg:RE        20.099;
+  bdg:NIR       35.383;
+  bdg:RED       3.512;
+  bdg:MAXNDRE   0.367;
+  bdg:MAXNDV    0.897;
+  bdg:MINNDRE   0.127;
+  bdg:MINNDVI   0.492;
+  bdg:STDNDRE   4.65E-2;
+  bdg:STDNDVI   6.759E-2;
+  bdg:CVNDRE    0.169;
+  bdg:CVNDVI    8.260E-2.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:54/2> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:54"^^xsd:dateTime;
+  bdg:position  "Point Z(37.817 22.589 -34.799)"^^geo:wktLiteral; # negative Latitude indicates invalid observation
+  bdg:HDOP      2.9;
+  bdg:hasGpsFix true;
+  bdg:NDRE      0.260;
+  bdg:NDVI      0.812;
+  bdg:RE        20.257;
+  bdg:NIR       34.606;
+  bdg:RED       3.556;
+  bdg:MAXNDRE   0.325;
+  bdg:MAXNDV    0.894;
+  bdg:MINNDRE   0.185;
+  bdg:MINNDVI   0.714;
+  bdg:STDNDRE   2.93E-2;
+  bdg:STDNDVI   3.350E-2;
+  bdg:CVNDRE    0.112;
+  bdg:CVNDVI    4.130E-2.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:57/3> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:57"^^xsd:dateTime;
+  bdg:position  "Point Z(37.817 22.590 283.899)"^^geo:wktLiteral; # valid observation
+  bdg:HDOP      2.299;
+  bdg:hasGpsFix true;
+  bdg:NDRE      0.242;
+  bdg:NDVI      0.739;
+  bdg:RE        20.530;
+  bdg:NIR       33.792;
+  bdg:RED       5.118;
+  bdg:MAXNDRE   0.352;
+  bdg:MAXNDV    0.865;
+  bdg:MINNDRE   -0.221;
+  bdg:MINNDVI   -4.270E-2;
+  bdg:STDNDRE   5.269E-2;
+  bdg:STDNDVI   0.116;
+  bdg:CVNDRE    0.216;
+  bdg:CVNDVI    0.157.
+
+<data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2/2018-05-23T12:04:57/1> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2>;
+  bdg:dateTime  "2018-05-23T12:04:57"^^xsd:dateTime;
+  bdg:position  """<http://www.opengis.net/def/crs/EPSG/0/32634> 
+                   Point(37.816 22.590)"""^^geo:wktLiteral; # TODO: non-default CRS not supported by GraphDB in WKT
+  bdg:REDi      66.34;
+  bdg:NIRi      59.638;
+  bdg:REDr      1.778;
+  bdg:NIRr      5.401;
+  bdg:RED       2.681E-2;
+  bdg:NIR       9.057E-2;
+  bdg:NDVI      0.543;
+  bdg:LAI       0.427.

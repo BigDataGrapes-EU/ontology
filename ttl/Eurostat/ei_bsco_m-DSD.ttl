@@ -1,0 +1,469 @@
+@prefix gaap:         <http://edgarwrap.ontologycentral.com/vocab/us-gaap#> .
+@prefix etstat:       <http://ontologycentral.com/2009/01/eurostat/ns#>
+@prefix dcterms:      <http://purl.org/dc/terms/> .
+@prefix qb:           <http://purl.org/linked-data/cube#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix common:       <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common> .
+@prefix compact:      <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact> .
+@prefix cross:        <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross> .
+@prefix generic:      <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic> .
+@prefix sdmx:         <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message> .
+@prefix query:        <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query> .
+@prefix structure:    <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure> .
+@prefix utility:      <http://www.SDMX.org/resources/SDMXML/schemas/v2_0/utility> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsi:          <http://www.w3.org/2001/XMLSchema-instance> .
+@prefix ical:         <http://www.w3.org/2002/12/cal/ical#> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+
+<ei_bsco_m.rdf#dsd>
+        a             qb:DataStructureDefinition ;
+        qb:component  [ qb:attribute  estat:freq ] ;
+        qb:component  [ qb:attribute  estat:geo ] ;
+        qb:component  [ qb:attribute  estat:obs_status ] ;
+        qb:component  [ qb:attribute  estat:timeformat ] ;
+        qb:component  [ qb:dimension  dcterms:date ] ;
+        qb:component  [ qb:dimension  estat:indic ] ;
+        qb:component  [ qb:dimension  estat:s_adj ] ;
+        qb:component  [ qb:dimension  estat:unit ] ;
+        qb:component  [ qb:measure    sdmx-measure:obsValue ] ;
+        foaf:page     <ei_bsco_m.rdf> .
+
+<dic/freq#A>  a  skos:Concept ;
+        rdfs:label     "Annual"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#B>  a  skos:Concept ;
+        rdfs:label     "Business week"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#D>  a  skos:Concept ;
+        rdfs:label     "Daily"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#H>  a  skos:Concept ;
+        rdfs:label     "Hourly"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#M>  a  skos:Concept ;
+        rdfs:label     "Monthly"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#N>  a  skos:Concept ;
+        rdfs:label     "Minutely"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#Q>  a  skos:Concept ;
+        rdfs:label     "Quarterly"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#S>  a  skos:Concept ;
+        rdfs:label     "Half-yearly, semester"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/freq#W>  a  skos:Concept ;
+        rdfs:label     "Weekly"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_freq> .
+
+<dic/geo#AT>  a  skos:Concept ;
+        rdfs:label     "Autriche"@fr , "Österreich"@de , "Austria"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#BE>  a  skos:Concept ;
+        rdfs:label     "Belgique"@fr , "Belgien"@de , "Belgium"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#BG>  a  skos:Concept ;
+        rdfs:label     "Bulgarie"@fr , "Bulgarien"@de , "Bulgaria"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#CY>  a  skos:Concept ;
+        rdfs:label     "Chypre"@fr , "Zypern"@de , "Cyprus"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#CZ>  a  skos:Concept ;
+        rdfs:label     "Tchéquie"@fr , "Tschechien"@de , "Czechia"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#DE>  a  skos:Concept ;
+        rdfs:label     "Allemagne (jusqu'en 1990, ancien territoire de la RFA)"@fr , "Deutschland (bis 1990 früheres Gebiet der BRD)"@de , "Germany (until 1990 former territory of the FRG)"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#DK>  a  skos:Concept ;
+        rdfs:label     "Danemark"@fr , "Dänemark"@de , "Denmark"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#EA19>
+        a              skos:Concept ;
+        rdfs:label     "Zone euro (19 pays)"@fr , "Euroraum (19 Länder)"@de , "Euro area (19 countries)"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#TR>  a  skos:Concept ;
+        rdfs:label     "Turquie"@fr , "Türkei"@de , "Turkey"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#EE>  a  skos:Concept ;
+        rdfs:label     "Estonie"@fr , "Estland"@de , "Estonia"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#EL>  a  skos:Concept ;
+        rdfs:label     "Grèce"@fr , "Griechenland"@de , "Greece"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#ES>  a  skos:Concept ;
+        rdfs:label     "Espagne"@fr , "Spanien"@de , "Spain"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#EU28>
+        a              skos:Concept ;
+        rdfs:label     "Union européenne (composition actuelle)"@fr , "Europäische Union (derzeitige Zusammensetzung)"@de , "European Union (current composition)"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#FI>  a  skos:Concept ;
+        rdfs:label     "Finlande"@fr , "Finnland"@de , "Finland"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#FR>  a  skos:Concept ;
+        rdfs:label     "France"@fr , "Frankreich"@de , "France"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#HR>  a  skos:Concept ;
+        rdfs:label     "Croatie"@fr , "Kroatien"@de , "Croatia"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#HU>  a  skos:Concept ;
+        rdfs:label     "Hongrie"@fr , "Ungarn"@de , "Hungary"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#IE>  a  skos:Concept ;
+        rdfs:label     "Irlande"@fr , "Irland"@de , "Ireland"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#IT>  a  skos:Concept ;
+        rdfs:label     "Italie"@fr , "Italien"@de , "Italy"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#LT>  a  skos:Concept ;
+        rdfs:label     "Lituanie"@fr , "Litauen"@de , "Lithuania"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#LU>  a  skos:Concept ;
+        rdfs:label     "Luxembourg"@fr , "Luxemburg"@de , "Luxembourg"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#LV>  a  skos:Concept ;
+        rdfs:label     "Lettonie"@fr , "Lettland"@de , "Latvia"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#ME>  a  skos:Concept ;
+        rdfs:label     "Monténégro"@fr , "Montenegro"@de , "Montenegro"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#MK>  a  skos:Concept ;
+        rdfs:label     "Ancienne République yougoslave de Macédoine"@fr , "Die ehemalige jugoslawische Republik Mazedonien"@de , "Former Yugoslav Republic of Macedonia, the"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#MT>  a  skos:Concept ;
+        rdfs:label     "Malte"@fr , "Malta"@de , "Malta"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#NL>  a  skos:Concept ;
+        rdfs:label     "Pays-Bas"@fr , "Niederlande"@de , "Netherlands"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#PL>  a  skos:Concept ;
+        rdfs:label     "Pologne"@fr , "Polen"@de , "Poland"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#PT>  a  skos:Concept ;
+        rdfs:label     "Portugal"@fr , "Portugal"@de , "Portugal"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#RO>  a  skos:Concept ;
+        rdfs:label     "Roumanie"@fr , "Rumänien"@de , "Romania"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#RS>  a  skos:Concept ;
+        rdfs:label     "Serbie"@fr , "Serbien"@de , "Serbia"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#SE>  a  skos:Concept ;
+        rdfs:label     "Suède"@fr , "Schweden"@de , "Sweden"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#SI>  a  skos:Concept ;
+        rdfs:label     "Slovénie"@fr , "Slowenien"@de , "Slovenia"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#SK>  a  skos:Concept ;
+        rdfs:label     "Slovaquie"@fr , "Slowakei"@de , "Slovakia"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/geo#UK>  a  skos:Concept ;
+        rdfs:label     "Royaume-Uni"@fr , "Vereinigtes Königreich"@de , "United Kingdom"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_geo> .
+
+<dic/indic#BS-CSMCI>
+        a              skos:Concept ;
+        rdfs:label     "Consommateur, indicateur de confiance"@fr , "Verbraucher, Vertrauensindikator"@de , "Consumer confidence indicator"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-FS-LY>
+        a              skos:Concept ;
+        rdfs:label     "Situation financière au cours des 12 derniers mois"@fr , "Finanzielle Lage der letzten 12 Monaten"@de , "Financial situation over the last 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-FS-NY>
+        a              skos:Concept ;
+        rdfs:label     "Situation financière au cours des 12 prochains mois"@fr , "Finanzielle Lage der nächsten 12 Monaten"@de , "Financial situation over the next 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-GES-LY>
+        a              skos:Concept ;
+        rdfs:label     "Situation économique générale au cours des 12 derniers mois"@fr , "Allgemeine Wirtschaftslage in den letzten 12 Monaten"@de , "General economic situation over the last 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-GES-NY>
+        a              skos:Concept ;
+        rdfs:label     "Situation économique générale au cours des 12 prochains mois"@fr , "Allgemeine Wirtschaftslage in den nächsten 12 Monaten"@de , "General economic situation over the next 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-MP-NY>
+        a              skos:Concept ;
+        rdfs:label     "Achats importants prévus dans les 12 prochains mois"@fr , "Künftige größere Anschaffungen vorgesehen für die nächsten 12 Monaten"@de , "Major purchases over the next 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-MP-PR>
+        a              skos:Concept ;
+        rdfs:label     "La conjoncture économique est adéquate pour les achats importants"@fr , "Derzeitige größere Anschaffungen"@de , "The current economic situation is adequate to make major  purchases"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-PT-LY>
+        a              skos:Concept ;
+        rdfs:label     "Evolution des prix au cours des 12 derniers mois"@fr , "Preise in den letzten 12 Monaten"@de , "Price trends over the last 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-PT-NY>
+        a              skos:Concept ;
+        rdfs:label     "Evolution probable des prix au cours des 12 prochains mois"@fr , "Preise in den nächsten 12 Monaten"@de , "Price trends over the next 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-SFSH>
+        a              skos:Concept ;
+        rdfs:label     "Situation financière actuelle du ménage"@fr , "Finanzielle derzeitige Lage des Haushaltes"@de , "Statement on financial situation of household"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-SV-NY>
+        a              skos:Concept ;
+        rdfs:label     "Epargne au cours des 12 prochains mois"@fr , "Ersparnisse in den nächsten 12 Monaten"@de , "Savings over the next 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-SV-PR>
+        a              skos:Concept ;
+        rdfs:label     "La conjoncture économique est adéquate pour l'épargne"@fr , "Aktuelle Ersparnisse"@de , "The current economic situation is adequate for savings"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/indic#BS-UE-NY>
+        a              skos:Concept ;
+        rdfs:label     "Evolution probable du chômage au cours des 12 prochains mois"@fr , "Arbeitslosigkeit in den nächsten 12 Monaten"@de , "Unemployment expectations over the next 12 months"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_indic> .
+
+<dic/obs_status#b>
+        a              skos:Concept ;
+        rdfs:label     "rupture de série"@fr , "Zeitreihenbruch"@de , "break in time series"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#c>
+        a              skos:Concept ;
+        rdfs:label     "confidentiel"@fr , "vertraulich"@de , "confidential"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#d>
+        a              skos:Concept ;
+        rdfs:label     "définition différente (voir métadonnées)"@fr , "abweichende Definition (siehe Metadaten)"@de , "definition differs (see metadata)"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#e>
+        a              skos:Concept ;
+        rdfs:label     "estimé"@fr , "geschätzt"@de , "estimated"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#f>
+        a              skos:Concept ;
+        rdfs:label     "prévision"@fr , "Prognose"@de , "forecast"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#n>
+        a              skos:Concept ;
+        rdfs:label     "non significatif"@fr , "unbedeutend"@de , "not significant"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#p>
+        a              skos:Concept ;
+        rdfs:label     "provisoire"@fr , "vorläufig"@de , "provisional"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#r>
+        a              skos:Concept ;
+        rdfs:label     "révisé"@fr , "revidiert"@de , "revised"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#s>
+        a              skos:Concept ;
+        rdfs:label     "estimation Eurostat"@fr , "Eurostat Schätzung"@de , "Eurostat estimate"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#u>
+        a              skos:Concept ;
+        rdfs:label     "peu fiable"@fr , "geringe Zuverlässigkeit"@de , "low reliability"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/obs_status#z>
+        a              skos:Concept ;
+        rdfs:label     "non applicable"@fr , "nicht zutreffend"@de , "not applicable"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_obs_status> .
+
+<dic/s_adj#NSA>
+        a              skos:Concept ;
+        rdfs:label     "Données non ajustées (c.à.d. ni désaisonnalisées ni corrigées des effets de calendrier)"@fr , "Unbereinigte Daten (d.h. weder saisonbereinigte noch kalenderbereinigte Daten)"@de , "Unadjusted data (i.e. neither seasonally adjusted nor calendar adjusted data)"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_s_adj> .
+
+<dic/s_adj#SA>
+        a              skos:Concept ;
+        rdfs:label     "Données désaisonnalisées, données non corrigées des effets de calendrier"@fr , "Saisonbereinigte Daten, nicht kalenderbereinigte Daten"@de , "Seasonally adjusted data, not calendar adjusted data"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_s_adj> .
+
+<dic/time_format#P1D>
+        a              skos:Concept ;
+        rdfs:label     "Daily"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_time_format> .
+
+<dic/time_format#P1M>
+        a              skos:Concept ;
+        rdfs:label     "Monthly"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_time_format> .
+
+<dic/time_format#P1Y>
+        a              skos:Concept ;
+        rdfs:label     "Annual"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_time_format> .
+
+<dic/time_format#P3M>
+        a              skos:Concept ;
+        rdfs:label     "Quarterly"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_time_format> .
+
+<dic/time_format#P6M>
+        a              skos:Concept ;
+        rdfs:label     "Semi-annual"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_time_format> .
+
+<dic/time_format#P7D>
+        a              skos:Concept ;
+        rdfs:label     "Weekly"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_time_format> .
+
+<dic/time_format#PT1M>
+        a              skos:Concept ;
+        rdfs:label     "Minutely"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_time_format> .
+
+<dic/unit#BAL>
+        a              skos:Concept ;
+        rdfs:label     "Bilan (solde)"@fr , "Bilanz (Saldo)"@de , "Balance"@en ;
+        skos:inScheme  <ei_bsco_m.rdf#cl_unit> .
+
+<ei_bsco_m.rdf#cl_freq>
+        a                   skos:ConceptScheme ;
+        rdfs:label          "Frequency code list"@en ;
+        skos:hasTopConcept  <dic/freq#M> , <dic/freq#S> , <dic/freq#W> , <dic/freq#A> , <dic/freq#Q> , <dic/freq#D> , <dic/freq#H> , <dic/freq#N> , <dic/freq#B> ;
+        skos:notation       "cl_freq" .
+
+<ei_bsco_m.rdf#cl_geo>
+        a                   skos:ConceptScheme ;
+        rdfs:label          "Entité géopolitique (déclarante)"@fr , "Geopolitical entity (reporting)"@en , "Geopolitische Meldeeinheit"@de ;
+        skos:hasTopConcept  <dic/geo#LT> , <dic/geo#CY> , <dic/geo#IT> , <dic/geo#DE> , <dic/geo#BG> , <dic/geo#FI> , <dic/geo#TR> , <dic/geo#EL> , <dic/geo#MK> , <dic/geo#LV> , <dic/geo#RS> , <dic/geo#EA19> , <dic/geo#EE> , <dic/geo#AT> , <dic/geo#HR> , <dic/geo#ME> , <dic/geo#SI> , <dic/geo#MT> , <dic/geo#LU> , <dic/geo#NL> , <dic/geo#CZ> , <dic/geo#ES> , <dic/geo#EU28> , <dic/geo#SE> , <dic/geo#FR> , <dic/geo#RO> , <dic/geo#BE> , <dic/geo#SK> , <dic/geo#UK> , <dic/geo#PL> , <dic/geo#HU> , <dic/geo#DK> , <dic/geo#PT> , <dic/geo#IE> ;
+        skos:notation       "cl_geo" .
+
+<ei_bsco_m.rdf#cl_indic>
+        a                   skos:ConceptScheme ;
+        rdfs:label          "Indicator"@en , "Indikator"@de , "Indicateur"@fr ;
+        skos:hasTopConcept  <dic/indic#BS-SV-PR> , <dic/indic#BS-FS-NY> , <dic/indic#BS-GES-LY> , <dic/indic#BS-MP-PR> , <dic/indic#BS-PT-LY> , <dic/indic#BS-SV-NY> , <dic/indic#BS-SFSH> , <dic/indic#BS-MP-NY> , <dic/indic#BS-GES-NY> , <dic/indic#BS-PT-NY> , <dic/indic#BS-FS-LY> , <dic/indic#BS-UE-NY> , <dic/indic#BS-CSMCI> ;
+        skos:notation       "cl_indic" .
+
+<ei_bsco_m.rdf#cl_obs_status>
+        a                   skos:ConceptScheme ;
+        rdfs:label          "Observation status code list"@en ;
+        skos:hasTopConcept  <dic/obs_status#u> , <dic/obs_status#p> , <dic/obs_status#z> , <dic/obs_status#f> , <dic/obs_status#c> , <dic/obs_status#r> , <dic/obs_status#e> , <dic/obs_status#b> , <dic/obs_status#s> , <dic/obs_status#n> , <dic/obs_status#d> ;
+        skos:notation       "cl_obs_status" .
+
+<ei_bsco_m.rdf#cl_s_adj>
+        a                   skos:ConceptScheme ;
+        rdfs:label          "Désaisonnalisation"@fr , "Saisonbereinigung"@de , "Seasonal adjustment"@en ;
+        skos:hasTopConcept  <dic/s_adj#SA> , <dic/s_adj#NSA> ;
+        skos:notation       "cl_s_adj" .
+
+<ei_bsco_m.rdf#cl_time_format>
+        a                   skos:ConceptScheme ;
+        rdfs:label          "Time Format"@en ;
+        skos:hasTopConcept  <dic/time_format#P1M> , <dic/time_format#PT1M> , <dic/time_format#P7D> , <dic/time_format#P1D> , <dic/time_format#P3M> , <dic/time_format#P1Y> , <dic/time_format#P6M> ;
+        skos:notation       "cl_time_format" .
+
+<ei_bsco_m.rdf#cl_unit>
+        a                   skos:ConceptScheme ;
+        rdfs:label          "Unité de mesure"@fr , "Maßeinheit"@de , "Unit of measure"@en ;
+        skos:hasTopConcept  <dic/unit#BAL> ;
+        skos:notation       "cl_unit" .
+
+<ei_bsco_m.rdf#header>
+        dcterms:date        "2018-11-29T10:02:52" ;
+        dcterms:identifier  "ei_bsco_m_DSD" .
+
+<ei_bsco_m.rdf>
+        rdfs:comment       "No guarantee of correctness! USE AT YOUR OWN RISK!" ;
+        dcterms:publisher  "Eurostat (http://epp.eurostat.ec.europa.eu/) via Linked Eurostat (http://estatwrap.ontologycentral.com/)" ;
+        foaf:topic         <ei_bsco_m.rdf#dsd> .
+
+estat:freq
+        a            rdfs:Property ;
+        rdfs:range   skos:Concept ;
+        qb:codeList  <ei_bsco_m.rdf#cl_freq> .
+
+estat:geo
+        a            rdfs:Property ;
+        rdfs:range   skos:Concept ;
+        qb:codeList  <ei_bsco_m.rdf#cl_geo> .
+
+estat:indic
+        a            rdfs:Property ;
+        rdfs:range   skos:Concept ;
+        qb:codeList  <ei_bsco_m.rdf#cl_indic> .
+
+estat:obs_status
+        a            rdfs:Property ;
+        rdfs:range   skos:Concept ;
+        qb:codeList  <ei_bsco_m.rdf#cl_obs_status> .
+
+estat:s_adj
+        a            rdfs:Property ;
+        rdfs:range   skos:Concept ;
+        qb:codeList  <ei_bsco_m.rdf#cl_s_adj> .
+
+estat:timeformat
+        a            rdfs:Property ;
+        rdfs:range   skos:Concept ;
+        qb:codeList  <ei_bsco_m.rdf#cl_time_format> .
+
+estat:unit
+        a            rdfs:Property ;
+        rdfs:range   skos:Concept ;
+        qb:codeList  <ei_bsco_m.rdf#cl_unit> .
+
+dcterms:date  a     rdfs:Property ;
+        rdfs:range  <http://www.w3.org/2001/XMLSchema#date> .
+
+sdmx-measure:obsValue
+        a           rdfs:Property ;
+        rdfs:range  <http://www.w3.org/2001/XMLSchema#double> .

@@ -1,0 +1,419 @@
+@prefix afeo:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#>.
+@prefix oae:   <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#>.
+@prefix ofpe:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#>.
+
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://bioportal.bioontology.org/ontologies/URI>
+        owl:versionInfo  "http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo" .
+
+<http://bioportal.bioontology.org/ontologies/versionSubject>
+        owl:versionInfo  "4.1 august 2016"@en .
+
+<http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo>
+        rdfs:comment     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016\nThe Ontology for Agricultural Experiments is licensed by CC 4.0 (http://creativecommons.org/licenses/by/4.0/legalcode)"@en ;
+        dc:creator       "Aunur-Rofiq MULJARTO,  Jean-Michel SALMON, Brigitte CHARNOMORDIC, Patrice BUCH, Anne TIREAU, Pascal NEVEU"@en ;
+        dc:description   "The Agri-Food Experiment Ontology (AFEO), a new ontology network was developed based on two existing ontology resources, i.e., OAE (Ontology for Agriculture Experiment) and OFPE (Ontology for Food Processing Experiment)."@en ;
+        dc:language      "http://www.lexvo.org/page/iso639-3/eng"@en ;
+        dc:publisher     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016"@en ;
+        dc:rights        "http://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+        dc:title         "Agri-Food Experiment Ontology\n(AFEO),"@en ;
+        owl:versionInfo  "4.1 august 2016"@en .
+
+[ a                owl:Ontology ;
+  rdfs:comment     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016\nThe Ontology for Agricultural Experiments is licensed by CC 4.0 (http://creativecommons.org/licenses/by/4.0/legalcode)"@en ;
+  dc:creator       "Aunur-Rofiq MULJARTO,  Jean-Michel SALMON, Brigitte CHARNOMORDIC, Patrice BUCH, Anne TIREAU, Pascal NEVEU"@en ;
+  dc:description   "The Agri-Food Experiment Ontology (AFEO), a new ontology network was developed based on two existing ontology resources, i.e., OAE (Ontology for Agriculture Experiment) and OFPE (Ontology for Food Processing Experiment)."@en ;
+  dc:language      "http://www.lexvo.org/page/iso639-3/eng"@en ;
+  dc:publisher     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016"@en ;
+  dc:rights        "http://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+  dc:title         "Agri-Food Experiment Ontology\n(AFEO),"@en ;
+  owl:versionInfo  "4.1 august 2016"@en
+] .
+
+afeo:Ageing
+        a                owl:Class ;
+        rdfs:label       "ageing"@en ;
+        rdfs:subClassOf  afeo:BiochemicalOperation .
+
+afeo:AlcoholicFermentation
+        a                owl:Class ;
+        rdfs:label       "Alcoholic Fermentation"@en ;
+        rdfs:subClassOf  afeo:Fermentation .
+
+afeo:BacteriaAddition
+        a                owl:Class ;
+        rdfs:subClassOf  afeo:Mixing .
+
+afeo:Bacterium
+        a                owl:Class ;
+        rdfs:label       "Bacterium"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:Bentonite
+        a                owl:Class ;
+        rdfs:label       "Bentonite"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:Berry
+        a                owl:Class ;
+        rdfs:label       "Berry"@en ;
+        rdfs:subClassOf  ofpe:InputProduct .
+
+afeo:BiochemicalOperation
+        a                owl:Class ;
+        rdfs:label       "biochemical operation"@en ;
+        rdfs:subClassOf  ofpe:MainOperation .
+
+afeo:Bottling
+        a                owl:Class ;
+        rdfs:label       "Bottling"@en ;
+        rdfs:subClassOf  afeo:Packaging .
+
+afeo:CarbonicMaceration
+        a                owl:Class ;
+        rdfs:label       "Carbonic Maceration"@en ;
+        rdfs:subClassOf  afeo:Maceration .
+
+afeo:Clarification
+        a                owl:Class ;
+        rdfs:label       "Separation"@en ;
+        rdfs:subClassOf  afeo:Separation .
+
+afeo:Cleaning
+        a                owl:Class ;
+        rdfs:label       "Cleaning"@en ;
+        rdfs:subClassOf  ofpe:PreliminaryOperation .
+
+afeo:ColdMaceration
+        a                owl:Class ;
+        rdfs:label       "Cold Maceration"@en ;
+        rdfs:subClassOf  afeo:Maceration .
+
+afeo:Concentrate
+        a                owl:Class ;
+        rdfs:label       "Concentrate"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:ConventionalMaceration
+        a                owl:Class ;
+        rdfs:label       "Conventional Maceration"@en ;
+        rdfs:subClassOf  afeo:Maceration .
+
+afeo:Crushing
+        a                owl:Class ;
+        rdfs:label       "Crushing"@en ;
+        rdfs:subClassOf  ofpe:MainOperation .
+
+afeo:CubePackaging
+        a                owl:Class ;
+        rdfs:subClassOf  afeo:Packaging .
+
+afeo:Destemming
+        a                owl:Class ;
+        rdfs:label       "Destemming"@en ;
+        rdfs:subClassOf  afeo:Separation .
+
+afeo:DirectPressing
+        a                owl:Class ;
+        rdfs:subClassOf  afeo:Pressing .
+
+afeo:Draining
+        a                owl:Class ;
+        rdfs:label       "Draining"@en ;
+        rdfs:subClassOf  afeo:Separation .
+
+afeo:Dripping
+        a                owl:Class ;
+        rdfs:label       "Dripping"@en ;
+        rdfs:subClassOf  afeo:Separation .
+
+afeo:Enzyme
+        a                owl:Class ;
+        rdfs:label       "Enzyme"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:EnzymeAddition
+        a                owl:Class ;
+        rdfs:label       "Enzyme Addition"@en ;
+        rdfs:subClassOf  afeo:Mixing .
+
+afeo:Fermentation
+        a                owl:Class ;
+        rdfs:label       "Fermentation"@en ;
+        rdfs:subClassOf  afeo:BiochemicalOperation .
+
+afeo:FinishedWine
+        a                owl:Class ;
+        rdfs:label       "Finished Wine"@en ;
+        rdfs:subClassOf  ofpe:CoreProduct .
+
+afeo:FreeRun-Juice
+        a                owl:Class ;
+        rdfs:label       "Free Run-Juice"@en ;
+        rdfs:subClassOf  ofpe:IntermediateProduct .
+
+afeo:Grading
+        a                owl:Class ;
+        rdfs:label       "Grading"@en ;
+        rdfs:subClassOf  ofpe:PreliminaryOperation .
+
+afeo:Grappe
+        a                owl:Class ;
+        rdfs:label       "Grappe"@en ;
+        rdfs:subClassOf  ofpe:InputProduct .
+
+afeo:HeatProcessing
+        a                owl:Class ;
+        rdfs:subClassOf  ofpe:MainOperation .
+
+afeo:HotMaceration
+        a                owl:Class ;
+        rdfs:label       "Hot Maceration"@en ;
+        rdfs:subClassOf  afeo:Maceration .
+
+afeo:Maceration
+        a                owl:Class ;
+        rdfs:label       "Maceration"@en ;
+        rdfs:subClassOf  afeo:Separation .
+
+afeo:MalolacticFermentation
+        a                owl:Class ;
+        rdfs:label       "Malolactic Fermentation"@en ;
+        rdfs:subClassOf  afeo:Fermentation .
+
+afeo:Mixing
+        a                owl:Class ;
+        rdfs:label       "Mixing"@en ;
+        rdfs:subClassOf  ofpe:MainOperation .
+
+afeo:Must
+        a                owl:Class ;
+        rdfs:label       "Must"@en ;
+        rdfs:subClassOf  ofpe:IntermediateProduct .
+
+afeo:Must-AF
+        a                owl:Class ;
+        rdfs:label       "Must-AF"@en ;
+        rdfs:subClassOf  ofpe:IntermediateProduct .
+
+afeo:Nitrogen
+        a                owl:Class ;
+        rdfs:label       "Nitrogen"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:NitrogenAddition
+        a                owl:Class ;
+        rdfs:label       "Nitrogen Addition"@en ;
+        rdfs:subClassOf  afeo:Mixing .
+
+afeo:OtherAdditives
+        a                owl:Class ;
+        rdfs:label       "Other Additives"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:Packaging
+        a                owl:Class ;
+        rdfs:label       "Packaging"@en ;
+        rdfs:subClassOf  ofpe:PostOperation .
+
+afeo:Pomace
+        a                owl:Class ;
+        rdfs:label       "Pomace"@en ;
+        rdfs:subClassOf  ofpe:ByProduct .
+
+afeo:Press-Juice
+        a                owl:Class ;
+        rdfs:label       "Press-Juice"@en ;
+        rdfs:subClassOf  ofpe:IntermediateProduct .
+
+afeo:Pressing
+        a                owl:Class ;
+        rdfs:label       "Pressing"@en ;
+        rdfs:subClassOf  afeo:Separation .
+
+afeo:PumpingOver
+        a                owl:Class ;
+        rdfs:label       "Pumping Over"@en ;
+        rdfs:subClassOf  afeo:Mixing .
+
+afeo:Racking
+        a                owl:Class ;
+        rdfs:label       "Racking"@en ;
+        rdfs:subClassOf  afeo:Separation .
+
+afeo:RedWine
+        a                owl:Class ;
+        rdfs:label       "Red Wine"@en ;
+        rdfs:subClassOf  afeo:FinishedWine .
+
+afeo:RedWinePressing
+        a                owl:Class ;
+        rdfs:label       "Red Wine Pressing"@en ;
+        rdfs:subClassOf  afeo:Pressing .
+
+afeo:RoseWine
+        a                owl:Class ;
+        rdfs:label       "Rose Wine"@en ;
+        rdfs:subClassOf  afeo:FinishedWine .
+
+afeo:Separation
+        a                owl:Class ;
+        rdfs:subClassOf  ofpe:MainOperation .
+
+afeo:Sorting
+        a                owl:Class ;
+        rdfs:label       "Sorting"@en ;
+        rdfs:subClassOf  ofpe:PreliminaryOperation .
+
+afeo:Stem
+        a                owl:Class ;
+        rdfs:label       "Stem"@en ;
+        rdfs:subClassOf  ofpe:ByProduct .
+
+afeo:Sulfitation
+        a                owl:Class ;
+        rdfs:label       "Sulfitation"@en ;
+        rdfs:subClassOf  afeo:Mixing .
+
+afeo:Sulphur
+        a                owl:Class ;
+        rdfs:label       "Sulphur"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:TemporaryStorage
+        a                owl:Class ;
+        rdfs:label       "Temporary Storage"@en ;
+        rdfs:subClassOf  ofpe:PreliminaryOperation .
+
+afeo:WhiteWine
+        a                owl:Class ;
+        rdfs:label       "White Wine"@en ;
+        rdfs:subClassOf  afeo:FinishedWine .
+
+afeo:Yeast
+        a                owl:Class ;
+        rdfs:label       "Yeast"@en ;
+        rdfs:subClassOf  ofpe:ServiceProduct .
+
+afeo:YeastAddition
+        a                owl:Class ;
+        rdfs:label       "Yeast Addition"@en ;
+        rdfs:subClassOf  afeo:Mixing .
+
+dc:creator  a   owl:AnnotationProperty .
+
+dc:description  a  owl:AnnotationProperty .
+
+dc:language  a  owl:AnnotationProperty .
+
+dc:publisher  a  owl:AnnotationProperty .
+
+dc:rights  a    owl:AnnotationProperty .
+
+dc:title  a     owl:AnnotationProperty .
+
+oae:AgriActivity
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+oae:AgriEntity
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+oae:Harvesting
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:ByProduct
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:CoreProduct
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:InputProduct
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:IntermediateProduct
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:MainOperation
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:Operation
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:PostOperation
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:PreliminaryOperation
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:Product
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:ServiceProduct
+        a                owl:Class ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:before
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( oae:Harvesting ofpe:Operation )
+                     ] .
+
+ofpe:hasAttribute
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( oae:AgriActivity oae:AgriEntity ofpe:Operation ofpe:Product )
+                     ] ;
+        rdfs:label   "has attribute"@en .
+
+ofpe:hasInput
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( oae:Harvesting ofpe:Operation )
+                     ] .
+
+ofpe:hasObservedObject
+        a           owl:ObjectProperty ;
+        rdfs:range  [ a            owl:Class ;
+                      owl:unionOf  ( oae:AgriActivity oae:AgriEntity ofpe:Operation ofpe:Product )
+                    ] .
+
+ofpe:hasOutput
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( oae:Harvesting ofpe:Operation )
+                     ] .
+
+ofpe:isInputOf
+        a           owl:ObjectProperty ;
+        rdfs:range  [ a            owl:Class ;
+                      owl:unionOf  ( oae:Harvesting ofpe:Operation )
+                    ] .
+
+ofpe:isObservedObjectOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( oae:AgriActivity oae:AgriEntity ofpe:Operation ofpe:Product )
+                     ] .
+
+ofpe:isOutputOf
+        a           owl:ObjectProperty ;
+        rdfs:range  [ a            owl:Class ;
+                      owl:unionOf  ( oae:Harvesting ofpe:Operation )
+                    ] .

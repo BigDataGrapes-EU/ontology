@@ -1,0 +1,201 @@
+# Copyright 2016 ITEA 12004 SEAS Project.
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing,
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix rdfp: <https://w3id.org/rdfp/>.
+@prefix ssn: <http://purl.oclc.org/NET/ssnx/ssn#>.
+
+@prefix pep: <https://w3id.org/pep/>.
+@base <https://w3id.org/pep/>.
+
+pep: a owl:Ontology , voaf:Vocabulary , foaf:Document ;
+  dcterms:title "Procedure Execution ontology."@en ;
+  dcterms:description """
+
+The Procedure Execution ontology (PEP) defines `pep:ProcedureExecutor`s that implement `pep:Procedure` methods, and generate `pep:ProcedureExecution` activities. Procedures may be linked to some description of the input and/or the output using object properties `pep:hasInput` and `pep:hasOutput`. Their executions may be linked to some description of the command and/or the result using object properties `pep:hasResult` and `pep:hasCommand`. If the command or the result are simple RDF literals (a typed UNICODE string), then one may use datatype properties `pep:hasSimpleResult` and `pep:hasSimpleCommand` instead. Procedure executions made by a specific procedure executor using a specific procedure can be grouped in containers. Figure below overviews the PEP ontology, and illustrates it with an example.
+
+[![Overview of the PEP Ontology](https://w3id.org/pep/pep-1.1.png)](https://w3id.org/pep/pep-1.1.png).
+
+## PEP generalizes the core concepts of SOSA/SSN
+
+The procedure execution ontology is a simple extension of the [Semantic Sensor Network (SSN) Ontology](https://www.w3.org/TR/vocab-ssn/) and its core, called [Sensor, Observation, Sample, and Actuator (SOSA)](https://www.w3.org/TR/vocab-ssn/). SOSA describe `sosa:Sensor`s that implement `sosa:Procedure`s and make `sosa:Observation`s, which are activities. In parallel to this, it describes `sosa:Actuator`s that implement `sosa:Procedure`s and make `sosa:Actuation`s. The Procedure Execution ontology defines an ontology pattern as a generalization of these two parallel conceptual models, which accounts for at least one third use case: *Web services exposed on the web may be called to trigger the execution of some procedures*.  SOSA/SSN defines input, output, results, and PEP introduces the command. 
+
+We provide an external document to  align with the [the Semantic Sensor Network ontology](https://w3id.org/pep/SSNAlignment-1.1).
+
+## PEP to describe Web services that call lengthy algorithms
+
+PEP can be used to describe [Web containers of Web service executions](http://ci.emse.fr/pep-platform/) one can call in a RESTful way, and that consume and produce documents with a RDF data model. A set of such containers are referred  to as a **Process Execution Platform**. 
+
+We provide an external document to align PEP with the [the RDF Presentation ontology](https://w3id.org/pep/RDFPAlignment-1.1). This  alignment encourages to describe the input and output of Web services using `rdfp:GraphDescription`, and the command and result of their execution using URIs to `rdfp:RDFSource`s.
+"""@en ;
+  dcterms:issued "2016-07-01"^^xsd:date ;
+  dcterms:modified "2016-05-28"^^xsd:date ;
+  dcterms:creator <http://www.maxime-lefrancois.info/me#> ;
+  dcterms:license <https://www.apache.org/licenses/LICENSE-2.0> ;
+  vann:preferredNamespacePrefix "pep" ;
+  vann:preferredNamespaceUri <https://w3id.org/pep/> ;  
+  owl:versionIRI <pep-1.1> ;
+  owl:versionInfo "v1.1" ; 
+  owl:priorVersion <pep-1.0> .
+
+
+# procedures and input/output descriptions
+
+pep:Procedure a owl:Class ;
+  rdfs:label "Procedure"@en ;
+  rdfs:comment """A workflow, protocol, plan, algorithm, or computational method. It explains the steps to be carried out to arrive at reproducible results. A Procedure is re-usable, and might be implemented by several Procedure Executors and used for several Procedure Executions. 
+
+Examples of sub-classes of Procedure include Sensing, Actuating, Planning, Forecasting."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+# procedure executor
+
+pep:ProcedureExecutor a owl:Class ;
+  rdfs:label "Procedure Executor" ;
+  rdfs:comment """Device, agent (including humans), or software (simulation, web service) involved in, or implementing, a `Procedure`. Examples of sub-classes of Procedure Executor are Sensor, Actuator, Estimator.
+
+A Procedure Executor can be linked to the executions that it made using property `made`. Also, it can be linked to one or more `Procedure`s it implements using property `implements`. A Procedure Executor implements each of the methods used by the `Execution`s it made. 
+
+Other metadata may detail geolocation, vendor, operator, consumed power, etc."""@en ;
+  owl:disjointWith pep:Procedure ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:implements a owl:ObjectProperty ;
+  rdfs:label "implements" ;
+  rdfs:comment """A relation between a Procedure Executor and a Procedure it implements."""@en ;
+  rdfs:domain pep:ProcedureExecutor ;
+  rdfs:range pep:Procedure ;
+  owl:propertyChainAxiom ( pep:made pep:usedProcedure ) ;
+  owl:propertyChainAxiom ( [ owl:inverseOf pep:forExecutor ] pep:forProcedure ) ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+# procedure execution container
+
+pep:ProcedureExecutionContainer a owl:Class ;
+  rdfs:label "Procedure Execution Container" ;
+  rdfs:comment """The class of containers of Procedure Executions made by a specific Procedure Executor using a specific Procedure. 
+
+A Procedure Executor Container can be for example a Web container of Procedure Execution resources, where one may operate HTTP POST requests to execute a given procedure."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:forProcedure a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:label "for procedure" ;
+  rdfs:comment """Links a Procedure Execution Container to the Procedure that the executions it contains used."""@en ;
+  rdfs:domain pep:ProcedureExecutionContainer ;
+  rdfs:range pep:Procedure ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:forExecutor a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:label "for executor" ;
+  rdfs:comment "Links a Procedure Execution Container to the Procedure Executor that makes the executions it contains."@en ;
+  rdfs:domain pep:ProcedureExecutionContainer ;
+  rdfs:range pep:ProcedureExecutor ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+
+# procedure execution
+
+pep:ProcedureExecution a owl:Class ;
+  rdfs:label "Procedure Execution" ;
+  rdfs:comment """Act of carrying out a Procedure. Links to:
+
+- a Procedure Executor to describe what made it and how; 
+- the used procedure;
+- the command and the result of the procedure execution (simple or complex).
+"""@en ;
+  owl:disjointWith pep:Procedure, pep:ProcedureExecutor ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+
+pep:madeBy a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label "made by" ;
+  rdfs:comment """Relation between a Procedure Execution and what made it."""@en ;
+  vs:term_status "stable" ;
+  rdfs:domain pep:ProcedureExecution ;
+  rdfs:range pep:ProcedureExecutor ;
+  owl:inverseOf pep:made ;
+  rdfs:isDefinedBy pep: .
+ 
+pep:made a owl:ObjectProperty ;
+  rdfs:label "made" ;
+  rdfs:comment "Relation between a procedure executor and an execution it made."@en ;
+  vs:term_status "stable" ;
+  rdfs:domain pep:ProcedureExecutor ;
+  rdfs:range pep:ProcedureExecution ;
+  owl:inverseOf pep:madeBy ;
+  rdfs:isDefinedBy pep: .
+
+pep:usedProcedure a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:label "used procedure" ;
+  rdfs:comment """Relation between a Procedure Execution and the Procedure it used."""@en ;
+  rdfs:domain pep:ProcedureExecution ;
+  rdfs:range pep:Procedure ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+# inputs and outputs
+
+pep:hasInput a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:label "has input" ;
+  rdfs:comment """Links a Procedure to the (unique) description of its input."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:hasCommand a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:label "has command" ;
+  rdfs:comment """Links a Procedure Execution to its unique command (a OWL individual)."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:hasSimpleCommand a owl:DatatypeProperty , owl:FunctionalProperty ;
+  rdfs:label "has simple command" ;
+  rdfs:comment """Links a Procedure Execution to its unique simple command (a RDFS literal)."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:hasOutput a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:label "has output" ;
+  rdfs:comment """Links a Procedure to the (unique) description of its output."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:hasResult a owl:ObjectProperty , owl:FunctionalProperty ;
+  rdfs:label "has result" ;
+  rdfs:comment """Links a Procedure Execution to its unique result (a OWL individual)."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
+pep:hasSimpleResult a owl:DatatypeProperty , owl:FunctionalProperty ;
+  rdfs:label "has simple result" ;
+  rdfs:comment """Links a Procedure Execution to its unique simple result (a RDFS literal)."""@en ;
+  vs:term_status "stable" ;
+  rdfs:isDefinedBy pep: .
+
