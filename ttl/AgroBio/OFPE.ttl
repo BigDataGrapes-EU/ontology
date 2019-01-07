@@ -1,0 +1,1648 @@
+@prefix ofpe:     <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#>.
+
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix dcam:     <http://purl.org/dc/dcam/>.
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+
+<http://bioportal.bioontology.org/ontologies/URI>
+        owl:versionInfo  "http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp" .
+
+<http://bioportal.bioontology.org/ontologies/versionSubject>
+        owl:versionInfo  "4.0 august 2016"@en .
+
+<http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp>
+        rdfs:comment     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016\nThe Ontology for Agricultural Experiments is licensed by CC 4.0 (http://creativecommons.org/licenses/by/4.0/legalcode)"@en ;
+        dc:creator       "Aunur-Rofiq MULJARTO,  Jean-Michel SALMON, Brigitte CHARNOMORDIC, Patrice BUCHE, Anne TIREAU, Pascal NEVEU"@en ;
+        dc:description   "OFPE is a generic ontology\nspecialized for food processing experiments, where raw ma-\nterials are transformed into final products. It includes dif-\nferent classes that represent products and activities during\nfood transformation processes, which can be classified into\nfour main concepts, i.e., Product, Operation, Attribute, and\nObservation."@en ;
+        dc:language      "http://www.lexvo.org/page/iso639-3/eng"@en ;
+        dc:publisher     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016"@en ;
+        dc:rights        "http://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+        dc:title         "Ontology for Food Processing Experiments"@en ;
+        owl:versionInfo  "4.0 august 2016"@en .
+
+<http://www.w3.org/2004/02/skos/core>
+        rdfs:seeAlso  <http://www.w3.org/TR/skos-reference/> .
+
+[ a                owl:Ontology ;
+  rdfs:comment     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016\nThe Ontology for Agricultural Experiments is licensed by CC 4.0 (http://creativecommons.org/licenses/by/4.0/legalcode)"@en , "OWL 2 DL ontology for a few terms of the DCMI abstract model from the http://purl.org/dc/dcam/ namespace"@en , "OWL 2 DL ontology for Dublin Core metadata terms from the http://purl.org/dc/terms/ namespace; this version is grounded in the DC elements ontology and only uses annotation properties."@en , "OWL 2 DL ontology for Dublin Core metadata elements from the http://purl.org/dc/elements/1.1/ namespace"@en ;
+  rdfs:label       "DCMI Abstract Model"@en , "DCMI metadata terms"@en , "Dublin Core Metadata Element Set, Version 1.1"@en ;
+  rdfs:seeAlso     <http://www.w3.org/TR/skos-reference/> ;
+  dc:creator       "Aunur-Rofiq MULJARTO,  Jean-Michel SALMON, Brigitte CHARNOMORDIC, Patrice BUCHE, Anne TIREAU, Pascal NEVEU"@en ;
+  dc:description   "OFPE is a generic ontology\nspecialized for food processing experiments, where raw ma-\nterials are transformed into final products. It includes dif-\nferent classes that represent products and activities during\nfood transformation processes, which can be classified into\nfour main concepts, i.e., Product, Operation, Attribute, and\nObservation."@en ;
+  dc:language      "http://www.lexvo.org/page/iso639-3/eng"@en ;
+  dc:publisher     "INRA MISTEA, SPO, IATE\nCopyright © - INRA - 2014 - 2016"@en ;
+  dc:rights        "http://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+  dc:title         "Ontology for Food Processing Experiments"@en ;
+  owl:versionInfo  "4.0 august 2016"@en
+] .
+
+#################### OFPE classes
+
+ofpe:Attribute
+        a                owl:Class ;
+        rdfs:label       "Object attribute"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:ByProduct
+        a                owl:Class ;
+        rdfs:label       "Co-produit"@fr , "By-Product"@en ;
+        rdfs:subClassOf  ofpe:FinishedProduct .
+
+ofpe:CalculationResult
+        a                owl:Class ;
+        rdfs:label       "Calculation result"@en ;
+        rdfs:subClassOf  ofpe:ObservationResult .
+
+ofpe:CoreProduct
+        a                owl:Class ;
+        rdfs:label       "Produit principal"@fr , "Core Product"@en ;
+        rdfs:subClassOf  ofpe:FinishedProduct .
+
+ofpe:ExpertJudgementResult
+        a                owl:Class ;
+        rdfs:label       "Expert judgement result"@en ;
+        rdfs:subClassOf  ofpe:ObservationResult .
+
+ofpe:FinishedProduct
+        a                owl:Class ;
+        rdfs:label       "Produit fini"@fr , "Finished Product"@en ;
+        rdfs:subClassOf  ofpe:Product .
+
+ofpe:FoodProcessing
+        a                owl:Class ;
+        rdfs:label       "Food Processing"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:InputProduct
+        a                owl:Class ;
+        rdfs:comment     "Input Product"@en ;
+        rdfs:subClassOf  ofpe:Product .
+
+ofpe:IntermediateProduct
+        a                owl:Class ;
+        rdfs:label       "Produit intermédiaire"@fr , "Intermediate Product"@en ;
+        rdfs:subClassOf  ofpe:Product .
+
+ofpe:MainOperation
+        a                owl:Class ;
+        rdfs:label       "Main Operation"@en ;
+        rdfs:subClassOf  ofpe:Operation .
+
+ofpe:MultipleObservations
+        a                owl:Class ;
+        rdfs:label       "Multiple observation" ;
+        rdfs:subClassOf  ofpe:Observation ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      ofpe:hasMember ;
+                           owl:someValuesFrom  ofpe:SingleObservation
+                         ] .
+
+ofpe:Observation
+        a                owl:Class ;
+        rdfs:label       "Observation"@en ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  ofpe:ObservationMethod ;
+                           owl:onProperty     ofpe:uses
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  ofpe:ObservationResult ;
+                           owl:onProperty     ofpe:produces
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  ofpe:Product ;
+                           owl:onProperty     ofpe:hasObservedObject
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  ofpe:Operation ;
+                           owl:onProperty     ofpe:hasObservedObject
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  ofpe:Attribute ;
+                           owl:onProperty     ofpe:hasObservedAttribute
+                         ] .
+
+ofpe:ObservationMethod
+        a                owl:Class ;
+        rdfs:label       "Observation Method"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:ObservationResult
+        a                owl:Class ;
+        rdfs:label       "Observation result"@en ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  ofpe:Unit ;
+                           owl:onProperty     ofpe:hasUnit
+                         ] .
+
+ofpe:Operation
+        a                owl:Class ;
+        rdfs:label       "Opération"@fr , "Operation"@en ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                            owl:Restriction ;
+                           owl:maxQualifiedCardinality  "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange              xsd:anyURI ;
+                           owl:onProperty               ofpe:endDate
+                         ] ;
+        rdfs:subClassOf  [ a                            owl:Restriction ;
+                           owl:maxQualifiedCardinality  "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange              xsd:anyURI ;
+                           owl:onProperty               ofpe:beginDate
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      ofpe:hasAttribute ;
+                           owl:someValuesFrom  ofpe:OperationAttribute
+                         ] .
+
+ofpe:OperationAttribute
+        a                 owl:Class ;
+        rdfs:label        "Operation Attribute" ;
+        rdfs:subClassOf   ofpe:Attribute ;
+        owl:disjointWith  ofpe:ProductAttribute .
+
+ofpe:Operator
+        a                owl:Class ;
+        rdfs:label       "Operator"@en , "Operateur"@fr ;
+        rdfs:subClassOf  ofpe:Person .
+
+ofpe:Organization
+        a                owl:Class ;
+        rdfs:label       "Organization"@en , "Organisme"@fr ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  rdfs:Literal ;
+                           owl:onProperty     ofpe:name
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  rdfs:Literal ;
+                           owl:onProperty     ofpe:email
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  rdfs:Literal ;
+                           owl:onProperty     ofpe:address
+                         ] .
+
+ofpe:Person
+        a                owl:Class ;
+        rdfs:label       "Person in charge"@en ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  rdfs:Literal ;
+                           owl:onProperty     ofpe:lastName
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  rdfs:Literal ;
+                           owl:onProperty     ofpe:firstName
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  rdfs:Literal ;
+                           owl:onProperty     ofpe:email
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  rdfs:Literal ;
+                           owl:onProperty     ofpe:address
+                         ] ;
+        rdfs:subClassOf  [ a                  owl:Restriction ;
+                           owl:allValuesFrom  ofpe:Organization ;
+                           owl:onProperty     ofpe:hasOrganization
+                         ] .
+
+ofpe:Plant
+        a                owl:Class ;
+        rdfs:label       "Plant"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+ofpe:PostOperation
+        a                owl:Class ;
+        rdfs:label       "Post Operation"@en ;
+        rdfs:subClassOf  ofpe:Operation .
+
+ofpe:PreliminaryOperation
+        a                owl:Class ;
+        rdfs:label       "Preliminary Operation"@en ;
+        rdfs:subClassOf  ofpe:Operation .
+
+ofpe:Product
+        a                owl:Class ;
+        rdfs:label       "Produit"@fr , "Product"@en ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      ofpe:hasAttribute ;
+                           owl:someValuesFrom  ofpe:ProductAttribute
+                         ] .
+
+ofpe:ProductAttribute
+        a                owl:Class ;
+        rdfs:label       "Product Attribute" ;
+        rdfs:subClassOf  ofpe:Attribute .
+
+ofpe:SensorResult
+        a                owl:Class ;
+        rdfs:seeAlso     "Sensor Result"@en ;
+        rdfs:subClassOf  ofpe:ObservationResult .
+
+ofpe:ServiceProduct
+        a                owl:Class ;
+        rdfs:label       "Service Product"@en , "Intrant"@fr ;
+        rdfs:subClassOf  ofpe:Product .
+
+ofpe:SingleObservation
+        a                owl:Class ;
+        rdfs:label       "Single observation" ;
+        rdfs:subClassOf  ofpe:Observation ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      ofpe:observationDate ;
+                           owl:someValuesFrom  xsd:anyURI
+                         ] .
+
+ofpe:Unit
+        a                owl:Class ;
+        rdfs:label       "Unit of Measurement"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+#################### OFPE properties
+
+ofpe:address
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "addresse"@en ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+ofpe:after
+        a                   owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label          "after"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation ;
+        owl:inverseOf       ofpe:before .
+
+ofpe:after_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "after directly"@en ;
+        rdfs:subPropertyOf  ofpe:after ;
+        owl:inverseOf       ofpe:before_directly .
+
+ofpe:before
+        a                   owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label          "before"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation .
+
+ofpe:before_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "before directly"@en ;
+        rdfs:subPropertyOf  ofpe:before .
+
+ofpe:beginDate
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "begin date"@en ;
+        rdfs:subPropertyOf  ofpe:date .
+
+ofpe:code
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "code"@en ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+ofpe:comesFrom
+        a           owl:ObjectProperty ;
+        rdfs:label  "comes from"@en .
+
+ofpe:contains
+        a                   owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label          "contains"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation ;
+        owl:inverseOf       ofpe:during .
+
+ofpe:contains_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "contains directly"@en ;
+        rdfs:subPropertyOf  ofpe:contains .
+
+ofpe:date
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "date"@en ;
+        rdfs:subPropertyOf  ofpe:hasTimeValue .
+
+ofpe:description
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "description"@en ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+ofpe:during
+        a                   owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label          "during"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation .
+
+ofpe:email
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "email"@en ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+ofpe:endDate
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "end date"@en ;
+        rdfs:subPropertyOf  ofpe:date .
+
+ofpe:equal
+        a                   owl:ObjectProperty ;
+        rdfs:label          "equal"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation .
+
+ofpe:finishedBy
+        a                   owl:ObjectProperty ;
+        rdfs:label          "finished by"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation ;
+        owl:inverseOf       ofpe:finishes .
+
+ofpe:finishes
+        a                   owl:ObjectProperty ;
+        rdfs:label          "finishes"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation .
+
+ofpe:firstName
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "first name"@en ;
+        rdfs:subPropertyOf  ofpe:name .
+
+ofpe:gram
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "g" .
+
+ofpe:gram_H2SO4_per_litre
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "g H2SO4/L" .
+
+ofpe:gram_per_litre
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "g/L" .
+
+ofpe:harvests
+        a               owl:ObjectProperty ;
+        owl:deprecated  "" .
+
+ofpe:hasAttribute
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( ofpe:Operation> <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#Product )
+                     ] ;
+        rdfs:label   "has attribute"@en ;
+        rdfs:range   ofpe:Attribute .
+
+ofpe:hasInput
+        a              owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain    ofpe:Operation ;
+        rdfs:label     "has input"@en ;
+        rdfs:range     ofpe:Product ;
+        owl:inverseOf  ofpe:isInputOf .
+
+ofpe:hasInput_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "has input directly"@en ;
+        rdfs:subPropertyOf  ofpe:hasInput ;
+        owl:inverseOf       ofpe:isInputOf_directly .
+
+ofpe:hasMember
+        a              owl:ObjectProperty ;
+        rdfs:domain    ofpe:MultipleObservations ;
+        rdfs:label     "is member"@en ;
+        rdfs:range     ofpe:SingleObservation ;
+        owl:inverseOf  ofpe:isMemberOf .
+
+ofpe:hasMethod
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:Observation ;
+        rdfs:label   "has method"@en ;
+        rdfs:range   ofpe:ObservationMethod .
+
+ofpe:hasObservationMethod
+        a                   owl:ObjectProperty ;
+        rdfs:domain         ofpe:Observation ;
+        rdfs:label          "has observation method"@en ;
+        rdfs:range          ofpe:ObservationMethod ;
+        rdfs:subPropertyOf  owl:topObjectProperty ;
+        owl:inverseOf       ofpe:isObservationMethodOf .
+
+ofpe:hasObservationResult
+        a              owl:ObjectProperty ;
+        rdfs:domain    ofpe:Observation ;
+        rdfs:label     "has observation result"@en ;
+        rdfs:range     ofpe:ObservationResult ;
+        owl:inverseOf  ofpe:isObservationResultOf .
+
+ofpe:hasObservedAttribute
+        a              owl:ObjectProperty ;
+        rdfs:domain    ofpe:Observation ;
+        rdfs:label     "has observed attribute"@en ;
+        rdfs:range     ofpe:Attribute ;
+        owl:inverseOf  ofpe:isObservedAttributeOf .
+
+ofpe:hasObservedObject
+        a              owl:ObjectProperty ;
+        rdfs:domain    ofpe:Observation ;
+        rdfs:label     "has observed object"@en ;
+        rdfs:range     [ a            owl:Class ;
+                         owl:unionOf  ( ofpe:Operation> <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#Product )
+                       ] ;
+        owl:inverseOf  ofpe:isObservedObjectOf .
+
+ofpe:hasOrganization
+        a              owl:ObjectProperty ;
+        rdfs:domain    ofpe:Person ;
+        rdfs:label     "has organization"@en ;
+        rdfs:range     ofpe:Organization ;
+        owl:inverseOf  ofpe:isOrganizationOf .
+
+ofpe:hasOutput
+        a              owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain    ofpe:Operation ;
+        rdfs:label     "has output"@en ;
+        rdfs:range     ofpe:Product ;
+        owl:inverseOf  ofpe:isOutputOf .
+
+ofpe:hasOutput_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "has output directly"@en ;
+        rdfs:subPropertyOf  ofpe:hasOutput ;
+        owl:inverseOf       ofpe:isOutputOf_directly .
+
+ofpe:hasPerson
+        a              owl:ObjectProperty ;
+        rdfs:label     "has Person"@en ;
+        rdfs:range     ofpe:Person ;
+        owl:inverseOf  ofpe:isPersonOf .
+
+ofpe:hasReferenceValue
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:Observation ;
+        rdfs:label   "has reference value"@en .
+
+ofpe:hasTimeValue
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "has time value"@en ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+ofpe:hasUnit
+        a              owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain    ofpe:ObservationResult ;
+        rdfs:label     "has unit"@en ;
+        rdfs:range     ofpe:Unit ;
+        owl:inverseOf  ofpe:isUnitOf .
+
+ofpe:hasValue
+        a                   owl:DatatypeProperty ;
+        rdfs:domain         ofpe:ObservationResult ;
+        rdfs:label          "has value"@en ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+ofpe:hour
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "hour"@en ;
+        rdfs:subPropertyOf  ofpe:hasTimeValue .
+
+ofpe:isInputOf
+        a            owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain  ofpe:Product ;
+        rdfs:label   "is input of"@en ;
+        rdfs:range   ofpe:Operation .
+
+ofpe:isInputOf_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "is input of directly"@en ;
+        rdfs:subPropertyOf  ofpe:isInputOf .
+
+ofpe:isMemberOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:SingleObservation ;
+        rdfs:label   "is member of"@en ;
+        rdfs:range   ofpe:MultipleObservations .
+
+ofpe:isObservationMethodOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:ObservationMethod ;
+        rdfs:label   "is observation method of"@en ;
+        rdfs:range   ofpe:Observation .
+
+ofpe:isObservationResultOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:ObservationResult ;
+        rdfs:label   "is observation result of"@en ;
+        rdfs:range   ofpe:Observation .
+
+ofpe:isObservedAttributeOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:Attribute ;
+        rdfs:label   "is observed attribut of"@en ;
+        rdfs:range   ofpe:Observation .
+
+ofpe:isObservedObjectOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( ofpe:Operation> <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#Product )
+                     ] ;
+        rdfs:label   "is observed object of"@en ;
+        rdfs:range   ofpe:Observation .
+
+ofpe:isOrganizationOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:Organization ;
+        rdfs:label   "is organization of"@en ;
+        rdfs:range   ofpe:Person .
+
+ofpe:isOutputOf
+        a            owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain  ofpe:Product ;
+        rdfs:label   "is output of"@en ;
+        rdfs:range   ofpe:Operation .
+
+ofpe:isOutputOf_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "is output of directly"@en ;
+        rdfs:subPropertyOf  ofpe:isOutputOf .
+
+ofpe:isPersonOf
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:Person ;
+        rdfs:label   "is Person In Charge of"@en .
+
+ofpe:isUnitOf
+        a            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:domain  ofpe:Unit ;
+        rdfs:label   "is unit of"@en ;
+        rdfs:range   ofpe:ObservationResult .
+
+ofpe:isUsedBy
+        a              owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label     "is used by"@en ;
+        owl:inverseOf  ofpe:uses .
+
+ofpe:isUsedBy_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "is used by directly"@en ;
+        rdfs:subPropertyOf  ofpe:isUsedBy ;
+        owl:inverseOf       ofpe:uses_directly .
+
+ofpe:kilogram
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "kg" .
+
+ofpe:lastName
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "last name"@en ;
+        rdfs:subPropertyOf  ofpe:name .
+
+ofpe:litre
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "L" .
+
+ofpe:meets
+        a                   owl:ObjectProperty ;
+        rdfs:label          "meets"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation ;
+        owl:inverseOf       ofpe:metBy .
+
+ofpe:metBy
+        a                   owl:ObjectProperty ;
+        rdfs:label          "metBy"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation .
+
+ofpe:microgram
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "µg" .
+
+ofpe:microgram_eq
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "µg éq. DMS/L" .
+
+ofpe:microgram_per_kilogram
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "µg/kg" .
+
+ofpe:microgram_per_litre
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "µg/L" .
+
+ofpe:miligram
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "mg" .
+
+ofpe:miligram_per_kilogram
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "mg/kg" .
+
+ofpe:miligram_per_litre
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "mg/L" .
+
+ofpe:name
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "name"@en ;
+        rdfs:subPropertyOf  owl:topDataProperty .
+
+ofpe:observationDate
+        a                   owl:DatatypeProperty ;
+        rdfs:domain         ofpe:SingleObservation ;
+        rdfs:label          "observation date"@en ;
+        rdfs:subPropertyOf  ofpe:date .
+
+ofpe:overlappedBy
+        a                   owl:ObjectProperty ;
+        rdfs:label          "overlapped by"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation ;
+        owl:inverseOf       ofpe:overlaps .
+
+ofpe:overlaps
+        a                   owl:ObjectProperty ;
+        rdfs:label          "overlaps"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation .
+
+ofpe:percent_volume
+        a           ofpe:Unit , owl:NamedIndividual ;
+        rdfs:label  "%vol" .
+
+ofpe:produces
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:Observation ;
+        rdfs:label   "produces"@en ;
+        rdfs:range   ofpe:ObservationResult .
+
+ofpe:producesAfter
+        a              owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain    ofpe:Product ;
+        rdfs:label     "produces after"@en ;
+        rdfs:range     ofpe:Product ;
+        owl:inverseOf  ofpe:producesBefore .
+
+ofpe:producesAfter_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "produces after directly"@en ;
+        rdfs:subPropertyOf  ofpe:producesAfter ;
+        owl:inverseOf       ofpe:producesBefore_directly .
+
+ofpe:producesBefore
+        a            owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:domain  ofpe:Product ;
+        rdfs:label   "produces before"@en ;
+        rdfs:range   ofpe:Product .
+
+ofpe:producesBefore_directly
+        a                   owl:ObjectProperty ;
+        rdfs:label          "produces before directly"@en ;
+        rdfs:subPropertyOf  ofpe:producesBefore .
+
+ofpe:startedBy
+        a                   owl:ObjectProperty ;
+        rdfs:label          "started by"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation ;
+        owl:inverseOf       ofpe:starts .
+
+ofpe:starts
+        a                   owl:ObjectProperty ;
+        rdfs:label          "starts"@en ;
+        rdfs:subPropertyOf  ofpe:temporalRelation .
+
+ofpe:temporalRelation
+        a            owl:ObjectProperty ;
+        rdfs:domain  ofpe:Operation ;
+        rdfs:label   "temporal relation"@en ;
+        rdfs:range   ofpe:Operation .
+
+ofpe:uses
+        a           owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:label  "uses"@en .
+
+ofpe:uses_directly
+        a                   owl:ObjectProperty ;
+        rdfs:subPropertyOf  ofpe:uses .
+
+ofpe:year
+        a                   owl:DatatypeProperty ;
+        rdfs:label          "year"@en ;
+        rdfs:subPropertyOf  ofpe:hasTimeValue .
+
+#################### External terms
+
+
+<http://purl.org/NET/dc_owl2dl/dcam>
+        rdfs:comment  "OWL 2 DL ontology for a few terms of the DCMI abstract model from the http://purl.org/dc/dcam/ namespace"@en ;
+        rdfs:label    "DCMI Abstract Model"@en .
+
+<http://purl.org/NET/dc_owl2dl/elements>
+        rdfs:comment  "OWL 2 DL ontology for Dublin Core metadata elements from the http://purl.org/dc/elements/1.1/ namespace"@en ;
+        rdfs:label    "Dublin Core Metadata Element Set, Version 1.1"@en .
+
+<http://purl.org/NET/dc_owl2dl/terms>
+        rdfs:comment  "OWL 2 DL ontology for Dublin Core metadata terms from the http://purl.org/dc/terms/ namespace; this version is grounded in the DC elements ontology and only uses annotation properties."@en ;
+        rdfs:label    "DCMI metadata terms"@en .
+
+dcam:VocabularyEncodingScheme
+        a                   owl:Class ;
+        rdfs:isDefinedBy    <http://dublincore.org/documents/2007/06/04/abstract-model/> ;
+        rdfs:label          "Vocabulary Encoding Scheme"@en-us ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "dcam:VocabularyEncodingScheme" ;
+        skos:definition     "An enumerated set of resources."@en-us .
+
+dcam:memberOf
+        a                 owl:ObjectProperty ;
+        rdfs:isDefinedBy  <http://dublincore.org/documents/2007/06/04/abstract-model/> ;
+        rdfs:label        "Member Of"@en-us ;
+        rdfs:range        <http://purl.org/dc/dcam/VocabularyEncodingScheme> ;
+        skos:definition   "A relationship between a resource and a vocabulary encoding scheme which indicates that the resource is a member of a set."@en-us .
+
+dc:contributor  a           dc:contributor , <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual , owl:Class , owl:AnnotationProperty ;
+        rdfs:comment        "Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."@en-us ;
+        rdfs:isDefinedBy    <http://www.udcc.org/> ;
+        rdfs:label          "Media Type or Extent"@en-us , "Contributor"@en-us , "UDC"@en-us ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "dc:contributor" ;
+        skos:definition     "The set of conceptual resources specified by the Universal Decimal Classification."@en-us , "An entity responsible for making contributions to the resource."@en-us , "A media type or extent."@en-us .
+
+dc:coverage  a           owl:AnnotationProperty ;
+        rdfs:comment     "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."@en-us ;
+        rdfs:label       "Coverage"@en-us ;
+        rdfs:seeAlso     <http://www.getty.edu/research/tools/vocabulary/tgn/index.html> ;
+        skos:definition  "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant."@en-us .
+
+dc:creator  a            owl:AnnotationProperty ;
+        rdfs:comment     "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."@en-us ;
+        rdfs:label       "Creator"@en-us ;
+        skos:definition  "An entity primarily responsible for making the resource."@en-us .
+
+dc:date  a               owl:AnnotationProperty ;
+        rdfs:comment     "Date may be used to express temporal information at any level of granularity. Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601."@en-us ;
+        rdfs:label       "Date"@en-us ;
+        rdfs:seeAlso     <http://www.w3.org/TR/NOTE-datetime> ;
+        skos:definition  "A point or period of time associated with an event in the lifecycle of the resource."@en-us .
+
+dc:description  a        owl:AnnotationProperty ;
+        rdfs:comment     "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en-us ;
+        rdfs:label       "Description"@en-us ;
+        skos:definition  "An account of the resource."@en-us .
+
+dc:format  a             owl:AnnotationProperty ;
+        rdfs:comment     "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types."@en-us ;
+        rdfs:label       "Format"@en-us ;
+        rdfs:seeAlso     <http://www.iana.org/assignments/media-types/> ;
+        skos:definition  "The file format, physical medium, or dimensions of the resource."@en-us .
+
+dc:identifier  a         owl:AnnotationProperty ;
+        rdfs:comment     "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."@en-us ;
+        rdfs:label       "Identifier"@en-us ;
+        skos:definition  "An unambiguous reference to the resource within a given context."@en-us .
+
+dc:language  a           owl:AnnotationProperty ;
+        rdfs:comment     "Recommended best practice is to use a controlled vocabulary such as RFC 4646."@en-us ;
+        rdfs:label       "Language"@en-us ;
+        rdfs:seeAlso     <http://www.ietf.org/rfc/rfc4646.txt> ;
+        skos:definition  "A language of the resource."@en-us .
+
+dc:publisher  a          owl:AnnotationProperty ;
+        rdfs:comment     "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."@en-us ;
+        rdfs:label       "Publisher"@en-us ;
+        skos:definition  "An entity responsible for making the resource available."@en-us .
+
+dc:relation  a           owl:AnnotationProperty ;
+        rdfs:comment     "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en-us ;
+        rdfs:label       "Relation"@en-us ;
+        skos:definition  "A related resource."@en-us .
+
+dc:rights  a             owl:AnnotationProperty ;
+        rdfs:comment     "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en-us ;
+        rdfs:label       "Rights"@en-us ;
+        skos:definition  "Information about rights held in and over the resource."@en-us .
+
+dc:source  a             owl:AnnotationProperty ;
+        rdfs:comment     "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en-us ;
+        rdfs:label       "Source"@en-us ;
+        skos:definition  "A related resource from which the described resource is derived."@en-us .
+
+dc:subject  a            owl:AnnotationProperty ;
+        rdfs:comment     "Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."@en-us ;
+        rdfs:label       "Subject"@en-us ;
+        skos:definition  "The topic of the resource."@en-us .
+
+dc:title  a              owl:AnnotationProperty ;
+        rdfs:comment     "Typically, a Title will be a name by which the resource is formally known."@en-us ;
+        rdfs:label       "Title"@en-us ;
+        skos:definition  "A name given to the resource."@en-us .
+
+dc:type  a               owl:AnnotationProperty ;
+        rdfs:comment     "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary. To describe the file format, physical medium, or dimensions of the resource, use the Format element."@en-us ;
+        rdfs:label       "Type"@en-us ;
+        rdfs:seeAlso     <http://dublincore.org/documents/dcmi-type-vocabulary/> ;
+        skos:definition  "The nature or genre of the resource."@en-us .
+
+dct:Agent  a           dct:AgentClass , dc:contributor , owl:NamedIndividual ;
+        rdfs:comment     "Examples of Agent include person, organization, and software agent."@en-us ;
+        rdfs:label       "Agent"@en-us ;
+        skos:definition  "A resource that acts or has the power to act."@en-us .
+
+dct:AgentClass  a         dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:comment        "Examples of Agent Class include groups seen as classes, such as students, women, charities, lecturers."@en-us ;
+        rdfs:label          "Agent Class"@en-us ;
+        rdfs:subClassOf     rdfs:Class ;
+        metadata:prefixIRI  "dcdct:AgentClass" ;
+        skos:definition     "A group of agents."@en-us .
+
+dct:BibliographicResource
+        a                dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Bibliographic Resource"@en-us ;
+        skos:definition  "A book, article, or other documentary resource."@en-us .
+
+dct:Box  a              rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://dublincore.org/documents/dcmi-box/> ;
+        rdfs:label        "DCMI Box"@en-us ;
+        skos:definition   "The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme."@en-us .
+
+dct:DCMIType  a         <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:isDefinedBy  <http://dublincore.org/documents/dcmi-type-vocabulary/> ;
+        rdfs:label        "DCMI Type Vocabulary"@en-us ;
+        skos:definition   "The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource."@en-us .
+
+dct:DDC  a              <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:isDefinedBy  dc:contributor ;
+        rdfs:label        "DDC"@en-us ;
+        skos:definition   "The set of conceptual resources specified by the Dewey Decimal Classification."@en-us .
+
+dct:FileFormat  a         dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:comment        "Examples include the formats defined by the list of Internet Media Types."@en-us ;
+        rdfs:label          "File Format"@en-us ;
+        rdfs:subClassOf     dct:MediaType ;
+        metadata:prefixIRI  "dcdct:FileFormat" ;
+        skos:definition     "A digital resource format."@en-us .
+
+dct:Frequency  a       dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Frequency"@en-us ;
+        skos:definition  "A rate at which something recurs."@en-us .
+
+dct:IMT  a              <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:isDefinedBy  <http://www.iana.org/assignments/media-types/> ;
+        rdfs:label        "IMT"@en-us ;
+        skos:definition   "The set of media types specified by the Internet Assigned Numbers Authority."@en-us .
+
+dct:ISO3166  a          rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html> ;
+        rdfs:label        "ISO 3166"@en-us ;
+        skos:definition   "The set of codes listed in ISO 3166-1 for the representation of names of countries."@en-us .
+
+dct:ISO639-2  a         rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://lcweb.loc.gov/standards/iso639-2/langhome.html> ;
+        rdfs:label        "ISO 639-2"@en-us ;
+        skos:definition   "The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages."@en-us .
+
+dct:ISO639-3  a         rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://www.sil.org/iso639-3/> ;
+        rdfs:label        "ISO 639-3"@en-us ;
+        skos:definition   "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."@en-us .
+
+dct:Jurisdiction  a       dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:label          "Jurisdiction"@en-us ;
+        rdfs:subClassOf     dct:LocationPeriodOrJurisdiction ;
+        metadata:prefixIRI  "dcdct:Jurisdiction" ;
+        skos:definition     "The extent or range of judicial, law enforcement, or other authority."@en-us .
+
+dct:LCC  a              <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:isDefinedBy  <http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html> ;
+        rdfs:label        "LCC"@en-us ;
+        skos:definition   "The set of conceptual resources specified by the Library of Congress Classification."@en-us .
+
+dct:LCSH  a            <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:label       "LCSH"@en-us ;
+        skos:definition  "The set of labeled concepts specified by the Library of Congress Subject Headings."@en-us .
+
+dct:LicenseDocument
+        a                   dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:label          "License Document"@en-us ;
+        rdfs:subClassOf     dct:RightsStatement ;
+        metadata:prefixIRI  "dcdct:LicenseDocument" ;
+        skos:definition     "A legal document giving official permission to do something with a Resource."@en-us .
+
+dct:LinguisticSystem
+        a                dc:contributor , owl:NamedIndividual ;
+        rdfs:comment     "Examples include written, spoken, sign, and computer languages."@en-us ;
+        rdfs:label       "Linguistic System"@en-us ;
+        skos:definition  "A system of signs, symbols, sounds, gestures, or rules used in communication."@en-us .
+
+dct:Location  a           dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:label          "Location"@en-us ;
+        rdfs:subClassOf     dct:LocationPeriodOrJurisdiction ;
+        metadata:prefixIRI  "dcdct:Location" ;
+        skos:definition     "A spatial region or named place."@en-us .
+
+dct:LocationPeriodOrJurisdiction
+        a                   dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:label          "Location, Period, or Jurisdiction"@en-us ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "dcdct:LocationPeriodOrJurisdiction" ;
+        skos:definition     "A location, period of time, or jurisdiction."@en-us .
+
+dct:MESH  a             <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:isDefinedBy  <http://www.nlm.nih.gov/mesh/meshhome.html> ;
+        rdfs:label        "MeSH"@en-us ;
+        skos:definition   "The set of labeled concepts specified by the Medical Subject Headings."@en-us .
+
+dct:MediaType  a          dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:label          "Media Type"@en-us ;
+        rdfs:subClassOf     dc:contributor ;
+        metadata:prefixIRI  "dcdct:MediaType" ;
+        skos:definition     "A file format or physical medium."@en-us .
+
+dct:MethodOfAccrual
+        a                dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Method of Accrual"@en-us ;
+        skos:definition  "A method by which resources are added to a collection."@en-us .
+
+dct:MethodOfInstruction
+        a                dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Method of Instruction"@en-us ;
+        skos:definition  "A process that is used to engender knowledge, attitudes, and skills."@en-us .
+
+dct:NLM  a              <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:isDefinedBy  <http://wwwcf.nlm.nih.gov/class/> ;
+        rdfs:label        "NLM"@en-us ;
+        skos:definition   "The set of conceptual resources specified by the National Library of Medicine Classification."@en-us .
+
+dct:Period  a           rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://dublincore.org/documents/dcmi-period/> ;
+        rdfs:label        "DCMI Period"@en-us ;
+        skos:definition   "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme."@en-us .
+
+dct:PeriodOfTime  a       dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:label          "Period of Time"@en-us ;
+        rdfs:subClassOf     dct:LocationPeriodOrJurisdiction ;
+        metadata:prefixIRI  "dcdct:PeriodOfTime" ;
+        skos:definition     "An interval of time that is named or defined by its start and end dates."@en-us .
+
+dct:PhysicalMedium  a     dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:comment        "Examples include paper, canvas, or DVD."@en-us ;
+        rdfs:label          "Physical Medium"@en-us ;
+        rdfs:subClassOf     dct:MediaType ;
+        metadata:prefixIRI  "dcdct:PhysicalMedium" ;
+        skos:definition     "A physical material or carrier."@en-us .
+
+dct:PhysicalResource
+        a                dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Physical Resource"@en-us ;
+        skos:definition  "A material thing."@en-us .
+
+dct:Point  a            rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://dublincore.org/documents/dcmi-point/> ;
+        rdfs:label        "DCMI Point"@en-us ;
+        skos:definition   "The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme."@en-us .
+
+dct:Policy  a          dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Policy"@en-us ;
+        skos:definition  "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters."@en-us .
+
+dct:ProvenanceStatement
+        a                dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Provenance Statement"@en-us ;
+        skos:definition  "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en-us .
+
+dct:RFC1766  a          rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://www.ietf.org/rfc/rfc1766.txt> ;
+        rdfs:label        "RFC 1766"@en-us ;
+        skos:definition   "The set of tags, constructed according to RFC 1766, for the identification of languages."@en-us .
+
+dct:RFC3066  a          rdfs:Datatype ;
+        rdfs:comment      "RFC 3066 has been obsoleted by RFC 4646."@en-us ;
+        rdfs:isDefinedBy  <http://www.ietf.org/rfc/rfc3066.txt> ;
+        rdfs:label        "RFC 3066"@en-us ;
+        skos:definition   "The set of tags constructed according to RFC 3066 for the identification of languages."@en-us .
+
+dct:RFC4646  a          rdfs:Datatype ;
+        rdfs:comment      "RFC 4646 obsoletes RFC 3066."@en-us ;
+        rdfs:isDefinedBy  <http://www.ietf.org/rfc/rfc4646.txt> ;
+        rdfs:label        "RFC 4646"@en-us ;
+        skos:definition   "The set of tags constructed according to RFC 4646 for the identification of languages."@en-us .
+
+dct:RightsStatement
+        a                   dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:label          "Rights Statement"@en-us ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "dcdct:RightsStatement" ;
+        skos:definition     "A statement about the intellectual property rights (IPR) held in or over a Resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en-us .
+
+dct:SizeOrDuration  a     dc:contributor , owl:NamedIndividual , owl:Class ;
+        rdfs:comment        "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds."@en-us ;
+        rdfs:label          "Size or Duration"@en-us ;
+        rdfs:subClassOf     dc:contributor ;
+        metadata:prefixIRI  "dcdct:SizeOrDuration" ;
+        skos:definition     "A dimension or extent, or a time taken to play or execute."@en-us .
+
+dct:Standard  a        dc:contributor , owl:NamedIndividual ;
+        rdfs:label       "Standard"@en-us ;
+        skos:definition  "A basis for comparison; a reference point against which other things can be evaluated."@en-us .
+
+dct:TGN  a              <http://purl.org/dc/dcam/VocabularyEncodingScheme> , owl:NamedIndividual ;
+        rdfs:isDefinedBy  <http://www.getty.edu/research/tools/vocabulary/tgn/index.html> ;
+        rdfs:label        "TGN"@en-us ;
+        skos:definition   "The set of places specified by the Getty Thesaurus of Geographic Names."@en-us .
+
+dct:URI  a              rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://www.ietf.org/rfc/rfc3986.txt> ;
+        rdfs:label        "URI"@en-us ;
+        skos:definition   "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force."@en-us .
+
+dct:W3CDTF  a           rdfs:Datatype ;
+        rdfs:isDefinedBy  <http://www.w3.org/TR/NOTE-datetime> ;
+        rdfs:label        "W3C-DTF"@en-us ;
+        skos:definition   "The set of dates and times constructed according to the W3C Date and Time Formats Specification."@en-us .
+
+dct:abstract  a           owl:AnnotationProperty ;
+        rdfs:label          "Abstract"@en-us ;
+        rdfs:subPropertyOf  dct:description ;
+        skos:definition     "A summary of the resource."@en-us .
+
+dct:accessRights  a       owl:AnnotationProperty ;
+        rdfs:comment        "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."@en-us ;
+        rdfs:label          "Access Rights"@en-us ;
+        rdfs:range          dct:RightsStatement ;
+        rdfs:subPropertyOf  dct:rights ;
+        skos:definition     "Information about who can access the resource or an indication of its security status."@en-us .
+
+dct:accrualMethod  a   owl:AnnotationProperty ;
+        rdfs:domain      dct:Collection ;
+        rdfs:label       "Accrual Method"@en-us ;
+        rdfs:range       dct:MethodOfAccrual ;
+        skos:definition  "The method by which items are added to a collection."@en-us .
+
+dct:accrualPeriodicity
+        a                owl:AnnotationProperty ;
+        rdfs:domain      dct:Collection ;
+        rdfs:label       "Accrual Periodicity"@en-us ;
+        rdfs:range       dct:Frequency ;
+        skos:definition  "The frequency with which items are added to a collection."@en-us .
+
+dct:accrualPolicy  a   owl:AnnotationProperty ;
+        rdfs:domain      dct:Collection ;
+        rdfs:label       "Accrual Policy"@en-us ;
+        rdfs:range       dct:Policy ;
+        skos:definition  "The policy governing the addition of items to a collection."@en-us .
+
+dct:alternative  a        owl:AnnotationProperty ;
+        rdfs:comment        "The distinction between titles and alternative titles is application-specific."@en-us ;
+        rdfs:label          "Alternative Title"@en-us ;
+        rdfs:subPropertyOf  dct:title ;
+        skos:definition     "An alternative name for the resource."@en-us ;
+        skos:note           "In current practice, this term is used primarily with literal values; however, there are important uses with non-literal values as well. As of December 2007, the DCMI Usage Board is leaving this range unspecified pending an investigation of options."@en-us .
+
+dct:audience  a        owl:AnnotationProperty ;
+        rdfs:label       "Audience"@en-us ;
+        rdfs:range       dct:AgentClass ;
+        skos:definition  "A class of entity for whom the resource is intended or useful."@en-us .
+
+dct:available  a          owl:AnnotationProperty ;
+        rdfs:label          "Date Available"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date (often a range) that the resource became or will become available."@en-us .
+
+dct:bibliographicCitation
+        a                   owl:AnnotationProperty ;
+        rdfs:comment        "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en-us ;
+        rdfs:domain         dct:BibliographicResource ;
+        rdfs:label          "Bibliographic Citation"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:identifier ;
+        skos:definition     "A bibliographic reference for the resource."@en-us .
+
+dct:conformsTo  a         owl:AnnotationProperty ;
+        rdfs:label          "Conforms To"@en-us ;
+        rdfs:range          dct:Standard ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "An established standard to which the described resource conforms."@en-us .
+
+dct:contributor  a        owl:AnnotationProperty ;
+        rdfs:comment        "Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."@en-us ;
+        rdfs:label          "Contributor"@en-us ;
+        rdfs:range          dct:Agent ;
+        rdfs:subPropertyOf  dc:contributor ;
+        skos:definition     "An entity responsible for making contributions to the resource."@en-us .
+
+dct:coverage  a                    owl:AnnotationProperty ;
+        rdfs:comment                 "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."@en-us ;
+        rdfs:label                   "Coverage"@en-us ;
+        rdfs:range                   dct:LocationPeriodOrJurisdiction ;
+        rdfs:seeAlso                 <http://www.getty.edu/research/tools/vocabulary/tgn/index.html> ;
+        rdfs:subPropertyOf           dc:coverage ;
+        dct:bibliographicCitation  "[TGN] http://www.getty.edu/research/tools/vocabulary/tgn/index.html" ;
+        skos:definition              "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant."@en-us .
+
+dct:created  a            owl:AnnotationProperty ;
+        rdfs:label          "Date Created"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date of creation of the resource."@en-us .
+
+dct:creator  a            owl:AnnotationProperty ;
+        rdfs:comment        "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."@en-us ;
+        rdfs:label          "Creator"@en-us ;
+        rdfs:range          dct:Agent ;
+        rdfs:subPropertyOf  dct:contributor , dc:creator ;
+        skos:definition     "An entity primarily responsible for making the resource."@en-us .
+
+dct:date  a                        owl:AnnotationProperty ;
+        rdfs:comment                 "Date may be used to express temporal information at any level of granularity. Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."@en-us ;
+        rdfs:label                   "Date"@en-us ;
+        rdfs:range                   rdfs:Literal ;
+        rdfs:seeAlso                 <http://www.w3.org/TR/NOTE-datetime> ;
+        rdfs:subPropertyOf           dc:date ;
+        dct:bibliographicCitation  "[W3CDTF] http://www.w3.org/TR/NOTE-datetime" ;
+        skos:definition              "A point or period of time associated with an event in the lifecycle of the resource."@en-us .
+
+dct:dateAccepted  a       owl:AnnotationProperty ;
+        rdfs:comment        "Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."@en-us ;
+        rdfs:label          "Date Accepted"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date of acceptance of the resource."@en-us .
+
+dct:dateCopyrighted
+        a                   owl:AnnotationProperty ;
+        rdfs:label          "Date Copyrighted"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date of copyright."@en-us .
+
+dct:dateSubmitted  a      owl:AnnotationProperty ;
+        rdfs:comment        "Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."@en-us ;
+        rdfs:label          "Date Submitted"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date of submission of the resource."@en-us .
+
+dct:description  a        owl:AnnotationProperty ;
+        rdfs:comment        "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en-us ;
+        rdfs:label          "Description"@en-us ;
+        rdfs:subPropertyOf  dc:description ;
+        skos:definition     "An account of the resource."@en-us .
+
+dct:educationLevel  a     owl:AnnotationProperty ;
+        rdfs:label          "Audience Education Level"@en-us ;
+        rdfs:range          dct:AgentClass ;
+        rdfs:subPropertyOf  dct:audience ;
+        skos:definition     "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."@en-us .
+
+dct:extent  a             owl:AnnotationProperty ;
+        rdfs:label          "Extent"@en-us ;
+        rdfs:range          dct:SizeOrDuration ;
+        rdfs:subPropertyOf  dct:format ;
+        skos:definition     "The size or duration of the resource."@en-us .
+
+dct:format  a                      owl:AnnotationProperty ;
+        rdfs:comment                 "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."@en-us ;
+        rdfs:label                   "Format"@en-us ;
+        rdfs:range                   dc:contributor ;
+        rdfs:seeAlso                 <http://www.iana.org/assignments/media-types/> ;
+        rdfs:subPropertyOf           dc:format ;
+        dct:bibliographicCitation  "[MIME] http://www.iana.org/assignments/media-types/" ;
+        skos:definition              "The file format, physical medium, or dimensions of the resource."@en-us .
+
+dct:hasFormat  a          owl:AnnotationProperty ;
+        rdfs:label          "Has Format"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that is substantially the same as the pre-existing described resource, but in another format."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:hasPart  a            owl:AnnotationProperty ;
+        rdfs:label          "Has Part"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that is included either physically or logically in the described resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:hasVersion  a         owl:AnnotationProperty ;
+        rdfs:label          "Has Version"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that is a version, edition, or adaptation of the described resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:identifier  a         owl:AnnotationProperty ;
+        rdfs:comment        "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."@en-us ;
+        rdfs:label          "Identifier"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dc:identifier ;
+        skos:definition     "An unambiguous reference to the resource within a given context."@en-us .
+
+dct:instructionalMethod
+        a                owl:AnnotationProperty ;
+        rdfs:comment     "Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."@en-us ;
+        rdfs:label       "Instructional Method"@en-us ;
+        rdfs:range       dct:MethodOfInstruction ;
+        skos:definition  "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support."@en-us .
+
+dct:isFormatOf  a         owl:AnnotationProperty ;
+        rdfs:label          "Is Format Of"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that is substantially the same as the described resource, but in another format."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:isPartOf  a           owl:AnnotationProperty ;
+        rdfs:label          "Is Part Of"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource in which the described resource is physically or logically included."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:isReferencedBy  a     owl:AnnotationProperty ;
+        rdfs:label          "Is Referenced By"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that references, cites, or otherwise points to the described resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:isReplacedBy  a       owl:AnnotationProperty ;
+        rdfs:label          "Is Replaced By"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that supplants, displaces, or supersedes the described resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:isRequiredBy  a       owl:AnnotationProperty ;
+        rdfs:label          "Is Required By"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that requires the described resource to support its function, delivery, or coherence."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:isVersionOf  a        owl:AnnotationProperty ;
+        rdfs:comment        "Changes in version imply substantive changes in content rather than differences in format."@en-us ;
+        rdfs:label          "Is Version Of"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource of which the described resource is a version, edition, or adaptation."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:issued  a             owl:AnnotationProperty ;
+        rdfs:label          "Date Issued"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date of formal issuance (e.g., publication) of the resource."@en-us .
+
+dct:language  a                    owl:AnnotationProperty ;
+        rdfs:comment                 "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."@en-us ;
+        rdfs:label                   "Language"@en-us ;
+        rdfs:range                   dct:LinguisticSystem ;
+        rdfs:seeAlso                 <http://www.ietf.org/rfc/rfc4646.txt> ;
+        rdfs:subPropertyOf           dc:language ;
+        dct:bibliographicCitation  "[RFC4646] http://www.ietf.org/rfc/rfc4646.txt" ;
+        skos:definition              "A language of the resource."@en-us .
+
+dct:license  a            owl:AnnotationProperty ;
+        rdfs:label          "License"@en-us ;
+        rdfs:range          dct:LicenseDocument ;
+        rdfs:subPropertyOf  dct:rights ;
+        skos:definition     "A legal document giving official permission to do something with the resource."@en-us .
+
+dct:mediator  a           owl:AnnotationProperty ;
+        rdfs:comment        "In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."@en-us ;
+        rdfs:label          "Mediator"@en-us ;
+        rdfs:range          dct:AgentClass ;
+        rdfs:subPropertyOf  dct:audience ;
+        skos:definition     "An entity that mediates access to the resource and for whom the resource is intended or useful."@en-us .
+
+dct:medium  a             owl:AnnotationProperty ;
+        rdfs:domain         dct:PhysicalResource ;
+        rdfs:label          "Medium"@en-us ;
+        rdfs:range          dct:PhysicalMedium ;
+        rdfs:subPropertyOf  dct:format ;
+        skos:definition     "The material or physical carrier of the resource."@en-us .
+
+dct:modified  a           owl:AnnotationProperty ;
+        rdfs:label          "Date Modified"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date on which the resource was changed."@en-us .
+
+dct:provenance  a      owl:AnnotationProperty ;
+        rdfs:comment     "The statement may include a description of any changes successive custodians made to the resource."@en-us ;
+        rdfs:label       "Provenance"@en-us ;
+        rdfs:range       dct:ProvenanceStatement ;
+        skos:definition  "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."@en-us .
+
+dct:publisher  a          owl:AnnotationProperty ;
+        rdfs:comment        "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."@en-us ;
+        rdfs:label          "Publisher"@en-us ;
+        rdfs:range          dct:Agent ;
+        rdfs:subPropertyOf  dc:publisher ;
+        skos:definition     "An entity responsible for making the resource available."@en-us .
+
+dct:references  a         owl:AnnotationProperty ;
+        rdfs:label          "References"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that is referenced, cited, or otherwise pointed to by the described resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:relation  a           owl:AnnotationProperty ;
+        rdfs:comment        "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en-us ;
+        rdfs:label          "Relation"@en-us ;
+        rdfs:subPropertyOf  dc:contributor ;
+        skos:definition     "A related resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:replaces  a           owl:AnnotationProperty ;
+        rdfs:label          "Replaces"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that is supplanted, displaced, or superseded by the described resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:requires  a           owl:AnnotationProperty ;
+        rdfs:label          "Requires"@en-us ;
+        rdfs:subPropertyOf  dct:relation ;
+        skos:definition     "A related resource that is required by the described resource to support its function, delivery, or coherence."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:rights  a             owl:AnnotationProperty ;
+        rdfs:comment        "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en-us ;
+        rdfs:label          "Rights"@en-us ;
+        rdfs:range          dct:RightsStatement ;
+        rdfs:subPropertyOf  dc:rights ;
+        skos:definition     "Information about rights held in and over the resource."@en-us .
+
+dct:rightsHolder  a    owl:AnnotationProperty ;
+        rdfs:label       "Rights Holder"@en-us ;
+        rdfs:range       dct:Agent ;
+        skos:definition  "A person or organization owning or managing rights over the resource."@en-us .
+
+dct:source  a             owl:AnnotationProperty ;
+        rdfs:comment        "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en-us ;
+        rdfs:label          "Source"@en-us ;
+        rdfs:subPropertyOf  dct:relation , dc:source ;
+        skos:definition     "A related resource from which the described resource is derived."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:spatial  a            owl:AnnotationProperty ;
+        rdfs:label          "Spatial Coverage"@en-us ;
+        rdfs:range          dct:Location ;
+        rdfs:subPropertyOf  dct:coverage ;
+        skos:definition     "Spatial characteristics of the resource."@en-us .
+
+dct:subject  a            owl:AnnotationProperty ;
+        rdfs:comment        "Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."@en-us ;
+        rdfs:label          "Subject"@en-us ;
+        rdfs:subPropertyOf  dc:subject ;
+        skos:definition     "The topic of the resource."@en-us ;
+        skos:note           "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/). As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en-us .
+
+dct:tableOfContents
+        a                   owl:AnnotationProperty ;
+        rdfs:label          "Table Of Contents"@en-us ;
+        rdfs:subPropertyOf  dct:description ;
+        skos:definition     "A list of subunits of the resource."@en-us .
+
+dct:temporal  a           owl:AnnotationProperty ;
+        rdfs:label          "Temporal Coverage"@en-us ;
+        rdfs:range          dct:PeriodOfTime ;
+        rdfs:subPropertyOf  dct:coverage ;
+        skos:definition     "Temporal characteristics of the resource."@en-us .
+
+dct:title  a              owl:AnnotationProperty ;
+        rdfs:label          "Title"@en-us ;
+        rdfs:subPropertyOf  dc:title ;
+        skos:definition     "A name given to the resource."@en-us ;
+        skos:note           "In current practice, this term is used primarily with literal values; however, there are important uses with non-literal values as well. As of December 2007, the DCMI Usage Board is leaving this range unspecified pending an investigation of options."@en-us .
+
+dct:type  a                        owl:AnnotationProperty ;
+        rdfs:comment                 "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."@en-us ;
+        rdfs:label                   "Type"@en-us ;
+        rdfs:range                   dc:contributor ;
+        rdfs:seeAlso                 <http://dublincore.org/documents/dcmi-type-vocabulary/> ;
+        rdfs:subPropertyOf           dc:type ;
+        dct:bibliographicCitation  "[DCMITYPE] http://dublincore.org/documents/dcmi-type-vocabulary/" ;
+        skos:definition              "The nature or genre of the resource."@en-us .
+
+dct:valid  a              owl:AnnotationProperty ;
+        rdfs:label          "Date Valid"@en-us ;
+        rdfs:range          rdfs:Literal ;
+        rdfs:subPropertyOf  dct:date ;
+        skos:definition     "Date (often a range) of validity of a resource."@en-us .
+
+metadata:prefixIRI  a  owl:AnnotationProperty .
+
+owl:Thing  metadata:prefixIRI  "owl:Thing" .
+
+rdfs:Class  a               owl:Class ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "rdfs:Class" .
+
+skos:Collection  a          owl:Class ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "Collection"@en ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "skos:Collection" ;
+        owl:disjointWith    skos:ConceptScheme , skos:Concept ;
+        skos:definition     "A meaningful collection of concepts."@en ;
+        skos:scopeNote      "Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy."@en .
+
+skos:Concept  a             owl:Class ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "Concept"@en ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "skos:Concept" ;
+        owl:disjointWith    skos:ConceptScheme ;
+        skos:definition     "An idea or notion; a unit of thought."@en .
+
+skos:ConceptScheme  a       owl:Class ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "Concept Scheme"@en ;
+        rdfs:subClassOf     owl:Thing ;
+        metadata:prefixIRI  "skos:ConceptScheme" ;
+        skos:definition     "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ;
+        skos:example        "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
+        skos:scopeNote      "A concept scheme may be defined to include concepts from different sources."@en .
+
+skos:OrderedCollection
+        a                   owl:Class ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "Ordered Collection"@en ;
+        rdfs:subClassOf     skos:Collection ;
+        metadata:prefixIRI  "skos:OrderedCollection" ;
+        skos:definition     "An ordered collection of concepts, where both the grouping and the ordering are meaningful."@en ;
+        skos:scopeNote      "Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a 'node label'."@en .
+
+skos:altLabel  a          owl:AnnotationProperty ;
+        rdfs:comment      "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en , "The range of skos:altLabel is the class of RDF plain literals."@en ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "alternative label"@en ;
+        skos:definition   "An alternative lexical label for a resource."@en ;
+        skos:example      "Acronyms, abbreviations, spelling variants, and irregular plural/singular forms may be included among the alternative labels for a concept. Mis-spelled terms are normally included as hidden labels (see skos:hiddenLabel)."@en .
+
+skos:broadMatch  a          owl:ObjectProperty ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has broader match"@en ;
+        rdfs:subPropertyOf  skos:mappingRelation , skos:broader ;
+        owl:inverseOf       skos:narrowMatch ;
+        skos:definition     "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en .
+
+skos:broader  a             owl:ObjectProperty ;
+        rdfs:comment        "Broader concepts are typically rendered as parents in a concept hierarchy (tree)."@en ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has broader"@en ;
+        rdfs:subPropertyOf  skos:broaderTransitive ;
+        owl:inverseOf       skos:narrower ;
+        skos:definition     "Relates a concept to a concept that is more general in meaning."@en ;
+        skos:scopeNote      "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
+
+skos:broaderTransitive
+        a                   owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has broader transitive"@en ;
+        rdfs:subPropertyOf  skos:semanticRelation ;
+        owl:inverseOf       skos:narrowerTransitive ;
+        skos:definition     "skos:broaderTransitive is a transitive superproperty of skos:broader." ;
+        skos:scopeNote      "By convention, skos:broaderTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en .
+
+skos:changeNote  a        owl:AnnotationProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "change note"@en ;
+        skos:definition   "A note about a modification to a concept."@en .
+
+skos:closeMatch  a          owl:SymmetricProperty , owl:ObjectProperty ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has close match"@en ;
+        rdfs:subPropertyOf  skos:mappingRelation ;
+        skos:definition     "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property."@en .
+
+skos:definition  a        owl:AnnotationProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "definition"@en ;
+        skos:definition   "A statement or formal explanation of the meaning of a concept."@en .
+
+skos:editorialNote  a     owl:AnnotationProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "editorial note"@en ;
+        skos:definition   "A note for an editor, translator or maintainer of the vocabulary."@en .
+
+skos:exactMatch  a          owl:TransitiveProperty , owl:SymmetricProperty , owl:ObjectProperty ;
+        rdfs:comment        "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch."@en ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has exact match"@en ;
+        rdfs:subPropertyOf  skos:closeMatch ;
+        skos:definition     "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en .
+
+skos:example  a           owl:AnnotationProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "example"@en ;
+        skos:definition   "An example of the use of a concept."@en .
+
+skos:hasTopConcept  a     owl:ObjectProperty ;
+        rdfs:domain       skos:ConceptScheme ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "has top concept"@en ;
+        rdfs:range        skos:Concept ;
+        owl:inverseOf     skos:topConceptOf ;
+        skos:definition   "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
+
+skos:hiddenLabel  a       owl:AnnotationProperty ;
+        rdfs:comment      "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties."@en , "The range of skos:hiddenLabel is the class of RDF plain literals."@en ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "hidden label"@en ;
+        skos:definition   "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations."@en .
+
+skos:historyNote  a       owl:AnnotationProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "history note"@en ;
+        skos:definition   "A note about the past state/use/meaning of a concept."@en .
+
+skos:inScheme  a          owl:ObjectProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "is in scheme"@en ;
+        rdfs:range        skos:ConceptScheme ;
+        skos:definition   "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
+        skos:scopeNote    "A concept may be a member of more than one concept scheme."@en .
+
+skos:mappingRelation  a     owl:ObjectProperty ;
+        rdfs:comment        "These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice."@en ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "is in mapping relation with"@en ;
+        rdfs:subPropertyOf  skos:semanticRelation ;
+        skos:definition     "Relates two concepts coming, by convention, from different schemes, and that have comparable meanings"@en .
+
+skos:member  a            owl:ObjectProperty ;
+        rdfs:domain       skos:Collection ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "has member"@en ;
+        rdfs:range        [ a            owl:Class ;
+                            owl:unionOf  ( skos:Collection skos:Concept )
+                          ] ;
+        skos:definition   "Relates a collection to one of its members."@en .
+
+skos:memberList  a        owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:comment      "For any resource, every item in the list given as the value of the\n      skos:memberList property is also a value of the skos:member property."@en ;
+        rdfs:domain       skos:OrderedCollection ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "has member list"@en ;
+        skos:definition   "Relates an ordered collection to the RDF list containing its members."@en .
+
+skos:narrowMatch  a         owl:ObjectProperty ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has narrower match"@en ;
+        rdfs:subPropertyOf  skos:narrower , skos:mappingRelation ;
+        skos:definition     "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en .
+
+skos:narrower  a            owl:ObjectProperty ;
+        rdfs:comment        "Narrower concepts are typically rendered as children in a concept hierarchy (tree)."@en ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has narrower"@en ;
+        rdfs:subPropertyOf  skos:narrowerTransitive ;
+        skos:definition     "Relates a concept to a concept that is more specific in meaning."@en ;
+        skos:scopeNote      "By convention, skos:broader is only used to assert an immediate (i.e. direct) hierarchical link between two conceptual resources."@en .
+
+skos:narrowerTransitive
+        a                   owl:TransitiveProperty , owl:ObjectProperty ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has narrower transitive"@en ;
+        rdfs:subPropertyOf  skos:semanticRelation ;
+        skos:definition     "skos:narrowerTransitive is a transitive superproperty of skos:narrower." ;
+        skos:scopeNote      "By convention, skos:narrowerTransitive is not used to make assertions. Rather, the properties can be used to draw inferences about the transitive closure of the hierarchical relation, which is useful e.g. when implementing a simple query expansion algorithm in a search application."@en .
+
+skos:notation  a          owl:DatatypeProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "notation"@en ;
+        skos:definition   "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en ;
+        skos:scopeNote    "By convention, skos:notation is used with a typed literal in the object position of the triple."@en .
+
+skos:note  a              owl:AnnotationProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "note"@en ;
+        skos:definition   "A general note, for any purpose."@en ;
+        skos:scopeNote    "This property may be used directly, or as a super-property for more specific note types."@en .
+
+skos:prefLabel  a         owl:AnnotationProperty ;
+        rdfs:comment      "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise\n      disjoint properties."@en , "The range of skos:prefLabel is the class of RDF plain literals."@en , "A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag."@en ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "preferred label"@en ;
+        skos:definition   "The preferred lexical label for a resource, in a given language."@en .
+
+skos:related  a             owl:SymmetricProperty , owl:ObjectProperty ;
+        rdfs:comment        "skos:related is disjoint with skos:broaderTransitive"@en ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has related"@en ;
+        rdfs:subPropertyOf  skos:semanticRelation ;
+        skos:definition     "Relates a concept to a concept with which there is an associative semantic relationship."@en .
+
+skos:relatedMatch  a        owl:SymmetricProperty , owl:ObjectProperty ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "has related match"@en ;
+        rdfs:subPropertyOf  skos:related , skos:mappingRelation ;
+        skos:definition     "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes."@en .
+
+skos:scopeNote  a         owl:AnnotationProperty ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "scope note"@en ;
+        skos:definition   "A note that helps to clarify the meaning and/or the use of a concept."@en .
+
+skos:semanticRelation
+        a                 owl:ObjectProperty ;
+        rdfs:domain       skos:Concept ;
+        rdfs:isDefinedBy  <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label        "is in semantic relation with"@en ;
+        rdfs:range        skos:Concept ;
+        skos:definition   "Links a concept to a concept related by meaning."@en ;
+        skos:scopeNote    "This property should not be used directly, but as a super-property for all properties denoting a relationship of meaning between concepts."@en .
+
+skos:topConceptOf  a        owl:ObjectProperty ;
+        rdfs:domain         skos:Concept ;
+        rdfs:isDefinedBy    <http://www.w3.org/2004/02/skos/core> ;
+        rdfs:label          "is top concept in scheme"@en ;
+        rdfs:range          skos:ConceptScheme ;
+        rdfs:subPropertyOf  skos:inScheme ;
+        skos:definition     "Relates a concept to the concept scheme that it is a top level concept of."@en .

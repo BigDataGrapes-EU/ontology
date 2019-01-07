@@ -1,0 +1,866 @@
+#+PROPERTY: header-args:Turtle :tangle model.ttl
+#+OPTIONS: ':nil *:t -:t ::t <:t H:5 \n:nil ^:{} arch:headline author:t broken-links:nil
+#+OPTIONS: c:nil creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:nil title:t toc:5
+#+OPTIONS: todo:t |:t
+#+TITLE: BigDataGrapes Semantic Model
+#+DATE: <2019-01-03>
+#+AUTHOR: Vladimir Alexiev
+#+EMAIL: vladimir.alexiev@ontotext.com
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.3.1 (Org mode 9.1.13)
+
+* Intro
+We develop the BigDataGrapes Semantic Model by way of example, starting from AUA Table Grapes tabular data.
+After this example is approved, we'll follow similar modeling for other kinds of observations.
+- We work with [[https://docs.google.com/document/d/1_id0r5pEH-VgQXZnXBN9C5-7SJn-q0J3uM3JHUzl8LU/edit][AUA Table Grapes Data]]
+- The data is in [[https://drive.google.com/drive/folders/16p63tgyPaR7BRiOY-_D1T983y2yfr4X4][WP8/Table Grapes Pilot- AUA/Data]], in particular we work with the Fasoulis estate, Geotrisi plot (sub-estate)
+- Look in [[https://docs.google.com/document/d/19-6qKtuDx7EoZBNbjmDBqFdToq1mCvEyLtA5xKinO7I/edit][D8.1 Piloting Plan: BigDataGrapes_Piloting Plan-AUA]] for descriptions of equipment and measured indicators
+- We're trying to convert to W3C ontologies [[https://docs.google.com/document/d/1f5wJljke0J7ztM3YioyRhKPLbAKwKoq4ipDBaS6Z28I/edit#heading=h.uqcdo9n3ri9l][as described here]]: SOSA, SSN, QB, QB4ST, EO QB; SKOS, QUDT.
+
+** TODO Units of Measure Ontologies
+Which ontology should we use to represent Units of Measure (UoM)?
+See two survey papers in gdoc UoM.
+
+*** QUDT
+For the time being we use QUDT 2.0, which is sponsored by NASA and has an extensive set of 80 ontologies covering Units of Measure, Quantity Kinds, Dimensions and Types.
+
+QUDT semantics is based on dimensional analysis expressed in OWL, which relates each unit to a system of base units using numeric factors and a vector of exponents defined over a set of fundamental dimensions.
+This is expressed as attributes ~qudt:dimensionExponentFor~ in class ~qudt:QuantityDimensionVector~, where ~*~ is one of ~AmountOfSubstance, ElectricCurrent, Length, LuminousIntensity, Mass, ThermodynamicTemperature, Time~, and ~qudt:dimensionlessExponent~.
+- Each ~qudt:QuantityKind~ is also linked to a respective ~qudt:hasReferenceQuantityKind~: the fundamental unit for that dimension vector.
+- Each unit has ~qudt:conversionMultiplier~ to its respective fundamental unit, allowing precise unit conversions if needed.
+- There is also ~qudt:conversionOffset~ to allow for units with different scale origin (like Kelvin vs Fahrenheit vs Celsius)
+Resources:
+- [[http://www.qudt.org/pages/QUDToverviewPage.html][QUDT Overview]]
+- [[http://www.qudt.org/release2/qudt-catalog.html][QUDT Catalog]]. We have downloaded the following ontologies that may be relevant to BDG:
+  - SCHEMA_QUDT-DATATYPES-v2.0.ttl: not used
+  - SCHEMA_QUDT-SCIENCE-v2.0.ttl: eg ~qudt:ConductanceUnit~
+  - SCHEMA_QUDT-v2.0.ttl: base ontology
+  - VOCAB_QUDT-UNITS-BASE-v2.0.ttl: eg ~unit:Milli~
+  - VOCAB_QUDT-UNITS-ELECTROMAGNETISM-v2.0.ttl: eg ~unit:S-PER-M~ "Siemens per meter"
+  - VOCAB_QUDT-UNITS-SPACE-AND-TIME-v2.0.ttl
+There is a number of ontologies that are in progress or in QA and not yet available for download. Amongst those, the following may be relevant
+- http://qudt.org/2.0/schema/qudt/engineering
+- http://qudt.org/2.0/vocab/quantitykind/telebiometrics
+- http://qudt.org/2.0/vocab/quantitykind/lifesciences
+Resolvability:
+- Ontology URLs (eg http://qudt.org/schema/qudt) resolve but return only RDF/XML (the HTML version of that ontology is http://qudt.org/doc/2017/DOC_SCHEMA-QUDT-v2.0.html)
+- Individual terms (eg http://qudt.org/schema/qudt/GlossaryTerm) don't resolve.
+
+** Property Sources
+
+*** TODO Agricultural Properties
+- NIR, RE, RED; NDVI, NDRE, LAI
+- Soil electrical conductivity
+
+I've looked previously for NDVI and couldn't find a satisfactory definition (independent of crop type).
+
+*** TODO Statistical Operations
+AUA data includes derived properties produced with the following statistical operations
+- Minimum
+- Maximum
+- Standard Deviation
+- Coefficient of Variation
+
+[[https://lov.linkeddata.es/dataset/lov/terms?q=deviation][Searching for deviation]] in Linked Open Vocabularies:
+- [[http://semanticscience.org/resource/SIO_000770][SIO:000770]] (SemanticScience Integrated Ontology) "standard deviation".
+  Also has [[http://semanticscience.org/resource/SIO_001114][SIO:001114]] "maximal value" and [[http://semanticscience.org/resource/SIO_001113][SIO:001113]] "minimal value",
+  but these are defined as SIO:000011 "attribute" of a SIO:000616 "collection".
+  No var.
+- [[http://purl.obolibrary.org/obo/OBI_0200121][OBI:0200121]] (Ontology for Biomedical Investigations): "standard deviation calculation".
+  Includes 10 [[http://purl.obolibrary.org/obo/OBI_0200184][descriptive statistical calculation data transformation]] including kurtosis, skewness, variance. But not min/max/var.
+- [[https://w3id.org/seas/StandardDeviationEvaluation][seas-stats:StandardDeviationEvaluation]].
+  SEAS includes an alternative ontology of sensors and observations (see gdoc "SEAS").
+  Also has DistributionMaximumEvaluation and DistributionMinimumEvaluation but not var.
+- [[https://w3id.org/saref4ee#StandardDeviationValue][s4ee:StandardDeviationValue]] (Smart Appliances REFerence, extension for EEBus and Energy@Home) "Standard deviation value".
+  Also has AverageValue, MinValue, MaxValue but not var.
+- (DICOM has a lot of terms matching this word, but they are not appropriate)
+- [[http://ontology.cybershare.utep.edu/ELSEWeb/elseweb-lifemapper-parameters.owl#StandardDeviations][lswpm:StandardDeviations]] (elseweb-lifemapper-parameters: the Earth, Life and Semantic Web (ELSeWeb) project integrates the NASA-funded Earth Data Analysis Center with an analytical Web Service platform, Lifemapper, which models potential future species distributions under scenarios of climate change).
+  No min/max, not appropriate
+- [[http://mex.aksw.org/mex-perf#standardDeviation][mexperf:standardDeviation]] (Performance Values for Machine Learning Problems):
+  no min/max
+- [[http://vocab.datex.org/terms#standardDeviation][datex:standardDeviation]] (EU standard for Exchange of Traffic Related Data):
+  no min/max
+
+* Data Mapping
+
+** Properties/Variables
+The properties that we need fall in the following groups.
+For each one we state the ~qb:concept~ (statistical concept) that the property relates to.
+
+*** Geospatial and Temporal Reference
+We represent these as DimensionProperties, since they identify the measurement (the measurement is a function of all dimension values).
+- Estate: we don't represent this, since it is implied by Plot.
+  TODO: Alternatively, we could represent it as a hierarchical level, using ~subdivides~ for the hierarchical relation:
+  #+BEGIN_SRC Turtle :tangle no
+bdg:estate a qb4st:RefArea;
+  rdfs:label "Estate"; rdfs:comment "Estate of a measurement".
+
+bdg:plot qb4st:subdivides bdg:estate.
+  #+END_SRC
+  Or we could follow QB4OLAP ideas to represent the hierarchical aspect.
+- Plot
+  #+BEGIN_SRC Turtle
+bdg:plot a qb4st:RefArea;
+  rdfs:label "Plot"; rdfs:comment "Plot (sub-estate) of a measurement";
+  qb:concept sdmx-concept:refArea;
+  rdfs:range bdg:Plot.
+  #+END_SRC
+- Date, Time.
+  We use ~Date~ to mark the temporal coverage of the dataset (see [[*Datasets]]),
+  and ~Date+Time~ to represent the dateTime of observation.
+  #+BEGIN_SRC Turtle
+bdg:dateTime a qb:DimensionProperty;
+  rdfs:label "Date-time"; rdfs:comment "Date-time of the observation";
+  qb:concept sdmx-concept:timePeriod;
+  rdfs:range xsd:dateTime.
+  #+END_SRC
+  Note: ~qb4st:TemporalProperty~ refers to the use of ~time:Interval~ but we prefer to use a simple literal.
+  EO QB uses ~qb4st:TemporalProperty~ with a simple literal, which is not consistent: [[https://github.com/w3c/sdw/issues/1108][sdw#1108]].
+- Sensor.
+  In AUA data we always know the sensor that took the observation (implicitly).
+  If that is not the case for some datasets, then we must use an (optional) ~qb:AttributeProperty~, like EO QB does.
+  #+BEGIN_SRC Turtle
+bdg:sensor a qb:DimensionProperty;
+  rdfs:label "Sensor"; rdfs:comment "Sensor/Instrument that took the observation";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range ssn:Sensor.
+  #+END_SRC
+
+**** Position
+The observation's position is expressed in two ways depending on the dataset:
+- Latitude, Longitude (Degrees), Elevation (m) in CRS WGS84
+- Northing, Easting (Degrees) in (presumably) in CRS EPSG 32634 (see sec [[*Plots/Geometries]] for details)
+Elevation is a bit special because:
+- It's functionally dependent on the Plot and Latitude/Longitude:
+  the plot's terrain determines the elevation.
+  Different sensors could report different elevations for the same point,
+  but that would be due to measurement error
+- It's missing from some of the datasets
+Therefore Elevation cannot be a dimension.
+
+We could represent the coordinates as separate properties but we prefer to represent them as GeoSPARQL literals because:
+- The individual coordinates are represented in different CRS, therefore not directly comparable
+- Allows automatic comparison of northing/easting to canonical latitude/longitude
+- The special status of Elevation as described above
+Note: QB4ST does not define a position dimension (only defines ~qb4st:PositionMeasure~),
+so we use the slightly more generic ~qb4st:SpatialDimension~.
+
+#+BEGIN_SRC Turtle
+bdg:position a qb4st:SpatialDimension;
+  rdfs:label "Position"; rdfs:comment "A GeoSPARQL literal";
+  qb:concept sdmx-concept:refArea;
+  rdfs:subPropertyOf geo:hasSerialization;
+  schema:rangeIncludes geo:wktLiteral, geo:gmlLiteral.
+#+END_SRC
+TODO: Currently GraphDB cannot work with ~geo:wktLiteral~ expressed in non-default CRS.
+So we should either:
+- Use GML literals only (which are more complex), OR
+- Convert WKT literals to CRS84
+
+Deprecated: this needs an extra intermediate node (~geo:Point~) so it's not so good.
+#+BEGIN_SRC Turtle :tangle no
+bdg:position a qb4st:SpatialDimension;
+  rdfs:label "Position"; rdfs:comment """Position of the observation, a geo:Point.
+Must have a geometry with qb4st:crs to easily access the CRS, and optionally a geometry in the default/canonical CRS WGS84 for easy comparison";
+  qb:concept qb:concept sdmx-concept:refArea;
+  rdfs:range geo:Point.
+#+END_SRC
+
+*** Position Qualifiers
+We represent these as AttributeProperties, since they qualify the measurement.
+- FIXTYPE.
+  We represent this as a simple Boolean (false "Fix not valid", true "GPS").
+  TODO: if there are more values, we should use a codelist and rename appropriately (eg to ~fixType~).
+  #+BEGIN_SRC Turtle
+bdg:hasGpsFix a qb:AttributeProperty;
+  rdfs:label "Has GPS fix"; rdfs:comment "If the measurement doesn't have a GPS fix, it is invalid and should be discarded";
+  qb:concept sdmx-concept:obsStatus; # Information on the quality of a value or an unusual or missing value
+  rdfs:range xsd:boolean.
+  #+END_SRC
+- Sat
+  #+BEGIN_SRC Turtle
+bdg:satellites a qb:AttributeProperty;
+  rdfs:label "Satellites"; rdfs:comment "Number of tracked satellites that provided the GPS fix";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range xsd:int.
+  #+END_SRC
+  TODO: If instead this means "number of satellite that provided the fix", we should rename it.
+  Since we don't have info what exactly this number refers to, we should again map it to a simple int, not to ~ssn:Platform~.
+- HDOP (Horizontal Dilution of Precision)
+  #+BEGIN_SRC Turtle
+bdg:HDOP a qb:AttributeProperty;
+  skos:notation "HDOP"; rdfs:label "Horizontal dilution of precision"; rdfs:comment """GPS reception quality:
+<1 Ideal, 1-2 Excellent, 2-5 Good, 5-10 Moderate, 10-20 Fair, >20 Poor""";
+  sdmx-concept:dataValSource; #: discrepancies and other problems related to source data
+  rdfs:range xsd:int.
+    #+END_SRC
+- Quality indicator.
+  This is a coded property, so we also provide the respective codelist.
+  It is represented both as a ~skos:ConceptScheme~ and a ~rdfs:Class~ to enable ~rdfs:range~ checking.
+  #+BEGIN_SRC Turtle
+bdg:positionQuality a qb:AttributeProperty, qb:CodedProperty;
+  qb:codeList bdg-code:positionQuality;
+  sdmx-concept:dataValSource; #: discrepancies and other problems related to source data
+  rdfs:label "Position quality"; rdfs:comment "GPS position quality";
+  rdfs:range bdg-code:PositionQuality.
+bdg-code:PositionQuality a rdfs:Class;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:label "Position Quality codelist class"; rdfs:comment "Provides code values for Position Quality";
+  rdfs:seeAlso bdg-code:positionQuality .
+bdg-code:positionQuality a skos:ConceptScheme;
+  rdfs:label "Position Quality codelist scheme"; rdfs:comment "Provides code values for Position Quality";
+  rdfs:seeAlso bdg-code:PositionQuality .
+bdg-code:positionQuality-0 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "0"; skos:prefLabel "no position";
+  skos:scopeNote "Observations without position should be discarded".
+bdg-code:positionQuality-1 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "1"; skos:prefLabel "raw, not differentially corrected position".
+bdg-code:positionQuality-2 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "2"; skos:prefLabel "differentially corrected position".
+bdg-code:positionQuality-9 a bdg-code:PositionQuality;
+  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  skos:notation "9"; skos:prefLabel "position computed using almanac information)".
+  #+END_SRC
+
+*** Features of Interest
+Features of interest are AgroBio entities for which we may want to observe some properties:
+#+BEGIN_SRC Turtle
+<feature/Soil>   a sosa:FeatureOfInterest; rdfs:label "Soil".
+<feature/Canopy> a sosa:FeatureOfInterest; rdfs:label "Canopy"; rdfs:description "The leaf mass of some crop".
+
+sosa:hasFeatureOfInterest a qb:MeasureProperty.
+#+END_SRC
+
+**** Measurement Contexts
+We define some measurement contexts (qualifiers). Following QB practice, we put them in a codelist.
+Observations
+#+BEGIN_SRC Turtle
+bdg:measurementContext a qb:AttributeProperty;
+  qb:codeList <measurementContext>;
+  rdfs:range bdg:MeasurementContext.
+
+bdg:MeasurementContext a rdfs:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Measurement Context - codelist class".
+
+<measurementContext> a skos:conceptScheme;
+  rdfs:label "Measurement Context - codelist scheme".
+
+<feature/Soil/separation-1m>   a skos:Concept; bdg:MeasurementContext;
+  skos:inScheme <measurementContext>; skos:topConceptOf <measurementContext>;
+  rdfs:label "Soil, separation 1m".
+<feature/Soil/separation-0.5m> a skos:Concept; bdg:MeasurementContext;
+  skos:inScheme <measurementContext>; skos:topConceptOf <measurementContext>;
+  rdfs:label "Soil, separation 0.5m".
+#+END_SRC
+TODO: Not sure what "separation" is: I suspect it could mean "depth".
+Depending on the meaning, it may be appropriate to map this to ~sosa:Sample~:
+#+BEGIN_SRC Turtle :tangle no
+<feature/Soil/depth-1m>   a sosa:Sample; rdfs:label "Soil at depth 1m";
+  sosa:isSampleOf <feature/Soil>.
+<feature/Soil/depth-0.5m> a sosa:Sample; rdfs:label "Soil at depth 0.5m";
+  sosa:isSampleOf <feature/Soil>.
+#+END_SRC
+
+*** Observable Properties
+The following sub-sections define several properties to hold the observed values.
+We declare them ~sosa:ObservableProperty~ because they are observed by a ~sosa:Sensor~,
+and ~qb:MeasureProperty~ because they hold the observed/measured value.
+These properties bind together:
+- *what* is being observed (~FeatureOfInterest~)
+- *which* property is observed (~Property~)
+- *unit* of measure (~unitMeasure~) and *multiplier* (~unitMult~)
+- *context* of observation, if needed
+To do this binding we use attributes (~qb:AttributeProperty~)
+that are attached to the measure property (see [[*Data Structure Definition]]).
+TODO: I notice that each dataset observes only one feature (Soil or Canopy),
+so we could simplify by attaching to the dataset. However:
+- Attaching to the property is more self-contained (NDVI is always about Canopy)
+- We might get a sensor that observes several features at the same time.
+
+**** Soil Conductivity
+We have two properties that differ only by context:
+- CV05m (soil conductivity, separation 0.5 m) (mS/m)
+- CV1m (soil conductivity, separation 1.0 m) (mS/m)
+
+#+BEGIN_SRC Turtle
+bdg:CV1m a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Soil Electric Conductivity, separation 1m";
+  skos:notation              "CV1m";
+  sosa:hasFeatureOfInterest  <feature/Soil>;
+  bdg:measurementContext     <feature/Soil/separation-1m>;
+  qudt:hasQuantityKind       quantitykind:ElectricConductivity;
+  sdmx-attribute:unitMeasure unit:S-PER-M; # Siemens per meter
+  sdmx-attribute:unitMult    unit:Milli; # 10^-3
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:CV05m a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Soil Electric Conductivity, separation 0.5m";
+  skos:notation              "CV0.5m";
+  sosa:hasFeatureOfInterest  <feature/Soil>;
+  bdg:measurementContext     <feature/Soil/separation-0.5m>;
+  qudt:hasQuantityKind       quantitykind:ElectricConductivity.
+  sdmx-attribute:unitMeasure unit:S-PER-M # Siemens per meter
+  sdmx-attribute:unitMult    unit:Milli; # 10^-3
+  qb:concept                 sdmx-concept:obsValue.
+#+END_SRC
+Notes:
+- We abuse ~sosa:hasFeatureOfInterest~, which is intended to be applied to ~sosa:Observation~ not ~sosa:ObservableProperty~
+  - This allows us to find easily all properties that pertain to a given feature of interest
+  - There is no formal violation because ~sosa:hasFeatureOfInterest~
+    doesn't use the prescriptive ~rdfs:domain~ but the descriptive ~rdfs:domainIncludes~
+- We slightly abuse ~sdmx-attribute:unitMult~ by using ~unit:Milli~ as its value.
+  - SDMX defines a codelist ~sdmx-code:unitMult~, but it doesn't have fractional miltipliers
+    (population statistics deals with thousands and millions, not with *thousandths*)
+  - ~sdmx-attribute:unitMult~ doesn't actually declare a ~qb:codeList~, so that's ok
+- http://qudt.org/2.0/schema/qudt/science defines ~qudt:DecimalScaledUnit~
+  but http://qudt.org/2.0/vocab/unit/electromagnetism defines decimal fractions only of Ampere and Coulomb, not Siemens.
+- TODO: alternatively, we could define ~Milli-S-PER-M~ ourselves:
+  #+BEGIN_SRC Turtle :tangle no
+bdg-unit:Milli-S-PER-M a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:ConductanceUnit, qudt:Unit;
+  qudt:hasMultiplier unit:Milli;
+  qudt:conversionMultiplier 1.0e-3 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:hasQuantityKind quantitykind:ElectricConductivity ;
+  qudt:isScalingOf unit:S-PER-M ;
+  prov:wasDerivedFrom unit:S-PER-M .
+  #+END_SRC
+
+**** Canopy Characteristics
+These are primary observation data:
+- NIRi (NIR Incident) (%)
+- NIRr (NIR Reflected) (%)
+- RE (Red Edge) (%)
+- REDi (RED Incident) (%)
+- REDr (RED Reflected) (%)
+TODO: these labels are incomplete, they should say "percentage of radiation" or something.
+#+BEGIN_SRC Turtle
+bdg:NIRi a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "NIR Incident";
+  skos:notation              "NIRi";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NIRr a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "NIR Reflected";
+  skos:notation              "NIRr";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:RE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Red Edge";
+  skos:notation              "RE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:REDi a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "RED Incident";
+  skos:notation              "REDi";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:REDr a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "RED Reflected";
+  skos:notation              "REDr";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:PERCENT;
+  qb:concept                 sdmx-concept:obsValue.
+#+END_SRC
+
+**** Derived Vegetation Indices
+These are derived observations computed from primary observations.
+As such they are redundant and in principle could be omitted,
+but some sensors emit only the derived
+- LAI (Leaf Area Index) = 0.014*(exp(6.192*NDVI)
+- NDRE (Normalized Difference Red Edge Index) = (NIR-RedEdge)/(NIR+RedEdge)
+- NDVI (Normalized Difference Vegetation Index) = (NIR-RED)/(NIR+RED)
+- NIR (Near Infrared) = NIRr/NIRi
+- RED (Red spectrum) = REDr/REDi
+We record the primary observations from which this one is derived,
+and the formula in ~qudt:mathDefinition~ (that is basically a comment),
+- TODO: I'm not sure whether these are considered percentages or simply dimensionless.
+  It doesn't make a lot of difference because percentages are dimensionless anyway.
+#+BEGIN_SRC Turtle
+bdg:LAI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Leaf Area Index";
+  skos:notation              "LAI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "0.014*(exp(6.192*NDVI)";
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Normalized Difference Red Edge Index";
+  skos:notation              "NDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "(NIR-RE)/(NIR+RE)";
+  bdg:derivedFrom            bdg:NIR, bdg:RE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Normalized Difference Vegetation Index";
+  skos:notation              "NDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "(NIR-RED)/(NIR+RED)";
+  bdg:derivedFrom            bdg:NIR, bdg:RED;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:NIR a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Near Infrared";
+  skos:notation              "NIR";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "NIRr/NIRi";
+  bdg:derivedFrom            bdg:NIRr, bdg:NIRi;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:RED a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Red spectrum";
+  skos:notation              "RED";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qudt:mathDefinition        "REDr/REDi";
+  bdg:derivedFrom            bdg:REDr, bdg:REDi;
+  qb:concept                 sdmx-concept:obsValue.
+#+END_SRC
+
+**** Statistical Summaries of Vegetation Indices
+These are secondary observations providing statistical summaries of a primary observation:
+- CVNDRE (Coefficient of variation NDRE)
+- CVNDVI (Coefficient of variation NDVI)
+- MAXNDRE (Maximum value NDRE)
+- MAXNDV (Maximum value NDVI)
+- MINNDRE (Minimum value NDRE)
+- MINNDVI (Minimum value NDVI)
+- STDNDRE (Standard deviation NDRE)
+- STDNDVI (Standard deviation NDVI)
+We record both the primary observation, and the statistical summary operation:
+#+BEGIN_SRC Turtle
+bdg:CVNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Coefficient of variation NDRE";
+  skos:notation              "CVNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/CoefficientOfVariation>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:CVNDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Coefficient of variation NDVI";
+  skos:notation              "CVNDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/CoefficientOfVariation>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MAXNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Maximum value NDRE";
+  skos:notation              "MAXNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Maximum>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MAXNDV a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Maximum value NDVI";
+  skos:notation              "MAXNDV";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Maximum>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MINNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Minimum value NDRE";
+  skos:notation              "MINNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Minimum>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:MINNDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Minimum value NDVI";
+  skos:notation              "MINNDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/Minimum>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:STDNDRE a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Standard deviation NDRE";
+  skos:notation              "STDNDRE";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/StandardDeviation>;
+  bdg:derivedFrom            bdg:NDRE;
+  qb:concept                 sdmx-concept:obsValue.
+bdg:STDNDVI a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Standard deviation NDVI";
+  skos:notation              "STDNDVI";
+  sosa:hasFeatureOfInterest  <feature/Canopy>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  bdg:statisticalSummary     <statisticalSummary/StandardDeviation>;
+  bdg:derivedFrom            bdg:NDVI;
+  qb:concept                 sdmx-concept:obsValue.
+#+END_SRC
+
+We define statistical summary operations as a codelist: ConceptScheme, and corresponding class to enable ~rdfs:range~ checking
+#+BEGIN_SRC Turtle
+bdg:statisticalSummary a qb:AttributeProperty, qb:CodedProperty;
+  rdfs:label "Statistical Summary"; rdfs:comment "Summary operation used on a property to derive another";
+  qb:codeList <statisticalSummary>;
+  rdfs:range bdg:StatisticalSummary.
+<statisticalSummary> a skos:ConceptScheme;                         rdfs:label "Statistical Summary - codelist scheme".
+bdg:Statisticalsummary a rdfs:Class; rdfs:subClassOf skos:Concept; rdfs:label "Statistical Summary - codelist class".
+<statisticalSummary/Minimum> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Minimum".
+<statisticalSummary/Maximum> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Maximum".
+<statisticalSummary/CoefficientOfVariation> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Coefficient of variation";
+<statisticalSummary/StandardDeviation> a skos:Concept, bdg:StatisticalSummary;
+  skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
+  skos:prefLabel "Maximum".
+#+END_SRC
+
+** Devices/Sensors
+We defne 4 sensors:
+- RTK GPS
+- EM38 mk2
+- RapidScan CS-45
+- SpectroSense 2+
+
+#+BEGIN_SRC Turtle
+<sensor/RTK-GPS> a sosa:Sensor; rdfs:label "RTK GPS";
+  sosa:observes bdg:position.
+<sensor/EM38-mk2> a sosa:Sensor; rdfs:label "EM38 mk2";
+  sosa:observes bdg:position, bdg:positionQuality, bdg:satellite, bdg:HDOP, bdg:CV1m, bdg:CV05m.
+<sensor/RapidScan-CS-45> a sosa:Sensor; rdfs:label "RapidScan CS-45";
+  sosa:observes bdg:position, bdg:HDOP, bdg:hasGpsFix, bdg:NDRE, bdg:NDVI, bdg:RE, bdg:NIR, bdg:RED, bdg:MAXNDRE, bdg:MAXNDV, bdg:MINNDRE, bdg:MINNDVI, bdg:STDNDRE, bdg:STDNDVI, bdg:CVNDRE, bdg:CVNDVI.
+<sensor/SpectroSense-2> a sosa:Sensor; rdfs:label "SpectroSense 2+";
+  sosa:observes bdg:position, bdg:REDi, bdg:NIRi, bdg:REDr, bdg:NIRr, bdg:RED, bdg:NIR, bdg:NDVI, bdg:LAI.
+#+END_SRC
+
+** Plots/Geometries
+~1. Fasoulis_RTKGPS_Boundaries.xls~
+| Estate   | Estate-Segment | Boundary Point |              |               |
+|          |                |  Northing (mN) | Easting (mE) | Elevation (m) |
+|----------+----------------+----------------+--------------+---------------|
+| Fasoulis | geotrhsh       |    4186414.498 |   639833.509 |       297.154 |
+| Fasoulis | geotrhsh       |    4186380.300 |   639865.047 |       297.726 |
+| Fasoulis | geotrhsh       |    4186404.724 |   639931.511 |       298.354 |
+| Fasoulis | geotrhsh       |    4186437.593 |   639900.538 |       297.565 |
+| Fasoulis | geotrhsh       |    4186436.262 |   639898.365 |       297.644 |
+| Fasoulis | geotrhsh       |    4186444.820 |   639890.154 |       297.424 |
+- Estate-Segments are also called Plots
+- It's important to use consistent names for them (eg always Geotrisi)
+
+We establish a simple hierarchy of estates and plots.
+#+BEGIN_SRC Turtle
+bdg:Estate a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
+  rdfs:label "Estate"; rdfs:comment "Grape producing estate".
+bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
+  rdfs:label "Plot";   rdfs:comment "Part of an estate on which measurements are conducted".
+
+<AUA/estate/Fasoulis> a bdg:Estate; rdfs:label "Fasoulis".
+<AUA/estate/Fasoulis/Geotrisi> a bdg:Plot; rdfs:label "Fasoulis-Geotrisi";
+  geo:sfWithin <AUA/estate/Fasoulis>.
+#+END_SRC
+
+We represent the geometry using ~geoSPARQL~
+- Following [[https://www.w3.org/TR/sdw-bp/#bp-crs][SDW-BP State how coordinate values are encoded]], we specify explicitly the used Coordinate Reference System.
+  We assume it's https://epsg.io/32634 in this case, but that needs to be checked.
+  In addition to giving the CRS URL in ~geo:asWKT~ (a GeoSPARQL requirement),
+  we also give it as a separate property ~qb4st:crs~ so we can filter geometries by CRS
+- Please note that we have repeated the last point because GeoSPARQL polygons must be topologically closed.
+- The plot boundary is described using a 3D polygon (lat/long/alt).
+  We followed https://en.wikipedia.org/wiki/Well-known_text to select the type ~Polygon Z~.
+- GraphDB supports such 3D literals and spatial relations (eg ~geo:sfWithin~) work correctly:
+  the altitude Z is ignored for such comparison ([[https://jira.ontotext.com/browse/GDB-3142][GDB-3142]]).
+#+BEGIN_SRC Turtle
+<AUA/estate/Fasoulis/Geotrisi> geo:hasGeometry <AUA/estate/Fasoulis/Geotrisi/geo>.
+<AUA/estate/Fasoulis/Geotrisi/geo> a geo:Geometry;
+  qb4st:crs crs-epsg:32634;
+  geo:asWKT """<http://www.opengis.net/def/crs/EPSG/0/32634>
+     Polygon Z ((
+       4186414.498 639833.509 297.154,
+       4186380.300 639865.047 297.726,
+       4186404.724 639931.511 298.354,
+       4186437.593 639900.538 297.565,
+       4186436.262 639898.365 297.644,
+       4186444.820 639890.154 297.424,
+       4186414.498 639833.509 297.154
+     ))
+  """^^geo:wktLiteral.
+#+END_SRC
+- TODO: GraphDB does not support alternative CRS in ~geo:asWKT~ ([[https://jira.ontotext.com/browse/GDB-3142][GDB-3142]]) but only in ~geo:asGML~
+So we have two options:
+- Use ~geo:asGML~, which is a more complex XML-based literal format.
+- Convert the geometry to the most commonly used CRS, namely lat/long in CRS84 (https://epsg.io/4326),
+  following [[https://www.w3.org/TR/sdw-bp/#bp-crs-choice][SDW-BP Choose the coordinate reference system to suit your user's applications]].
+  It is the default in GeoSPARQL, so doesn't need to be specified in the literal.
+- There are easily available software libraries to do the conversion,
+  though there are no GeoSPARQL functions to expose such conversions
+Note: in the example below, I haven't performed an actual conversion, so the coordinates are not correct
+#+BEGIN_SRC Turtle
+<AUA/estate/Fasoulis/Geotrisi/geo2> a geo:Geometry;
+  qb4st:crs crs-ogc:CRS84;
+  geo:asWKT """
+     Polygon Z ((
+       37.414498 22.33509 297.154,
+       37.380300 22.65047 297.726,
+       37.404724 22.31511 298.354,
+       37.437593 22.00538 297.565,
+       37.436262 22.98365 297.644,
+       37.444820 22.90154 297.424,
+       37.414498 22.33509 297.154
+     ))
+  """^^geo:wktLiteral.
+#+END_SRC
+
+** Data Structure Definition
+We define dataset structures (DSD) per sensor.
+- These structures describe the components of each observation, as defined in sec [[*Properties/Variables]]:
+  - dimensions: identifying properties of the observation, whcih functionally determine the measures.
+    All of these are required
+  - attributes: additional qualifiers, including Units of Measure, position quality, etc.
+    These are optional by default, unless marked with ~qb:componentRequired true~
+  - measures: the values that were observed.
+    All of these are required
+- ~bdg:plot~ and ~bdg:sensor~ are fixed for each data file, so we attach them to the ~qb:DataSet~
+  (No need to use ~qb:Slice~ for this because there's a single fixed value)
+- TODO: If wanted, we could also fix the date in this way (but it's implied by ~bdg:dateTime~)
+- We use the [[https://www.w3.org/TR/vocab-data-cube/#h4_dsd-mm-obs][Multi-measure observations]] QB pattern:
+  "This approach allows multiple observed values to be attached to an individual observation.
+  It is suited to representation of things like sensor data and OLAP cubes".
+- We fix some attributes to each measure (UoM, featureOfInterest, etc):
+  "Attributes can be attached directly to the ~qb:MeasureProperty~ itself
+  (e.g. to indicate the unit of measure for that measure)
+  but that attachment applies to the whole data set
+  (indeed any data set using that measure property)
+  and cannot vary for different observations"
+- RTK GPS doesn't need a DSD since plot geometries (sec [[*Plots/Geometries]]) are not represented using QB.
+#+BEGIN_SRC Turtle
+<DSD/EM38-mk2> a qb:DataStructureDefinition;
+  qb:component
+    [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:sensor                 ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:position], # including Elevation, which is ignored for comparison
+    [qb:dimension bdg:dateTime],
+    [qb:attribute bdg:positionQuality],
+    [qb:attribute bdg:satellites],
+    [qb:attribute bdg:HDOP],
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute bdg:measurementContext     ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMult    ; qb:componentAttachment qb:MeasureProperty],
+    [qb:measure   bdg:CV1m],
+    [qb:measure   bdg:CV05m];
+<DSD/RapidScan-CS-45> a qb:DataStructureDefinition;
+  qb:component
+    [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:sensor                 ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:position], # including Elevation, which is ignored for comparison
+    [qb:dimension bdg:dateTime],
+    [qb:attribute bdg:HDOP],
+    [qb:attribute bdg:hasGpsFix],
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:measure   bdg:NDRE],
+    [qb:measure   bdg:NDVI],
+    [qb:measure   bdg:RE],
+    [qb:measure   bdg:NIR],
+    [qb:measure   bdg:RED],
+    [qb:measure   bdg:MAXNDRE],
+    [qb:measure   bdg:MAXNDV],
+    [qb:measure   bdg:MINNDRE],
+    [qb:measure   bdg:MINNDVI],
+    [qb:measure   bdg:STDNDRE],
+    [qb:measure   bdg:STDNDVI],
+    [qb:measure   bdg:CVNDRE],
+    [qb:measure   bdg:CVNDVI].
+<DSD/SpectroSense-2> a qb:DataStructureDefinition;
+  qb:component
+    [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:sensor                 ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:position], # in Northing/Easting, or converted to CRS84 lat/long
+    [qb:dimension bdg:dateTime],
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:measure   bdg:REDi],
+    [qb:measure   bdg:NIRi],
+    [qb:measure   bdg:REDr],
+    [qb:measure   bdg:NIRr],
+    [qb:measure   bdg:RED],
+    [qb:measure   bdg:NIR],
+    [qb:measure   bdg:NDVI],
+    [qb:measure   bdg:LAI].
+#+END_SRC
+TODO: ~qb4st:SpatioTemporalDSD~
+
+** Datasets
+Now we define 3 datasets that observe the parameters described above, for one plot and one instrument.
+- TODO: provide QB4ST spatio-temporal metadata about the dataset (see issue [[https://github.com/w3c/sdw/issues/1110][sdw#1110]])
+
+#+BEGIN_SRC Turtle
+<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2> a qb:DataSet;
+  rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor EM38-mk2";
+  bdg:sensor <sensor/EM38-mk2>
+  bdg:plot <estate/Fasoulis/Geotrisi>;
+  qb:structure <DSD/EM38-mk2>.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45> a qb:DataSet;
+  rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor RapidScan CS-45";
+  bdg:sensor <sensor/RapidScan-CS-45>
+  bdg:plot <estate/Fasoulis/Geotrisi>;
+  qb:structure <DSD/RapidScan-CS-45>.
+<data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2> a qb:DataSet;
+  rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor SpectroSense 2+";
+  bdg:sensor <sensor/SpectroSense-2>
+  bdg:plot <estate/Fasoulis/Geotrisi>;
+  qb:structure <DSD/SpectroSense-2>.
+#+END_SRC
+
+- TODO: Should we split the datasets per date?
+- TODO: If so, should we represent the date explicitly at the dataset level?
+  It's implied by ~bdg:dateTime~ of each observation, but I think we should have it explicit for convenience.
+- TODO: Similarly, the estate is not represented explicitly since it's implied by ~bdg:plot~
+
+** Observations
+Now that we have datasets defined, it's easy to capture all observations.
+- Each obseration links to its dataset, whose DSD determines the expected properties
+  and the fixed properties (those attached to ~qb:DataSet~ or ~qb:MeasureProperty~)
+- Observation URL: we use the dataset URL as prefix, and append the dateTime and a row-number to make the URL unique.
+- DateTimes are converted to ~xsd:dateTime~ format
+
+~2. Fasoulis_Geotrisi_EM38.xlsx~
+| Longitude | Latitude |    CV1m |  CV05m | Quality | Sat | HDOP | Elevation |     Time | Date       |
+|    22.590 |   37.816 | 144.699 | 106.74 |       1 |  12 | 0.69 |   299.612 | 12:26:30 | 23/05/2018 |
+#+BEGIN_SRC Turtle
+<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/1> a qb:Observation
+  qb:dataSet          <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2>;
+  bdg:position        "Point Z(22.590 37.816 299.612)"^^geo:wktLiteral;
+  bdg:dateTime        "2018-05-23T12:26:30"^^xsd:dateTime;
+  bdg:positionQuality <positionQuality-1>;
+  bdg:satellites      12;
+  bdg:HDOP            0.69;
+  bdg:CV1m            144.699;
+  bdg:CV05m           106.74.
+#+END_SRC
+
+~1. Fasoulis_Geotrisi_RapidScan_230518.xlsx~
+| Estate   | Estate-Segment |  NDRE |  NDVI |     RE |    NIR |     R |    LATITUDE |   LONGITUDE | ELEVATION |  HDOP | FIXTYPE       | DATE       |  TIME | MAXNDRE | MAXNDV | MINNDRE |   MINNDVI |  STDNDRE |  STDNDVI | CVNDRE |   CVNDVI |
+| Fasoulis | Geotrisi       | 0.274 | 0.817 | 20.099 | 35.383 | 3.512 | ---.------- | ---.------- |       --- |   --- | Fix not valid | 23/05/2018 | 0.446 |   0.367 |  0.897 |   0.127 |     0.492 |  4.65E-2 | 6.759E-2 |  0.169 | 8.260E-2 |
+| Fasoulis | Geotrisi       | 0.260 | 0.812 | 20.257 | 34.606 | 3.556 |      37.817 |      22.589 |   -34.799 |   2.9 | GPS           | 23/05/2018 | 0.454 |   0.325 |  0.894 |   0.185 |     0.714 |  2.93E-2 | 3.350E-2 |  0.112 | 4.130E-2 |
+| Fasoulis | Geotrisi       | 0.242 | 0.739 | 20.530 | 33.792 | 5.118 |      37.817 |      22.590 |   283.899 | 2.299 | GPS           | 23/05/2018 | 0.457 |   0.352 |  0.865 |  -0.221 | -4.270E-2 | 5.269E-2 |    0.116 |  0.216 |    0.157 |
+- *TIME* is rendered in some invalid Excel format. We assume this will be fixed before conversion
+- Please note that the first observation here is invalid since it doesn't have GPS fix, nor position.
+  It violates QB integrity constraints, which say that each dimension is mandatory.
+- The second observation is also de-facto invalid,
+  because the negative Elevation shows the sensor has not yet made a reliable satellite connection.
+  This cannot be expressed in QB: TODO: define RDF Shapes to validate that case.
+#+BEGIN_SRC Turtle
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:46/1> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:46"^^xsd:dateTime;
+# bdg:position  "Point Z(---.------- ---.------- ---)"^^geo:wktLiteral; # this invalid literal must not be formed!
+# bdg:HDOP      ---;                                                    # this invalid literal must not be formed!
+# bdg:hasGpsFix false;                                                  # thus the observation is invalid
+  bdg:NDRE      0.274;
+  bdg:NDVI      0.817;
+  bdg:RE        20.099;
+  bdg:NIR       35.383;
+  bdg:RED       3.512;
+  bdg:MAXNDRE   0.367;
+  bdg:MAXNDV    0.897;
+  bdg:MINNDRE   0.127;
+  bdg:MINNDVI   0.492;
+  bdg:STDNDRE   4.65E-2;
+  bdg:STDNDVI   6.759E-2;
+  bdg:CVNDRE    0.169;
+  bdg:CVNDVI    8.260E-2.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:54/2> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:54"^^xsd:dateTime;
+  bdg:position  "Point Z(37.817 22.589 -34.799)"^^geo:wktLiteral; # negative Latitude indicates invalid observation
+  bdg:HDOP      2.9;
+  bdg:hasGpsFix true;
+  bdg:NDRE      0.260;
+  bdg:NDVI      0.812;
+  bdg:RE        20.257;
+  bdg:NIR       34.606;
+  bdg:RED       3.556;
+  bdg:MAXNDRE   0.325;
+  bdg:MAXNDV    0.894;
+  bdg:MINNDRE   0.185;
+  bdg:MINNDVI   0.714;
+  bdg:STDNDRE   2.93E-2;
+  bdg:STDNDVI   3.350E-2;
+  bdg:CVNDRE    0.112;
+  bdg:CVNDVI    4.130E-2.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:57/3> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:57"^^xsd:dateTime;
+  bdg:position  "Point Z(37.817 22.590 283.899)"^^geo:wktLiteral; # valid observation
+  bdg:HDOP      2.299;
+  bdg:hasGpsFix true;
+  bdg:NDRE      0.242;
+  bdg:NDVI      0.739;
+  bdg:RE        20.530;
+  bdg:NIR       33.792;
+  bdg:RED       5.118;
+  bdg:MAXNDRE   0.352;
+  bdg:MAXNDV    0.865;
+  bdg:MINNDRE   -0.221;
+  bdg:MINNDVI   -4.270E-2;
+  bdg:STDNDRE   5.269E-2;
+  bdg:STDNDVI   0.116;
+  bdg:CVNDRE    0.216;
+  bdg:CVNDVI    0.157.
+#+END_SRC
+
+~2. Fasoulis_Geotrisi_SpectroSense_230518.xlsx~
+| Northing | Easting |  Time |  Date |  REDi |   NIRi |  REDr |  NIRr |      RED |      NIR |  NDVI |   LAI |
+|   37.816 |  22.590 | 0.464 | 0.962 | 66.34 | 59.638 | 1.778 | 5.401 | 2.681E-2 | 9.057E-2 | 0.543 | 0.427 |
+- Here both date and time are represented in some invalid Excel format and need to be fixed prior to conversion
+#+BEGIN_SRC Turtle
+<data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2/2018-05-23T12:04:57/1> a qb:Observation
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2>;
+  bdg:dateTime  "2018-05-23T12:04:57"^^xsd:dateTime;
+  bdg:position  """<http://www.opengis.net/def/crs/EPSG/0/32634> 
+                   Point(37.816 22.590)"""^^geo:wktLiteral; # TODO: non-default CRS not supported by GraphDB in WKT
+  bdg:REDi      66.34;
+  bdg:NIRi      59.638;
+  bdg:REDr      1.778;
+  bdg:NIRr      5.401;
+  bdg:RED       2.681E-2;
+  bdg:NIR       9.057E-2;
+  bdg:NDVI      0.543;
+  bdg:LAI       0.427.
+#+END_SRC

@@ -1,0 +1,92 @@
+@prefix cci: <http://vocab-test.ceda.ac.uk/ontology/cci#> .
+@prefix cci-collection: <http://vocab-test.ceda.ac.uk/collection/cci/> .
+@prefix cci-scheme: <http://vocab-test.ceda.ac.uk/scheme/cci/> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cci-collection:dataType a skos:Collection ;
+    ns1:creator "Science and Technology Facilities Council" ;
+    ns1:date "2017-01-24" ;
+    ns1:description "The main data type in a data set used by the ESA Climate Change Initiative (CCI)." ;
+    ns1:publisher "STFC"@en ;
+    ns1:title "Geophysical Quantity" ;
+    rdfs:comment "This collection represents the data types used by the CCI project" ;
+    ns2:versionInfo "0.0.1" ;
+    skos:definition "The main data type in a data set used by the ESA Climate Change Initiative (CCI)."@en ;
+    skos:member <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_aai>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_adg>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_adt>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_aerProd>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_aex>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_alb>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_all>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_aod>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_aph>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_atot>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_aty>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ba>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_bb>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_cer>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_cfc>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_cfl>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ch4>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_chlorA>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_cldProd>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_co2>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_cot>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_cth>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ctp>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ctt>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ga>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_gll>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_gmb>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_iop>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_iv>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_iwp>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_jch>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_k_490>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_lai>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_lccs>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_lp>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_lwp>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_map>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_msl>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_msla>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_mslamph>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_msltr>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ndvi>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_nlw>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_np>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ocProd>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_rrs>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sec>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sic>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sie>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sit>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sla>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_snow>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sr>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ssh>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ssms>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ssmsa>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ssmv>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_ssmva>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sstDepth>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sstFnd>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sstInt>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sstSkin>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_sstSubsk>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_swis>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_swisa>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_swiv>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_swiva>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_tc>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_v>,
+        <http://vocab-test.ceda.ac.uk/collection/cci/dataType/dtype_wb> ;
+    skos:prefLabel "Geophysical Quantity"@en .
+
