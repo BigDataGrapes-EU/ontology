@@ -174,8 +174,10 @@ Uses some units ontology that's unknown to me:
 #+END_SRC
 This returns 404 Not Found. Better use QUDT, which is well known and maintained.
 (TODO Vladimir: post my presentation of Unit ontologies)
+INRA :
+(Can we use osgeom as presented in this example : https://www.w3.org/TR/eo-qb/#GeoSPARQL)
 
-** TODO Don't use dbo: for units
+** DONE Don't use dbo: for units
 Use a QUDT unit rather than a DBpedia URL as datatype literal:
 #+BEGIN_SRC Turtle
    quty:area "1.37490"^^dbo:hectare
@@ -187,7 +189,7 @@ Plots don't seem to indicate the grape variety. Maybe that's in another file?
 inra_obj:22-SYRAH rdf:type aeo:Plot .
 inra_obj:68-COLLECTION-BLANCS rdf:type aeo:Plot .
 #+END_SRC
-** TODO Fix polygon geometry
+** DONE Fix polygon geometry
 No way this defines a valid polygon:
 - It includes just 4 coordinates. Even for a simple box you need 4 corners, i.e. 8 coordinates
 - Coordinates should be +-180 degrees longitude and +-90 degrees latitude, but these are very big numbers
@@ -205,7 +207,7 @@ Discussion:
 - INRA can compute the area from the shape. The area must be recorded as a separate field, not in "asWKT"
 - Which CRS to use? In France they often use Lambert93 and UTM zone 30, but I'd recommend WGS84, which is the default in GeoSPARQL.
   If you can't convert to WGS84, then you must include the CRS URL in the WKT literal.
-** TODO geo:Polygon vs geo:Geometry
+** DONE geo:Polygon vs geo:Geometry
 - There's no class ~geo:Polygon~. Use ~geo:Geometry~ instead
 ** TODO Declare geo:Feature
 - ~geo:hasGeometry~ has domain ~geo:Feature~, so it would be nice to declare it:

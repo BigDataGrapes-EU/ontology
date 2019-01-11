@@ -1,0 +1,87 @@
+@prefix osgeom: <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+
+#Try to use sthe same schema as BDG Model
+
+bdg:domain a qb4st:RefArea;
+  rdfs:label "Vineyard"; rdfs:comment "Cultivated land - vineyard" ;
+  qb:concept sdmx-concept:refArea ;
+  rdfs:range agrovoc:c_15203 .
+
+bdg:plot a qb4st:RefArea;
+  rdfs:label "Plot"; rdfs:comment "Plot of a vineyard" ;
+  qb:concept sdmx-concept:refArea ;
+  rdfs:range bdg:Plot.
+
+# Spatial data inra
+
+inra_obj:PechRouge a inra_onto:CultivatedLand;
+	rdfs:label "PechRouge"^^ xsd:string .
+
+inra_obj:22 a dct:Location ;
+   rdfs:label "22"^^xsd:string ;
+   geo:sfWithin inra_obj:PechRouge .
+
+	# From Shape file with corrdinates in asGML format
+inra_obj:22-SYRAH-sp a inra_onto:Plot , bdg:Plot ;
+	geo:sfWithin inra_obj:22 ;
+	rdfs:label "22-SYRAH-sp"^^ xsd:string ;
+	geo:hasGeometry inra_gis:22-SYRAH-sp .
+
+inra_gis:22-SYRAH-sp a geo:Geometry ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/2154'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             710667.5287685228,6226684.92228616 710687.4021822512,6226735.289272522 710689.7382922542,6226734.0793421585 710695.272260641,6226749.0314324675 710697.5950606267,6226748.115642145 710710.9625992724,6226779.233999576 710739.4975126279,6226767.4362449525 710700.0130476028,6226671.547790447 710667.5287685228,6226684.92228616            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             710712.6581056681,6226782.832492838 710750.476497947,6226877.1230517905 710755.638546471,6226877.051504728 710779.8162315314,6226867.2348577455 710740.8707962099,6226771.109750623 710712.6581056681,6226782.832492838            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             710746.0083757044,6226764.744329823 710777.1270296861,6226751.878432687 710738.742038523,6226655.602084164 710706.7296983321,6226668.782270686 710746.0083757044,6226764.744329823            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             710747.859261703,6226768.206056304 710786.1506711678,6226864.76997269 710817.9721670925,6226851.961296913 710778.7337881465,6226755.3772864295 710747.859261703,6226768.206056304            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon "^^geo:gmlLiteral ;
+	geo:is3D "false"^^ xsd:boolean ;
+	geo:dimension "2"^^ xsd:integer ;
+	geo:isEmpty "false"^^ xsd:boolean ;
+	geo:coordinateDimension "25"^^ xsd:integer ;
+	osgeom:hectares "1.3749" ;
+	geo:isSimple "true"^^ xsd:boolean ;
+	geo:spatialDimension "2"^^ xsd:integer> .
+
+# Harvest data
+	# feature
+<feature/GrapeQuantity> a sosa:FeatureOfInterest; rdfs:label "GrapeQuantity"; rdfs:description "The grapes harvest mass collected from plot".
+
+inra_variable:HarvestWeight a qb:MeasureProperty, sosa:ObservableProperty ;
+  rdfs:label                 "Harvest weight" ;
+  skos:notation              "HarvestWeight" ;
+  sosa:hasFeatureOfInterest  <feature/GrapeQuantity> ;
+  qudt:hasQuantityKind       quantitykind:mass ;
+  sdmx-attribute:unitMeasure unit:Kilogram ;
+  qb:concept                 sdmx-concept:obsValue .
+ 	# dimensions
+bdg:date a qb:DimensionProperty; 
+   rdfs:label "Date"; rdfs:comment "Date of the observation" ; 
+   qb:concept sdmx-concept:timePeriod ; 
+   rdfs:range xsd:date. 
+
+bdg:humanSensor a qb:DimensionProperty; 
+   rdfs:label "Human"; rdfs:comment "Human that took the observation" ; 
+   qb:concept sdmx-concept:collMethod ; 
+   rdfs:range ssn:Sensor . 
+
+# dataset example
+<data/inra/harvestDataSet/2016/22/22-SYRAH-sp> a qb:DataSet ; 
+   rdfs:label "Data about Harvest done on Pech Rouge in 2016" ; 
+   bdg:plot   inra_obj:22-SYRAH-sp ;
+   bdg:date    2016-09-06^^xsd:Date ;
+   qb:structure <HarvestDataSet/2016> . 
+
+<HarvestDataSet/2016> a qb:DataStructureDefinition; 
+qb:component 
+   [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet], 
+   [qb:measure   inra_variable:HarvestWeight]; 
+   [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty], 
+   [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty], 
+   [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty], 
+   [qb:measure   inra_variable:HarvestWeight].
+
+inra_agent:fabienrobert a foaf:Person , sosa:Sensor, ofpe:Operator ;
+   foaf:familyName "robert"^^xsd:string ;
+   foaf:firstName "fabien"^^xsd:string ;
+   sosa:observes inra_observations:c549ad8c-976f-4c48-928e-414458e1c704 .
+   sosa:observes inra_observations:936ef518-c31d-4221-aada-f7eb083a13bc .
+
+inra_observations:c549ad8c-976f-4c48-928e-414458e1c704 a qb:Observation ;
+    qb:dataSet  <data/inra/harvestDataSet/2016/22/22-SYRAH-sp> ;
+    inra_variable:HarvestWeight    1507.5 .
