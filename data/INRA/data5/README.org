@@ -189,7 +189,7 @@ Plots don't seem to indicate the grape variety. Maybe that's in another file?
 inra_obj:22-SYRAH rdf:type aeo:Plot .
 inra_obj:68-COLLECTION-BLANCS rdf:type aeo:Plot .
 #+END_SRC
-** DONE Fix polygon geometry
+** TODO Fix polygon geometry
 No way this defines a valid polygon:
 - It includes just 4 coordinates. Even for a simple box you need 4 corners, i.e. 8 coordinates
 - Coordinates should be +-180 degrees longitude and +-90 degrees latitude, but these are very big numbers
@@ -207,6 +207,9 @@ Discussion:
 - INRA can compute the area from the shape. The area must be recorded as a separate field, not in "asWKT"
 - Which CRS to use? In France they often use Lambert93 and UTM zone 30, but I'd recommend WGS84, which is the default in GeoSPARQL.
   If you can't convert to WGS84, then you must include the CRS URL in the WKT literal.
+  
+INRA :  We have change the representation by using gmlLiteral
+
 ** DONE geo:Polygon vs geo:Geometry
 - There's no class ~geo:Polygon~. Use ~geo:Geometry~ instead
 ** TODO Declare geo:Feature

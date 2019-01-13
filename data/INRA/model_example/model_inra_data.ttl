@@ -1,10 +1,11 @@
 @prefix osgeom: <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
 @prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix rdfs:		<http://www.w3.org/2000/01/rdf-schema#>  
 
 #Try to use sthe same schema as BDG Model
 
-bdg:domain a qb4st:RefArea;
-  rdfs:label "Vineyard"; rdfs:comment "Cultivated land - vineyard" ;
+bdg:vineyard a qb4st:RefArea;
+  rdfs:label "Vineyard"; rdfs:comment "Cultivated land - vineyard of PechRouge" ;
   qb:concept sdmx-concept:refArea ;
   rdfs:range agrovoc:c_15203 .
 
@@ -15,7 +16,7 @@ bdg:plot a qb4st:RefArea;
 
 # Spatial data inra
 
-inra_obj:PechRouge a inra_onto:CultivatedLand;
+inra_obj:PechRouge a agrovoc:c_16212;
 	rdfs:label "PechRouge"^^ xsd:string .
 
 inra_obj:22 a dct:Location ;
@@ -36,7 +37,7 @@ inra_gis:22-SYRAH-sp a geo:Geometry ;
 	geo:coordinateDimension "25"^^ xsd:integer ;
 	osgeom:hectares "1.3749" ;
 	geo:isSimple "true"^^ xsd:boolean ;
-	geo:spatialDimension "2"^^ xsd:integer> .
+	geo:spatialDimension "2"^^ xsd:integer .
 
 # Harvest data
 	# feature

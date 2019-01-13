@@ -33,6 +33,7 @@
 @prefix unit:              <http://qudt.org/vocab/unit/> .
 @prefix xml:               <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd:               <http://www.w3.org/2001/XMLSchema#>.
+@prefix geom:              <http://data.ordnancesurvey.co.uk/ontology/geometry/>
 
 # AgroBio Namespaces
 @prefix aeo:               <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#>.
