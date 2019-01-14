@@ -30,35 +30,37 @@ bdg:satellites a qb:AttributeProperty;
   rdfs:range xsd:int.
 
 bdg:HDOP a qb:AttributeProperty;
-  skos:notation "HDOP"; rdfs:label "Horizontal dilution of precision"; rdfs:comment """GPS reception quality:
+  skos:notation "HDOP"; rdfs:label "Horizontal dilution of precision";
+  rdfs:comment """GPS reception quality:
 <1 Ideal, 1-2 Excellent, 2-5 Good, 5-10 Moderate, 10-20 Fair, >20 Poor""";
-  sdmx-concept:dataValSource; #: discrepancies and other problems related to source data
+  qb:concept sdmx-concept:dataValSource; # discrepancies and other problems related to source data
   rdfs:range xsd:int.
 
 bdg:positionQuality a qb:AttributeProperty, qb:CodedProperty;
-  qb:codeList bdg-code:positionQuality;
-  sdmx-concept:dataValSource; #: discrepancies and other problems related to source data
+  qb:codeList <positionQuality>;
+  qb:concept sdmx-concept:dataValSource; #: discrepancies and other problems related to source data
   rdfs:label "Position quality"; rdfs:comment "GPS position quality";
-  rdfs:range bdg-code:PositionQuality.
-bdg-code:PositionQuality a rdfs:Class;
+  rdfs:range bdg:PositionQuality.
+
+bdg:PositionQuality a rdfs:Class;
   rdfs:subClassOf skos:Concept ;
-  rdfs:label "Position Quality codelist class"; rdfs:comment "Provides code values for Position Quality";
-  rdfs:seeAlso bdg-code:positionQuality .
-bdg-code:positionQuality a skos:ConceptScheme;
-  rdfs:label "Position Quality codelist scheme"; rdfs:comment "Provides code values for Position Quality";
-  rdfs:seeAlso bdg-code:PositionQuality .
-bdg-code:positionQuality-0 a bdg-code:PositionQuality;
-  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+  rdfs:label "Position Quality codelist class";
+  rdfs:seeAlso <positionQuality> .
+<positionQuality> a skos:ConceptScheme;
+  rdfs:label "Position Quality codelist scheme";
+  rdfs:seeAlso bdg:PositionQuality.
+<positionQuality-0> a skos:Concept, bdg:PositionQuality;
+  skos:inScheme <positionQuality>; skos:topConceptOf <positionQuality>;
   skos:notation "0"; skos:prefLabel "no position";
   skos:scopeNote "Observations without position should be discarded".
-bdg-code:positionQuality-1 a bdg-code:PositionQuality;
-  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+<positionQuality-1> a skos:Concept, bdg:PositionQuality;
+  skos:inScheme <positionQuality>; skos:topConceptOf <positionQuality>;
   skos:notation "1"; skos:prefLabel "raw, not differentially corrected position".
-bdg-code:positionQuality-2 a bdg-code:PositionQuality;
-  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+<positionQuality-2> a skos:Concept, bdg:PositionQuality;
+  skos:inScheme <positionQuality>; skos:topConceptOf <positionQuality>;
   skos:notation "2"; skos:prefLabel "differentially corrected position".
-bdg-code:positionQuality-9 a bdg-code:PositionQuality;
-  skos:inScheme bdg-code:positionQuality; skos:topConceptOf bdg-code:positionQuality;
+<positionQuality-9> a skos:Concept, bdg:PositionQuality;
+  skos:inScheme <positionQuality>; skos:topConceptOf <positionQuality>;
   skos:notation "9"; skos:prefLabel "position computed using almanac information)".
 
 <feature/Soil>   a sosa:FeatureOfInterest; rdfs:label "Soil".
@@ -66,21 +68,19 @@ bdg-code:positionQuality-9 a bdg-code:PositionQuality;
 
 sosa:hasFeatureOfInterest a qb:MeasureProperty.
 
-bdg:measurementContext a qb:AttributeProperty;
+bdg:measurementContext a qb:AttributeProperty, qb:CodedProperty;
   qb:codeList <measurementContext>;
   rdfs:range bdg:MeasurementContext.
 
 bdg:MeasurementContext a rdfs:Class;
   rdfs:subClassOf skos:Concept;
-  rdfs:label "Measurement Context - codelist class".
-
+  rdfs:label "Measurement Context codelist class".
 <measurementContext> a skos:conceptScheme;
-  rdfs:label "Measurement Context - codelist scheme".
-
-<feature/Soil/separation-1m>   a skos:Concept; bdg:MeasurementContext;
+  rdfs:label "Measurement Context codelist scheme".
+<feature/Soil/separation-1m>   a skos:Concept, bdg:MeasurementContext;
   skos:inScheme <measurementContext>; skos:topConceptOf <measurementContext>;
   rdfs:label "Soil, separation 1m".
-<feature/Soil/separation-0.5m> a skos:Concept; bdg:MeasurementContext;
+<feature/Soil/separation-0.5m> a skos:Concept, bdg:MeasurementContext;
   skos:inScheme <measurementContext>; skos:topConceptOf <measurementContext>;
   rdfs:label "Soil, separation 0.5m".
 
@@ -99,8 +99,8 @@ bdg:CV05m a qb:MeasureProperty, sosa:ObservableProperty;
   skos:notation              "CV0.5m";
   sosa:hasFeatureOfInterest  <feature/Soil>;
   bdg:measurementContext     <feature/Soil/separation-0.5m>;
-  qudt:hasQuantityKind       quantitykind:ElectricConductivity.
-  sdmx-attribute:unitMeasure unit:S-PER-M # Siemens per meter
+  qudt:hasQuantityKind       quantitykind:ElectricConductivity;
+  sdmx-attribute:unitMeasure unit:S-PER-M; # Siemens per meter
   sdmx-attribute:unitMult    unit:Milli; # 10^-3
   qb:concept                 sdmx-concept:obsValue.
 
@@ -263,8 +263,11 @@ bdg:statisticalSummary a qb:AttributeProperty, qb:CodedProperty;
   rdfs:label "Statistical Summary"; rdfs:comment "Summary operation used on a property to derive another";
   qb:codeList <statisticalSummary>;
   rdfs:range bdg:StatisticalSummary.
-<statisticalSummary> a skos:ConceptScheme;                         rdfs:label "Statistical Summary - codelist scheme".
-bdg:Statisticalsummary a rdfs:Class; rdfs:subClassOf skos:Concept; rdfs:label "Statistical Summary - codelist class".
+
+<statisticalSummary> a skos:ConceptScheme;
+  rdfs:label "Statistical Summary codelist scheme".
+bdg:Statisticalsummary a rdfs:Class; rdfs:subClassOf skos:Concept;
+  rdfs:label "Statistical Summary codelist class".
 <statisticalSummary/Minimum> a skos:Concept, bdg:StatisticalSummary;
   skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
   skos:prefLabel "Minimum".
@@ -273,7 +276,7 @@ bdg:Statisticalsummary a rdfs:Class; rdfs:subClassOf skos:Concept; rdfs:label "S
   skos:prefLabel "Maximum".
 <statisticalSummary/CoefficientOfVariation> a skos:Concept, bdg:StatisticalSummary;
   skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
-  skos:prefLabel "Coefficient of variation";
+  skos:prefLabel "Coefficient of variation".
 <statisticalSummary/StandardDeviation> a skos:Concept, bdg:StatisticalSummary;
   skos:inScheme <statisticalSummary>; skos:topConceptOf <statisticalSummary>;
   skos:prefLabel "Maximum".
@@ -340,7 +343,7 @@ bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
     [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
     [qb:attribute sdmx-attribute:unitMult    ; qb:componentAttachment qb:MeasureProperty],
     [qb:measure   bdg:CV1m],
-    [qb:measure   bdg:CV05m];
+    [qb:measure   bdg:CV05m].
 <DSD/RapidScan-CS-45> a qb:DataStructureDefinition;
   qb:component
     [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
@@ -385,21 +388,21 @@ bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
 
 <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2> a qb:DataSet;
   rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor EM38-mk2";
-  bdg:sensor <sensor/EM38-mk2>
+  bdg:sensor <sensor/EM38-mk2>;
   bdg:plot <estate/Fasoulis/Geotrisi>;
   qb:structure <DSD/EM38-mk2>.
 <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45> a qb:DataSet;
   rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor RapidScan CS-45";
-  bdg:sensor <sensor/RapidScan-CS-45>
+  bdg:sensor <sensor/RapidScan-CS-45>;
   bdg:plot <estate/Fasoulis/Geotrisi>;
   qb:structure <DSD/RapidScan-CS-45>.
 <data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2> a qb:DataSet;
   rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor SpectroSense 2+";
-  bdg:sensor <sensor/SpectroSense-2>
+  bdg:sensor <sensor/SpectroSense-2>;
   bdg:plot <estate/Fasoulis/Geotrisi>;
   qb:structure <DSD/SpectroSense-2>.
 
-<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/1> a qb:Observation
+<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/1> a qb:Observation;
   qb:dataSet          <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2>;
   bdg:position        "Point Z(22.590 37.816 299.612)"^^geo:wktLiteral;
   bdg:dateTime        "2018-05-23T12:26:30"^^xsd:dateTime;
@@ -409,7 +412,7 @@ bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
   bdg:CV1m            144.699;
   bdg:CV05m           106.74.
 
-<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:46/1> a qb:Observation
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:46/1> a qb:Observation;
   qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
   bdg:dateTime  "2018-05-23T12:04:46"^^xsd:dateTime;
 # bdg:position  "Point Z(---.------- ---.------- ---)"^^geo:wktLiteral; # this invalid literal must not be formed!
@@ -428,7 +431,7 @@ bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
   bdg:STDNDVI   6.759E-2;
   bdg:CVNDRE    0.169;
   bdg:CVNDVI    8.260E-2.
-<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:54/2> a qb:Observation
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:54/2> a qb:Observation;
   qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
   bdg:dateTime  "2018-05-23T12:04:54"^^xsd:dateTime;
   bdg:position  "Point Z(37.817 22.589 -34.799)"^^geo:wktLiteral; # negative Latitude indicates invalid observation
@@ -447,7 +450,7 @@ bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
   bdg:STDNDVI   3.350E-2;
   bdg:CVNDRE    0.112;
   bdg:CVNDVI    4.130E-2.
-<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:57/3> a qb:Observation
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:57/3> a qb:Observation;
   qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
   bdg:dateTime  "2018-05-23T12:04:57"^^xsd:dateTime;
   bdg:position  "Point Z(37.817 22.590 283.899)"^^geo:wktLiteral; # valid observation
@@ -467,10 +470,10 @@ bdg:Plot   a rdfs:Class; rdfs:subClasssOf geo:Feature, qb4st:RefArea;
   bdg:CVNDRE    0.216;
   bdg:CVNDVI    0.157.
 
-<data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2/2018-05-23T12:04:57/1> a qb:Observation
+<data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2/2018-05-23T12:04:57/1> a qb:Observation;
   qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/SpectroSense-2>;
   bdg:dateTime  "2018-05-23T12:04:57"^^xsd:dateTime;
-  bdg:position  """<http://www.opengis.net/def/crs/EPSG/0/32634> 
+  bdg:position  """<http://www.opengis.net/def/crs/EPSG/0/32634>
                    Point(37.816 22.590)"""^^geo:wktLiteral; # TODO: non-default CRS not supported by GraphDB in WKT
   bdg:REDi      66.34;
   bdg:NIRi      59.638;
