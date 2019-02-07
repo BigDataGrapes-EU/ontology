@@ -22,17 +22,17 @@
     for the first observation file ~2016vendanges_transf_parsed.ttl~ but applies to all observation files
 
 * Prefixes [0/4]
-** TODO Turtle prefix format
+** DONE Turtle prefix format
 You use the SPARQL syntax for prefixes
   : PREFIX inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>
   While this is not an error (Turtle 1.1 supports this syntax), it's better to use the older syntax
   : @prefix inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/> .
-** TODO Check against prefixes.ttl
+** DONE Check against prefixes.ttl
 Check your prefixes against prefixes.ttl and use exactly the same. 
 Consult http://prefix.cc for the most popular prefixes to use.
 - Use ~dct:~ not ~dcterms:~ for DC Terms: both are valid, but the former is more popular
 - Use ~geo:~ not ~gsp:~ for GeoSPARQL, the former is a lot more popular
-** TODO Namespaces are not suggestive
+** DONE Namespaces are not suggestive
 These namespaces do not suggest they hold time and observations respectively
   #+BEGIN_SRC Turtle
   PREFIX context:    <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>  
@@ -50,7 +50,7 @@ These files use the following INRA ontologies/resources
 These (at least the last two) don't resolve, and return this:
 : Veuillez vous connecter pour avoir accès à cette page
 I see the latter is defined in ~INRA_Variables.ttl~, but at some point should become resolvable.
-** TODO Leave empty line
+** DONE Leave empty line
 Leave empty line between subject blocks ("paragraphs") to better delineate them:
   #+BEGIN_SRC Turtle
 context:instant_e1ba2667-2a37-4a42-b157-7ac07bfc458e rdf:type time:Instant ;
@@ -62,15 +62,15 @@ inra_data:a7fc3837-9c8b-4e4b-a79d-aad0b2876086 rdf:type oepo:Observation ;
    ofpe:Operator inra_agent:fabien.robert ; 
   #+END_SRC
 
-* 2016vendanges_transf_parsed.ttl [0/8]
+* 2016_harvest.ttl [0/8]
 Harvest observations: ~inra_onto:Poidsvendangegpesee~ (grams harvested)
-** TODO syntax error
+** DONE syntax error
 Some unquoted string
   #+BEGIN_SRC Turtle
   [line: 183, col: 24] Unrecognized: divers
   inra_obj:JARDIN-AMPELO divers rouge rdf:type aeo:Plot ;
   #+END_SRC
-** TODO dct:created is inappropraite
+** DONE dct:created is inappropraite
 You can't "create" a time instant (it just exists!), so ~dcterms:created~ is inappropraite.
 If you want to say when an event was converted (vs occurred), we could use PROV.
   #+BEGIN_SRC Turtle
@@ -78,7 +78,7 @@ If you want to say when an event was converted (vs occurred), we could use PROV.
      time:inXSDDateTimeStamp "2016-08-24T12:00:00+01:00"^^xsd:dateTimeStamp ;
      dcterms:created "2018-07-12T18:52:00.012981"^^xsd:dateTime .
   #+END_SRC
-** TODO aeo:involvedIn
+** DONE aeo:involvedIn
 "Lot" means a bunch of grapes processed together, that are used to make one "batch" of wine.
 Many different grapes from different plots are put in the same lot, to get a good "bouquet".
 It's used by INRA as follows:
@@ -94,28 +94,28 @@ Maybe it can:
 - a Plot is an entity. However, you don't put Plots in bottles: you put the grapes grown on it (in a particular year) in the Lot.
   So the subject should be somethin like "grapes *harvest* from plot".
 
-** TODO Class vs Property
+** DONE Class vs Property
 This is a class not property so it can't be used like this.
 (In general I notice that all Bio-Agro ontologies have tons of classes but few properties)
   :    ofpe:Operator inra_agent:fabien.robert ;
-** TODO No georeference? 
+** DONE No georeference? 
 This binds the observation to the plot: please confirm there's no need for a specific lat/long georeference
 #+BEGIN_SRC Turtle
 inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
    oepo:hasObservation inra_data:6870097e-13b9-4179-83c3-78450c0bb8ce .
 #+END_SRC
-** TODO rdf:value?
+** DONE rdf:value?
 I can't verify whether ~oepo:Observation~ takes ~rdf:value~ because OEPO doesn't define this.
 Using ~rdf:value~ this way is fine, but we should specify it with an RDF Shape
 
 * ComposantesGrappe_transf_parsed.ttl [0/2]
 Observations: ~inra_onto:Nbbaiescomptage~ number of counting bays?!?
-** TODO invalid DateTimeStamp
+** DONE invalid DateTimeStamp
 : [line: 16, col: 28] Lexical form '10/09/16' not valid for datatype xsd:DateTimeStamp
 You should express it like this:
 : "2016-09-10"^^xsd:date
 (Note: ~xsd:DateTimeStamp~ is misspelt, should be ~xsd:dateTimeStamp~)
-** TODO missing rdf:value
+** DONE missing rdf:value
 : [line: 491, col: 47] Triples not terminated by DOT
 : inra_data:4e1956e2-eceb-477f-97a4-d22a919970b1 rdf:type oepo:Observation ;
 :   time:hasTime context:instant_39dec42b-9d84-4269-96f6-289d0d0ee782 ;
@@ -124,27 +124,27 @@ You have no rdf:value for this record, so you should omit the whole record (it's
 
 * ComposantesVendanges_transf_parsed.ttl [0/1]
 Observations: ~inra_onto:Nbgrappescomptage~ number of counted clusters?!?
-** TODO missing rdf:value
+** DONE missing rdf:value
 : [line: 50, col: 41] Triples not terminated by DOT
 
 * INRA_Variables.ttl [0/4]
 Variable definitions
-** TODO Namespace hijacking
+** DONE Namespace hijacking
 Don't define terms of other ontologies
 #+BEGIN_SRC Turtle
 CO:variable_of  rdfs:subProperty_of  skos:related ;
 	rdf:type		owl:ObjectProperty .
 #+END_SRC
-** TODO Use English class names
+** DONE Use English class names
 If you want to be more easily understood, please use English (or else I'll comment in Bulgarian ;-)
 : inra_onto:Poidsvendangegpesee # weight as measured at vine picking
-** TODO Define labels
+** DONE Define labels
 Eg inra_onto:Glucose.fructoseg.lsequentiel.enzymatique needs a label such as "Glucose/fructose g/l sequential enzymatic"
-** TODO Conform to Property Naming Convention
+** DONE Conform to Property Naming Convention
 - Start with lowercase
 - Use camelCase or underscore_separated names
 So for the example above, use this name: ~glucose_fructose_g_l_sequential_enzymatic~
-** TODO Can't use CO_UO "gram"
+** DONE Can't use CO_UO "gram"
 Checking whether ~inra_onto:Poidsvendangegpesee~ defines everything required to interpret the number.
 #+BEGIN_SRC Turtle
 inra_onto:Poidsvendangegpesee CO:variable_of CO_356:2000168 , CO_UO:0000021 , MMO:0000157 .
@@ -159,7 +159,7 @@ MMO:0000157 rdfs:label "digital scale post excision weight measurement" .
   This is crazy because a gram is a gram, no matter what it's used to measure.
 - It means you cannot use this "gram" for grapes. 
   Better use UO; or even better QUDT, which also defines relations/conversions of "gram" to other units.
-** TODO Missing CO_UO Term
+** DONE Missing CO_UO Term
 #+BEGIN_SRC Turtle
 inra_onto:Glucose.fructoseg.lsequentiel.enzymatique CO:variable_of CO_356:2000057, CO_UO:0000175, MMO:0000388 .
 #+END_SRC
@@ -167,15 +167,13 @@ However, http://www.cropontology.org/rdf/UO:0000175 is missing: unlike the above
 
 * fieldsLocalisationPR_parsed.ttl [0/7]
 Plot geometry
-** TODO Use QUDT not quty
+** DONE Use QUDT not quty
 Uses some units ontology that's unknown to me:
 #+BEGIN_SRC Turtle
 @prefix quty: <http://www.telegraphis.net/ontology/measurement/quantity#>
 #+END_SRC
 This returns 404 Not Found. Better use QUDT, which is well known and maintained.
 (TODO Vladimir: post my presentation of Unit ontologies)
-INRA :
-(Can we use osgeom as presented in this example : https://www.w3.org/TR/eo-qb/#GeoSPARQL)
 
 ** DONE Don't use dbo: for units
 Use a QUDT unit rather than a DBpedia URL as datatype literal:
@@ -183,13 +181,13 @@ Use a QUDT unit rather than a DBpedia URL as datatype literal:
    quty:area "1.37490"^^dbo:hectare
 #+END_SRC
 
-** TODO Where is the grape variety indicated?
+** DONE Where is the grape variety indicated?
 Plots don't seem to indicate the grape variety. Maybe that's in another file?
 #+BEGIN_SRC Turtle
 inra_obj:22-SYRAH rdf:type aeo:Plot .
 inra_obj:68-COLLECTION-BLANCS rdf:type aeo:Plot .
 #+END_SRC
-** TODO Fix polygon geometry
+** DONE Fix polygon geometry
 No way this defines a valid polygon:
 - It includes just 4 coordinates. Even for a simple box you need 4 corners, i.e. 8 coordinates
 - Coordinates should be +-180 degrees longitude and +-90 degrees latitude, but these are very big numbers
@@ -207,12 +205,9 @@ Discussion:
 - INRA can compute the area from the shape. The area must be recorded as a separate field, not in "asWKT"
 - Which CRS to use? In France they often use Lambert93 and UTM zone 30, but I'd recommend WGS84, which is the default in GeoSPARQL.
   If you can't convert to WGS84, then you must include the CRS URL in the WKT literal.
-  
-INRA :  We have change the representation by using gmlLiteral
-
 ** DONE geo:Polygon vs geo:Geometry
 - There's no class ~geo:Polygon~. Use ~geo:Geometry~ instead
-** TODO Declare geo:Feature
+** DONE Declare geo:Feature
 - ~geo:hasGeometry~ has domain ~geo:Feature~, so it would be nice to declare it:
   #+BEGIN_SRC Turtle
   inra_obj:22-SYRAH rdf:type aeo:Plot; geo:Feature. 
@@ -221,7 +216,7 @@ INRA :  We have change the representation by using gmlLiteral
   : aeo:Plot < aeo:CultivatedLand < aeo:Area < aeo:AgriEntity < aeo:AgriEntity
   (the last reflexive subclass is totally useless)
 
-* TODO FinFermentationsAlcoolique_transf_parsed.ttl
+* DONE EndOfAlcoholicfermentation.ttl
 
 * TODO Maturite_transf_parsed.ttl
 
@@ -298,6 +293,6 @@ inra_variety:Muscat_sec a GrapeVariety;
   ...
 #+END_SRC
 
-** TODO Minor things
+** DONE Minor things
 - add newline before each heading
 - add new files to first-level headings
