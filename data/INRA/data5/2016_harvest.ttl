@@ -20,7 +20,7 @@ bdg:variety a qb:DimensionProperty , bdg:Variety;
   qb:concept sdmx-concept:collMethod; 
   rdfs:range xsd:string . 
  
-<data/winemaking/PechRouge/Harvest/2016> a qb:DataSet; 
+<data/winemaking/PechRouge/harvestWeight/2016> a qb:DataSet; 
   rdfs:label "Data about Harvest done on Pech Rouge in 2016"; 
   qb:structure <DSD/harvestWeight/2016> . 
  

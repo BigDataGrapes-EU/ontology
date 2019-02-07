@@ -4,15 +4,15 @@ bdg:FermentationTank a rdf:Class, skos:Concept;
  
 bdg:WineExperimentalModality a rdf:Class, skos:Concept; 
   rdfs:label "Wine experimental modality code"; 
-  rdfs:comment "Experimental code used to disociate expriment modality" . 
+  rdfs:comment "Experimental code used to disociate experiment modality for each tested wine" . 
  
 bdg:wineExperimentalModality a qb:DimensionProperty , bdg:FermentationTank; 
-  rdfs:label "Fermentation Tank"; rdfs:comment "Specify the code of the experimental modality"; 
+  rdfs:label "Wine experimental modality"; rdfs:comment "Specify the code of the experimental modality"; 
   qb:concept sdmx-concept:collMethod; 
   rdfs:range bdg:WineExperimentalModality . 
  
 bdg:fermentationTank a qb:DimensionProperty , bdg:FermentationTank; 
-  rdfs:label "Fermentation Tank"; rdfs:comment "define the tank used to do a particular fermentation"; 
+  rdfs:label "Fermentation Tank"; rdfs:comment "Define the tank used to do a particular fermentation"; 
   qb:concept sdmx-concept:collMethod; 
   rdfs:range bdg:FermentationTank . 
  
@@ -20,11 +20,6 @@ bdg:date a qb:DimensionProperty;
   rdfs:label "Date"; rdfs:comment "Date of the observation"; 
   qb:concept sdmx-concept:timePeriod; 
   rdfs:range xsd:date . 
- 
-bdg:fermentationTank a qb:DimensionProperty , bdg:FermentationTank; 
-  rdfs:label "Fermentation Tank"; rdfs:comment "Tank used to do a particular fermentation"; 
-  qb:concept sdmx-concept:collMethod; 
-  rdfs:range xsd:string . 
  
 <data/winemaking/PechRouge/EndFermentationMonitoring/2016> a qb:DataSet; 
   rdfs:label "Data about Fermentation done on Pech Rouge in 2016"; 

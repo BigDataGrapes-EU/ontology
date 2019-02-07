@@ -1,4 +1,210 @@
 
+<INRA/estate/PechRouge> a bdg:Estate .
+
+<INRA/estate/PechRouge/22> a bdg:PlotGroup;
+  rdfs:label "PechRouge"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/68> a bdg:PlotGroup;
+  rdfs:label "22"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/JA> a bdg:PlotGroup;
+  rdfs:label "68"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/18> a bdg:PlotGroup;
+  rdfs:label "JA"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/35> a bdg:PlotGroup;
+  rdfs:label "18"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/98> a bdg:PlotGroup;
+  rdfs:label "35"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/89> a bdg:PlotGroup;
+  rdfs:label "98"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/89b> a bdg:PlotGroup;
+  rdfs:label "89"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/87> a bdg:PlotGroup;
+  rdfs:label "89b"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/85> a bdg:PlotGroup;
+  rdfs:label "87"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/83> a bdg:PlotGroup;
+  rdfs:label "85"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/79> a bdg:PlotGroup;
+  rdfs:label "83"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/2> a bdg:PlotGroup;
+  rdfs:label "79"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/10> a bdg:PlotGroup;
+  rdfs:label "2"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/40> a bdg:PlotGroup;
+  rdfs:label "10"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/39> a bdg:PlotGroup;
+  rdfs:label "40"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/23> a bdg:PlotGroup;
+  rdfs:label "39"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/55> a bdg:PlotGroup;
+  rdfs:label "23"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/57> a bdg:PlotGroup;
+  rdfs:label "55"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/51> a bdg:PlotGroup;
+  rdfs:label "57"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/72> a bdg:PlotGroup;
+  rdfs:label "51"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/73> a bdg:PlotGroup;
+  rdfs:label "72"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/74> a bdg:PlotGroup;
+  rdfs:label "73"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/75> a bdg:PlotGroup;
+  rdfs:label "74"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/76> a bdg:PlotGroup;
+  rdfs:label "75"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/64> a bdg:PlotGroup;
+  rdfs:label "76"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/82> a bdg:PlotGroup;
+  rdfs:label "64"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/11> a bdg:PlotGroup;
+  rdfs:label "82"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/81> a bdg:PlotGroup;
+  rdfs:label "11"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/63> a bdg:PlotGroup;
+  rdfs:label "81"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/66> a bdg:PlotGroup;
+  rdfs:label "63"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/66> a bdg:PlotGroup;
+  rdfs:label "66"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/65> a bdg:PlotGroup;
+  rdfs:label "65"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/71> a bdg:PlotGroup;
+  rdfs:label "71"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/77> a bdg:PlotGroup;
+  rdfs:label "77"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/75> a bdg:PlotGroup;
+  rdfs:label "90"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/90> a bdg:PlotGroup;
+  rdfs:label "91"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/91> a bdg:PlotGroup;
+  rdfs:label "92"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/92> a bdg:PlotGroup;
+  rdfs:label "95"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/95> a bdg:PlotGroup;
+  rdfs:label "102"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/102> a bdg:PlotGroup;
+  rdfs:label "106"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/106> a bdg:PlotGroup;
+  rdfs:label "61"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/102> a bdg:PlotGroup;
+  rdfs:label "97"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/61> a bdg:PlotGroup;
+  rdfs:label "100"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/39> a bdg:PlotGroup;
+  rdfs:label "99"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/39> a bdg:PlotGroup;
+  rdfs:label "101"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/97> a bdg:PlotGroup;
+  rdfs:label "53"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/100> a bdg:PlotGroup;
+  rdfs:label "103"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/99> a bdg:PlotGroup;
+  rdfs:label "94"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/101> a bdg:PlotGroup;
+  rdfs:label "84"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
+<INRA/estate/PechRouge/53> a bdg:PlotGroup;
+  rdfs:label "58"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> . 
+
 <INRA/estate/PechRouge/22/22-SYRAH> a bdg:Plot ;
 	rdfs:label "22-SYRAH"^^xsd:string ;
 	geo:sfWithin <INRA/estate/PechRouge/22> ;
