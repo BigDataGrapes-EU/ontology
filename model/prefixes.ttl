@@ -35,6 +35,9 @@
 @prefix xml:               <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd:               <http://www.w3.org/2001/XMLSchema#>.
 
+#Other Namespaces
+@prefix geom:              <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+
 # AgroBio Namespaces
 @prefix aeo:               <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#>.
 @prefix afeo:              <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#>.
