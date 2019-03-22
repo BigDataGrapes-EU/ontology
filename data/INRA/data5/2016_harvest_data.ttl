@@ -1,32 +1,7 @@
-bdg:Variety a rdf:Class, skos:Concept; 
-  rdfs:label "Variety"; 
-  rdfs:comment "Genetic resource that identify vinestock specific set of characteristic"; 
-  skos:exactMatch agrovoc:c_8157; 
-  rdfs:seeAlso agrovoc:c_8157. 
  
- 
-bdg:date a qb:DimensionProperty; 
-  rdfs:label "Date"; rdfs:comment "Date of the observation"; 
-  qb:concept sdmx-concept:timePeriod; 
-  rdfs:range xsd:date . 
- 
-bdg:humanSensor a qb:DimensionProperty , foaf:Person , sosa:Sensor, ofpe:Operator; 
-  rdfs:label "Human sensor"; rdfs:comment "Human that took the observation"; 
-  qb:concept sdmx-concept:collMethod; 
-  rdfs:range ssn:Sensor . 
- 
-bdg:variety a qb:DimensionProperty , bdg:Variety; 
-  rdfs:label "Vinestock variety"; rdfs:comment "Variety of the vinestock where grapes come from"; 
-  qb:concept sdmx-concept:collMethod; 
-  rdfs:range xsd:string . 
- 
-<data/winemaking/PechRouge/harvestWeight/2016> a qb:DataSet; 
+<data/winemaking/PechRouge/Harvest/2016> a qb:DataSet; 
   rdfs:label "Data about Harvest done on Pech Rouge in 2016"; 
   qb:structure <DSD/harvestWeight/2016> . 
- 
-# feature 
-<feature/GrapeCluster> a sosa:FeatureOfInterest; rdfs:label "GrapeCluster"; rdfs:description "The grapes vine collected from plot at harvest". 
-
  
 <DSD/harvestWeight/2016> a qb:DataStructureDefinition; 
   qb:component [qb:dimension bdg:plot;                  ]; 
@@ -180,1132 +155,1006 @@ rdfs:label"Bourboulenc"^^xsd:string .
 rdfs:label"Petit-Verdot"^^xsd:string . 
  
 <variety/3176> a bdg:variety; 
-rdfs:label"3176"^^xsd:string .
-<agent/> a bdg:humanSensor;
-  foaf:familyName ""^^xsd:string;
-  foaf:firstName ""^^xsd:string .
+rdfs:label"3176"^^xsd:string . 
 
-
-<agent/jn.lacapere> a bdg:humanSensor;
-  foaf:familyName "lacapere"^^xsd:string;
-  foaf:firstName "jn"^^xsd:string .
-
-
-<agent/jerome.degroise> a bdg:humanSensor;
-  foaf:familyName "degroise"^^xsd:string;
-  foaf:firstName "jerome"^^xsd:string .
-
-
-<agent/jj.regadera> a bdg:humanSensor;
+<INRA/agent/jj.regadera> a bdg:humanSensor, ofpe:Operator, foaf:Person;
   foaf:familyName "regadera"^^xsd:string;
   foaf:firstName "jj"^^xsd:string .
 
 
-<agent/nicolas.saurin> a bdg:humanSensor;
-  foaf:familyName "saurin"^^xsd:string;
-  foaf:firstName "nicolas"^^xsd:string .
-
-
-<agent/hubert.alem> a bdg:humanSensor;
-  foaf:familyName "alem"^^xsd:string;
-  foaf:firstName "hubert"^^xsd:string .
-
-
-<agent/nans> a bdg:humanSensor;
-  foaf:familyName ""^^xsd:string;
-  foaf:firstName ""^^xsd:string .
-
-
-<agent/fabien.robert> a bdg:humanSensor;
-  foaf:familyName "robert"^^xsd:string;
-  foaf:firstName "fabien"^^xsd:string .
-
-
-<agent/jerome.cerutti> a bdg:humanSensor;
-  foaf:familyName "cerutti"^^xsd:string;
-  foaf:firstName "jerome"^^xsd:string .
-
-
-<agent/fabien.dellova> a bdg:humanSensor;
+<INRA/agent/fabien.dellova> a bdg:humanSensor, ofpe:Operator, foaf:Person;
   foaf:familyName "dellova"^^xsd:string;
   foaf:firstName "fabien"^^xsd:string .
 
 
-<agent/emmanuelle.zumstein> a bdg:humanSensor;
+<INRA/agent/jerome.cerutti> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "cerutti"^^xsd:string;
+  foaf:firstName "jerome"^^xsd:string .
+
+
+<INRA/agent/emmanuelle.zumstein> a bdg:humanSensor, ofpe:Operator, foaf:Person;
   foaf:familyName "zumstein"^^xsd:string;
   foaf:firstName "emmanuelle"^^xsd:string .
 
 
-<data/winemaking/PechRouge/harvestWeight/2016/0985a8ff-43bf-4923-a54c-e5aae4b1ff5a> a qb:Observation;
+<INRA/agent/fabien.robert> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "robert"^^xsd:string;
+  foaf:firstName "fabien"^^xsd:string .
+
+
+<INRA/agent/nicolas.saurin> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "saurin"^^xsd:string;
+  foaf:firstName "nicolas"^^xsd:string .
+
+
+<INRA/agent/jn.lacapere> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "lacapere"^^xsd:string;
+  foaf:firstName "jn"^^xsd:string .
+
+
+<INRA/agent/nans> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName ""^^xsd:string;
+  foaf:firstName ""^^xsd:string .
+
+
+<INRA/agent/jerome.degroise> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "degroise"^^xsd:string;
+  foaf:firstName "jerome"^^xsd:string .
+
+
+<INRA/agent/hubert.alem> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "alem"^^xsd:string;
+  foaf:firstName "hubert"^^xsd:string .
+
+
+<data/winemaking/PechRouge/harvestWeight/2016/9a234f0e-d08f-4695-ac7c-247c78af2fd1> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
    bdg:variety    <variety/Chardonnay>;
    bdg:date    "2016-08-24"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "612.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/ddc5bd73-f342-408f-ac3c-6a58b28390ce> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/5b23fcd6-e64d-4c47-98e5-f80e16ec3c36> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
    bdg:variety    <variety/Chardonnay>;
    bdg:date    "2016-08-29"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "620.9"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/fe8a24ab-0c4a-4b4c-a5c0-17b952742ee9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/bbc4b63b-10f6-41f7-85a4-770d4671a243> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/78-MUSCAT-PETIT-GRAIN>;
    bdg:variety    <variety/Muscat-Petit-Grain>;
    bdg:date    "2016-08-24"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1440"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/b60be07e-ccc9-43c7-b002-e1e1d1a3d534> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/de4c9aac-f9d6-45c7-a472-ff149ecdacea> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/22/22-FLOT-ROUGE>;
    bdg:variety    <variety/Flot-Rouge>;
    bdg:date    "2016-08-25"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1865"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/c6f70dec-2a34-4391-a5b8-800f0a38d4d0> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/1786eb97-d558-4aa0-a432-82088b832a56> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/22/22-PATRICIA>;
    bdg:variety    <variety/Patricia>;
    bdg:date    "2016-08-25"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "295"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/889c5f66-4e11-4a7b-b32c-646421c7061b> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/c1d9ba53-1ea5-4278-ad20-3e49d363d4b7> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/51/51-MUSCAT-ALEXANDRIE>;
    bdg:variety    <variety/Muscat-Alexandrie>;
    bdg:date    "2016-08-25"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "950"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/967d74e3-8eeb-4f46-881f-475755145cee> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/550622c1-de63-410b-bbbb-2207ac40f6d3> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/88/88-VARIETES-JUS>;
    bdg:date    "2016-08-24"^^xsd:Date;
-   bdg:humanSensor   <agent/emmanuelle.zumstein>;
+   bdg:humanSensor   <INRA/agent/emmanuelle.zumstein>;
    bdg:HarvestWeight    "410.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/fec0613d-5746-4292-b1b5-9d0e84cb626a> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/d56c8f68-d641-4673-a906-9277981dd023> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/88/88-VARIETES-JUS>;
    bdg:date    "2016-08-25"^^xsd:Date;
-   bdg:humanSensor   <agent/emmanuelle.zumstein>;
+   bdg:humanSensor   <INRA/agent/emmanuelle.zumstein>;
    bdg:HarvestWeight    "439"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/8d6d2fc3-5d4a-4472-8e54-9d973dd6f12e> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/29daea3f-38fe-4f4d-b6ac-0cb51936c9ab> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
    bdg:variety    <variety/Chardonnay>;
    bdg:date    "2016-08-26"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1010.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/7a9487ba-44a2-4850-92b8-4d751cf5fac3> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/13dfd0a6-9136-4ed1-9d73-efd20d3dab4e> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/61/61-MERLOT>;
    bdg:variety    <variety/Merlot>;
    bdg:date    "2016-08-29"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "3725"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/bffddf6e-a2db-44b0-bbff-7e9c314d5886> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/e0ae7cf5-3616-4aff-810b-891b059a2eb7> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-MERLOT-sp>;
    bdg:variety    <variety/Merlot>;
    bdg:date    "2016-08-29"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "1502.8"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/86e5e6e6-e0ba-4d70-ac1e-bdc9732801eb> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/c5801238-3d9f-442e-b1ea-aa59d9e5a593> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/82/82-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-08-29"^^xsd:Date;
-   bdg:humanSensor   <agent/hubert.alem>;
+   bdg:humanSensor   <INRA/agent/hubert.alem>;
    bdg:HarvestWeight    "16"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/f23fa48d-e567-4a6d-a2ee-9bb0583aa479> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/d5f64ee1-dc2b-41e0-9c59-0d0dc5ca4959> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/JA/JARDIN-AMPELO-diversrouge>;
    bdg:date    "2016-08-30"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "1198.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/c4c5e32c-513d-4aee-9b46-1aa246aca332> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/2cb136fe-169a-4dfe-a1b2-85f02a00358e> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/JA/JARDIN-AMPELO-diversblanc>;
    bdg:date    "2016-08-30"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "675"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/aa6e3a19-fa36-4fa5-9fdf-97ff29ac0466> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/e7449361-dd51-4467-a757-e2466f87f494> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
    bdg:variety    <variety/Chardonnay>;
    bdg:date    "2016-08-31"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "360"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/588b6e16-93c6-44be-bff7-cd65374f999b> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ba19fe4b-0e5b-4791-8434-c615038b200e> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/68/68-ARRILOBA>;
    bdg:variety    <variety/Arriloba>;
    bdg:date    "2016-08-31"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "180"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5bbfcf97-e46e-49bf-83b9-a4af6eab45b8> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/bf97612c-588e-4ec6-8206-19ce2fc1d9c7> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/68/68-CHENIN>;
    bdg:variety    <variety/Chenin>;
    bdg:date    "2016-08-31"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "310"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/8460b7e3-cf0f-4afc-b290-08e0bb17d05f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/f02b246e-7b39-40b4-a5f0-91fcc8bc34ea> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/68/68-MUSCAT-PETIT-GRAIN>;
    bdg:variety    <variety/Muscat-Petit-Grain>;
    bdg:date    "2016-08-31"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "375"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/9bb9d7ea-ddac-4b6f-a1d8-0222e4e914ae> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/e9b7453a-4bba-4c09-bb12-27ced610bf93> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/08/08-PIQUEPOUL-BLANC>;
    bdg:variety    <variety/Piquepoul-Blanc>;
    bdg:date    "2016-08-31"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "375"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/540a15ab-98ba-4bbd-983b-408db6ce6595> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/888713ba-5ee5-44fc-8d4d-95b0e3bf6dfa> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/18/18-MERLOT>;
    bdg:variety    <variety/Merlot>;
    bdg:date    "2016-08-31"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1504"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/840df312-c480-4e10-a522-852e1177786d> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/aed70edd-cb38-435c-99ec-9bb043a63e37> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/55/55-VIOGNIER>;
    bdg:variety    <variety/Viognier>;
    bdg:date    "2016-09-01"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "4740"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/3aa97665-de71-4306-86b5-3db278637e51> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/81625685-4961-4581-b271-db1a42357aa8> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3160N-ESP-HAUT>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-01"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "105"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/aa2b2279-f839-4bef-9457-47b4f1c140ed> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ee659166-0df3-4b33-9de7-1ae1f1150991> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/39/39-CABERNET-SAUVIGNON>;
    bdg:variety    <variety/Cabernet-Sauvignon>;
    bdg:date    "2016-09-01"^^xsd:Date;
-   bdg:humanSensor   <agent/hubert.alem>;
+   bdg:humanSensor   <INRA/agent/hubert.alem>;
    bdg:HarvestWeight    "6"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5dd7ef92-756d-4859-99b3-b5f3c33f9c0f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/aa86e14a-50d9-4bc2-a260-e3e8864e19eb> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/68/68-VERMENTINO>;
    bdg:variety    <variety/Vermentino>;
    bdg:date    "2016-09-02"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "574"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/86f4d335-f347-407b-8b1a-a133bbd2dd44> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/0e6009df-0142-4421-87f9-2185748137fd> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/75-GRENACHE>;
    bdg:variety    <variety/Grenache>;
    bdg:date    "2016-09-02"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "246"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/6afdfd52-a7f7-4e8a-afe9-2fb7ed4be98f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ea541d23-e54e-4c0e-851e-03161dfb0422> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/75-NOUVELLES-OBTENTIONS>;
    bdg:date    "2016-09-02"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "877"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/d2effba3-2a69-43e1-85cc-ee3ec39562a3> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/d7f5f135-5049-42c9-bec7-af499b0574ae> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/68/68-ROUSSANNE>;
    bdg:variety    <variety/Roussanne>;
    bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "650.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/fd7f86a2-49fb-46c9-8779-c72910040aaa> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/a654e73e-925b-44a0-a88d-7a590729678d> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3328-168N>;
    bdg:variety    <variety/3328-168>;
    bdg:date    "2016-09-05"^^xsd:Date;
    bdg:HarvestWeight    "30"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/c1b703d9-80ed-44c8-9424-d15b5a4641b9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/18346f9f-4a8e-4bea-b58e-2f2adc30b939> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3322-339N>;
    bdg:variety    <variety/3322-339>;
    bdg:date    "2016-09-05"^^xsd:Date;
    bdg:HarvestWeight    "21.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/ed98b801-254f-4605-bd0e-0443f9f66cd4> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/85f168d0-0824-4612-81fd-8cebc9d359ad> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/10/10-SAUVIGNON-BLANC-ESP>;
    bdg:variety    <variety/Sauvignon-Blanc>;
    bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "771"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/247a8eb6-44b6-48c5-b7b2-ed860c7e27ba> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/f42f4ff3-72f9-429f-a441-135471babe15> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/10/10-SAUVIGNON-BLANC-TM>;
    bdg:variety    <variety/Sauvignon-Blanc>;
    bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1370.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/3cc8f951-c9b7-4722-8555-83975e29ce3a> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/8b8e434b-3b6b-460e-bdcd-c39a62e44f6e> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-GENOTYPE-14>;
    bdg:variety    <variety/3184-1-9>;
    bdg:date    "2016-09-05"^^xsd:Date;
    bdg:HarvestWeight    "93.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/ff56ca87-2be7-4bef-aa8e-79b9cfe8ba57> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/4145a3cb-adf3-428e-b67c-1da57374206e> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/40/40-GENOTYPE-14>;
    bdg:variety    <variety/3184-1-9>;
    bdg:date    "2016-09-05"^^xsd:Date;
    bdg:HarvestWeight    "99"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/bcb31b12-70f1-4933-be48-6c6e1bfdc232> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/332af720-715d-4bd5-93e1-2f6ba7e10ac2> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-GENOTYPE-05>;
    bdg:variety    <variety/3197-81>;
    bdg:date    "2016-09-05"^^xsd:Date;
    bdg:HarvestWeight    "120.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/3a7b987a-8dec-480a-9d8f-97e2eb768bb9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/048257be-103e-418e-8d5b-402dfd967ddc> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/40/40-GENOTYPE-05>;
    bdg:variety    <variety/3197-81>;
    bdg:date    "2016-09-05"^^xsd:Date;
    bdg:HarvestWeight    "98.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/b38e6bf3-3327-4125-86b0-8a7a43e4a757> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/bc10fa1b-f4e1-4696-bc08-385443908110> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/35/35-CABERNET-SAUVIGNON>;
    bdg:variety    <variety/Cabernet-Sauvignon>;
    bdg:date    "2016-09-06"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "4405"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/bfa403ac-0990-4252-a877-93081a30b531> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ab17c9eb-ee6e-4b71-bfb9-dfb8700e9481> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/22/22-SYRAH-sp>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-06"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1507.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/27b5f16b-c5a5-4ea7-9d5e-b06de594e5e7> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/a1a9fd7d-e231-4b37-bb05-c1ebc777d90e> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/64/64-GRENACHE>;
    bdg:variety    <variety/Grenache>;
    bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "447"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/8de3f0ba-1b16-4526-82f5-f4414251ec00> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/d91a4cc3-af2a-40ef-9f37-c5a8c567fa0c> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/64/64-GRENACHE>;
    bdg:variety    <variety/Grenache>;
    bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "388"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/13628247-b7b9-4083-9e7f-916487176aa9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/2c239c3d-e310-44cc-91fb-6a28e7ff687d> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/64/64-GRENACHE>;
    bdg:variety    <variety/Grenache>;
    bdg:date    "2016-09-06"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "2320"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/58786745-466e-4288-b27b-f4164b1599f9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/8d58a5e0-0d8e-4a4d-8ff9-f49251f9b31f> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/64/64-GRENACHE>;
    bdg:variety    <variety/Grenache>;
    bdg:date    "2016-09-06"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "292"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/e71c3c08-5eca-43e9-b8f0-8a305ac1dabe> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/1654b408-3332-49d3-848a-d9e6f8b630c2> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3160-27-4N>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-07"^^xsd:Date;
    bdg:HarvestWeight    "76"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/3cd76c9e-f765-4c92-a8cb-18c4c0e36322> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/94d42b57-7451-4922-8128-6887130622d1> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/22/22-SYRAH-sp>;
    bdg:variety    <variety/Syrah-Sp>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1969"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/b3211e42-ecb0-4da6-80fe-cd780a5a2539> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ec83d391-f798-4dbe-815a-48bd2e05e306> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3176N-ESP-HAUT>;
    bdg:variety    <variety/3176>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/jn.lacapere>;
+   bdg:humanSensor   <INRA/agent/jn.lacapere>;
    bdg:HarvestWeight    "115"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/a191e828-2663-4a49-8f26-f8a33fa07a61> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/b8a9e4b1-a9cd-4baa-9c78-50f0b0c5af2b> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-MERLOT-sp>;
    bdg:variety    <variety/Merlot-Sp>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "700"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/4225b3d3-8c1d-4458-80ee-4d8ff74f06ab> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/e7cb01b0-1212-4f44-b6e5-864153bef311> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/75-MERLOT>;
    bdg:variety    <variety/Merlot>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "340"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/115504fe-d593-42fd-9d50-a5e8b3a0bdfb> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/e2d6a380-7da5-4b9e-8a2c-33df4c7b0924> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/75-EKIGAINA>;
    bdg:variety    <variety/Ekigaina>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "190"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/977dab3c-7745-4d03-9e31-3249a242e365> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ea791305-bc04-4c5a-814b-7a81061fd1e3> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/75-ARINARNOA>;
    bdg:variety    <variety/Arinarnoa>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "280"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/652a2dfd-d1be-489b-acfa-ec9eaf3f0ac9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/78ed6c42-4b69-4979-bae7-5b73a7f80311> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/83/83-MARSELAN>;
    bdg:variety    <variety/Marselan>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1400"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/73ff022f-8025-48cb-8426-0fb59fbae893> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/b210b8c5-b242-4fff-a389-e66d67dc0b42> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/59/59-MARSELAN>;
    bdg:variety    <variety/Marselan>;
    bdg:date    "2016-09-07"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1875"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5fa358ff-ee61-4b95-97bc-6a9b1c3804f9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/868e87ce-6e6c-4564-8d68-2a97069500fe> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/72/72-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-08"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "567"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/9b71bbcb-a400-4409-909b-d7e3bb47767a> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/54242978-48fb-4136-ab35-71747a83d4aa> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/75-GRENACHE-BLANC>;
    bdg:variety    <variety/Grenache-Blanc>;
    bdg:date    "2016-09-09"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "339.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/2c7ca99d-fb44-48f1-8170-09b0abcd5e74> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/3217de55-d97a-4ae0-ba8f-c90957dcd744> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3160N-ESP-HAUT>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-09"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "95.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/c95f0694-58cf-4dc0-8944-c125bf5f4c64> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/5a559201-0df0-4b5d-b94f-425d0bef6770> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/71/71-GRENACHE-2015>;
    bdg:variety    <variety/Grenache>;
    bdg:date    "2016-09-12"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "957.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/620f6b67-9429-41b3-a11b-196743985157> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/1ac5b70e-69df-493d-ac56-39bdabec8077> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3160N>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-09"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "236.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/bdcf1f0c-d6a2-48ac-918a-71dea1266f6a> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/f87b7940-e45b-40a0-a1d6-f74181f6b3ae> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-MERLOT-sp>;
    bdg:variety    <variety/Merlot>;
    bdg:date    "2016-09-09"^^xsd:Date;
-   bdg:humanSensor   <agent/nicolas.saurin>;
+   bdg:humanSensor   <INRA/agent/nicolas.saurin>;
    bdg:HarvestWeight    "343"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/fd4c98f7-0b61-470e-92eb-8b933740deaa> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/12add53e-884c-43d1-b600-63ab41ea872f> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/98/98-MUSCAT-PETIT-GRAIN>;
    bdg:variety    <variety/Muscat-Petit-Grain>;
    bdg:date    "2016-09-12"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "453"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/dad33037-9176-48b2-96ce-6bc35dab7781> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/dcc3c297-3179-4441-98cf-5799e8d0039a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/77/77-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-12"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "560"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/e37f87ae-4e14-402c-b9fb-0bb596ece5d5> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/b1fdb836-0d8d-40d7-ba44-34562175b0a3> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/89/89-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-12"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "340"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/af7fce92-f415-4694-8097-9b0b6bead4d9> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/6e573bb0-e0f8-4b7d-9820-15222c8dc430> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/87/87-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-12"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "420"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5fb04161-e668-4d5b-a744-487125b1e0e7> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/78bf56a4-04cb-4be6-8727-d1001a21fa37> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/63/63-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-12"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "2025"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/b959a707-4cfd-4942-affe-0c10f92b1f95> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/379a7465-86b4-49c7-a80e-7eccc8aaccb6> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/76/76-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-12"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "267"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/72633155-0645-49e4-9dc2-f57a97cca152> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/9bb6c1b8-29a6-445d-a01c-09a05ca0234a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3160-27-4>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "56.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/c792b89d-f823-4629-a4be-5db7b4d88162> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/14101649-a472-4e24-9dcf-386eca1fe2c8> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3347-364B>;
    bdg:variety    <variety/3347>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "21.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/803f18dd-af26-4b8f-a7f3-e9f8a7d62249> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/8bac3d9c-0bb3-43a0-8f6c-00c2366230b3> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3347-368B>;
    bdg:variety    <variety/3347>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "14"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/a3e54e4b-4afe-461d-8528-036f3e12d97f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/b9d05f7e-4f9c-44cc-90d7-67a81be9309c> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3347-342B>;
    bdg:variety    <variety/3347>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "18.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/d3b85595-833f-41ae-871f-a235dcc4745f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/8efee181-1196-45d9-888e-608d0c162abe> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3347-431B>;
    bdg:variety    <variety/3347>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "29"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/cdabc407-a933-4e06-9be1-c6649187ba66> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ebce8a90-5de3-4936-be94-81f89d2d0462> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3347-320B>;
    bdg:variety    <variety/3347>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "53.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/57e57808-1094-4a8d-8f03-016cf7f51ec2> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/9afd9858-50d7-4d1f-9f39-f02502197149> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3347-330B>;
    bdg:variety    <variety/3347>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "50.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/25b0a2c2-1acb-4228-b9c2-6c1934d72386> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/e39da352-818a-4563-97a6-407aad59194b> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3347-396B>;
    bdg:variety    <variety/3347>;
    bdg:date    "2016-09-12"^^xsd:Date;
    bdg:HarvestWeight    "31"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/643f6f28-dcc9-4737-b249-8c0d2be72ef1> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/99afcf1c-63ef-4f85-8c7d-0e1d560b38cd> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/COURSAN-COLOMBARD>;
    bdg:variety    <variety/Colombard>;
    bdg:date    "2016-09-13"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "2306"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/72bd0dd5-fb69-4f84-ab0e-2f0ed593fb0c> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/9c6b7695-a33e-495a-a250-9571ce6fc9e4> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/90/90-MUSCAT-PETIT-GRAIN>;
    bdg:variety    <variety/Muscat-Petit-Grain>;
    bdg:date    "2016-09-13"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "250"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/47ea3620-fcaf-42ca-9596-8802bd25205f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/83bb83f1-252a-4921-b466-ac3565adb813> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/91/91-MUSCAT-PETIT-GRAIN>;
    bdg:variety    <variety/Muscat-Petit-Grain>;
    bdg:date    "2016-09-13"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "181"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/37d66e5f-4bd7-4981-8f2d-0680fec0be99> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/1204b87b-ab49-430b-b28f-c6b0ca48c5eb> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/COURSAN-COLOMBARD>;
    bdg:variety    <variety/Colombard>;
    bdg:date    "2016-09-13"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "1860"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/fce60d1f-5549-486c-865b-8049fe114fd5> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/011b0b68-d916-4a39-b65c-ff25c843b2f7> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-GENOTYPE-02>;
    bdg:variety    <variety/3197-235>;
    bdg:date    "2016-09-13"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "401.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/4b9ac8ff-0509-47c3-932a-d204a091095c> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/4fc4bcaf-9d38-4718-8348-059091589850> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-GENOTYPE-07>;
    bdg:variety    <variety/3197-373>;
    bdg:date    "2016-09-13"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "69"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/1ee9d006-ee20-42a0-8c48-ddfb93f973cd> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/40435caf-db29-4285-8ce1-004234b2f4e3> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/82/82-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "3785"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/e3672f22-f988-49cc-a2f7-48a437c168b8> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/077f031a-9eb5-4b64-9362-9aab74fc2d9f> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/72/72-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "3170"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/3c386cc8-35b2-452d-8f77-271950419101> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ba47ffd8-d2f4-4b13-8392-218067d0ff41> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/76/76-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "405"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/1eb5f2e1-5f1b-41c6-beae-049dc2745d02> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/89c127a0-a677-4fa6-8909-7d1d7630220a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3161-22-4>;
    bdg:variety    <variety/3161>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "102"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5bf3c1bd-1013-49da-8d6a-6dadfff4fab4> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/0b602f49-7ff0-4d42-8fe6-80e405b54f72> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3322-343>;
    bdg:variety    <variety/3322-343>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "51"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/f97b5585-7899-4c24-a276-9dc5f6da9dc2> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/1c77ce2b-9e1f-401c-a3cc-6c620fe062b2> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3322-178>;
    bdg:variety    <variety/3322-178>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "37"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/de477ec2-5f3e-49ac-8d96-4ece0c939366> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/c9c7a937-5fe3-45db-8ec7-a8f0cfa38812> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3328-306>;
    bdg:variety    <variety/3328-306>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "45"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/04f799f3-fb65-476c-b290-350343f377f1> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ae1773ef-1048-40bb-b039-3d776dfe532a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/72/72-CABESTREL>;
    bdg:variety    <variety/Cabestrel>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "153.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/d87ca76d-6a1f-4fad-a764-61a55cde862e> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/17565807-0b87-41c8-b1bb-97b3b7b855a6> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/72/72-MARSELAN>;
    bdg:variety    <variety/Marselan>;
    bdg:date    "2016-09-14"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "165.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/ee0fff03-3122-49d8-ab5a-a58cb859e00b> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/08497cf0-cbcc-4007-8f2c-52992c738d4f> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/55/55-VIOGNIER-TM>;
    bdg:variety    <variety/Viognier>;
    bdg:date    "2016-09-15"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "891.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/9be8625c-a13a-4fa7-b4bd-3bb9af167fac> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/b338b904-dbbf-4257-be6e-0eca9c273e97> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/72/72-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-15"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.dellova>;
+   bdg:humanSensor   <INRA/agent/fabien.dellova>;
    bdg:HarvestWeight    "80"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5d871190-270a-49b3-b8d6-a3d407de539f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/9131aa29-d4ea-4a0c-a038-62e775f626e6> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/75-MARSELAN>;
    bdg:variety    <variety/Marselan>;
    bdg:date    "2016-09-15"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.dellova>;
+   bdg:humanSensor   <INRA/agent/fabien.dellova>;
    bdg:HarvestWeight    "3660"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/3533fa26-ed2e-4847-b1b4-631ce105836b> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/d4e57657-4bfc-4aeb-9d19-73bbb9a3833e> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/76/76-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-19"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.dellova>;
+   bdg:humanSensor   <INRA/agent/fabien.dellova>;
    bdg:HarvestWeight    "1495"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/72db19e6-791a-4e53-87de-b7716578011f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/31231850-0327-410e-adea-831ff8ae34a6> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3159-B-TM>;
    bdg:variety    <variety/3159>;
    bdg:date    "2016-09-19"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "585.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/23a5f88a-6d17-4f57-8c21-0f5a3a06e9aa> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/6a83161d-71e6-401f-95d1-1d9d13f6af73> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3180-16-8>;
    bdg:variety    <variety/3180>;
    bdg:date    "2016-09-19"^^xsd:Date;
    bdg:HarvestWeight    "180"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/29eddb35-1423-4294-907f-02f793400b9f> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/26957f64-559a-48b7-af58-873c5d76f56a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3084-2-46>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-19"^^xsd:Date;
    bdg:HarvestWeight    "197.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/8a29f952-f4bc-4e6c-9cce-c01d8a3ea0e1> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/ae2dc31c-17c6-4012-8b5b-e8690ef58d6a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3160-27-4>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-19"^^xsd:Date;
    bdg:HarvestWeight    "60"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/493e0620-5ef1-43b5-bcda-10957575d785> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/f0456531-bbb7-4cdb-a88b-d424a2476e62> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3294-57>;
    bdg:variety    <variety/3294>;
    bdg:date    "2016-09-19"^^xsd:Date;
    bdg:HarvestWeight    "10"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/ed0a6a4f-d2f3-448b-a0c5-ff3241185d23> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/63e8a537-14fa-4ca1-bf5b-94a620fcb876> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3328-177>;
    bdg:variety    <variety/3328>;
    bdg:date    "2016-09-19"^^xsd:Date;
    bdg:HarvestWeight    "23"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/d6e4fb51-046c-4358-820e-2e4c5afe132a> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/5bf42d88-2cb4-42d6-9d4a-71d91446b249> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3160-TM>;
    bdg:variety    <variety/3160>;
    bdg:date    "2016-09-19"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "321.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/9bf8e709-7449-4d9a-98c4-09a23c62f40b> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/3c673531-231b-412c-af7b-4b0ef201522a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/102/102-SYRAH-ESP>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-20"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "747.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/75885580-7b34-4a98-ad75-563fd0a8ac31> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/b36761ce-3f97-45e1-a62a-6a2aa17fdcba> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/102/102-SYRAH-TM>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-20"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "579"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/9f0dc3d2-1ebc-4533-ad4e-5fc6f33f10c1> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/1e36d6ed-87ca-46de-bf87-6d92f656e9fa> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/89b/89bis-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-20"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "239"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/55b48f97-c6c3-4441-b170-3baf14dfbbad> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/0e295065-9e0c-48f2-aac6-93b73b94de3d> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/102/102-SYRAH-LYRE>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-20"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "173"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/c3c38def-31a7-40e8-aacd-49bef9e40465> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/2055c15d-5de3-4d4d-8cf6-c3a79b7392e9> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/72/72-SYRAH>;
    bdg:variety    <variety/Syrah>;
    bdg:date    "2016-09-20"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "288"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5d3fe88d-728c-417b-a428-e18463eebcd4> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/edc7cc84-4630-4e73-995b-93d8f5ed1134> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/95/95-CARIGNAN>;
    bdg:variety    <variety/Carignan>;
    bdg:date    "2016-09-21"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "690"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/988b5242-875d-4121-9ce7-e4697b486085> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/dc0153fd-c641-4ae0-8ae4-54f46d365a24> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/74/74-CARIGNAN>;
    bdg:variety    <variety/Carignan>;
    bdg:date    "2016-09-21"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1245"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/091006f0-ee17-4166-a826-185bb371999d> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/0d5f99b1-028a-4d3d-8ee5-c52b19e7aed5> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/79/79-CARIGNAN>;
    bdg:variety    <variety/Carignan>;
    bdg:date    "2016-09-21"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1180"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/cc8703a5-54f2-4c78-9c40-d9039204cd60> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/c442a68c-e723-4487-b96b-9ab941882981> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/65/65-CARIGNAN>;
    bdg:variety    <variety/Carignan>;
    bdg:date    "2016-09-20"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "953.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/917e70ee-6545-4540-9bf5-2ef228afbe05> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/7ed7e371-22fe-4477-b7d9-cb9f2b68ab19> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/39/39-CABERNET-SAUVIGNON>;
    bdg:variety    <variety/Cabernet-Sauvignon>;
    bdg:date    "2016-09-21"^^xsd:Date;
-   bdg:humanSensor   <agent/jn.lacapere>;
+   bdg:humanSensor   <INRA/agent/jn.lacapere>;
    bdg:HarvestWeight    "316"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/9a8e97cf-c042-438b-a1f1-1d5517912a64> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/6f919bdb-706b-4dfa-840e-ca023cdcdeb1> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/68/68-BOURBOULENC>;
    bdg:variety    <variety/Bourboulenc>;
    bdg:date    "2016-09-22"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "655.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/bc9d08f2-be99-4771-b367-957820a89262> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/0b3c2de3-d15f-4508-8070-76b93fa1815a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3176>;
    bdg:variety    <variety/3176>;
    bdg:date    "2016-09-22"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "1562"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/64434d8f-4c2b-4e01-8732-b8a902dc416e> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/84188826-9881-4300-849e-189ffae8e257> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/39/39-CABERNET-SAUVIGNON>;
    bdg:variety    <variety/Cabernet-Sauvignon>;
    bdg:date    "2016-09-22"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1910"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/e36b0b19-3afa-4a97-8991-f4c60e2e3e64> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/31ae6408-08bc-41f0-94ae-b0ae81368e93> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/11/11-PETIT-VERDOT>;
    bdg:variety    <variety/Petit-Verdot>;
    bdg:date    "2016-09-22"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "2315"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/bbbd5f16-b46d-45c6-953f-3291a8691057> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/8706dfd0-7db2-4113-82f9-864512bb1e2a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/106/106-3176>;
    bdg:variety    <variety/3176>;
    bdg:date    "2016-09-22"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "119"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/7653607d-7a99-4409-a55c-3425ebbfc0e5> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/1bd32a45-1c2b-411f-a935-99e1fe616be2> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/88/88-VARIETES-JUS>;
    bdg:date    "2016-09-21"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "434.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/32c375e0-6b71-4904-9c66-d6868222e37b> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/2a9d47b5-19c4-4361-81e1-39db193bf4fa> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/85/85-RUN-3322-285>;
    bdg:variety    <variety/3322-285>;
    bdg:date    "2016-09-23"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.degroise>;
+   bdg:humanSensor   <INRA/agent/jerome.degroise>;
    bdg:HarvestWeight    "8"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/1cbdffb5-ef49-4b21-ba6c-a50a62832310> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/050e8487-b6cb-457f-99eb-6610aa0e03f3> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/40/40-GAMAY>;
    bdg:variety    <variety/Gamay>;
    bdg:date    "2016-09-26"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "1441.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/5735835c-ee62-433d-bb02-f049a06ec8d0> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/8158d908-ca62-481c-bafe-3b58869f86e3> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/78-MUSCAT-PETIT-GRAIN>;
    bdg:variety    <variety/Muscat-Petit-Grain>;
    bdg:date    "2016-09-27"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "74"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/255b6972-c461-4404-9469-48097df3b048> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/88ed71e0-7b7b-4651-a157-abfec9584ac7> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/72/72-MOURVEDRE-sp>;
    bdg:variety    <variety/Mourvedre>;
    bdg:date    "2016-09-27"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1324"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/80764c50-2d4e-49ae-ad62-98a4f651d3c3> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/6993e090-d22e-4366-8e51-ab6a6157fb6a> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/11/11-PETIT-VERDOT>;
    bdg:variety    <variety/Petit-Verdot>;
    bdg:date    "2016-09-27"^^xsd:Date;
-   bdg:humanSensor   <agent/nicolas.saurin>;
+   bdg:humanSensor   <INRA/agent/nicolas.saurin>;
    bdg:HarvestWeight    "242"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/c271baad-9420-434c-96e7-a0878c66e545> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/070f8cd2-fea4-4ce7-bd8b-990ac9f42549> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/57/57-MERLOT-sp>;
    bdg:variety    <variety/Merlot>;
    bdg:date    "2016-09-26"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "1298"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/6b2a4cfa-fda9-4283-81fe-0de8d71ec377> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/8a7019dd-a51e-4683-befe-bbc59166738c> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/59/59-MARSELAN>;
    bdg:variety    <variety/Marselan>;
    bdg:date    "2016-09-26"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "337"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/6a04259f-c10b-4772-bd32-a52fb9c591e7> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/19c35d4e-790f-4328-8e08-9eaf3efd75cd> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/JARDIN-AMPELO>;
    bdg:date    "2016-09-28"^^xsd:Date;
-   bdg:humanSensor   <agent/jj.regadera>;
+   bdg:humanSensor   <INRA/agent/jj.regadera>;
    bdg:HarvestWeight    "216.5"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/114a43ca-c4d9-45db-8fc8-5f67e1463491> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/f9310471-5ce6-41c8-b8a0-d82f23ffeaa4> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/102/102-PIQUEPOUL-BLANC>;
    bdg:variety    <variety/Piquepoul-Blanc>;
    bdg:date    "2016-09-28"^^xsd:Date;
-   bdg:humanSensor   <agent/jerome.cerutti>;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "121"^^xsd:decimal .
 
-
-<data/winemaking/PechRouge/harvestWeight/2016/0e0e2771-be04-4343-96ba-0b9d127d3af4> a qb:Observation;
+<data/winemaking/PechRouge/harvestWeight/2016/b31a5342-6b08-48fa-9ef8-4cfcf30035b2> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/11/11-PETIT-VERDOT>;
    bdg:variety    <variety/Petit-Verdot>;
    bdg:date    "2016-09-28"^^xsd:Date;
-   bdg:humanSensor   <agent/fabien.robert>;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "4731"^^xsd:decimal .
-
 
 
 

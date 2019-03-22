@@ -1,0 +1,92 @@
+
+bdg:GramPerLiter a qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit; 
+  rdfs:label "Gram per Liter"^^xsd:string; 
+  qudt:abbreviation "g/L"^^xsd:string; 
+  qudt:conversionMultiplier 1.0; 
+  qudt:conversionOffset 0.0; 
+  qudt:symbol "g/dm^3"^^xsd:string . 
+ 
+bdg:GramH2SO4PerLiter a qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit; 
+  rdfs:label "Gram of H2SO4 per Liter"^^xsd:string; 
+  qudt:abbreviation "g/L of H2SO4"^^xsd:string; 
+  qudt:conversionMultiplier 1.0; 
+  qudt:conversionOffset 0.0; 
+  bdg:derivedFrom bdg:GramPerLiter; 
+  qudt:symbol "g/dm^3"^^xsd:string . 
+
+#Mass per volume not found in qudt:quantitykind maybe use quantitykind:ChemistryQuantityKind 
+bdg:MassPerVolume a qudt:quantityKind; 
+  rdfs:label "MassPerVolume" . 
+ 
+
+bdg:GlucoseFructoseConcentration a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Glucose Fructose Concentration";
+  rdfs:notation "GlucoseFructoseConcentration";
+  sosa:hasFeatureOfInterest <feature/FermentationProduct>;
+  qudt:hasQuantityKind bdg:MassPerVolume;
+  sdmx-attribute:unitMeasure bdg:GramPerLiter;
+  rdfs:comment  "sequential";
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:VolatileAcidConcentration a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Volatil acide concentration";
+  rdfs:notation "VolatileAcidConcentration";
+  sosa:hasFeatureOfInterest <feature/FermentationProduct>;
+  qudt:hasQuantityKind bdg:MassPerVolume;
+  sdmx-attribute:unitMeasure bdg:GramH2SO4PerLiter;
+  rdfs:comment  "sequential";
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:MalicAcidConcentration a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Malic acide concentration";
+  rdfs:notation "MalicAcidConcentration";
+  sosa:hasFeatureOfInterest <feature/FermentationProduct>;
+  qudt:hasQuantityKind bdg:MassPerVolume;
+  sdmx-attribute:unitMeasure bdg:GramPerLiter;
+  rdfs:comment  "enzymatic";
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:LacticAcidConcentration a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Lactic Acid Concentration";
+  rdfs:notation "LacticAcidConcentration";
+  sosa:hasFeatureOfInterest <feature/FermentationProduct>;
+  qudt:hasQuantityKind bdg:MassPerVolume;
+  sdmx-attribute:unitMeasure bdg:GramPerLiter;
+  rdfs:comment  "sequential";
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:HarvestWeight a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Harvest weight";
+  rdfs:notation "HarvestWeight";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  qudt:hasQuantityKind quantitykind:AtomicPhysicsQuantityKind;
+  sdmx-attribute:unitMeasure unit:mass;
+  rdfs:comment  "sequential";
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:TastingResult a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Tasting Result";
+  rdfs:notation "TastingResult";
+  sosa:hasFeatureOfInterest <feature/FinishedWine>;
+  qudt:hasQuantityKind quantitykind:DimensionLess;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:GrapeClusterWeight a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Grape Cluster Weight";
+  rdfs:notation "GrapeClusterWeight";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  qudt:hasQuantityKind quantitykind:mass;
+  sdmx-attribute:unitMeasure unit:Kilogram;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:GrapeClusterNumber a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Grape Cluster Number";
+  rdfs:notation "GrapeClusterNumber";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  qudt:hasQuantityKind quantitykind:DimensionLess;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept  sdmx-concept:obsValue.
+
+
+

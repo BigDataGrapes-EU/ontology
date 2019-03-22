@@ -1,0 +1,580 @@
+
+<INRA/estate/PechRouge/22/22-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.3749" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1310224246033798,43.1393381066675 3.1312675449730394,43.13979083553493 3.131296213377801,43.13977991788249 3.131364489484738,43.13991432167006 3.131393000464321,43.13990604983262 3.131557823483635,43.1401857437436 3.131908061970727,43.1400792006362 3.131421134062355,43.13921732427206 3.1310224246033798,43.1393381066675            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1315787222198406,43.14021808498976 3.132045164200956,43.141065614126646 3.132108566643384,43.141064892934445 3.132405331798533,43.140976232779096 3.131925004701554,43.14011222135313 3.1315787222198406,43.14021808498976            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1319879763424607,43.14005489034351 3.1323699259587308,43.13993869948898 3.1318964884387674,43.139073319881774 3.1315035734890606,43.139192349238435 3.1319879763424607,43.14005489034351            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1320107809129154,43.14008599901737 3.132483084926971,43.14095396678616 3.132873673435023,43.140838278132456 3.132389732964024,43.13997014570183 3.1320107809129154,43.14008599901737            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "25"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/68/68-COLLECTION-BLANCS> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.408" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.127010258969724,43.140780508228325 3.126832153035484,43.140060919374626 3.1267915186035298,43.14006825099855 3.126794285886043,43.14007920539108 3.126767038245991,43.14008525935602 3.126773217196554,43.14010888531855 3.1265877019941315,43.140137916615906 3.1264083262893667,43.140162774200824 3.126348484886193,43.1401717754789 3.1263561207550676,43.140218503383956              3.126327118401019,43.140223599186925 3.1263381166646305,43.14025914242563 3.12630869721182,43.14026507582532 3.126322857348213,43.14032482143609 3.1262964535488718,43.14032578211913 3.126297466840336,43.14034341840415 3.126271392460964,43.14034666778939 3.1263061405585124,43.14044821726974 3.126276046917517,43.140454296370955 3.126293770038035,43.140530925966914              3.1262650153677956,43.140537592573686 3.126277712150554,43.140617667305904 3.126248598628451,43.140621912708234 3.126258477821943,43.1406764561298 3.1262278722592933,43.14068247636605 3.126253410013891,43.14076240602759 3.1262267038479186,43.140769583969465 3.1262604863367516,43.14088215183724 3.126595261233693,43.140838996058264 3.1267664112331177,43.14081535285969              3.127010258969724,43.140780508228325            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.127038502480339,43.14077435049414 3.1273747416981577,43.140726181661755 3.1276100909598163,43.14069360400603 3.127707175378532,43.140684471062066 3.1279478143039623,43.14065092803954 3.1280605416324785,43.14063716179648 3.128209565042815,43.14061559612202 3.127988229518664,43.139750191933274 3.1278236079350905,43.139741326240774 3.12770702837935,43.13973982271895              3.12745251693373,43.139735794640906 3.1273540792003187,43.13971856971613 3.1272442973878687,43.139724959190524 3.1271599475047926,43.139755963063365 3.1271239074383885,43.139783116854815 3.126853421166311,43.140024598916824 3.127038502480339,43.14077435049414            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "48"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/JA/JARDIN-AMPELO> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.3782" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1345595568756006,43.143483039002554 3.134751191049482,43.14342824811868 3.1346652738078857,43.143263690497285 3.1344750243706927,43.143320499923604 3.1345595568756006,43.143483039002554            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1345789438534113,43.14351433145992 3.1346648494578377,43.143673838125125 3.134857866101431,43.14362005553196 3.1347719529805183,43.143457518392836 3.1345789438534113,43.14351433145992            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1349447184049146,43.143593681297965 3.1351391117386247,43.143538886266874 3.1350531908690664,43.1433733187281 3.1348643233850186,43.1434311373301 3.1349447184049146,43.143593681297965            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1348476977881146,43.14340085168736 3.135035192693192,43.14334606547796 3.134954100406743,43.143180781719174 3.134810250408147,43.143220823486146 3.1351108264378866,43.14313604362367 3.135046614806171,43.14301194874626 3.1350228075172635,43.143018900953145 3.135010983788961,43.14299692840136 3.1347324326726733,43.14307469653604 3.134810250407435,43.14322082348636              3.1347577643369755,43.143235433331405 3.1348476977881146,43.14340085168736            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1351722003811746,43.14352975286319 3.135303168177099,43.143490190243824 3.135231101716051,43.1433498608291 3.135201633422126,43.14335806285703 3.135190833603401,43.143337574906575 3.1350876613654854,43.14336519383528 3.1351722003811746,43.14352975286319            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.135347283928438,43.14347700209181 3.1355016924507324,43.14343235873599 3.135414402957993,43.143271844290105 3.1352866451807166,43.143309118228785 3.135297814054875,43.14333112969536 3.135275843452841,43.14333757207022 3.135347283928438,43.14347700209181            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1350682765221816,43.143334911684654 3.1351730603959957,43.14330750459592 3.135164015805968,43.143288925311 3.1351854198731224,43.143283243956674 3.1351108264378866,43.14313604362367 3.1349858463681755,43.143171719726695 3.1350682765221816,43.143334911684654            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.135395013243822,43.14323954177778 3.1352342622750298,43.14293162815876 3.1351039753962247,43.14297117199728 3.135114844725067,43.142991808877845 3.135089566126842,43.14299949387294 3.1352309150660638,43.14327005412496 3.1352609559583833,43.14326091859144 3.1352695596432225,43.14327707715552 3.135395013243822,43.14323954177778            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.135221794219356,43.14290941908454 3.135041632205592,43.1425591006243 3.134874816718506,43.14260678945246 3.1350466344152985,43.14292883265974 3.1350748891940077,43.14292015251644 3.1350783596788925,43.142926772495066 3.1351134678969603,43.1429166793304 3.135125290838989,43.14293782605073 3.135221794219356,43.14290941908454            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1349113046370793,43.1429986397371 3.1349970762281334,43.142974354348425 3.1349844165477965,43.14294901972345 3.1350082621043405,43.142942203308465 3.134894406253621,43.14272495997071 3.1347813624250573,43.14275944859889 3.1349113046370793,43.1429986397371            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "73"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/18/18-MERLOT-2016> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.814" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1340237424603714,43.13940760656108 3.1342537836262157,43.13933744344063 3.1337709797101345,43.13848149266095 3.133547525317059,43.13854806899475 3.1340237424603714,43.13940760656108            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1331696268805174,43.138628360700416 3.1333941824932148,43.13856181797813 3.132918933401553,43.13770471324378 3.1326895090513096,43.137772347688085 3.1331696268805174,43.138628360700416            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1336616198642337,43.13951558610996 3.1338854248615475,43.13944852729608 3.1334114781639566,43.138588602785525 3.133187208791089,43.13865542094508 3.1336616198642337,43.13951558610996            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.133532895904084,43.13852071262738 3.1337574067072773,43.13845418218536 3.1332794642395974,43.13759842722514 3.133060597976258,43.137662950116194 3.133532895904084,43.13852071262738            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "20"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/35/35-CABERNET-FRANC-2016> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.7299" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.135091654133841,43.1412638976599 3.134615860572038,43.14040757710943 3.134226222686332,43.14052473991882 3.1347005747784187,43.14138135875815 3.135091654133841,43.1412638976599            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1346036647587323,43.140383120040546 3.1341009566200553,43.139473682007235 3.1337058015971784,43.139590965083165 3.134212878260631,43.14049978992767 3.1346036647587323,43.140383120040546            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "10"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/98/98-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2954" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1121230075678197,43.15435473915393 3.1115911524055027,43.15475661875529 3.111828736929527,43.154931969697934 3.111853311791553,43.15491332380125 3.111874570368516,43.15493131768749 3.112092625743963,43.15476797540318 3.112123667205476,43.15477908947153 3.11219446592079,43.15472668228521 3.1122233082537774,43.15474090938016 3.112268804073253,43.154704104071705              3.112329810521815,43.15472447441525 3.1123574541259122,43.15470376139999 3.11241749957398,43.154723852588994 3.1124723047512477,43.154711599881274 3.112492918121108,43.15472907131436 3.1127618932312795,43.15453079546269 3.1125733280776795,43.1544426924819 3.112357990125225,43.15438260916847 3.1121230075678197,43.15435473915393            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "19"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/89/89-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1235" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.125333166523146,43.143070969295685 3.1253549559480054,43.14297693260997 3.124629881713229,43.14290281146241 3.124635398769589,43.14288663075981 3.1239800295830276,43.142825616648594 3.1239543012002082,43.14290499643613 3.124058387195468,43.142916010954075 3.124059866143837,43.14293622693249 3.125333166523146,43.143070969295685            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "9"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/89b/89bis-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1456" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.125341630613069,43.14373547516729 3.1253313194306753,43.14396798698871 3.126044763778409,43.14397494534631 3.126049641593501,43.143758997089066 3.1256848946072284,43.14375267080705 3.1256840698359523,43.14373249313399 3.125341630613069,43.14373547516729            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "7"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/87/87-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2129" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.122254270331697,43.142720918535865 3.12214715421638,43.14263165355011 3.1220945256124675,43.14266350972758 3.1220809806309346,43.14264953449601 3.122028524910012,43.14268081106261 3.1220168831025625,43.14266372505961 3.121923331273601,43.142720463760334 3.121899165543614,43.14270503423567 3.1211612034773717,43.14320372516849 3.121185520335926,43.14331767914473              3.121291769781804,43.143369772389775 3.122254270331697,43.142720918535865            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "12"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/85/85-RUN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2694" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1226488944916766,43.14433370308217 3.1218243038608646,43.14463556990438 3.1218379883562988,43.14465536626118 3.1215813720236194,43.144746810152185 3.1216102714932847,43.14478922087331 3.1224210251076907,43.14449390812732 3.1224369432424304,43.14451601056515 3.121627206085777,43.144809344719434 3.121639951365504,43.14483256016342 3.1223505598996093,43.14457265887503              3.1223652109761075,43.14459227383537 3.121649951104477,43.14485088050833 3.1216881009714545,43.14491067242855 3.1220499714692456,43.14478030758154 3.122065946571853,43.14480140276762 3.121707846715686,43.144934573253394 3.1217554610590956,43.14501014580867 3.1228433657725208,43.14461890837079 3.1227858195808067,43.14453777115486 3.1224299963418294,43.14467006746669              3.12241556850839,43.144649192274315 3.1227726556557536,43.144517847218 3.1227597000124114,43.14449778087127 3.12204448653138,43.144758868032305 3.1220269678899317,43.14473590516976 3.1227488576939884,43.14447609461083 3.1226488944916766,43.14433370308217            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "27"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/85/85-RESDUR> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.3232" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1220052071890154,43.14523333837583 3.12204942831035,43.14527808889533 3.122116285540105,43.14525219456001 3.122238970798176,43.14535676833837 3.1222799682815485,43.14534313035157 3.1223384607476676,43.14537575986932 3.1223746899346714,43.14536375782134 3.122391608603314,43.14537998858302 3.1224337789565535,43.14536653111286 3.122468368722297,43.14539627846262              3.1224965201057997,43.14538773669231 3.1225272879381496,43.14542220022629 3.1233494005125166,43.14512035619833 3.123230979098211,43.144974793689 3.1232042824464856,43.14498432094154 3.1230719182407616,43.144879748561465 3.123090196122064,43.14487308594517 3.123067002167864,43.144850770632004 3.1220052071890154,43.14523333837583            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "19"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/83/83-MARSELAN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2787" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.121294411046015,43.145177633715974 3.1214144411809794,43.145076726684884 3.121395544997379,43.14504424017772 3.121412586139949,43.14503323218466 3.1203324353726294,43.1445431895511 3.1203156058006347,43.144555452933425 3.120211026149317,43.14451348969601 3.1201897349882377,43.144528801739625 3.120125410761661,43.144500967371975 3.1201022088337638,43.14451583195945              3.120034488155798,43.144486596053746 3.1200145311893572,43.14450083446039 3.1199619764609694,43.14447539142464 3.1198603303969272,43.14448489180797 3.119818477080476,43.14451621787432 3.1203276310979184,43.14474529454343 3.120315273837385,43.14476080622894 3.120456974774447,43.1448292140096 3.1204433468910278,43.144845444397944 3.1210079353794757,43.14510186335622              3.1210224650137053,43.145084977195935 3.1211641376918933,43.1451473138237 3.121179864159375,43.145126949482176 3.121294411046015,43.145177633715974            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "24"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/79/79-GRENACHE> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.0982" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1166814811092416,43.1421186470575 3.1164695049303437,43.14209223336442 3.1160728926892887,43.142516778413516 3.116246397540744,43.14259474762632 3.116252953259206,43.14258757394465 3.1166814811092416,43.1421186470575            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "6"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/79/79-CARIGNAN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.504" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.116681481109253,43.1421186470575 3.116252953259206,43.14258757394468 3.1164080163510754,43.14263118311112 3.1168739127840626,43.14284930775032 3.116922133004895,43.142795829833986 3.11694634588424,43.1428077070714 3.1169942403404827,43.14275741259686 3.1170278770246367,43.14276115088323 3.117054226177164,43.14273010237946 3.1170834819219317,43.14273714442648              3.1171575121200474,43.14265072078542 3.1171867515037808,43.142659095368636 3.117231418964554,43.14260933550018 3.11725940361786,43.142618517178555 3.1175095666849484,43.14233845331504 3.1175003689598544,43.14225261239175 3.117281254906862,43.14215674118315 3.116681481109253,43.1421186470575            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "18"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/2/02-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1273" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1306934505692796,43.13768254133953 3.1306016911874757,43.137687511231086 3.130675832788392,43.138287363803926 3.130704504763424,43.13828952558216 3.1307470791275493,43.1386259340763 3.130721611837558,43.13862541770868 3.130802898896625,43.139346842332 3.13089493510949,43.13933849588343 3.1306934505692796,43.13768254133953            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "9"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/10/10-SAUVIGNON-2016> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.4417" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.131732153708764,43.13791027448959 3.1313785680023347,43.137283389692165 3.1308407008491748,43.137449469328025 3.1308658444442496,43.13749656089879 3.1308374488729136,43.13750751211762 3.1308641192753055,43.13755664873058 3.1308356910062067,43.13756761059507 3.130864055249923,43.13761502738146 3.130836026011566,43.1376252942531 3.130863613684627,43.13767179703795              3.1308363462331323,43.1376822568951 3.130867704916244,43.137736231490024 3.1308379875412564,43.13774595025804 3.1308630526815304,43.137793758452304 3.130837287591925,43.137803293599326 3.131021108981815,43.138128622343515 3.131732153708764,43.13791027448959            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "17"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/40/40-GAMAY> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.4216" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.132541326070737,43.14260416511073 3.1336223272308894,43.14228347689246 3.133429654147994,43.14195298040994 3.1333605655964614,43.14192363893852 3.132433416849357,43.142200410555894 3.132353867100166,43.142248520706346 3.132541326070737,43.14260416511073            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "7"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/39/39-CABERNET-SAUVIGNON> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.3259" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.132572823952098,43.141112425877 3.13302073020778,43.141910992755605 3.1332433137871574,43.141847741098495 3.1334205621485918,43.141797433657445 3.133004292148041,43.141051282421415 3.132834109758654,43.14110564473725 3.1328005470281064,43.14104659636356 3.132572823952098,43.141112425877            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "8"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/23/23-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1171" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.131741782163287,43.14074318632053 3.1313675288514133,43.14008468812881 3.131202295785669,43.14013768587083 3.1315726960985986,43.14079471031002 3.131741782163287,43.14074318632053            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "5"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/55/55-VIOGNIER> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.0455" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.133038323381356,43.14308992402435 3.1332508868365383,43.143592520316865 3.133301619844415,43.14371247480537 3.133395257252878,43.14393387227389 3.133446749518265,43.144055620495095 3.1334881826782284,43.14415358460407 3.1345266999749493,43.143837599526925 3.134471976190578,43.14374425232318 3.134404218831747,43.143628672151834 3.1342809406524412,43.14341838357028              3.134212770952456,43.14330209862769 3.1339330596027337,43.14282495739133 3.133038323381356,43.14308992402435            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "13"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/57/57-MERLOT> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.5536" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.135334330209745,43.14472339956814 3.135362997234135,43.144713716305404 3.1353915504840777,43.144704071463124 3.1354192950527677,43.14469469977052 3.1354470396124685,43.1446853280708 3.1354747841631703,43.14467595636405 3.135505574483942,43.144665555828524 3.135528457114252,43.14465782639109 3.1354946120935323,43.144593075873644 3.1355186688209473,43.144584188045485              3.1355433789235496,43.14457505881757 3.1355702150509015,43.144565144113315 3.1356304094704,43.14454290503105 3.135649215002632,43.14456834182621 3.1356763556394145,43.14456010705681 3.1357072955015695,43.144601467244385 3.136148975467902,43.1444517230534 3.1357287660542044,43.14378687879649 3.135252953859366,43.14394819129652 3.1351931079943074,43.143968480364144              3.135165855556871,43.1439777195256 3.1351360643906037,43.143986600656305 3.1352101329789814,43.14410372850054 3.1351830000024523,43.14411339205042 3.135156429889482,43.144122157348484 3.135127288313249,43.14413177094412 3.1350994324553634,43.14414096038028 3.1350705974369677,43.14415047282348 3.1350423434846224,43.14415979356716 3.135015375252443,43.144168690152824              3.1349863475555457,43.14417826612748 3.1351603453181562,43.14445084432417 3.135334330209745,43.14472339956814            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "33"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/51/51-MUSCAT-ALEXANDRIE-2> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2447" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.13700348311611,43.14245154793752 3.136772899752902,43.14209917956529 3.136155830295407,43.14233493396067 3.1363726038407522,43.142682018552826 3.13700348311611,43.14245154793752            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "5"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/72/72-MOURVEDRE> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.1692" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1245599684034056,43.14205496642489 3.1245411264531855,43.14201581082316 3.124447338603226,43.14182090875129 3.1244078446678185,43.14173883534707 3.1243957634873887,43.14171372907434 3.1243871832975567,43.14169589830412 3.1243753616340855,43.14167244379307 3.124367986104925,43.141654213182264 3.1243589043582567,43.141631765178325 3.1243393597981197,43.14163683014304              3.1243310990381836,43.14161687791639 3.124321865379665,43.14159457582957 3.1239730518796582,43.140874238147525 3.1237172118017718,43.1409370505753 3.1237046374701203,43.140917574271015 3.123556617866393,43.1409534807533 3.123546549288071,43.14093611352416 3.123342782857209,43.14098345146297 3.1233290768083637,43.14096521618289 3.1229755482595265,43.141053448487604              3.123343775052385,43.14183625525824 3.123353016228127,43.14185590062657 3.1233624642167594,43.1418759856341 3.123373452410666,43.14189934486904 3.1233812447305724,43.141915910148334 3.1233932461900618,43.14193808365815 3.1234047313382645,43.14196204523554 3.123414103972392,43.141981599438836 3.123454327052259,43.142065517023696 3.1235170385486044,43.14219635178445              3.1235824017737657,43.14217910746191 3.123591052776385,43.14219837717017 3.123801453905953,43.142148295347 3.1238059676495826,43.14217006858013 3.1239509111455765,43.14213652490279 3.123958290541742,43.14215552432275 3.1240948447341728,43.14212470705427 3.124110907157856,43.14214403166524 3.1241599299863534,43.142130567224335 3.1241708952622225,43.142148310423146              3.1245599684034056,43.14205496642489            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "41"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/73/73-MACCABEU> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.4808" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1233480793934016,43.14204257985188 3.1230539732253897,43.14140360468496 3.121813737273805,43.141713458914566 3.123096196973467,43.142105017651055 3.1233480793934016,43.14204257985188            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "5"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/74/74-CONS-CARIGNAN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.3278" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.123053973225371,43.141403604684996 3.12290127235897,43.1410698638289 3.1225996431719683,43.14114344320513 3.122610600542077,43.141158537821 3.122540429583194,43.14117867190485 3.122550363725417,43.141197952929964 3.1224813329813785,43.14121726279224 3.122486936622351,43.14123794155836 3.122398136892803,43.14126147087047 3.1224062000367945,43.14128345898824              3.1222929592300233,43.14130935559599 3.1223110335702313,43.14135358379912 3.1220978432285715,43.14140524395465 3.1221069514815216,43.14142747744452 3.1220414456568797,43.14144292678241 3.1220516677311174,43.14146246134269 3.121555896202499,43.141585936308445 3.1218137372737864,43.141713458914545 3.123053973225371,43.141403604684996            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "19"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/75/75-NVLLES-OBTENTIONS-INRA> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.4068" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1222697771644135,43.14095371636293 3.122223510570189,43.140872169944295 3.1221797142592504,43.140790041570604 3.122139612901097,43.14068512622657 3.1221105369697955,43.140692315204184 3.1220982295318356,43.14066316061468 3.122133291941049,43.14065668942325 3.1221222449219184,43.14063456543284 3.1222080445099567,43.14061238431057 3.122196251350489,43.1405914655512              3.12225136868839,43.1405758050338 3.1222483107818273,43.14055586987731 3.1222715632701536,43.14054875470602 3.122266646173344,43.140524014807006 3.1222877971526635,43.14051964832076 3.1222661718799567,43.1404538035062 3.1223007630261237,43.14044483288077 3.1222603143901817,43.14035863134642 3.122225253704608,43.14027682359387 3.1222457786012154,43.140270308302966              3.1222111765172325,43.14018184883767 3.122249981414343,43.14017158012423 3.1222105225583614,43.140088688337 3.122131199240108,43.13992873419319 3.12202498499692,43.139706340184865 3.1220056236185765,43.1397106599448 3.121997470149548,43.139690336824266 3.121572645720577,43.139797262641814 3.1215663331896515,43.13977623783281 3.1207466118863025,43.139985265840274              3.120862897738129,43.14024531247499 3.1209485392731904,43.14042175222555 3.1209878439654184,43.140505563213125 3.1210315558194757,43.140586266181515 3.1210700399458235,43.14066743544867 3.121106509291516,43.14075682767465 3.121145882239769,43.14083868211297 3.12119050285458,43.14091978722837 3.121240952796297,43.14102328951911 3.121279615212125,43.14111047286123              3.121323185511055,43.14120019748249 3.1222697771644135,43.14095371636293            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "42"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/76/76-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.2274" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.121200513921648,43.14121628688669 3.121014507565434,43.14082969650314 3.1210029857628,43.14080363004748 3.120981748225942,43.140759262263536 3.120921784578581,43.14063399056795 3.120880570867482,43.14054788955041 3.120829308742301,43.14044079566497 3.120646218569956,43.140058290840855 3.1195157421744435,43.140347817137744 3.1195907065164845,43.14054204453762              3.1195741366377536,43.14054791661333 3.119667775593414,43.1407374405126 3.119778548424209,43.140834810780476 3.119835814450464,43.140885147938704 3.1198521411250613,43.14088072845896 3.119872506665273,43.14090804274191 3.1199876241886333,43.14101802474722 3.120009268196196,43.141059620837595 3.1200232904793745,43.14108459704125 3.1200980371553113,43.14117807259396              3.1201300300106207,43.141167130349295 3.1201404187200157,43.14118758010052 3.1201203085810816,43.1411949700243 3.120154096907493,43.14123358708524 3.120190412440626,43.14122510123385 3.1202020911717887,43.1412448954001 3.1202168474262653,43.141264962033645 3.1202475034479757,43.141255550529145 3.120287503026889,43.141318025463086 3.120274439641226,43.14132181674195              3.120334282033262,43.141403103681604 3.120366057001767,43.141389483775626 3.120380036340356,43.141434783336656 3.1204116742532593,43.14142373859871 3.120427761729827,43.14144155742987 3.1206215437714593,43.14138929044819 3.120617406573934,43.141365691293075 3.121200513921648,43.14121628688669            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "38"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/64/64-GRENACHE-2017> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.8852" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.131656092698224,43.142735831541806 3.1315812206257054,43.14267517465861 3.1316243815201186,43.142640801811936 3.131603610913975,43.14262026401914 3.131625920432838,43.142605099972414 3.1316042952607215,43.14258999043657 3.1316579195563543,43.142552127929164 3.131637165521046,43.142533973719985 3.1316854084502532,43.14250021615101 3.131644759637729,43.14246544267575              3.1316943689701717,43.14242862598567 3.1314116862705235,43.14221902818737 3.1311470528771035,43.14241492507001 3.1311246588367316,43.14240016204905 3.129767981793455,43.143377748158805 3.1300293827303283,43.14357277680924 3.130233704856528,43.143420760332475 3.1302584074943187,43.14343830568028 3.130282663981474,43.14341592202038 3.1303041556247075,43.143433292550185              3.130349869090895,43.14340073385002 3.1303893956762576,43.1434330611333 3.1304601926957223,43.143383409068456 3.130484849201098,43.143400866613305 3.130510102637977,43.14338089139264 3.130531296462787,43.143397688175554 3.130587116122009,43.14335884115748 3.1306095096331132,43.143378797614915 3.130735792471039,43.14328648680726 3.1307621304056683,43.14330777186765              3.130826629296965,43.143261937572554 3.1308496723980745,43.14328000714559 3.130915070067879,43.143236362857394 3.130935720420231,43.14325452359093 3.131656092698224,43.142735831541806            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "35"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/82/82-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.9464" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.118333384747759,43.14401014700208 3.1176813601299473,43.14349790206989 3.116576359233288,43.144247558705814 3.117236473342068,43.14474824765313 3.118333384747759,43.14401014700208            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "5"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/11/11-PETIT-VERDOT> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.6007" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.131875557833888,43.13900044725508 3.131413968213151,43.138169311191845 3.131215977305502,43.13822919204295 3.1309134119483786,43.13832242445125 3.1309328579100133,43.138350731315995 3.130904273350404,43.138357166080766 3.1309313367687586,43.13840992590949 3.1309076292602036,43.138416141536204 3.130939449014497,43.13848362995378 3.1309124235943373,43.13849383699598              3.1309496768746894,43.13856191164872 3.130922246157747,43.13857044214365 3.130959193187154,43.13864309425419 3.130937263775801,43.13865456505179 3.130990425752813,43.13910985845138 3.131066714860881,43.13924782411285 3.1316764264874664,43.13906129413142 3.131875557833888,43.13900044725508            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "18"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/81/81-CHARDONNAY> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.206" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1168841302341748,43.14301950708796 3.11639492986581,43.14278243799969 3.1156509958680982,43.14359826882701 3.116246324637682,43.14388382264511 3.1165709277314875,43.14352200110156 3.1165451239974256,43.143509744309235 3.1166259961357627,43.14342065738121 3.1166059438483766,43.14340609833604 3.1166435182406547,43.14336155838504 3.116618544521679,43.14335056465893              3.116686120213399,43.143279770304 3.1166593241242446,43.14326652609662 3.1168841302341748,43.14301950708796            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1161922239074396,43.143935049367585 3.115607518080951,43.14364834258446 3.114856397246746,43.14447250147052 3.115415521084492,43.144729851410645 3.115458942072394,43.14469246979316 3.1154890781240887,43.14470249687664 3.1161922239074396,43.143935049367585            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "20"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/63/63-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.9636" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1311510060426384,43.143978136249665 3.131919181375809,43.14442957939013 3.1320096380523514,43.14434740261481 3.1320297984409327,43.14435751856645 3.1322716993629767,43.14413466899788 3.1321506742922005,43.14406670290522 3.1321626843955777,43.14405672357749 3.131994443777513,43.14395346351773 3.132000817079029,43.1439454241415 3.131978045605588,43.14393104477642              3.1319923621729497,43.143920921160294 3.131945551579105,43.143891609201646 3.131950670042648,43.143883902444514 3.131928060517742,43.14386901559018 3.131934124815184,43.14386096914607 3.1319115393724637,43.14384883610628 3.1319186833349804,43.14384094956913 3.131896254893275,43.14382750414468 3.131905847122445,43.14381732742589 3.1318805854442284,43.143803302007505              3.1318949243448237,43.143788465651745 3.1318693318721587,43.14377800311073 3.131879703783709,43.143766194862195 3.131815753560511,43.143719733039106 3.131836320543167,43.14370158559999 3.1315903546809323,43.14355632201954 3.1311510060426384,43.143978136249665            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.130816914863547,43.14434238650089 3.130874240570112,43.14465976421357 3.1311202887210654,43.145159502922084 3.1312926416172675,43.1449912852387 3.1313941150990545,43.14486015936758 3.131696779866026,43.144573988737086 3.131832041673699,43.14444634707571 3.1311143849816,43.14402339175886 3.1308706299248614,43.1442542091014 3.130816914863547,43.14434238650089            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "37"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/66/66-ARAMON> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1102" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1315677750093727,43.14596713636465 3.131587116344625,43.14598795375284 3.1319500459385803,43.145629318000935 3.131903013049704,43.14560454157728 3.131936512604927,43.145563913957886 3.131916597242919,43.14554905780661 3.1321048555174262,43.14536687556934 3.1320067237625353,43.145310023645145 3.1314731586414295,43.14583281354777 3.1315938869848545,43.145933040940726              3.1315677750093727,43.14596713636465            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "11"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/66/66-MACCABEU> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.0866" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.131470803494528,43.14583192267165 3.1320192262260003,43.14529635565876 3.131913100908521,43.14521915084224 3.1314558668850863,43.14566475299441 3.131471247265058,43.145674178793065 3.131398250191516,43.14576467184283 3.131470803494528,43.14583192267165            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "7"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/65/65-CARIGNAN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.3649" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.131287586765388,43.145394899344836 3.131379907632831,43.14532805148424 3.131401637980352,43.14534173197713 3.1326083071915893,43.144388296099194 3.132587340805772,43.14434360784396 3.1324323081952357,43.14420141617876 3.1322353055021552,43.144360671435756 3.1322080914671813,43.14434714383424 3.1318973084540516,43.1445916101201 3.1318749536047714,43.14457909241439              3.1316627397531045,43.1447517795986 3.1316170273759782,43.14487301983364 3.131660267983558,43.14490825706886 3.1311624822718405,43.14530299720895 3.131287586765388,43.145394899344836            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "15"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/71/71-GRENACHE-2015> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.7269" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.125031878062007,43.14089363323429 3.125339221879916,43.140980065887646 3.1254644206147737,43.14104300626426 3.1252991224496127,43.14125580851182 3.1251079388513383,43.1413937950917 3.124950754037106,43.14144155764076 3.1248134940819674,43.14135446897691 3.124667871063784,43.14139734400532 3.12475713376551,43.14173872172922 3.1258930862719585,43.14138722170165              3.125933852712921,43.14136286330607 3.126123080719314,43.14122396333846 3.1261271432311224,43.141122644835924 3.1261676972756165,43.14052849295654 3.125031878062007,43.14089363323429            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "15"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/77/77-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2846" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1205351221994198,43.14202831274538 3.1205062106223127,43.142090925869894 3.121061827167987,43.14257708159282 3.1211854292460752,43.1425026878094 3.1212050376919853,43.14242564224169 3.121261701081412,43.14238206726897 3.121287902093945,43.14239835942123 3.1213992386797385,43.142337574739706 3.1208821895242553,43.141894114786034 3.1208659436458404,43.14190878776995              3.120821424019263,43.14187144392745 3.1207445593782,43.14186533285915 3.1205445695716714,43.141917583556165 3.1205016841212143,43.142004863568715 3.1205351221994198,43.14202831274538            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "15"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/75/78-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.4256" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1202829429774748,43.14240774509503 3.1194380814274156,43.14268409845082 3.119706958427501,43.14311021487665 3.1197733351596804,43.1430868765905 3.119789387605003,43.14311043561551 3.120009534473712,43.14303206915825 3.1200271199365504,43.14305363187695 3.1202438328073585,43.14298120813624 3.1202597643570003,43.143004288372644 3.1205348453899955,43.1429136845626              3.1205430062654353,43.14283636072638 3.1202829429774748,43.14240774509503            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "12"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/90/90-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.3325" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.111566917900263,43.1514236289837 3.1115156131077355,43.15146306932411 3.1114159350345356,43.151915514745106 3.1120848733564817,43.15201361617186 3.1121065095148026,43.15178290302052 3.11204972189464,43.151513411119986 3.1119890972956497,43.15129826224554 3.1118851286763722,43.15129131699704 3.111566917900263,43.1514236289837            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "9"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/91/91-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2622" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1115189698388876,43.15198919399337 3.11139763392952,43.15200010128523 3.111326657325068,43.152474916993164 3.1121639007796134,43.15239815573876 3.1121622465931744,43.152342310271166 3.1120765523984844,43.15220524291534 3.111971206402191,43.15211089592483 3.1119196264677655,43.15208912594753 3.111792282459868,43.152047075511035 3.1115189698388876,43.15198919399337            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "10"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/92/92-GRENACHE-GRIS-BLANC> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.6631" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1115378562457576,43.153186751187604 3.1115515162120873,43.15307202237399 3.1115195001123634,43.15295138438624 3.1115669612559564,43.152944977332 3.111568041813227,43.152986572116816 3.1116634526857228,43.15297877684659 3.1116876735103545,43.15301499219042 3.1118549331037415,43.15299996694153 3.111859196969394,43.15301588598471 3.1121183306112443,43.15301433643559              3.112333886779077,43.15303951983997 3.1124622763261858,43.15302972103651 3.1126220303821075,43.1528092169002 3.112590880984234,43.15270970099394 3.1124560030909176,43.152595668434444 3.1123030708865334,43.15247357963679 3.111320482473874,43.152559448504874 3.1112979992120136,43.15257174734773 3.1110348384932953,43.15286315555106 3.1110347984726556,43.152927501652655              3.111087649062391,43.152979856570106 3.1114380681157985,43.15319942689145 3.1115378562457576,43.153186751187604            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "23"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/95/95-CARIGNAN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.656" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.111514727651083,43.15346858737109 3.111202971870648,43.15328646261136 3.1111593593785702,43.15328909980476 3.1108870689514276,43.153197145715 3.1107793100440673,43.153255780120936 3.1107603519335516,43.15323901981052 3.1107077464702346,43.153274669862846 3.1106865021806764,43.1532624602327 3.1106557896747846,43.153280246071986 3.1106228760337107,43.153272793061596              3.110594409686221,43.15329481525234 3.1105721748858306,43.153283523595604 3.110386314032633,43.153298356245195 3.1101634791109602,43.153437952405156 3.110111110436428,43.153567998640014 3.110101383753461,43.15384350906111 3.110219623065834,43.153959660630136 3.110333121599933,43.15399683146674 3.1106854599765184,43.15398745829944 3.111514727651083,43.15346858737109            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "20"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/102/102-SYRAH> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.5594" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.115229445191616,43.156102621444845 3.1154087292567505,43.15603877052555 3.115872305167217,43.1558736687906 3.116026859559879,43.155775501284865 3.115806918661681,43.15559479894112 3.1157560514896403,43.155610801530656 3.11572621924622,43.155583181406726 3.1152104481852874,43.15550053923653 3.1150743750529455,43.15545800336949 3.115042329141024,43.155429066356305              3.1150129184242643,43.15543573021031 3.1149699646052142,43.155397076942506 3.114937307763245,43.15540836109537 3.114895221058054,43.1553652530301 3.1148598094620534,43.155381266288536 3.114816348714901,43.15534458320347 3.1147753142190284,43.155353126776276 3.114733042418378,43.155317931958734 3.114698184441228,43.15532819308399 3.1146579320153545,43.15529158753893              3.114610801022733,43.15530198170563 3.114565864897403,43.15526881879169 3.1144837290155345,43.15527541402362 3.1143722771087927,43.15539358152877 3.115229445191616,43.156102621444845            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "25"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/106/106-RV-BOUQUET> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "1.3619" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.116068757815181,43.15689357889939 3.11714514333686,43.15763348781399 3.1171670211990903,43.15762270706574 3.1172163597091025,43.15765610857308 3.117266126241479,43.15763242797448 3.1172999967219783,43.157656017787595 3.1173292828065318,43.15764412541432 3.117385881711441,43.15768139417605 3.117403461015719,43.157669764008396 3.1174268499984383,43.157687104599404              3.1174531697072783,43.15767254681905 3.1175303925411164,43.15771707092848 3.117547045130101,43.157700111764846 3.117601725234588,43.15773671232197 3.117629812614365,43.15771394894939 3.1177192019801105,43.15777513710514 3.117738397798173,43.15776075176199 3.11778715313746,43.15778875138706 3.1178118384355242,43.15777289108783 3.1178337260522633,43.157745956250174              3.1178850047487057,43.15770561007173 3.1179203436772562,43.15766382843393 3.117955454548709,43.15764959456882 3.117988749357095,43.15759637099892 3.118015438094714,43.157548712312995 3.1180502159169277,43.157529052347705 3.1180961252643953,43.157484233202965 3.118104717927766,43.15746369144944 3.1180744107817655,43.15744153910025 3.1180922487912572,43.15741714272617              3.117988954187247,43.15734620635552 3.118013605664995,43.1573219296091 3.1179019952462883,43.15724424609718 3.1179260120783012,43.15722409648537 3.1178691178555633,43.15718540338654 3.117884482042866,43.157158274775384 3.11781859535637,43.157112652384185 3.1178374212582565,43.157090922059986 3.1177729129834764,43.15704449882502 3.1177878932576557,43.157026100932654              3.1177406762673407,43.15699246684863 3.1177551882091703,43.15697044581193 3.1176832071051472,43.15692059334486 3.117698032914812,43.15690989358865 3.1176429392733263,43.15687049940939 3.1176577991796504,43.15685386238215 3.116878800226623,43.15630831215591 3.1168383576091756,43.1563354600319 3.1167689299254464,43.15638581010512 3.1167173422137755,43.15642322225918              3.1166821115430396,43.15644877200941 3.1166361818954798,43.15648208074932 3.1165852270379473,43.15651903376594 3.116555021411919,43.15654093918118 3.1165034334233788,43.156578351237684 3.1164574957598252,43.15661166556893 3.116422897887946,43.15663675616225 3.1163694262604866,43.15667553405765 3.1163228632224764,43.15670930174595 3.116293939079043,43.15673027761281              3.1162461098901733,43.15676496342 3.1161831894023404,43.15681059336806 3.116134742667762,43.15684572687494 3.116068757815181,43.15689357889939            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "64"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/102/102-PIQUEPOUL-BLANC> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2963" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1143722771087927,43.15539358152877 3.114307541821897,43.15546221720801 3.114220288908167,43.15555472691959 3.1141703488895907,43.15560767555358 3.114200052541858,43.15563575753621 3.1141806592068844,43.15565289804265 3.1148371827761965,43.15619563144655 3.11485971207323,43.15618369498826 3.1148841106133345,43.1562011374038 3.114908361037421,43.15619193058049              3.114930808375271,43.15620897814648 3.114992062776378,43.156187163064516 3.1151224238967865,43.15614073621439 3.115229445191616,43.156102621444845 3.1143722771087927,43.15539358152877            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "15"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/61/61-MERLOT> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.8876" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1352665297140434,43.14611199127836 3.135279823382524,43.146093979563446 3.1353289891294165,43.14610267530195 3.1353628325129073,43.14606159747917 3.1353913377206086,43.146063889130986 3.1355762294231546,43.14593402202457 3.1356556571514718,43.14584920039267 3.1356368631928895,43.14583953376508 3.1356420571850405,43.14582424293753 3.1345920437543335,43.145355072728584              3.134397498677889,43.14533512051214 3.1340210098650783,43.14549520328902 3.1338298996803378,43.14558453653268 3.133673185330684,43.1457042509425 3.1335570037893636,43.14580429503991 3.133535491833675,43.14589343956167 3.13355948110769,43.145898008449244 3.1335548028381934,43.14591694808017 3.1352665297140434,43.14611199127836            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "19"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/39/39-PATRICIA> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.177" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.132572823952098,43.14111242587697 3.1323477484806745,43.14118407866941 3.1325165289999957,43.14148759099784 3.1325457203725984,43.141478632535744 3.132818128549643,43.14196759820751 3.1330207302077957,43.14191099275563 3.132572823952098,43.14111242587697            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "7"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/39/39-FLOT-ROUGE> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.3938" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.132761399619218,43.141986560331866 3.1323151916296763,43.14118741110716 3.13199469603998,43.14127484792267 3.1318953184112455,43.14150816016623 3.1320088849759107,43.14171553621701 3.1320395072354335,43.14170838898176 3.1320829176557865,43.14178806142774 3.1321118980858804,43.14178077882108 3.1322887025765436,43.14208808993033 3.132316045964886,43.14207993279094              3.1323353736581265,43.1421140206879 3.132761399619218,43.141986560331866            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "12"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/97/97-VDQA-G14-N> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2033" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.111453091635487,43.15462183751371 3.110830731401116,43.15421423431686 3.1108098269838456,43.1542271132689 3.110698542396398,43.154155176163975 3.110618525014008,43.15416228643619 3.110455008459046,43.15426680567137 3.1108522509770786,43.154528030793486 3.110872550446638,43.154513348996126 3.1111033021187153,43.15466357538477 3.1110851081191315,43.1546786049345              3.1112302582176437,43.15477758958032 3.1113863635473766,43.15471222435288 3.111453091635487,43.15462183751371            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "13"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/100/100-FLOREAL> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2058" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.111892469926275,43.15513930972075 3.1123109380100105,43.155311654400755 3.1123306816506915,43.15529428490801 3.112384354411818,43.15531634155813 3.112411887013977,43.15530179038131 3.1124466274418814,43.15531520407881 3.112822799035833,43.15525746170405 3.112884170826671,43.15527998353834 3.1129029315083696,43.15526218725658 3.1129671065773143,43.1552883324547              3.1129884900283944,43.155269567283575 3.1130642732719855,43.15530132358696 3.11308592016771,43.15528289220893 3.1131804090601833,43.15531953215547 3.113199364387448,43.15530356596132 3.112319019315209,43.15494883401209 3.112294587151705,43.154967152867165 3.1122501064343027,43.154947997320306 3.111892469926275,43.15513930972075            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "19"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/99/99-VDQA-G5-B> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.2889" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.113457349152181,43.155275540452784 3.113660760435306,43.15497186037927 3.113616502642554,43.154956422432264 3.1136243053465984,43.15493415118853 3.113587024218735,43.15491990235407 3.1135986866076784,43.15489929267509 3.11324217410231,43.154767304272504 3.1132324855296547,43.15478874888161 3.1131443814998803,43.15475539004292 3.113131256861724,43.15477572403501              3.113063953489687,43.15475014955168 3.1127827279515556,43.154822226322665 3.1125961709733723,43.15487522125341 3.112508904573439,43.15492119836022 3.113457349152181,43.155275540452784            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "15"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/101/101-VDQA-G5-B> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1534" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.113620180427916,43.15533720656376 3.1138932533816956,43.155454293392914 3.1139076597192963,43.15543508168475 3.114000409488284,43.1554750573317 3.1141649966156733,43.15533495795455 3.1142519446138177,43.15514029934718 3.1140332673517284,43.155046304868904 3.1140165510590023,43.15506506871218 3.1139647419228202,43.155040067133626 3.113815210595614,43.15508176864262              3.1137560549900654,43.15516432953502 3.113620180427916,43.15533720656376            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "12"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/53/53-CHARDONNAY> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.6824" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1357115994575313,43.143358063436146 3.1363931637103946,43.14310050123822 3.136189592177367,43.142777657151896 3.13584089958452,43.14222466162135 3.135754174464989,43.142258834065174 3.1357373363228134,43.14223848814507 3.1351379613947774,43.142468010109916 3.135502148307873,43.14303514361254 3.135518529834833,43.14302898775029 3.135563724417098,43.14311373579972              3.135587295826966,43.14310237487086 3.1356573045767457,43.14322942508844 3.1356327045212207,43.14323906935343 3.1357115994575313,43.143358063436146            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "14"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/103/103-ARTABAN> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.357" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1158354533384824,43.15686202422098 3.116239372460939,43.156573912062775 3.1155995038527715,43.156131122651765 3.1150800808961048,43.1563270638212 3.1158354533384824,43.15686202422098            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "5"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/94/94-GRENACHE> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.4487" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.112895137700736,43.15282290154838 3.112752492745981,43.153018317585044 3.113771171120754,43.153451668628705 3.113787510519554,43.153440656567696 3.1139221621214537,43.153497026738684 3.11393072848742,43.15347293354008 3.114039687624071,43.153518446445624 3.1140509627143853,43.1534997135797 3.1151857596338983,43.15397783503767 3.115199125397172,43.15396579489904              3.1151712762799866,43.15395076227939 3.1151870195213083,43.15393394816914 3.115165713818031,43.15392161704748 3.115180007240379,43.15390687132929 3.115153730819449,43.15389290692601 3.1151714282748113,43.15387378589487 3.1151382285137967,43.15385808926978 3.1151556470007784,43.15384140841859 3.1151300118564205,43.15382974603407 3.1151455770863516,43.15381345580839              3.1149550944474687,43.1537290881045 3.114970251576172,43.15371236558965 3.112895137700736,43.15282290154838            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "23"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/84/84-GRENACHE> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1954" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1213008260693043,43.14485729356325 3.1213107927973676,43.14483931129566 3.1212912975248934,43.144830694037665 3.1213007556199703,43.14480874282434 3.121282008211166,43.14480133457991 3.1212912788087666,43.14477968219161 3.1212687973229287,43.144771280092556 3.1212849643034164,43.14475139446106 3.121265238168533,43.14474398245785 3.121279015433943,43.144723999473115              3.1211105531109418,43.14464989552147 3.121122095598963,43.144630668062455 3.120893066121979,43.144531715050675 3.120908140009028,43.14451311267403 3.120692503969186,43.1444204343855 3.120675920370715,43.14443905004854 3.120217233228456,43.144246088092714 3.1202088495353655,43.144265234930785 3.119844609136222,43.14411471638681 3.119832423499833,43.144132173120475              3.1198405600123325,43.14414129677542 3.1198264470365005,43.14416243255884 3.1198404212294037,43.1441682894719 3.119826837794295,43.14418757552848 3.1198368462976807,43.14419215094675 3.1198223005649846,43.1442117405082 3.1198351104154822,43.14421604153756 3.119820259391308,43.144233538221 3.1213008260693043,43.14485729356325            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "29"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/58/58-ANTARES> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1544" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1357816114125745,43.143603829175305 3.1359630450590603,43.143839222303605 3.1364640639387114,43.143633835664055 3.1363952769227605,43.143536199218886 3.136426942689477,43.143524458643356 3.136410209192909,43.14350095216039 3.136438722075669,43.14348872436196 3.136414344131112,43.143457719114906 3.1364474503498423,43.14344508780437 3.136378616258616,43.14335837786317              3.1357816114125745,43.143603829175305            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "11"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .
+
+<INRA/estate/PechRouge/85/85-UDINE> a geo:Geometry ;
+	geo:spatialDimension "2"^^xsd:integer ;
+	geo:is3D "false"^^xsd:boolean ;
+	osgeom:hectares "0.1138" ;
+	geo:dimension "2"^^xsd:integer ;
+	geo:isSimple "true"^^xsd:boolean ;
+	geo:asGML "<gml:MultiPolygon srsName='http://www.opengis.net/def/crs/EPSG/0/4326'>   <gml:polygonMember>     <gml:Polygon>       <gml:outerBoundaryIs>         <gml:LinearRing>           <gml:coordinates>             3.1220335109532673,43.14522314064879 3.123067002167865,43.144850770631756 3.12296672544216,43.14476589718509 3.1219228268076766,43.14514362055143 3.1219959076526336,43.145214254235185 3.1220169708287733,43.145206779091154 3.1220335109532673,43.14522314064879            </gml:coordinates>         </gml:LinearRing>       </gml:outerBoundaryIs>     </gml:Polygon>   </gml:polygonMember> </gml:MultiPolygon> "^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	geo:coordinateDimension "7"^^xsd:integer ;
+	geo:isEmpty "false"^^xsd:boolean .

@@ -108,26 +108,26 @@ inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
 I can't verify whether ~oepo:Observation~ takes ~rdf:value~ because OEPO doesn't define this.
 Using ~rdf:value~ this way is fine, but we should specify it with an RDF Shape
 
-* ComposantesGrappe_transf_parsed.ttl [0/2]
-Observations: ~inra_onto:Nbbaiescomptage~ number of counting bays?!?
-** DONE invalid DateTimeStamp
-: [line: 16, col: 28] Lexical form '10/09/16' not valid for datatype xsd:DateTimeStamp
-You should express it like this:
-: "2016-09-10"^^xsd:date
-(Note: ~xsd:DateTimeStamp~ is misspelt, should be ~xsd:dateTimeStamp~)
-** DONE missing rdf:value
-: [line: 491, col: 47] Triples not terminated by DOT
-: inra_data:4e1956e2-eceb-477f-97a4-d22a919970b1 rdf:type oepo:Observation ;
-:   time:hasTime context:instant_39dec42b-9d84-4269-96f6-289d0d0ee782 ;
-:   oepo:hasVariable inra_onto:Nbbaiescomptage ;
-You have no rdf:value for this record, so you should omit the whole record (it's useless without the value).
+# * ComposantesGrappe_transf_parsed.ttl [0/2]
+# Observations: ~inra_onto:Nbbaiescomptage~ number of counting bays?!?
+# ** DONE invalid DateTimeStamp
+# : [line: 16, col: 28] Lexical form '10/09/16' not valid for datatype xsd:DateTimeStamp
+# You should express it like this:
+# : "2016-09-10"^^xsd:date
+# (Note: ~xsd:DateTimeStamp~ is misspelt, should be ~xsd:dateTimeStamp~)
+# ** DONE missing rdf:value
+# : [line: 491, col: 47] Triples not terminated by DOT
+# : inra_data:4e1956e2-eceb-477f-97a4-d22a919970b1 rdf:type oepo:Observation ;
+# :   time:hasTime context:instant_39dec42b-9d84-4269-96f6-289d0d0ee782 ;
+# :   oepo:hasVariable inra_onto:Nbbaiescomptage ;
+# You have no rdf:value for this record, so you should omit the whole record (it's useless without the value).
 
 * ComposantesVendanges_transf_parsed.ttl [0/1]
 Observations: ~inra_onto:Nbgrappescomptage~ number of counted clusters?!?
 ** DONE missing rdf:value
 : [line: 50, col: 41] Triples not terminated by DOT
 
-* INRA_Variables.ttl [0/4]
+* variables.ttl [0/4]
 Variable definitions
 ** DONE Namespace hijacking
 Don't define terms of other ontologies
@@ -165,8 +165,12 @@ inra_onto:Glucose.fructoseg.lsequentiel.enzymatique CO:variable_of CO_356:200005
 #+END_SRC
 However, http://www.cropontology.org/rdf/UO:0000175 is missing: unlike the above UO:0000021, this one returns nothing.
 
-* fieldsLocalisationPR_parsed.ttl [0/7]
-Plot geometry
+* area.ttl
+Identifiers of fields
+
+* plots_geometry 
+Geometry of plot instances (previsously fieldsLocalisationPR_parsed.ttl) [0/7]
+
 ** DONE Use QUDT not quty
 Uses some units ontology that's unknown to me:
 #+BEGIN_SRC Turtle
@@ -216,15 +220,18 @@ Discussion:
   : aeo:Plot < aeo:CultivatedLand < aeo:Area < aeo:AgriEntity < aeo:AgriEntity
   (the last reflexive subclass is totally useless)
 
-* DONE EndOfAlcoholicfermentation.ttl
+* DONE end_of_alcoholic_fermentation.ttl
 
-* TODO Maturite_transf_parsed.ttl
+# * TODO Maturite_transf_parsed.ttl
 
-* TODO MaturiteAnthocyanes_transf_parsed.ttl
+# * TODO MaturiteAnthocyanes_transf_parsed.ttl
 
-* TODO MaturiteJus_transf_parsed.ttl
+# * TODO MaturiteJus_transf_parsed.ttl
 
-* TODO MaturiteSunAgri2B_transf_parsed.ttl
+# * TODO MaturiteSunAgri2B_transf_parsed.ttl
+
+# * TODO MaturiteSunAgri2B_transf_parsed.ttl
+
 
 * must_transf_parsed.ttl [0/1]
 Observations: ~inra_onto:Sucrestotaux.brixrefractometrie~ Total sugars (BRIX refractometry)

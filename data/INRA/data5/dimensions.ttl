@@ -1,0 +1,52 @@
+
+
+bdg:date a qb:DimensionProperty;
+  rdfs:label "Date";
+  qb:concept sdmx-concept:timePeriod;
+  rdfs:range xsd:date;
+  rdfs:comment "Date of the observation".
+
+
+bdg:humanSensor a qb:DimensionProperty;
+  rdfs:label "Human sensor";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range sosa:Sensor;
+  rdfs:comment "Human that took the observation".
+
+
+bdg:variety a qb:DimensionProperty;
+  rdfs:label "Vinestock variety";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range xsd:string;
+  rdfs:comment "Variety of the vinestock where grapes come from".
+
+
+bdg:wine a qb:DimensionProperty;
+  rdfs:label "Wine";
+  rdfs:range afeo:Wine;
+  rdfs:comment "The wine which is tested during sensory analysis.".
+
+
+bdg:statisticalReplication a qb:DimensionProperty;
+  rdfs:label "Statistical replication";
+  skos:exactMatch aeo:Repetition;
+  qb:concept sdmx-concept:statConcDef;
+  rdfs:comment "Tasting replication number done by a particular judge".
+
+
+bdg:wineExperimentalModality a qb:DimensionProperty;
+  rdfs:label "Wine experimental modality";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range bdg:WineExperimentalModality;
+  rdfs:comment "Specify the code of the experimental modality".
+
+
+bdg:fermentationTank a qb:DimensionProperty;
+  rdfs:label "Fermentation Tank";
+  qb:concept sdmx-concept:collMethod;
+  rdfs:range bdg:FermentationTank;
+  rdfs:comment "define the tank used to do a particular fermentation".
+
+
+
+

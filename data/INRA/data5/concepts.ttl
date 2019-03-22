@@ -1,0 +1,18 @@
+
+
+bdg:Variety a rdf:Class, skos:Concept;
+  rdfs:label "Variety";
+  skos:exactMatch agrovoc:c_8157;
+  rdfs:seeAlso agrovoc:c_8157;
+  rdfs:comment "Genetic resource that identify vinestock specific set of characteristic".
+
+bdg:FermentationTank a rdf:Class, skos:Concept;
+  rdfs:label "Fermentation Tank";
+  rdfs:comment "tank used to do the fermentation".
+
+bdg:WineExperimentalModality a rdf:Class, skos:Concept;
+  rdfs:label "Wine experimental modality code";
+  rdfs:comment "Experimental code used to disociate experiment modality".
+
+
+
