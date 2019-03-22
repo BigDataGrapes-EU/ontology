@@ -4,7 +4,7 @@
 #+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t timestamp:nil title:t toc:5
 #+OPTIONS: todo:t |:t
 #+TITLE: INRA data5 errors
-#+DATE: <2018-11-16>
+#+DATE: <2019-02-08>
 #+AUTHOR: Vladimir Alexiev
 #+EMAIL: vladimir.alexiev@ontotext.com
 #+LANGUAGE: en
@@ -21,36 +21,38 @@
   - Eg the inapplicability of ~dct:created~ to ~time:Instant~ is reported 
     for the first observation file ~2016vendanges_transf_parsed.ttl~ but applies to all observation files
 
-* Prefixes [0/4]
-** DONE Turtle prefix format
+* Recommendations [26/38]
+
+** Prefixes [3/3]
+*** DONE Turtle prefix format
 You use the SPARQL syntax for prefixes
   : PREFIX inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>
   While this is not an error (Turtle 1.1 supports this syntax), it's better to use the older syntax
   : @prefix inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/> .
-** DONE Check against prefixes.ttl
+*** DONE Check against prefixes.ttl
 Check your prefixes against prefixes.ttl and use exactly the same. 
 Consult http://prefix.cc for the most popular prefixes to use.
 - Use ~dct:~ not ~dcterms:~ for DC Terms: both are valid, but the former is more popular
 - Use ~geo:~ not ~gsp:~ for GeoSPARQL, the former is a lot more popular
-** DONE Namespaces are not suggestive
+*** DONE Namespaces are not suggestive
 These namespaces do not suggest they hold time and observations respectively
   #+BEGIN_SRC Turtle
   PREFIX context:    <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>  
   PREFIX inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/>   
   #+END_SRC
 
-* General [0/1]
+** General [1/2]
 These files use the following INRA ontologies/resources
 : inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>
 : inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/>
 : inra_agent: <http://vinnotec.supagro.inra.fr/public/Pr/agent/>
 : inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/>
 : inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/>
-** TODO Should be resolvable
+*** TODO Should be resolvable
 These (at least the last two) don't resolve, and return this:
 : Veuillez vous connecter pour avoir accès à cette page
 I see the latter is defined in ~INRA_Variables.ttl~, but at some point should become resolvable.
-** DONE Leave empty line
+*** DONE Leave empty line
 Leave empty line between subject blocks ("paragraphs") to better delineate them:
   #+BEGIN_SRC Turtle
 context:instant_e1ba2667-2a37-4a42-b157-7ac07bfc458e rdf:type time:Instant ;
@@ -62,15 +64,15 @@ inra_data:a7fc3837-9c8b-4e4b-a79d-aad0b2876086 rdf:type oepo:Observation ;
    ofpe:Operator inra_agent:fabien.robert ; 
   #+END_SRC
 
-* 2016_harvest.ttl [0/8]
+** 2016_harvest.ttl [6/6]
 Harvest observations: ~inra_onto:Poidsvendangegpesee~ (grams harvested)
-** DONE syntax error
+*** DONE syntax error
 Some unquoted string
   #+BEGIN_SRC Turtle
   [line: 183, col: 24] Unrecognized: divers
   inra_obj:JARDIN-AMPELO divers rouge rdf:type aeo:Plot ;
   #+END_SRC
-** DONE dct:created is inappropraite
+*** DONE dct:created is inappropraite
 You can't "create" a time instant (it just exists!), so ~dcterms:created~ is inappropraite.
 If you want to say when an event was converted (vs occurred), we could use PROV.
   #+BEGIN_SRC Turtle
@@ -78,7 +80,7 @@ If you want to say when an event was converted (vs occurred), we could use PROV.
      time:inXSDDateTimeStamp "2016-08-24T12:00:00+01:00"^^xsd:dateTimeStamp ;
      dcterms:created "2018-07-12T18:52:00.012981"^^xsd:dateTime .
   #+END_SRC
-** DONE aeo:involvedIn
+*** DONE aeo:involvedIn
 "Lot" means a bunch of grapes processed together, that are used to make one "batch" of wine.
 Many different grapes from different plots are put in the same lot, to get a good "bouquet".
 It's used by INRA as follows:
@@ -94,17 +96,17 @@ Maybe it can:
 - a Plot is an entity. However, you don't put Plots in bottles: you put the grapes grown on it (in a particular year) in the Lot.
   So the subject should be somethin like "grapes *harvest* from plot".
 
-** DONE Class vs Property
+*** DONE Class vs Property
 This is a class not property so it can't be used like this.
 (In general I notice that all Bio-Agro ontologies have tons of classes but few properties)
   :    ofpe:Operator inra_agent:fabien.robert ;
-** DONE No georeference? 
+*** DONE No georeference? 
 This binds the observation to the plot: please confirm there's no need for a specific lat/long georeference
 #+BEGIN_SRC Turtle
 inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
    oepo:hasObservation inra_data:6870097e-13b9-4179-83c3-78450c0bb8ce .
 #+END_SRC
-** DONE rdf:value?
+*** DONE rdf:value?
 I can't verify whether ~oepo:Observation~ takes ~rdf:value~ because OEPO doesn't define this.
 Using ~rdf:value~ this way is fine, but we should specify it with an RDF Shape
 
@@ -122,9 +124,9 @@ Using ~rdf:value~ this way is fine, but we should specify it with an RDF Shape
 # :   oepo:hasVariable inra_onto:Nbbaiescomptage ;
 # You have no rdf:value for this record, so you should omit the whole record (it's useless without the value).
 
-* ComposantesVendanges_transf_parsed.ttl [0/1]
+** ComposantesVendanges_transf_parsed.ttl [1/2]
 Observations: ~inra_onto:Nbgrappescomptage~ number of counted clusters?!?
-** DONE missing rdf:value
+*** DONE missing rdf:value
 : [line: 50, col: 41] Triples not terminated by DOT
 
 * variables.ttl [0/4]
@@ -177,21 +179,21 @@ Uses some units ontology that's unknown to me:
 @prefix quty: <http://www.telegraphis.net/ontology/measurement/quantity#>
 #+END_SRC
 This returns 404 Not Found. Better use QUDT, which is well known and maintained.
-(TODO Vladimir: post my presentation of Unit ontologies)
+See presentation [[http://rawgit2.com/VladimirAlexiev/my/master/pres/20171025-Practical%20Semantic%20Modeling,%20SPARQL,%20RDF%20Shapes,%20IoT-WoT-UoM%20(201710).pptx},][20171025-Practical Semantic Modeling, SPARQL, RDF Shapes, IoT-WoT-UoM]].
 
-** DONE Don't use dbo: for units
+*** DONE Don't use dbo: for units
 Use a QUDT unit rather than a DBpedia URL as datatype literal:
 #+BEGIN_SRC Turtle
    quty:area "1.37490"^^dbo:hectare
 #+END_SRC
 
-** DONE Where is the grape variety indicated?
+*** DONE Where is the grape variety indicated?
 Plots don't seem to indicate the grape variety. Maybe that's in another file?
 #+BEGIN_SRC Turtle
 inra_obj:22-SYRAH rdf:type aeo:Plot .
 inra_obj:68-COLLECTION-BLANCS rdf:type aeo:Plot .
 #+END_SRC
-** DONE Fix polygon geometry
+*** DONE Fix polygon geometry
 No way this defines a valid polygon:
 - It includes just 4 coordinates. Even for a simple box you need 4 corners, i.e. 8 coordinates
 - Coordinates should be +-180 degrees longitude and +-90 degrees latitude, but these are very big numbers
@@ -209,9 +211,9 @@ Discussion:
 - INRA can compute the area from the shape. The area must be recorded as a separate field, not in "asWKT"
 - Which CRS to use? In France they often use Lambert93 and UTM zone 30, but I'd recommend WGS84, which is the default in GeoSPARQL.
   If you can't convert to WGS84, then you must include the CRS URL in the WKT literal.
-** DONE geo:Polygon vs geo:Geometry
+*** DONE geo:Polygon vs geo:Geometry
 - There's no class ~geo:Polygon~. Use ~geo:Geometry~ instead
-** DONE Declare geo:Feature
+*** DONE Declare geo:Feature
 - ~geo:hasGeometry~ has domain ~geo:Feature~, so it would be nice to declare it:
   #+BEGIN_SRC Turtle
   inra_obj:22-SYRAH rdf:type aeo:Plot; geo:Feature. 
@@ -233,27 +235,27 @@ Discussion:
 # * TODO MaturiteSunAgri2B_transf_parsed.ttl
 
 
-* must_transf_parsed.ttl [0/1]
+** must_transf_parsed.ttl [0/1]
 Observations: ~inra_onto:Sucrestotaux.brixrefractometrie~ Total sugars (BRIX refractometry)
 
-** TODO Syntax error
+*** TODO Syntax error
 #+BEGIN_SRC Turtle
 [line: 28, col: 1 ] Broken token (newline): VIP_Sauvignon rdf:type afeo:Must ;
 #+END_SRC
 This is caused by an apostrophe in the plot name: ~inra_obj:2016_SO'VIP_Sauvignon~.
 Replace spaces, apostrophes and other special cahrs in plot names with "_"
 
-* Suivifermentations_transf_parsed.ttl [0/4]
+** Suivifermentations_transf_parsed.ttl [0/4]
 Follow-up fermentations of ~ofpe:IntermediateProduct~. 
 Observations of "Glucose/fructose g/l sequential enzymatic".
 
-** TODO Syntax error
+*** TODO Syntax error
 #+BEGIN_SRC Turtle
 [line: 144, col: 26] Unrecognized: sec
 #+END_SRC
 Caused by space in the plot name: ~inra_obj:2016_HE1_Muscat sec~.
 
-** TODO Class vs Property
+*** TODO Class vs Property
 This is a class not property so it can't be used like this.
 #+BEGIN_SRC Turtle
 inra_data:32757c4a-15dd-4896-a3b9-970f33e6f756 rdf:type oepo:Observation ;
@@ -261,7 +263,7 @@ inra_data:32757c4a-15dd-4896-a3b9-970f33e6f756 rdf:type oepo:Observation ;
 #+END_SRC
 ~oepo:Observation~ needs some link to Agent, be that Operator or Organization
 
-** TODO Where are inra_codes defined?
+*** TODO Where are inra_codes defined?
 These codes are used by data, but where are they defined?
 #+BEGIN_SRC Turtle
 inra_code:Cuve_BB1010 # FinFermentationsAlcoolique_transf_parsed
@@ -272,7 +274,7 @@ Codes are also used for organizations, so it may be better to define these as pr
  foaf:Organization inra_code:16-1841 ; # Suivifermentations_transf_parsed
 #+END_SRC
 
-** TODO Inconsistent URLs for some codes
+*** TODO Inconsistent URLs for some codes
 - ~inra_code:Lab_16-1841~ in FinFermentationsAlcoolique_transf_parsed.ttl, but merely 
 - ~inra_code:16-1841~ in Suivifermentations_transf_parsed.ttl
 One way to solve: 
@@ -287,7 +289,7 @@ inra_lab:16-1841 a foaf:Organization
 * Scratch Pad [/]
 
 ** Capturing All Plot Data
-~2016,HE1,Muscat sec~ should be converted to somethign like
+~2016,HE1,Muscat sec~ should be converted to something like
 #+BEGIN_SRC Turtle
 inra_obj:2016_HE1_Muscat_sec a oepo:Experiment;
   plot inra_obj:TODO; ### where is the experiment being conducted
