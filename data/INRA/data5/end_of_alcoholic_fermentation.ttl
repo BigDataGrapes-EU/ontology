@@ -4,15 +4,15 @@
   qb:structure <DSD/EndFermentationMonitoring/2016> . 
  
 <DSD/EndFermentationMonitoring/2016> a qb:DataStructureDefinition; 
-  qb:component [qb:dimension bdg:fermentationTank;        ]; 
-  qb:component [qb:dimension bdg:date;                    ]; 
-  qb:component [qb:dimension bdg:wineExperimentalModality;]; 
+  qb:component [qb:dimension bdg:fermentationTank];
+  qb:component [qb:dimension bdg:date];
+  qb:component [qb:dimension bdg:wineExperimentalModality];
   qb:component [qb:measure   bdg:GlucoseFructoseConcentration]; 
-  qb:component [qb:measure   bdg:VolatileAcidConcentration  ]; 
-  qb:component [qb:measure   bdg:MalicAcidConcentration  ]; 
-  qb:component [qb:attribute sosa:hasFeatureOfInterest; qb:componentAttachment qb:MeasureProperty]; 
-  qb:component [qb:attribute qudt:hasQuantityKind     ; qb:componentAttachment qb:MeasureProperty]; 
-  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty] . 
+  qb:component [qb:measure   bdg:VolatileAcidConcentration];
+  qb:component [qb:measure   bdg:MalicAcidConcentration];
+  qb:component [qb:attribute sosa:hasFeatureOfInterest;  qb:componentAttachment qb:MeasureProperty];
+  qb:component [qb:attribute qudt:hasQuantityKind     ;  qb:componentAttachment qb:MeasureProperty];
+  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty].
  
 <fermentationTank/E106> a bdg:FermentationTank; 
 rdfs:label "Tank_E106"^^xsd:string . 
