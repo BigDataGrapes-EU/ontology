@@ -34,18 +34,17 @@ bdg:statisticalReplication a qb:DimensionProperty;
   rdfs:comment "Tasting replication number done by a particular judge".
 
 
-bdg:wineExperimentalModality a qb:DimensionProperty;
-  rdfs:label "Wine experimental modality";
-  qb:concept sdmx-concept:collMethod;
-  rdfs:range bdg:WineExperimentalModality;
-  rdfs:comment "Specify the code of the experimental modality".
-
-
 bdg:fermentationTank a qb:DimensionProperty;
-  rdfs:label "Fermentation Tank";
+  rdfs:label "Fermentation tank";
   qb:concept sdmx-concept:collMethod;
   rdfs:range bdg:FermentationTank;
-  rdfs:comment "define the tank used to do a particular fermentation".
+  rdfs:comment "Define the tank used to do a particular fermentation".
+
+
+bdg:winemakingExperiment a qb:DimensionProperty;
+  rdfs:label "Winemaking experiment";
+  rdfs:range bdg:WinemakingExperiment;
+  rdfs:comment "Define the code of the experiment carried out by the researchers".
 
 
 

@@ -1,5 +1,5 @@
 
-<INRA/estate/PechRouge/22/22-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/22/22-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.3749" ;
@@ -9,7 +9,7 @@
 	geo:coordinateDimension "25"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/68/68-COLLECTION-BLANCS> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/68/68-COLLECTION-BLANCS> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.408" ;
@@ -19,7 +19,7 @@
 	geo:coordinateDimension "48"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/JA/JARDIN-AMPELO> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/JA/JARDIN-AMPELO> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.3782" ;
@@ -29,7 +29,7 @@
 	geo:coordinateDimension "73"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/18/18-MERLOT-2016> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/18/18-MERLOT-2016> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.814" ;
@@ -39,7 +39,7 @@
 	geo:coordinateDimension "20"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/35/35-CABERNET-FRANC-2016> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/35/35-CABERNET-FRANC-2016> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.7299" ;
@@ -49,7 +49,7 @@
 	geo:coordinateDimension "10"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/98/98-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/98/98-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2954" ;
@@ -59,7 +59,7 @@
 	geo:coordinateDimension "19"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/89/89-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/89/89-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1235" ;
@@ -69,7 +69,7 @@
 	geo:coordinateDimension "9"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/89b/89bis-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/89b/89bis-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1456" ;
@@ -79,7 +79,7 @@
 	geo:coordinateDimension "7"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/87/87-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/87/87-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2129" ;
@@ -89,7 +89,7 @@
 	geo:coordinateDimension "12"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/85/85-RUN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/85/85-RUN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2694" ;
@@ -99,7 +99,7 @@
 	geo:coordinateDimension "27"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/85/85-RESDUR> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/85/85-RESDUR> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.3232" ;
@@ -109,7 +109,7 @@
 	geo:coordinateDimension "19"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/83/83-MARSELAN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/83/83-MARSELAN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2787" ;
@@ -119,7 +119,7 @@
 	geo:coordinateDimension "24"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/79/79-GRENACHE> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/79/79-GRENACHE> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.0982" ;
@@ -129,7 +129,7 @@
 	geo:coordinateDimension "6"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/79/79-CARIGNAN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/79/79-CARIGNAN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.504" ;
@@ -139,7 +139,7 @@
 	geo:coordinateDimension "18"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/2/02-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/2/02-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1273" ;
@@ -149,7 +149,7 @@
 	geo:coordinateDimension "9"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/10/10-SAUVIGNON-2016> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/10/10-SAUVIGNON-2016> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.4417" ;
@@ -159,7 +159,7 @@
 	geo:coordinateDimension "17"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/40/40-GAMAY> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/40/40-GAMAY> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.4216" ;
@@ -169,7 +169,7 @@
 	geo:coordinateDimension "7"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/39/39-CABERNET-SAUVIGNON> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/39/39-CABERNET-SAUVIGNON> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.3259" ;
@@ -179,7 +179,7 @@
 	geo:coordinateDimension "8"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/23/23-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/23/23-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1171" ;
@@ -189,7 +189,7 @@
 	geo:coordinateDimension "5"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/55/55-VIOGNIER> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/55/55-VIOGNIER> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.0455" ;
@@ -199,7 +199,7 @@
 	geo:coordinateDimension "13"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/57/57-MERLOT> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/57/57-MERLOT> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.5536" ;
@@ -209,7 +209,7 @@
 	geo:coordinateDimension "33"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/51/51-MUSCAT-ALEXANDRIE-2> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/51/51-MUSCAT-ALEXANDRIE-2> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2447" ;
@@ -219,7 +219,7 @@
 	geo:coordinateDimension "5"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/72/72-MOURVEDRE> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/72/72-MOURVEDRE> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.1692" ;
@@ -229,7 +229,7 @@
 	geo:coordinateDimension "41"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/73/73-MACCABEU> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/73/73-MACCABEU> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.4808" ;
@@ -239,7 +239,7 @@
 	geo:coordinateDimension "5"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/74/74-CONS-CARIGNAN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/74/74-CONS-CARIGNAN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.3278" ;
@@ -249,7 +249,7 @@
 	geo:coordinateDimension "19"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/75/75-NVLLES-OBTENTIONS-INRA> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/75/75-NVLLES-OBTENTIONS-INRA> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.4068" ;
@@ -259,7 +259,7 @@
 	geo:coordinateDimension "42"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/76/76-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/76/76-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.2274" ;
@@ -269,7 +269,7 @@
 	geo:coordinateDimension "38"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/64/64-GRENACHE-2017> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/64/64-GRENACHE-2017> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.8852" ;
@@ -279,7 +279,7 @@
 	geo:coordinateDimension "35"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/82/82-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/82/82-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.9464" ;
@@ -289,7 +289,7 @@
 	geo:coordinateDimension "5"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/11/11-PETIT-VERDOT> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/11/11-PETIT-VERDOT> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.6007" ;
@@ -299,7 +299,7 @@
 	geo:coordinateDimension "18"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/81/81-CHARDONNAY> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/81/81-CHARDONNAY> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.206" ;
@@ -309,7 +309,7 @@
 	geo:coordinateDimension "20"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/63/63-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/63/63-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.9636" ;
@@ -319,7 +319,7 @@
 	geo:coordinateDimension "37"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/66/66-ARAMON> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/66/66-ARAMON> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1102" ;
@@ -329,7 +329,7 @@
 	geo:coordinateDimension "11"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/66/66-MACCABEU> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/66/66-MACCABEU> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.0866" ;
@@ -339,7 +339,7 @@
 	geo:coordinateDimension "7"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/65/65-CARIGNAN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/65/65-CARIGNAN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.3649" ;
@@ -349,7 +349,7 @@
 	geo:coordinateDimension "15"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/71/71-GRENACHE-2015> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/71/71-GRENACHE-2015> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.7269" ;
@@ -359,7 +359,7 @@
 	geo:coordinateDimension "15"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/77/77-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/77/77-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2846" ;
@@ -369,7 +369,7 @@
 	geo:coordinateDimension "15"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/75/78-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/75/78-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.4256" ;
@@ -379,7 +379,7 @@
 	geo:coordinateDimension "12"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/90/90-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/90/90-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.3325" ;
@@ -389,7 +389,7 @@
 	geo:coordinateDimension "9"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/91/91-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/91/91-MUSCAT-PETIT-GRAIN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2622" ;
@@ -399,7 +399,7 @@
 	geo:coordinateDimension "10"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/92/92-GRENACHE-GRIS-BLANC> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/92/92-GRENACHE-GRIS-BLANC> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.6631" ;
@@ -409,7 +409,7 @@
 	geo:coordinateDimension "23"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/95/95-CARIGNAN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/95/95-CARIGNAN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.656" ;
@@ -419,7 +419,7 @@
 	geo:coordinateDimension "20"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/102/102-SYRAH> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/102/102-SYRAH> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.5594" ;
@@ -429,7 +429,7 @@
 	geo:coordinateDimension "25"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/106/106-RV-BOUQUET> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/106/106-RV-BOUQUET> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "1.3619" ;
@@ -439,7 +439,7 @@
 	geo:coordinateDimension "64"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/102/102-PIQUEPOUL-BLANC> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/102/102-PIQUEPOUL-BLANC> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2963" ;
@@ -449,7 +449,7 @@
 	geo:coordinateDimension "15"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/61/61-MERLOT> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/61/61-MERLOT> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.8876" ;
@@ -459,7 +459,7 @@
 	geo:coordinateDimension "19"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/39/39-PATRICIA> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/39/39-PATRICIA> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.177" ;
@@ -469,7 +469,7 @@
 	geo:coordinateDimension "7"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/39/39-FLOT-ROUGE> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/39/39-FLOT-ROUGE> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.3938" ;
@@ -479,7 +479,7 @@
 	geo:coordinateDimension "12"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/97/97-VDQA-G14-N> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/97/97-VDQA-G14-N> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2033" ;
@@ -489,7 +489,7 @@
 	geo:coordinateDimension "13"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/100/100-FLOREAL> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/100/100-FLOREAL> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2058" ;
@@ -499,7 +499,7 @@
 	geo:coordinateDimension "19"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/99/99-VDQA-G5-B> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/99/99-VDQA-G5-B> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.2889" ;
@@ -509,7 +509,7 @@
 	geo:coordinateDimension "15"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/101/101-VDQA-G5-B> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/101/101-VDQA-G5-B> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1534" ;
@@ -519,7 +519,7 @@
 	geo:coordinateDimension "12"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/53/53-CHARDONNAY> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/53/53-CHARDONNAY> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.6824" ;
@@ -529,7 +529,7 @@
 	geo:coordinateDimension "14"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/103/103-ARTABAN> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/103/103-ARTABAN> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.357" ;
@@ -539,7 +539,7 @@
 	geo:coordinateDimension "5"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/94/94-GRENACHE> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/94/94-GRENACHE> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.4487" ;
@@ -549,7 +549,7 @@
 	geo:coordinateDimension "23"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/84/84-GRENACHE> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/84/84-GRENACHE> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1954" ;
@@ -559,7 +559,7 @@
 	geo:coordinateDimension "29"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/58/58-ANTARES> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/58/58-ANTARES> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1544" ;
@@ -569,7 +569,7 @@
 	geo:coordinateDimension "11"^^xsd:integer ;
 	geo:isEmpty "false"^^xsd:boolean .
 
-<INRA/estate/PechRouge/85/85-UDINE> a geo:Geometry ;
+<INRA/estate/PechRouge/Geometry/85/85-UDINE> a geo:Geometry ;
 	geo:spatialDimension "2"^^xsd:integer ;
 	geo:is3D "false"^^xsd:boolean ;
 	osgeom:hectares "0.1138" ;
