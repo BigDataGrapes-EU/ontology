@@ -1,4 +1,4 @@
-#+options: ':nil *:t -:t ::t <:t H:5 \n:nil ^:{} anchor:nil arch:headline author:t
+#+options: ':nil *:t -:t ::t <:t H:5 \n:nil ^:{} anchor:t arch:headline author:t
 #+options: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t email:nil f:t
 #+options: inline:t num:nil p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
 #+options: timestamp:nil title:t toc:5 todo:t |:t
@@ -12,6 +12,9 @@
 #+creator: Emacs 26.1 (Org mode 9.2.2)
 
 * Resources
+:PROPERTIES:
+:CUSTOM_ID: Resources
+:END:
 Saved in [[https://drive.google.com/drive/u/0/folders/1Is0Zh8jT5H0eCPf8F-tXQW8ZZdpWUWNv][Google Drive WP3\background\QUDT]]
 - http://www.openphacts.org/specs/units/ 
   - Encoding units and unit types in RDF using QUDT. Open PHACTS Working Draft 13 September 2013.
@@ -31,39 +34,62 @@ Presentations:
 - QUDT Toolkit- Development of a Framework to Allow Management of Digital Scientific Units (2017)
 
 ** Diagrams
+:PROPERTIES:
+:CUSTOM_ID: Diagrams
+:END:
 *** QUDT-model
+:PROPERTIES:
+:CUSTOM_ID: QUDT_model
+:END:
 QUDT 2.0. Very useful, shows the main 8 classes and relations between them, and describes the rationale for the cardinalities.
 Also see the diagrams in the [[http://www.qudt.org/pages/QUDToverviewPage.html][QUDT Overview]], which show the attributes of each class, but can't fit all classes on one diagram.
 
 [[./img/QUDT-model.png]]
 
 *** QUDT-model1
+:PROPERTIES:
+:CUSTOM_ID: QUDT_model1
+:END:
 QUDT 1.1. Shows the main 5 classes and relations between them, with the precise property names
 
 [[./img/QUDT-model1.png]]
 
 *** QUDT-archtecture
+:PROPERTIES:
+:CUSTOM_ID: QUDT_archtecture
+:END:
 QUDT 1.1. Shows the conceptual levels of QUDT and ontologies that it uses.
 
 [[./img/QUDT-archtecture.png]]
 
 *** QUDT-architecture1
+:PROPERTIES:
+:CUSTOM_ID: QUDT_architecture1
+:END:
 QUDT 1.1. Shows the dependencies between modules of QUDT and ontologies that it uses.
 
 [[./img/QUDT-architecture1.png]]
 
-
 * Versions
+:PROPERTIES:
+:CUSTOM_ID: Versions
+:END:
 QUDT comes in 3 versions. We use the latest one (2.0).
 The resources are a bit spread around two sites, so I give an overview below.
 
 ** QUDT 1.0
+:PROPERTIES:
+:CUSTOM_ID: QUDT_1_0
+:END:
 I can't find a listing of files, but some of them lurk at the new 2.0 site:
 - http://data.qudt.org/qudt/owl/1.0.0/qudt.owl
 - http://data.qudt.org/qudt/owl/1.0.0/quantity.owl
 - http://data.qudt.org/qudt/owl/1.0.0/dimension.owl
 
 ** QUDT 1.1
+:PROPERTIES:
+:CUSTOM_ID: QUDT_1_1
+:END:
 http://www.linkedmodel.org/catalog/qudt/1.1/index.html.
 The files are:
 #+begin_example
@@ -89,6 +115,9 @@ Prefixes:
 (It also defines ~qudt-1.1:~ etc but doesn't use them.)
 
 ** QUDT 2.0
+:PROPERTIES:
+:CUSTOM_ID: QUDT_2_0
+:END:
 http://www.qudt.org/release2/qudt-catalog.html.
 I have downloaded all files available as of 29-Mar-2019 (a lot more are expected to be released:
 #+begin_example
@@ -118,13 +147,22 @@ Notes:
 - Now that I think of it, I haven't seen progress on QUDT 2 in about a year
 
 ** Incompatibility
+:PROPERTIES:
+:CUSTOM_ID: Incompatibility
+:END:
 If QUDT2 is missing a unit that we need, and it's in QUDT1.1, can we use both?
 Unfortunately no, because the two versions use incompatible URL patterns, eg:
 - QUDT 1.1: ~unit:KilogramPerCubicMeter~
 - QUDT 2: ~unit:KG-PER-M3~
 
 * QUDT 1.1 Examples
+:PROPERTIES:
+:CUSTOM_ID: QUDT_1_1_Examples
+:END:
 ** Length
+:PROPERTIES:
+:CUSTOM_ID: Length
+:END:
 #+begin_src Turtle
 unit:Centimeter
   rdf:type qudt:DerivedUnit , qudt:LengthUnit ;
@@ -139,6 +177,9 @@ unit:Centimeter
   skos:exactMatch <http://dbpedia.org/resource/Centimetre> .
 #+end_src
 ** Time
+:PROPERTIES:
+:CUSTOM_ID: Time
+:END:
 #+begin_src Turtle                                         
 unit:MilliSecond
   rdf:type qudt:DerivedUnit , qudt:TimeUnit ;
@@ -154,6 +195,9 @@ unit:MilliSecond
 unit:SystemOfUnits_USCustomary qudt:systemDefinedUnit unit:MilliSecond.
 #+end_src
 ** Temperature
+:PROPERTIES:
+:CUSTOM_ID: Temperature
+:END:
 #+begin_src Turtle               
   unit:DegreeCelsius
     rdf:type qudt:DerivedUnit , qudt:TemperatureUnit , qudt:SIUnit ;
@@ -176,7 +220,13 @@ unit:SystemOfUnits_USCustomary qudt:systemDefinedUnit unit:MilliSecond.
 #+end_src
 
 * QUDT 2 Examples
+:PROPERTIES:
+:CUSTOM_ID: QUDT_2_Examples
+:END:
 ** Concentration
+:PROPERTIES:
+:CUSTOM_ID: Concentration
+:END:
 #+begin_src Turtle
 unit:KG-PER-M3
   rdf:type qudt:DerivedUnit, qudt:MassPerVolumeUnit, qudt:Unit ;
@@ -197,8 +247,14 @@ qudt:MassPerVolumeUnit
 #+end_src
 
 * BDG Units
+:PROPERTIES:
+:CUSTOM_ID: BDG_Units
+:END:
 
 ** gram-per-liter
+:PROPERTIES:
+:CUSTOM_ID: gram_per_liter
+:END:
 Let's define "gram-per-liter" after the QUDT 2 fashion.
 For this purpose we need to look at these terms:
 - ~unit:L~ (~VOCAB_QUDT-UNITS-SPACE-AND-TIME-v2.0.ttl~)
