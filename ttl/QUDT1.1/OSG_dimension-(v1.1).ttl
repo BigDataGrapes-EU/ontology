@@ -1,0 +1,118 @@
+# Saved by TopBraid on Wed Jun 01 22:57:33 PDT 2011
+# baseURI: http://qudt.org/1.1/schema/dimension
+# imports: http://www.linkedmodel.org/1.2/schema/vaem
+# imports: http://www.linkedmodel.org/1.0/schema/dtype
+# imports: http://qudt.org/1.1/schema/qudt
+
+@prefix creativecommons:  <http://creativecommons.org/ns#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dimension:  <http://qudt.org/schema/dimension#> .
+@prefix dimension-1.1:  <http://qudt.org/1.1/schema/dimension#> .
+@prefix dtype:   <http://www.linkedmodel.org/schema/dtype#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix qudt:    <http://qudt.org/schema/qudt#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix vaem:    <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:    <http://voag.linkedmodel.org/schema/voag#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://qudt.org/1.1/schema/dimension>
+      rdf:type owl:Ontology ;
+      rdfs:label "QUDT Dimension Ontology"^^xsd:string ;
+      dc:contributor "Irene Polikoff"^^xsd:string , "Ralph Hodgson"^^xsd:string , "David Price"^^xsd:string ;
+      dc:creator "James E. Masters"^^xsd:string ;
+      dc:rights "The QUDT Ontologies are issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to NASA Ames Research Center and TopQuadrant, Inc."^^xsd:string ;
+      dc:subject "Quantities, Units, and Dimensions"^^xsd:string ;
+      dc:title "QUDT Dimension Ontology Version 1.1"^^xsd:string ;
+      voag:hasCatalogEntry
+              <http://qudt.org/catalog/qudt#QUDT-DIMENSION-SchemaCatalogEntry> ;
+      voag:hasLicenseType <voag:CC-SHAREALIKE_3PT0-US> ;
+      voag:withAttributionTo
+              qudt:NASA-ARC-Attribution , voag:TopQuadrantAttribution ;
+      vaem:acronym "QUDT"^^xsd:string ;
+      vaem:dateCreated "2010-12-30T11:17:52"^^xsd:dateTime ;
+      vaem:description "QUDT, or the 'Quantity, Unit, Dimension and Types' ontology defines the base classes properties, and restrictions used for modeling physical quantities, units of measure, and their dimensions in various measurement systems. In physics and science, dimensional analysis is a tool to find or check relations among physical quantities by using their dimensions. The dimension of a physical quantity is the combination of the basic physical dimensions (usually mass, length, time, electric charge, and temperature) which describe it; for example, speed has the dimension length / time, and may be measured in meters per second, miles per hour, or other units."^^xsd:string ;
+      vaem:hasAspectScope "Basic treatment of quantities and units. No dimensional treatment in this graph."^^xsd:string ;
+      vaem:hasDisciplineScope
+              "All disciplines"^^xsd:string ;
+      vaem:hasDomainScope "Science, Medicine and Engineering"^^xsd:string ;
+      vaem:hasRole vaem:SchemaGraph ;
+      vaem:intent "The intent of the QUDT Dimensions Ontology is to provide an OWL Schema for dimensional specificaiton and analysis of units of measure."^^xsd:string ;
+      vaem:lastUpdated "$LastChangedDate: 2011-06-01 13:34:19 -0700 (Wed, 01 Jun 2011) $"^^xsd:string ;
+      vaem:namespace "http://qudt.org/schema/dimension"^^xsd:string ;
+      vaem:namespacePrefix
+              "dimension"^^xsd:string ;
+      vaem:revisionNumber "1.1"^^xsd:string ;
+      vaem:specificity 1 ;
+      vaem:usesNonImportedResource
+              dc:description , dc:creator , dc:rights , <voag:CC-SHAREALIKE_3PT0-US> , dc:contributor , dc:subject , skos:closeMatch , dc:title , skos:exactMatch , dc:author ;
+      owl:imports <http://www.linkedmodel.org/1.2/schema/vaem> , <http://www.linkedmodel.org/1.0/schema/dtype> , <http://qudt.org/1.1/schema/qudt> ;
+      owl:versionIRI <http://qudt.org/1.1/schema/dimension> , <http://qudt.org/1.1/schema/quantity> ;
+      owl:versionInfo "$Id: OSG_dimension-(v1.1).ttl 4988 2011-06-01 20:34:19Z RalphHodgson $"^^xsd:string .
+
+qudt:Dimension
+      rdf:type owl:Class ;
+      rdfs:label "Dimension"^^xsd:string ;
+      rdfs:subClassOf qudt:EnumeratedValue ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:minCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:referenceQuantity
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom qudt:QuantityKind ;
+                owl:onProperty qudt:referenceQuantity
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom qudt:DimensionVector ;
+                owl:onProperty qudt:dimensionVector
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:minCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:dimensionVector
+              ] ;
+      dc:description "A dimension is a relationship between a quantity system, a quantity kind of that system, and one or more dimension vectors. There is one dimension vector for each of the system's base quantity kinds. The vector's magnitude determines the exponent of the base dimension for the referenced quantity kind."^^xsd:string .
+
+qudt:DimensionVector
+      rdf:type owl:Class ;
+      rdfs:label "Dimension Vector"^^xsd:string ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:cardinality "1"^^xsd:int ;
+                owl:onProperty qudt:vectorMagnitude
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom qudt:QuantityKind ;
+                owl:onProperty qudt:basisElement
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:cardinality "1"^^xsd:int ;
+                owl:onProperty qudt:basisElement
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom xsd:float ;
+                owl:onProperty qudt:vectorMagnitude
+              ] ;
+      dc:description "A dimension vector is an association between a quantity kind and a rational number. The quantity kind serves as the basis vector in an abstract vector space, and the rational number is the vector magnitude. The abstract vector space is determined by the chosen set of base quantity kinds for a quantity system."^^xsd:string .
+
+qudt:dimensionInverse
+      rdf:type owl:SymmetricProperty , owl:ObjectProperty , owl:InverseFunctionalProperty , owl:FunctionalProperty ;
+      rdfs:label "dimension inverse"^^xsd:string ;
+      owl:inverseOf qudt:dimensionInverse .
+
+qudt:dimensionVector
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "dimension vector"^^xsd:string .
+
+qudt:referenceQuantity
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "reference quantity"^^xsd:string ;
+      rdfs:subPropertyOf qudt:referenceThing .

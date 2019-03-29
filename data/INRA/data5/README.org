@@ -11,6 +11,7 @@
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 25.3.1 (Org mode 9.1.13)
+#+TODO: TODO REOPEN | DONE CHECKED
 
 * Instructions
 - HTML-rendered version of this file: https://rawgit.com/BigDataGrapes-EU/ontology/master/data/INRA/data5/README.html
@@ -21,25 +22,38 @@
   - Eg the inapplicability of ~dct:created~ to ~time:Instant~ is reported 
     for the first observation file ~2016vendanges_transf_parsed.ttl~ but applies to all observation files
 
-* Recommendations [26/38]
+* Recommendations [22/40]
 
-** Prefixes [3/3]
-*** DONE Turtle prefix format
+** TODO Modularization
+- the model defines ~bdg:dateTime~
+- ~2016_harvest.ttl~ defines ~bdg:date~
+We need to split up the statements by kind 
+(properties in one file, DSDs in another, data in third)
+otherwise we'll get confused and won't have proper reuse across institutions
+
+** Prefixes [0/3]
+*** REOPEN Turtle prefix format
 You use the SPARQL syntax for prefixes
-  : PREFIX inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>
-  While this is not an error (Turtle 1.1 supports this syntax), it's better to use the older syntax
-  : @prefix inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/> .
-*** DONE Check against prefixes.ttl
+: PREFIX inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/>
+While this is not an error (Turtle 1.1 supports this syntax), it's better to use the older syntax
+: @prefix inra_obj:   <http://vinnotec.supagro.inra.fr/public/Pr/> .
+8-Feb-2019 not fixed, eg search for occurrences:
+: grep -i prefix *.ttl | grep -v @
+*** REOPEN Check against prefixes.ttl
 Check your prefixes against prefixes.ttl and use exactly the same. 
 Consult http://prefix.cc for the most popular prefixes to use.
 - Use ~dct:~ not ~dcterms:~ for DC Terms: both are valid, but the former is more popular
 - Use ~geo:~ not ~gsp:~ for GeoSPARQL, the former is a lot more popular
-*** DONE Namespaces are not suggestive
+8-Feb-2019 not fixed, eg see
+: grep -i dcterms *.ttl
+*** REOPEN Namespaces are not suggestive
 These namespaces do not suggest they hold time and observations respectively
   #+BEGIN_SRC Turtle
   PREFIX context:    <http://www.phenome-fppn.fr/m3p/eventInsertion_ARCH2017-03-30>  
   PREFIX inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/>   
   #+END_SRC
+ 8-Feb-2019 not fixed, eg see
+: grep -E "context|inra_data" *.ttl
 
 ** General [1/2]
 These files use the following INRA ontologies/resources
@@ -64,15 +78,15 @@ inra_data:a7fc3837-9c8b-4e4b-a79d-aad0b2876086 rdf:type oepo:Observation ;
    ofpe:Operator inra_agent:fabien.robert ; 
   #+END_SRC
 
-** 2016_harvest.ttl [6/6]
+** 2016_harvest.ttl [5/8]
 Harvest observations: ~inra_onto:Poidsvendangegpesee~ (grams harvested)
-*** DONE syntax error
+*** CHECKED syntax error
 Some unquoted string
   #+BEGIN_SRC Turtle
   [line: 183, col: 24] Unrecognized: divers
   inra_obj:JARDIN-AMPELO divers rouge rdf:type aeo:Plot ;
   #+END_SRC
-*** DONE dct:created is inappropraite
+*** CHECKED dct:created is inappropraite
 You can't "create" a time instant (it just exists!), so ~dcterms:created~ is inappropraite.
 If you want to say when an event was converted (vs occurred), we could use PROV.
   #+BEGIN_SRC Turtle
@@ -80,7 +94,7 @@ If you want to say when an event was converted (vs occurred), we could use PROV.
      time:inXSDDateTimeStamp "2016-08-24T12:00:00+01:00"^^xsd:dateTimeStamp ;
      dcterms:created "2018-07-12T18:52:00.012981"^^xsd:dateTime .
   #+END_SRC
-*** DONE aeo:involvedIn
+*** CHECKED aeo:involvedIn
 "Lot" means a bunch of grapes processed together, that are used to make one "batch" of wine.
 Many different grapes from different plots are put in the same lot, to get a good "bouquet".
 It's used by INRA as follows:
@@ -96,19 +110,58 @@ Maybe it can:
 - a Plot is an entity. However, you don't put Plots in bottles: you put the grapes grown on it (in a particular year) in the Lot.
   So the subject should be somethin like "grapes *harvest* from plot".
 
-*** DONE Class vs Property
+*** REOPEN Class vs Property
 This is a class not property so it can't be used like this.
 (In general I notice that all Bio-Agro ontologies have tons of classes but few properties)
-  :    ofpe:Operator inra_agent:fabien.robert ;
+: ofpe:Operator inra_agent:fabien.robert ;
+
+8-Feb-2019: ~qb:DimensionProperty~ is a property whereas the rest are classes, you can't mix them:
+: bdg:humanSensor a qb:DimensionProperty , foaf:Person , sosa:Sensor, ofpe:Operator; 
+
+Humans can be sensors, this is explicitly mentioned in [[https://www.w3.org/TR/vocab-ssn/][SSN/SOSA]]:
+- SOSA is also more explicit than SSO in its support for virtual and human sensor.
+- ~sosa:Sensor~: Device, agent (including humans), or software (simulation)... generate a Result.
+- Examples of Sensors include the human eyes.
+
+The fact they are humans should be reflected in their class 
+(~foaf:Person~ or ~ofpe:Operator~ in addition to ~sosa:Sensor~),
+it doesn't need to be reflected in the incoming property.
+
+The model already has ~bdg:sensor~, and I don't think we need another property.
+If you insist on having ~bdg:humanSensor~ then:
+1. Make it a sub-property of ~bdg:sensor~
+2. Swap the words as ~bdg:sensorHuman~ to emphasize the two properties are related
+
 *** DONE No georeference? 
 This binds the observation to the plot: please confirm there's no need for a specific lat/long georeference
 #+BEGIN_SRC Turtle
 inra_obj:81-CHARDONNAY rdf:type aeo:Plot ;
    oepo:hasObservation inra_data:6870097e-13b9-4179-83c3-78450c0bb8ce .
 #+END_SRC
+
 *** DONE rdf:value?
 I can't verify whether ~oepo:Observation~ takes ~rdf:value~ because OEPO doesn't define this.
 Using ~rdf:value~ this way is fine, but we should specify it with an RDF Shape
+
+*** TODO DSD Should not be Year-Dependent
+
+<DSD/harvestWeight/2016>
+
+*** TODO GrapeClusterWeight
+~bdg:GrapeClusterWeight~ has these defects:
+- According to common property naming conventions, it should start with lowercase, not uppercase
+- It should be named just ~weight~, the rest should be reflected in ~sosa:hasFeatureOfInterest~
+
+*** TODO Variety
+#+BEGIN_SRC Turtle
+<variety/3197-81> a bdg:variety; 
+  rdfs:label"3197-81"^^xsd:string .
+#+END_SRC
+Has the following problems:
+- Is ~bdg:variety~ a class or property? Make up your mind
+- The label doesn't say it's a variety so is not human-readable
+- If you want to have the pure code, put it in ~dc:identifier~ or ~skos:notation~
+- The variety doesn't relate to a kind of grape. I imagine that each kind (eg Chardonnay) has many varieties?
 
 ** TODO 2016_sensoryAnalysisEssay_ALFColomb.ttl
 Vladimir to check it out

@@ -1,0 +1,362 @@
+# baseURI: http://qudt.org/2.0/vocab/unit/acoustics
+# imports: http://qudt.org/2.0/schema/qudt
+# imports: http://qudt.org/2.0/schema/qudt/science
+# imports: http://qudt.org/2.0/vocab/quantitykind/base
+# imports: http://www.linkedmodel.org/schema/vaem
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dimension: <http://qudt.org/vocab/dimension/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:contributor
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "contributor" ;
+  rdfs:range xsd:string ;
+.
+dc:creator
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "creator" ;
+  rdfs:range xsd:string ;
+.
+dc:description
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "description" ;
+  rdfs:range xsd:string ;
+.
+dc:rights
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "rights" ;
+  rdfs:range xsd:string ;
+.
+dc:subject
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "subject" ;
+  rdfs:range xsd:string ;
+.
+dc:title
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "title" ;
+  rdfs:range xsd:string ;
+.
+<http://qudt.org/2.0/vocab/unit/acoustics>
+  rdf:type owl:Ontology ;
+  dct:author "Ralph Hodgson" ;
+  dct:contributor "Jack Hodges" ;
+  dct:contributor "Simon Cox" ;
+  dct:creator "Ralph Hodgson" ;
+  dct:rights "The QUDT Ontologies are issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to NASA Ames Research Center and TopQuadrant, Inc." ;
+  dct:subject "Units of Measure for Acoustics" ;
+  dct:title "QUDT Acoustics Units Vocabulary Release 2.0" ;
+  vaem:dateCreated "2010-12-30T21:26:38"^^xsd:dateTime ;
+  vaem:description "The QUDT Acoustics Units Vocabulary is an RDF/OWL specifications of common units of measure in the science and engineering domains. All SI Units are included. Links, where possible, have been made to other resources such as dbpedia using 'skos:closeMatch' and 'skos:exactMatch', and ISO using 'qudt:normativeReference'." ;
+  vaem:hasDisciplineScope "Acoustics" ;
+  vaem:hasDomainScope "Acoustics" ;
+  vaem:hasGraphMetadata vaem:GMD_QUDT-UNITS-ACOUSTICS ;
+  vaem:hasGraphRole vaem:VocabularyGraph ;
+  vaem:hasLicenseType voag:CC-SHAREALIKE_3PT0-US ;
+  vaem:intent "To provide a vocabulary of commonly used Acoustics units." ;
+  vaem:namespace "http://qudt.org/vocab/unit/" ;
+  vaem:namespacePrefix "unit" ;
+  vaem:ownedBy "qudt.org" ;
+  vaem:revision "2.0" ;
+  vaem:usesNonImportedResource dc:creator ;
+  vaem:usesNonImportedResource dc:description ;
+  vaem:usesNonImportedResource dc:rights ;
+  vaem:usesNonImportedResource dc:subject ;
+  vaem:usesNonImportedResource dc:title ;
+  vaem:usesNonImportedResource dct:author ;
+  vaem:usesNonImportedResource dct:contributor ;
+  vaem:usesNonImportedResource voag:CC-SHAREALIKE_3PT0-US ;
+  vaem:usesNonImportedResource voag:QUDT-Attribution ;
+  vaem:usesNonImportedResource voag:hasCatalogEntry ;
+  vaem:usesNonImportedResource voag:hasLicenseType ;
+  vaem:usesNonImportedResource voag:withAttributionTo ;
+  vaem:usesNonImportedResource prov:wasInfluencedBy ;
+  vaem:withAttributionTo voag:QUDT-Attribution ;
+  rdfs:label "QUDT Units of Measure for Acoustics Release 2.0" ;
+  owl:imports <http://qudt.org/2.0/schema/qudt> ;
+  owl:imports <http://qudt.org/2.0/schema/qudt/science> ;
+  owl:imports <http://qudt.org/2.0/vocab/quantitykind/base> ;
+  owl:imports <http://www.linkedmodel.org/schema/vaem> ;
+  owl:versionIRI <http://qudt.org/2.0/vocab/unit/acoustics> ;
+.
+unit:B
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:DimensionlessUnit ;
+  rdf:type qudt:LogarithmicUnit ;
+  rdf:type qudt:RF-PowerUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "B" ;
+  qudt:code "0506" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "A logarithmic unit of sound pressure equal to 10 decibels (dB),  It is defined as: \\(1 B = (1/2) \\log_{10}(Np)\\)"^^rdf:HTML ;
+  qudt:id "U-150-0505" ;
+  qudt:quantityKind quantitykind:RF-Power ;
+  qudt:quantityKind quantitykind:SignalStrength ;
+  qudt:symbol "B" ;
+  qudt:ucumCode "B"^^qudt:UCUMci-term ;
+  qudt:ucumCode "B"^^qudt:UCUMcs-term ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Bel" ;
+  skos:exactMatch <http://dbpedia.org/resource/Bel> ;
+  skos:prefLabel "bel" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Sound_unit> ;
+.
+unit:DB
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:DimensionlessUnit ;
+  rdf:type qudt:LogarithmicUnit ;
+  rdf:type qudt:RF-PowerUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "dB" ;
+  qudt:code "0505" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description """<p class=\"lm-para\">A customary logarithmic measure most commonly used (in various ways) for measuring sound.Sound is measured on a logarithmic scale. Informally, if one sound is \\(1\\,bel\\) (10 decibels) \"louder\" than another, this means the louder sound is 10 times louder than the fainter one. A difference of 20 decibels corresponds to an increase of 10 x 10 or 100 times in intensity.</p>
+
+<p class=\"lm-para\">The beginning of the scale, 0 decibels, can be set in different ways, depending on exactly the aspect of sound being measured. For sound intensity (the power of the sound waves per unit of area) \\(0\\,decibel\\) is equal to \\(1\\,picoWatts\\,per\\,Metre\\,Squared\\). This corresponds approximately to the faintest sound that can be detected by a person who has good hearing. For sound pressure (the pressure exerted by the sound waves) 0 decibels equals \\(20\\,micropascals\\,RMS\\), and for sound power \\(0\\,decibels\\) sometimes equals \\(1\\,picoWatt\\). In all cases, one decibel equals \\(\\approx\\,0.115129\\,neper\\).</p>"""^^rdf:HTML ;
+  qudt:id "U-150-0505" ;
+  qudt:quantityKind quantitykind:RF-Power ;
+  qudt:quantityKind quantitykind:SignalStrength ;
+  qudt:symbol "dB" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Decibel" ;
+  skos:exactMatch <http://dbpedia.org/resource/Decibel> ;
+  skos:prefLabel "decibel" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Decibel?oldid=495380648> ;
+.
+unit:DBC
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:SignalDetectionThresholdUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "dBc" ;
+  qudt:code "2520" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\"Decibel Carrier Unit\" is a C.G.S System unit for  'Signal Detection Threshold' expressed as \\(dBc\\)."^^rdf:HTML ;
+  qudt:id "U-150-2520" ;
+  qudt:quantityKind quantitykind:SignalDetectionThreshold ;
+  qudt:symbol "dBc" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Decibel Carrier Unit" ;
+  skos:prefLabel "decibel-carrier-unit" ;
+.
+unit:DBM
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:DimensionlessUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "dBm" ;
+  qudt:code "2500" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\"Decibel Referred to 1mw\" is a C.G.S System  'Dimensionless Ratio' expressed as \\(dBm\\)."^^rdf:HTML ;
+  qudt:quantityKind quantitykind:DimensionlessRatio ;
+  qudt:symbol "dBm" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Decibel Referred to 1mw" ;
+  skos:prefLabel "decibel-referred-to-1mw" ;
+.
+unit:MOHM
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:CGS-Unit ;
+  qudt:abbreviation "mohm" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "A unit of mechanical mobility for sound waves, being the reciprocal of the mechanical ohm unit of impedance, i.e., for an acoustic medium, the ratio of the flux or volumic speed (area times particle speed) of the resulting waves through it to the effective sound pressure (i.e. force) causing them, the unit being qualified, according to the units used, as m.k.s. or c.g.s. The mechanical ohm is equivalent to \\(1\\,dyn\\cdot\\,s\\cdot cm^{-1}\\) or \\(10^{-3} N\\cdot s\\cdot m^{-1}\\)."^^rdf:HTML ;
+  qudt:latexDefinition """\\SI{1}{mohm_{c.g.s}} = \\SI{1}{cm.dyn^{-1}.s^{-1}}, (\\SI{e3}{km.N^{-1}.s^{-1}} in base c.g.s terms),
+
+\\SI{1}{mohm_{m.k.s}} = \\SI{1}{m.N^{-1}.s^{-1}}, (\\si{s.kg^{-1}} in base m.k.s. terms)""" ;
+  qudt:quantityKind quantitykind:MechanicalMobility ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Mohm" ;
+  prov:wasInfluencedBy <http://www.oxfordreference.com/view/10.1093/acref/9780198605225.001.0001/acref-9780198605225-e-914> ;
+.
+unit:N-SEC-PER-M3
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:DerivedUnit ;
+  qudt:abbreviation "N \\cdot s \\cdot m^{-3}" ;
+  qudt:baseUnitDimensions "kg \\cdot s^{-1} \\cdot m^{-2}" ;
+  qudt:conversionMultiplier "1.0"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "The SI unit of specific acoustic impedance. When sound waves pass through any physical substance the pressure of the waves causes the particles of the substance to move. The sound specific impedance is the ratio between the sound pressure and the particle velocity it produces. The specific impedance is \\(1 N \\cdot s \\cdot m^{-3} \\) if unit pressure produces unit velocity."^^rdf:HTML ;
+  qudt:quantityKind quantitykind:SpecificAcousticImpedance ;
+  qudt:symbol "N \\cdot s \\cdot m^{-3}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Newton second per Cubic Meter" ;
+  rdfs:seeAlso unit:RAYL ;
+  skos:prefLabel "Newton second per Cubic Meter" ;
+.
+unit:OCT
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:DimensionlessUnit ;
+  rdf:type qudt:LogarithmicUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "oct" ;
+  qudt:code "0507" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "An octave is a doubling or halving of a frequency.  One oct is the logarithmic frequency interval between \\(f1\\) and \\(f2\\) when \\(f2/f1 = 2\\)."^^rdf:HTML ;
+  qudt:id "U-150-0507" ;
+  qudt:symbol "oct" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Oct" ;
+  skos:exactMatch <http://dbpedia.org/resource/Octave> ;
+  skos:prefLabel "oct" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Octave_(electronics)> ;
+.
+unit:PA-SEC-PER-M
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:DynamicViscosityUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "Pa-s/m" ;
+  qudt:baseUnitsExpression "m^{-2}.kg.s{-1}" ;
+  qudt:code "1331" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "Pascal Second Per Meter (\\(Pa-s/m\\)) is a unit in the category of Specific acoustic impedance. It is also known as pascal-second/meter. Pascal Second Per Meter has a dimension of \\(ML^2T^{-1}\\) where M is mass, L is length, and T is time. It essentially the same as the corresponding standard SI unit \\(kg/m2\\cdot s\\)."^^rdf:HTML ;
+  qudt:id "U-150-1331" ;
+  qudt:quantityKind quantitykind:DynamicViscosity ;
+  qudt:siUnitsExpression "Pa.s/m" ;
+  qudt:symbol "Pa-s/m" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Pascal Second Per Meter" ;
+  skos:prefLabel "pascal-second-per-meter" ;
+  prov:wasInfluencedBy <http://www.efunda.com/glossary/units/units--specific_acoustic_impedance--pascal_second_per_meter.cfm> ;
+.
+unit:PA-SEC-PER-M3
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "Pa-s/m3" ;
+  qudt:baseUnitsExpression "m^{-4}.kg.s{-1}" ;
+  qudt:code "1332" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\\(\\textit{Pascal Second Per Cubic Meter}\\) (\\(Pa-s/m^3\\)) is a unit in the category of Acoustic impedance. It is also known as \\(\\textit{pascal-second/cubic meter}\\). It has a dimension of \\(ML^{-4}T^{-1}\\) where \\(M\\) is mass, \\(L\\) is length, and \\(T\\) is time. This unit is the standard SI unit in this category."^^rdf:HTML ;
+  qudt:id "U-150-1332" ;
+  qudt:siUnitsExpression "Pa.s/m3" ;
+  qudt:symbol "Pa-s/m3" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Pascal Second Per Cubic Meter" ;
+  skos:prefLabel "pascal-second-per-cubic-meter" ;
+  prov:wasInfluencedBy <http://www.efunda.com/glossary/units/units--acoustic_impedance--pascal_second_per_cubic_meter.cfm> ;
+.
+unit:PA2-SEC
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "Pa2-s" ;
+  qudt:code "1332" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "Pascal Squared Second (\\(Pa^2\\cdot s\\)) is a unit in the category of sound exposure."^^rdf:HTML ;
+  qudt:id "U-150-1332" ;
+  qudt:siUnitsExpression "Pa2.s" ;
+  qudt:symbol "Pa2-s" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Pascal Squared Second" ;
+  skos:prefLabel "pascal-squared-second" ;
+  prov:wasInfluencedBy <http://www.efunda.com/glossary/units/units--specific_acoustic_impedance--pascal_second_per_meter.cfm> ;
+.
+unit:PASCAL
+  rdf:type qudt:AcousticsUnit ;
+  qudt:ucumCode "PAL"^^qudt:UCUMci-term ;
+  qudt:ucumCode "Pa"^^qudt:UCUMcs-term ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+.
+unit:RAYL
+  rdf:type qudt:AcousticsUnit ;
+  rdf:type qudt:CGS-Unit ;
+  qudt:abbreviation "rayl" ;
+  qudt:conversionMultiplier "1.0"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description """<p class=\"lm-para\">\\(\\textit{Rayl}\\) is one of two units of specific acoustic impedance. When sound waves pass through any physical substance the pressure of the waves causes the particles of the substance to move. The sound specific impedance is the ratio between the sound pressure and the particle velocity it produces. The specific impedance is one rayl if unit pressure produces unit velocity.</p>
+<p class=\"lm-para\">It is defined as follows: \\(1\\; rayl = 1 dyn\\cdot s\\cdot cm^{-3}\\)</p>
+<p class=\"lm-para\">Or in SI as: \\(1 \\; rayl = 10^{-1}Pa\\cdot s\\cdot m^{-1}\\), which equals \\(10\\,N \\cdot s\\cdot m^{-3}\\).</p>"""^^rdf:HTML ;
+  qudt:quantityKind quantitykind:SpecificAcousticImpedance ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Rayl" ;
+  rdfs:seeAlso unit:N-SEC-PER-M3 ;
+  skos:exactMatch <http://dbpedia.org/resource/Rayl> ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Rayl?oldid=433570842> ;
+.
+voag:QUDT-UNITS-VocabCatalogEntry
+  rdf:type vaem:CatalogEntry ;
+  rdfs:label "QUDT UNITS Vocab Catalog Entry" ;
+.
+voag:hasCatalogEntry
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has catalog entry" ;
+.
+voag:hasLicenseType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has license type"@en-US ;
+.
+voag:withAttributionTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "with attribution to" ;
+.
+vaem:GMD_QUDT-UNITS-ACOUSTICS
+  rdf:type vaem:GraphMetaData ;
+  dct:created "2016-07-04"^^xsd:date ;
+  dct:modified "2016-07-04"^^xsd:date ;
+  dct:title "QUDT UNITS ACOUSTICS Version 2.0 Graph Metadata" ;
+  vaem:description "Standard units of measure for acoustics." ;
+  vaem:hasGraphMetadata vaem:GMD_QUDT-UNITS-ACOUSTICS ;
+  vaem:hasGraphRole vaem:VocabularyGraph ;
+  vaem:hasOwner vaem:TopQuadrant ;
+  vaem:hasSteward vaem:TopQuadrant ;
+  vaem:isMetadataFor <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  vaem:latestPublishedVersion "http://qudt.org/doc/2017/DOC_VOCAB-UNITS-ACOUSTICS"^^xsd:anyURI ;
+  vaem:logo "http://www.linkedmodel.org/lib/lm/images/logos/qudt_logo-300x110.png"^^xsd:anyURI ;
+  vaem:name "qudt" ;
+  vaem:namespace "http://qudt.org/vocab/unit/" ;
+  vaem:namespacePrefix "unit" ;
+  vaem:owner "TopQuadrant, Inc." ;
+  vaem:revision "2.0" ;
+  vaem:title "Acoustics Units Ontology Version 2.0" ;
+  vaem:turtleFileURL "http://qudt.org/2.0/vocab/VOCAB_QUDT-UNITS-ACOUSTICS-v2.0.ttl"^^xsd:anyURI ;
+  vaem:usesNonImportedResource dct:abstract ;
+  vaem:usesNonImportedResource dct:author ;
+  vaem:usesNonImportedResource dct:created ;
+  vaem:usesNonImportedResource dct:modified ;
+  vaem:usesNonImportedResource dct:title ;
+  vaem:usesNonImportedResource <http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US> ;
+  vaem:withAttributionTo "QUDT is issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to TopQuadrant, Inc." ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/acoustics> ;
+  rdfs:isDefinedBy unit:acoustics ;
+  rdfs:label "Acoustics Units Ontology Version 2.0" ;
+.
+skos:closeMatch
+  rdf:type rdf:Property ;
+.
+skos:exactMatch
+  rdf:type rdf:Property ;
+.

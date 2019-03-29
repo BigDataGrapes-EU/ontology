@@ -1,0 +1,285 @@
+# baseURI: http://qudt.org/2.0/vocab/unit/light
+# imports: http://qudt.org/2.0/schema/qudt
+# imports: http://qudt.org/2.0/vocab/quantitykind/base
+# imports: http://www.linkedmodel.org/schema/vaem
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dimension: <http://qudt.org/vocab/dimension/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:contributor
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "contributor" ;
+  rdfs:range xsd:string ;
+.
+dc:creator
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "creator" ;
+  rdfs:range xsd:string ;
+.
+dc:description
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "description" ;
+  rdfs:range xsd:string ;
+.
+dc:rights
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "rights" ;
+  rdfs:range xsd:string ;
+.
+dc:subject
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "subject" ;
+  rdfs:range xsd:string ;
+.
+dc:title
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "title" ;
+  rdfs:range xsd:string ;
+.
+<http://qudt.org/2.0/vocab/unit/light>
+  rdf:type owl:Ontology ;
+  vaem:hasGraphMetadata vaem:GMD_QUDT-UNITS-LIGHT ;
+  rdfs:label "QUDT Unit" ;
+  owl:imports <http://qudt.org/2.0/schema/qudt> ;
+  owl:imports <http://qudt.org/2.0/vocab/quantitykind/base> ;
+  owl:imports <http://www.linkedmodel.org/schema/vaem> ;
+  owl:versionIRI <http://qudt.org/2.0/vocab/unit/light> ;
+.
+qudt:LuminanceUnit
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:label "Luminancey unit" ;
+  rdfs:subClassOf qudt:DomainSpecificUnit ;
+.
+qudt:OpticalPowerUnit
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:label "Optical power unit" ;
+  rdfs:subClassOf qudt:DomainSpecificUnit ;
+.
+unit:CANDLE
+  rdf:type qudt:Unit ;
+  qudt:quantityKind quantitykind:LuminousIntensity ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+.
+unit:CD
+  rdf:type qudt:BaseUnit ;
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:SI-Unit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "cd" ;
+  qudt:code "0335" ;
+  qudt:conversionMultiplier "1.0"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\\(\\textit{Candela}\\) is a unit for  'Luminous Intensity' expressed as \\(cd\\).  The candela is the SI base unit of luminous intensity; that is, power emitted by a light source in a particular direction, weighted by the luminosity function (a standardized model of the sensitivity of the human eye to different wavelengths, also known as the luminous efficiency function). A common candle emits light with a luminous intensity of roughly one candela."^^rdf:HTML ;
+  qudt:id "U000E0335" ;
+  qudt:isUnitOfSystem qudt:SOU_CGS ;
+  qudt:isUnitOfSystem qudt:SOU_SI ;
+  qudt:quantityKind quantitykind:LuminousIntensity ;
+  qudt:symbol "cd" ;
+  qudt:ucumCode "CD"^^qudt:UCUMci-term ;
+  qudt:ucumCode "cd"^^qudt:UCUMcs-term ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:label "Candela" ;
+  skos:exactMatch <http://dbpedia.org/resource/Candela> ;
+  skos:prefLabel "candela" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Candela?oldid=484253082> ;
+  prov:wasInfluencedBy <http://www.simetric.co.uk/siderived.htm> ;
+.
+unit:CD-PER-IN2
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:quantityKind quantitykind:Luminance ;
+  qudt:quantityKind quantitykind:LuminousIntensity ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+.
+unit:CD-PER-M2
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:quantityKind quantitykind:Luminance ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+.
+unit:CP
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:quantityKind quantitykind:LuminousIntensity ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+.
+unit:DIOPTER
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:OpticalPowerUnit ;
+  qudt:abbreviation "D" ;
+  qudt:code "2064" ;
+  qudt:conversionMultiplier "1"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "A dioptre, or diopter, is a unit of measurement for the optical power of a lens or curved mirror, which is equal to the reciprocal of the focal length measured in metres (that is, \\(1/metre\\)). For example, a \\(3 \\; dioptre\\) lens brings parallel rays of light to focus at \\(1/3\\,metre\\). The same unit is also sometimes used for other reciprocals of distance, particularly radii of curvature and the vergence of optical beams. Though the diopter is based on the SI-metric system it has not been included in the standard so that there is no international name or abbreviation for this unit of measurement within the international system of units this unit for optical power would need to be specified explicitly as the inverse metre."^^rdf:HTML ;
+  qudt:id "U150E2064" ;
+  qudt:isUnitOfSystem qudt:SOU_CGS ;
+  qudt:quantityKind quantitykind:Curvature ;
+  qudt:symbol "D" ;
+  qudt:ucumCode "[DIOP]"^^qudt:UCUMci-term ;
+  qudt:ucumCode "[diop]"^^qudt:UCUMcs-term ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:label "Diopter" ;
+  skos:exactMatch <http://dbpedia.org/resource/Dioptre> ;
+  skos:prefLabel "diopter" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Dioptre?oldid=492506920> ;
+.
+unit:FT-L
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "ft-L" ;
+  qudt:code "0635" ;
+  qudt:conversionMultiplier "3.4262591"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "\"Foot Lambert\" is a C.G.S System unit for  'Luminance' expressed as \\(ft-L\\)."^^rdf:HTML ;
+  qudt:id "U-150-0635" ;
+  qudt:isUnitOfSystem qudt:SOU_CGS ;
+  qudt:quantityKind quantitykind:Luminance ;
+  qudt:symbol "ft-L" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:label "Foot Lambert" ;
+.
+unit:LUX
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:quantityKind quantitykind:LuminousFluxPerArea ;
+  qudt:ucumCode "LX"^^qudt:UCUMci-term ;
+  qudt:ucumCode "lx"^^qudt:UCUMcs-term ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+.
+unit:LUX-HR
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "lx hr" ;
+  qudt:baseUnitsExpression "m^{-2}.cd" ;
+  qudt:code "1080" ;
+  qudt:conversionMultiplier "1"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "The SI unit for measuring the illumination (illuminance) of a surface. One lux is defined as an illumination of one lumen per square meter or 0.0001 phot. In considering the various light units, it's useful to think about light originating at a point and shining upon a surface. The intensity of the light source is measured in candelas; the total light flux in transit is measured in lumens (1 lumen = 1 candelau00b7steradian); and the amount of light received per unit of surface area is measured in lux (1 lux = 1 lumen/square meter). One lux is equal to approximately 0.09290 foot candle."^^rdf:HTML ;
+  qudt:id "U150E1080" ;
+  qudt:quantityKind quantitykind:LuminousFluxPerArea ;
+  qudt:siUnitsExpression "lm-hr/m^2" ;
+  qudt:symbol "lx-hr" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:label "Lux Hour" ;
+  skos:exactMatch <http://dbpedia.org/resource/Lux> ;
+  skos:prefLabel "Lux Hour" ;
+  skos:prefLabel "lux hour" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Lux?oldid=494700274> ;
+.
+unit:W-PER-M2-DEG_K4
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:LuminanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "W/(m^2.K^4)" ;
+  qudt:code "1955" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "Watt Per Square Meter Per Quartic Kelvin (\\(W/m2\\cdotK4)\\) is a unit in the category of light."^^rdf:HTML ;
+  qudt:id "U-150-1955" ;
+  qudt:quantityKind quantitykind:PowerPerAreaQuarticTemperature ;
+  qudt:symbol "W/(m^2.K^4}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:label "Watt per Square Meter Quartic Kelvin" ;
+  skos:prefLabel "watt-per-square-meter-quartic-kelvin" ;
+.
+voag:QUDT-UNITS-VocabCatalogEntry
+  rdf:type vaem:CatalogEntry ;
+  rdfs:label "QUDT UNITS Vocab Catalog Entry" ;
+.
+voag:hasCatalogEntry
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has catalog entry" ;
+.
+voag:hasLicenseType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has license type"@en-US ;
+.
+voag:withAttributionTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "with attribution to" ;
+.
+vaem:Attribution
+  rdf:type owl:Class ;
+  rdfs:label "Attribution" ;
+  rdfs:subClassOf prov:Attribution ;
+.
+vaem:GMD_QUDT-UNITS-LIGHT
+  rdf:type vaem:GraphMetaData ;
+  dct:author "Ralph Hodgson" ;
+  dct:contributor "Jack Hodges" ;
+  dct:contributor "James E. Masters" ;
+  dct:contributor "Steve Ray" ;
+  dct:created "2011-04-20"^^xsd:date ;
+  dct:creator "Ralph Hodgson" ;
+  dct:modified "2017-03-18"^^xsd:date ;
+  dct:rights "The QUDT Ontologies are issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to NASA Ames Research Center and TopQuadrant, Inc." ;
+  dct:title "Light Units Ontology Version 2.0" ;
+  vaem:description """<p class=\"lm-para\">The <em>Light Units Vocabulary</em> covers the defining units for phenomena associated with light.</p>
+<p class=\"lm-para\">Where possible naming conventions for units respect the well-known abbreviations for units. 
+These conventions are documented in the QUDT Name and Identifier Rules specification.
+Many units can be scaled with decimal prefixes such as \\(kilo\\) and \\(micro\\).
+</p>"""^^rdf:HTML ;
+  vaem:hasGraphRole vaem:VocabularyGraph ;
+  vaem:hasLicenseType voag:CC-SHAREALIKE_3PT0-US ;
+  vaem:hasOwner vaem:QUDT ;
+  vaem:hasSteward vaem:QUDT ;
+  vaem:intent "The intent of this graph is the specification of the base units for light." ;
+  vaem:isMetadataFor <http://qudt.org/2.0/vocab/unit/light> ;
+  vaem:latestPublishedVersion "http://qudt.org/doc/2017/DOC_VOCAB-UNITS-LIGHT-v2.0.html"^^xsd:anyURI ;
+  vaem:logo "http://www.linkedmodel.org/lib/lm/images/logos/qudt_logo-300x110.png"^^xsd:anyURI ;
+  vaem:name "qudt" ;
+  vaem:namespace "http://qudt.org/vocab/unit/" ;
+  vaem:namespacePrefix "unit" ;
+  vaem:owner "qudt.org" ;
+  vaem:revision "2.0" ;
+  vaem:title "Light Units Ontology Version 2.0" ;
+  vaem:turtleFileURL "http://qudt.org/2.0/vocab/VOCAB_QUDT-UNITS-LIGHT-v2.0.ttl"^^xsd:anyURI ;
+  vaem:usesNonImportedResource dct:abstract ;
+  vaem:usesNonImportedResource dct:author ;
+  vaem:usesNonImportedResource dct:contributor ;
+  vaem:usesNonImportedResource dct:created ;
+  vaem:usesNonImportedResource dct:description ;
+  vaem:usesNonImportedResource dct:modified ;
+  vaem:usesNonImportedResource dct:rights ;
+  vaem:usesNonImportedResource dct:source ;
+  vaem:usesNonImportedResource dct:subject ;
+  vaem:usesNonImportedResource dct:title ;
+  vaem:usesNonImportedResource voag:QUDT-Attribution ;
+  vaem:usesNonImportedResource <http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US> ;
+  vaem:usesNonImportedResource skos:closeMatch ;
+  vaem:usesNonImportedResource skos:exactMatch ;
+  vaem:usesNonImportedResource prov:wasInfluencedBy ;
+  vaem:withAttributionTo voag:QUDT-Attribution ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/light> ;
+  rdfs:isDefinedBy unit:light ;
+  rdfs:label "Light Units Ontology Version 2.0" ;
+  owl:versionIRI <http://qudt.org/2.0/vocab/unit/light> ;
+.
+skos:closeMatch
+  rdf:type rdf:Property ;
+.
+skos:exactMatch
+  rdf:type rdf:Property ;
+.

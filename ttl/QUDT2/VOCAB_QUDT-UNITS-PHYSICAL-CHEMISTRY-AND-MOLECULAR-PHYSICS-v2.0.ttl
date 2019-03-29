@@ -1,0 +1,418 @@
+# baseURI: http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics
+# imports: http://qudt.org/2.0/schema/qudt
+# imports: http://qudt.org/2.0/schema/qudt/science
+# imports: http://qudt.org/2.0/vocab/quantity/base
+# imports: http://www.linkedmodel.org/schema/vaem
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dimension: <http://qudt.org/vocab/dimension/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix quantity: <http://qudt.org/vocab/quantity/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix vaem: <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag: <http://voag.linkedmodel.org/schema/voag#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dc:contributor
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "contributor" ;
+  rdfs:range xsd:string ;
+.
+dc:creator
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "creator" ;
+  rdfs:range xsd:string ;
+.
+dc:description
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "description" ;
+  rdfs:range xsd:string ;
+.
+dc:rights
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "rights" ;
+  rdfs:range xsd:string ;
+.
+dc:subject
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "subject" ;
+  rdfs:range xsd:string ;
+.
+dc:title
+  rdf:type owl:AnnotationProperty ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "title" ;
+  rdfs:range xsd:string ;
+.
+<http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics>
+  rdf:type owl:Ontology ;
+  vaem:hasGraphMetadata vaem:GMD_QUDT-VOCAB-PHYSICAL-CHEMISTRY-AND-MOLECULAR-PHYSICS ;
+  rdfs:label "QUDT Unit" ;
+  owl:imports <http://qudt.org/2.0/schema/qudt> ;
+  owl:imports <http://qudt.org/2.0/schema/qudt/science> ;
+  owl:imports <http://qudt.org/2.0/vocab/quantity/base> ;
+  owl:imports <http://www.linkedmodel.org/schema/vaem> ;
+  owl:versionIRI <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+.
+unit:BTU-PER-LB-MOL
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:EnergyAndWorkPerMassAmountOfSubstance ;
+  rdf:type qudt:ImperialUnit ;
+  qudt:abbreviation "Btu/(lb-mol)" ;
+  qudt:code "0225" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p><b>BTU per Pound Mole</b> is an Imperial unit for <em>'Energy And Work Per Mass Amount Of Substance'</em> expressed as \\(Btu/(lb-mol)\\).</p>"^^rdf:HTML ;
+  qudt:id "U-150-0225" ;
+  qudt:quantityKind quantity:EnergyAndWorkPerMassAmountOfSubstance ;
+  qudt:symbol "Btu/(lb-mol)" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "BTU per Pound Mole" ;
+  skos:prefLabel "btu-per-pound-mole" ;
+.
+unit:BTU-PER-MOL-DEGF
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:ImperialUnit ;
+  rdf:type qudt:MolarHeatCapacityUnit ;
+  qudt:abbreviation "Btu/(lb-mol-degF)" ;
+  qudt:code "0230" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p><b>BTU per Pound Mole Degree Fahrenheit</b> is an Imperial unit for <em>'Molar Heat Capacity'</em> expressed as \\(Btu/(lb-mol-degF)\\).</p>"^^rdf:HTML ;
+  qudt:id "U-150-0230" ;
+  qudt:quantityKind quantity:MolarHeatCapacity ;
+  qudt:symbol "Btu/(lb-mol-degF)" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "BTU per Pound Mole Degree Fahrenheit" ;
+  skos:prefLabel "btu-per-pound-mole-degree-fahrenheit" ;
+.
+unit:C-PER-MOL
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:ElectrochemistryUnit ;
+  rdf:type qudt:Unit ;
+  qudt:code "0911" ;
+  qudt:conversionMultiplier "1.0"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p><strong>Coulomb Per Mol</strong> (\\(C/mol\\)) is a unit in the category of Molar electric charge. It is also known as \\(coulombs/mol\\). Coulomb Per Mol has a dimension of \\(TN{-1}I\\) where \\(T\\) is time, \\(N\\) is amount of substance, and \\(I\\) is electric current. This unit is the standard SI unit in this category.</p>"^^rdf:HTML ;
+  qudt:id "U-030-0911" ;
+  qudt:quantityKind quantity:ElectricChargePerAmountOfSubstance ;
+  qudt:symbol "C mol^{-1}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Coulomb per Mole" ;
+  skos:prefLabel "coulomb-per-mole" ;
+.
+unit:IU
+  rdf:type qudt:AmountOfSubstanceUnit ;
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "IU" ;
+  qudt:code "2062" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p><strong>International Unit</strong> is a C.G.S System unit for <em>'Amount Of Substance'</em> expressed as \\(IU\\)</p>."^^rdf:HTML ;
+  qudt:id "U-030-2062" ;
+  qudt:quantityKind quantity:AmountOfSubstance ;
+  qudt:symbol "IU" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "International Unit" ;
+  skos:exactMatch <http://dbpedia.org/resource/International_unit> ;
+  skos:prefLabel "international-unit" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/International_unit?oldid=488801913> ;
+.
+unit:J-M-PER-MOL
+  rdf:type qudt:ChemistryUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "J m mol^{-1}" ;
+  qudt:code "0913" ;
+  qudt:conversionMultiplier "1"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p>TBD</p>"^^rdf:HTML ;
+  qudt:id "U-030-0913" ;
+  qudt:quantityKind quantity:LengthMolarEnergy ;
+  qudt:symbol "J m mol^{-1}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Joule Meter per Mole" ;
+  skos:prefLabel "joule-meter-per-mole" ;
+.
+unit:J-PER-MOL
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:MolarEnergyUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "J/mol" ;
+  qudt:code "0910" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p>The joule per mole (symbol: \\(Jmol^{-1}\\)) is an SI derived unit of energy per amount of material. Energy is measured in joules, and the amount of material is measured in moles. Physical quantities measured in \\(Jmol^{-1}\\)) usually describe quantities of energy transferred during phase transformations or chemical reactions. Division by the number of moles facilitates comparison between processes involving different quantities of material and between similar processes involving different types of materials. The meaning of such a quantity is always context-dependent and, particularly for chemical reactions, is dependent on the (possibly arbitrary) definition of a 'mole' for a particular process.</p>"^^rdf:HTML ;
+  qudt:id "U-030-0910" ;
+  qudt:quantityKind quantity:MolarEnergy ;
+  qudt:symbol "J/mol" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Joule per Mole" ;
+  skos:prefLabel "joule-per-mole" ;
+.
+unit:KAT
+  rdf:type qudt:CatalyticActivityUnit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "kat" ;
+  qudt:baseUnitDimensions "s^{-1}.mol" ;
+  qudt:code "0925" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "A unit of catalytic activity used especially in the chemistry of enzymes. A catalyst is a substance that starts or speeds a chemical reaction. Enzymes are proteins that act as catalysts within the bodies of living plants and animals. A catalyst has an activity of one katal if it enables a reaction to proceed at the rate of one mole per second. "^^rdf:HTML ;
+  qudt:id "U-030-0925" ;
+  qudt:quantityKind quantity:CatalyticActivity ;
+  qudt:symbol "kat" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Katal" ;
+  skos:exactMatch <http://dbpedia.org/resource/Katal> ;
+  skos:prefLabel "katal" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Katal?oldid=486431865> ;
+.
+unit:KG-PER-MOL
+  rdf:type qudt:ChemistryUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "kg mol^{-1}" ;
+  qudt:code "0914" ;
+  qudt:conversionMultiplier "1"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p>In chemistry, the molar mass M is defined as the mass of a given substance (chemical element or chemical compound) divided by its amount of substance. It is a physical property of a given substance. The base SI unit for molar mass is \\(kg/mol\\). However, for historical reasons, molar masses are almost always expressed in \\(g/mol\\). As an example, the molar mass of water is approximately: \\(18.01528(33) \\; g/mol\\)</p>."^^rdf:HTML ;
+  qudt:id "U-013-0914" ;
+  qudt:quantityKind quantity:MolarMass ;
+  qudt:symbol "kg mol^{-1}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Kilogram per Mol" ;
+  skos:prefLabel "kilogram-per-mol" ;
+.
+unit:KiloCAL-PER-MOL
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:MolarEnergyUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "kcal/mol" ;
+  qudt:code "0295" ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "The kilocalorie per mole is a derived unit of energy per Avogadro's number of particles. It is the quotient of a kilocalorie (1000 thermochemical gram calories) and a mole, mainly used in the United States. In SI units, it is equal to \\(4.184 kJ/mol\\), or \\(6.9477 \\times 10 J per molecule\\). At room temperature it is equal to 1.688 . Physical quantities measured in \\(kcal\\cdot mol\\) are usually thermodynamical quantities; mostly free energies such as: Heat of vaporization Heat of fusion</p>."^^rdf:HTML ;
+  qudt:quantityKind quantity:MolarEnergy ;
+  qudt:symbol "kcal/mol" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Kilocalorie per Mole" ;
+  skos:prefLabel "kilocalorie-per-mole" ;
+.
+unit:LB-MOL
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:MassAmountOfSubstanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "lb-mol" ;
+  qudt:code "1465" ;
+  qudt:conversionMultiplier 0.45359237e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p><strong>Pound Mole</strong> is a C.G.S System unit for <em>'Mass Amount Of Substance'</em> expressed as \\(lb-mol\\).</p>."^^rdf:HTML ;
+  qudt:id "U-030-1465" ;
+  qudt:quantityKind quantity:MassAmountOfSubstance ;
+  qudt:symbol "lb-mol" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Pound Mole" ;
+  skos:prefLabel "pound-mole" ;
+.
+unit:M3-PER-MOL
+  rdf:type qudt:ChemistryUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "m^{3} mol^{-1}" ;
+  qudt:code "0912" ;
+  qudt:conversionMultiplier "1"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p>The molar volume, symbol \\(Vm\\), is the volume occupied by one mole of a substance (chemical element or chemical compound) at a given temperature and pressure. It is equal to the molar mass (M) divided by the mass density. It has the SI unit cubic metres per mole \\(m3/mol\\), although it is more practical to use the units cubic decimetres per mole \\(dm3/mol\\) for gases and cubic centimetres per mole \\(cm3/mol\\) for liquids and solids</p>."^^rdf:HTML ;
+  qudt:id "U-030-0912" ;
+  qudt:quantityKind quantity:MolarVolume ;
+  qudt:symbol "m^{3} mol^{-1}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Cubic Meter per Mole" ;
+  skos:prefLabel "cubic-meter-per-mole" ;
+.
+unit:MOL
+  rdf:type qudt:AmountOfSubstanceUnit ;
+  rdf:type qudt:BaseUnit ;
+  qudt:abbreviation "mol" ;
+  qudt:code "1210" ;
+  qudt:conversionMultiplier "1"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description """<p>The mole is a unit of measurement used in chemistry to express amounts of a chemical substance. The official definition, adopted as part of the SI system in 1971, is that one mole of a substance contains just as many elementary entities (atoms, molecules, ions, or other kinds of particles) as there are atoms in 12 grams of carbon-12 (carbon-12 is the most common atomic form of carbon, consisting of atoms having 6 protons and 6 neutrons).  This corresponds to a value of \\(6.02214179(30) \\times 1023\\) elementary entities of the substance. It is one of the base units in the International System of Units, and has the unit symbol \\(mol\\)</p>
+
+<p>A Mole is the SI base unit of the amount of a substance (as distinct from its mass or weight). Moles measure the actual number of atoms or molecules in an object. An earlier name is gram molecular weight, because one mole of a chemical compound is the same number of grams as the molecular weight of a molecule of that compound measured in atomic mass units. </p>"""^^rdf:HTML ;
+  qudt:id "U-000-1210" ;
+  qudt:quantityKind quantity:AmountOfSubstance ;
+  qudt:symbol "mol" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Mole" ;
+  skos:exactMatch <http://dbpedia.org/resource/Mole_%28unit%29> ;
+  skos:prefLabel "mole" ;
+  prov:wasInfluencedBy <http://en.wikipedia.org/wiki/Mole_(unit)> ;
+.
+unit:MOL-DEGC
+  rdf:type qudt:AmountOfSubstanceTemperatureUnit ;
+  rdf:type qudt:CGS-Unit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:ThermodynamicsUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "mol-degC" ;
+  qudt:code "2004" ;
+  qudt:description "<p>TBD</p>"^^rdf:HTML ;
+  qudt:id "U-150-2004" ;
+  qudt:quantityKind quantity:TemperatureAmountOfSubstance ;
+  qudt:symbol "mol-degC" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Mole Degree Celsius" ;
+  skos:prefLabel "mole-degree-celsius" ;
+.
+unit:MOL-K
+  rdf:type qudt:AmountOfSubstanceTemperatureUnit ;
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "mol-K" ;
+  qudt:code "1215" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p><strong>Mole Kelvin</strong> is a unit for <em>'Temperature Amount Of Substance'</em> expressed as \\(mol-K\\)</p>."^^rdf:HTML ;
+  qudt:id "U-030-1215" ;
+  qudt:quantityKind quantity:TemperatureAmountOfSubstance ;
+  qudt:symbol "mol-K" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Mole Kelvin" ;
+  skos:prefLabel "mole-kelvin" ;
+.
+unit:MOL-PER-KG
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:MolalConcentrationUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "mol/kg" ;
+  qudt:conversionMultiplier "1.0"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p>TBD</p>"^^rdf:HTML ;
+  qudt:quantityKind quantity:AmountOfSubstancePerUnitMass ;
+  qudt:symbol "mol/kg" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Mol per Kilogram" ;
+  skos:prefLabel "mol-per-kilogram" ;
+.
+unit:MOL-PER-M3
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:MolarConcentrationUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "mol/m^{3}" ;
+  qudt:code "1220" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p>The SI derived unit for amount-of-substance concentration is the mole/cubic meter</p>."^^rdf:HTML ;
+  qudt:id "U-030-1220" ;
+  qudt:quantityKind quantity:AmountOfSubstancePerUnitVolume ;
+  qudt:symbol "mol/m^{3}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Mole per Cubic Meter" ;
+  skos:prefLabel "mole-per-cubic-meter" ;
+.
+unit:PER-MOL
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:InverseAmountOfSubstanceUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "/mol" ;
+  qudt:conversionMultiplier "1.0"^^xsd:double ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "<p><strong>Per Mole Unit</strong> is a a demominator unit with dimensions \\(mol^{-1}\\)</p>."^^rdf:HTML ;
+  qudt:quantityKind quantity:InverseAmountOfSubstance ;
+  qudt:symbol "mol^{-1}" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Per Mole Unit" ;
+  skos:prefLabel "per-mole-unit" ;
+.
+voag:QUDT-UNITS-VocabCatalogEntry
+  rdf:type vaem:CatalogEntry ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "QUDT UNITS Vocab Catalog Entry" ;
+.
+voag:hasCatalogEntry
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has catalog entry" ;
+.
+voag:hasLicenseType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has license type"@en-US ;
+.
+voag:withAttributionTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "with attribution to" ;
+.
+vaem:GMD_QUDT-VOCAB-PHYSICAL-CHEMISTRY-AND-MOLECULAR-PHYSICS
+  rdf:type vaem:GraphMetaData ;
+  dct:author "Ralph Hodgson" ;
+  dct:contributor "Daniel Mekonnen" ;
+  dct:contributor "James E. Masters" ;
+  dct:contributor "Steve Ray" ;
+  dct:created "2011-04-20"^^xsd:date ;
+  dct:creator "Ralph Hodgson" ;
+  dct:description "Physical Chemistry and Molecular Physics Units Ontology Version 2.0" ;
+  dct:modified "2016-09-24T19:28:04.426-04:00"^^xsd:dateTime ;
+  dct:rights "The QUDT Ontologies are issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to NASA Ames Research Center and TopQuadrant, Inc." ;
+  dct:subject "Physical Chemistry and Molecular Physics Units Ontology" ;
+  dct:title "Physical Chemistry and Molecular Physics Units Ontology Version 2.0" ;
+  vaem:description """<p class=\"lm-para\">The 'Physical Chemistry and Molecular Physics Units Vocabulary' covers basic units for the Imperial, SI and US Customary units of measure.</p>
+<p class=\"lm-para\">Where possible naming conventions for units respect the well-known abbreviations for units. 
+These conventions are documented in the QUDT Name and Identifier Rules specification.
+When a name is overloaded, a discriminator is added.
+Many units can be scaled with decimal prefixes such as <i>klilo</i> and <i>micro</i>.
+For some scaling prefixes the unit of measure may currently be missing.</p>"""^^rdf:HTML ;
+  vaem:hasGraphRole vaem:VocabularyGraph ;
+  vaem:hasLicenseType voag:CC-SHAREALIKE_3PT0-US ;
+  vaem:hasOwner vaem:QUDT ;
+  vaem:hasSteward vaem:QUDT ;
+  vaem:intent "The intent of this graph is the specification of the base units for physical chemistry and molecular physics." ;
+  vaem:isMetadataFor <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  vaem:latestPublishedVersion "http://qudt.org/vocab/unit/units-physical-chemistry-and-molecular-physics"^^xsd:anyURI ;
+  vaem:logo "http://www.linkedmodel.org/lib/lm/images/logos/qudt_logo-300x110.png"^^xsd:anyURI ;
+  vaem:name "qudt" ;
+  vaem:namespace "http://qudt.org/vocab/unit/" ;
+  vaem:namespacePrefix "unit" ;
+  vaem:owner "qudt.org" ;
+  vaem:revision "2.0" ;
+  vaem:title "Physical Chemistry and Molecular Physics Units Ontology Version 2.0" ;
+  vaem:turtleFileURL "http://qudt.org/2.0/vocab/VOCAB_QUDT-UNITS-PHYSICAL-CHEMISTRY-AND-MOLECULAR-PHYSICS-v2.0.ttl"^^xsd:anyURI ;
+  vaem:usesNonImportedResource dct:abstract ;
+  vaem:usesNonImportedResource dct:author ;
+  vaem:usesNonImportedResource dct:contributor ;
+  vaem:usesNonImportedResource dct:created ;
+  vaem:usesNonImportedResource dct:description ;
+  vaem:usesNonImportedResource dct:modified ;
+  vaem:usesNonImportedResource dct:rights ;
+  vaem:usesNonImportedResource dct:source ;
+  vaem:usesNonImportedResource dct:subject ;
+  vaem:usesNonImportedResource dct:title ;
+  vaem:usesNonImportedResource voag:QUDT-Attribution ;
+  vaem:usesNonImportedResource <http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US> ;
+  vaem:usesNonImportedResource skos:closeMatch ;
+  vaem:usesNonImportedResource skos:exactMatch ;
+  vaem:usesNonImportedResource prov:wasInfluencedBy ;
+  vaem:withAttributionTo voag:QUDT-Attribution ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/physical-chemistry-and-molecular-physics> ;
+  rdfs:label "Physical Chemistry and Molecular Physics Units Ontology Version 2.0" ;
+  owl:versionIRI <http://qudt.org/2.0/vocab/unit/electromagnetism> ;
+.
+skos:closeMatch
+  rdf:type rdf:Property ;
+.
+skos:exactMatch
+  rdf:type rdf:Property ;
+.
+prov:wasInfluencedBy
+  rdf:type owl:ObjectProperty ;
+  rdfs:isDefinedBy prov: ;
+  rdfs:label "was influenced by" ;
+.

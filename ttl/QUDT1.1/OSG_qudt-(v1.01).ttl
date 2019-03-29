@@ -1,0 +1,1740 @@
+# Saved by TopBraid on Wed Jun 01 22:57:33 PDT 2011
+# baseURI: http://qudt.org/1.1/schema/qudt
+# imports: http://www.linkedmodel.org/1.2/schema/vaem
+# imports: http://www.linkedmodel.org/1.0/schema/dtype
+
+@prefix creativecommons:  <http://creativecommons.org/ns#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dtype:   <http://www.linkedmodel.org/schema/dtype#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix qudt:    <http://qudt.org/schema/qudt#> .
+@prefix qudt-1.1:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix vaem:    <http://www.linkedmodel.org/schema/vaem#> .
+@prefix voag:    <http://voag.linkedmodel.org/schema/voag#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+dc:contributor
+      rdf:type owl:AnnotationProperty ;
+      rdfs:label "contributor"^^xsd:string ;
+      rdfs:range xsd:string .
+
+dc:creator
+      rdf:type owl:AnnotationProperty ;
+      rdfs:label "creator"^^xsd:string ;
+      rdfs:range xsd:string .
+
+dc:description
+      rdf:type owl:AnnotationProperty ;
+      rdfs:label "description"^^xsd:string ;
+      rdfs:range xsd:string .
+
+dc:rights
+      rdf:type owl:AnnotationProperty ;
+      rdfs:label "rights"^^xsd:string ;
+      rdfs:range xsd:string .
+
+dc:subject
+      rdf:type owl:AnnotationProperty ;
+      rdfs:label "subject"^^xsd:string ;
+      rdfs:range xsd:string .
+
+dc:title
+      rdf:type owl:AnnotationProperty ;
+      rdfs:label "title"^^xsd:string ;
+      rdfs:range xsd:string .
+
+<http://qudt.org/1.1/schema/qudt>
+      rdf:type owl:Ontology ;
+      rdfs:label "Quantities, Units, Dimensions and Types (QUDT) - Level 1"^^xsd:string ;
+      dc:contributor "David Price"^^xsd:string , "Daniel Mekonnen"^^xsd:string , "Irene Polikoff"^^xsd:string , "Ralph Hodgson"^^xsd:string ;
+      dc:creator "James E. Masters"^^xsd:string ;
+      dc:rights "The QUDT Ontologies are issued under a Creative Commons Attribution Share Alike 3.0 United States License. Attribution should be made to NASA Ames Research Center and TopQuadrant, Inc."^^xsd:string ;
+      dc:subject "Quantities, Units, Dimensions and Types"^^xsd:string ;
+      dc:title "Quantities, Units, Dimensions and Types (QUDT) Ontology Version 1.1"^^xsd:string ;
+      voag:hasLicenseType <voag:CC-SHAREALIKE_3PT0-US> ;
+      voag:withAttributionTo
+              voag:TopQuadrantAttribution , qudt:NASA-ARC-Attribution ;
+      vaem:acronym "QUDT"^^xsd:string ;
+      vaem:dateCreated "2011-01-06T09:30:49"^^xsd:dateTime ;
+      vaem:description "The QUDT, or 'Quantity, Unit, Dimension and Type' collection of ontologies defines the base classes properties, and restrictions used for modeling physical quantities, units of measure, and their dimensions in various measurement systems. The goal of the QUDT ontology is to provide a unified model of, measurable quantities, units for measuring different kinds of quantities, the numerical values of quantities in different units of measure and the data structures and data types used to store and manipulate these objects in software. This OWL schema is a foundation for a basic treatment of units."^^xsd:string ;
+      vaem:hasAspectScope "Basic treatment of quantities and units. No dimensional treatment in this graph."^^xsd:string ;
+      vaem:hasCatalogEntry
+              <http://qudt.org/catalog/qudt#QUDT-SchemaCatalogEntry> ;
+      vaem:hasDisciplineScope
+              "All disciplines"^^xsd:string ;
+      vaem:hasDomainScope "Science, Medicine and Engineering"^^xsd:string ;
+      vaem:hasRole vaem:SchemaGraph ;
+      vaem:intent "Provides a schema for describing Units of Measure"^^xsd:string ;
+      vaem:lastUpdated "$LastChangedDate: 2011-06-01 14:56:40 -0700 (Wed, 01 Jun 2011) $"^^xsd:string ;
+      vaem:namespace "http://qudt.org/schema/qudt"^^xsd:string ;
+      vaem:namespacePrefix
+              "qudt"^^xsd:string ;
+      vaem:revisionNumber "1.1"^^xsd:string ;
+      vaem:specificity 1 ;
+      vaem:usesNonImportedResource
+              dc:rights , <voag:CC-SHAREALIKE_3PT0-US> , dc:subject , dc:title , dc:description , skos:closeMatch , skos:exactMatch , dc:author , dc:contributor , dc:creator ;
+      owl:imports <http://www.linkedmodel.org/1.2/schema/vaem> , <http://www.linkedmodel.org/1.0/schema/dtype> ;
+      owl:versionIRI <http://qudt.org/1.1/schema/qudt> ;
+      owl:versionInfo "$Id: OSG_qudt-(v1.1).ttl 4989 2011-06-01 21:56:40Z RalphHodgson $"^^xsd:string .
+
+qudt:AbsorbedDoseRateUnit
+      rdf:type owl:Class ;
+      rdfs:label "Absorbed Dose Rate Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:RadiologyUnit .
+
+qudt:AbsorbedDoseUnit
+      rdf:type owl:Class ;
+      rdfs:label "Absorbed Dose Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:RadiologyUnit .
+
+qudt:AccelerationUnit
+      rdf:type owl:Class ;
+      rdfs:label "Acceleration Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit .
+
+qudt:ActivityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Activity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:RadiologyUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_radioactivity> .
+
+qudt:AmountOfSubstanceTemperatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Amount of substance temperature unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit .
+
+qudt:AmountOfSubstanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Amount Of Substance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_amount_of_substance> .
+
+qudt:AngleUnit
+      rdf:type owl:Class ;
+      rdfs:label "Angle unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit , qudt:DimensionlessUnit ;
+      dc:description "All units relating to specificaiton of angles. "^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_angle> .
+
+qudt:AngularAccelerationUnit
+      rdf:type owl:Class ;
+      rdfs:label "Angular Acceleration Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:AccelerationUnit .
+
+qudt:AngularMassUnit
+      rdf:type owl:Class ;
+      rdfs:label "Angular Mass Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      qudt:description "The units of angular mass have dimensions of mass * area. They are used to measure the moment of inertia."^^xsd:string .
+
+qudt:AngularMomentumUnit
+      rdf:type owl:Class ;
+      rdfs:label "Angular Momentum Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MomentumUnit .
+
+qudt:AngularVelocityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Angular Velocity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:VelocityUnit .
+
+qudt:AreaAngleUnit
+      rdf:type owl:Class ;
+      rdfs:label "Area Angle Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit .
+
+qudt:AreaTemperatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Area Temperature Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:AreaThermalExpansionUnit
+      rdf:type owl:Class ;
+      rdfs:label "Area Thermal Expansion Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermalExpansionUnit ;
+      qudt:description """When the temperature of a substance changes, the energy that is stored in the intermolecular bonds between atoms changes. When the stored energy increases, so does the length of the molecular bonds. As a result, solids typically expand in response to heating and contract on cooling; this dimensional response to temperature change is expressed by its coefficient of thermal expansion.
+
+Different coefficients of thermal expansion can be defined for a substance depending on whether the expansion is measured by:
+
+    * linear thermal expansion
+    * area thermal expansion
+    * volumetric thermal expansion
+
+These characteristics are closely related. The volumetric thermal expansion coefficient can be defined for both liquids and solids. The linear thermal expansion can only be defined for solids, and is common in engineering applications.
+
+Some substances expand when cooled, such as freezing water, so they have negative thermal expansion coefficients.
+
+For exactly isotropic materials, the area thermal expansion coefficient is very closely approximated as twice the linear coefficient."""^^xsd:string .
+
+qudt:AreaTimeTemperatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Area Time Temperature Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:AreaUnit
+      rdf:type owl:Class ;
+      rdfs:label "Area Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_area> .
+
+qudt:AtomicChargeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Atomic Charge Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:AtomicPhysicsUnit ;
+      qudt:description "The electric charge of an ion, equal to the number of electrons the atom has gained or lost in its ionization multiplied by the charge on one electron.  This class contains the following instance(s): \"atomic number\"."^^xsd:string .
+
+qudt:AtomicMassUnit
+      rdf:type owl:Class ;
+      rdfs:label "Atomic Mass Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:AtomicPhysicsUnit .
+
+qudt:AtomicPhysicsUnit
+      rdf:type owl:Class ;
+      rdfs:label "Atomic Physics Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UAP"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:BaseUnit
+      rdf:type owl:DeprecatedClass , owl:Class ;
+      rdf:type
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UB"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      rdfs:label "Base Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:Unit ;
+      dc:description "A Base Unit is a unit adopted by convention for a base quantity."^^xsd:string .
+
+qudt:BendingMomentOrTorqueUnit
+      rdf:type owl:Class ;
+      rdfs:label "Bending Moment Or Torque Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_torque> .
+
+qudt:BinaryPrefixUnit
+      rdf:type owl:Class ;
+      rdfs:label "Binary Prefix Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PrefixUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Binary_prefix> .
+
+qudt:BiomedicalUnit
+      rdf:type owl:Class ;
+      rdfs:label "Biomedical Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ScienceAndEngineeringUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UBM"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:CapacitanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Capacitance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """Capacitance is a measure of the amount of electric charge stored (or separated) for a given electric potential.
+
+This class contains the following instance(s): \"Abfarad\", \"Farad\", \"MicroFarad\", \"NanoFarad\", \"PicoFarad\", \"Statfarad\"."""^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_electrical_capacitance> .
+
+qudt:CatalyticActivityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Catalytic Activity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_catalytic_activity> .
+
+qudt:ChemistryUnit
+      rdf:type owl:Class ;
+      rdfs:label "Chemistry Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UCHM"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:CoefficientOfHeatTransferUnit
+      rdf:type owl:Class ;
+      rdfs:label "Coefficient Of Heat Transfer Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:CommunicationsUnit
+      rdf:type owl:Class ;
+      rdfs:label "Communications Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ScienceAndEngineeringUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UCMN"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:ComputingUnit
+      rdf:type owl:Class ;
+      rdfs:label "Computing Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ScienceAndEngineeringUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UCPG"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      skos:closeMatch <http://dbpedia.org/resource/Category:Units_of_information> .
+
+qudt:ConcentrationUnit
+      rdf:type owl:Class ;
+      rdfs:label "Concentration Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit .
+
+qudt:ConductanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Conductance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """Electrical conductance is the inverse of electrical resistance. It measures the ease with which electricity flows along a path through an electrical element.
+
+This class contains the following instance(s): \"Abmho\", \"Mho\", \"Siemens\", \"Statmho\"."""^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_electrical_conductance> .
+
+qudt:CountingUnit
+      rdf:type owl:Class ;
+      rdfs:label "Counting Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ResourceUnit , qudt:DimensionlessUnit ;
+      dc:description "All units about counts. Examples are Atomic Number, Number, Number per Year, Percent and Sample per Second."^^xsd:string ;
+      skos:closeMatch <http://dbpedia.org/resource/Category:Units_of_amount> .
+
+qudt:CurrencyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Currency Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:FinancialUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UFC"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:cardinality "1"^^xsd:int ;
+                owl:onProperty qudt:currencyExponent
+              ] .
+
+qudt:CurrentPerAngleUnit
+      rdf:type owl:Class ;
+      rdfs:label "Current Per Angle Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit .
+
+qudt:CurvatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Curvature Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit ;
+      qudt:description """The canonicall example of extrinsic curvature is that of a circle, which has curvature equal to the inverse of its radius everywhere. Smaller circles bend more sharply, and hence have higher curvature. The curvature of a smooth curve is defined as the curvature of its osculating circle at each point. The osculating circle of a sufficiently smooth plane curve at a given point on the curve is the circle whose center lies on the inner normal line and whose curvature is the same as that of the given curve at that point. This circle is tangent to the curve at the given point.
+
+That is, given a point P on a smooth curve C, the curvature of C at P is defined to be 1/R where R is the radius of the osculating circle of C at P. The magnitude of curvature at points on physical curves can be measured in diopters (also spelled dioptre) — this is the convention in optics. [Wikipedia]"""^^xsd:string .
+
+qudt:DataRateUnit
+      rdf:type owl:Class ;
+      rdfs:label "Data Rate Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ResourceUnit , qudt:ComputingUnit .
+
+qudt:DecimalPrefixUnit
+      rdf:type owl:Class ;
+      rdfs:label "Decimal Prefix Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PrefixUnit , qudt:SIUnit .
+
+qudt:DerivedUnit
+      rdf:type owl:DeprecatedClass , owl:Class ;
+      rdf:type
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UD"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      rdfs:label "Derived Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:Unit ;
+      dc:description "A DerivedUnit is a type specification for units that are derived from other units."^^xsd:string .
+
+qudt:DimensionlessUnit
+      rdf:type owl:Class ;
+      rdfs:label "Dimensionless Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:Unit ;
+      dc:description "A Dimensionless Unit is a quantity for which all the exponents of the factors corresponding to the base quantities in its quantity dimension are zero."^^xsd:string .
+
+qudt:DoseEquivalentUnit
+      rdf:type owl:Class ;
+      rdfs:label "Dose Equivalent Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:RadiologyUnit .
+
+qudt:DynamicViscosityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Dynamic Viscosity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_dynamic_viscosity> .
+
+qudt:ElectricChargeAreaDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Charge Area Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricChargeDensityUnit .
+
+qudt:ElectricChargeDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Charge Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description "The linear, surface, or volume charge density is the amount of electric charge in a line, surface, or volume. It is measured in coulombs per metre (C/m), square metre (C/m^2), or cubic metre (C/m^3), respectively. Since there are positive as well as negative charges, the charge density can take on negative values. [Wikipedia]"^^xsd:string .
+
+qudt:ElectricChargeLineDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Charge Line Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricChargeDensityUnit ;
+      qudt:description "The linear charge density is the amount of electric charge in a line. It is measured in coulombs per metre (C/m). Since there are positive as well as negative charges, the charge density can take on negative values. [Wikipedia]"^^xsd:string .
+
+qudt:ElectricChargePerAmountOfSubstanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Charge Per Amount Of Substance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectrochemistryUnit .
+
+qudt:ElectricChargeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Charge Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description "Electric charge is a fundamental conserved property of some subatomic particles, which determines their electromagnetic interaction. Electrically charged matter is influenced by, and produces, electromagnetic fields. The interaction between a moving charge and an electromagnetic field is the source of the electromagnetic force, which is one of the four fundamental forces."^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_electrical_charge> .
+
+qudt:ElectricChargeVolumeDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Charge Volume Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricChargeDensityUnit ;
+      qudt:description "The volume charge density is the amount of electric charge in a volume. It is measured in coulombs per cubic metre (C/m^3).  Since there are positive as well as negative charges, the charge density can take on negative values. [Wikipedia]"^^xsd:string .
+
+qudt:ElectricCurrentDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Current Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """Electric current density is a measure of the density of flow of a conserved charge. Usually the charge is the electric charge, in which case the associated current density is the electric current per unit area of cross section, but the term current density can also be applied to other conserved quantities. It is defined as a vector whose magnitude is the current per cross-sectional area. [Wikipedia]
+
+In SI units, the electric current density is measured in amperes per square metre. This class contains the following instance(s): \"Ampere per square meter\"."""^^xsd:string .
+
+qudt:ElectricCurrentUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Current Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description "Electric current is the flow (movement) of electric charge. The SI unit of electric current is the ampere, and electric current is measured using an ammeter. This class contains the following instance(s): \"Abampere\", \"Ampere\", \"Biot\", \"Statampere\"."^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_electrical_current> .
+
+qudt:ElectricDipoleMomentUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Dipole Moment Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """The electric dipole moment (or electric dipole for short) is a measure of the polarity of a system of electric charges. [Wikipedia]
+
+This class has the following instance(s): \"Coulomb meter\", \"Debye\"."""^^xsd:string .
+
+qudt:ElectricFieldStrengthUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Field Strength Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description "The strength of the electric field at a given point is defined as the force that would be exerted on a positive test charge of +1 coulomb placed at that point; the direction of the field is given by the direction of that force. Electric fields contain electrical energy with energy density proportional to the square of the field intensity. The electric field is to charge as gravitational acceleration is to mass and force density is to volume."^^xsd:string .
+
+qudt:ElectricFluxDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Flux Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricChargeDensityUnit .
+
+qudt:ElectricFluxUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electric Flux Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit .
+
+qudt:ElectricityAndMagnetismUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electricity And Magnetism Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UEM"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      qudt:description "The class of units used to measure the properties of electricity and magnetism."^^xsd:string .
+
+qudt:ElectrochemistryUnit
+      rdf:type owl:Class ;
+      rdfs:label "Electrochemistry Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit , qudt:ElectricityAndMagnetismUnit .
+
+qudt:EnergyAndWorkPerMassAmountOfSubstance
+      rdf:type owl:Class ;
+      rdfs:label "Energy and work per mass amount of substance" ;
+      rdfs:subClassOf qudt:ChemistryUnit .
+
+qudt:EnergyAndWorkUnit
+      rdf:type owl:Class ;
+      rdfs:label "Energy And Work Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_energy> .
+
+qudt:EnergyDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Energy Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      qudt:description "Units that measure energy density, i.e. energy per unit volume."^^xsd:string .
+
+qudt:EnergyPerAreaUnit
+      rdf:type owl:Class ;
+      rdfs:label "Energy Per Area Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      qudt:description "Units that quantify energy per unit area."^^xsd:string .
+
+qudt:EnergyPerElectricChargeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Energy per Electric Charge Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description "The ratio of energy to electric charge arises repeatedly in electrodynamics. It is the dimensional equivalent to the electrostatic potential and electromotive force. In both cases, the SI unit is the volt, or newton meters per coulomb."^^xsd:string .
+
+qudt:EnumeratedValue
+      rdf:type owl:Class ;
+      rdfs:label "Enumerated Value"^^xsd:string ;
+      rdfs:subClassOf dtype:EnumeratedValue ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:symbol
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:abbreviation
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:description
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty qudt:code
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:cardinality "1"^^xsd:int ;
+                owl:onProperty qudt:literal
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:order
+              ] ;
+      dc:description "This class is for all enumerated and/or coded values.  For example, it contains the dimension objects that are the basis elements in some abstract vector space associated with a quantity kind system. Another use is for the base dimensions for quantity systems. Each quantity kind system that defines a base set has a corresponding ordered enumeration whose elements are the dimension objects for the base quantity kinds. The order of the dimensions in the enumeration determines the canonical order of the basis elements in the corresponding abstract vector space."^^xsd:string .
+
+qudt:Enumeration
+      rdf:type owl:Class ;
+      rdfs:label "Enumeration"^^xsd:string ;
+      rdfs:subClassOf dtype:Enumeration ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty qudt:default
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:abbreviation
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom qudt:EnumeratedValue ;
+                owl:onProperty qudt:default
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:description
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty qudt:element
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom qudt:EnumeratedValue ;
+                owl:onProperty qudt:element
+              ] ;
+      dc:description "This class is for describing the enumerations themselves. Having an enumerated value is one concept.  Having a way to descrive the set of enumerated valies is a distinct need. An enumeration is a collection of enumeration elements. In some cases it is necesaary to refer to the enumeration as opposed to one of its values."^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Enumeration> .
+
+qudt:EventUnit
+      rdf:type owl:Class ;
+      rdfs:label "Event Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ResourceUnit .
+
+qudt:ExposureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Exposure Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:RadiologyUnit .
+
+qudt:FinancialUnit
+      rdf:type owl:Class ;
+      rdfs:label "Financial Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ResourceUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UF"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      qudt:description "This class contains units that measure financial quantities, such as currency, transactions, rates of return, etc."^^xsd:string .
+
+qudt:ForcePerElectricChargeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Force Per Electric Charge Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit .
+
+qudt:ForcePerLengthUnit
+      rdf:type owl:Class ;
+      rdfs:label "Force Per Length Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:ForceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Force Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_force> .
+
+qudt:FrequencyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Frequency Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_frequency> .
+
+qudt:GravitationalAttractionUnit
+      rdf:type owl:Class ;
+      rdfs:label "Gravitational Attraction Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:HeartRateUnit
+      rdf:type owl:Class ;
+      rdfs:label "Heart Rate Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:BiomedicalUnit .
+
+qudt:HeatCapacityAndEntropyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Heat Capacity And Entropy Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:HeatFlowRateUnit
+      rdf:type owl:Class ;
+      rdfs:label "Heat Flow Rate Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:HumanUnit
+      rdf:type owl:Class ;
+      rdfs:label "Human Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ResourceUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UH"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      qudt:description "units for measuring human resources"^^xsd:string .
+
+qudt:IlluminanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Illuminance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhotometryUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_illuminance> .
+
+qudt:InductanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Inductance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """An electric current flowing around a circuit produces a magnetic field and hence a magnetic flux through the circuit. The ratio of the magnetic flux to the current is called the inductance, or more accurately self-inductance of the circuit. [Wikipedia]
+
+This class contains the following instance(s): \"Abhenry\", \"Henry\", \"Micro Henry\", \"Milli Henry\", \"Stathenry\"."""^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_electrical_inductance> .
+
+qudt:InformationEntropyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Information Entropy Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ResourceUnit , qudt:LogarithmicUnit , qudt:ComputingUnit .
+
+qudt:InverseAmountOfSubstanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Inverse Amount Of Substance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit .
+
+qudt:KinematicViscosityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Kinematic Viscosity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:LengthTemperatureTimeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Length Temperature Time Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:LengthTemperatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Length Temperature Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:LengthUnit
+      rdf:type owl:Class ;
+      rdfs:label "Length Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_length> .
+
+qudt:LinearAccelerationUnit
+      rdf:type owl:Class ;
+      rdfs:label "Linear Acceleration Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:AccelerationUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_acceleration> .
+
+qudt:LinearEnergyTransferUnit
+      rdf:type owl:Class ;
+      rdfs:label "Linear Energy Transfer Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:AtomicPhysicsUnit .
+
+qudt:LinearMomentumUnit
+      rdf:type owl:Class ;
+      rdfs:label "Linear Momentum Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MomentumUnit .
+
+qudt:LinearThermalExpansionUnit
+      rdf:type owl:Class ;
+      rdfs:label "Linear Thermal Expansion Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermalExpansionUnit ;
+      qudt:description """When the temperature of a substance changes, the energy that is stored in the intermolecular bonds between atoms changes. When the stored energy increases, so does the length of the molecular bonds. As a result, solids typically expand in response to heating and contract on cooling; this dimensional response to temperature change is expressed by its coefficient of thermal expansion.
+
+Different coefficients of thermal expansion can be defined for a substance depending on whether the expansion is measured by:
+
+    * linear thermal expansion
+    * area thermal expansion
+    * volumetric thermal expansion
+
+These characteristics are closely related. The volumetric thermal expansion coefficient can be defined for both liquids and solids. The linear thermal expansion can only be defined for solids, and is common in engineering applications.
+
+Some substances expand when cooled, such as freezing water, so they have negative thermal expansion coefficients. [Wikipedia]"""^^xsd:string .
+
+qudt:LinearVelocityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Linear Velocity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:VelocityUnit ;
+      qudt:description "Linear Velocity units measure change of length per unit time. Examples include meters per second, miles per hour, knots, etc. "^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_velocity> .
+
+qudt:LogarithmicUnit
+      rdf:type owl:Class ;
+      rdfs:label "Logarithmic Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      qudt:description "Logarithmic units are abstract mathematical units that can be used to express any quantities (physical or mathematical) that are defined on a logarithmic scale, that is, as being proportional to the value of a logarithm function. Examples of logarithmic units include common units of information and entropy, such as the bit, and the byte, as well as units of relative signal strength magnitude such as the decibel."^^xsd:string .
+
+qudt:LuminanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Luminance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhotometryUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_luminance> .
+
+qudt:LuminousEfficacyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Luminous Efficacy Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhotometryUnit .
+
+qudt:LuminousEnergyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Luminous Energy Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhotometryUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_luminous_energy> .
+
+qudt:LuminousFluxUnit
+      rdf:type owl:Class ;
+      rdfs:label "Luminous Flux Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhotometryUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_luminous_flux> .
+
+qudt:LuminousIntensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Luminous Intensity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhotometryUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_luminous_intensity> .
+
+qudt:MagneticFieldStrengthUnit
+      rdf:type owl:Class ;
+      rdfs:label "Magnetic Field Strength Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """A magnetic field is a vector field that permeates space and which can exert a magnetic force on moving electric charges and on magnetic dipoles (such as permanent magnets). [Wikipedia] The strength of a magnetic field at a point in space is the magnitude of the field vector at that point.
+
+This class contains the following instance(s): \"Ampere per meter\", \"Ampere turn per inch\", \"Ampere turn per meter\", \"Oersted\"."""^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_magnetic_induction> .
+
+qudt:MagneticFluxDensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Magnetic Flux Density Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_magnetic_flux_density> .
+
+qudt:MagneticFluxUnit
+      rdf:type owl:Class ;
+      rdfs:label "Magnetic Flux Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """Magnetic flux is a measure of quantity of magnetism, taking into account the strength and the extent of a magnetic field. The SI unit of magnetic flux is the weber (in derived units: volt-seconds), and the unit of magnetic field is the weber per square meter, or tesla. [Wikipedia]
+
+This class contains the following instance(s): \"Maxwell\", \"Unit pole\", \"Weber\"."""^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_magnetic_flux> .
+
+qudt:MagnetomotiveForceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Magnetomotive Force Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """Magnetomotive force is any physical cause that produces magnetic flux. In other words, it is a field of magnetism (measured in tesla) that has area (measured in square meters), so that (Tesla)(Area)= Flux. It is analogous to electromotive force or voltage in electricity. MMF usually describes electric wire coils in a way so scientists can measure or predict the actual force a wire coil can generate. [Wikipedia]
+
+This class contains the following instance(s): \"Ampere turn\", \"Gilbert\", \"Oersted centimeter\", \"Unit pole\"."""^^xsd:string .
+
+qudt:MassAmountOfSubstanceTemperatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Amount Of Substance Temperature Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit .
+
+qudt:MassAmountOfSubstanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Amount Of Substance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit .
+
+qudt:MassPerAreaUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Per Area Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:MassPerLengthUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Per Length Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:MassPerTimeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Per Time Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:MassPerVolumeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Per Volume Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_density> .
+
+qudt:MassTemperatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Temperature Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:MassUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mass Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_mass> .
+
+qudt:MechanicsUnit
+      rdf:type owl:Class ;
+      rdfs:label "Mechanics Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UMH"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:MicrobialFormationUnit
+      rdf:type owl:Class ;
+      rdfs:label "Microbial Formation Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:BiomedicalUnit .
+
+qudt:MolalConcentrationUnit
+      rdf:type owl:Class ;
+      rdfs:label "Molal Concentration Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ConcentrationUnit .
+
+qudt:MolarConcentrationUnit
+      rdf:type owl:Class ;
+      rdfs:label "Molar Concentration Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ConcentrationUnit .
+
+qudt:MolarEnergyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Molar Energy Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ChemistryUnit .
+
+qudt:MolarHeatCapacityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Molar Heat Capacity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:MomentumUnit
+      rdf:type owl:Class ;
+      rdfs:label "Momentum Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:NonSIUnit
+      rdf:type owl:DeprecatedClass , owl:Class ;
+      rdfs:label "Non SI Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      qudt:description "A Non-SI unit. Typically an imperial measure."^^xsd:string ;
+      owl:disjointWith qudt:SIUnit .
+
+qudt:NotUsedWithSIUnit
+      rdf:type owl:DeprecatedClass , owl:Class ;
+      rdfs:label "Not Used With SI Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:NonSIUnit ;
+      qudt:description "A type specification for all units that are not used in the SI standard."^^xsd:string ;
+      owl:disjointWith qudt:UsedWithSIUnit .
+
+qudt:OpticsUnit
+      rdf:type owl:Class ;
+      rdfs:label "Light Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit .
+
+qudt:PermeabilityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Permeability Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit .
+
+qudt:PermittivityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Permittivity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit .
+
+qudt:PhotometryUnit
+      rdf:type owl:Class ;
+      rdfs:label "Photometry Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:OpticsUnit .
+
+qudt:PhysicalUnit
+      rdf:type owl:Class ;
+      rdfs:label "Physical Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ScienceAndEngineeringUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UPHS"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:PlaneAngleUnit
+      rdf:type owl:Class ;
+      rdfs:label "Plane Angle Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:AngleUnit .
+
+qudt:PowerPerAreaUnit
+      rdf:type owl:Class ;
+      rdfs:label "Power Per Area Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:PowerPerElectricChargeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Energy per Electric Charge Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description "The ratio of power to electric charge is proportional to the rate of change of electric potential."^^xsd:string .
+
+qudt:PowerUnit
+      rdf:type owl:Class ;
+      rdfs:label "Power Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_power> .
+
+qudt:PrefixUnit
+      rdf:type owl:Class ;
+      rdfs:label "Prefix Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:DimensionlessUnit ;
+      dc:description "Prefixes are either binary or decimal."^^xsd:string .
+
+qudt:PressureOrStressRateUnit
+      rdf:type owl:Class ;
+      rdfs:label "Pressure or stress rate"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:PressureOrStressUnit
+      rdf:type owl:Class ;
+      rdfs:label "Pressure Or Stress Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_pressure> .
+
+qudt:QuantityKindCategory
+      rdf:type rdfs:Class ;
+      rdfs:label "Quantity Kind Category"^^xsd:string ;
+      rdfs:subClassOf owl:Class .
+
+qudt:RF-PowerUnit
+      rdf:type owl:Class ;
+      rdfs:label "RF-Power Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:CommunicationsUnit .
+
+qudt:RadianceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Radiance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:RadiometryUnit .
+
+qudt:RadiantIntensityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Radiant Intensity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:RadiometryUnit .
+
+qudt:RadiologyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Radiology Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UROY"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_radiation_dose> .
+
+qudt:RadiometryUnit
+      rdf:type owl:Class ;
+      rdfs:label "Radiometry Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:OpticsUnit .
+
+qudt:RateOfReturnUnit
+      rdf:type owl:Class ;
+      rdfs:label "Rate Of Return Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:FinancialUnit .
+
+qudt:ResistanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Resistance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ElectricityAndMagnetismUnit ;
+      qudt:description """Electrical resistance is a ratio of the degree to which an object opposes an electric current through it, measured in ohms. Its reciprocal quantity is electrical conductance measured in siemens.
+
+This class contains the following instance(s): \"Abohm\", \"Ohm\", \"Statohm\"."""^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_electrical_resistance> .
+
+qudt:ResourceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Resource Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:Unit ;
+      dc:description "A Resource Unit is a unit for measuring the amount of various types of resources."^^xsd:string .
+
+qudt:RespiratoryRateUnit
+      rdf:type owl:Class ;
+      rdfs:label "Respiratory Rate Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:BiomedicalUnit .
+
+qudt:SIBaseUnit
+      rdf:type owl:DeprecatedClass , owl:Class ;
+      rdf:type
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "USI"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      rdfs:label "SI Base Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:BaseUnit , qudt:SIUnit ;
+      qudt:description "All SI units are derived from the SI Base units"^^xsd:string ;
+      owl:disjointWith qudt:SIDerivedUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:SI_base_units> .
+
+qudt:SIDerivedUnit
+      rdf:type owl:Class , owl:DeprecatedClass ;
+      rdfs:label "SI Derived Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:DerivedUnit , qudt:SIUnit ;
+      owl:disjointWith qudt:SIBaseUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:SI_derived_units> .
+
+qudt:SIUnit
+      rdf:type owl:DeprecatedClass , owl:Class ;
+      rdfs:label "SI Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      qudt:description "An SI unit"^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:SI_units> .
+
+qudt:ScienceAndEngineeringUnit
+      rdf:type owl:Class ;
+      rdfs:label "Science And Engineering Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:Unit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "USE"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:SerumOrPlasmaLevelUnit
+      rdf:type owl:Class ;
+      rdfs:label "Serum Or Plasma Level Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:BiomedicalUnit .
+
+qudt:SignalDetectionThresholdUnit
+      rdf:type owl:Class ;
+      rdfs:label "Signal Detection Threshold Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:CommunicationsUnit ;
+      qudt:description "Signal relative to an underlying signal"^^xsd:string .
+
+qudt:SolidAngleUnit
+      rdf:type owl:Class ;
+      rdfs:label "Solid Angle Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:AngleUnit ;
+      qudt:description "The solid angle subtended by a surface S is defined as the surface area of a unit sphere covered by the surface S's projection onto the sphere. A solid angle is related to the surface of a sphere in the same way an ordinary angle is related to the circumference of a circle. Since the total surface area of the unit sphere is 4*pi, the measure of solid angle will always be between 0 and 4*pi."^^xsd:string .
+
+qudt:SpaceAndTimeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Space And Time Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UST"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] .
+
+qudt:SpecificEnergyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Specific Energy Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit ;
+      qudt:description "Units which quantify specific energy, i.e. energy per unit mass."^^xsd:string .
+
+qudt:SpecificHeatCapacityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Specific Heat Capacity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:SpecificHeatPressureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Specific Heat Pressure Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit ;
+      qudt:description "This class contains units of measure for specific heat capacity at a constant pressure."^^xsd:string .
+
+qudt:SpecificHeatVolumeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Specific Heat Volume Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit ;
+      qudt:description "This class contains units of measure for specific heat capacity at a constant volume."^^xsd:string .
+
+qudt:SystemOfNaturalUnits
+      rdf:type owl:Class ;
+      rdfs:label "System of natural units"^^xsd:string ;
+      rdfs:subClassOf qudt:SystemOfUnits ;
+      dc:description "In physics, natural units are physical units of measurement based only on universal physical constants. For example the elementary charge e is a natural unit of electric charge, or the speed of light c is a natural unit of speed. A purely natural system of units is defined in such a way that some set of selected universal physical constants are normalized to unity; that is, their numerical values in terms of these units become exactly 1. Examples are Planck Units and Atomic Units. Atomic units (au or a.u.) form a system of natural units which is especially convenient for atomic physics calculations. There are two different kinds of atomic units, which one might name Hartree atomic units[1] and Rydberg atomic units, which differ in the choice of the unit of mass and charge. Planck units are unique among systems of natural units, because they are not defined in terms of properties of any prototype, physical object, or even elementary particle.  [Wikipeda]"^^xsd:string ;
+      skos:closeMatch <http://dbpedia.org/resource/Category:Natural_units> ;
+      skos:exactMatch <http://dbpedia.org/resource/Natural_units> .
+
+qudt:SystemOfUnits
+      rdf:type owl:Class ;
+      rdfs:label "System of Units"^^xsd:string ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:description
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:allValuesFrom qudt:Unit ;
+                owl:onProperty qudt:systemUnit
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:minCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:systemUnit
+              ] ;
+      dc:description "A system of units is a set of units which are chosen as the reference scales for some set of quantity kinds together with the definitions of each unit. Units may be defined by experimental observation or by proportion to another unit not included in the system. If the unit system is explicitly associated with a quantity kind system, then the unit system must define at least one unit for each quantity kind."^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Systems_of_units> .
+
+qudt:TemperaturePerTimeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Temperature per time unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:TemperatureUnit
+      rdf:type owl:Class ;
+      rdfs:label "Temperature Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_temperature> .
+
+qudt:ThermalConductivityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Conductivity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:ThermalDiffusivityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Diffusivity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:ThermalEnergyLengthUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Energy Length Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:ThermalEnergyUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Energy Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:ThermalExpansionUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Expansion Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit ;
+      qudt:description """When the temperature of a substance changes, the energy that is stored in the intermolecular bonds between atoms changes. When the stored energy increases, so does the length of the molecular bonds. As a result, solids typically expand in response to heating and contract on cooling; this dimensional response to temperature change is expressed by its coefficient of thermal expansion.
+
+Different coefficients of thermal expansion can be defined for a substance depending on whether the expansion is measured by:
+
+    * linear thermal expansion
+    * area thermal expansion
+    * volumetric thermal expansion
+
+These characteristics are closely related. The volumetric thermal expansion coefficient can be defined for both liquids and solids. The linear thermal expansion can only be defined for solids, and is common in engineering applications.
+
+Some substances expand when cooled, such as freezing water, so they have negative thermal expansion coefficients. [Wikipedia]"""^^xsd:string .
+
+qudt:ThermalInsulanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Insulance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:ThermalResistanceUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Resistance Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:ThermalResistivityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermal Resistivity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermodynamicsUnit .
+
+qudt:ThermodynamicsUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thermodynamics Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:PhysicalUnit ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "UTD"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      qudt:description "Thermodynamics units are units that provide reference scales for quantifying the conversion of energy into work, as well as heat and its relation to macroscopic variables such as temperature and pressure."^^xsd:string ;
+      skos:closeMatch <http://dbpedia.org/resource/Category:Thermodynamics> .
+
+qudt:ThrustToMassRatioUnit
+      rdf:type owl:Class ;
+      rdfs:label "Thrust To Mass Ratio Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:TimeAreaUnit
+      rdf:type owl:Class ;
+      rdfs:label "Time Area Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit .
+
+qudt:TimeSquaredUnit
+      rdf:type owl:Class ;
+      rdfs:label "Time Squared Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit .
+
+qudt:TimeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Time Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit ;
+      qudt:description "Units that measure time."^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_time> .
+
+qudt:TurbidityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Turbidity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:BiomedicalUnit ;
+      qudt:description "Turbidity is the cloudiness or haziness of a fluid caused by individual particles (suspended solids) that are generally invisible to the naked eye, similar to smoke in air."^^xsd:string .
+
+qudt:Unit
+      rdf:type owl:Class ;
+      rdfs:label "Unit"^^xsd:string ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty qudt:uneceCommonCode
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:hasValue "U"^^xsd:string ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:symbol
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:cardinality "1"^^xsd:nonNegativeInteger ;
+                owl:onProperty qudt:typePrefix
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:conversionMultiplier
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:description
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:conversionOffset
+              ] ;
+      rdfs:subClassOf
+              [ rdf:type owl:Restriction ;
+                owl:maxCardinality "1"^^xsd:int ;
+                owl:onProperty qudt:abbreviation
+              ] ;
+      dc:description "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter. More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  Q = nU."^^xsd:string ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_measure> .
+
+qudt:UsedWithSIUnit
+      rdf:type owl:DeprecatedClass , owl:Class ;
+      rdfs:label "Used With SI Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:NonSIUnit ;
+      qudt:description "A type specification for all units that are used in the SI standard."^^xsd:string ;
+      owl:disjointWith qudt:NotUsedWithSIUnit .
+
+qudt:VelocityUnit
+      rdf:type owl:Class ;
+      rdfs:label "Velocity Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit .
+
+qudt:VideoFrameRateUnit
+      rdf:type owl:Class ;
+      rdfs:label "Video Frame Rate Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ComputingUnit .
+
+qudt:VolumePerMassUnit
+      rdf:type owl:Class ;
+      rdfs:label "Volume per mass unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:VolumePerTimeSquaredUnit
+      rdf:type owl:Class ;
+      rdfs:label "Volume per Time Squared Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:MechanicsUnit .
+
+qudt:VolumePerTimeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Volume Per Time Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit ;
+      qudt:description "A \"Space And Time\" Unit with the following instance(s): \"Cubic foot per minute\", \"Cubic foot per second\", \"Cubic inch per minute\", \"Cubic meter per second\", \"Cubic yard per minute\", \"Gallon per day\", \"Gallon per minute\"."^^xsd:string .
+
+qudt:VolumeThermalExpansionUnit
+      rdf:type owl:Class ;
+      rdfs:label "Volume Thermal Expansion Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:ThermalExpansionUnit ;
+      qudt:description """When the temperature of a substance changes, the energy that is stored in the intermolecular bonds between atoms changes. When the stored energy increases, so does the length of the molecular bonds. As a result, solids typically expand in response to heating and contract on cooling; this dimensional response to temperature change is expressed by its coefficient of thermal expansion.
+
+Different coefficients of thermal expansion can be defined for a substance depending on whether the expansion is measured by:
+
+    * linear thermal expansion
+    * area thermal expansion
+    * volumetric thermal expansion
+
+These characteristics are closely related. The volumetric thermal expansion coefficient can be defined for both liquids and solids. The linear thermal expansion can only be defined for solids, and is common in engineering applications.
+
+Some substances expand when cooled, such as freezing water, so they have negative thermal expansion coefficients. 
+
+For exactly isotropic materials, the volumetric thermal expansion coefficient is very closely approximated as three times the linear coefficient. [Wikipedia]"""^^xsd:string .
+
+qudt:VolumeUnit
+      rdf:type owl:Class ;
+      rdfs:label "Volume Unit"^^xsd:string ;
+      rdfs:subClassOf qudt:SpaceAndTimeUnit ;
+      skos:exactMatch <http://dbpedia.org/resource/Category:Units_of_volume> .
+
+qudt:abbreviation
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "abbreviation"^^xsd:string ;
+      rdfs:range xsd:string ;
+      dc:description "An abbreviation for a unit is a short (usually 5 characters or less) string that is used in place of the full name for the unit in contexts where space is limited, or where using the abbreviation will enhance readability."^^xsd:string .
+
+qudt:allowedUnitOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "allowed unit of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:unitOfSystem ;
+      dc:description "This property relates a unit of measure with a unit system that does not define the unit, but allows its use within the system. An allowed unit must be convertible to some dimensionally eqiuvalent unit that is defined by the system."^^xsd:string ;
+      owl:inverseOf qudt:systemAllowedUnit .
+
+qudt:baseDimensionEnumeration
+      rdf:type owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:label "base dimension enumeration"^^xsd:string ;
+      dc:description "This property associates a system of quantities with an enumeration that enumerates the base dimensions of the system in canonical order."^^xsd:string .
+
+qudt:baseQuantityKindOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "base quantity kind of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:quantityKindOfSystem ;
+      owl:inverseOf qudt:systemBaseQuantityKind .
+
+qudt:baseUnitOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "base unit of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:coherentUnitOfSystem ;
+      dc:description "This property relates a unit of measure to the system of units in which it is defined as a base unit for the system. The base units of a system are used to define the derived units of the system by expressing the derived units as products of the base units raised to a rational power."^^xsd:string ;
+      owl:inverseOf qudt:systemBaseUnit .
+
+qudt:basisElement
+      rdf:type owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:label "basis element"^^xsd:string .
+
+qudt:code
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "code"^^xsd:string ;
+      rdfs:range xsd:string ;
+      dc:description "A unit code is a numeric string that uniquely identifies a unit "^^xsd:string .
+
+qudt:coherentDerivedUnitOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "derived unit of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:coherentUnitOfSystem , qudt:derivedUnitOfSystem ;
+      dc:description "This property relates a unit of measure to the unit system in which the unit is derived from the system's base units with a proportionality constant of one."^^xsd:string ;
+      owl:inverseOf qudt:systemCoherentDerivedUnit .
+
+qudt:coherentUnitOfSystem
+      rdf:type owl:DeprecatedProperty , owl:ObjectProperty ;
+      rdfs:label "coherent unit of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:definedUnitOfSystem ;
+      dc:description "A coherent unit of measurement for a unit system is a defined unit that may be expressed as a product of powers of the system's base units with the proportionality factor of one."^^xsd:string ;
+      owl:inverseOf qudt:systemCoherentUnit .
+
+qudt:coherentUnitSystem
+      rdf:type owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:label "coherent unit system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:unitSystem ;
+      dc:description "A system of units is coherent with respect to a system of quantities and equations if the system of units is chosen in such a way that the equations between numerical values have exactly the same form (including the numerical factors) as the corresponding equations between the quantities. In such a coherent system, no numerical factor other than the number 1 ever occurs in the expressions for the derived units in terms of the base units."^^xsd:string .
+
+qudt:conversionCoefficient
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "conversion coefficient"^^xsd:string ;
+      rdfs:range xsd:double .
+
+qudt:conversionMultiplier
+      rdf:type owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:label "conversion multiplier"^^xsd:string ;
+      rdfs:range xsd:double ;
+      skos:closeMatch <http://dbpedia.org/resource/Conversion_of_units> .
+
+qudt:conversionOffset
+      rdf:type owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:label "conversion offset"^^xsd:string ;
+      rdfs:range xsd:double .
+
+qudt:currencyExponent
+      rdf:type owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:label "currency exponent"^^xsd:string ;
+      rdfs:range xsd:integer ;
+      dc:description "The currency exponent indicates the number of decimal places between a major currency unit and its minor currency unit. For example, the US dollar is the major currency unit of the United States, and the US cent is the minor currency unit. Since one cent is 1/100 of a dollar, the US dollar has a currency exponent of 2. However, the Japanese Yen has no minor currency units, so the yen has a currency exponent of 0."^^xsd:string .
+
+qudt:default
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "default"^^xsd:string ;
+      dc:description "The default element in an enumeration"^^xsd:string .
+
+qudt:definedUnitOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "defined unit of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:unitOfSystem ;
+      dc:description "This property relates a unit of measure with the unit system that defines the unit."^^xsd:string ;
+      owl:inverseOf qudt:systemDefinedUnit .
+
+qudt:derivedQuantityKindOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "derived quantity kind of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:quantityKindOfSystem ;
+      owl:inverseOf qudt:systemDerivedQuantityKind .
+
+qudt:derivedUnitOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "derived unit of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:definedUnitOfSystem ;
+      dc:description "This property relates a unit of measure to the system of units in which it is defined as a derived unit. That is, the derived unit is defined as a product of the base units for the system raised to some rational power."^^xsd:string ;
+      owl:inverseOf qudt:systemDerivedUnit .
+
+qudt:description
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "description"^^xsd:string ;
+      rdfs:range qudt:string1024 ;
+      rdfs:subPropertyOf vaem:description .
+
+qudt:dimensionInverse
+      rdf:type owl:FunctionalProperty , owl:InverseFunctionalProperty , owl:ObjectProperty , owl:SymmetricProperty ;
+      rdfs:label "dimension inverse"^^xsd:string ;
+      owl:inverseOf qudt:dimensionInverse .
+
+qudt:element
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "element"^^xsd:string ;
+      dc:description "An element of an enumeration"^^xsd:string .
+
+qudt:elementKind
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "element kind"^^xsd:string .
+
+qudt:exactConstant
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "exact constant"^^xsd:string ;
+      rdfs:range xsd:boolean .
+
+qudt:exactMatch
+      rdf:type owl:TransitiveProperty , owl:ObjectProperty , owl:SymmetricProperty ;
+      rdfs:label "exact match"^^xsd:string .
+
+qudt:floatPercentage
+      rdf:type rdfs:Datatype ;
+      rdfs:label "float percentage"^^xsd:string ;
+      rdfs:subClassOf xsd:float ;
+      owl:equivalentClass
+              [ rdf:type rdfs:Datatype ;
+                owl:onDatatype xsd:float ;
+                owl:withRestrictions
+                        ([ xsd:minInclusive "0.00"^^xsd:float
+                          ] [ xsd:maxInclusive "100.00"^^xsd:float
+                          ])
+              ] .
+
+qudt:generalization
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "generalization"^^xsd:string ;
+      dc:description """This property relates a quantity kind to its generalization. A quantity kind, PARENT, is a generalization of the quantity kind CHILD only if
+
+1. PARENT and CHILD have the same dimensions in every system of quantities;
+2. Every unit that is a measure of quantities of kind CHILD is also a valid measure of quantities of kind PARENT."""^^xsd:string ;
+      owl:inverseOf qudt:specialization .
+
+qudt:integerPercentage
+      rdf:type rdfs:Datatype ;
+      rdfs:label "integer percentage"^^xsd:string ;
+      rdfs:subClassOf xsd:integer ;
+      owl:equivalentClass
+              [ rdf:type rdfs:Datatype ;
+                owl:onDatatype xsd:integer ;
+                owl:withRestrictions
+                        ([ xsd:minInclusive 0
+                          ] [ xsd:maxInclusive 100
+                          ])
+              ] .
+
+qudt:literal
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "literal"^^xsd:string ;
+      rdfs:range xsd:string .
+
+qudt:negativeDeltaLimit
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "negative delta limit"^^xsd:string ;
+      rdfs:range xsd:string ;
+      dc:description "A negative change limit between consecutive sample values for a parameter. The Negative Delta may be the encoded value or engineering units value depending on whether or not a Calibrator is defined." .
+
+qudt:numericValue
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "numeric value"^^xsd:string ;
+      rdfs:range xsd:double .
+
+qudt:order
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "order"^^xsd:string ;
+      rdfs:range xsd:nonNegativeInteger .
+
+qudt:positiveDeltaLimit
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "Positive delta limit"^^xsd:string ;
+      rdfs:range xsd:string ;
+      dc:description "A positive change limit between consecutive sample values for a parameter. The Positive Delta may be the encoded value or engineering units value depending on whether or not a Calibrator is defined." .
+
+qudt:prefixUnitOfSystem
+      rdf:type owl:DeprecatedProperty , owl:ObjectProperty ;
+      rdfs:label "prefix unit of system"^^xsd:string ;
+      rdfs:subPropertyOf qudt:definedUnitOfSystem ;
+      owl:inverseOf qudt:systemPrefixUnit .
+
+qudt:quantity
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "quantity"^^xsd:string ;
+      dc:description "a property to relate an observable thing with a quantity (qud:Quantity)"^^xsd:string .
+
+qudt:quantityKind
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "quantity kind"^^xsd:string .
+
+qudt:quantityKindOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "quantity kind of system"^^xsd:string ;
+      owl:inverseOf qudt:systemQuantityKind .
+
+qudt:quantityValue
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "quantity value"^^xsd:string ;
+      owl:inverseOf qudt:valueQuantity .
+
+qudt:referenceThing
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "reference thing"^^xsd:string .
+
+qudt:referenceUnit
+      rdf:type owl:ObjectProperty , owl:FunctionalProperty ;
+      rdfs:label "reference unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:referenceThing .
+
+qudt:relativeStandardUncertainty
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "relative standard uncertainty"^^xsd:string ;
+      rdfs:range xsd:double ;
+      dc:description "The relative standard uncertainty of a measurement is the (absolute) standard uncertainty divided by the magnitude of the exact value."^^xsd:string .
+
+qudt:specialization
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "specialization"^^xsd:string ;
+      dc:description "This property relates a quantity kind to its specialization(s). For example, linear velocity and angular velocity are both specializations of velocity."^^xsd:string ;
+      owl:inverseOf qudt:generalization .
+
+qudt:standardUncertainty
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "standard uncertainty"^^xsd:string ;
+      rdfs:range xsd:double ;
+      dc:description "The standard uncertainty of a quantity is the estimated standard deviation of the mean taken from a series of measurements."^^xsd:string .
+
+qudt:string1024
+      rdf:type rdfs:Datatype ;
+      rdfs:label "string1024"^^xsd:string ;
+      rdfs:subClassOf xsd:string ;
+      owl:equivalentClass
+              [ rdf:type rdfs:Datatype ;
+                owl:onDatatype xsd:string ;
+                owl:withRestrictions
+                        ([ xsd:maxLength "1024"^^xsd:nonNegativeInteger
+                          ])
+              ] .
+
+qudt:symbol
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "symbol"^^xsd:string ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf qudt:literal ;
+      dc:description "The symbol for a unit is a glyph that is used to represent the unit in a compact form. For example, the symbol for the US Dollar is $. This contrasts with unit:abbreviation, which gives a short alphanumeric abbreviation for the unit. (I.e. USD for US Dollar)."^^xsd:string .
+
+qudt:systemAllowedUnit
+      rdf:type owl:ObjectProperty , owl:DeprecatedProperty ;
+      rdfs:label "allowed unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemUnit ;
+      dc:description "This property relates a unit system with a unit of measure that is not defined by or part of the system, but is allowed for use within the system. An allowed unit must be convertible to some dimensionally eqiuvalent unit that is defined by the system."^^xsd:string ;
+      owl:inverseOf qudt:allowedUnitOfSystem .
+
+qudt:systemBaseQuantityKind
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "system base quantity kind"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemQuantityKind ;
+      owl:inverseOf qudt:baseQuantityKindOfSystem .
+
+qudt:systemBaseUnit
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "base unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemCoherentUnit ;
+      dc:description "This property relates a system of units to a base unit defined within the system. The base units of a system are used to define the derived units of the system by expressing the derived units as products of the base units raised to a rational power."^^xsd:string ;
+      owl:inverseOf qudt:baseUnitOfSystem .
+
+qudt:systemCoherentDerivedUnit
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "coherent derived unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemDerivedUnit , qudt:systemCoherentUnit ;
+      owl:inverseOf qudt:coherentDerivedUnitOfSystem .
+
+qudt:systemCoherentUnit
+      rdf:type owl:ObjectProperty , owl:DeprecatedProperty ;
+      rdfs:label "coherent unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemDefinedUnit ;
+      dc:description "A coherent unit of measurement for a unit system is a defined unit that may be expressed as a product of powers of the system's base units with the proportionality factor of one."^^xsd:string ;
+      owl:inverseOf qudt:coherentUnitOfSystem .
+
+qudt:systemDefinedUnit
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "defined unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemUnit ;
+      dc:description "This property relates a unit system with a unit of measure that is defined by the system."^^xsd:string .
+
+qudt:systemDerivedQuantityKind
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "system derived quantity kind"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemQuantityKind ;
+      owl:inverseOf qudt:derivedQuantityKindOfSystem .
+
+qudt:systemDerivedUnit
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "derived unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemDefinedUnit ;
+      dc:description "This property relates a system of units to a unit of measure that is defined within the system in terms of the base units for the system. That is, the derived unit is defined as a product of the base units for the system raised to some rational power."^^xsd:string .
+
+qudt:systemDimension
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "system dimension"^^xsd:string .
+
+qudt:systemPrefixUnit
+      rdf:type owl:ObjectProperty , owl:DeprecatedProperty ;
+      rdfs:label "prefix unit"^^xsd:string ;
+      rdfs:subPropertyOf qudt:systemDefinedUnit ;
+      owl:inverseOf qudt:prefixUnitOfSystem .
+
+qudt:systemQuantityKind
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "system quantity kind"^^xsd:string ;
+      owl:inverseOf qudt:quantityKindOfSystem .
+
+qudt:systemUnit
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "system unit"^^xsd:string ;
+      dc:description "This property relates a system of units with a unit of measure that is either a) defined by the system, or b) accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system. Systems of units may distinguish between base and derived units. Base units are the units which measure the base quantities for the corresponding system of quantities. The base units are used to define units for all other quantities as products of powers of the base units. Such units are called derived units for the system."^^xsd:string ;
+      owl:inverseOf qudt:unitOfSystem .
+
+qudt:typePrefix
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "type prefix"^^xsd:string ;
+      rdfs:range xsd:string .
+
+qudt:uneceCommonCode
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "UNECE common code"^^xsd:string ;
+      rdfs:range xsd:string .
+
+qudt:unit
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "unit"^^xsd:string ;
+      rdfs:range qudt:Unit ;
+      dc:description "A reference to the unit of measure of a quantity (variable or constant) of interest." ;
+      owl:inverseOf qudt:unitFor .
+
+qudt:unitFor
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "unit for"^^xsd:string ;
+      owl:inverseOf qudt:unit .
+
+qudt:unitOfSystem
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "unit of system"^^xsd:string ;
+      dc:description "This property relates a unit of measure with a system of units that either a) defines the unit or b) allows the unit to be used within the system."^^xsd:string ;
+      owl:inverseOf qudt:systemUnit .
+
+qudt:unitSystem
+      rdf:type owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:label "unit system"^^xsd:string .
+
+qudt:value
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "value"^^xsd:string ;
+      dc:description "A property to relate an observable thing with a quantity value (qud:QuantityValue)"^^xsd:string .
+
+qudt:valueQuantity
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "value for quantity"^^xsd:string ;
+      owl:inverseOf qudt:quantityValue .
+
+qudt:vectorMagnitude
+      rdf:type owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:label "vector magnitude"^^xsd:string ;
+      rdfs:range xsd:float .
+
+voag:hasLicenseType
+      rdf:type owl:ObjectProperty .
+
+voag:withAttributionTo
+      rdf:type owl:ObjectProperty ;
+      rdfs:label "with attribution to"^^xsd:string .
+
+skos:closeMatch
+      rdf:type rdf:Property .
+
+skos:exactMatch
+      rdf:type rdf:Property .

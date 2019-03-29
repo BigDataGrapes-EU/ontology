@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>QUDT Notes</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Vladimir Alexiev" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<style type='text/css'> h1,h2,h3,h4,h5,h6,h7 {font-family: Arial} .author, .date, .creator {-webkit-margin-before: 0em; -webkit-margin-after: 0em} .abstract {margin: 1em; padding: 1em; border: 1px solid black} .abstract:before {content: 'Abstract: '; font-weight: bold} #preamble p {font-size: 110%%; margin-left: auto; margin-right: auto; text-align: center} th.left {text-align:left} th.right {text-align:right} th, td {line-height: 1em; border-width: 1px; border-style: solid solid; border-spacing: 2px 2px; padding: 2px 1px} .CANCELED {color: blue} .MAYBE {color: blue} .POSTPONED {color: blue} .SAME {color: blue} .APPLIED {color: orange} .FOLLOW {color: orange} .INPROGRESS {color: orange} .NEXT {color: orange} .IER {color: orange}.underline {text-decoration:underline} </style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">QUDT Notes</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org6660525">Resources</a>
+<ul>
+<li><a href="#orgef74e8c">Diagrams</a>
+<ul>
+<li><a href="#org25b490b">QUDT-model</a></li>
+<li><a href="#org9e3a206">QUDT-model1</a></li>
+<li><a href="#org56708b2">QUDT-archtecture</a></li>
+<li><a href="#orgae75d5d">QUDT-architecture1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org67556e5">Versions</a>
+<ul>
+<li><a href="#orgb747103">QUDT 1.0</a></li>
+<li><a href="#orgdc016b3">QUDT 1.1</a></li>
+<li><a href="#org75e518e">QUDT 2.0</a></li>
+<li><a href="#org40f696c">Incompatibility</a></li>
+</ul>
+</li>
+<li><a href="#org0a33b68">QUDT 1.1 Examples</a>
+<ul>
+<li><a href="#orgb95fc61">Length</a></li>
+<li><a href="#orgced5f91">Time</a></li>
+<li><a href="#org4b01daa">Temperature</a></li>
+</ul>
+</li>
+<li><a href="#org3deac61">QUDT 2 Examples</a>
+<ul>
+<li><a href="#orgc1f0b05">Concentration</a></li>
+</ul>
+</li>
+<li><a href="#orgff8f14f">BDG Units</a>
+<ul>
+<li><a href="#orge6b225a">gram-per-liter</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6660525" class="outline-2">
+<h2 id="org6660525">Resources</h2>
+<div class="outline-text-2" id="text-org6660525">
+<p>
+Saved in <a href="https://drive.google.com/drive/u/0/folders/1Is0Zh8jT5H0eCPf8F-tXQW8ZZdpWUWNv">Google Drive WP3\background\QUDT</a>
+</p>
+<ul class="org-ul">
+<li><a href="http://www.openphacts.org/specs/units/">http://www.openphacts.org/specs/units/</a> 
+<ul class="org-ul">
+<li>Encoding units and unit types in RDF using QUDT. Open PHACTS Working Draft 13 September 2013.</li>
+<li>Latest editor's draft: <a href="http://www.bigcat.unimaas.nl/~egonw/units/">http://www.bigcat.unimaas.nl/~egonw/units/</a> (this page is down)</li>
+<li>OpenPHACTS is an aggregation of lifeSci and pharmaceutical data, so it's relevant.
+It's a worth-while read because it considers some cases and defines some principles.
+They have examples defining <code>ops:GramPerLiter</code> and <code>ops:MilligramPerDeciliter</code> (with <code>rdf:type qudt:MassPerVolumeUnit</code>)
+The RDF seems quite similar to what you've used.</li>
+</ul></li>
+<li><a href="https://semanticommunity.info/Data_Science/Data_Science_for_Cyber_Physical_Systems-Internet_of_Things/QUDT">https://semanticommunity.info/Data_Science/Data_Science_for_Cyber_Physical_Systems-Internet_of_Things/QUDT</a> 
+<ul class="org-ul">
+<li><a href="https://semanticommunity.info/@api/deki/files/34252/QUDT.xlsx?revision=2">QUDT.xlsx</a> is a convenient sheet for looking up units (saved as QUDT-1.0.xlsx)</li>
+<li>"The TopQuadrant work on QUDT and the NASA QUDT Handbook work seems to have stalled."</li>
+<li>"The Semantic Community Data Science Audit of the TopQuadrant work on QUDT found some gaps and errors, which we are currently trying to understand and fix."</li>
+</ul></li>
+</ul>
+<p>
+Presentations:
+</p>
+<ul class="org-ul">
+<li>QUDT-overview (James Masters TQ, 200909)</li>
+<li>NASA-QUDT-Handbook-v10 (Ralf Hodgson TQ, PDE2013, 201310)</li>
+<li>Semantic Community- Data Science for QUDT (2015-06)</li>
+<li>QUDT Toolkit- Development of a Framework to Allow Management of Digital Scientific Units (2017)</li>
+</ul>
+</div>
+
+<div id="outline-container-orgef74e8c" class="outline-3">
+<h3 id="orgef74e8c">Diagrams</h3>
+<div class="outline-text-3" id="text-orgef74e8c">
+</div>
+<div id="outline-container-org25b490b" class="outline-4">
+<h4 id="org25b490b">QUDT-model</h4>
+<div class="outline-text-4" id="text-org25b490b">
+<p>
+QUDT 2.0. Very useful, shows the main 8 classes and relations between them, and describes the rationale for the cardinalities.
+Also see the diagrams in the <a href="http://www.qudt.org/pages/QUDToverviewPage.html">QUDT Overview</a>, which show the attributes of each class, but can't fit all classes on one diagram.
+</p>
+
+
+<div class="figure">
+<p><img src="./img/QUDT-model.png" alt="QUDT-model.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9e3a206" class="outline-4">
+<h4 id="org9e3a206">QUDT-model1</h4>
+<div class="outline-text-4" id="text-org9e3a206">
+<p>
+QUDT 1.1. Shows the main 5 classes and relations between them, with the precise property names
+</p>
+
+
+<div class="figure">
+<p><img src="./img/QUDT-model1.png" alt="QUDT-model1.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org56708b2" class="outline-4">
+<h4 id="org56708b2">QUDT-archtecture</h4>
+<div class="outline-text-4" id="text-org56708b2">
+<p>
+QUDT 1.1. Shows the conceptual levels of QUDT and ontologies that it uses.
+</p>
+
+
+<div class="figure">
+<p><img src="./img/QUDT-archtecture.png" alt="QUDT-archtecture.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgae75d5d" class="outline-4">
+<h4 id="orgae75d5d">QUDT-architecture1</h4>
+<div class="outline-text-4" id="text-orgae75d5d">
+<p>
+QUDT 1.1. Shows the dependencies between modules of QUDT and ontologies that it uses.
+</p>
+
+
+<div class="figure">
+<p><img src="./img/QUDT-architecture1.png" alt="QUDT-architecture1.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org67556e5" class="outline-2">
+<h2 id="org67556e5">Versions</h2>
+<div class="outline-text-2" id="text-org67556e5">
+<p>
+QUDT comes in 3 versions. We use the latest one (2.0).
+The resources are a bit spread around two sites, so I give an overview below.
+</p>
+</div>
+
+<div id="outline-container-orgb747103" class="outline-3">
+<h3 id="orgb747103">QUDT 1.0</h3>
+<div class="outline-text-3" id="text-orgb747103">
+<p>
+I can't find a listing of files, but some of them lurk at the new 2.0 site:
+</p>
+<ul class="org-ul">
+<li><a href="http://data.qudt.org/qudt/owl/1.0.0/qudt.owl">http://data.qudt.org/qudt/owl/1.0.0/qudt.owl</a></li>
+<li><a href="http://data.qudt.org/qudt/owl/1.0.0/quantity.owl">http://data.qudt.org/qudt/owl/1.0.0/quantity.owl</a></li>
+<li><a href="http://data.qudt.org/qudt/owl/1.0.0/dimension.owl">http://data.qudt.org/qudt/owl/1.0.0/dimension.owl</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdc016b3" class="outline-3">
+<h3 id="orgdc016b3">QUDT 1.1</h3>
+<div class="outline-text-3" id="text-orgdc016b3">
+<p>
+<a href="http://www.linkedmodel.org/catalog/qudt/1.1/index.html">http://www.linkedmodel.org/catalog/qudt/1.1/index.html</a>.
+The files are:
+</p>
+<pre class="example">
+OSG_dimension-(v1.1).ttl
+OSG_dtype-(v1.0).ttl
+OSG_quantity-(v1.1).ttl
+OSG_qudt-(v1.01).ttl
+OSG_vaem-(v1.2).ttl
+OSG_voag-(v1.0).ttl
+OVG_dimensionalunits-qudt-(v1.1).ttl
+OVG_dimensions-qudt-(v1.1).ttl
+OVG_quantities-qudt-(v1.1).ttl
+OVG_units-qudt-(v1.1).ttl
+</pre>
+
+<p>
+Prefixes:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;"> </span>     <span style="color: #0000ff;">&lt;http://qudt.org/schema/qudt#&gt;</span><span style="color: #b22222;"> .</span>
+<span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;"> </span>     <span style="color: #0000ff;">&lt;http://qudt.org/vocab/unit#&gt;</span><span style="color: #b22222;"> .</span>
+<span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">dimension:</span><span style="color: #008b8b;"> </span><span style="color: #0000ff;">&lt;http://qudt.org/vocab/dimension#&gt;</span><span style="color: #b22222;"> .</span>
+<span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">quantity:</span><span style="color: #008b8b;"> </span> <span style="color: #0000ff;">&lt;http://qudt.org/vocab/quantity#&gt;</span><span style="color: #b22222;"> .</span>
+</pre>
+</div>
+<p>
+(It also defines <code>qudt-1.1:</code> etc but doesn't use them.)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org75e518e" class="outline-3">
+<h3 id="org75e518e">QUDT 2.0</h3>
+<div class="outline-text-3" id="text-org75e518e">
+<p>
+<a href="http://www.qudt.org/release2/qudt-catalog.html">http://www.qudt.org/release2/qudt-catalog.html</a>.
+I have downloaded all files available as of 29-Mar-2019 (a lot more are expected to be released:
+</p>
+<pre class="example">
+SCHEMA_QUDT-DATATYPES-v2.0.ttl
+SCHEMA_QUDT-SCIENCE-v2.0.ttl
+SCHEMA_QUDT-v2.0.ttl
+VOCAB_QUDT-DISCIPLINES-v2.0.ttl
+VOCAB_QUDT-UNITS-ACOUSTICS-v2.0.ttl
+VOCAB_QUDT-UNITS-BASE-v2.0.ttl
+VOCAB_QUDT-UNITS-ELECTROMAGNETISM-v2.0.ttl
+VOCAB_QUDT-UNITS-LIGHT-v2.0.ttl
+VOCAB_QUDT-UNITS-MECHANICS-v2.0.ttl
+VOCAB_QUDT-UNITS-PHYSICAL-CHEMISTRY-AND-MOLECULAR-PHYSICS-v2.0.ttl
+VOCAB_QUDT-UNITS-SPACE-AND-TIME-v2.0.ttl
+VOCAB_QUDT-UNITS-THERMODYNAMICS-v2.0.ttl
+</pre>
+
+<p>
+Prefixes:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;"> </span>        <span style="color: #0000ff;">&lt;http://qudt.org/schema/qudt/&gt;</span> .
+<span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;"> </span><span style="color: #0000ff;">&lt;http://qudt.org/vocab/quantitykind/&gt;</span> .
+<span style="color: #a020f0;">@prefix</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;"> </span>        <span style="color: #0000ff;">&lt;http://qudt.org/vocab/unit/&gt;</span> .
+</pre>
+</div>
+
+<p>
+Notes:
+</p>
+<ul class="org-ul">
+<li>SemanticCommunity: "The TopQuadrant work on QUDT and the NASA QUDT Handbook work seems to have stalled."</li>
+<li>Now that I think of it, I haven't seen progress on QUDT 2 in about a year</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org40f696c" class="outline-3">
+<h3 id="org40f696c">Incompatibility</h3>
+<div class="outline-text-3" id="text-org40f696c">
+<p>
+If QUDT2 is missing a unit that we need, and it's in QUDT1.1, can we use both?
+Unfortunately no, because the two versions use incompatible URL patterns, eg:
+</p>
+<ul class="org-ul">
+<li>QUDT 1.1: <code>unit:KilogramPerCubicMeter</code></li>
+<li>QUDT 2: <code>unit:KG-PER-M3</code></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0a33b68" class="outline-2">
+<h2 id="org0a33b68">QUDT 1.1 Examples</h2>
+<div class="outline-text-2" id="text-org0a33b68">
+</div>
+<div id="outline-container-orgb95fc61" class="outline-3">
+<h3 id="orgb95fc61">Length</h3>
+<div class="outline-text-3" id="text-orgb95fc61">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">unit:</span>Centimeter
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">DerivedUnit</span> , <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">LengthUnit</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Centimeter"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">abbreviation</span> <span style="color: #8b2252;">"cm"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">code</span> <span style="color: #8b2252;">"2016"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionMultiplier</span> <span style="color: #8b2252;">"0.01"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionOffset</span> <span style="color: #8b2252;">"0.0"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">literal</span> <span style="color: #8b2252;">"centimeter"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">symbol</span> <span style="color: #8b2252;">"cm"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">uneceCommonCode</span> <span style="color: #8b2252;">"CMT"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">exactMatch</span> <span style="color: #0000ff;">&lt;http://dbpedia.org/resource/Centimetre&gt;</span> .
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgced5f91" class="outline-3">
+<h3 id="orgced5f91">Time</h3>
+<div class="outline-text-3" id="text-orgced5f91">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">unit:</span>MilliSecond
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">DerivedUnit</span> , <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">TimeUnit</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">quantityKind</span> <span style="color: #228b22;">qudt-quantity:</span><span style="color: #008b8b;">Time</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Millisecond"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">symbol</span> <span style="color: #8b2252;">"ms"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">abbreviation</span> <span style="color: #8b2252;">"ms"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">code</span> <span style="color: #8b2252;">"1616"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">uneceCommonCode</span> <span style="color: #8b2252;">"C26"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionMultiplier</span> <span style="color: #8b2252;">"0.001"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionOffset</span> <span style="color: #8b2252;">"0.0"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">exactMatch</span> <span style="color: #0000ff;">&lt;http://dbpedia.org/resource/Millisecond&gt;</span> <span style="color: #228b22;">.</span>
+<span style="color: #228b22;">unit:</span><span style="color: #008b8b;">SystemOfUnits_USCustomary</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">systemDefinedUnit</span> <span style="color: #228b22;">unit:</span><span style="color: #008b8b;">MilliSecond</span>.
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org4b01daa" class="outline-3">
+<h3 id="org4b01daa">Temperature</h3>
+<div class="outline-text-3" id="text-org4b01daa">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">unit:</span>DegreeCelsius
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">DerivedUnit</span> , <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">TemperatureUnit</span> , <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">SIUnit</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Degree Celsius"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">abbreviation</span> <span style="color: #8b2252;">"degC"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">code</span> <span style="color: #8b2252;">"0515"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionMultiplier</span> <span style="color: #8b2252;">"1"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionOffset</span> <span style="color: #8b2252;">"273.15"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">symbol</span> <span style="color: #8b2252;">"degC"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">exactMatch</span> <span style="color: #0000ff;">&lt;http://dbpedia.org/resource/Celsius&gt;</span> <span style="color: #228b22;">.</span>
+
+<span style="color: #228b22;">unit:</span>DegreeFahrenheit
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">TemperatureUnit</span> , <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">NotUsedWithSIUnit</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Degree Fahrenheit"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">abbreviation</span> <span style="color: #8b2252;">"degF"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">code</span> <span style="color: #8b2252;">"0525"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionMultiplier</span> 0.5555555555555555556E0 ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionOffset</span> 255.37037037037037037E0 ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">symbol</span> <span style="color: #8b2252;">"degF"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">string</span> .
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3deac61" class="outline-2">
+<h2 id="org3deac61">QUDT 2 Examples</h2>
+<div class="outline-text-2" id="text-org3deac61">
+</div>
+<div id="outline-container-orgc1f0b05" class="outline-3">
+<h3 id="orgc1f0b05">Concentration</h3>
+<div class="outline-text-3" id="text-orgc1f0b05">
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">unit:</span>KG-PER-M3
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">DerivedUnit,</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">MassPerVolumeUnit,</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">Unit</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionMultiplier</span> 1.0e0 ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionOffset</span> <span style="color: #8b2252;">"0.0"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span> <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Density</span> .
+</pre>
+</div>
+<p>
+The link to <code>quantitykind:Density</code> is in QUDT2 but not in QUDT1.1. This link is consistent with a restriction on the type <code>qudt:MassPerVolumeUnit</code>:
+</p>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">qudt:</span>MassPerVolumeUnit
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Class</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">MassUnit</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">subClassOf</span> [
+      <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">Restriction</span> ;
+      <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">hasValue</span> <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Density</span> ;
+      <span style="color: #228b22;">owl:</span><span style="color: #008b8b;">onProperty</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span> ;
+    ] .
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgff8f14f" class="outline-2">
+<h2 id="orgff8f14f">BDG Units</h2>
+<div class="outline-text-2" id="text-orgff8f14f">
+</div>
+<div id="outline-container-orge6b225a" class="outline-3">
+<h3 id="orge6b225a">gram-per-liter</h3>
+<div class="outline-text-3" id="text-orge6b225a">
+<p>
+Let's define "gram-per-liter" after the QUDT 2 fashion.
+For this purpose we need to look at these terms:
+</p>
+<ul class="org-ul">
+<li><code>unit:L</code> (<code>VOCAB_QUDT-UNITS-SPACE-AND-TIME-v2.0.ttl</code>)</li>
+<li><code>unit:KG-PER-M3</code> (from <code>VOCAB_QUDT-UNITS-MECHANICS-v2.0.ttl</code>)</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-Turtle"><span style="color: #228b22;">bdg-unit:</span>G-PER-LT
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">DerivedUnit</span> ;
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">MassPerVolumeUnit</span> ;
+  <span style="color: #228b22;">rdf:</span><span style="color: #008b8b;">type</span> <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">Unit</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">abbreviation</span> <span style="color: #8b2252;">"g/L"</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionMultiplier</span> 1.0e0 ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">conversionOffset</span> <span style="color: #8b2252;">"0.0"</span><span style="color: #228b22;">^^xsd:</span><span style="color: #008b8b;">double</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">description</span> <span style="color: #8b2252;">"Gram per liter is a convenience unit, numerically the same as Kilogram per Cubic Meter"</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">hasQuantityKind</span> <span style="color: #228b22;">quantitykind:</span><span style="color: #008b8b;">Density</span> ;
+  <span style="color: #228b22;">qudt:</span><span style="color: #008b8b;">symbol</span> <span style="color: #8b2252;">"g l^{-1}"</span> ;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">isDefinedBy</span> <span style="color: #228b22;">bdg-unit:</span><span style="color: #008b8b;"> </span>;
+  <span style="color: #228b22;">rdfs:</span><span style="color: #008b8b;">label</span> <span style="color: #8b2252;">"Gram per Liter"</span> ;
+  <span style="color: #228b22;">skos:</span><span style="color: #008b8b;">prefLabel</span> <span style="color: #8b2252;">"gram-per-liter"</span> ;
+.
+</pre>
+</div>
+<p>
+Notes:
+</p>
+<ul class="org-ul">
+<li>This unit is numerically the same as <code>unit:KG-PER-M3</code>, so <code>qudt:conversionMultiplier</code> is 1.0</li>
+<li>Nevertheless, some disciplines use such "customary units" for convenience</li>
+<li>I don't define <code>qudt:code</code> (eg "0995") and <code>qudt:id</code> (eg "U-150-0995") because I'm too lazy to look them up</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2019-03-29 Fri 00:00</p>
+<p class="author">Author: Vladimir Alexiev</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
