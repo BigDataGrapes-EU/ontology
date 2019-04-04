@@ -1,0 +1,56 @@
+
+bdg:gramPerLiter a qudt:MassPerVolumeUnit, qudt:SIDerivedUnit, qudt:DerivedUnit; 
+  rdfs:label "Gram per Liter"^^xsd:string; 
+  qudt:abbreviation "g/L"^^xsd:string; 
+  qudt:conversionMultiplier 1.0; 
+  qudt:conversionOffset 0.0; 
+  qudt:symbol "g/dm^3"^^xsd:string . 
+
+
+#Mass per volume not found in qudt:quantitykind maybe use quantitykind:ChemistryQuantityKind 
+bdg:massPerVolume a qudt:quantityKind; 
+  rdfs:label "MassPerVolume" . 
+
+
+bdg:concentration a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Concentration";
+  rdfs:notation "Concentration";
+  qudt:hasQuantityKind bdg:MassPerVolume;
+  sdmx-attribute:unitMeasure bdg:GramPerLiter;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:harvestWeight a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Harvest weight";
+  rdfs:notation "HarvestWeight";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  qudt:hasQuantityKind quantitykind:AtomicPhysicsQuantityKind;
+  sdmx-attribute:unitMeasure unit:mass;
+  rdfs:comment  "sequential";
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:tastingResult a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Tasting Result";
+  rdfs:notation "TastingResult";
+  sosa:hasFeatureOfInterest <feature/FinishedWine>;
+  qudt:hasQuantityKind quantitykind:DimensionLess;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:grapeClusterWeight a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Grape Cluster Weight";
+  rdfs:notation "GrapeClusterWeight";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  qudt:hasQuantityKind quantitykind:mass;
+  sdmx-attribute:unitMeasure unit:Kilogram;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:grapeClusterNumber a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Grape Cluster Number";
+  rdfs:notation "GrapeClusterNumber";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  qudt:hasQuantityKind quantitykind:DimensionLess;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept  sdmx-concept:obsValue.
+
+
+

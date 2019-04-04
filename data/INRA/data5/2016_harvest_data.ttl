@@ -1,0 +1,57 @@
+ 
+<data/winemaking/PechRouge/Harvest/2016> a qb:DataSet; 
+  rdfs:label "Data about Harvest done on Pech Rouge in 2016"; 
+  qb:structure <DSD/harvestWeight/2016> . 
+ 
+<DSD/harvestWeight/2016> a qb:DataStructureDefinition; 
+  qb:component [qb:dimension bdg:plot;                  ]; 
+  qb:component [qb:dimension bdg:variety;               ]; 
+  qb:component [qb:dimension bdg:date;                  ]; 
+  qb:component [qb:dimension bdg:humanSensor;           ]; 
+  qb:component [qb:measure   bdg:grapeClusterWeight    ; qb:componentAttachment qb:DataSet]; 
+  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:MeasureProperty]; 
+  qb:component [qb:attribute qudt:hasQuantityKind      ; qb:componentAttachment qb:MeasureProperty]; 
+  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty] . 
+ 
+<variety/Chardonnay> a bdg:variety; 
+rdfs:label"Chardonnay"^^xsd:string . 
+ 
+<variety/Muscat-Petit-Grain> a bdg:variety; 
+rdfs:label"Muscat-Petit-Grain"^^xsd:string . 
+
+<INRA/agent/jerome.cerutti> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "cerutti"^^xsd:string;
+  foaf:firstName "jerome"^^xsd:string .
+
+
+<INRA/agent/fabien.robert> a bdg:humanSensor, ofpe:Operator, foaf:Person;
+  foaf:familyName "robert"^^xsd:string;
+  foaf:firstName "fabien"^^xsd:string .
+
+
+<data/winemaking/PechRouge/harvestWeight/2016/f18f7fff-506c-4f32-b5fc-32d8b58f8b86> a qb:Observation;
+   qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+   bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
+   bdg:variety    <variety/Chardonnay>;
+   bdg:date    "2016-08-24"^^xsd:Date;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
+   bdg:HarvestWeight    "612.5"^^xsd:decimal .
+
+<data/winemaking/PechRouge/harvestWeight/2016/478274e5-f768-4d29-9a76-7579ae38e49d> a qb:Observation;
+   qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+   bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
+   bdg:variety    <variety/Chardonnay>;
+   bdg:date    "2016-08-29"^^xsd:Date;
+   bdg:humanSensor   <INRA/agent/jerome.cerutti>;
+   bdg:HarvestWeight    "620.9"^^xsd:decimal .
+
+<data/winemaking/PechRouge/harvestWeight/2016/67fc0c1d-3ea9-4189-9325-c7a8c24829dc> a qb:Observation;
+   qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+   bdg:plot    <INRA/estate/PechRouge/75/78-MUSCAT-PETIT-GRAIN>;
+   bdg:variety    <variety/Muscat-Petit-Grain>;
+   bdg:date    "2016-08-24"^^xsd:Date;
+   bdg:humanSensor   <INRA/agent/fabien.robert>;
+   bdg:HarvestWeight    "1440"^^xsd:decimal .
+
+
+

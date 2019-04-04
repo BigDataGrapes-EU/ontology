@@ -1,0 +1,19 @@
+
+
+bdg:Variety a rdf:Class, skos:Concept;
+  rdfs:label "Variety";
+  skos:exactMatch agrovoc:c_8157;
+  rdfs:seeAlso agrovoc:c_8157;
+  rdfs:comment "Genetic resource that identify vinestock specific set of characteristic".
+
+bdg:FermentationTank a rdf:Class, skos:Concept;
+  rdfs:label "Fermentation Tank";
+  rdfs:comment "Tank used to do the fermentation".
+
+bdg:WinemakingExperiment a rdf:Class, skos:Concept;
+  rdfs:label "Winemaking experiment";
+  rdfs:seeAlso aeo:AgriExperiment;
+  rdfs:comment "An expriment carried out by the researchers".
+
+
+
