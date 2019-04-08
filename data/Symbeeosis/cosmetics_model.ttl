@@ -1,0 +1,49 @@
+bdg:pH a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "pH Measurement";
+  skos:notation              "pH";
+  sosa:hasFeatureOfInterest  <feature/???>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:Ri a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Refractive index";
+  skos:notation              "Ri";
+  sosa:hasFeatureOfInterest  <feature/???>;
+  qudt:hasQuantityKind       quantitykind:Dimensionless;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:DPPH a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Antioxidant activity DPPH";
+  skos:notation              "DPPH";
+  sosa:hasFeatureOfInterest  <feature/???>;
+  qudt:hasQuantityKind       ops:MicrogramPerMilliliter; #OpenPHACTS
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:ABTS a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Antioxidant activity ABTS";
+  skos:notation              "ABTS";
+  sosa:hasFeatureOfInterest  <feature/???>;
+  qudt:hasQuantityKind       ops:MicrogramPerMilliliter; #OpenPHACTS
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:TPC a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Total phenolic content, TPC";
+  skos:notation              "TPC";
+  sosa:hasFeatureOfInterest  <feature/???>;
+  qudt:hasQuantityKind       ops:MicrogramPerMilliliter; #OpenPHACTS
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept                 sdmx-concept:obsValue.
+
+bdg:TFC a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label                 "Total flavonoid content, TFC";
+  skos:notation              "TFC";
+  sosa:hasFeatureOfInterest  <feature/???>;
+  qudt:hasQuantityKind       ops:MicrogramPerMilliliter; #OpenPHACTS
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept                 sdmx-concept:obsValue.
+
+#need examples for rest
