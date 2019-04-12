@@ -1,6 +1,6 @@
 @base                      <http://data.bigdatagrapes.eu/resource/>.
 @prefix bdg:               <http://data.bigdatagrapes.eu/resource/ontology/>.
-@prefix bdg-unit           <http://data.bigdatagrapes.eu/resource/unit/>.
+@prefix bdg-unit:           <http://data.bigdatagrapes.eu/resource/unit/>.
 
 # Common Namespaces
 @prefix cc:                <http://creativecommons.org/ns#>.

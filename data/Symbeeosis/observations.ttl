@@ -13,7 +13,8 @@
     [qb:attribute bdg:comparisonBaseline ; qb:componentAttachment qb:MeasureProperty ],
     [qb:dimension bdg:extractionMethod ],
     [qb:dimension bdg:date ],
-    [qb:dimension bdg:grapeVariety ]
+    [qb:dimension bdg:grapeVariety ],
+    [qb:dimension bdg:sample ],
     [qb:measure   bdg:pH ],
     [qb:measure   bdg:refractiveIndex ],
     [qb:measure   bdg:yeastsAndMoulds ],
@@ -21,9 +22,19 @@
     [qb:measure   bdg:antioxidantActivityDPPHTrolox ],
     [qb:measure   bdg:antioxidantActivityABTSTrolox ],
     [qb:measure   bdg:TPCGallicAcid ],
-    [qb:measure   bdg:TFCQuercetin ],
+    [qb:measure   bdg:TFCQuercetin ].
 
 
-
-
-
+<data/cosmetics/IA1U> a qb:Obesrvation ;
+    qb:dataSet                          <data/cosmetics> ;
+    bdg:extractionMethod                <extractionMethod/Ultrasound>;
+    bdg:grapeVariety                    <grapeVariety/Agiorgitiko>;
+    bdg:date                            2018-05-08^^xsd:date;
+    bdg:pH                              5.89;
+    bdg:refractiveIndex                 18.93;
+    bdg:totalMicrobialCount             <microbialCount/LT10>;
+    bdg:yeastsAndMoulds                 <microbialCount/LT10>;
+    bdg:antioxidantActivityDPPHTrolox   4.31;
+    bdg:antioxidantActivityABTSTrolox   12.38;
+    bdg:TPCGallicAcid                   5.96;
+    bdg:TFCQuercetin                    12.24.
