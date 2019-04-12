@@ -1,125 +1,29 @@
 ## Brix (refractive index)
 
-<data/cosmetics/Brix> a qb:DataSet ;
-    rdfs:label    "Measurement of Brix% for cosmetics pilot";
-    qb:structure  <DSD/cosmetics/brix> ;
-    sosa:hasFeatureOfInterest <feature/???> ; #is the same thing tested throughout the dataset?
-    sdmx-attribute:unitMeasure unit:PERCENT .
+<data/cosmetics> a qb:DataSet ;
+    rdfs:label    "Measurement  for cosmetics pilot";
+    qb:structure  <DSD/cosmetics> ;
+    sosa:hasFeatureOfInterest <feature/VineLeaves> .
 
-<DSD/cosmetics/brix> a qb:DataStructureDefinition ;
+<DSD/cosmetics> a qb:DataStructureDefinition ;
     qb:component
-    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:DataSet],
     [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:DataSet],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute bdg:assayMethod ; qb:componentAttachment qb:MeasureProperty ],
+    [qb:attribute bdg:comparisonBaseline ; qb:componentAttachment qb:MeasureProperty ],
     [qb:dimension bdg:extractionMethod ],
-    [qb:dimension bdg:dateCollection ],
-    [qb:measure   bdg:brix ].
-
-bdg:extractionMethod a qb:AttributeProperty, qb:CodedProperty;
-  rdfs:label "Extraction Method"; rdfs:comment "Extraction method employed to the sample";
-  qb:codeList <extractionMethod>;
-  rdfs:range bdg:ExtractionMethod.
-
-<extractionMethod> a skos:ConceptScheme;
-  rdfs:label "Extraction Method codelist scheme".
-bdg:ExtractionMethod a rdfs:Class; rdfs:subClassOf skos:Concept;
-  rdfs:label "Extraction method codelist class".
-<extractionMethod/Ultrasound> a skos:Concept, bdg:ExtractionMethod;
-  skos:inScheme <extractionMethod>; skos:topConceptOf <extractionMethod>;
-  skos:prefLabel "Ultrasound".
-<extractionMethod/Maceration> a skos:Concept, bdg:ExtractionMethod;
-  skos:inScheme <extractionMethod>; skos:topConceptOf <extractionMethod>;
-  skos:prefLabel "Maceration".
-
-bdg:brix a qb:MeasureProperty, sosa:ObservableProperty;
-  rdfs:label                 "Brix";
-  skos:notation              "Brix%";
-  qb:concept                 sdmx-concept:obsValue.
-
-<data/cosmetics/Brix/I_A_1_M> a qb:Observation ;
-  qb:dataSet              <data/cosmetics/Brix> ;
-  bdg:dateCollection      "2018-05-08"^^xsd:date ;
-  bdg:brix                20.47;
-  bdg:extractionMethod    <extractionMethod/Maceration>.
-
-<data/cosmetics/Brix/I_A_1_U> a qb:Observation ;
-  qb:dataSet              <data/cosmetics/Brix> ;
-  bdg:dateCollection      "2018-05-08"^^xsd:date ;
-  bdg:brix                18.93;
-  bdg:extractionMethod    <extractionMethod/Ultrasound>.
+    [qb:dimension bdg:date ],
+    [qb:dimension bdg:grapeVariety ]
+    [qb:measure   bdg:pH ],
+    [qb:measure   bdg:refractiveIndex ],
+    [qb:measure   bdg:yeastsAndMoulds ],
+    [qb:measure   bdg:totalMicrobialCount ],
+    [qb:measure   bdg:antioxidantActivityDPPHTrolox ],
+    [qb:measure   bdg:antioxidantActivityABTSTrolox ],
+    [qb:measure   bdg:TPCGallicAcid ],
+    [qb:measure   bdg:TFCQuercetin ],
 
 
-##Antioxidant Activity
-
-<data/cosmetics/AntioxidantActivity> a qb:DataSet ;
-    rdfs:label    "Measurement of Antioxidant Activity for cosmetics pilot";
-    qb:structure  <DSD/cosmetics/AntioxidantActivity> ;
-    sosa:hasFeatureOfInterest <feature/???> ;
-    sdmx-attribute:unitMeasure unit:PERCENT .
-
-<DSD/cosmetics/AntioxidantActivity> a qb:DataStructureDefinition ;
-    qb:component
-    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:DataSet],
-    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:DataSet],
-    [qb:dimension bdg:extractionMethod ],
-    [qb:dimension bdg:dateCollection ],
-    [qb:measure   bdg:antioxidantActivity ].
 
 
-<assayMethod> a skos:ConceptScheme;
-  rdfs:label "Assay Method codelist scheme".
 
-bdg:AssayMethod a rdfs:Class; rdfs:subClassOf skos:Concept;
-  rdfs:label "Assay method codelist class".
-
-<assayMethod/DPPH> a skos:Concept, bdg:ExtractionMethod;
-  skos:inScheme <assayMethod>; skos:topConceptOf <assayMethod>;
-  skos:prefLabel "DPPH" ;
-  rdfs:seeAlso <https://www.wikidata.org/wiki/Q5205953> .
-
-<assayMethod/ABTS> a skos:Concept, bdg:ExtractionMethod;
-  skos:inScheme <assayMethod>; skos:topConceptOf <assayMethod>;
-  skos:prefLabel "ABTS" ;
-  rdfs:seeAlso   <https://www.wikidata.org/wiki/Q287582> .
-
-bdg:AA_DPPH a qb:MeasureProperty, sosa:ObservableProperty;
-  rdfs:label                 "AA_DPPH";
-  skos:notation              "Antioxidant activity DPPH ";
-  skos:description           "Antioxidant activity: Spectrophotometric method of antioxidant capacity using DPPH assay";
-  sdmx-attribute:unitMeasure bdg-unit:UG-PER-ML;
-  bdg:assayMethod            <assayMethod/DPPH>;
-  qb:concept                 sdmx-concept:obsValue.
-
-bdg:AA_ABTS a qb:MeasureProperty, sosa:ObservableProperty;
-  rdfs:label                 "AA_DPPH";
-  skos:notation              "Antioxidant activity DPPH ";
-  skos:description           "Antioxidant activity: Spectrophotometric method of antioxidant capacity using ABTS assay";
-  sdmx-attribute:unitMeasure bdg-unit:UG-PER-ML;
-  bdg:assayMethod            <assayMethod/DPPH>;
-  qb:concept                 sdmx-concept:obsValue.
-
-bdg-unit:UG-PER-ML
-  rdf:type qudt:DerivedUnit ;
-  rdf:type qudt:MassPerVolumeUnit ;
-  rdf:type qudt:Unit ;
-  qudt:abbreviation "μg/mL" ;
-  qudt:conversionMultiplier 1.0e0 ;
-  qudt:conversionOffset "0.000001"^^xsd:double ;
-  qudt:description "Microgram per milliliter is KG-PER-M3 scaled by 10^{-6}" ;
-  qudt:hasQuantityKind quantitykind:Density ;
-  qudt:symbol "μg/cm^3" ;
-  rdfs:isDefinedBy bdg-unit: ;
-  rdfs:label "Microgram per Milliliter" ;
-  skos:prefLabel "microgram-per-milliliter" .
-
-<data/cosmetics/AntioxidantActivity/I_A_1_M> a qb:Observation ;
-  qb:dataSet              <data/cosmetics/AntioxidantActivity> ;
-  bdg:dateCollection      "2018-05-08"^^xsd:date ;
-  bdg:AA_DPPH  25.26;
-  bdg:AA_ABTS  12.35;
-  bdg:extractionMethod    <extractionMethod/Maceration> .
-
-
-<data/cosmetics/AntioxidantActivity/I_A_1_U> a qb:Observation ;
-  qb:dataSet              <data/cosmetics/AntioxidantActivity> ;
-  bdg:dateCollection      "2018-05-08"^^xsd:date ;
-  bdg:extractionMethod    <extractionMethod/Ultrasound>.
