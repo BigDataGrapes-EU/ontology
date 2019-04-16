@@ -1,0 +1,129 @@
+ 
+<data/winemaking/PechRouge/sensoryAnalysis/2016> a qb:DataSet; 
+  rdfs:label "Data about different wines which have been tested after fermentation at Pech Rouge in 2016"; 
+  qb:structure <DSD/sensoryAnalysis/2016> . 
+ 
+bdg:sensorialAnalysis a qb:AttributeProperty, qb:CodedProperty; 
+  qb:codeList <sensorialAnalysis>; 
+  rdfs:label "Tasting Flavor"; rdfs:comment "tasting flavor of the wine"; 
+  rdfs:range bdg:SensorialAnalysis. 
+ 
+# flavor list  
+<sensorialAnalysis> a skos:ConceptScheme; 
+  rdfs:label "Sensorial analysis codelist scheme"; 
+  rdfs:seeAlso bdg:SensorialAnalysis . 
+ 
+<sensorialAnalysis-sulfur> a skos:Concept, bdg:SensorialAnalysis; 
+  skos:inScheme <sensorialAnalysis>; skos:topConceptOf <sensorialAnalysis>; 
+  skos:notation "sulfur"; skos:prefLabel "taste of sulfur". 
+  
+<sensorialAnalysis-animal> a skos:Concept, bdg:SensorialAnalysis; 
+  skos:inScheme <sensorialAnalysis>; skos:topConceptOf <sensorialAnalysis>; 
+  skos:notation "animal"; skos:prefLabel "it smells like an animal". 
+ 
+<DSD/sensoryAnalysis/2016> a qb:DataStructureDefinition; 
+  qb:component [ qb:dimension bdg:statisticalReplication                                            ]; 
+  qb:component [ qb:dimension bdg:wine                                                              ]; 
+  qb:component [ qb:dimension bdg:date                                                              ]; 
+  qb:component [ qb:dimension bdg:humanSensor                                                       ]; 
+  qb:component [ qb:attribute bdg:sensorialAnalysis; qb:componentAttachment qb:Observation          ]; 
+  qb:component [ qb:measure   bdg:tastingResult                                                     ]; 
+  qb:component [ qb:attribute sosa:hasFeatureOfInterest; qb:componentAttachment qb:MeasureProperty  ]; 
+  qb:component [ qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ] . 
+
+<INRAjudge/563> a bdg:humanSensor;
+  rdfs:label "Judge 563";
+  sosa:observes bdg:sensorialAnalysis .
+
+<INRAjudge/1286> a bdg:humanSensor;
+  rdfs:label "Judge 1286";
+  sosa:observes bdg:sensorialAnalysis .
+
+<INRAjudge/1180> a bdg:humanSensor;
+  rdfs:label "Judge 1180";
+  sosa:observes bdg:sensorialAnalysis .
+
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/4b8e1dc2-5b05-4a8d-bcc4-f916b586deb7> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/563>;
+    bdg:sensorialAnalysis <tastingFlavor-sulfur>;
+    bdg:tastingResult    "2.4"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/97f976d2-208a-4d77-ba8f-5007f1f89419> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1180>;
+    bdg:sensorialAnalysis <tastingFlavor-sulfur>;
+    bdg:tastingResult    "0.2"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/e1afbc2c-918f-4ea0-8cfa-66b90bcdb91c> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1286>;
+    bdg:sensorialAnalysis <tastingFlavor-sulfur>;
+    bdg:tastingResult    "0.0"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/43b01826-a3bb-4e5a-a7dd-8ab5b540df2a> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/563>;
+    bdg:sensorialAnalysis <tastingFlavor-sulfur>;
+    bdg:tastingResult    "8.9"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/24900bdb-2dcc-4d0c-a40a-3dfe2373a416> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1180>;
+    bdg:sensorialAnalysis <tastingFlavor-sulfur>;
+    bdg:tastingResult    "6.3"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/096eb697-eb04-4b09-bc76-49407c758550> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1286>;
+    bdg:sensorialAnalysis <tastingFlavor-sulfur>;
+    bdg:tastingResult    "2.2"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/a2a3fa87-2914-4aa5-9f63-d0b5c635bb0d> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/563>;
+    bdg:sensorialAnalysis <tastingFlavor-animal>;
+    bdg:tastingResult    "6.0"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/56a5ab01-f670-4191-94d2-a5cd488b202c> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1180>;
+    bdg:sensorialAnalysis <tastingFlavor-animal>;
+    bdg:tastingResult    "6.0"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/add6bcb2-f7d4-4237-9de8-83aba2c24ae4> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1286>;
+    bdg:sensorialAnalysis <tastingFlavor-animal>;
+    bdg:tastingResult    "0.0"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/32279db6-1880-49b5-b908-f8eb1fec45c5> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/563>;
+    bdg:sensorialAnalysis <tastingFlavor-animal>;
+    bdg:tastingResult    "2.7"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/aacd11ff-55bf-4385-8fb2-2c8c0ea45efa> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1180>;
+    bdg:sensorialAnalysis <tastingFlavor-animal>;
+    bdg:tastingResult    "7.5"^^xsd:decimal .
+
+<data/winemaking/PechRouge/sensoryAnalysis/2016/c2646be4-20aa-49a8-83cd-7a6cbf51bc3a> a qb:Observation;
+    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
+    bdg:wine    <wine/ALFcolomb01>;
+    bdg:humanSensor    <judge/1286>;
+    bdg:sensorialAnalysis <tastingFlavor-animal>;
+    bdg:tastingResult    "3.9"^^xsd:decimal .
