@@ -1,18 +1,18 @@
  
-<data/winemaking/PechRouge/EndFermentationMonitoring/2016/MalicAcid> a qb:DataSet; # malic acid data set
-  rdfs:label "MalicAcid Data about Fermentation done on Pech Rouge in 2016";
-  sosa:hasFeatureOfInterest   <feature/MalicAcid>; # concept we will use
-  qb:structure <DSD/EndFermentationMonitoring/2016> .  # dataset description
+<data/winemaking/PechRouge/EndFermentationMonitoring/2016/MalicAcid> a qb:DataSet; # malic acid data set 
+  rdfs:label "MalicAcid Data about Fermentation done on Pech Rouge in 2016"; 
+  sosa:hasFeatureOfInterest   <feature/MalicAcid>; # concept we will use 
+  qb:structure <DSD/EndFermentationMonitoring/2016> .  # dataset description 
  
 <DSD/EndFermentationMonitoring/2016> a qb:DataStructureDefinition; 
-  qb:component [qb:dimension bdg:fermentationTank;            ]; # tank used for fermentation
-  qb:component [qb:dimension bdg:date;                        ]; # date
-  qb:component [qb:dimension bdg:winemakingExperiment;        ]; # experiment
-  qb:component [qb:measure   bdg:concentration                ]; # concentration measure
-  qb:component [qb:attribute sosa:hasFeatureOfInterest; qb:componentAttachment qb:DataSet];
-  qb:component [qb:attribute qudt:hasQuantityKind     ; qb:componentAttachment qb:MeasureProperty]; 
-  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty] . 
-
+  qb:component [qb:dimension bdg:fermentationTank                                                  ]; # tank used for fermentation 
+  qb:component [qb:dimension bdg:date                                                              ]; # date 
+  qb:component [qb:dimension bdg:winemakingExperiment                                              ]; # experiment 
+  qb:component [qb:measure   bdg:concentration                                                     ]; # concentration measure 
+  qb:component [qb:attribute sosa:hasFeatureOfInterest; qb:componentAttachment qb:MeasureProperty  ]; 
+  qb:component [qb:attribute qudt:hasQuantityKind     ; qb:componentAttachment qb:MeasureProperty  ]; 
+  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ] . 
+ 
 <fermentationTank/P23> a bdg:FermentationTank; 
 rdfs:label "Tank_P23"^^xsd:string . 
  
@@ -21,36 +21,33 @@ rdfs:label "Tank_BB1010"^^xsd:string .
  
 <fermentationTank/P12> a bdg:FermentationTank; 
 rdfs:label "Tank_P12"^^xsd:string . 
-
+ 
 <experimentalModality/2016_HE1_MuscatSec> a bdg:WinemakingExperiment;
   rdfs:label "2016_HE1_MuscatSec"^^xsd:string .
-
-<experimentalModality/2016_HE2_Chardonnay> a bdg:WinemakingExperiment;
-  rdfs:label "2016_HE2_Chardonnay"^^xsd:string .
 
 <experimentalModality/2016_ALF_CHARD_01> a bdg:WinemakingExperiment;
   rdfs:label "2016_ALF_CHARD_01"^^xsd:string .
 
-<data/winemaking/PechRouge/EndFermentationMonitoring/2016/f961fe89-7e76-4bfe-a118-ec6e1f9cf581> a qb:Observation;
-   qb:dataSet  <data/winemaking/PechRouge/EndFermentationMonitoring/2016>;
-   bdg:fermentationTank    <fermentationTank/BB1010>;
-   bdg:winemakingExperiment    <experiment/2016/2016_HE1_MuscatSec>;
-   bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:concentration    "0.15"^^xsd:decimal.
+<experimentalModality/2016_HE2_Chardonnay> a bdg:WinemakingExperiment;
+  rdfs:label "2016_HE2_Chardonnay"^^xsd:string .
 
-<data/winemaking/PechRouge/EndFermentationMonitoring/2016/75e3dfd7-bffa-4813-af2c-6593d893625b> a qb:Observation;
-   qb:dataSet  <data/winemaking/PechRouge/EndFermentationMonitoring/2016>;
-   bdg:fermentationTank    <fermentationTank/P12>;
-   bdg:winemakingExperiment    <experiment/2016/2016_HE2_Chardonnay>;
-   bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:concentration    "0.15"^^xsd:decimal.
-
-<data/winemaking/PechRouge/EndFermentationMonitoring/2016/18e24295-dc31-4099-8ccc-6ee2f114db85> a qb:Observation;
+<data/winemaking/PechRouge/EndFermentationMonitoring/2016/2016-09-05> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/EndFermentationMonitoring/2016>;
    bdg:fermentationTank    <fermentationTank/P23>;
    bdg:winemakingExperiment    <experiment/2016/2016_ALF_CHARD_01>;
    bdg:date    "2016-09-05"^^xsd:Date;
-   bdg:concentration    "0.2"^^xsd:decimal.
+   bdg:concentration    "1.32"^^xsd:decimal .
 
+<data/winemaking/PechRouge/EndFermentationMonitoring/2016/2016-09-05> a qb:Observation;
+   qb:dataSet  <data/winemaking/PechRouge/EndFermentationMonitoring/2016>;
+   bdg:fermentationTank    <fermentationTank/P12>;
+   bdg:winemakingExperiment    <experiment/2016/2016_HE2_Chardonnay>;
+   bdg:date    "2016-09-05"^^xsd:Date;
+   bdg:concentration    "3.75"^^xsd:decimal .
 
-
+<data/winemaking/PechRouge/EndFermentationMonitoring/2016/2016-09-05> a qb:Observation;
+   qb:dataSet  <data/winemaking/PechRouge/EndFermentationMonitoring/2016>;
+   bdg:fermentationTank    <fermentationTank/BB1010>;
+   bdg:winemakingExperiment    <experiment/2016/2016_HE1_MuscatSec>;
+   bdg:date    "2016-09-05"^^xsd:Date;
+   bdg:concentration    "3.99"^^xsd:decimal .
