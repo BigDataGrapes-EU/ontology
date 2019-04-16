@@ -1,19 +1,18 @@
-
-
 bdg:Variety a rdf:Class, skos:Concept;
   rdfs:label "Variety";
   skos:exactMatch agrovoc:c_8157;
   rdfs:seeAlso agrovoc:c_8157;
-  rdfs:comment "Genetic resource that identify vinestock specific set of characteristic".
+  dct:description "Genetic resource that identify vinestock specific set of characteristic".
 
 bdg:FermentationTank a rdf:Class, skos:Concept;
   rdfs:label "Fermentation Tank";
-  rdfs:comment "Tank used to do the fermentation".
+  dct:description "Tank used to do the fermentation".
 
 bdg:WinemakingExperiment a rdf:Class, skos:Concept;
   rdfs:label "Winemaking experiment";
   rdfs:seeAlso aeo:AgriExperiment;
-  rdfs:comment "An expriment carried out by the researchers".
+  dct:description "An expriment carried out by the researchers".
 
-
-
+bdg:SensorialAnalysis a rdf:Class, skos:Concept;
+  rdfs:label "SensorialAnalysis";
+  dct:description "Sensorial analysis are human subjective evaluations done by judges (experts, panel...). It consists in tasting the product of interest (wine before or after bottling) and giving aromas composition, fealings…".
