@@ -15,19 +15,19 @@
 :PROPERTIES:
 :CUSTOM_ID: Resources
 :END:
-Saved in [[https://drive.google.com/drive/u/0/folders/1Is0Zh8jT5H0eCPf8F-tXQW8ZZdpWUWNv][Google Drive WP3\background\QUDT]]
 - http://www.openphacts.org/specs/units/ 
   - Encoding units and unit types in RDF using QUDT. Open PHACTS Working Draft 13 September 2013.
-  - Latest editor's draft: http://www.bigcat.unimaas.nl/~egonw/units/ (this page is down)
+  - [[http://www.bigcat.unimaas.nl/~egonw/units/%20][Latest editor's draft]] page is down
   - OpenPHACTS is an aggregation of lifeSci and pharmaceutical data, so it's relevant.
     It's a worth-while read because it considers some cases and defines some principles.
-    They have examples defining ~ops:GramPerLiter~ and ~ops:MilligramPerDeciliter~ (with ~rdf:type qudt:MassPerVolumeUnit~)
+  - See how they define ~ops:GramPerLiter~ and ~ops:MilligramPerDeciliter~ (with ~rdf:type qudt:MassPerVolumeUnit~), using the QUDT 1.1 fashion.
     The RDF seems quite similar to what you've used.
+  - Defines mappings between the Unit Ontology (UO, EFO) and QUDT/OPS
 - https://semanticommunity.info/Data_Science/Data_Science_for_Cyber_Physical_Systems-Internet_of_Things/QUDT 
   - [[https://semanticommunity.info/@api/deki/files/34252/QUDT.xlsx?revision=2][QUDT.xlsx]] is a convenient sheet for looking up units (saved as QUDT-1.0.xlsx)
   - "The TopQuadrant work on QUDT and the NASA QUDT Handbook work seems to have stalled."
   - "The Semantic Community Data Science Audit of the TopQuadrant work on QUDT found some gaps and errors, which we are currently trying to understand and fix."
-Presentations:
+Presentations, Saved in [[https://drive.google.com/drive/u/0/folders/1Is0Zh8jT5H0eCPf8F-tXQW8ZZdpWUWNv][Google Drive WP3\background\QUDT]]
 - QUDT-overview (James Masters TQ, 200909)
 - NASA-QUDT-Handbook-v10 (Ralf Hodgson TQ, PDE2013, 201310)
 - Semantic Community- Data Science for QUDT (2015-06)
