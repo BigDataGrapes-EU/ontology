@@ -7,19 +7,19 @@ bdg:AssayCompound a rdfs:Class; rdfs:subClassOf skos:Concept;
   skos:prefLabel     "DPPH" ;
   skos:exactMatch       wd:Q5205953 .
 <assayCompound/ABTS> a skos:Concept, bdg:AssayCompound ;
-  skos:inScheme      <assayCompound>; skos:topConceptOf <asseyCompound>;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
   skos:prefLabel     "ABTS" ;
   skos:exactMatch       wd:Q287582 .
-<asseyCompound/Trolox> a skos:Concept, bdg:AssayCompound ;
-  skos:inScheme      <asseyCompound>; skos:topConceptOf <asseyCompound>;
+<assayCompound/Trolox> a skos:Concept, bdg:AssayCompound ;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
   skos:prefLabel     "Trolox" ;
   skos:exactMatch       wd:Q245489 .
-<asseyCompound/GallicAcid> a skos:Concept, bdg:AssayCompound;
-  skos:inScheme      <asseyCompound>; skos:topConceptOf <asseyCompound>;
+<assayCompound/GallicAcid> a skos:Concept, bdg:AssayCompound;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
   skos:prefLabel     "Gallic Acid" ;
   skos:exactMatch       wd:Q375837 .
-<asseyCompound/Quercetin> a skos:Concept, bdg:AssayCompound;
-  skos:inScheme      <asseyCompound>; skos:topConceptOf <asseyCompound>;
+<assayCompound/Quercetin> a skos:Concept, bdg:AssayCompound;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
   skos:prefLabel     "Quercetin" ;
   skos:exactMatch       wd:Q409478 .
 
