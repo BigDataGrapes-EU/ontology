@@ -8,9 +8,9 @@
 <DSD/cosmetics> a qb:DataStructureDefinition ;
     qb:component
     [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:DataSet],
-    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
-    [qb:attribute bdg:assayMethod ; qb:componentAttachment qb:MeasureProperty ],
-    [qb:attribute bdg:comparisonBaseline ; qb:componentAttachment qb:MeasureProperty ],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty ],
+    [qb:attribute bdg:assayMethod            ; qb:componentAttachment qb:MeasureProperty ; qb:componentRequired false],
+    [qb:attribute bdg:comparisonBaseline     ; qb:componentAttachment qb:MeasureProperty ; qb:componentRequired false],
     [qb:dimension bdg:extractionMethod ],
     [qb:dimension bdg:date ],
     [qb:dimension bdg:grapeVariety ],
@@ -25,7 +25,7 @@
     [qb:measure   bdg:TFCQuercetin ].
 
 
-<data/cosmetics/IA1U> a qb:Obesrvation ;
+<data/cosmetics/IA1U> a qb:Observation ;
     qb:dataSet                          <data/cosmetics> ;
     bdg:extractionMethod                <extractionMethod/Ultrasound>;
     bdg:grapeVariety                    <grapeVariety/Agiorgitiko>;

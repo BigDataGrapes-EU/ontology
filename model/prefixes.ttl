@@ -72,6 +72,7 @@
 @prefix PATO:              <http://purl.obolibrary.org/obo/PATO_>.
 @prefix po:                <http://purl.obolibrary.org/obo/po#>.
 @prefix PO:                <http://purl.obolibrary.org/obo/PO_>.
+@prefix pubchem:           <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID>.
 @prefix qudt:              <http://qudt.org/1.1/schema/qudt#>.
 @prefix RO:                <http://purl.obolibrary.org/obo/RO_>.
 @prefix SIO:               <http://semanticscience.org/resource/SIO_>.

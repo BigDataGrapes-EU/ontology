@@ -11,6 +11,7 @@ bdg-unit:UG-PER-ML
   rdfs:isDefinedBy bdg-unit: ;
   rdfs:label "Microgram per Milliliter" ;
   skos:prefLabel "microgram-per-milliliter" ;
+  skos:exactMatch obo:UO_0000274;
 .
 
 bdg-unit:G-PER-LT
@@ -28,12 +29,14 @@ bdg-unit:G-PER-LT
   skos:prefLabel "gram-per-liter" ;
 .
 
-bgd-unit DEG_BRIX
+bgd-unit:DEG_BRIX
   rdf:type qudt:Unit;
   rdfs:label "Degree Brix";
   skos:prefLabel "Degree-brix" ;
   qudt:abbreviation "°Brix";
+  qudt:description "A Brix degree equals 1 gram of sucrose per 100 grams of solution. This is a convenience unit equal to percent, but applicable only to this specific compound".
   qudt:conversionMultiplier 1.0e0 ;
   qudt:conversionOffset "0.0"^^xsd:double ;
-  qudt:description "A Brix degree equals 1 gram of sucrose per 100 grams of solution." ;
+  qudt:hasQuantityKind quantitykind:Dimensionless;
+  rdfs:isDefinedBy bdg-unit: ;
 .
