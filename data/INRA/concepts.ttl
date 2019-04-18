@@ -32,4 +32,4 @@ bdg:FermentationTank a rdf:Class, skos:Concept;
 bdg:WinemakingExperiment a rdf:Class, skos:Concept;
   rdfs:label "Winemaking experiment";
   rdfs:seeAlso aeo:AgriExperiment;
-  dct:description "An expriment carried out by the researchers".
+  dct:description "An experiment carried out by the researchers".
