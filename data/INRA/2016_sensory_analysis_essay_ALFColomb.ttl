@@ -13,7 +13,7 @@ bdg:sensorialAnalysis a qb:AttributeProperty, qb:CodedProperty;
   rdfs:label "Sensorial analysis codelist scheme"; 
   rdfs:seeAlso bdg:SensorialAnalysis . 
  
-<sensorialAnalysis-sulfur> a skos:Concept, bdg:SensorialAnalysis; 
+<sensorialAnalysis/sulfur> a skos:Concept, bdg:SensorialAnalysis; 
   skos:inScheme <sensorialAnalysis>; skos:topConceptOf <sensorialAnalysis>; 
   skos:notation "sulfur"; skos:prefLabel "taste of sulfur". 
   
