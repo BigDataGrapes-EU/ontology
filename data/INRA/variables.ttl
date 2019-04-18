@@ -2,7 +2,6 @@
 bdg:concentration a qb:MeasureProperty, sosa:ObservableProperty;
   rdfs:label "Concentration";
   rdfs:notation "Concentration";
-  sosa:hasFeatureOfInterest owl:Thing;
   sdmx-attribute:unitMeasure ops:GramPerLiter;
   qb:concept  sdmx-concept:obsValue.
 
