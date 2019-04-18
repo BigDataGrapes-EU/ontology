@@ -25,7 +25,7 @@ rdfs:label"Muscat-Petit-Grain"^^xsd:string .
   foaf:familyName "cerutti"^^xsd:string;
   foaf:firstName "jerome"^^xsd:string .
 
-<data/winemaking/PechRouge/harvestWeight/2016/51507e4d-d790-4406-850e-a67b0cc31839> a qb:Observation;
+<data/winemaking/harvestWeight/PechRouge/INRA/estate/PechRouge/81/81-CHARDONNAY/2016-08-24/Chardonnay/fabien.robert> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
    bdg:variety    <variety/Chardonnay>;
@@ -33,7 +33,7 @@ rdfs:label"Muscat-Petit-Grain"^^xsd:string .
    bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "612.5"^^xsd:decimal .
 
-<data/winemaking/PechRouge/harvestWeight/2016/eca08514-d9e7-4cbc-80dd-1bc100c49ecb> a qb:Observation;
+<data/winemaking/harvestWeight/PechRouge/INRA/estate/PechRouge/81/81-CHARDONNAY/2016-08-29/Chardonnay/jerome.cerutti> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/81/81-CHARDONNAY>;
    bdg:variety    <variety/Chardonnay>;
@@ -41,13 +41,10 @@ rdfs:label"Muscat-Petit-Grain"^^xsd:string .
    bdg:humanSensor   <INRA/agent/jerome.cerutti>;
    bdg:HarvestWeight    "620.9"^^xsd:decimal .
 
-<data/winemaking/PechRouge/harvestWeight/2016/18dad90d-8bef-4474-860f-bedb84811ba3> a qb:Observation;
+<data/winemaking/harvestWeight/PechRouge/INRA/estate/PechRouge/75/78-MUSCAT-PETIT-GRAIN/2016-08-24/Muscat-Petit-Grain/fabien.robert> a qb:Observation;
    qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
    bdg:plot    <INRA/estate/PechRouge/75/78-MUSCAT-PETIT-GRAIN>;
    bdg:variety    <variety/Muscat-Petit-Grain>;
    bdg:date    "2016-08-24"^^xsd:Date;
    bdg:humanSensor   <INRA/agent/fabien.robert>;
    bdg:HarvestWeight    "1440"^^xsd:decimal .
-
-
-
