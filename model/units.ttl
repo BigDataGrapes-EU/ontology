@@ -1,0 +1,42 @@
+bdg-unit:UG-PER-ML
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:MassPerVolumeUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "μg/mL" ;
+  qudt:conversionMultiplier 1e-6 ;
+  qudt:conversionOffset 0.0 ;
+  qudt:description "Microgram per milliliter is KG-PER-M3 scaled by 10^{-6}" ;
+  qudt:hasQuantityKind quantitykind:Density ;
+  qudt:symbol "μg/cm^3" ;
+  rdfs:isDefinedBy bdg-unit: ;
+  rdfs:label "Microgram per Milliliter" ;
+  skos:prefLabel "microgram-per-milliliter" ;
+  skos:exactMatch obo:UO_0000274;
+.
+
+bdg-unit:G-PER-LT
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:MassPerVolumeUnit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "g/L" ;
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "Gram per liter is a convenience unit, numerically the same as Kilogram per Cubic Meter" ;
+  qudt:hasQuantityKind quantitykind:Density ;
+  qudt:symbol "g l^{-1}" ;
+  rdfs:isDefinedBy bdg-unit: ;
+  rdfs:label "Gram per Liter" ;
+  skos:prefLabel "gram-per-liter" ;
+.
+
+bgd-unit:DEG_BRIX
+  rdf:type qudt:Unit;
+  rdfs:label "Degree Brix";
+  skos:prefLabel "Degree-brix" ;
+  qudt:abbreviation "°Brix";
+  qudt:description "A Brix degree equals 1 gram of sucrose per 100 grams of solution. This is a convenience unit equal to percent, but applicable only to this specific compound".
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:hasQuantityKind quantitykind:Dimensionless;
+  rdfs:isDefinedBy bdg-unit: ;
+.

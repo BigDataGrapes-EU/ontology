@@ -1,0 +1,40 @@
+<data/cosmetics> a qb:DataSet ;
+    rdfs:label    "Measurement  for cosmetics pilot";
+    qb:structure  <DSD/cosmetics> ;
+    sosa:hasFeatureOfInterest <feature/VineLeaves> .
+
+<DSD/cosmetics> a qb:DataStructureDefinition ;
+    qb:component
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:DataSet],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty ],
+    [qb:attribute bdg:assayMethod            ; qb:componentAttachment qb:MeasureProperty ; qb:componentRequired false],
+    [qb:attribute bdg:comparisonBaseline     ; qb:componentAttachment qb:MeasureProperty ; qb:componentRequired false],
+    [qb:dimension bdg:extractionMethod ],
+    [qb:dimension bdg:date ],
+    [qb:dimension bdg:grapeVariety ],
+    [qb:dimension bdg:sample ],
+    [qb:measure   bdg:pH ],
+    [qb:measure   bdg:refractiveIndex ],
+    [qb:measure   bdg:yeastsAndMoulds ],
+    [qb:measure   bdg:totalMicrobialCount ],
+    [qb:measure   bdg:antioxidantActivityDPPHTrolox ],
+    [qb:measure   bdg:antioxidantActivityABTSTrolox ],
+    [qb:measure   bdg:TPCGallicAcid ],
+    [qb:measure   bdg:TFCQuercetin ].
+
+
+<data/cosmetics/IA1U> a qb:Observation ;
+    qb:dataSet                          <data/cosmetics> ;
+    bdg:extractionMethod                <extractionMethod/Ultrasound>;
+    bdg:grapeVariety                    <grapeVariety/Agiorgitiko>;
+    bdg:date                            2018-05-08^^xsd:date;
+    bdg:sample                          "IA1";
+    bdg:date                            "2018-05-08"^^xsd:date;
+    bdg:pH                              5.89;
+    bdg:refractiveIndex                 18.93;
+    bdg:totalMicrobialCount             <microbialCount/LT10>;
+    bdg:yeastsAndMoulds                 <microbialCount/LT10>;
+    bdg:antioxidantActivityDPPHTrolox   4.31;
+    bdg:antioxidantActivityABTSTrolox   12.38;
+    bdg:TPCGallicAcid                   5.96;
+    bdg:TFCQuercetin                    12.24.

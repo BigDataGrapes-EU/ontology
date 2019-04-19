@@ -1,0 +1,62 @@
+bdg:AssayCompound a rdfs:Class; rdfs:subClassOf skos:Concept;
+  rdfs:label     "Assay compound codelist class";
+  rdfs:seeAlso   <assayCompound> .
+<assayCompound> a skos:ConceptScheme;
+  rdfs:label     "Assay compound codelist scheme";
+  rdfs:seeAlso    bdg:AssayCompound .
+<assayCompound/DPPH> a skos:Concept, bdg:AssayCompound;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
+  skos:prefLabel     "DPPH" ;
+  skos:exactMatch       wd:Q5205953 .
+<assayCompound/ABTS> a skos:Concept, bdg:AssayCompound ;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
+  skos:prefLabel     "ABTS" ;
+  skos:exactMatch       wd:Q287582 .
+<assayCompound/Trolox> a skos:Concept, bdg:AssayCompound ;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
+  skos:prefLabel     "Trolox" ;
+  skos:exactMatch       wd:Q245489 .
+<assayCompound/GallicAcid> a skos:Concept, bdg:AssayCompound;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
+  skos:prefLabel     "Gallic Acid" ;
+  skos:exactMatch       wd:Q375837 .
+<assayCompound/Quercetin> a skos:Concept, bdg:AssayCompound;
+  skos:inScheme      <assayCompound>; skos:topConceptOf <assayCompound>;
+  skos:prefLabel     "Quercetin" ;
+  skos:exactMatch       wd:Q409478 .
+
+<preparationMethod> a skos:ConceptScheme;
+  rdfs:label "Preparation Method codelist scheme";
+  rdfs:seeAlso bdg:PreparationMethod .
+bdg:PreparationMethod a rdfs:Class; rdfs:subClassOf skos:Concept;
+  rdfs:label "Preparation method codelist class";
+  rdfs:seeAlso <preparationMethod> .
+<preparationMethod/Ultrasound> a skos:Concept, bdg:PreparationMethod;
+  skos:inScheme <preparationMethod>; skos:topConceptOf <preparationMethod>;
+  skos:prefLabel "Ultrasound".
+<preparationMethod/Maceration> a skos:Concept, bdg:PreparationMethod;
+  skos:inScheme <preparationMethod>; skos:topConceptOf <preparationMethod>;
+  skos:prefLabel "Maceration".
+
+<microbialCount> a skos:ConceptScheme;
+  rdfs:label "Microbial Count ranges codelist scheme" ;
+  rdfs:seeAlso bdg:MicrobialCount .
+bdg:MicrobialCount a rdfs:Class; rdfs:subClassOf skos:Concept;
+  rdfs:label "Microbial Count ranges codelist class" ;
+  rdfs:seeAlso <microbialCount> .
+<microbialCount/LT10> a skos:Concept , bdg:MicrobialCount ;
+  skos:prefLabel "< 10";
+  skos:inScheme <microbialCount> ; skos:topConceptOf <microbialCount> .
+
+<grapeVariety> a skos:ConceptScheme;
+  rdfs:label "Grape variety codelist scheme" ;
+  rdfs:seeAlso bdg:GrapeVariety .
+bdg:GrapeVariety a rdfs:Class; rdfs:subClassOf skos:Concept;
+  rdfs:label "Grape variety codelist class" ;
+  rdfs:seeAlso <grapeVariety> .
+<grapeVariety/Agiorgitiko> a skos:Concept , bdg:GrapeVariety ;
+  skos:prefLabel "Agiorgitiko";
+  skos:inScheme <grapeVariety> ; skos:topConceptOf <grapeVariety> .
+<grapeVariety/Mandilaria> a skos:Concept , bdg:GrapeVariety ;
+  skos:prefLabel "Mandilaria";
+  skos:inScheme <grapeVariety> ; skos:topConceptOf <grapeVariety> .
