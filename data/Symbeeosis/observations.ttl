@@ -29,6 +29,7 @@
     bdg:grapeVariety                    <grapeVariety/Agiorgitiko>;
     bdg:date                            2018-05-08^^xsd:date;
     bdg:sample                          "IA1";
+    bdg:date                            "2018-05-08"^^xsd:date;
     bdg:pH                              5.89;
     bdg:refractiveIndex                 18.93;
     bdg:totalMicrobialCount             <microbialCount/LT10>;
