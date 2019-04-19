@@ -1,6 +1,6 @@
 @base                      <http://data.bigdatagrapes.eu/resource/>.
 @prefix bdg:               <http://data.bigdatagrapes.eu/resource/ontology/>.
-@prefix bdg-unit:               <http://data.bigdatagrapes.eu/resource/ontology/unit>.
+@prefix bdg-unit:           <http://data.bigdatagrapes.eu/resource/unit/>.
 
 # Common Namespaces
 @prefix cc:                <http://creativecommons.org/ns#>.
@@ -33,6 +33,7 @@
 @prefix ssn:               <http://www.w3.org/ns/ssn/> .
 @prefix time:              <http://www.w3.org/2006/time#> .
 @prefix unit:              <http://qudt.org/vocab/unit/> .
+@prefix wd:                <http://www.wikidata.org/entity/>.
 @prefix xml:               <http://www.w3.org/XML/1998/namespace>.
 @prefix xsd:               <http://www.w3.org/2001/XMLSchema#>.
 
@@ -72,6 +73,7 @@
 @prefix PATO:              <http://purl.obolibrary.org/obo/PATO_>.
 @prefix po:                <http://purl.obolibrary.org/obo/po#>.
 @prefix PO:                <http://purl.obolibrary.org/obo/PO_>.
+@prefix pubchem:           <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID>.
 @prefix qudt:              <http://qudt.org/1.1/schema/qudt#>.
 @prefix RO:                <http://purl.obolibrary.org/obo/RO_>.
 @prefix SIO:               <http://semanticscience.org/resource/SIO_>.
