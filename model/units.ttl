@@ -3,7 +3,7 @@ bdg-unit:UG-PER-ML
   rdf:type qudt:MassPerVolumeUnit ;
   rdf:type qudt:Unit ;
   qudt:abbreviation "μg/mL" ;
-  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionMultiplier 1e-6 ;
   qudt:conversionOffset "0.000001"^^xsd:double ;
   qudt:description "Microgram per milliliter is KG-PER-M3 scaled by 10^{-6}" ;
   qudt:hasQuantityKind quantitykind:Density ;
