@@ -7,7 +7,7 @@
 * *sed*  - for basic string manipulation 
 
 ## Google sheets to csv
-We sue the chart Tools datasource protocol to convert a **public** google sheet to csv. The syntax is as follows
+We use the **chart tools data source** protocol to convert a **public** google sheet to csv. The syntax is as follows
 
 `https://docs.google.com/spreadsheets/d/{{DOC_ID}}/gviz/tq?tqx=out:csv&gid={{SHEET_ID}}` where `DOC_ID` and `SHEET_ID` are both available form the sheet's url. For example the grapeVariety [sheet](https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/edit#gid=1834822338) has
  * `DOC_ID=19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA` and 
@@ -21,4 +21,4 @@ We sue the chart Tools datasource protocol to convert a **public** google sheet 
 
 [all.sh](all.sh) contains all the conversions. Each line generates (or appends to) one ttl file in the [rdf](./rdf) folder. Note that we reuse [codedValues.tarql](codedValues.tarql) several times to generate rdf from diffrent sheets following the same pattern. 
 
-Note that given that the rdf is generated automatically **we must not commit** the ttl files in the rdf folder to the git repository. 
+Note that given that the RDF is generated automatically **we must not commit** the `.ttl` files in the `rdf` folder to the git repository. 
