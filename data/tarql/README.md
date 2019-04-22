@@ -2,7 +2,7 @@
 
 ## Prerequisites 
 
-* [Tarql](http://tarql.github.io/) - converts tabular data to RDF following a pattren expresssed as SPARQL - it can be obtained form and must be installed so that it's binary is added to the *path*. 
+* [Tarql](http://tarql.github.io/) - converts tabular data to RDF following a pattren expresssed as SPARQL - it must be installed so that it's binary is added to the path 
 * *curl* - to fetch csv data over http 
 * *sed*  - for basic string manipulation 
 
@@ -19,6 +19,6 @@ We sue the chart Tools datasource protocol to convert a **public** google sheet 
 
 ## Running a conversion 
 
-[all.sh](all.sh) contains all the conversions. Each line generates (or appends to) one ttl file in the [rdf](./rdf) folder. Note that we reuse [codedValues.tarql](codedValues.tarql) several times to generate rdf from diffrent sheets following the same pattern
+[all.sh](all.sh) contains all the conversions. Each line generates (or appends to) one ttl file in the [rdf](./rdf) folder. Note that we reuse [codedValues.tarql](codedValues.tarql) several times to generate rdf from diffrent sheets following the same pattern. 
 
-
+Note that given that the rdf is generated automatically **we must not commit** the ttl files in the rdf folder to the git repository. 
