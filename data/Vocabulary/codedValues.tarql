@@ -4,7 +4,7 @@ CONSTRUCT {
     skos:prefLabel ?label ;
     skos:inScheme ?SCHEME ;
     skos:exactMatch ?EXACT_MATCH ;
-    skos:description ?description ;
+    skos:definition ?description ;
 .
 }
 

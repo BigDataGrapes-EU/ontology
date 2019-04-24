@@ -1,4 +1,4 @@
-# RDF generation form google sheets 
+# Vocabulary generation form google sheets 
 
 ## Prerequisites 
 
@@ -19,6 +19,7 @@ We use the **chart tools data source** protocol to convert a **public** google s
 
 ## Running a conversion 
 
-[all.sh](all.sh) contains all the conversions. Each line generates (or appends to) one ttl file in the [rdf](./rdf) folder. Note that we reuse [codedValues.tarql](codedValues.tarql) several times to generate rdf from diffrent sheets following the same pattern. 
+[vocabulary.sh](vocabulary.sh) contains all the conversions. Each line generates (or appends to) one ttl file in the [rdf](./rdf) folder. Note that we reuse [codedValues.tarql](codedValues.tarql) several times to generate rdf from diffrent sheets following the same pattern. 
+
 
 Note that given that the RDF is generated automatically **we must not commit** the `.ttl` files in the `rdf` folder to the git repository. 
