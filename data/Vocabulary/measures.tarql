@@ -10,7 +10,6 @@ CONSTRUCT {
 .
 
 }
-FROM  <https://docs.google.com/spreadsheets/d/1gu1RLLgaRHAYFp9LxYPVyYl2ad6Dlo-ZbqakyXJGeYo/gviz/tq?tqx=out:csv&sheet=Measures>
 WHERE
 {
     bind(uri(concat(str(bdg:),?uri)) as ?URI)
