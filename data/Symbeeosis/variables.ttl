@@ -35,8 +35,8 @@ bdg:antioxidantActivityDPPHTrolox a qb:MeasureProperty, sosa:ObservableProperty;
   skos:description           "Antioxidant activity: Spectrophotometric method of antioxidant capacity using DPPH assay measuring density of trolox equivalent" ;
   sdmx-attribute:unitMeasure bdg-unit:UG-PER-ML ;
   bdg:assayMethod            <assayCompound/DPPH> ;
-  bgd:comparisonBaseline   <assayCompound/Trolox> .
-  bgd:assessedCompound       <assayCompound/Trolox> ;
+  bdg:comparisonBaseline   <assayCompound/Trolox> ;
+  bdg:assessedCompound       <assayCompound/Trolox> ;
 .
 
 bdg:antioxidantActivityABTSTrolox a qb:MeasureProperty, sosa:ObservableProperty;
@@ -45,7 +45,7 @@ bdg:antioxidantActivityABTSTrolox a qb:MeasureProperty, sosa:ObservableProperty;
   skos:description           "Antioxidant activity: Spectrophotometric method of antioxidant capacity using ABTS assay measuring density of trolox equivalent" ;
   sdmx-attribute:unitMeasure bdg-unit:UG-PER-ML ;
   bdg:assayMethod            <assayCompound/ABTS> ;
-  bgd:comparisonBaseline     <assayCompound/Trolox> ;
+  bdg:comparisonBaseline     <assayCompound/Trolox> ;
 .
 
 bdg:TPCGallicAcid a qb:MeasureProperty, sosa:ObservableProperty;
@@ -53,7 +53,7 @@ bdg:TPCGallicAcid a qb:MeasureProperty, sosa:ObservableProperty;
   skos:notation              "TPCGallicAcid";
   skos:description           "Spectrophotometric measurement of the phenolic content in the extract using TPC assay using gallic acid as a comparison baseline" ;
   sdmx-attribute:unitMeasure bdg-unit:UG-PER-ML ;
-  bgd:comparisonBaseline     <assayCompound/GallicAcid> ;
+  bdg:comparisonBaseline     <assayCompound/GallicAcid> ;
 .
 
 bdg:TFCQuercetin a qb:MeasureProperty, sosa:ObservableProperty;
@@ -61,7 +61,7 @@ bdg:TFCQuercetin a qb:MeasureProperty, sosa:ObservableProperty;
   skos:notation              "TFCQuercetin";
   skos:description           "Spectrophotometric measurement of the flavonoid content in the extract using quercetin as a comparison baseline" ;
   sdmx-attribute:unitMeasure bdg-unit:UG-PER-ML ;
-  bgd:comparisonBaseline     <assayCompound/Quercetin> ;
+  bdg:comparisonBaseline     <assayCompound/Quercetin> ;
 .
 
 bdg:assayMethod a qb:AttributeProperty, qb:CodedProperty;
@@ -70,7 +70,7 @@ bdg:assayMethod a qb:AttributeProperty, qb:CodedProperty;
   rdfs:label    "Assay Method" ;
 .
 
-bgd:comparisonBaseline a qb:AttributeProperty, qb:CodedProperty;
+bdg:comparisonBaseline a qb:AttributeProperty, qb:CodedProperty;
   qb:codeList   <assayCompound> ;
   rdfs:range    bdg:AssayCompound ;
   rdfs:label    "Comparison Baseline" ;
