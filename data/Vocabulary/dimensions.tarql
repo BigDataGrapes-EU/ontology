@@ -1,0 +1,25 @@
+CONSTRUCT {
+    ?URI a qb:DimensionProperty, sosa:ObservableProperty, ?CODED_PROP_TYPE;
+        rdfs:label                  ?label ;
+        rdfs:comment                ?description ;
+        sdmx-attribute:unitMeasure  ?UNIT ;
+        qb:codeList                 ?CODEDLIST ;
+        qb:concept                  ?CONCEPT;
+        rdfs:range                  ?CODEDCLASS ;
+        rdfs:range                  ?RANGE ;
+        ?EXTRA_P                    ?EXTRA_O ;
+.
+
+}
+WHERE
+{
+    bind(uri(concat(str(bdg:),?uri)) as ?URI)
+    bind(uri(concat(str(sdmx-concept:),?concept)) as ?CONCEPT)
+    bind(uri(tarql:expandPrefixedName(?unitMeasure)) as ?UNIT)
+    bind(uri(tarql:expandPrefixedName(?range)) as ?RANGE)
+    bind(uri(if(bound(?codedList),qb:CodedProperty,?codedList)) as ?CODED_PROP_TYPE)
+    bind(uri(?codedList) as ?CODEDLIST)
+    bind(uri(concat(str(bdg:),ucase(substr(?codedList,1,1)),substr(?codedList,2))) as ?CODEDCLASS)
+    bind(uri(tarql:expandPrefixedName(?extra_p)) as ?EXTRA_P)
+    bind(uri(?extra_o) as ?EXTRA_O)
+}

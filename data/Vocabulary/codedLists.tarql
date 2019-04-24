@@ -1,0 +1,18 @@
+CONSTRUCT {
+
+ ?SCHEME a skos:ConceptScheme ;
+    rdfs:label ?SCHEME_LABEL ;
+    rdfs:seeAlso  ?CLASS ;
+.
+ ?CLASS  a rdfs:Class; rdfs:subClassOf skos:Concept ;
+    rdfs:label ?CLASS_LABEL ;
+    rdfs:seeAlso  ?SCHEME ;
+.
+}
+
+WHERE {
+    bind(uri(?uri) as ?SCHEME)
+    bind(concat(?label," scheme") as ?SCHEME_LABEL)
+    bind(concat(?label," class") as ?CLASS_LABEL)
+    bind(uri(concat(str(bdg:),ucase(substr(?uri,1,1)),substr(?uri,2))) as ?CLASS)
+}
