@@ -1,0 +1,19 @@
+CONSTRUCT {
+    ?URI a qb:AttributeProperty, ?CODED_PROP_TYPE;
+        rdfs:label                  ?label ;
+        rdfs:comment                ?description ;
+        qb:codeList                 ?CODEDLIST ;
+        rdfs:range                  ?CODEDCLASS;
+        ?EXTRA_P                    ?EXTRA_O ;
+.
+
+}
+WHERE
+{
+    bind(uri(concat(str(bdg:),?uri)) as ?URI)
+    bind(uri(if(bound(?codedList),qb:CodedProperty,?codedList)) as ?CODED_PROP_TYPE)
+    bind(uri(?codedList) as ?CODEDLIST)
+    bind(uri(concat(str(bdg:),ucase(substr(?codedList,1,1)),substr(?codedList,2))) as ?CODEDCLASS)
+    bind(uri(tarql:expandPrefixedName(?extra_p)) as ?EXTRA_P)
+    bind(uri(?extra_o) as ?EXTRA_O)
+}
