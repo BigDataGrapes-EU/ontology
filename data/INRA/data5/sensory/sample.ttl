@@ -1,0 +1,80 @@
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_03/INRA/person/Juge_1286/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_03> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1286> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "7.4"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_01/INRA/person/Juge_1642/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_01> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1642> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "0.3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_02/INRA/person/Juge_1642/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_02> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1642> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "0.1"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_03/INRA/person/Juge_1642/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_03> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1642> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "0.3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_01/INRA/person/Juge_1669/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_01> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1669> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "5.4"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_02/INRA/person/Juge_1669/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_02> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1669> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "6.8"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_03/INRA/person/Juge_1669/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_03> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1669> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "0.8"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_01/INRA/person/Juge_1807/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_01> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1807> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "9.6"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2016-01-01/wineALF_colomb_02/INRA/person/Juge_1807/sensoryFlavor/Soufre/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/ALFColomb/2016> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wineALF_colomb_02> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/Juge_1807> ;
+        bdg:tastingFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/Soufre> ;
+        bdg:iteration      1 ;
+        bdg:score          "0.5"^^xsd:double .
