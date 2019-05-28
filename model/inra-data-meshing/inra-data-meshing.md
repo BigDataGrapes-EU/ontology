@@ -147,3 +147,40 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 | PR17-10-13F04        | 2017-10-28 00:26:00 | 343.41               | 115.396       | 0.023        | 18                              | 0            |
 | PR17-10-13F04        | 2017-10-28 00:46:00 | 343.75               | 115.404       | 0.022        | 18                              | 0            |
 | PR17-10-13F04        | 2017-10-28 01:06:00 | 344.08               | 115.411       | 0.022        | 18                              | 0            |
+
+
+
+# Modelling
+
+## AFEO ontology
+
+![](img/AFEO.png)
+
+## Fragmentation profiles
+
+We can either represent fragmentation as multiple outputs from a single process or have a spetare process for the actual splitting of product. Do we want to speak of the splitting process?
+
+```ttl
+<Harvesting> bdg:hasOutput <Berry> .
+<Crushing> 
+    bdg:hasInput <Berry> ;
+    bdg:hasOutput <Must1> , <Must2> , <Must3>.
+```
+
+```ttl
+<Harvesting> 
+    bdg:hasOutput <Berry> .
+<Sorting> 
+    hasInput <Berry> ;
+    hasOutput <Berry1>, <Berry2>, <Berry3> .
+<Crushing1> 
+    bdg:hasInput <Berry1> ;
+    bdg:hasOutput <Must1> .
+<Crushing2> 
+    bdg:hasInput <Berry2> ;
+    bdg:hasOutput <Must2> .
+<Crushing3> 
+    bdg:hasInput <Berry3> ;
+    bdg:hasOutput <Must3> .
+```    
+
