@@ -155,32 +155,34 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 ## AFEO ontology
 
 ![](img/AFEO.png)
+[paper](http://sci-hub.tw/10.1016/j.compag.2017.06.020)
 
 ## Fragmentation profiles
 
 We can either represent fragmentation as multiple outputs from a single process or have a separate process for the actual splitting of product. Do we want to speak of the splitting process?
 
 ```ttl
-<Harvesting> bdg:hasOutput <Berry> .
-<Crushing> 
-    bdg:hasInput <Berry> ;
-    bdg:hasOutput <Must1> , <Must2> , <Must3>.
+<Harvesting> a afeo:Harvesting ;
+    afeo:hasOutput <Berry> .
+<Crushing> a afeo:Crushing
+    afeo:hasInput <Berry> ;
+    afeo:hasOutput <Must1> , <Must2> , <Must3>.
 ```
 
 ```ttl
-<Harvesting> 
-    bdg:hasOutput <Berry> .
-<Sorting> 
-    hasInput <Berry> ;
-    hasOutput <Berry1>, <Berry2>, <Berry3> .
-<Crushing1> 
-    bdg:hasInput <Berry1> ;
-    bdg:hasOutput <Must1> .
-<Crushing2> 
-    bdg:hasInput <Berry2> ;
-    bdg:hasOutput <Must2> .
-<Crushing3> 
-    bdg:hasInput <Berry3> ;
-    bdg:hasOutput <Must3> .
+<Harvesting> a afeo:Harvesting ;
+    afeo:hasOutput <Berry> .
+<Sorting> a ??? 
+    afeo:hasInput <Berry> ;
+    afeo:hasOutput <Berry1>, <Berry2>, <Berry3> .
+<Crushing1> a afeo:Crushing ;
+    afeo:hasInput <Berry1> ;
+    afeo:hasOutput <Must1> .
+<Crushing2> a afeo:Crushing
+    afeo:hasInput <Berry2> ;
+    afeo:hasOutput <Must2> .
+<Crushing3> a afeo:Crushing
+    afeo:hasInput <Berry3> ;
+    afeo:hasOutput <Must3> .
 ```    
 
