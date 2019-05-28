@@ -158,7 +158,7 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 
 ## Fragmentation profiles
 
-We can either represent fragmentation as multiple outputs from a single process or have a spetare process for the actual splitting of product. Do we want to speak of the splitting process?
+We can either represent fragmentation as multiple outputs from a single process or have a separate process for the actual splitting of product. Do we want to speak of the splitting process?
 
 ```ttl
 <Harvesting> bdg:hasOutput <Berry> .
