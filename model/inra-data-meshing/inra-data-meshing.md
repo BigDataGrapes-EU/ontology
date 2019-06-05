@@ -151,6 +151,54 @@ NB - the file needs to be fixed!
 | PR17-10-13F04        | 2017-10-28 01:06:00 | 344.08               | 115.411       | 0.022        | 18                              | 0            |
 
 
+[sensory_analysis.csv](https://drive.google.com/a/ontotext.com/file/d/1lxETIDC-gB2jN7b1uohdTFVcBKJdj9ES/view?usp=drivesdk)
+
+| flavorType | sensoryFlavor                    | judgeNumber | wine                   | ratioFlavorJudge |
+|------------|----------------------------------|-------------|------------------------|------------------|
+| visual     | alsmostColourless                | 6           | 2017_INERTIS_MAC_02_T0 | 0.83             |
+| visual     | veryLightYellowWithGreenSparkles | 4           | 2017_INERTIS_MAC_02_T0 | 0.25             |
+| visual     | clear                            | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| visual     | pinky                            | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | fruity                           | 5           | 2017_INERTIS_MAC_02_T0 | 0.40             |
+| olfactory  | flowery                          | 4           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | mineral                          | 4           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | candy                            | 3           | 2017_INERTIS_MAC_02_T0 | 0.67             |
+| olfactory  | fermentationAroma                | 2           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | roasted                          | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | vegetal                          | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | amylic                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | stewedFruit                      | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | thiols                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | ciderApple                       | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | apple                            | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | agrume                           | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | muscat                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | ventilated (oxidised)            | 6           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | reduced                          | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | sulphurousAnhydric               | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | ascent                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | rubber                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | paper                            | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | chimic                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | acid                             | 7           | 2017_INERTIS_MAC_02_T0 | 0.29             |
+| taste      | balanced                         | 6           | 2017_INERTIS_MAC_02_T0 | 0.33             |
+| taste      | astringent                       | 3           | 2017_INERTIS_MAC_02_T0 | 0.33             |
+| taste      | aromatic                         | 3           | 2017_INERTIS_MAC_02_T0 | 0.67             |
+| taste      | bitterness                       | 2           | 2017_INERTIS_MAC_02_T0 | 0.50             |
+| taste      | fat                              | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | persistent                       | 2           | 2017_INERTIS_MAC_02_T0 | 0.50             |
+| taste      | greenApple                       | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | sweetness                        | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | ciderApple                       | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | silex pierre a fusil             | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | pear                             | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | citrusFruit                      | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | fermentationAroma                | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | co2                              | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | dilute                           | 2           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | alcohol                          | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | bitterness                       | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | chardApple                       | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
 
 # Modelling
 
