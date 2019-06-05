@@ -82,6 +82,8 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 
 [Fermentation 2017 XX XX.xls](https://drive.google.com/a/ontotext.com/file/d/1ZhtnivTr2w9V2zpvgYF6aor98M1kXV4m/view?usp=drivesdk)
 
+NB - the file needs to be fixed!
+
 | Suivi Fermentations 2017 |                                        |         |         |         |                          |             |               |                |           |
 |--------------------------|----------------------------------------|---------|---------|---------|--------------------------|-------------|---------------|----------------|-----------|
 |                          |                                        |         |         |         | Glucose + Fructose       | Ac Volatile | Acide Malique | Acide Lactique | SO2 Libre |
@@ -97,10 +99,10 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 | 14/09/17                 | 2017-INERTIS-MAC-02-PRESSE T4          | BB2-60  |         | 17_1806 | 9.07                     | 0.25        |               |                |           |
 | 14/09/17                 | 2017-INERTIS-MAC-02-PRESSE T5A         | BB23-60 |         | 17_1807 | 0.98                     | 0.20        |               |                |           |
 | 14/09/17                 | 2017-INERTIS-MAC-02-PRESSE T5+T6       | BB18-60 |         | 17_1808 | 0.11                     | 0.30        |               |                |           |
-| 18/09/17 | 2017-INERTIS-MAC-01-PRESSE T4  | BB16-60 |   | 17-1940 | 0.13 | 0.44 | | | |
-| 18/09/17 | 2017-INERTIS-MAC-01-PRESSE T5A | BB10-60 |   | 17-1941 | 0.07 | 0.50 | | | |
-| 18/09/17 | 2017-INERTIS-MAC-02-PRESSE T4  | BB2-60  |   | 17-1942 | 0.29 | 0.40 | | | |
-| 18/09/17 | 2017-INERTIS-MAC-02-PRESSE T5A | BB23-60 |   | 17-1943 | 0.09 | 0.36 | | | |
+| 18/09/17                 | 2017-INERTIS-MAC-01-PRESSE T4          | BB16-60 |         | 17-1940 | 0.13                     | 0.44        |               |                |           |
+| 18/09/17                 | 2017-INERTIS-MAC-01-PRESSE T5A         | BB10-60 |         | 17-1941 | 0.07                     | 0.50        |               |                |           |
+| 18/09/17                 | 2017-INERTIS-MAC-02-PRESSE T4          | BB2-60  |         | 17-1942 | 0.29                     | 0.40        |               |                |           |
+| 18/09/17                 | 2017-INERTIS-MAC-02-PRESSE T5A         | BB23-60 |         | 17-1943 | 0.09                     | 0.36        |               |                |           |
 
 
 ## Winemaking activities ALFIS

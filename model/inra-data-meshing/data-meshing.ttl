@@ -1,15 +1,19 @@
 <harvest/FV-2017-043> a afeo:Harvesting ;
-    afeo:appliedTo <INRA/estate/PechRouge/73/73-MACCABEU>;
+    bdg:plot <INRA/estate/PechRouge/73/73-MACCABEU>;
     afeo:hasOutput <berry/FV-2017-043> .
 
 <berry/FV-2017-043> a afeo:Berry .
 
-<data/winemaking/PechRouge/harvestWeight/2016/0985a8ff-43bf-4923-a54c-e5aae4b1ff5a> a qb:Observation; #todo! uri and dsd
-   qb:dataSet  <data/winemaking/PechRouge/harvestWeight/2016>;
-   bdg:berry   <berry/FV-2017-043>;
-   bdg:date    "2016-08-24"^^xsd:Date;
-   bdg:sensor   <agent/fabien.robert>; #optional
-   bdg:weight    "1220"^^xsd:decimal .
+#2017_Harvest Forms (2).xls
+
+<data/winemaking/PechRouge/harvestWeight/FV-2017-043> a qb:Observation;
+   qb:dataSet       <data/winemaking/PechRouge/harvestWeight/2016>;
+   bdg:berry        <berry/FV-2017-043>;
+   bdg:date         "2016-08-24"^^xsd:Date;
+   bdg:operator     <agent/fabien.robert>; #optional
+   bdg:weight       "1220"^^xsd:decimal .
+
+#White_wine_20162017_Information.csv
 
 <crushing/PR030-2017B> a afeo:Crushing ;
    afeo:hasInput <berry/FV-2017-043> ;
@@ -19,15 +23,16 @@
 
 <must/PR032-2017B> a afeo:Must .
 
+## White wines 20162017 Fermentation.xlxs
+
 <fermentation/PR032-2017B> a afeo:Fermentation ;
     bdg:dateEnd "2017-09-12"^^xsd:date ;
     afeo:hasInput <must/PR032-2017B> ;
-    bdg:fermentationTank <fermentationTank/BB4-60>. #todo! dunno if it is ok to reuse variables outside of observations
+    bdg:fermentationTank <fermentationTank/BB4-60>.
 
 <fermentationTank/BB4-60> a bdg:FermentationTank.
 
 #Observations
-## White wines 20162017 Fermentation.xlxs
 #todo NB we assume  that these observations are done only once per tank/must see below for an example of continuous monitoring
 
 <data/winemaking/PechRouge/fermentation/summary/PR032-2017B> a qb:Observation ;
@@ -42,13 +47,30 @@
 
 ##Initial must 2017.xls
 
-<data/winemaking/PechRouge/fermentation/startMust/PR032-2017B> a qb:Observation ; #todo
-    bdg:must   <must/PR032-2017B> .
+<data/winemaking/PechRouge/fermentation/startMust/17-1343> a qb:Observation ; #todo NB lab code defines a observation, we use it for the uri!
+    bdg:must                    <must/PR032-2017B> ;
+    bdg:date                    "2017-08-31"^^xsd:date ;
+    bdg:labCode                 "17-1343" ;
+    bdg:brix                    18.8 ;
+    bdg:pH                      3.4 ;
+    bdg:sugarConcentration      178.3 ;
+
+.
 
 ##Fermentation 2017 XX XX.xls
 
-<data/winemaking/PechRouge/fermentation/followMust/2017-09-60/PR032-2017B>a qb:Observation ; #todo
-    bdg:must   <must/PR032-2017B>.
+<data/winemaking/PechRouge/fermentation/followMust/17-1646> a qb:Observation ; #todo
+    bdg:must   <must/PR032-2017B>;
+    bdg:date   "2017-09-11"^^xsd:date ;
+    bdg:labCode "17-1646" ;
+
+.
+
+<data/winemaking/PechRouge/fermentation/followMust/17_1802> a qb:Observation ; #todo
+    bdg:must   <must/PR032-2017B>;
+    bdg:date   "2017-09-14"^^xsd:date ;
+    bdg:labCode "17_1802" ;
+.
 
 #ALFIS
 
