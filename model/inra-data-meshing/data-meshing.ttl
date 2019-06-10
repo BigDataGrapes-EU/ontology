@@ -72,6 +72,10 @@
     bdg:labCode "17_1802" ;
 .
 
+### Sensory
+
+<
+
 #ALFIS
 
 <crushing/PR17-10-13F04> a afeo:Crushing;
@@ -89,8 +93,6 @@
     bdg:must         <must/PR17-10-13F04> ;
     bdg:dateTime     "2017-10-27T23:06:00"^^xsd:dateTime ;
     bdg:T            18 .
-
-
 
 
 
