@@ -28,7 +28,9 @@
 <fermentation/PR032-2017B> a afeo:Fermentation ;
     bdg:dateEnd "2017-09-12"^^xsd:date ;
     afeo:hasInput <must/PR032-2017B> ;
-    bdg:fermentationTank <fermentationTank/BB4-60>.
+    afeo:hasOutput <wine/PR032-2017B> ;
+    bdg:fermentationTank <fermentationTank/BB4-60> .
+
 
 <fermentationTank/BB4-60> a bdg:FermentationTank.
 
@@ -74,7 +76,6 @@
 
 ### Sensory
 
-<
 
 #ALFIS
 
