@@ -5,8 +5,8 @@
 
 <data/data/tableGrape/Palivou_Mesi_YieldData_080918/A_01> a qb:Observation ;
     bdg:weight  33.2 ;
-    bdg:plot <Palivou/Mesi/A_01> .
+    bdg:plot <AUA/estate/Palivou/Mesi/A_01> .
 
 <data/data/tableGrape/Palivou_Mesi_YieldData_080918/E_04> a qb:Observation ;
     bdg:weight  116.2 ;
-    bdg:plot <Palivou/Mesi/E_04> .
+    bdg:plot <AUA/estate/Palivou/Mesi/E_04> .
