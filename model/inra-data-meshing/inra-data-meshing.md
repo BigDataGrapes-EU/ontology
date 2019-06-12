@@ -82,6 +82,8 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 
 [Fermentation 2017 XX XX.xls](https://drive.google.com/a/ontotext.com/file/d/1ZhtnivTr2w9V2zpvgYF6aor98M1kXV4m/view?usp=drivesdk)
 
+NB - the file needs to be fixed!
+
 | Suivi Fermentations 2017 |                                        |         |         |         |                          |             |               |                |           |
 |--------------------------|----------------------------------------|---------|---------|---------|--------------------------|-------------|---------------|----------------|-----------|
 |                          |                                        |         |         |         | Glucose + Fructose       | Ac Volatile | Acide Malique | Acide Lactique | SO2 Libre |
@@ -97,10 +99,10 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 | 14/09/17                 | 2017-INERTIS-MAC-02-PRESSE T4          | BB2-60  |         | 17_1806 | 9.07                     | 0.25        |               |                |           |
 | 14/09/17                 | 2017-INERTIS-MAC-02-PRESSE T5A         | BB23-60 |         | 17_1807 | 0.98                     | 0.20        |               |                |           |
 | 14/09/17                 | 2017-INERTIS-MAC-02-PRESSE T5+T6       | BB18-60 |         | 17_1808 | 0.11                     | 0.30        |               |                |           |
-| 18/09/17 | 2017-INERTIS-MAC-01-PRESSE T4  | BB16-60 |   | 17-1940 | 0.13 | 0.44 | | | |
-| 18/09/17 | 2017-INERTIS-MAC-01-PRESSE T5A | BB10-60 |   | 17-1941 | 0.07 | 0.50 | | | |
-| 18/09/17 | 2017-INERTIS-MAC-02-PRESSE T4  | BB2-60  |   | 17-1942 | 0.29 | 0.40 | | | |
-| 18/09/17 | 2017-INERTIS-MAC-02-PRESSE T5A | BB23-60 |   | 17-1943 | 0.09 | 0.36 | | | |
+| 18/09/17                 | 2017-INERTIS-MAC-01-PRESSE T4          | BB16-60 |         | 17-1940 | 0.13                     | 0.44        |               |                |           |
+| 18/09/17                 | 2017-INERTIS-MAC-01-PRESSE T5A         | BB10-60 |         | 17-1941 | 0.07                     | 0.50        |               |                |           |
+| 18/09/17                 | 2017-INERTIS-MAC-02-PRESSE T4          | BB2-60  |         | 17-1942 | 0.29                     | 0.40        |               |                |           |
+| 18/09/17                 | 2017-INERTIS-MAC-02-PRESSE T5A         | BB23-60 |         | 17-1943 | 0.09                     | 0.36        |               |                |           |
 
 
 ## Winemaking activities ALFIS
@@ -147,3 +149,89 @@ Data samples following info in [INRA, example Competence Questions](https://docs
 | PR17-10-13F04        | 2017-10-28 00:26:00 | 343.41               | 115.396       | 0.023        | 18                              | 0            |
 | PR17-10-13F04        | 2017-10-28 00:46:00 | 343.75               | 115.404       | 0.022        | 18                              | 0            |
 | PR17-10-13F04        | 2017-10-28 01:06:00 | 344.08               | 115.411       | 0.022        | 18                              | 0            |
+
+
+[sensory_analysis.csv](https://drive.google.com/a/ontotext.com/file/d/1lxETIDC-gB2jN7b1uohdTFVcBKJdj9ES/view?usp=drivesdk)
+
+| flavorType | sensoryFlavor                    | judgeNumber | wine                   | ratioFlavorJudge |
+|------------|----------------------------------|-------------|------------------------|------------------|
+| visual     | alsmostColourless                | 6           | 2017_INERTIS_MAC_02_T0 | 0.83             |
+| visual     | veryLightYellowWithGreenSparkles | 4           | 2017_INERTIS_MAC_02_T0 | 0.25             |
+| visual     | clear                            | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| visual     | pinky                            | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | fruity                           | 5           | 2017_INERTIS_MAC_02_T0 | 0.40             |
+| olfactory  | flowery                          | 4           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | mineral                          | 4           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | candy                            | 3           | 2017_INERTIS_MAC_02_T0 | 0.67             |
+| olfactory  | fermentationAroma                | 2           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | roasted                          | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | vegetal                          | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | amylic                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | stewedFruit                      | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | thiols                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | ciderApple                       | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | apple                            | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | agrume                           | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | muscat                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | ventilated (oxidised)            | 6           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | reduced                          | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | sulphurousAnhydric               | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | ascent                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | rubber                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| olfactory  | paper                            | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| olfactory  | chimic                           | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | acid                             | 7           | 2017_INERTIS_MAC_02_T0 | 0.29             |
+| taste      | balanced                         | 6           | 2017_INERTIS_MAC_02_T0 | 0.33             |
+| taste      | astringent                       | 3           | 2017_INERTIS_MAC_02_T0 | 0.33             |
+| taste      | aromatic                         | 3           | 2017_INERTIS_MAC_02_T0 | 0.67             |
+| taste      | bitterness                       | 2           | 2017_INERTIS_MAC_02_T0 | 0.50             |
+| taste      | fat                              | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | persistent                       | 2           | 2017_INERTIS_MAC_02_T0 | 0.50             |
+| taste      | greenApple                       | 2           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | sweetness                        | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | ciderApple                       | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | silex pierre a fusil             | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | pear                             | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | citrusFruit                      | 1           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | fermentationAroma                | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | co2                              | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | dilute                           | 2           | 2017_INERTIS_MAC_02_T0 | 1.00             |
+| taste      | alcohol                          | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | bitterness                       | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+| taste      | chardApple                       | 1           | 2017_INERTIS_MAC_02_T0 | NaN              |
+
+# Modelling
+
+## AFEO ontology
+
+![](img/AFEO.png)
+[paper](http://sci-hub.tw/10.1016/j.compag.2017.06.020)
+
+## Fragmentation profiles
+
+We can either represent fragmentation as multiple outputs from a single process or have a separate process for the actual splitting of product. Do we want to speak of the splitting process?
+
+```ttl
+<Harvesting> a afeo:Harvesting ;
+    afeo:hasOutput <Berry> .
+<Crushing> a afeo:Crushing
+    afeo:hasInput <Berry> ;
+    afeo:hasOutput <Must1> , <Must2> , <Must3>.
+```
+
+```ttl
+<Harvesting> a afeo:Harvesting ;
+    afeo:hasOutput <Berry> .
+<Sorting> a ??? 
+    afeo:hasInput <Berry> ;
+    afeo:hasOutput <Berry1>, <Berry2>, <Berry3> .
+<Crushing1> a afeo:Crushing ;
+    afeo:hasInput <Berry1> ;
+    afeo:hasOutput <Must1> .
+<Crushing2> a afeo:Crushing
+    afeo:hasInput <Berry2> ;
+    afeo:hasOutput <Must2> .
+<Crushing3> a afeo:Crushing
+    afeo:hasInput <Berry3> ;
+    afeo:hasOutput <Must3> .
+```    

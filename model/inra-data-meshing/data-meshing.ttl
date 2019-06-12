@@ -1,0 +1,126 @@
+<harvest/FV-2017-043> a afeo:Harvesting ;
+    bdg:plot <INRA/estate/PechRouge/73/73-MACCABEU>;
+    afeo:hasOutput <berry/FV-2017-043> .
+
+<berry/FV-2017-043> a afeo:Berry .
+
+#2017_Harvest Forms (2).xls
+
+<data/winemaking/PechRouge/harvestWeight/FV-2017-043> a qb:Observation;
+   qb:dataSet       <data/winemaking/PechRouge/harvestWeight/2016>;
+   bdg:berry        <berry/FV-2017-043>;
+   bdg:date         "2016-08-24"^^xsd:Date;
+   bdg:operator     <agent/fabien.robert>; #optional
+   bdg:weight       "1220"^^xsd:decimal .
+
+#White_wine_20162017_Information.csv
+
+<crushing/PR030-2017B> a afeo:Crushing ;
+   afeo:hasInput <berry/FV-2017-043> ;
+   afeo:hasOutput <must/PR032-2017B> ;
+   bdg:dateStart "2017-08-30"^^xsd:date ; #todo Date_de_reception_vendange?
+   rdfs:comment "Presse T5A (20%)". #todo! besides tracking, this is the only usefull info in this sheet and it is in messy text form...
+
+<must/PR032-2017B> a afeo:Must .
+
+## White wines 20162017 Fermentation.xlxs
+
+<fermentation/PR032-2017B> a afeo:Fermentation ;
+    bdg:dateEnd "2017-09-12"^^xsd:date ;
+    afeo:hasInput <must/PR032-2017B> ;
+    afeo:hasOutput <wine/PR032-2017B> ;
+    bdg:fermentationTank <fermentationTank/BB4-60> .
+
+
+<fermentationTank/BB4-60> a bdg:FermentationTank.
+
+#Observations
+#todo NB we assume  that these observations are done only once per tank/must see below for an example of continuous monitoring
+
+<data/winemaking/PechRouge/fermentation/summary/PR032-2017B> a qb:Observation ;
+    qb:dataSet <data/winemaking/PechRouge/fermentation/summary> ;
+    bdg:VOL    40;
+    bdg:TMAX   17;
+    bdg:TMIN   14;
+    bdg:DMAX   1075;
+    bdg:DMIN   995;
+    bdg:must   <must/PR032-2017B>;
+    bdg:fermentationTank <fermentationTank/BB4-60> .
+
+##Initial must 2017.xls
+
+<data/winemaking/PechRouge/fermentation/startMust/17-1343> a qb:Observation ; #todo NB lab code defines a observation, we use it for the uri!
+    bdg:must                    <must/PR032-2017B> ;
+    bdg:date                    "2017-08-31"^^xsd:date ;
+    bdg:labCode                 "17-1343" ;
+    bdg:brix                    18.8 ;
+    bdg:pH                      3.4 ;
+    bdg:sugarConcentration      178.3 ;
+
+.
+
+##Fermentation 2017 XX XX.xls
+
+<data/winemaking/PechRouge/fermentation/followMust/17-1646> a qb:Observation ; #todo
+    bdg:must   <must/PR032-2017B>;
+    bdg:date   "2017-09-11"^^xsd:date ;
+    bdg:labCode "17-1646" ;
+
+.
+
+<data/winemaking/PechRouge/fermentation/followMust/17_1802> a qb:Observation ; #todo
+    bdg:must   <must/PR032-2017B>;
+    bdg:date   "2017-09-14"^^xsd:date ;
+    bdg:labCode "17_1802" ;
+.
+
+### Sensory
+
+
+#ALFIS
+
+<crushing/PR17-10-13F04> a afeo:Crushing;
+    afeo:hasInput <berry/FV-2017-043> ;
+    afeo:hasOutput <must/PR17-10-13F04> .
+
+
+#mustAlfis.csv
+#ExperimentMustAlfis.csv
+#StrainExperimentMustAlfis.csv
+
+#MACCABEU 2017 5 experimental-data2019-05-02.csv
+
+<data/winemaking/PechRouge/followMust/2017-10-27T23:06:00/PR17-10-13F04> a qb:Observation ;
+    bdg:must         <must/PR17-10-13F04> ;
+    bdg:dateTime     "2017-10-27T23:06:00"^^xsd:dateTime ;
+    bdg:T            18 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
