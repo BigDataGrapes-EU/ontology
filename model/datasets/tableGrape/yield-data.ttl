@@ -1,0 +1,25 @@
+<DSD/harvestWeight> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot;  ];
+  qb:component [qb:dimension bdg:date    ; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:measure   bdg:weight  ];
+  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet];
+  qb:component [qb:attribute qudt:hasQuantityKind      ; qb:componentAttachment qb:MeasureProperty];
+  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty] .
+
+<data/tableGrape/Palivou_Mesi_YieldData_080918> a qb:DataSet ;
+    rdfs:label "7. Palivou_Mesi_YieldData_080918" ;
+    bdg:date "2018-09-18" ;
+    sosa:hasFeatureOfInterest afeo:Berry .
+
+<data/data/tableGrape/Palivou_Mesi_YieldData_080918/A_01> a qb:Observation ;
+    bdg:weight  33.2 ;
+    bdg:plot <Palivou/Mesi/A_01> .
+
+
+<data/data/tableGrape/Palivou_Mesi_YieldData_080918/A_01> a qb:Observation ;
+    bdg:weight  33.2 ;
+    bdg:plot <Palivou/Mesi/A_01> .
+
+<data/data/tableGrape/Palivou_Mesi_YieldData_080918/E_04> a qb:Observation ;
+    bdg:weight  116.2 ;
+    bdg:plot <Palivou/Mesi/E_04> .
