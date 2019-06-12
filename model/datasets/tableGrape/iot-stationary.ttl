@@ -1,0 +1,17 @@
+<data/tableGrape/Palivou_IoT_2018> a qb:DataSet ;
+    rdfs:label "Palivou_IoT_2018" ;
+    bdg:plot bdg:plot <AUA/estate/Palivou> ;
+
+<data/tableGrape/Palivou_IoT_2018/1532443620> a qb:Observation ;   #NB timestamp in uri corresponding to the date
+   bdg:dateTime         "2018-07-24T17:47:00"^^xsd:dateTime ;
+   bdg:rainfall         0 ;
+   bdg:temp_air         22.3 ;
+   bdg:temp_system      25.2 ;
+   bdg:current_system   0 ;
+   bdg:radiation_solar  <radiationLevel/2> ;
+   bdg:moisture_soil_30cm  1.8 ;
+   bdg:moisture_soil_60cm  2.6 ;
+   bdg:humidity_air        51.5 ;
+   bdg:speed_wind          0 ;
+   bdg:direction_wind     <compass/north> ;
+   bdg:voltage_system      3.97 .
