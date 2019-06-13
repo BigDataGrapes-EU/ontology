@@ -34,9 +34,18 @@ bgd-unit:DEG_BRIX
   rdfs:label "Degree Brix";
   skos:prefLabel "Degree-brix" ;
   qudt:abbreviation "°Brix";
-  qudt:description "A Brix degree equals 1 gram of sucrose per 100 grams of solution. This is a convenience unit equal to percent, but applicable only to this specific compound".
+  qudt:description "A Brix degree equals 1 gram of sucrose per 100 grams of solution. This is a convenience unit equal to percent, but applicable only to this specific compound";
   qudt:conversionMultiplier 1.0e0 ;
   qudt:conversionOffset "0.0"^^xsd:double ;
   qudt:hasQuantityKind quantitykind:Dimensionless;
   rdfs:isDefinedBy bdg-unit: ;
+.
+
+bdg-unit:Milli-S-PER-M a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:ConductanceUnit, qudt:Unit;
+  qudt:hasMultiplier unit:Milli;
+  qudt:conversionMultiplier 1.0e-3 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:hasQuantityKind quantitykind:ElectricConductivity ;
+  qudt:isScalingOf unit:S-PER-M ;
+  prov:wasDerivedFrom unit:S-PER-M ;
 .
