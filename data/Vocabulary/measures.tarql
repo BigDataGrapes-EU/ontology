@@ -3,6 +3,10 @@ CONSTRUCT {
         rdfs:label                  ?label ;
         rdfs:comment                ?description ;
         sdmx-attribute:unitMeasure  ?UNIT ;
+        sosa:hasFeatureOfInterest   ?FEATURE ;
+        bdg:measurementContext      ?MEASUREMENT_CONTEXT ;
+        bdg:derivedFrom             ?DERIVED_FROM ;
+        bdg:statisticalSummary      ?STATSUM ;
         qb:codeList                 ?CODEDLIST ;
         qb:concept                  sdmx-concept:obsValue ;
         rdfs:range                  ?CODEDCLASS ;
@@ -12,14 +16,20 @@ CONSTRUCT {
 }
 WHERE
 {
+    bind(1+"" as ?UNDEF)
     bind(uri(concat(str(bdg:),?uri)) as ?URI)
     bind(uri(tarql:expandPrefixedName(?unitMeasure)) as ?UNIT)
+    bind(uri(concat("feature/",?featureOfInterest)) as ?FEATURE)
+    bind(uri(?measurementContext) as ?MEASUREMENT_CONTEXT)
+    bind(uri(concat("statisticalSummary/",?statisticalSummary)) as ?STATSUM)
     bind(uri(if(bound(?codedList),qb:CodedProperty,?codedList)) as ?CODED_PROP_TYPE)
     bind(uri(?codedList) as ?CODEDLIST)
     bind(uri(concat(str(bdg:),ucase(substr(?codedList,1,1)),substr(?codedList,2))) as ?CODEDCLASS)
     bind(uri(tarql:expandPrefixedName(?extra_p)) as ?EXTRA_P)
-    bind(uri(?extra_o) as ?EXTRA_O)
+    bind(if(bound(?extra_o),uri(?extra_o),if(bound(?extra_o_str),?extra_o_str,?UNDEF)) as ?EXTRA_O)
+    bind(coalesce(?derivedFrom,"") as ?derivedFromNotNull)
+    ?derivedFrom_split apf:strSplit (?derivedFromNotNull ",")
+    bind(if(bound(?derivedFrom),uri(concat(str(bdg:),?derivedFrom_split)),?UNDEF) as ?DERIVED_FROM)
 }
-
 
 
