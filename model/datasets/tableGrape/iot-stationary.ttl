@@ -1,5 +1,5 @@
 <DSD/iot-stationary> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:estate; qb:componentAttachment qb:DataSet ];
   qb:component [qb:dimension bdg:dateTime ];
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:MeasureProperty];
   qb:component [qb:measure   bdg:rainfall  ];
@@ -17,7 +17,7 @@
 <data/tableGrape/Palivou_IoT_2018> a qb:DataSet ;
     rdfs:label "Palivou_IoT_2018" ;
     qb:structure <DSD/iot-stationary> ;
-    bdg:plot <AUA/estate/Palivou> .
+    bdg:estate <AUA/estate/Palivou> .
 
 <data/tableGrape/Palivou_IoT_2018/2018-07-24T17:47:00> a qb:Observation ;
    qb:dataSet           <data/tableGrape/Palivou_IoT_2018> ;

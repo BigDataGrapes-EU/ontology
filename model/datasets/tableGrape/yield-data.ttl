@@ -1,5 +1,5 @@
 <DSD/harvestWeight> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:plot   ];
+  qb:component [qb:dimension bdg:subPlot   ];
   qb:component [qb:dimension bdg:date    ; qb:componentAttachment qb:DataSet ];
   qb:component [qb:measure   bdg:weight  ];
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet];
@@ -15,9 +15,9 @@
 <data/data/tableGrape/Palivou_Mesi_YieldData_080918/A_01> a qb:Observation ;
     qb:dataSet <data/tableGrape/Palivou_Mesi_YieldData_080918> ;
     bdg:weight  33.2 ;
-    bdg:plot <AUA/estate/Palivou/Mesi/A_01> .
+    bdg:subPlot <AUA/estate/Palivou/Mesi/A_01> .
 
 <data/data/tableGrape/Palivou_Mesi_YieldData_080918/E_04> a qb:Observation ;
     qb:dataSet <data/tableGrape/Palivou_Mesi_YieldData_080918> ;
     bdg:weight  116.2 ;
-    bdg:plot <AUA/estate/Palivou/Mesi/E_04> .
+    bdg:subPlot <AUA/estate/Palivou/Mesi/E_04> .
