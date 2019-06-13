@@ -1,0 +1,88 @@
+<DSD/RapidScan-CS-45> a qb:DataStructureDefinition;
+  qb:component
+    [qb:dimension bdg:plot                   ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:sensor                 ; qb:componentAttachment qb:DataSet],
+    [qb:dimension bdg:position], # including Elevation, which is ignored for comparison
+    [qb:dimension bdg:dateTime],
+    [qb:attribute bdg:HDOP],
+    [qb:attribute bdg:hasGpsFix],
+    [qb:attribute sosa:hasFeatureOfInterest  ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
+    [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty],
+    [qb:measure   bdg:NDRE],
+    [qb:measure   bdg:NDVI],
+    [qb:measure   bdg:RE],
+    [qb:measure   bdg:NIR],
+    [qb:measure   bdg:RED],
+    [qb:measure   bdg:NDRE_MAX],
+    [qb:measure   bdg:NDVI_MAX],
+    [qb:measure   bdg:NDRE_MIN],
+    [qb:measure   bdg:NDVI_MIN],
+    [qb:measure   bdg:NDRE_STD],
+    [qb:measure   bdg:NDVI_STD],
+    [qb:measure   bdg:NDRE_CV],
+    [qb:measure   bdg:NDVI_CV].
+
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45> a qb:DataSet;
+  rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor RapidScan CS-45";
+  bdg:sensor <sensor/RapidScan-CS-45>;
+  bdg:plot <estate/Fasoulis/Geotrisi>;
+  qb:structure <DSD/RapidScan-CS-45>.
+
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:46/1> a qb:Observation;
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:46"^^xsd:dateTime;
+# bdg:position  "Point Z(---.------- ---.------- ---)"^^geo:wktLiteral; # this invalid literal must not be formed!
+# bdg:HDOP      ---;                                                    # this invalid literal must not be formed!
+# bdg:hasGpsFix false;                                                  # thus the observation is invalid
+  bdg:NDRE      0.274;
+  bdg:NDVI      0.817;
+  bdg:RE        20.099;
+  bdg:NIR       35.383;
+  bdg:RED       3.512;
+  bdg:NDRE_MAX   0.367;
+  bdg:NDVI_MAX    0.897;
+  bdg:NDRE_MIN   0.127;
+  bdg:NDVI_MIN   0.492;
+  bdg:NDRE_STD   4.65E-2;
+  bdg:NDVI_STD   6.759E-2;
+  bdg:NDRE_CV    0.169;
+  bdg:NDVI_CV    8.260E-2.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:54/2> a qb:Observation;
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:54"^^xsd:dateTime;
+  bdg:position  "Point Z(37.817 22.589 -34.799)"^^geo:wktLiteral; # negative Latitude indicates invalid observation
+  bdg:HDOP      2.9;
+  bdg:hasGpsFix true;
+  bdg:NDRE      0.260;
+  bdg:NDVI      0.812;
+  bdg:RE        20.257;
+  bdg:NIR       34.606;
+  bdg:RED       3.556;
+  bdg:NDRE_MAX   0.325;
+  bdg:NDVI_MAX    0.894;
+  bdg:NDRE_MIN   0.185;
+  bdg:NDVI_MIN   0.714;
+  bdg:NDRE_STD   2.93E-2;
+  bdg:NDVI_STD   3.350E-2;
+  bdg:NDRE_CV    0.112;
+  bdg:NDVI_CV    4.130E-2.
+<data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45/2018-05-23T12:04:57/3> a qb:Observation;
+  qb:dataSet    <data/tableGrape/Fasoulis/Geotrisi/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-23T12:04:57"^^xsd:dateTime;
+  bdg:position  "Point Z(37.817 22.590 283.899)"^^geo:wktLiteral; # valid observation
+  bdg:HDOP      2.299;
+  bdg:hasGpsFix true;
+  bdg:NDRE      0.242;
+  bdg:NDVI      0.739;
+  bdg:RE        20.530;
+  bdg:NIR       33.792;
+  bdg:RED       5.118;
+  bdg:NDRE_MAX   0.352;
+  bdg:NDVI_MAX    0.865;
+  bdg:NDRE_MIN   -0.221;
+  bdg:NDVI_MIN   -4.270E-2;
+  bdg:NDRE_STD   5.269E-2;
+  bdg:NDVI_STD   0.116;
+  bdg:NDRE_CV    0.216;
+  bdg:NDVI_CV    0.157.
