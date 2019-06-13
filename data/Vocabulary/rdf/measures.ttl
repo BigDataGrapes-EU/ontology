@@ -1,0 +1,564 @@
+@prefix qb4st:  <http://www.w3.org/ns/qb4st/> .
+@prefix obo_rel:  <http://purl.obolibrary.org/obo/OBO_REL#> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix ENVO:  <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix CO_320:  <http://www.cropontology.org/rdf/CO_320:> .
+@prefix crs-epsg:  <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix sdmx:  <http://purl.org/linked-data/sdmx#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix PATO:  <http://purl.obolibrary.org/obo/PATO_> .
+@prefix BFO:  <http://purl.obolibrary.org/obo/BFO_> .
+@prefix geom:  <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix envo:  <http://purl.obolibrary.org/obo/envo#> .
+@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix apf:  <http://jena.apache.org/ARQ/property#> .
+@prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
+@prefix CO_UO:  <http://www.cropontology.org/rdf/UO:> .
+@prefix inra_obj:  <http://vinnotec.supagro.inra.fr/public/Pr/> .
+@prefix uo:  <http://purl.obolibrary.org/obo/uo#> .
+@prefix UO:  <http://purl.obolibrary.org/obo/UO_> .
+@prefix CO_357:  <http://www.cropontology.org/rdf/CO_357:> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix afeo:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#> .
+@prefix inra_wineTaste:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/> .
+@prefix inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/> .
+@prefix MMO:  <http://purl.obolibrary.org/obo/MMO_> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix at:  <http://data.ifpri.org/lod/at/resource/> .
+@prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
+@prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
+@prefix ofpe:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#> .
+@prefix SIO:  <http://semanticscience.org/resource/SIO_> .
+@prefix CO_322:  <http://www.cropontology.org/rdf/CO_322:> .
+@prefix RO:  <http://purl.obolibrary.org/obo/RO_> .
+@prefix inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/> .
+@prefix crop:  <http://data.ifpri.org/lod/crop/> .
+@prefix pubchem:  <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID> .
+@prefix schema:  <http://schema.org/> .
+@prefix STATO:  <http://purl.obolibrary.org/obo/STATO_> .
+@prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
+@prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
+@prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
+@prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
+@prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix cc:  <http://creativecommons.org/ns#> .
+@prefix bdg:  <http://data.bigdatagrapes.eu/resource/ontology/> .
+@prefix oepo:  <http://www.phenome-fppn.fr/vocabulary/2018/oepo#> .
+@prefix fao-geo:  <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix CO:  <http://www.cropontology.org/rdf/> .
+@prefix NCBITaxon:  <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix quantitykind:  <http://qudt.org/vocab/quantitykind/> .
+@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/> .
+@prefix inra_gis:  <http://vinnotec.supagro.inra.fr/public/Pr/GIS/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix ncbiTaxon:  <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix bdg-unit:  <http://data.bigdatagrapes.eu/resource/unit/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix to:  <http://purl.obolibrary.org/obo/to#> .
+@prefix AGRO:  <http://purl.obolibrary.org/obo/AGRO_> .
+@prefix agrovoc:  <http://aims.fao.org/aos/agrovoc/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+@prefix po:  <http://purl.obolibrary.org/obo/po#> .
+@prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
+
+bdg:pH  rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "pH " ;
+        rdfs:comment                "pH" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:totalMicrobialCount
+        rdf:type      qb:MeasureProperty ;
+        rdf:type      sosa:ObservableProperty ;
+        rdf:type      qb:CodedProperty ;
+        rdfs:label    "Total Microbial Count" ;
+        rdfs:comment  "Total microbial count: Measurement of TPC with classic development of micro-organism in  petri-dishes" ;
+        qb:codeList   <http://data.bigdatagrapes.eu/resource/microbialCount> ;
+        qb:concept    sdmx-concept:obsValue ;
+        rdfs:range    bdg:MicrobialCount .
+
+bdg:antioxidantActivityDPPHTrolox
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Antioxidant activity DPPH trolox" ;
+        rdfs:comment                "Antioxidant activity: Spectrophotometric method of antioxidant capacity using DPPH assay measuring density of trolox equivalent\" ;" ;
+        sdmx-attribute:unitMeasure  bdg-unit:UG-PER-ML ;
+        qb:concept                  sdmx-concept:obsValue ;
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        qb:concept                  sdmx-concept:obsValue ;
+        bdg:assayMethod             <http://data.bigdatagrapes.eu/resource/assayCompound/DPPH> ;
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        qb:concept                  sdmx-concept:obsValue ;
+        bdg:comparisonBaseline      <http://data.bigdatagrapes.eu/resource/assayCompound/Trolox> .
+
+bdg:score  rdf:type                 qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Score" ;
+        rdfs:comment                "Subjective score for a given observable" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:ratioFlavorJudge  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Ratio Flavor Judge" ;
+        rdfs:comment                "ratio: number of judges who detected a specific aroma divied by all judges number" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:judgeNumber  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Judge Number" ;
+        rdfs:comment                "Total number of judges who detected a specific aroma\n" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_MIN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:density  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Density" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:density_MIN  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum Density" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        bdg:derivedFrom             bdg:density ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:density_MAX  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum Density" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        bdg:derivedFrom             bdg:density ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:volume  rdf:type                qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Volume" ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:brix  rdf:type    qb:MeasureProperty ;
+        rdf:type      sosa:ObservableProperty ;
+        rdfs:label    "Brix" ;
+        qb:concept    sdmx-concept:obsValue ;
+        rdfs:seeAlso  bdg:refractiveIndex .
+
+bdg:refractiveIndex  rdf:type  qb:MeasureProperty ;
+        rdf:type      sosa:ObservableProperty ;
+        rdfs:label    "Refractive Index" ;
+        qb:concept    sdmx-concept:obsValue ;
+        rdfs:seeAlso  bdg:brix .
+
+<http://data.bigdatagrapes.eu/resource/ontology/concentration_sugar%20>
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sugar Concentration " ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:concentation_glucoseFructose
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Glucose And Fructose Concentration " ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:acidity_volatile_H2SO4
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Volatile Acidity" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        qb:concept                  sdmx-concept:obsValue ;
+        bdg:assayMethod             <http://data.bigdatagrapes.eu/resource/assayCompound/H2SO4> .
+
+bdg:concentration_lacticAcid
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Lactic Acid Concentration" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        qb:concept                  sdmx-concept:obsValue ;
+        bdg:assayMethod             <http://data.bigdatagrapes.eu/resource/assayCompound/LacticAcid> .
+
+bdg:concentration_malicAcid
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Malic Acid Concentration" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        qb:concept                  sdmx-concept:obsValue ;
+        bdg:assayMethod             <http://data.bigdatagrapes.eu/resource/assayCompound/MalicAcid> .
+
+bdg:direction_wind  rdf:type       qb:MeasureProperty ;
+        rdf:type                   sosa:ObservableProperty ;
+        rdf:type                   qb:CodedProperty ;
+        rdfs:label                 "Wind Direction" ;
+        sosa:hasFeatureOfInterest  <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        qb:codeList                <http://data.bigdatagrapes.eu/resource/compass> ;
+        qb:concept                 sdmx-concept:obsValue ;
+        rdfs:range                 bdg:Compass .
+
+bdg:rainfall  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Rainfall " ;
+        rdfs:comment                "Rainfall in mm" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_air  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Temperature" ;
+        rdfs:comment                "Air Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:temp ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_system  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "System Temperature" ;
+        rdfs:comment                "System Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        bdg:derivedFrom             bdg:temp ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:radiation_solar  rdf:type  qb:MeasureProperty ;
+        rdf:type     sosa:ObservableProperty ;
+        rdf:type     qb:CodedProperty ;
+        rdfs:label   "Solar Radiation Level " ;
+        qb:codeList  <http://data.bigdatagrapes.eu/resource/radiationLevel> ;
+        qb:concept   sdmx-concept:obsValue ;
+        rdfs:range   bdg:RadiationLevel .
+
+bdg:moisture  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Moisture" ;
+        rdfs:comment                "Moisture in %" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:moisture_soil  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Moisture" ;
+        rdfs:comment                "Soil Moisture in percent" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:derivedFrom             bdg:moisture ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:moisture_soil_30cm
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Moisture at 30 cm " ;
+        rdfs:comment                "Soil Moisture in percent at 30cm" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:derivedFrom             bdg:moisture_soil ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:moisture_soil_60cm
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Moisture at 60 cm " ;
+        rdfs:comment                "Soil Moisture in percent at 60 cm" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-60-cm> ;
+        bdg:derivedFrom             bdg:moisture_soil ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Humidity" ;
+        rdfs:comment                "Air Humidity in percent" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:speed_wind  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Wind Speed" ;
+        sdmx-attribute:unitMeasure  unit:M-PER-SEC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:current  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Current " ;
+        rdfs:comment                "Current " ;
+        sdmx-attribute:unitMeasure  unit:MilliA ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:current_system  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "System Current" ;
+        rdfs:comment                "Current within the sensor" ;
+        sdmx-attribute:unitMeasure  unit:MilliA ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        bdg:derivedFrom             bdg:current ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:voltage_system  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "System voltage " ;
+        rdfs:comment                "System voltage " ;
+        sdmx-attribute:unitMeasure  unit:Volt ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:weight  rdf:type                qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Weight" ;
+        rdfs:comment                "Weight" ;
+        sdmx-attribute:unitMeasure  unit:KG ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CV1m  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Electric Conductivity, separation 1m" ;
+        sdmx-attribute:unitMeasure  bdg-unit:Milli-S-PER-M ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/separation-1m> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CV05m  rdf:type                 qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Electric Conductivity, separation 0.5m" ;
+        sdmx-attribute:unitMeasure  bdg-unit:Milli-S-PER-M ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/separation-0.5m> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NIRi  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "NIR Incident" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NIRr  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "NIR Reflected" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NIR  rdf:type                   qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Near Infrared" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NIRr ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "NIRr/NIRi" ;
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Near Infrared" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NIRi ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "NIRr/NIRi" .
+
+bdg:RE  rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Red Edge" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:REDi  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "RED Incident" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:REDr  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "RED Reflected" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:RED  rdf:type                   qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Red spectrum" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:REDr ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "REDr/REDi" ;
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Red spectrum" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:REDi ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "REDr/REDi" .
+
+bdg:LAI  rdf:type                   qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Leaf Area Index" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDVI ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "0.014*(exp(6.192*NDVI)" .
+
+bdg:NDVI  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Normalized Difference Vegetation Index" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NIR ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "(NIR-RED)/(NIR+RED)" ;
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Normalized Difference Vegetation Index" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:RED ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "(NIR-RED)/(NIR+RED)" .
+
+bdg:NDVI_CV  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Coefficient of variation NDVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NVDI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/CoefficientOfVariation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDVI_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum NDVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NVDI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDVI_MIN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum NDVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NVDI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NVDI_STD  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Standard deviation NDVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NVDI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDRE  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Normalized Difference Red Edge Index" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NIR ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "(NIR-RE)/(NIR+RE)" ;
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Normalized Difference Red Edge Index" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:RE ;
+        qb:concept                  sdmx-concept:obsValue ;
+        qudt:mathDefinition         "(NIR-RE)/(NIR+RE)" .
+
+bdg:NDRE_CV  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Coefficient of variation NDRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/CoefficientOfVariation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDRE_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum NDRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDRE_MIN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum NDRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDRE_STD  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Standard deviation NDRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .

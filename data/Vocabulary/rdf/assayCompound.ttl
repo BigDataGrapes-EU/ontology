@@ -1,0 +1,141 @@
+@prefix qb4st:  <http://www.w3.org/ns/qb4st/> .
+@prefix obo_rel:  <http://purl.obolibrary.org/obo/OBO_REL#> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix ENVO:  <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix CO_320:  <http://www.cropontology.org/rdf/CO_320:> .
+@prefix crs-epsg:  <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix sdmx:  <http://purl.org/linked-data/sdmx#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix PATO:  <http://purl.obolibrary.org/obo/PATO_> .
+@prefix BFO:  <http://purl.obolibrary.org/obo/BFO_> .
+@prefix geom:  <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix envo:  <http://purl.obolibrary.org/obo/envo#> .
+@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix apf:  <http://jena.apache.org/ARQ/property#> .
+@prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
+@prefix CO_UO:  <http://www.cropontology.org/rdf/UO:> .
+@prefix inra_obj:  <http://vinnotec.supagro.inra.fr/public/Pr/> .
+@prefix uo:  <http://purl.obolibrary.org/obo/uo#> .
+@prefix UO:  <http://purl.obolibrary.org/obo/UO_> .
+@prefix CO_357:  <http://www.cropontology.org/rdf/CO_357:> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix afeo:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#> .
+@prefix inra_wineTaste:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/> .
+@prefix inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/> .
+@prefix MMO:  <http://purl.obolibrary.org/obo/MMO_> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix at:  <http://data.ifpri.org/lod/at/resource/> .
+@prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
+@prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
+@prefix ofpe:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#> .
+@prefix SIO:  <http://semanticscience.org/resource/SIO_> .
+@prefix CO_322:  <http://www.cropontology.org/rdf/CO_322:> .
+@prefix RO:  <http://purl.obolibrary.org/obo/RO_> .
+@prefix inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/> .
+@prefix crop:  <http://data.ifpri.org/lod/crop/> .
+@prefix pubchem:  <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID> .
+@prefix schema:  <http://schema.org/> .
+@prefix STATO:  <http://purl.obolibrary.org/obo/STATO_> .
+@prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
+@prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
+@prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
+@prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
+@prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix cc:  <http://creativecommons.org/ns#> .
+@prefix bdg:  <http://data.bigdatagrapes.eu/resource/ontology/> .
+@prefix oepo:  <http://www.phenome-fppn.fr/vocabulary/2018/oepo#> .
+@prefix fao-geo:  <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix CO:  <http://www.cropontology.org/rdf/> .
+@prefix NCBITaxon:  <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix quantitykind:  <http://qudt.org/vocab/quantitykind/> .
+@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/> .
+@prefix inra_gis:  <http://vinnotec.supagro.inra.fr/public/Pr/GIS/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix ncbiTaxon:  <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix bdg-unit:  <http://data.bigdatagrapes.eu/resource/unit/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix to:  <http://purl.obolibrary.org/obo/to#> .
+@prefix AGRO:  <http://purl.obolibrary.org/obo/AGRO_> .
+@prefix agrovoc:  <http://aims.fao.org/aos/agrovoc/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+@prefix po:  <http://purl.obolibrary.org/obo/po#> .
+@prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/DPPH>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "DPPH" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q5205953 .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/ABTS>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "ABTS" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q287582 .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/Trolox>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "Trolox" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q245489 .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/GallicAcid>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "Gallic Acid" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q375837 .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/Quercetin>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "Quercetin" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q409478 .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/H2SO4>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "Sulfuric acid" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q4118 .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/MalicAcid>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "Malic Acid" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q190143 .
+
+<http://data.bigdatagrapes.eu/resource/assayCompound/LacticAcid>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:AssayCompound ;
+        skos:prefLabel   "Lactic Acid" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/assayCompound> ;
+        skos:exactMatch  wd:Q161249 .
