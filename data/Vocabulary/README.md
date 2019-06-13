@@ -28,4 +28,4 @@ The syntax is as follows:
 [vocabulary.sh](vocabulary.sh) contains all the conversions. Each line generates (or appends to) one ttl file in the [rdf](./rdf) folder. Note that we reuse [codedValues.tarql](codedValues.tarql) several times to generate *RDF* from different sheets following the same pattern. 
 
 
-The *RDF* is generated automatically and given that the volume is relativly small we can commit it to the repository.
+The *RDF* is generated automatically and given that the volume is relativly small we can commit it to the repository in the [rdf](./rdf) folder.
