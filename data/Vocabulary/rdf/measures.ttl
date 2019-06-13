@@ -303,6 +303,7 @@ bdg:moisture_soil_30cm
         rdfs:comment                "Soil Moisture in percent at 30cm" ;
         sdmx-attribute:unitMeasure  unit:PERCENT ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-30cm> ;
         bdg:derivedFrom             bdg:moisture_soil ;
         qb:concept                  sdmx-concept:obsValue .
 
@@ -313,7 +314,7 @@ bdg:moisture_soil_60cm
         rdfs:comment                "Soil Moisture in percent at 60 cm" ;
         sdmx-attribute:unitMeasure  unit:PERCENT ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
-        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-60-cm> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-60cm> ;
         bdg:derivedFrom             bdg:moisture_soil ;
         qb:concept                  sdmx-concept:obsValue .
 

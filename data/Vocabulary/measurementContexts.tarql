@@ -1,0 +1,16 @@
+CONSTRUCT {
+
+ ?CONCEPT a skos:Concept, ?CLASS ;
+    skos:prefLabel ?label ;
+    skos:inScheme ?SCHEME ;
+    skos:exactMatch ?EXACT_MATCH ;
+    skos:definition ?description ;
+.
+}
+
+WHERE {
+    bind(uri(concat("feature/",?feature,"/",?context)) as ?CONCEPT)
+    bind(uri(?scheme) as ?SCHEME)
+    bind(uri(concat(str(bdg:),ucase(substr(?scheme,1,1)),substr(?scheme,2))) as ?CLASS)
+    bind(uri(?exactMatch) as ?EXACT_MATCH)
+}

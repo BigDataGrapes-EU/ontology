@@ -84,84 +84,26 @@
 @prefix po:  <http://purl.obolibrary.org/obo/po#> .
 @prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
 
-<http://data.bigdatagrapes.eu/resource/assayCompound>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Assay compound codelist scheme" ;
-        rdfs:seeAlso  bdg:AssayCompound .
+<http://data.bigdatagrapes.eu/resource/feature/Soil/depth-60cm>
+        rdf:type        skos:Concept ;
+        rdf:type        bdg:MeasurementContext ;
+        skos:prefLabel  "Soil at depth 1m" ;
+        skos:inScheme   <http://data.bigdatagrapes.eu/resource/measurementContext> .
 
-bdg:AssayCompound  rdf:type  rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Assay compound codelist class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/assayCompound> .
+<http://data.bigdatagrapes.eu/resource/feature/Soil/depth-30cm>
+        rdf:type        skos:Concept ;
+        rdf:type        bdg:MeasurementContext ;
+        skos:prefLabel  "Soil at depth-0.5m" ;
+        skos:inScheme   <http://data.bigdatagrapes.eu/resource/measurementContext> .
 
-<http://data.bigdatagrapes.eu/resource/grapeVariety>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Grape Variety codelist  scheme" ;
-        rdfs:seeAlso  bdg:GrapeVariety .
+<http://data.bigdatagrapes.eu/resource/feature/Soil/separation-1m>
+        rdf:type        skos:Concept ;
+        rdf:type        bdg:MeasurementContext ;
+        skos:prefLabel  "Soil, separation 0.5m" ;
+        skos:inScheme   <http://data.bigdatagrapes.eu/resource/measurementContext> .
 
-bdg:GrapeVariety  rdf:type  rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Grape Variety codelist  class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/grapeVariety> .
-
-<http://data.bigdatagrapes.eu/resource/microbialCount>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Microbial Count codelist scheme" ;
-        rdfs:seeAlso  bdg:MicrobialCount .
-
-bdg:MicrobialCount  rdf:type  rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Microbial Count codelist class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/microbialCount> .
-
-<http://data.bigdatagrapes.eu/resource/sensoryFlavor>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Sensory Flavor codelist scheme" ;
-        rdfs:seeAlso  bdg:SensoryFlavor .
-
-bdg:SensoryFlavor  rdf:type  rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Sensory Flavor codelist class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/sensoryFlavor> .
-
-<http://data.bigdatagrapes.eu/resource/compass>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Compass Rose codelist scheme" ;
-        rdfs:seeAlso  bdg:Compass .
-
-bdg:Compass  rdf:type    rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Compass Rose codelist class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/compass> .
-
-<http://data.bigdatagrapes.eu/resource/radiationLevel>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Radiation Level codelist scheme" ;
-        rdfs:seeAlso  bdg:RadiationLevel .
-
-bdg:RadiationLevel  rdf:type  rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Radiation Level codelist class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/radiationLevel> .
-
-<http://data.bigdatagrapes.eu/resource/statisticalSummary>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Statistical Summary Codelist scheme" ;
-        rdfs:seeAlso  bdg:StatisticalSummary .
-
-bdg:StatisticalSummary
-        rdf:type         rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Statistical Summary Codelist class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/statisticalSummary> .
-
-<http://data.bigdatagrapes.eu/resource/measurementContext>
-        rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Measurement Context Code list scheme" ;
-        rdfs:seeAlso  bdg:MeasurementContext .
-
-bdg:MeasurementContext
-        rdf:type         rdfs:Class ;
-        rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Measurement Context Code list class" ;
-        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/measurementContext> .
+<http://data.bigdatagrapes.eu/resource/feature/Soil/separation-0.5m>
+        rdf:type        skos:Concept ;
+        rdf:type        bdg:MeasurementContext ;
+        skos:prefLabel  "Soil, separation 1m" ;
+        skos:inScheme   <http://data.bigdatagrapes.eu/resource/measurementContext> .

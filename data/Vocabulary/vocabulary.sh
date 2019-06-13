@@ -12,6 +12,9 @@ curl "https://docs.google.com/spreadsheets/d/1gu1RLLgaRHAYFp9LxYPVyYl2ad6Dlo-Zbq
 #RDF-ize coded list master sheet
 curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=Master" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl codedLists.tarql > rdf/codedLists.ttl
 
+#Measurement Contexts
+curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=measurementContext" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl  measurementContexts.tarql > rdf/measurementContext.ttl
+
 #Assay Compound coded list
 curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=assayCompound" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl codedValues.tarql > rdf/assayCompound.ttl
 
@@ -29,3 +32,4 @@ curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IId
 
 #Statistical Summary
 curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=statisticalSummary" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl  codedValues.tarql > rdf/statisticalSummary.ttl
+
