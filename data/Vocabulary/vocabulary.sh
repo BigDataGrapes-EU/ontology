@@ -21,3 +21,11 @@ curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IId
 #Sensory Flavor coded list
 curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=sensoryFlavor" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl  codedValues.tarql > rdf/sensoryFlavor.ttl
 
+#Compass
+curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=compass" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl  codedValues.tarql > rdf/compass.ttl
+
+#Radiation Level
+curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=radiationLevel" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl  codedValues.tarql > rdf/radiationLevel.ttl
+
+#Statistical Summary
+curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=statisticalSummary" | ../bin/my-tarql "-d , --stdin" ../../model/prefixes.ttl  codedValues.tarql > rdf/statisticalSummary.ttl

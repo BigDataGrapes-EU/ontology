@@ -1,8 +1,26 @@
+<DSD/iot-stationary> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:dateTime ];
+  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:MeasureProperty];
+  qb:component [qb:measure   bdg:rainfall  ];
+  qb:component [qb:measure   bdg:temp_air  ];
+  qb:component [qb:measure   bdg:temp_system  ];
+  qb:component [qb:measure   bdg:current_system  ];
+  qb:component [qb:measure   bdg:radiation_solar  ];
+  qb:component [qb:measure   bdg:moisture_soil_30cm  ];
+  qb:component [qb:measure   bdg:moisture_soil_60cm  ];
+  qb:component [qb:measure   bdg:humidity_air  ];
+  qb:component [qb:measure   bdg:speed_wind  ];
+  qb:component [qb:measure   bdg:direction_wind  ];
+  qb:component [qb:measure   bdg:voltage_system  ].
+
 <data/tableGrape/Palivou_IoT_2018> a qb:DataSet ;
     rdfs:label "Palivou_IoT_2018" ;
-    bdg:plot bdg:plot <AUA/estate/Palivou> ;
+    qb:structure <DSD/iot-stationary> ;
+    bdg:plot <AUA/estate/Palivou> .
 
-<data/tableGrape/Palivou_IoT_2018/1532443620> a qb:Observation ;   #NB timestamp in uri corresponding to the date
+<data/tableGrape/Palivou_IoT_2018/2018-07-24T17:47:00> a qb:Observation ;
+   qb:dataSet           <data/tableGrape/Palivou_IoT_2018> ;
    bdg:dateTime         "2018-07-24T17:47:00"^^xsd:dateTime ;
    bdg:rainfall         0 ;
    bdg:temp_air         22.3 ;
