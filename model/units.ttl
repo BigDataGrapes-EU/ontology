@@ -48,4 +48,28 @@ bdg-unit:Milli-S-PER-M a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:Conducta
   qudt:hasQuantityKind quantitykind:ElectricConductivity ;
   qudt:isScalingOf unit:S-PER-M ;
   prov:wasDerivedFrom unit:S-PER-M ;
+  rdfs:label "Milli Siemens per meter" ;
+  skos:prefLabel "milli-siemens-per-meter" ;
+.
+
+bdg-unit:Milli-S-PER-CM a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:ConductanceUnit, qudt:Unit;
+  qudt:hasMultiplier unit:Milli;
+  qudt:conversionMultiplier 10 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:hasQuantityKind quantitykind:ElectricConductivity ;
+  qudt:isScalingOf unit:S-PER-M ;
+  prov:wasDerivedFrom unit:S-PER-M ;
+  rdfs:label "Milli Siemens per centimeter" ;
+  skos:prefLabel "milli-siemens-per-centimeter" ;
+.
+
+bdg-unit:KG-PER-HA a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:Unit, qudt:MassPerAreaUnit;
+  qudt:hasQuantityKind quantitykind:MassPerArea ;
+  qudt:conversionMultiplier 1.0e4 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:abbreviation "kg/ha" ;
+  prov:wasDerivedFrom unit:KG-PER-M2 ;
+  qudt:isScalingOf unit:KG-PER-M2 ;
+  rdfs:label "Kilogram per Hectare" ;
+  skos:prefLabel "kilogram-per-hectare" ;
 .
