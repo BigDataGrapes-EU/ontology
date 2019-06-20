@@ -1,0 +1,31 @@
+CONSTRUCT {
+   ?URI a qb:Observation ;
+   qb:dataSet              <data/tableGrape/Palivou_IoT_2018> ;
+   bdg:dateTime            ?DATETIME ;
+   bdg:rainfall            ?RAINFALL ;
+   bdg:temp_air            ?TEMP_AIR ;
+   bdg:temp_system         ?TEMP_SYS;
+   bdg:current_system      ?CURRENT_SYS ;
+   bdg:radiation_solar     ?SOLAR_RAD ;
+   bdg:moisture_soil_30cm  ?MOISTURE_30 ;
+   bdg:moisture_soil_60cm  ?MOISTURE_60 ;
+   bdg:humidity_air        ?HUMIDITY_AIR ;
+   bdg:speed_wind          ?SPEED_WIND ;
+   bdg:direction_wind      ?DIRECTION_WIND ;
+   bdg:voltage_system      ?VOLATGE_SYSTEM ;
+   .
+} WHERE {
+    bind(str(replace(?Timestamp,"[^0-9]","")) as ?DATETIME)
+    bind(uri(concat("http://data.bigdatagrapes.eu/resource/data/tableGrape/Palivou_IoT_2018/",?DATETIME)) as ?URI)  #TODO fix, obviously
+    bind(strdt(?Rain__mm_,xsd:float) as ?RAINFALL)
+    bind(strdt(?Air_temperature__C_,xsd:float) as ?TEMP_AIR)
+    bind(strdt(?System_temperature__C_,xsd:float) as ?TEMP_SYS)
+    bind(strdt(?Current__mA_,xsd:float) as ?CURRENT_SYS)
+    bind(uri(concat("http://data.bigdatagrapes.eu/resource/radiationLevel/",?Solar_radiation_level__Levels_)) as ?SOLAR_RAD)
+    bind(strdt(?Soil_moisture30____ ,xsd:float) as ?MOISTURE_30)
+    bind(strdt(?Soil_moisture60____,xsd:float) as ?MOISTURE_60)
+    bind(strdt(?Air_humidity____,xsd:float) as ?HUMIDITY_AIR)
+    bind(uri(concat("http://data.bigdatagrapes.eu/resource/compass/",lcase(?Wind_direction__Direction_))) as ?DIRECTION_WIND)
+    bind(strdt(?Wind_speed__m_sec_,xsd:float) as ?SPEED_WIND)
+    bind(strdt(?Battery__Volt_,xsd:float) as ?VOLATGE_SYSTEM)
+}
