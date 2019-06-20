@@ -60,6 +60,7 @@
 @prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
 @prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
 @prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
 @prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
 @prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix cc:  <http://creativecommons.org/ns#> .
@@ -86,13 +87,23 @@
 
 <http://data.bigdatagrapes.eu/resource/assayCompound>
         rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Assay compound codelist scheme" ;
+        rdfs:label    "Assay Compound codelist scheme" ;
         rdfs:seeAlso  bdg:AssayCompound .
 
 bdg:AssayCompound  rdf:type  rdfs:Class ;
         rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Assay compound codelist class" ;
+        rdfs:label       "Assay Compound codelist class" ;
         rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/assayCompound> .
+
+<http://data.bigdatagrapes.eu/resource/extractionMethod>
+        rdf:type      skos:ConceptScheme ;
+        rdfs:label    "Extraction Method codelist scheme" ;
+        rdfs:seeAlso  bdg:ExtractionMethod .
+
+bdg:ExtractionMethod  rdf:type  rdfs:Class ;
+        rdfs:subClassOf  skos:Concept ;
+        rdfs:label       "Extraction Method codelist class" ;
+        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/extractionMethod> .
 
 <http://data.bigdatagrapes.eu/resource/grapeVariety>
         rdf:type      skos:ConceptScheme ;
@@ -146,22 +157,22 @@ bdg:RadiationLevel  rdf:type  rdfs:Class ;
 
 <http://data.bigdatagrapes.eu/resource/statisticalSummary>
         rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Statistical Summary Codelist scheme" ;
+        rdfs:label    "Statistical Summary codelist scheme" ;
         rdfs:seeAlso  bdg:StatisticalSummary .
 
 bdg:StatisticalSummary
         rdf:type         rdfs:Class ;
         rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Statistical Summary Codelist class" ;
+        rdfs:label       "Statistical Summary codelist class" ;
         rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/statisticalSummary> .
 
 <http://data.bigdatagrapes.eu/resource/measurementContext>
         rdf:type      skos:ConceptScheme ;
-        rdfs:label    "Measurement Context Code list scheme" ;
+        rdfs:label    "Measurement Context codelist scheme" ;
         rdfs:seeAlso  bdg:MeasurementContext .
 
 bdg:MeasurementContext
         rdf:type         rdfs:Class ;
         rdfs:subClassOf  skos:Concept ;
-        rdfs:label       "Measurement Context Code list class" ;
+        rdfs:label       "Measurement Context codelist class" ;
         rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/measurementContext> .

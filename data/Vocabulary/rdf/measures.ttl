@@ -60,6 +60,7 @@
 @prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
 @prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
 @prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
 @prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
 @prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
 @prefix cc:  <http://creativecommons.org/ns#> .
@@ -207,13 +208,6 @@ bdg:refractiveIndex  rdf:type  qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
         qb:concept                  sdmx-concept:obsValue .
 
-bdg:concentation_glucoseFructose
-        rdf:type                    qb:MeasureProperty ;
-        rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "Glucose And Fructose Concentration " ;
-        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
-        qb:concept                  sdmx-concept:obsValue .
-
 bdg:acidity_volatile_H2SO4
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -272,7 +266,8 @@ bdg:temp_system  rdf:type           qb:MeasureProperty ;
         bdg:derivedFrom             bdg:temp ;
         qb:concept                  sdmx-concept:obsValue .
 
-bdg:radiation_solar  rdf:type  qb:MeasureProperty ;
+bdg:radiation_solar_level
+        rdf:type     qb:MeasureProperty ;
         rdf:type     sosa:ObservableProperty ;
         rdf:type     qb:CodedProperty ;
         rdfs:label   "Solar Radiation Level " ;
@@ -326,10 +321,11 @@ bdg:humidity_air  rdf:type          qb:MeasureProperty ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         qb:concept                  sdmx-concept:obsValue .
 
-bdg:speed_wind  rdf:type            qb:MeasureProperty ;
+bdg:direction_wind_MAX
+        rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "Wind Speed" ;
-        sdmx-attribute:unitMeasure  unit:M-PER-SEC ;
+        rdfs:label                  "Maximal wind direction" ;
+        sdmx-attribute:unitMeasure  unit:DEG ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         qb:concept                  sdmx-concept:obsValue .
 
@@ -377,7 +373,7 @@ bdg:CV05m  rdf:type                 qb:MeasureProperty ;
         rdfs:label                  "Soil Electric Conductivity, separation 0.5m" ;
         sdmx-attribute:unitMeasure  bdg-unit:Milli-S-PER-M ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
-        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/separation-0.5m> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/separation-50cm> ;
         qb:concept                  sdmx-concept:obsValue .
 
 bdg:NIRi  rdf:type                  qb:MeasureProperty ;
@@ -562,4 +558,801 @@ bdg:NDRE_STD  rdf:type              qb:MeasureProperty ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
         bdg:derivedFrom             bdg:NDRE ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:weight_harvest  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Harvest weight" ;
+        sdmx-attribute:unitMeasure  unit:KG ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Berry%20> ;
+        bdg:derivedFrom             bdg:weight ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:area_surface  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Surface Area" ;
+        sdmx-attribute:unitMeasure  unit:HA ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:density_optical  rdf:type       qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Optical Density" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_polyphenol_index
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Polyphenol Index" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:assimilable_nitrogen
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Assimilable Nitrogen " ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:acidity_total  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Acidity" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:turbidity  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Turbidity " ;
+        sdmx-attribute:unitMeasure  bdg-unit:NTU ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vinestock_number  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vinestock Number" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:row_number  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Row Number" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:row_spacing  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Row Spacing" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+<http://data.bigdatagrapes.eu/resource/ontology/vine_spacing%20>
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "VineSpacing" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:volume_initial  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Initial Volume" ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:volume_final  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Final Volume" ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:reducing_sugar  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Reducing Sugar" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:free_SO2  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "FreeSO2" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_SO2  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "TotalSO2" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:reaction_volume  rdf:type       qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "ReactionVolume" ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:initial_temperature
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Initial Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/FermentationTank> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_room  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Room Temperature " ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Chamber> ;
+        bdg:derivedFrom             bdg:temp ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:duration_AlcoholicFermentation
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Duration of Alcoholic Fermentation" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:accumulation_CO2  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "CO2 cumulation " ;
+        sdmx-attribute:unitMeasure  unit:CM3 ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:flow_rate_CO2  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "CO2 flow rate" ;
+        sdmx-attribute:unitMeasure  unit:GRAM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:length_clarification
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Length Clarification" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/PressJuice> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:suspended_particles_volume
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Suspended Particles Volume" ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/PressJuice> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:run_juice_volume  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Run Juice Volume " ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/RunJuice> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:press_juice_volume
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Press Juice Volume" ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/PressJuice> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:totalVolumePressing
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Volume Pressing" ;
+        sdmx-attribute:unitMeasure  unit:L ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/PressJuice> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_volume_pressing
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Weight Alcoholic Fermentation " ;
+        sdmx-attribute:unitMeasure  unit:KG ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:sugar_total  rdf:type  qb:MeasureProperty ;
+        rdf:type    sosa:ObservableProperty ;
+        rdfs:label  "Total Sugar" ;
+        qb:concept  sdmx-concept:obsValue .
+
+bdg:sugars  rdf:type                qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sugars" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:probable_alcohol  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Probable Alcohol" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:amino_nitrogen  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Amino Nitrogen" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:ammoniacal_nitrogen
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Ammoniacal Nitrogen" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:alcohol  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Alcohol" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:volumic_mass  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Volumic Mass" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Must> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:anthocyanins  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Anthocyanins" ;
+        sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:conductivity  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Conductivity" ;
+        sdmx-attribute:unitMeasure  bdg-unit:Milli-S-PER-CM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:grape_cluster_number
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Grape Cluster Number" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/GrapeCluster> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:berries_number  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Berries Number" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Berry> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:one_berry_weight  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "One BerryWeight " ;
+        sdmx-attribute:unitMeasure  unit:GRAM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Berry> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:berries_weight  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Berries Weight" ;
+        sdmx-attribute:unitMeasure  unit:GRAM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Berry> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+<http://data.bigdatagrapes.eu/resource/ontology/average_weight_grape_cluster%20>
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Average Weight Grape Cluster " ;
+        sdmx-attribute:unitMeasure  unit:GRAM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/GrapeCluster> ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+<http://data.bigdatagrapes.eu/resource/ontology/green_buds_number%20%0A>
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "green Buds Number \n" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:flowering  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Flowering" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:buds_Number  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Buds Number " ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+<http://data.bigdatagrapes.eu/resource/ontology/budding%20>
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Budding" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+<http://data.bigdatagrapes.eu/resource/ontology/branch_Number%20>
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Branch Number " ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:average_vine_shoots_weight
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Average Vine Shoots Weight" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vine_shoot_weight
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vine Shoot Weight" ;
+        sdmx-attribute:unitMeasure  unit:GRAM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:predawn_water_potential
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Predawn Water Potential" ;
+        sdmx-attribute:unitMeasure  bdg-unit:MilliPa ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:latent_buds  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Latent Buds" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/VineStock> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:annual_yield  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Annual Yield" ;
+        sdmx-attribute:unitMeasure  bdg-unit:KG-PER-HA ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Plot> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:annual_production
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Annual Production" ;
+        sdmx-attribute:unitMeasure  unit:KG ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Plot> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_RANGE  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Temperature Range" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Range> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:daily_wetness_duration
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Daily Wetness Duration" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:insolation_duration
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Insolation Duration" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:insolation_duration_calculated
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Calculated Insolation Duration" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:evaporation_tray  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Evaporation Tray" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:evapotranspiration_piche
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Piche Evapotranspiration" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:evapotranspiration_measured
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Measured Evapotranspiration" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:evapotranspiration_penman
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Penman Evapotranspiration" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:evapotranspiration_piche_corrected
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Corrected Piche Evapotranspiration" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        bdg:derivedFrom             bdg:evapotranspiration_piche ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:insolation_fraction
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Insolation Fraction" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:height_water_MAX  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Water Height" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:height_water_MIN  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimal Water Height" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:height_water_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean Water Height" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:precipitation_height
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Precipitation Height" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_MAX  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Humidity" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_MIN  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimal Humidity" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean Humidity" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:actinothermic_index_10cm
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Actinothermic Index +10cm" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:actinothermic_index_10cm_MAX
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Actinothermic Index +10cm (Maximum)" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:actinothermic_index_10cm ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:actinothermic_index_50cm
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Actinothermic Index +50cm" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:actinothermic_index_50cm_MAX
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Actinothermic Index +50cm (Maximum)" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:actinothermic_index_50cm ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:wind_instant_MAX  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Wind Instant" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temperature_instant_MAX
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Temperature Instant" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temperature_instant_MIN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimal Temperature Instant" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_instant_MAX
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Humidity Instant" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_instant_MIN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimal Humidity Instant" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:speed_wind  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Wind Instant" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:precipitation_intensity_instant_MAX
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Precipitation Intensity Instant" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:rainfall_MAX  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Precipitation Intensity" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        bdg:derivedFrom             bdg:rainfall ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:radiation_global  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Global Radiation" ;
+        sdmx-attribute:unitMeasure  bdg-unit:J-PER-CM2 ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:radiation_global_calculated
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Calculated Global Radiation" ;
+        sdmx-attribute:unitMeasure  bdg-unit:J-PER-CM2 ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:radiation_active_photosynthetic
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Photosynthetic Active Radiation" ;
+        sdmx-attribute:unitMeasure  bdg-unit:J-PER-CM2 ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_soil_10cm_MAX
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Maximal Temperature at -10cm" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-10cm> ;
+        bdg:derivedFrom             bdg:temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_soil_10cm_MIN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Minimal Temperature at -10cm" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-10cm> ;
+        bdg:derivedFrom             bdg:temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_MEAN  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_MEAN_caclulated
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Calculated Mean Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp_MEAN ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_soil_50cm_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean Soil Temperature at -50cm" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-50cm> ;
+        bdg:derivedFrom             bdg:temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:dewPoint_temp  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Dew Point Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_period_lt40pc
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Period With Humidity < 40%" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_period_gt80pc
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Period With Humidity > 80%" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_period_gt90pc
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Period With Humidity > 90%" ;
+        sdmx-attribute:unitMeasure  unit:HR ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:pressure_vapour_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean Vapor Pressure" ;
+        sdmx-attribute:unitMeasure  unit:BAR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_N  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind Nord Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/north> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_NE  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind Nord-East Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/northeast> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_E  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind East Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/east> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_SE  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind Sud-East Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/southeast> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_S  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind Sud Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/south> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_SW  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind Sud-West Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/southwest> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_W  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind West Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/west> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:total_wind_NW  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind Nord-West Direction" ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/northwest> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:speed_wind_MAX  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Wind Speed" ;
+        sdmx-attribute:unitMeasure  unit:M-PER-SEC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:speed_wind_MEAN  rdf:type       qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean Wind Speed" ;
+        sdmx-attribute:unitMeasure  unit:M-PER-SEC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
         qb:concept                  sdmx-concept:obsValue .
