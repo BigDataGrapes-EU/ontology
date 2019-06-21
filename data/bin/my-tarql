@@ -1,9 +1,9 @@
 #!/bin/bash
-
+source ~/.bashrc
 # my-tarql <args> <prefixes.ttl> <query.tarql> <file>
 #  reads prefixes.ttl, converts to sparql and prepends to <query.tarql> and runs tarql on <file>, using <separator> to separate columns
 #cd ./TRR/tarql
 
 sed -r "s/^\@(.*>)\s*\./\1/g" $2 $3 > $$.tarql
-tarql --encoding utf8 $1 $$.tarql $4
+~/GIT/GITHUB/tarql/target/appassembler/bin/tarql --encoding utf8 $1 $$.tarql $4
 rm $$.tarql
