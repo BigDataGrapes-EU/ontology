@@ -1,0 +1,18 @@
+<DSD/sensoryAnalysisAfterBottling> a qb:DataStructureDefinition;
+  qb:component [ qb:dimension bdg:iteration             ];
+  qb:component [ qb:dimension bdg:wine                  ];
+  qb:component [ qb:dimension bdg:dateTime; qb:componentAttachment qb:DataSet ];
+  qb:component [ qb:dimension bdg:sensor                ];
+  qb:component [ qb:dimension bdg:sensoryFlavor         ];
+  qb:component [ qb:measure   bdg:score                 ];
+  qb:component [ qb:attribute sosa:hasFeatureOfInterest;  qb:componentAttachment  qb:DataSet        ];
+  qb:component [ qb:attribute qudt:hasQuantityKind     ;  qb:componentAttachment  qb:MeasureProperty];
+  qb:component [ qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment  qb:MeasureProperty];
+.
+
+<data/winemaking/sensoryAnalysis/ALFColomb/2016> a qb:DataSet ;
+  rdfs:label "Data about different ALFColomb wines, tasted after fermentation and bottling at Pech Rouge in 2016";
+  qb:structure <DSD/sensoryAnalysisAfterBottling> ;
+  bdg:dateTime "2016-01-01T00:00:00"^^xsd:dateTime ;
+.
+
