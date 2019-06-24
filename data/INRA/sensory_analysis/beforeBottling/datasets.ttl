@@ -9,7 +9,7 @@
 .
 
 <data/winemaking/sensoryAnalysis/2017> a qb:DataSet ;
-  rdfs:label "Data about different wines, tasted with after fermentation at Pech Rouge in 2017";
+  rdfs:label "Data about different wines, tasted after fermentation at Pech Rouge in 2017";
   qb:structure <DSD/sensoryAnalysisBeforeBottling> ;
   bdg:dateTime "2017-01-01T00:00:00"^^xsd:dateTime ;
 .
