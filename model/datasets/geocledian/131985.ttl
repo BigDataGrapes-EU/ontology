@@ -1,5 +1,5 @@
 <geocledian/vitality/131985> a qb:DataSet ;
-    qb:structure <DSD/vitality> ;
+    qb:structure <DSD/geocledian/vitality> ;
     bdg:plot <INRA/estate/PechRouge/22/22-SYRAH> ;
 .
 
@@ -14,7 +14,7 @@
     bdg:satellite       <satellite/landsat8>   ;
 .
 
-<geocledian/ndre1/131985> a qb:DataSet ;
+<geocledian/ndre1/131985> a qb:DataSet ;    
     qb:structure <DSD/geocledian/ndre> ;
     bdg:plot <INRA/estate/PechRouge/22/22-SYRAH> ;
     bdg:ndreVersion <ndreVersion/1>
