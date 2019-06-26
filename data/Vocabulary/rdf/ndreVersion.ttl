@@ -85,42 +85,20 @@
 @prefix po:  <http://purl.obolibrary.org/obo/po#> .
 @prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
 
-bdg:assayMethod  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Assay Method" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/assayCompound> ;
-        rdfs:range   bdg:AssayCompound .
+<http://data.bigdatagrapes.eu/resource/ndreVersion/1>
+        rdf:type        skos:Concept ;
+        rdf:type        bdg:NdreVersion ;
+        skos:prefLabel  "1" ;
+        skos:inScheme   <http://data.bigdatagrapes.eu/resource/ndreVersion> .
 
-bdg:comparisonBaseline
-        rdf:type     qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Comparison Baseline" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/assayCompound> ;
-        rdfs:range   bdg:AssayCompound .
+<http://data.bigdatagrapes.eu/resource/ndreVersion/2>
+        rdf:type        skos:Concept ;
+        rdf:type        bdg:NdreVersion ;
+        skos:prefLabel  "2" ;
+        skos:inScheme   <http://data.bigdatagrapes.eu/resource/ndreVersion> .
 
-bdg:extractionMethod  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Extraction Method" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/extractionMethod> ;
-        rdfs:range   bdg:ExtractionMethod .
-
-bdg:labCode  rdf:type  qb:AttributeProperty ;
-        rdfs:label  "Laboratory Code" .
-
-bdg:trialCode  rdf:type  qb:AttributeProperty ;
-        rdfs:label  "Trial Code" .
-
-bdg:operator  rdf:type  qb:AttributeProperty ;
-        rdfs:label  "Operator" .
-
-bdg:satellite  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Satellite" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/satellite> ;
-        rdfs:range   bdg:Satellite .
-
-bdg:ndreVersion  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "NDRE Version" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/ndreVersion> ;
-        rdfs:range   bdg:NdreVersion .
+<http://data.bigdatagrapes.eu/resource/ndreVersion/3>
+        rdf:type        skos:Concept ;
+        rdf:type        bdg:NdreVersion ;
+        skos:prefLabel  "3" ;
+        skos:inScheme   <http://data.bigdatagrapes.eu/resource/ndreVersion> .

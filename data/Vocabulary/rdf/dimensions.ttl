@@ -128,6 +128,15 @@ bdg:berry  rdf:type  qb:DimensionProperty ;
         rdfs:label  "Berry" ;
         rdfs:range  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#Berry%20> .
 
+bdg:grapeCluster  rdf:type  qb:DimensionProperty ;
+        rdf:type    sosa:ObservableProperty ;
+        rdfs:label  "Grape Cluster" .
+
+bdg:plotCluster  rdf:type  qb:DimensionProperty ;
+        rdf:type    sosa:ObservableProperty ;
+        rdfs:label  "Plot Cluster " ;
+        rdfs:range  bdg:Estate .
+
 bdg:plot  rdf:type  qb:DimensionProperty ;
         rdf:type    sosa:ObservableProperty ;
         rdfs:label  "Plot" ;
@@ -153,10 +162,6 @@ bdg:position  rdf:type  qb:DimensionProperty ;
 bdg:vinestock  rdf:type  qb:DimensionProperty ;
         rdf:type    sosa:ObservableProperty ;
         rdfs:label  "Vinestock" .
-
-bdg:grapeCluster  rdf:type  qb:DimensionProperty ;
-        rdf:type    sosa:ObservableProperty ;
-        rdfs:label  "Grape Cluster" .
 
 bdg:runJuice  rdf:type  qb:DimensionProperty ;
         rdf:type    sosa:ObservableProperty ;

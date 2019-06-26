@@ -85,42 +85,16 @@
 @prefix po:  <http://purl.obolibrary.org/obo/po#> .
 @prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
 
-bdg:assayMethod  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Assay Method" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/assayCompound> ;
-        rdfs:range   bdg:AssayCompound .
+<http://data.bigdatagrapes.eu/resource/satellite/landsat8>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:Satellite ;
+        skos:prefLabel   "LandSat8" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/satellite> ;
+        skos:exactMatch  wd:Q6485036 .
 
-bdg:comparisonBaseline
-        rdf:type     qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Comparison Baseline" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/assayCompound> ;
-        rdfs:range   bdg:AssayCompound .
-
-bdg:extractionMethod  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Extraction Method" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/extractionMethod> ;
-        rdfs:range   bdg:ExtractionMethod .
-
-bdg:labCode  rdf:type  qb:AttributeProperty ;
-        rdfs:label  "Laboratory Code" .
-
-bdg:trialCode  rdf:type  qb:AttributeProperty ;
-        rdfs:label  "Trial Code" .
-
-bdg:operator  rdf:type  qb:AttributeProperty ;
-        rdfs:label  "Operator" .
-
-bdg:satellite  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "Satellite" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/satellite> ;
-        rdfs:range   bdg:Satellite .
-
-bdg:ndreVersion  rdf:type  qb:AttributeProperty ;
-        rdf:type     qb:CodedProperty ;
-        rdfs:label   "NDRE Version" ;
-        qb:codeList  <http://data.bigdatagrapes.eu/resource/ndreVersion> ;
-        rdfs:range   bdg:NdreVersion .
+<http://data.bigdatagrapes.eu/resource/satellite/sentinel2>
+        rdf:type         skos:Concept ;
+        rdf:type         bdg:Satellite ;
+        skos:prefLabel   "Sentinel2" ;
+        skos:inScheme    <http://data.bigdatagrapes.eu/resource/satellite> ;
+        skos:exactMatch  wd:Q4302480 .
