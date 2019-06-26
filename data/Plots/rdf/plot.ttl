@@ -1,0 +1,486 @@
+@prefix qb4st:  <http://www.w3.org/ns/qb4st/> .
+@prefix obo_rel:  <http://purl.obolibrary.org/obo/OBO_REL#> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix ENVO:  <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix CO_320:  <http://www.cropontology.org/rdf/CO_320:> .
+@prefix crs-epsg:  <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix sdmx:  <http://purl.org/linked-data/sdmx#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix PATO:  <http://purl.obolibrary.org/obo/PATO_> .
+@prefix BFO:  <http://purl.obolibrary.org/obo/BFO_> .
+@prefix geom:  <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix envo:  <http://purl.obolibrary.org/obo/envo#> .
+@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix apf:  <http://jena.apache.org/ARQ/property#> .
+@prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
+@prefix CO_UO:  <http://www.cropontology.org/rdf/UO:> .
+@prefix inra_obj:  <http://vinnotec.supagro.inra.fr/public/Pr/> .
+@prefix uo:  <http://purl.obolibrary.org/obo/uo#> .
+@prefix UO:  <http://purl.obolibrary.org/obo/UO_> .
+@prefix CO_357:  <http://www.cropontology.org/rdf/CO_357:> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix afeo:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#> .
+@prefix inra_wineTaste:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/> .
+@prefix inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/> .
+@prefix MMO:  <http://purl.obolibrary.org/obo/MMO_> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix at:  <http://data.ifpri.org/lod/at/resource/> .
+@prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
+@prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
+@prefix ofpe:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#> .
+@prefix SIO:  <http://semanticscience.org/resource/SIO_> .
+@prefix CO_322:  <http://www.cropontology.org/rdf/CO_322:> .
+@prefix RO:  <http://purl.obolibrary.org/obo/RO_> .
+@prefix inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/> .
+@prefix crop:  <http://data.ifpri.org/lod/crop/> .
+@prefix pubchem:  <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID> .
+@prefix schema:  <http://schema.org/> .
+@prefix STATO:  <http://purl.obolibrary.org/obo/STATO_> .
+@prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
+@prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
+@prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
+@prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
+@prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix cc:  <http://creativecommons.org/ns#> .
+@prefix bdg:  <http://data.bigdatagrapes.eu/resource/ontology/> .
+@prefix oepo:  <http://www.phenome-fppn.fr/vocabulary/2018/oepo#> .
+@prefix fao-geo:  <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix CO:  <http://www.cropontology.org/rdf/> .
+@prefix NCBITaxon:  <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix quantitykind:  <http://qudt.org/vocab/quantitykind/> .
+@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/> .
+@prefix inra_gis:  <http://vinnotec.supagro.inra.fr/public/Pr/GIS/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix ncbiTaxon:  <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix bdg-unit:  <http://data.bigdatagrapes.eu/resource/unit/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix to:  <http://purl.obolibrary.org/obo/to#> .
+@prefix AGRO:  <http://purl.obolibrary.org/obo/AGRO_> .
+@prefix agrovoc:  <http://aims.fao.org/aos/agrovoc/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+@prefix po:  <http://purl.obolibrary.org/obo/po#> .
+@prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22> ;
+        rdfs:label    "22-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68-COLLECTION-BLANCS>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68> ;
+        rdfs:label    "68-COLLECTION-BLANCS" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JARDIN-AMPELO>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> ;
+        rdfs:label    "JARDIN-AMPELO" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/18/18-MERLOT-2016>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/18> ;
+        rdfs:label    "18-MERLOT-2016" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35/35-CABERNET-FRANC-2016>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35> ;
+        rdfs:label    "35-CABERNET-FRANC-2016" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/98/98-MUSCAT-PETIT-GRAIN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/98> ;
+        rdfs:label    "98-MUSCAT-PETIT-GRAIN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89/89-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89> ;
+        rdfs:label    "89-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89bis/89bis-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89bis> ;
+        rdfs:label    "89bis-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/87/87-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/87> ;
+        rdfs:label    "87-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85/85-RUN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> ;
+        rdfs:label    "85-RUN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85/85-RESDUR>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> ;
+        rdfs:label    "85-RESDUR" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/83/83-MARSELAN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/83> ;
+        rdfs:label    "83-MARSELAN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79/79-GRENACHE>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79> ;
+        rdfs:label    "79-GRENACHE" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79/79-CARIGNAN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79> ;
+        rdfs:label    "79-CARIGNAN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/02/02-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/02> ;
+        rdfs:label    "02-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10-SAUVIGNON-2016>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10> ;
+        rdfs:label    "10-SAUVIGNON-2016" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40-GAMAY>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40> ;
+        rdfs:label    "40-GAMAY" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39-CABERNET-SAUVIGNON>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> ;
+        rdfs:label    "39-CABERNET-SAUVIGNON" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/23/23-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/23> ;
+        rdfs:label    "23-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55/55-VIOGNIER>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55> ;
+        rdfs:label    "55-VIOGNIER" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57-MERLOT>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57> ;
+        rdfs:label    "57-MERLOT" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51/51-MUSCAT-ALEXANDRIE-2>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51> ;
+        rdfs:label    "51-MUSCAT-ALEXANDRIE-2" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72-MOURVEDRE>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72> ;
+        rdfs:label    "72-MOURVEDRE" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73/73-MACCABEU>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73> ;
+        rdfs:label    "73-MACCABEU" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/74/74-CONS-CARIGNAN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/74> ;
+        rdfs:label    "74-CONS-CARIGNAN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75-NVLLES-OBTENTIONS-INRA>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75> ;
+        rdfs:label    "75-NVLLES-OBTENTIONS-INRA" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76> ;
+        rdfs:label    "76-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64-GRENACHE-2017>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64> ;
+        rdfs:label    "64-GRENACHE-2017" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82/82-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82> ;
+        rdfs:label    "82-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11/11-PETIT-VERDOT>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11> ;
+        rdfs:label    "11-PETIT-VERDOT" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81/81-CHARDONNAY>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81> ;
+        rdfs:label    "81-CHARDONNAY" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/63/63-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/63> ;
+        rdfs:label    "63-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66/66-ARAMON>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66> ;
+        rdfs:label    "66-ARAMON" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66/66-MACCABEU>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66> ;
+        rdfs:label    "66-MACCABEU" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/65/65-CARIGNAN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/65> ;
+        rdfs:label    "65-CARIGNAN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71/71-GRENACHE-2015>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71> ;
+        rdfs:label    "71-GRENACHE-2015" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/77/77-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/77> ;
+        rdfs:label    "77-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/78/78-MUSCAT-PETIT-GRAIN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/78> ;
+        rdfs:label    "78-MUSCAT-PETIT-GRAIN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/90/90-MUSCAT-PETIT-GRAIN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/90> ;
+        rdfs:label    "90-MUSCAT-PETIT-GRAIN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/91/91-MUSCAT-PETIT-GRAIN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/91> ;
+        rdfs:label    "91-MUSCAT-PETIT-GRAIN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/92/92-GRENACHE-GRIS-BLANC>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/92> ;
+        rdfs:label    "92-GRENACHE-GRIS-BLANC" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/95/95-CARIGNAN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/95> ;
+        rdfs:label    "95-CARIGNAN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102-SYRAH>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102> ;
+        rdfs:label    "102-SYRAH" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106-RV-BOUQUET>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106> ;
+        rdfs:label    "106-RV-BOUQUET" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102-PIQUEPOUL-BLANC>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102> ;
+        rdfs:label    "102-PIQUEPOUL-BLANC" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61/61-MERLOT>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61> ;
+        rdfs:label    "61-MERLOT" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39-PATRICIA>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> ;
+        rdfs:label    "39-PATRICIA" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39-FLOT-ROUGE>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> ;
+        rdfs:label    "39-FLOT-ROUGE" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/97/97-VDQA-G14-N>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/97> ;
+        rdfs:label    "97-VDQA-G14-N" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/100/100-FLOREAL>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/100> ;
+        rdfs:label    "100-FLOREAL" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/99/99-VDQA-G5-B>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/99> ;
+        rdfs:label    "99-VDQA-G5-B" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/101/101-VDQA-G5-B>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/101> ;
+        rdfs:label    "101-VDQA-G5-B" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/53/53-CHARDONNAY>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/53> ;
+        rdfs:label    "53-CHARDONNAY" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103/103-ARTABAN>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103> ;
+        rdfs:label    "103-ARTABAN" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/94/94-GRENACHE>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/94> ;
+        rdfs:label    "94-GRENACHE" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/84/84-GRENACHE>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/84> ;
+        rdfs:label    "84-GRENACHE" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58-ANTARES>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58> ;
+        rdfs:label    "58-ANTARES" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85/85-UDINE>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> ;
+        rdfs:label    "85-UDINE" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Fasoulis/IFG>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Fasoulis> ;
+        rdfs:label    "IFG" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Fasoulis/Geotrisi>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Fasoulis> ;
+        rdfs:label    "Geotrisi" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Fasoulis/Kato>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Fasoulis> ;
+        rdfs:label    "Kato" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis/Roditis>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis> ;
+        rdfs:label    "Roditis" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis/Soultanina>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis> ;
+        rdfs:label    "Soultanina" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis/Mavroudi>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis> ;
+        rdfs:label    "Mavroudi" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis/Savatiano>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Kontogiannis> ;
+        rdfs:label    "Savatiano" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Alekos>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou> ;
+        rdfs:label    "Alekos" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/ApentantiKaltsi>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou> ;
+        rdfs:label    "Apentanti Kaltsi" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Merlot>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou> ;
+        rdfs:label    "Merlot" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Kato>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou> ;
+        rdfs:label    "Kato" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Pano>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou> ;
+        rdfs:label    "Pano" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/DiplaOinopoiio>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou> ;
+        rdfs:label    "Dipla Oinopoiio" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou> ;
+        rdfs:label    "Mesi" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo/Palazzo_85735-73156>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo> ;
+        rdfs:label    "Palazzo_85735-73156" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo/Palazzo_85736-73157>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo> ;
+        rdfs:label    "Palazzo_85736-73157" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo/Palazzo_85737-73158>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo> ;
+        rdfs:label    "Palazzo_85737-73158" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo/Palazzo_85738-73159>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo> ;
+        rdfs:label    "Palazzo_85738-73159" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo/Palazzo_85739-73160>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo> ;
+        rdfs:label    "Palazzo_85739-73160" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato/Casato_85722-73627>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato> ;
+        rdfs:label    "Casato_85722-73627" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato/Casato_85723-73628>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato> ;
+        rdfs:label    "Casato_85723-73628" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato/Casato_85724-73629>
+        rdf:type      bdg:Plot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato> ;
+        rdfs:label    "Casato_85724-73629" .

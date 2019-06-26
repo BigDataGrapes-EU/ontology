@@ -1,0 +1,10 @@
+CONSTRUCT {
+    ?URI a bdg:SubPlot ;
+        skos:broader ?BROADER ;
+        rdfs:label ?LABEL ;
+}
+WHERE {
+    bind(uri(concat(?broader,"/",?uri)) as ?URI)
+    bind(uri(?broader) as ?BROADER)
+    bind(if(bound(?label),?label,?uri) as ?LABEL)
+}

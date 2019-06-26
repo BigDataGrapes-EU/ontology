@@ -1,0 +1,586 @@
+@prefix qb4st:  <http://www.w3.org/ns/qb4st/> .
+@prefix obo_rel:  <http://purl.obolibrary.org/obo/OBO_REL#> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix ENVO:  <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix CO_320:  <http://www.cropontology.org/rdf/CO_320:> .
+@prefix crs-epsg:  <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix sdmx:  <http://purl.org/linked-data/sdmx#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix PATO:  <http://purl.obolibrary.org/obo/PATO_> .
+@prefix BFO:  <http://purl.obolibrary.org/obo/BFO_> .
+@prefix geom:  <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix envo:  <http://purl.obolibrary.org/obo/envo#> .
+@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix apf:  <http://jena.apache.org/ARQ/property#> .
+@prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
+@prefix CO_UO:  <http://www.cropontology.org/rdf/UO:> .
+@prefix inra_obj:  <http://vinnotec.supagro.inra.fr/public/Pr/> .
+@prefix uo:  <http://purl.obolibrary.org/obo/uo#> .
+@prefix UO:  <http://purl.obolibrary.org/obo/UO_> .
+@prefix CO_357:  <http://www.cropontology.org/rdf/CO_357:> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix afeo:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#> .
+@prefix inra_wineTaste:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/> .
+@prefix inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/> .
+@prefix MMO:  <http://purl.obolibrary.org/obo/MMO_> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix at:  <http://data.ifpri.org/lod/at/resource/> .
+@prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
+@prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
+@prefix ofpe:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#> .
+@prefix SIO:  <http://semanticscience.org/resource/SIO_> .
+@prefix CO_322:  <http://www.cropontology.org/rdf/CO_322:> .
+@prefix RO:  <http://purl.obolibrary.org/obo/RO_> .
+@prefix inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/> .
+@prefix crop:  <http://data.ifpri.org/lod/crop/> .
+@prefix pubchem:  <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID> .
+@prefix schema:  <http://schema.org/> .
+@prefix STATO:  <http://purl.obolibrary.org/obo/STATO_> .
+@prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
+@prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
+@prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
+@prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
+@prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix cc:  <http://creativecommons.org/ns#> .
+@prefix bdg:  <http://data.bigdatagrapes.eu/resource/ontology/> .
+@prefix oepo:  <http://www.phenome-fppn.fr/vocabulary/2018/oepo#> .
+@prefix fao-geo:  <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix CO:  <http://www.cropontology.org/rdf/> .
+@prefix NCBITaxon:  <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix quantitykind:  <http://qudt.org/vocab/quantitykind/> .
+@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/> .
+@prefix inra_gis:  <http://vinnotec.supagro.inra.fr/public/Pr/GIS/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix ncbiTaxon:  <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix bdg-unit:  <http://data.bigdatagrapes.eu/resource/unit/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix to:  <http://purl.obolibrary.org/obo/to#> .
+@prefix AGRO:  <http://purl.obolibrary.org/obo/AGRO_> .
+@prefix agrovoc:  <http://aims.fao.org/aos/agrovoc/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+@prefix po:  <http://purl.obolibrary.org/obo/po#> .
+@prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "A10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "B10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "C10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "D10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "E10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "F10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "G10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "H10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "I10" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J01>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J01" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J02>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J02" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J03>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J03" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J04>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J04" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J05>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J05" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J06>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J06" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J07>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J07" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J08>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J08" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J09>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J09" .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J10>
+        rdf:type      bdg:SubPlot ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label    "J10" .
