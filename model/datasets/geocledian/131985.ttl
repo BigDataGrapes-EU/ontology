@@ -4,13 +4,14 @@
 .
 
 <geocledian/vitality/131985/2013-04-16> a qb:Observation ;
-    qb:dataSet         <geocledian/vitality/131985> ;
-    bdg:vitality_MIN   -0.0149048343300819   ;
-    bdg:vitality_MAX    0.162495091557503    ;
-    bdg:vitality_MEAN   0.0572777586274924   ;
-    bdg:vitality_SUM    14.6631062086381     ;
-    bdg:vitality_STD  0.0496017165479978   ;
-    bdg:satellite       <satellite/landsat8> ;
+    qb:dataSet          <geocledian/vitality/131985> ;
+    bdg:date            "2013-04-16"^^xsd:date ;
+    bdg:vitality_MIN    -0.0149048343300819    ;
+    bdg:vitality_MAX    0.162495091557503      ;
+    bdg:vitality_MEAN   0.0572777586274924     ;
+    bdg:vitality_SUM    14.6631062086381       ;
+    bdg:vitality_STD    0.0496017165479978     ;
+    bdg:satellite       <satellite/landsat8>   ;
 .
 
 <geocledian/ndre1/131985> a qb:DataSet ;
@@ -19,8 +20,9 @@
     bdg:ndreVersion <ndreVersion/1>
 .
 
-<geocledian/vitality/131985/2013-04-16> a qb:Observation ;
+<geocledian/ndre1/131985/2015-08-12> a qb:Observation ;
     qb:dataSet         <geocledian/ndre1/131985> ;
+    bdg:date           "2015-08-12"^^xsd:date    ;
     bdg:NDRE_MIN       0.0893465429544449        ;
     bdg:NDRE_MAX       0.345604032278061         ;
     bdg:NDRE_MEAN      0.243727574786751         ;
