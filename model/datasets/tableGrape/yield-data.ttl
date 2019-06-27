@@ -12,12 +12,12 @@
     bdg:date "2018-09-18"^^xsd:date ;
     sosa:hasFeatureOfInterest afeo:Berry .
 
-<data/data/tableGrape/Palivou_Mesi_YieldData_080918/A_01> a qb:Observation ;
+<data/data/tableGrape/Palivou_Mesi_YieldData_080918/A01> a qb:Observation ;
     qb:dataSet <data/tableGrape/Palivou_Mesi_YieldData_080918> ;
     bdg:weight  33.2 ;
-    bdg:subPlot <AUA/estate/Palivou/Mesi/A_01> .
+    bdg:subPlot <AUA/estate/Palivou/Mesi/A01> .
 
-<data/data/tableGrape/Palivou_Mesi_YieldData_080918/E_04> a qb:Observation ;
+<data/data/tableGrape/Palivou_Mesi_YieldData_080918/E04> a qb:Observation ;
     qb:dataSet <data/tableGrape/Palivou_Mesi_YieldData_080918> ;
     bdg:weight  116.2 ;
-    bdg:subPlot <AUA/estate/Palivou/Mesi/E_04> .
+    bdg:subPlot <AUA/estate/Palivou/Mesi/E04> .
