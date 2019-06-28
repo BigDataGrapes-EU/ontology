@@ -1,0 +1,8 @@
+CONSTRUCT {
+    ?URI a bdg:Estate ;
+        rdfs:label ?label ;
+        bdg:idGeocledian ?id_geocledian .
+}
+WHERE {
+    bind(uri(?uri) as ?URI)
+}

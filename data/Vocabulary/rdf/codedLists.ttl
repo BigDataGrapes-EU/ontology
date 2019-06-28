@@ -176,3 +176,13 @@ bdg:MeasurementContext
         rdfs:subClassOf  skos:Concept ;
         rdfs:label       "Measurement Context codelist class" ;
         rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/measurementContext> .
+
+<http://data.bigdatagrapes.eu/resource/ndreVersion>
+        rdf:type      skos:ConceptScheme ;
+        rdfs:label    "NDRE version codelist scheme" ;
+        rdfs:seeAlso  bdg:NdreVersion .
+
+bdg:NdreVersion  rdf:type  rdfs:Class ;
+        rdfs:subClassOf  skos:Concept ;
+        rdfs:label       "NDRE version codelist class" ;
+        rdfs:seeAlso     <http://data.bigdatagrapes.eu/resource/ndreVersion> .

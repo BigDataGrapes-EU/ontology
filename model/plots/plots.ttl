@@ -1,0 +1,125 @@
+@base                      <http://data.bigdatagrapes.eu/resource/>.
+@prefix bdg:               <http://data.bigdatagrapes.eu/resource/ontology/>.
+@prefix bdg-unit:           <http://data.bigdatagrapes.eu/resource/unit/>.
+@prefix geo:               <http://www.opengis.net/ont/geosparql#>.
+@prefix qb4st:             <http://www.w3.org/ns/qb4st/> .
+@prefix crs-epsg:          <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix crs-ogc:           <http://www.opengis.net/def/crs/OGC/1.3/> .
+
+# from AUA (tableWine)
+
+<AUA/estate/Palivou> a bdg:Estate ;
+    rdfs:label "Palivou";
+    geo:hasGeometry <AUA/estate/Palivou/geo>.
+
+<AUA/estate/Palivou/Mesi> a bdg:Plot ;
+    bdg:estate <AUA/estate/Palivou> ;
+    rdfs:label "Palivou Mesi";
+    geo:hasGeometry <AUA/estate/Palivou/Mesi/geo>.
+
+<AUA/estate/Palivou/Mesi/A_01> a bdg:SubPlot ;
+    rdfs:label "Palivou Mesi C1" ;
+    bdg:plot <AUA/estate/Palivou/Mesi> .
+
+<AUA/estate/Palivou/Mesi/geo> a geo:Geometry;
+  qb4st:crs crs-epsg:32634;
+  geo:asWKT """<http://www.opengis.net/def/crs/EPSG/0/32634>
+     Polygon Z ((
+        4185129.5804 649013.2937 385.4146,
+        4185124.1565 649005.5673 386.6814,
+        4185097.4748 648975.9708 392.3798,
+        4185036.3603 648921.7838 404.5347,
+        4185037.5030 648920.3639 404.6150,
+        4185021.0880 648905.3512 408.1533,
+        4185022.3479 648904.1707 408.1642,
+        4185012.0719 648894.6579 410.6634,
+        4184963.4584 649017.3689 401.7767,
+        4185005.8420 649054.4618 393.1140,
+        4185043.1805 649067.0171 387.7245,
+        4185043.2048 649067.0338 387.7118,
+        4185079.4554 649069.3325 384.2483,
+        4185089.8517 649072.3978 383.0240,
+        4185100.7454 649078.7706 381.4434,
+        4185129.5804 649013.2937 385.4146
+     ))
+  """^^geo:wktLiteral.
+
+<AUA/geoPixel/Palivou/1> a bdg:GeoPixel , geo:Geometry ;
+    bdg:estate <AUA/estate/Palivou> ;
+    qb4st:crs crs-epsg:32634;
+    geo:asWKT """<http://www.opengis.net/def/crs/EPSG/0/32634>
+     Polygon ((
+        4185129.5804 649013.2937 385.4146,
+        4185124.1565 649005.5673 386.6814,
+        4185097.4748 648975.9708 392.3798,
+        4185036.3603 648921.7838 404.5347,
+        4185129.5804 649013.2937 385.4146
+     ))
+  """^^geo:wktLiteral. #dummy points - 10x10 m grid for each estate. #Todo
+
+# Observations
+
+<data/data/tableGrape/Palivou_Mesi_YieldData_080918/A_01> a qb:Observation ;
+    qb:dataSet <data/tableGrape/Palivou_Mesi_YieldData_080918> ;
+    bdg:weight  33.2 ;
+    bdg:subPlot <AUA/estate/Palivou/Mesi/A_01> .
+
+<data/tableGrape/Palivou_IoT_2018> a qb:DataSet ;
+    rdfs:label "Palivou_IoT_2018" ;
+    qb:structure <DSD/iot-stationary> ;
+    bdg:estate <AUA/estate/Palivou> .
+
+<data/tableGrape/Palivou_IoT_2018/2018-07-24T17:47:00> a qb:Observation ;
+   qb:dataSet           <data/tableGrape/Palivou_IoT_2018> ;
+   bdg:dateTime         "2018-07-24T17:47:00"^^xsd:dateTime ;
+   bdg:rainfall         0 ;
+   bdg:temp_air         22.3 ;
+   bdg:temp_system      25.2 ;
+   bdg:current_system   0 ;
+   bdg:radiation_solar  <radiationLevel/2> ;
+   bdg:moisture_soil_30cm  1.8 ;
+   bdg:moisture_soil_60cm  2.6 ;
+   bdg:humidity_air        51.5 ;
+   bdg:speed_wind          0 ;
+   bdg:direction_wind     <compass/north> ;
+   bdg:voltage_system      3.97 .
+
+<data/tableGrape/Palivou/Mesi/RapidScan-CS-45/2018-05-24T08:55:24/20> a qb:Observation;
+  qb:dataSet    <data/tableGrape/Palivou/RapidScan-CS-45>;
+  bdg:dateTime  "2018-05-24T08:55:24"^^xsd:dateTime;
+  bdg:position  """<http://www.opengis.net/def/crs/OGC/1.3/CRS84>
+      Point (37.8028066	22.6945866	408.2)
+    """^^geo:wktLiteral ;
+  bdg:HDOP      2.299;
+  bdg:hasGpsFix true;
+  bdg:NDRE      0.242;
+  bdg:NDVI      0.739;
+  bdg:RE        20.530;
+  bdg:NIR       33.792;
+  bdg:RED       5.118;
+  bdg:NDRE_MAX   0.352;
+  bdg:NDVI_MAX    0.865;
+  bdg:NDRE_MIN   -0.221;
+  bdg:NDVI_MIN   -4.270E-2;
+  bdg:NDRE_STD   5.269E-2;
+  bdg:NDVI_STD   0.116;
+  bdg:NDRE_CV    0.216;
+  bdg:NDVI_CV    0.157.
+
+# from winemaking
+
+<INRA/estate/PechRouge> a bdg:Estate .
+
+<INRA/estate/PechRouge/39> a bdg:PlotCluster ;
+    bdg:estate <INRA/estate/PechRouge> .
+
+<INRA/estate/PechRouge/39/39-CABERNET-SAUVIGNON> a bdg:Plot ;
+    bdg:plotCluster <INRA/estate/PechRouge/39> ;
+    bdg:estate <INRA/estate/PechRouge> .
+
+
+
+
+
+
+

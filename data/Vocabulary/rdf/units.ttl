@@ -1,3 +1,15 @@
+@base                      <http://data.bigdatagrapes.eu/resource/>.
+@prefix bdg:               <http://data.bigdatagrapes.eu/resource/ontology/>.
+@prefix bdg-unit:          <http://data.bigdatagrapes.eu/resource/unit/>.
+@prefix qudt:              <http://qudt.org/schema/qudt/> .
+@prefix unit:              <http://qudt.org/vocab/unit/> .
+@prefix quantitykind:      <http://qudt.org/vocab/quantitykind/> .
+@prefix rdf:               <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs:              <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skos:              <http://www.w3.org/2004/02/skos/core#>.
+@prefix prov:              <http://www.w3.org/ns/prov#>.
+@prefix obo:               <http://purl.obolibrary.org/obo/>.
+
 bdg-unit:UG-PER-ML
   rdf:type qudt:DerivedUnit ;
   rdf:type qudt:MassPerVolumeUnit ;
@@ -29,7 +41,7 @@ bdg-unit:G-PER-LT
   skos:prefLabel "gram-per-liter" ;
 .
 
-bgd-unit:DEG_BRIX
+bdg-unit:DEG_BRIX
   rdf:type qudt:Unit;
   rdfs:label "Degree Brix";
   skos:prefLabel "Degree-brix" ;
@@ -72,4 +84,21 @@ bdg-unit:KG-PER-HA a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:Unit, qudt:M
   qudt:isScalingOf unit:KG-PER-M2 ;
   rdfs:label "Kilogram per Hectare" ;
   skos:prefLabel "kilogram-per-hectare" ;
+.
+
+bdg-unit:MilliPa
+  rdf:type qudt:DerivedUnit ;
+  rdf:type qudt:PressureOrStressUnit ;
+  rdf:type qudt:SI-Unit ;
+  rdf:type qudt:Unit ;
+  qudt:abbreviation "MilliPa" ;
+  qudt:hasMultiplier unit:Milli;
+  qudt:conversionMultiplier 1.0e-3 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:hasQuantityKind quantitykind:ForcePerArea ;
+  qudt:isScalingOf unit:PASCAL ;
+  qudt:symbol "MilliPa" ;
+  rdfs:isDefinedBy <http://qudt.org/2.0/vocab/unit/mechanics> ;
+  rdfs:label "Millipascal" ;
+  skos:prefLabel "millipascal" ;
 .

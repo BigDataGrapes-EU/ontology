@@ -112,3 +112,15 @@ bdg:trialCode  rdf:type  qb:AttributeProperty ;
 
 bdg:operator  rdf:type  qb:AttributeProperty ;
         rdfs:label  "Operator" .
+
+bdg:satellite  rdf:type  qb:AttributeProperty ;
+        rdf:type     qb:CodedProperty ;
+        rdfs:label   "Satellite" ;
+        qb:codeList  <http://data.bigdatagrapes.eu/resource/satellite> ;
+        rdfs:range   bdg:Satellite .
+
+bdg:ndreVersion  rdf:type  qb:AttributeProperty ;
+        rdf:type     qb:CodedProperty ;
+        rdfs:label   "NDRE Version" ;
+        qb:codeList  <http://data.bigdatagrapes.eu/resource/ndreVersion> ;
+        rdfs:range   bdg:NdreVersion .

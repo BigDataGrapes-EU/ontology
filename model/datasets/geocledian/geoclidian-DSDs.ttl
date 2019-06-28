@@ -1,0 +1,100 @@
+<DSD/geocledian/vitality> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:vitality_MIN   ];
+  qb:component [qb:measure   bdg:vitality_MAX   ];
+  qb:component [qb:measure   bdg:vitality_MEAN  ];
+  qb:component [qb:measure   bdg:vitality_SUM   ];
+  qb:component [qb:measure   bdg:vitality_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+
+<DSD/geocledian/variations> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:variations_MIN   ];
+  qb:component [qb:measure   bdg:variations_MAX   ];
+  qb:component [qb:measure   bdg:variations_MEAN  ];
+  qb:component [qb:measure   bdg:variations_SUM   ];
+  qb:component [qb:measure   bdg:variations_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+
+<DSD/geocledian/ndvi> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:NDVI_MIN   ];
+  qb:component [qb:measure   bdg:NDVI_MAX   ];
+  qb:component [qb:measure   bdg:NDVI_MEAN  ];
+  qb:component [qb:measure   bdg:NDVI_SUM   ];
+  qb:component [qb:measure   bdg:NDVI_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+
+<DSD/geocledian/ndre> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:NDRE_MIN    ];
+  qb:component [qb:measure   bdg:NDRE_MAX    ];
+  qb:component [qb:measure   bdg:NDRE_MEAN   ];
+  qb:component [qb:measure   bdg:NDRE_SUM    ];
+  qb:component [qb:measure   bdg:NDRE_STD    ];
+  qb:component [qb:attribute bdg:satellite   ];
+  qb:component [qb:attribute bdg:ndreVersion ];
+.
+
+<DSD/geocledian/ndwi> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:NDWI_MIN   ];
+  qb:component [qb:measure   bdg:NDWI_MAX   ];
+  qb:component [qb:measure   bdg:NDWI_MEAN  ];
+  qb:component [qb:measure   bdg:NDWI_SUM   ];
+  qb:component [qb:measure   bdg:NDWI_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+
+<DSD/geocledian/savi> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:SAVI_MIN   ];
+  qb:component [qb:measure   bdg:SAVI_MAX   ];
+  qb:component [qb:measure   bdg:SAVI_MEAN  ];
+  qb:component [qb:measure   bdg:SAVI_SUM   ];
+  qb:component [qb:measure   bdg:SAVI_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+
+<DSD/geocledian/evi2> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:EVI2_MIN   ];
+  qb:component [qb:measure   bdg:EVI2_MAX   ];
+  qb:component [qb:measure   bdg:EVI2_MEAN  ];
+  qb:component [qb:measure   bdg:EVI2_SUM   ];
+  qb:component [qb:measure   bdg:EVI2_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+
+<DSD/geocledian/cire> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:CIRE_MIN   ];
+  qb:component [qb:measure   bdg:CIRE_MAX   ];
+  qb:component [qb:measure   bdg:CIRE_MEAN  ];
+  qb:component [qb:measure   bdg:CIRE_SUM   ];
+  qb:component [qb:measure   bdg:CIRE_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+
+<DSD/geocledian/npcri> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:dimension bdg:date ];
+  qb:component [qb:measure   bdg:NPCRI_MIN   ];
+  qb:component [qb:measure   bdg:NPCRI_MAX   ];
+  qb:component [qb:measure   bdg:NPCRI_MEAN  ];
+  qb:component [qb:measure   bdg:NPCRI_SUM   ];
+  qb:component [qb:measure   bdg:NPCRI_STD ];
+  qb:component [qb:attribute bdg:satellite  ];
+.
+

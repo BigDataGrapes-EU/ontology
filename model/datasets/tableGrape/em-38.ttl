@@ -18,7 +18,7 @@
 <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2> a qb:DataSet;
   rdfs:label "Table grapes data about Fasoulis/Geotrisi from sensor EM38-mk2";
   bdg:sensor <sensor/EM38-mk2>;
-  bdg:plot <estate/Fasoulis/Geotrisi>;
+  bdg:plot <AUA/estate/Fasoulis/Geotrisi>;
   qb:structure <DSD/EM38-mk2>.
 
 <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/1> a qb:Observation;

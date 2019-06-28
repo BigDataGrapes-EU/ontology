@@ -457,6 +457,7 @@ bdg:LAI  rdf:type                   qb:MeasureProperty ;
 bdg:NDVI  rdf:type                  qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Normalized Difference Vegetation Index" ;
+        rdfs:comment                "Vegetation vitality. NDVI correlates with the amount of leaf area (LAI) of active, healthy, green vegetation. Advantage: The most widely used vegetation index. Disadvantage: It saturates at high LAI levels and therefore shows limited variation in dense fields with high biomass. It minimizes topographic effects. Negative values of NDVI (values approaching -1) typically correspond to open water. Values around zero (-0.1 to 0.1) generally correspond to bare soil, barren areas of rock, sand, or snow. Low, positive values represent low or sparse vegetation (approximately 0.2 to 0.4), while high values indicate dense vegetation (values approaching 1)." ;
         sdmx-attribute:unitMeasure  unit:NUM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
         bdg:derivedFrom             bdg:NIR ;
@@ -465,6 +466,7 @@ bdg:NDVI  rdf:type                  qb:MeasureProperty ;
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Normalized Difference Vegetation Index" ;
+        rdfs:comment                "Vegetation vitality. NDVI correlates with the amount of leaf area (LAI) of active, healthy, green vegetation. Advantage: The most widely used vegetation index. Disadvantage: It saturates at high LAI levels and therefore shows limited variation in dense fields with high biomass. It minimizes topographic effects. Negative values of NDVI (values approaching -1) typically correspond to open water. Values around zero (-0.1 to 0.1) generally correspond to bare soil, barren areas of rock, sand, or snow. Low, positive values represent low or sparse vegetation (approximately 0.2 to 0.4), while high values indicate dense vegetation (values approaching 1)." ;
         sdmx-attribute:unitMeasure  unit:NUM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
         bdg:derivedFrom             bdg:RED ;
@@ -507,22 +509,40 @@ bdg:NVDI_STD  rdf:type              qb:MeasureProperty ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
         qb:concept                  sdmx-concept:obsValue .
 
+bdg:NVDI_SUM  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sum NDVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NVDI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NVDI_MEAN  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sum NDVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NVDI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
 bdg:NDRE  rdf:type                  qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Normalized Difference Red Edge Index" ;
+        rdfs:comment                "The Red Edge Indices are designed to estimate chlorophyll content in the canopy. More sensitivity in vegetation with high LAI. Less sensitivity to open water." ;
         sdmx-attribute:unitMeasure  unit:NUM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
         bdg:derivedFrom             bdg:NIR ;
         qb:concept                  sdmx-concept:obsValue ;
-        qudt:mathDefinition         "(NIR-RE)/(NIR+RE)" ;
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Normalized Difference Red Edge Index" ;
+        rdfs:comment                "The Red Edge Indices are designed to estimate chlorophyll content in the canopy. More sensitivity in vegetation with high LAI. Less sensitivity to open water." ;
         sdmx-attribute:unitMeasure  unit:NUM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
         bdg:derivedFrom             bdg:RE ;
-        qb:concept                  sdmx-concept:obsValue ;
-        qudt:mathDefinition         "(NIR-RE)/(NIR+RE)" .
+        qb:concept                  sdmx-concept:obsValue .
 
 bdg:NDRE_CV  rdf:type               qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -560,18 +580,332 @@ bdg:NDRE_STD  rdf:type              qb:MeasureProperty ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
         qb:concept                  sdmx-concept:obsValue .
 
-bdg:weight_harvest  rdf:type        qb:MeasureProperty ;
+bdg:NDRE_SUM  rdf:type              qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "Harvest weight" ;
-        sdmx-attribute:unitMeasure  unit:KG ;
-        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Berry%20> ;
-        bdg:derivedFrom             bdg:weight ;
+        rdfs:label                  "Sum NDRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
         qb:concept                  sdmx-concept:obsValue .
 
-bdg:area_surface  rdf:type          qb:MeasureProperty ;
+bdg:NDRE_MEAN  rdf:type             qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "Surface Area" ;
-        sdmx-attribute:unitMeasure  unit:HA ;
+        rdfs:label                  "Mean NDRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDWI  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Normalized Difference Water Index        " ;
+        rdfs:comment                "Sensitive to Vegetation water content & water stress. Allows drought monitoring. NDWI is less sensitive to atmospheric effects than NDVI. " ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDWI_CV  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Coefficient of variation NDWI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDWI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/CoefficientOfVariation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDWI_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum NDWI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDWI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDWI_MIN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum NDWI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDWI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDWI_STD  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Standard deviation NDWI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDWI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDWI_SUM  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sum NDWI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDWI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NDWI_MEAN  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean NDWI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NDWI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:SAVI  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Adjusted Vegetation Index" ;
+        rdfs:comment                "Reduced soil background effects. SAVI tries to correct for bare soil areas in the field. Therefore it is interesting in sparse vegetation canopies or early growing stages." ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:SAVI_CV  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Coefficient of variation SAVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:SAVI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/CoefficientOfVariation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:SAVI_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum SAVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:SAVI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:SAVI_MIN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum SAVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:SAVI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:SAVI_STD  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Standard deviation SAVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:SAVI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:SAVI_SUM  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sum SAVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:SAVI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:SAVI_MEAN  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean SAVI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:SAVI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:EVI2  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Enhanced Vegetation Index 2" ;
+        rdfs:comment                "More sensitivity in late growth stage (high LAI). It tries to correct for soil background signals and atmospheric influences." ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:EVI2_CV  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Coefficient of variation EVI2" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:EVI2 ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/CoefficientOfVariation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:EVI2_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum EVI2" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:EVI2 ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:EVI2_MIN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum EVI2" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:EVI2 ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:EVI2_STD  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Standard deviation EVI2" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:EVI2 ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:EVI2_SUM  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sum EVI2" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:EVI2 ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:EVI2_MEAN  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean EVI2" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:EVI2 ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CIRE  rdf:type                  qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Chlorophyll Index - Red Edge" ;
+        rdfs:comment                "Very high Chlorophyll & Nitrogen sensitivity. Canopy Chlorophyll & Nitrogen contents can be derived for a wide range of crops (e.g. potato, soybean, maize) and grassland. This can be used to plan harvests." ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CIRE_CV  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Coefficient of variation CIRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:CIRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/CoefficientOfVariation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CIRE_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum CIRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:CIRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CIRE_MIN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum CIRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:CIRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CIRE_STD  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Standard deviation CIRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:CIRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CIRE_SUM  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sum CIRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:CIRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:CIRE_MEAN  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean CIRE" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:CIRE ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NPCRI  rdf:type                 qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  " Normalized Pigment Chlorophyll Ratio Index\t" ;
+        rdfs:comment                "Associated with chlorophyll and nitrogen content. This index can be found in precision agriculture applications. Crops with a low Nitrogen content can have a high carotenoid to chlorophyll ratio. Using the red and blue spectral bands, NPCRI captures the information needed to quantify chlorophyll and Nitrogen. " ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NPCRI_CV  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Coefficient of variation NPCRI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NPCRI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/CoefficientOfVariation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NPCRI_MAX  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximum NPCRI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NPCRI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NPCRI_MIN  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Minimum NPCRI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NPCRI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NPCRI_STD  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Standard deviation NPCRI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NPCRI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NPCRI_SUM  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Sum NPCRI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NPCRI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:NPCRI_MEAN  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean NPCRI" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:NPCRI ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
         qb:concept                  sdmx-concept:obsValue .
 
 bdg:density_optical  rdf:type       qb:MeasureProperty ;
@@ -1355,4 +1689,108 @@ bdg:speed_wind_MEAN  rdf:type       qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:M-PER-SEC ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vitality  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vitality" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vitality_MIN  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vitality Minimum" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Vitality ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vitality_MAX  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vitality Maximum" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Vitality ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vitality_MEAN  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vitality Mean" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Vitality ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vitality_SUM  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vitality Sum " ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Vitality ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:vitality_STD  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vitality Standard Deviation" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Vitality ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:variations  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "variations" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:variations_MIN  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "variations Minimum" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Variations ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:variations_MAX  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "variations Maximum" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Variations ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:variations_MEAN  rdf:type       qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "variations Mean" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:variations ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:variations_SUM  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "variations Sum " ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Variations ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:variations_STD  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "variations Standard Deviation" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
+        bdg:derivedFrom             bdg:Variations ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
         qb:concept                  sdmx-concept:obsValue .

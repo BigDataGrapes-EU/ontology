@@ -1,0 +1,11 @@
+CONSTRUCT {
+    ?URI a bdg:Plot ;
+        skos:broader ?BROADER ;
+        rdfs:label ?LABEL ;
+        bdg:idGeocledian ?id_geocledian .
+}
+WHERE {
+    bind(uri(concat(?broader,"/",?uri)) as ?URI)
+    bind(uri(?broader) as ?BROADER)
+    bind(if(bound(?label),?label,?uri) as ?LABEL)
+}
