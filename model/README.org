@@ -868,3 +868,22 @@ Now that we have datasets defined, it's easy to capture all observations.
   bdg:NDVI      0.543;
   bdg:LAI       0.427.
 #+END_SRC
+
+*** Missing values handling
+
+QB observations are not valid if all the measures in the DSD are not present. This is a problem as in the real world often values are missing, or invalid. The obvious solution is to multiply the number of cubes and have one per measure, but this is impractical. Fortunately not-a-number is defined by XSD and `"NaN"^^xsd:double` is valid RDF.
+
+#+BEGIN_SRC Turtle
+<data/wineMaking/PechRouge/Climatic/11170004/2012-01-01> a qb:Observation;
+  qb:dataSet                          <data/wineMaking/PechRouge/Climatic/11170004>;
+  bdg:date                            "2012-01-01"^^xsd:date;
+  bdg:temp_RANGE                      7.8 ;
+  bdg:direction_wind_MAX              290 ;
+  bdg:daily_wetness_duration          4.7;
+  bdg:insolation_duration             "NaN"^^xsd:double ;
+  bdg:insolation_duration_calculated  6.6;
+  bdg:evaporation_tray                "NaN"^^xsd:double ;
+  bdg:evapotranspiration_piche        "NaN"^^xsd:double ;
+  bdg:evapotranspiration_penman       0.6 ;
+.
+#+END_SRC
