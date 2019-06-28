@@ -1,0 +1,1913 @@
+@prefix qb4st:  <http://www.w3.org/ns/qb4st/> .
+@prefix obo_rel:  <http://purl.obolibrary.org/obo/OBO_REL#> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix ENVO:  <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix CO_320:  <http://www.cropontology.org/rdf/CO_320:> .
+@prefix crs-epsg:  <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix sdmx:  <http://purl.org/linked-data/sdmx#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix PATO:  <http://purl.obolibrary.org/obo/PATO_> .
+@prefix BFO:  <http://purl.obolibrary.org/obo/BFO_> .
+@prefix geom:  <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix envo:  <http://purl.obolibrary.org/obo/envo#> .
+@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
+@prefix CO_UO:  <http://www.cropontology.org/rdf/UO:> .
+@prefix inra_obj:  <http://vinnotec.supagro.inra.fr/public/Pr/> .
+@prefix uo:  <http://purl.obolibrary.org/obo/uo#> .
+@prefix UO:  <http://purl.obolibrary.org/obo/UO_> .
+@prefix CO_357:  <http://www.cropontology.org/rdf/CO_357:> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix afeo:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#> .
+@prefix inra_wineTaste:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/> .
+@prefix inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/> .
+@prefix MMO:  <http://purl.obolibrary.org/obo/MMO_> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix at:  <http://data.ifpri.org/lod/at/resource/> .
+@prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
+@prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
+@prefix ofpe:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#> .
+@prefix SIO:  <http://semanticscience.org/resource/SIO_> .
+@prefix CO_322:  <http://www.cropontology.org/rdf/CO_322:> .
+@prefix RO:  <http://purl.obolibrary.org/obo/RO_> .
+@prefix inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/> .
+@prefix crop:  <http://data.ifpri.org/lod/crop/> .
+@prefix pubchem:  <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID> .
+@prefix schema:  <http://schema.org/> .
+@prefix STATO:  <http://purl.obolibrary.org/obo/STATO_> .
+@prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
+@prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
+@prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
+@prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
+@prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix cc:  <http://creativecommons.org/ns#> .
+@prefix bdg:  <http://data.bigdatagrapes.eu/resource/ontology/> .
+@prefix oepo:  <http://www.phenome-fppn.fr/vocabulary/2018/oepo#> .
+@prefix fao-geo:  <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix CO:  <http://www.cropontology.org/rdf/> .
+@prefix NCBITaxon:  <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix quantitykind:  <http://qudt.org/vocab/quantitykind/> .
+@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/> .
+@prefix inra_gis:  <http://vinnotec.supagro.inra.fr/public/Pr/GIS/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix ncbiTaxon:  <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix bdg-unit:  <http://data.bigdatagrapes.eu/resource/unit/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix to:  <http://purl.obolibrary.org/obo/to#> .
+@prefix AGRO:  <http://purl.obolibrary.org/obo/AGRO_> .
+@prefix agrovoc:  <http://aims.fao.org/aos/agrovoc/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+@prefix po:  <http://purl.obolibrary.org/obo/po#> .
+@prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_001>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_001" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22-FLOT-ROUGE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_001> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_001>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_001>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_001" ;
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_001" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22-PATRICIA> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_001> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_001>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_001>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_001" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_002>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_002" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51-MUSCAT-ALEXANDRIE-2016> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_002> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_002>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_002>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_002" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_003a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_003a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39-PATRICIA> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_003a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_003a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_003a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_003a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_003b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_003b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39-FLOT-ROUGE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_003b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_003b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_003b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_003b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_004>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_004" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/98-MUSCAT-PETIT-GRAIN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_004> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_004>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_004>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_004" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_005>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_005" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/90-91-MUSCAT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_005> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_005>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_005>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_005" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_006a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_006a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/2017-CONSERVIN-81-CHA-NI> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_006a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_006a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_006a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_006a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_006b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_006b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/2017-CONSERVIN-81-CHA-IF> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_006b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_006b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_006b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_006b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_006c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_006c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/2017-CONSERVIN-81-CHA-I> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_006c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_006c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_006c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_006c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_007>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_007" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81-CHARDONNAY> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_007> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_007>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_007>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_007" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_008>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_008" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81-CHARDONNAY> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_008> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_008>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_008>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_008" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_009>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_009" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_009> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_009>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_009>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_009" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_010>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_010" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55-VIOGNIER-TM> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_010> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_010>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_010>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_010" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_011a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_011a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_011a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_011a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_011b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_011b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_011b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_011b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_011c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_011c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_011c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_011c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011d>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_011d" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_011d> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_011d>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_011d>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_011d" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_012>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_012" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3180-16-8-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_012> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_012>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_012>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_012" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_013>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_013" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-VDQA-G14> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_013> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_013>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_013>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_013" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_014>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_014" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-VDQA-G05> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_014> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_014>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_014>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_014" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_015>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_015" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-MERLOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_015> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_015>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_015>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_015" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_016a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_016a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55-VIOGNIER-IRRIALT'EAU> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_016a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_016a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_016a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_016a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_017a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_017a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68-VERMENTINO> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_017a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_017a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_017a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_017a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_017b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_017b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68-ROUSSANE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_017b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_017b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_017b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_017b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_018>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_018" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61-MERLOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_018> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_018>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_018>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_018" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_019a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_019a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61-MERLOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_019a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_019a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_019a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_019a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_019b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_019b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-MERLOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_019b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_019b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_019b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_019b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_019c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_019c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/18-MERLOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_019c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_019c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_019c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_019c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_020>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_020" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE-LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_020> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_020>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_020>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_020" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_021>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_021" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE-LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_021> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_021>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_021>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_021" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_022>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_022" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_022> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_022>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_022>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_022" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_023>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_023" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10-SAUVIGNON-ESP> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_023> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_023>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_023>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_023" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_024>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_024" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-MERLOT-SUNAGRI-L1> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_024> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_024>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_024>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_024" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_025a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_025a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3347-330-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_025a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_025a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_025a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_025a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_025b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_025b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3347-368-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_025b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_025b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_025b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_025b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_025c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_025c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3347-342-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_025c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_025c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_025c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_025c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_026>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_026" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3160-27-4-Lyre%20haute> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_026> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_026>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_026>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_026" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_027>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_027" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-MERLOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_027> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_027>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_027>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_027" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_028a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_028a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68-CHENIN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_028a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_028a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_028a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_028a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_028b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_028b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68-ARRILOBA> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_028b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_028b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_028b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_028b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_029a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_029a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55-VIOGNIER> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_029a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_029a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_029a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_029a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_029b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_029b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81-CHARDONNAY> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_029b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_029b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_029b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_029b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_030>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_030" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_030> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_030>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_030>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_030" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_031>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_031" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-VDQA-G09-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_031> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_031>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_031>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_031" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_032>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_032" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-VDQA-G02-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_032> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_032>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_032>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_032" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_033>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_033" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3159-ESP-HAUT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_033> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_033>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_033>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_033" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_034>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_034" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/78-MUSCAT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_034> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_034>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_034>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_034" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_035a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_035a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3160-LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_035a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_035a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_035a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_035a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_035b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_035b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_035b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_035b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_035b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_035b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_036>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_036" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10-SAUVIGNON-TM> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_036> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_036>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_036>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_036" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_037a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_037a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76-SYRAH-ESP> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_037a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_037a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_037a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_037a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_037b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_037b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/87-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_037b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_037b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_037b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_037b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_037c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_037c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_037c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_037c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_037c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_037c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_038a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_038a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_038a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_038a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_038a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_038a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_038b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_038b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75-GRENACHE-BLANC> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_038b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_038b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_038b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_038b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_038c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_038c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79-GRENACHE%20NOIR> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_038c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_038c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_038c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_038c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_039>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_039" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/92-GRENACHE-GRIS-BLANC> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_039> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_039>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_039>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_039" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_040>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_040" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66-MACCABEU> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_040> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_040>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_040>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_040" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_040_bis>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_040_bis" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73-MACCABEU%20WETWINE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_040_bis> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_040_bis>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_040_bis>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_040_bis" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_041>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_041" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3159-ESP%20et%20TM> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_041> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_041>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_041>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_041" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_042>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_042" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73-MACCABEU> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_042> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_042>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_042>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_042" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_043>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_043" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73-MACCABEU> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_043> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_043>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_043>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_043" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_044>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_044" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_044> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_044>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_044>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_044" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_045>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_045" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/COURSAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_045> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_045>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_045>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_045" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_046>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_046" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_046> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_046>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_046>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_046" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_047>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_047" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_047> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_047>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_047>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_047" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_048>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_048" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-VDQA-G14> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_048> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_048>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_048>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_048" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_049a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_049a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3180-16-8-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_049a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_049a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_049a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_049a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_049b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_049b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3347-431-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_049b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_049b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_049b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_049b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_049c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_049c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3347-320-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_049c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_049c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_049c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_049c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_050>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_050" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35-CABERNET-FRANC> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_050> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_050>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_050>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_050" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_051>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_051" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76-SYRAH-lyre> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_051> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_051>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_051>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_051" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_052>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_052" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76-SYRAH-lyre> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_052> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_052>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_052>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_052" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_053>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_053" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3160-LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_053> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_053>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_053>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_053" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_054>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_054" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71-GRENACHE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_054> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_054>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_054>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_054" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_055a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3347-364-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_055a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_055a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_055b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3347-396-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_055b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_055b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_055c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3322-343-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_055c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_055c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055d>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_055d" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3322-285-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055d> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_055d>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055d>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_055d" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055e>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_055e" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3322-339-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055e> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_055e>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055e>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_055e" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055f>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_055f" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3322-226-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055f> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_055f>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_055f>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_055f" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_056>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_056" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3159-B-%20LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_056> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_056>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_056>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_056" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_057a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_057a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3160-ESP> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_057a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_057a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_057a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_057a" ;
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_057a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/TM> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_057a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_057a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_057a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_057a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_057b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_057b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3160-LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_057b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_057b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_057b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_057b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_058>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_058" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-MERLOT-%20MARSELAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_058> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_058>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_058>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_058" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_059>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_059" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35-CABERNET-FRANC> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_059> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_059>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_059>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_059" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_060>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_060" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-RESDUR> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_060> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_060>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_060>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_060" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_061>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_061" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3176-%20N-LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_061> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_061>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_061>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_061" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_062>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_062" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/100-VD-RESDUR-B> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_062> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_062>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_062>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_062" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_063>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_063" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103-VD-RESDUR-N-1> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_063> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_063>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_063>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_063" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_064a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_064a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/63-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_064a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_064a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_064a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_064a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_064b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_064b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/02-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_064b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_064b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_064b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_064b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_064c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_064c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/23-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_064c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_064c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_064c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_064c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_065>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_065" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-MERLOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_065> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_065>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_065>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_065" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_066>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_066" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75-MERLOT-Eki-Ari-Calodoc> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_066> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_066>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_066>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_066" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_067>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_067" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75-MARSELAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_067> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_067>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_067>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_067" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_068a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_068a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JARDIN-AMPELO-Noir> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_068a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_068a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_068a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_068a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_068b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_068b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JARDIN-AMPELO-Blanc> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_068b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_068b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_068b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_068b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_069>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_069" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_069> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_069>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_069>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_069" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_070>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_070" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-VDQA-G02> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_070> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_070>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_070>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_070" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_071>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_071" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/77-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_071> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_071>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_071>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_071" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_072>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_072" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/83-MARSELAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_072> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_072>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_072>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_072" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_073>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_073" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22-SYRAH-sp> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_073> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_073>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_073>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_073" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_074a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3328-306-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_074a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_074a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_074a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_074b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3394-57-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_074b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_074b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_074b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_074c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3328-177-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_074c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_074c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_074c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074d>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_074d" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3161-22-04-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_074d> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_074d>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_074d>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_074d" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_075>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_075" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3176-%20N-LYRE%20haut> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_075> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_075>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_075>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_075" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_076>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_076" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/65-CARIGNAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_076> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_076>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_076>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_076" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_077a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_077a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79-CARIGNAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_077a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_077a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_077a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_077a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_077b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_077b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/74-CONS-CARIGNAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_077b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_077b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_077b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_077b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_078>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_078" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/95-CARIGNAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_078> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_078>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_078>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_078" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_079>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_079" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/95-CARIGNAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_079> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_079>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_079>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_079" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_080>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_080" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/65-CARIGNAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_080> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_080>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_080>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_080" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_081a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_081a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72-NV-CABESTREL> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_081a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_081a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_081a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_081a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_081b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_081b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72-NV-MARSELAN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_081b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_081b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_081b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_081b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_082>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_082" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68-BOURBOULENC> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_082> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_082>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_082>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_082" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_083>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_083" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39-CABERNET%20SAUVIGNON> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_083> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_083>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_083>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_083" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_084>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_084" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11-PETIT-VERDOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_084> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_084>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_084>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_084" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_085a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3160-27-4-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_085a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_085a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_085a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_085b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3328-168-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_085b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_085b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_085b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_085c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3322-178-N> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_085c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_085c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_085c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085d>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_085d" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-3084-2-46> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_085d> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_085d>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_085d>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_085d" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_086>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_086" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72-MOURVEDRE-sp> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_086> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_086>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_086>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_086" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_087a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_087a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39-CABERNET%20SAUVIGNON> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_087a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_087a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_087a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_087a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_087b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_087b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35-CABERNET-FRANC> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_087b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_087b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_087b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_087b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_088>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_088" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3176-LYRE> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_088>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_088>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_088" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_089a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_089a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3176-ESP> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_089a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_089a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_089a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_089a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_089b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_089b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106-3176-TM> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_089b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_089b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_089b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_089b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_090a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_090a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_090a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_090a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_090a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_090a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_090b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_090b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82-SYRAH> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_090b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_090b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_090b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_090b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_091>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_091" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40-GAMAY> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_091> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_091>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_091>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_091" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_092a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_092a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66-ARAMON> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_092a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_092a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_092a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_092a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_092b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_092b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85-RUN> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_092b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_092b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_092b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_092b" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_092c>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_092c" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57-VDQA> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_092c> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_092c>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_092c>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_092c" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_093>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_093" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11-PETIT-VERDOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_093> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_093>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_093>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_093" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_094>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_094" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11-PETIT-VERDOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_094> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_094>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_094>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_094" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_095a>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_095a" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11-PETIT-VERDOT> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_095a> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_095a>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_095a>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_095a" .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_095b>
+        rdf:type         afeo:Harvesting ;
+        rdfs:label       "FV_2017_095b" ;
+        bdg:plotCluster  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22-SYRAH-sp> ;
+        afeo:hasOutput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_095b> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_095b>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/FV_2017_095b>
+        rdf:type    afeo:Harvesting ;
+        rdfs:label  "FV_2017_095b" .

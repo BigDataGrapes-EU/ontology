@@ -1,0 +1,50 @@
+
+CONSTRUCT {
+  ?URI a afeo:Harvesting ;
+    rdfs:label ?SAMPLECODE ; 
+    bdg:plotCluster ?OBJECTCODE_URI ; 
+    afeo:hasOutput ?BERRY;
+  .
+  ?BERRY a afeo:Berry ;
+  .
+  ?OBS_URI a qb:Observation ;
+    qb:dataSet <data/winemaking/PechRouge/harvestWeight/2017>;
+    bdg:berry  ?BERRY;  
+    bdg:date ?DATETIME ;
+    bdg:weight ?WEIGHT;
+    bdg:sensor ?OPERATOR;
+    bdg:harvestMethod ?HARVESTMETHOD;
+    bdg:vineStockNumber ?VINESTOCKNUMBER;
+  .
+  ?URI a afeo:Harvesting ;
+     rdfs:label ?SAMPLECODE ; 
+.
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
+  BIND(uri(?SAMPLECODE) as ?URI)
+
+  BIND(uri(CONCAT("berry/",?SAMPLECODE)) as ?BERRY)
+
+  BIND(REPLACE(REPLACE(REPLACE(?harvestMethod, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?HARVESTMETHOD)
+
+  BIND(REPLACE(REPLACE(REPLACE(?operator, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?OPERATOR)
+
+  BIND(IF(REPLACE(?vinestockNumber,"[^\\.0-9]","")!= "", xsd:double(?vinestockNumber), xsd:string("NaN")) as ?VINESTOCKNUMBER)
+
+  BIND(CONCAT(REPLACE(?date,"(\\d{2})/(\\d{2})/\\d{0,2}(\\d{2})","20$3-$1-$2"))  as ?DATE)
+  BIND(BOUND(?time) && strlen(?time)>0 as ?CHECKTIME)
+   
+  BIND(CONCAT(REPLACE(?time,"(\\d{2}):(\\d{2}):\\d{0,2}","$1:$2")) as ?TIME)
+
+  BIND(IF(?CHECKTIME, STRDT(CONCAT(?DATE,"T",?TIME,":00"),xsd:dateTime),STRDT(?DATE,xsd:date)) as ?DATETIME)
+
+  ?uniqueObjectCode apf:strSplit (?objectCode "\\+")
+  BIND(uri(CONCAT("INRA/estate/PechRouge/",?uniqueObjectCode)) as ?OBJECTCODE_URI)
+
+  BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:string("NaN")) as ?WEIGHT)
+
+  BIND(uri(CONCAT("INRA/obs/",?BERRY,?SAMPLECODE) as ?OBS_URI)
+
+  
+}

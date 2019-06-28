@@ -34,21 +34,3 @@
         bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/amylic> ;
         bdg:iteration      1 ;
         bdg:score          "9.2"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_INERTIS_MAC_01_T5A/INRA/person/1286/sensoryFlavor/hotSugar/1>
-        rdf:type           qb:Observation ;
-        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine2017_INERTIS_MAC_01_T5A> ;
-        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1286> ;
-        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/hotSugar> ;
-        bdg:iteration      1 ;
-        bdg:score          "0.1"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_INERTIS_MAC_01_T5A/INRA/person/1286/sensoryFlavor/empyreumatic/1>
-        rdf:type           qb:Observation ;
-        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine2017_INERTIS_MAC_01_T5A> ;
-        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1286> ;
-        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/empyreumatic> ;
-        bdg:iteration      1 ;
-        bdg:score          "0"^^xsd:double .

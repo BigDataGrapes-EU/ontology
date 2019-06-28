@@ -25,32 +25,4 @@
         qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
         bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_4> ;
         bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/veryLightYellowWithGreenSparkles> ;
-        bdg:flavorJudgeRatio  "NaN" .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_1/sensoryFlavor/strawYellowGoldYellow/>
-        rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_1> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/strawYellowGoldYellow> ;
-        bdg:flavorJudgeRatio  "0.67"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_2/sensoryFlavor/strawYellowGoldYellow/>
-        rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_2> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/strawYellowGoldYellow> ;
-        bdg:flavorJudgeRatio  "NaN" .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_3/sensoryFlavor/strawYellowGoldYellow/>
-        rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_3> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/strawYellowGoldYellow> ;
-        bdg:flavorJudgeRatio  "0.17"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_4/sensoryFlavor/strawYellowGoldYellow/>
-        rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_4> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/strawYellowGoldYellow> ;
-        bdg:flavorJudgeRatio  "0.50"^^xsd:double .
+        bdg:flavorJudgeRatio  "NaN"^^xsd:double .

@@ -1,20 +1,23 @@
 
 CONSTRUCT {
-  ?URI a qb:Observation;
-     qb:dataSet <data/winemaking/sensoryAnalysis/2017> ;
-     bdg:wine ?WINE_URI ; 
-     bdg:sensoryFlavor ?FLAVOR_URI ;
+  ?URI a bdg:PlotCluster;
+     rdfs:label ?OBJECTCODE ; 
+     bdg:tastingFlavor ?FLAVOR_URI ;
      bdg:flavorJudgeRatio ?RATIO;
+     geo:sfWithin <INRA/estate/PechRouge>; 
 .
 } WHERE {
 
   bind(concat("wine",replace(replace(replace(?wine, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")) as ?WINE)
   bind(uri(?WINE) as ?WINE_URI)
 
+  bind(concat("objectCode",replace(replace(replace(?objectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")) as ?OBJECTCODE)
+
+
   bind(concat("sensoryFlavor/",replace(replace(replace(?sensoryFlavor, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")) as ?FLAVOR)
   bind(uri(?FLAVOR) as ?FLAVOR_URI)
 
-  bind(uri(concat("data/winemaking/sensoryAnalysis/2017-01-01/",?WINE,"/",?FLAVOR,"/")) as ?URI)
+  bind(uri(concat("INRA/estate/PechRouge/",?OBJECTCODE)) as ?URI)
 
   bind(IF(replace(?ratioFlavorJudge,"[^\\.0-9]","")!= "", xsd:double(?ratioFlavorJudge), xsd:double("NaN")) as ?RATIO)
 }
