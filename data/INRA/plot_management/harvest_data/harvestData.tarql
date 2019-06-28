@@ -42,7 +42,7 @@ CONSTRUCT {
   ?uniqueObjectCode apf:strSplit (?objectCode "\\+")
   BIND(uri(CONCAT("INRA/estate/PechRouge/",?uniqueObjectCode)) as ?OBJECTCODE_URI)
 
-  BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:string("NaN")) as ?WEIGHT)
+  BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
 
   BIND(uri(CONCAT("INRA/obs/",?BERRY,?SAMPLECODE) as ?OBS_URI)
 

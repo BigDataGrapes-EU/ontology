@@ -5,7 +5,7 @@
   qb:structure <DSD/harvestWeight> . 
  
 <DSD/harvestWeight> a qb:DataStructureDefinition; 
-  qb:component [qb:dimension bdg:plot                                                              ]; 
+  qb:component [qb:dimension bdg:plot  # it's subPLot for table grape data model                                                        ]; 
   qb:component [qb:dimension bdg:variety                                                           ]; 
   qb:component [qb:dimension bdg:date                                                              ]; 
   qb:component [qb:dimension sosa:sensor                                                           ]; 
