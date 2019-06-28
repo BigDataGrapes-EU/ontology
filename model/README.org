@@ -877,13 +877,13 @@ QB observations are not valid if all the measures in the DSD are not present. Th
 <data/wineMaking/PechRouge/Climatic/11170004/2012-01-01> a qb:Observation;
   qb:dataSet                          <data/wineMaking/PechRouge/Climatic/11170004>;
   bdg:date                            "2012-01-01"^^xsd:date;
-  bdg:temp_RANGE                      7.8 ;
-  bdg:direction_wind_MAX              290 ;
-  bdg:daily_wetness_duration          4.7;
+  bdg:temp_RANGE                      "7.8"^^xsd:double ;
+  bdg:direction_wind_MAX              "290"^^xsd:double ;
+  bdg:daily_wetness_duration          "4.7"^^xsd:double ;
   bdg:insolation_duration             "NaN"^^xsd:double ;
-  bdg:insolation_duration_calculated  6.6;
+  bdg:insolation_duration_calculated  "6.6"^^xsd:double ;
   bdg:evaporation_tray                "NaN"^^xsd:double ;
   bdg:evapotranspiration_piche        "NaN"^^xsd:double ;
-  bdg:evapotranspiration_penman       0.6 ;
+  bdg:evapotranspiration_penman       "0.6"^^xsd:double ;
 .
 #+END_SRC
