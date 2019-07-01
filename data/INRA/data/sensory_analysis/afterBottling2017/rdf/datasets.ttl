@@ -1,4 +1,4 @@
-<DSD/sensoryAnalysisAfterBottling> a qb:DataStructureDefinition;
+<DSD/sensoryAnalysis/AfterBottling> a qb:DataStructureDefinition;
   qb:component [ qb:dimension bdg:iteration             ];
   qb:component [ qb:dimension bdg:wine                  ];
   qb:component [ qb:dimension bdg:dateTime; qb:componentAttachment qb:DataSet ];
@@ -12,7 +12,7 @@
 
 <data/winemaking/sensoryAnalysis/2017> a qb:DataSet ;
   rdfs:label "Data about different wines, tasted after fermentation and bottling in 2017";
-  qb:structure <DSD/sensoryAnalysisAfterBottling> ;
+  qb:structure <DSD/sensoryAnalysis/AfterBottling> ;
   bdg:dateTime "2017-01-01T00:00:00"^^xsd:dateTime ;
 .
 

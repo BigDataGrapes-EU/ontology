@@ -1,14 +1,14 @@
-<data/winemaking/PechRouge/Harvest/2017> a qb:DataSet; 
+<DSD/harvestWeight> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:plot      ]; # it's subPLot for table grape data model
+  qb:component [qb:dimension bdg:date ; qb:componentAttachment qb:DataSet ];
+  qb:component [qb:attribute bdg:operator  ];
+  qb:component [qb:attribute bdg:harvestMethod  ];
+  qb:component [qb:measure   bdg:weight    ];
+  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
+  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
+
+<data/winemaking/PechRouge/Harvest/2017> a qb:DataSet;
   rdfs:label "Data about Harvest done on Pech Rouge in 2016";
   sosa:FeatureOfInterest afeo:Berry;
   bdg:date "2017-01-01"^^xsd:date ;
   qb:structure <DSD/harvestWeight> . 
- 
-<DSD/harvestWeight> a qb:DataStructureDefinition; 
-  qb:component [qb:dimension bdg:plot  # it's subPLot for table grape data model                                                        ]; 
-  qb:component [qb:dimension bdg:variety                                                           ]; 
-  qb:component [qb:dimension bdg:date                                                              ]; 
-  qb:component [qb:dimension sosa:sensor                                                           ]; 
-  qb:component [qb:measure   bdg:weight                                                            ]; 
-  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
-  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ] . 

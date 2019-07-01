@@ -11,7 +11,7 @@ CONSTRUCT {
 .
 } WHERE {
 
-  bind(concat("wine",replace(replace(replace(?wine, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")) as ?WINE)
+  bind(concat("wine/",replace(replace(replace(?wine, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")) as ?WINE)
   bind(uri(?WINE) as ?WINE_URI)
 
   bind(concat("INRA/person/",?judge) as ?SENSOR)

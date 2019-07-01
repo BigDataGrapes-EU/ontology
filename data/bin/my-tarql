@@ -5,5 +5,5 @@ source ~/.bashrc
 #cd ./TRR/tarql
 
 sed -r "s/^\@(.*>)\s*\./\1/g" $2 $3 > $$.tarql
-~/GIT/GITHUB/tarql/target/appassembler/bin/tarql --encoding utf8 $1 $$.tarql $4
+tarql --encoding utf8 $1 $$.tarql $4
 rm $$.tarql

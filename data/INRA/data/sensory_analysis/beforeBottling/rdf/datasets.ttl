@@ -1,7 +1,8 @@
-<DSD/sensoryAnalysisBeforeBottling> a qb:DataStructureDefinition;
+<DSD/sensoryAnalysis/BeforeBottling> a qb:DataStructureDefinition;
   qb:component [ qb:dimension bdg:wine                  ];
   qb:component [ qb:dimension bdg:dateTime; qb:componentAttachment qb:DataSet ];
   qb:component [ qb:dimension bdg:sensoryFlavor         ];
+  qb:component [ qb:measure   bdg:judgeNumber         ];
   qb:component [ qb:measure   bdg:flavorJudgeRatio      ];
   qb:component [ qb:attribute sosa:hasFeatureOfInterest;  qb:componentAttachment  qb:DataSet        ];
   qb:component [ qb:attribute qudt:hasQuantityKind     ;  qb:componentAttachment  qb:MeasureProperty];
@@ -10,7 +11,7 @@
 
 <data/winemaking/sensoryAnalysis/2017> a qb:DataSet ;
   rdfs:label "Data about different wines, tasted after fermentation at Pech Rouge in 2017";
-  qb:structure <DSD/sensoryAnalysisBeforeBottling> ;
+  qb:structure <DSD/sensoryAnalysis/BeforeBottling> ;
   bdg:dateTime "2017-01-01T00:00:00"^^xsd:dateTime ;
 .
 

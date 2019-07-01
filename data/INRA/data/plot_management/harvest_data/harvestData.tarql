@@ -2,7 +2,7 @@
 CONSTRUCT {
   ?URI a afeo:Harvesting ;
     rdfs:label ?SAMPLECODE ; 
-    bdg:plotCluster ?OBJECTCODE_URI ; 
+    bdg:plot ?OBJECTCODE_URI ;
     afeo:hasOutput ?BERRY;
   .
   ?BERRY a afeo:Berry ;
@@ -12,9 +12,8 @@ CONSTRUCT {
     bdg:berry  ?BERRY;  
     bdg:date ?DATETIME ;
     bdg:weight ?WEIGHT;
-    bdg:sensor ?OPERATOR;
+    bdg:operator ?OPERATOR;
     bdg:harvestMethod ?HARVESTMETHOD;
-    bdg:vineStockNumber ?VINESTOCKNUMBER;
   .
   ?URI a afeo:Harvesting ;
      rdfs:label ?SAMPLECODE ; 
@@ -22,7 +21,7 @@ CONSTRUCT {
 } WHERE {
 
   BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
-  BIND(uri(?SAMPLECODE) as ?URI)
+  BIND(uri(concat("harvesting/",?SAMPLECODE)) as ?URI)
 
   BIND(uri(CONCAT("berry/",?SAMPLECODE)) as ?BERRY)
 
@@ -44,7 +43,5 @@ CONSTRUCT {
 
   BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
 
-  BIND(uri(CONCAT("INRA/obs/",?BERRY,?SAMPLECODE) as ?OBS_URI)
-
-  
+  BIND(uri(CONCAT("data/winemaking/PechRouge/Harvest/2017/",?SAMPLECODE)) as ?OBS_URI)
 }
