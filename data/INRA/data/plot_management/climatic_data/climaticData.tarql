@@ -1,0 +1,63 @@
+
+
+# Example RDF transformation using the custom IRIs and type
+CONSTRUCT {
+    ?URI a qb:Observation ;
+        bdg:date ?DATE ;  
+        bdg:temp_RANGE ?RAN ;
+        bdg:direction_wind_MAX ?MWD ;
+        bdg:daily_wetness_duration ?WD ;
+        bdg:insolation_duration_calculated ?CID ;
+        bdg:evapotranspiration_penman ?PETP ;
+        bdg:evapotranspiration_piche_corrected ?CPETP ;
+        bdg:insolation_fraction ?FRAC ;
+        bdg:precipitation_height ?PH ;
+        bdg:humidity_air_MAX ?XH ;
+        bdg:humidity_air_MIN ?NH ;
+        bdg:humidity_air_MEAN ?MH ;
+        bdg:actinothermic_index_10cm ?I1N ;
+        bdg:actinothermic_index_10cm_MAX ?I1X ;
+        bdg:actinothermic_index_50cm ?I5N ;
+        bdg:actinothermic_index_50cm_MAX ?I5X ;
+        bdg:temperature_instant_MAX ?XTI ;
+        bdg:temperature_instant_MIN ?NTI ;
+        bdg:humidity_instant_MAX ?XHI ;
+        #bdg:IUN ?IUN ;
+        bdg:wind_instant_MAX ?XWI ;
+        bdg:precipitation_intensity_instant_MAX ?XPII ;
+        bdg:rainfall_MAX ?XPI ;
+        bdg:radiation_global ?GR ;
+        bdg:radiation_global_calculated ?CGR ;
+        bdg:radiation_active_photosynthetic ?PAR ;
+        bdg:temp_MAX ?XT ;
+        bdg:temp_soil_10cm_MAX ?X1S ;
+        bdg:temp_soil_10cm_MIN ?NT ;
+        bdg:temp_soil_10cm_MIN ?N1S ;
+        bdg:temp_MEAN ?MT ;
+        bdg:temp_MEAN_caclulated ?CMT ;
+        bdg:temp_soil_50cm_MEAN ?S5M ;
+        bdg:dewPoint_temp ?DT ;
+        bdg:humidity_air_period_lt40pc ?H4 ;
+        bdg:humidity_air_period_gt80pc ?H8 ;
+        bdg:humidity_air_period_gt90pc ?H9 ;
+        bdg:pressure_vapour_MEAN ?MVP ;
+        bdg:total_wind_E ?TEW ;
+        bdg:total_wind_N ?TNW ;
+        bdg:total_wind_NE ?TNEW ;
+        bdg:total_wind_NW ?TNWW ;
+        bdg:total_wind_W ?TWW ;
+        bdg:total_wind_S ?TSW ;
+        bdg:total_wind_SE ?TSEW ;
+        bdg:total_wind_SW ?TSWW ;
+        bdg:speed_wind_MAX ?SP ;
+        bdg:speed_wind_MEAN ?S ;
+.
+} WHERE {
+
+# Example construction of new IRIs for each row
+  BIND(IF(STRLEN(?DAY) = 1,CONCAT("0",?DAY),?DAY) as ?FORMATED_DAY)
+  BIND(IF(STRLEN(?MONTH) = 1,CONCAT("0",?MONTH),?MONTH) as ?FORMATED_MONTH)
+  BIND(STRDT(CONCAT(?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY),xsd:date) AS ?DATE)
+
+  BIND(URI(CONCAT("data/climatic",?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY)) AS ?URI)
+} 
