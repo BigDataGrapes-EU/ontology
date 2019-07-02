@@ -1,9 +1,8 @@
-<DSD/limaticData> a qb:DataStructureDefinition;
+<DSD/climaticData> a qb:DataStructureDefinition;
   qb:component
-    # [qb:dimension bdg:estate                   ; qb:componentAttachment qb:DataSet], not necessary ?
+    [qb:dimension bdg:estate ; qb:componentAttachment qb:DataSet],
     [qb:dimension bdg:sensor ; qb:componentAttachment qb:DataSet],
     [qb:dimension bdg:date],
-    [qb:measure bdg:date],
     [qb:measure bdg:temp_RANGE],
     [qb:measure bdg:direction_wind_MAX],
     [qb:measure bdg:daily_wetness_duration],
@@ -50,11 +49,11 @@
     [qb:attribute qudt:hasQuantityKind       ; qb:componentAttachment qb:MeasureProperty],
     [qb:attribute sdmx-attribute:unitMeasure ; qb:componentAttachment qb:MeasureProperty] .
 
-<data/tableGrape/Fasoulis/limaticData/11170004> a qb:DataSet;
-  rdfs:label "Table grapes data about PechRouge from sensor 11170004";
-  bdg:sensor <sensor/11170004>;
-#   bdg:estate <INRA/estate/PechRouge>; is it necessary ?
-  qb:structure <DSD/limaticData>.
+<data/wineMaking/PechRouge/climaticData/11170004> a qb:DataSet;
+  rdfs:label   "Climatic data about PechRouge from sensor 11170004";
+  bdg:sensor   <sensor/11170004> ;
+  bdg:estate   <INRA/estate/PechRouge> ;
+  qb:structure <DSD/climaticData> .
 
 
 

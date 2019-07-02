@@ -1,8 +1,6 @@
-
-
-# Example RDF transformation using the custom IRIs and type
 CONSTRUCT {
     ?URI a qb:Observation ;
+        qb:dataSet ?DATASET ;
         bdg:date ?DATE ;  
         bdg:temp_RANGE ?RAN ;
         bdg:direction_wind_MAX ?MWD ;
@@ -22,7 +20,7 @@ CONSTRUCT {
         bdg:temperature_instant_MAX ?XTI ;
         bdg:temperature_instant_MIN ?NTI ;
         bdg:humidity_instant_MAX ?XHI ;
-        #bdg:IUN ?IUN ;
+        bdg:humidity_instant_MIN ?IUN ;
         bdg:wind_instant_MAX ?XWI ;
         bdg:precipitation_intensity_instant_MAX ?XPII ;
         bdg:rainfall_MAX ?XPI ;
@@ -53,11 +51,10 @@ CONSTRUCT {
         bdg:speed_wind_MEAN ?S ;
 .
 } WHERE {
-
-# Example construction of new IRIs for each row
+  BIND(<data/wineMaking/PechRouge/climaticData/11170004> as ?DATASET)
   BIND(IF(STRLEN(?DAY) = 1,CONCAT("0",?DAY),?DAY) as ?FORMATED_DAY)
   BIND(IF(STRLEN(?MONTH) = 1,CONCAT("0",?MONTH),?MONTH) as ?FORMATED_MONTH)
   BIND(STRDT(CONCAT(?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY),xsd:date) AS ?DATE)
+  BIND(URI(CONCAT("wineMaking/PechRouge/climaticData/11170004/",?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY)) AS ?URI)
+}
 
-  BIND(URI(CONCAT("data/climatic",?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY)) AS ?URI)
-} 
