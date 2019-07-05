@@ -7,7 +7,7 @@
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
-<data/wineMaking/PechRouge/HarvestData/2017> a qb:DataSet;
+<data/wineMaking/PechRouge/harvestData/2017> a qb:DataSet;
   rdfs:label "Data about Harvest done on Pech Rouge in 2017";
   sosa:FeatureOfInterest afeo:Berry;
   bdg:date "2017-01-01"^^xsd:date ;

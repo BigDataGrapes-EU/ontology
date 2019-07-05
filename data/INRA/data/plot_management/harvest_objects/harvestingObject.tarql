@@ -24,5 +24,5 @@ CONSTRUCT {
 
   BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
 
-  BIND(uri(CONCAT("data/winemaking/PechRouge/Harvest/2017/",?SAMPLECODE)) as ?OBS_URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/HarvestObjects/2017/",?SAMPLECODE)) as ?OBS_URI)
 }

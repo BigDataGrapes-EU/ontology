@@ -34,9 +34,11 @@ CONSTRUCT {
   BIND(IF(?CHECKTIME, STRDT(CONCAT(?DATE,"T",?TIME,":00"),xsd:dateTime),STRDT(CONCAT(?DATE,"T","00:00:00"),xsd:dateTime)) as ?DATETIME)
 
   #?uniqueObjectCode apf:strSplit (?objectCode "\\+")
-  BIND(uri(CONCAT("INRA/estate/PechRouge/",REPLACE(?objectCode, " " ,""))) as ?OBJECTCODE_URI)
+  BIND(REPLACE(REPLACE(REPLACE(?objectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?OBJECTCODE)
+
+  BIND(uri(CONCAT("INRA/estate/PechRouge/",REPLACE(?OBJECTCODE, " " ,""))) as ?OBJECTCODE_URI)
 
   BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
 
-  BIND(uri(CONCAT("data/winemaking/PechRouge/Harvest/2017/",?SAMPLECODE)) as ?OBS_URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/harvestData/2017/",?SAMPLECODE)) as ?OBS_URI)
 }
