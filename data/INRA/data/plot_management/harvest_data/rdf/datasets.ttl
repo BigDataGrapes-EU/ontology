@@ -1,14 +1,14 @@
 <DSD/harvestWeight> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:plot      ]; # it's subPLot for table grape data model
-  qb:component [qb:dimension bdg:date ; qb:componentAttachment qb:DataSet ];
-  qb:component [qb:attribute bdg:operator  ];
+  qb:component [qb:dimension bdg:berry          ]; # it's subPLot in table grape data model
+  qb:component [qb:dimension bdg:dateTime       ]; # date time some times we have the time , some time not
+ # qb:component [qb:attribute bdg:operator   ]; # not constant
   qb:component [qb:attribute bdg:harvestMethod  ];
-  qb:component [qb:measure   bdg:weight    ];
+  qb:component [qb:measure   bdg:weight         ];
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
-<data/winemaking/PechRouge/Harvest/2017> a qb:DataSet;
-  rdfs:label "Data about Harvest done on Pech Rouge in 2016";
+<data/wineMaking/PechRouge/HarvestData/2017> a qb:DataSet;
+  rdfs:label "Data about Harvest done on Pech Rouge in 2017";
   sosa:FeatureOfInterest afeo:Berry;
   bdg:date "2017-01-01"^^xsd:date ;
   qb:structure <DSD/harvestWeight> . 

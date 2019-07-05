@@ -1,0 +1,28 @@
+
+CONSTRUCT {
+  ?URI a afeo:Harvesting ;
+    rdfs:label ?SAMPLECODE ; 
+    bdg:plot ?OBJECTCODE_URI ;
+    afeo:hasOutput ?BERRY;
+  .
+  ?BERRY a afeo:Berry ;
+.
+} WHERE {
+
+
+  BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
+  BIND(uri(concat("harvesting/",?SAMPLECODE)) as ?URI)
+
+  BIND(uri(CONCAT("berry/",?SAMPLECODE)) as ?BERRY)
+
+  BIND(REPLACE(REPLACE(REPLACE(?harvestMethod, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?HARVESTMETHOD)
+
+  ?uniqueObjectCode apf:strSplit (?objectCode "\\+")
+  BIND(REPLACE(REPLACE(REPLACE(?uniqueObjectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?UNIQUEOBJECTCODE)
+
+  BIND(uri(CONCAT("INRA/estate/PechRouge/",REPLACE(?UNIQUEOBJECTCODE, " " ,""))) as ?OBJECTCODE_URI)
+
+  BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
+
+  BIND(uri(CONCAT("data/winemaking/PechRouge/Harvest/2017/",?SAMPLECODE)) as ?OBS_URI)
+}

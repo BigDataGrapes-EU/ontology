@@ -1,24 +1,16 @@
 
 CONSTRUCT {
-  ?URI a afeo:Harvesting ;
-    rdfs:label ?SAMPLECODE ; 
-    bdg:plot ?OBJECTCODE_URI ;
-    afeo:hasOutput ?BERRY;
-  .
-  ?BERRY a afeo:Berry ;
-  .
   ?OBS_URI a qb:Observation ;
-    qb:dataSet <data/winemaking/PechRouge/harvestWeight/2017>;
+    qb:dataSet ?DATASET;
     bdg:berry  ?BERRY;  
     bdg:date ?DATETIME ;
     bdg:weight ?WEIGHT;
-    bdg:operator ?OPERATOR;
+   # bdg:operator ?OPERATOR_VALID;
     bdg:harvestMethod ?HARVESTMETHOD;
   .
-  ?URI a afeo:Harvesting ;
-     rdfs:label ?SAMPLECODE ; 
-.
 } WHERE {
+
+  BIND(<data/wineMaking/PechRouge/HarvestData/2017> as ?DATASET)
 
   BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
   BIND(uri(concat("harvesting/",?SAMPLECODE)) as ?URI)
@@ -27,19 +19,22 @@ CONSTRUCT {
 
   BIND(REPLACE(REPLACE(REPLACE(?harvestMethod, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?HARVESTMETHOD)
 
-  BIND(REPLACE(REPLACE(REPLACE(?operator, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?OPERATOR)
+  BIND(IF(REPLACE(REPLACE(REPLACE(?operator, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")!= "", ?operator, "Unknown operator") as ?OPERATOR)
 
-  BIND(IF(REPLACE(?vinestockNumber,"[^\\.0-9]","")!= "", xsd:double(?vinestockNumber), xsd:string("NaN")) as ?VINESTOCKNUMBER)
+  BIND(IF( strlen(?OPERATOR)>0, ?OPERATOR, "Unknown operator") as ?OPERATOR_VALID)
+
+
+  # BIND(IF(REPLACE(?vinestockNumber,"[^\\.0-9]","")!= "", xsd:double(?vinestockNumber), xsd:string("NaN")) as ?VINESTOCKNUMBER)
 
   BIND(CONCAT(REPLACE(?date,"(\\d{2})/(\\d{2})/\\d{0,2}(\\d{2})","20$3-$1-$2"))  as ?DATE)
   BIND(BOUND(?time) && strlen(?time)>0 as ?CHECKTIME)
    
   BIND(CONCAT(REPLACE(?time,"(\\d{2}):(\\d{2}):\\d{0,2}","$1:$2")) as ?TIME)
 
-  BIND(IF(?CHECKTIME, STRDT(CONCAT(?DATE,"T",?TIME,":00"),xsd:dateTime),STRDT(?DATE,xsd:date)) as ?DATETIME)
+  BIND(IF(?CHECKTIME, STRDT(CONCAT(?DATE,"T",?TIME,":00"),xsd:dateTime),STRDT(CONCAT(?DATE,"T","00:00:00"),xsd:dateTime)) as ?DATETIME)
 
-  ?uniqueObjectCode apf:strSplit (?objectCode "\\+")
-  BIND(uri(CONCAT("INRA/estate/PechRouge/",?uniqueObjectCode)) as ?OBJECTCODE_URI)
+  #?uniqueObjectCode apf:strSplit (?objectCode "\\+")
+  BIND(uri(CONCAT("INRA/estate/PechRouge/",REPLACE(?objectCode, " " ,""))) as ?OBJECTCODE_URI)
 
   BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
 
