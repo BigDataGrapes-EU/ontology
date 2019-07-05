@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/.bashrc
+
 # my-tarql <args> <prefixes.ttl> <query.tarql> <file>
 #  reads prefixes.ttl, converts to sparql and prepends to <query.tarql> and runs tarql on <file>, using <separator> to separate columns
 #cd ./TRR/tarql
