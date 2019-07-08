@@ -2,10 +2,27 @@ CONSTRUCT {
     ?URI a bdg:Plot ;
         skos:broader ?BROADER ;
         rdfs:label ?LABEL ;
-        bdg:idGeocledian ?id_geocledian .
+        bdg:idGeocledian ?id_geocledian ;
+        geo:defaultGeometry  ?GEOURI ;
+        geo:hasGeometry ?CENTRURI .
+
+
+    ?GEOURI a geo:Geometry;
+        qb4st:crs crs-ogc:CRS84 ;
+        geo:asWKT ?GEOMETRY .
+
+    ?CENTRURI a geo:Geometry;
+        qb4st:crs crs-ogc:CRS84 ;
+        geo:asWKT ?CENTROID .
 }
 WHERE {
     bind(uri(concat(?broader,"/",?uri)) as ?URI)
     bind(uri(?broader) as ?BROADER)
     bind(if(bound(?label),?label,?uri) as ?LABEL)
+
+    bind(uri(concat(?broader,"/",?uri,"/geo")) as ?GEOURI)
+    bind(uri(concat(?broader,"/",?uri,"/centroid")) as ?CENTRURI)
+
+    bind(strdt(?geometry,geo:wktLiteral) as ?GEOMETRY)
+    bind(strdt(?centroid,geo:wktLiteral) as ?CENTROID)
 }

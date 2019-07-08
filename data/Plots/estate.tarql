@@ -1,8 +1,26 @@
 CONSTRUCT {
     ?URI a bdg:Estate ;
         rdfs:label ?label ;
-        bdg:idGeocledian ?id_geocledian .
+        bdg:idGeocledian ?id_geocledian ;
+        geo:defaultGeometry  ?GEOURI ;
+        geo:hasGeometry ?CENTRURI .
+
+
+    ?GEOURI a geo:Geometry;
+        qb4st:crs crs-ogc:CRS84 ;
+        geo:asWKT ?GEOMETRY .
+
+    ?CENTRURI a geo:Geometry;
+        qb4st:crs crs-ogc:CRS84 ;
+        geo:asWKT ?CENTROID .
 }
 WHERE {
+    bind(1+"" as ?UNDEF)
     bind(uri(?uri) as ?URI)
+
+    bind(if(bound(?geometry),uri(concat(?uri,"/geo")),?UNDEF) as ?GEOURI)
+    bind(if(bound(?centroid),uri(concat(?uri,"/centroid")),?UNDEF) as ?CENTRURI)
+
+    bind(strdt(?geometry,geo:wktLiteral) as ?GEOMETRY)
+    bind(strdt(?centroid,geo:wktLiteral) as ?CENTROID)
 }
