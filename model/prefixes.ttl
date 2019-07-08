@@ -42,6 +42,7 @@
 
 #Other Namespaces
 @prefix geom:              <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix ops:               <http://www.openphacts.org/units/> .
 
 # AgroBio Namespaces
 @prefix aeo:               <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#>.

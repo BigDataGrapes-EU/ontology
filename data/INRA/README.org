@@ -185,12 +185,51 @@ Observations: ~inra_onto:Nbgrappescomptage~ number of counted clusters?!?
 *** DONE missing rdf:value
 : [line: 50, col: 41] Triples not terminated by DOT
 
-** TODO EndOfAlcoholicfermentation.ttl
-Vladimir to check it out
+* variables.ttl [0/4]
+Variable definitions
+** DONE Namespace hijacking
+Don't define terms of other ontologies
+#+BEGIN_SRC Turtle
+CO:variable_of  rdfs:subProperty_of  skos:related ;
+	rdf:type		owl:ObjectProperty .
+#+END_SRC
+** DONE Use English class names
+If you want to be more easily understood, please use English (or else I'll comment in Bulgarian ;-)
+: inra_onto:Poidsvendangegpesee # weight as measured at vine picking
+** DONE Define labels
+Eg inra_onto:Glucose.fructoseg.lsequentiel.enzymatique needs a label such as "Glucose/fructose g/l sequential enzymatic"
+** DONE Conform to Property Naming Convention
+- Start with lowercase
+- Use camelCase or underscore_separated names
+So for the example above, use this name: ~glucose_fructose_g_l_sequential_enzymatic~
+** DONE Can't use CO_UO "gram"
+Checking whether ~inra_onto:Poidsvendangegpesee~ defines everything required to interpret the number.
+#+BEGIN_SRC Turtle
+inra_onto:Poidsvendangegpesee CO:variable_of CO_356:2000168 , CO_UO:0000021 , MMO:0000157 .
+CO_356:2000168 rdfs:label "Yield"@en .
+CO_UO:0000021 rdfs:label "g"@en; CO:scale_of CO_357:2000105 .
+CO_357:2000105 rdfs:label "Ratio shoot root protocol"@en .
+MMO:0000157 rdfs:label "digital scale post excision weight measurement" .
+#+END_SRC
+- I can't get the whole CO_UO from neither [[http://www.cropontology.org/rdf/UO:]] nor http://www.cropontology.org/rdf/UO.
+  But individual terms are returned, eg http://www.cropontology.org/rdf/UO:0000021 returns Turtle.
+- Unfortunately ~CO_UO:0000021~ defines "grams" relative to some Woody Plant feature.
+  This is crazy because a gram is a gram, no matter what it's used to measure.
+- It means you cannot use this "gram" for grapes. 
+  Better use UO; or even better QUDT, which also defines relations/conversions of "gram" to other units.
+** DONE Missing CO_UO Term
+#+BEGIN_SRC Turtle
+inra_onto:Glucose.fructoseg.lsequentiel.enzymatique CO:variable_of CO_356:2000057, CO_UO:0000175, MMO:0000388 .
+#+END_SRC
+However, http://www.cropontology.org/rdf/UO:0000175 is missing: unlike the above UO:0000021, this one returns nothing.
 
-** fieldsLocalisationPR_parsed.ttl [6/6]
-Plot geometry
-*** DONE Use QUDT not quty
+* area.ttl
+Identifiers of fields
+
+* plots_geometry 
+Geometry of plot instances (previsously fieldsLocalisationPR_parsed.ttl) [0/7]
+
+** DONE Use QUDT not quty
 Uses some units ontology that's unknown to me:
 #+BEGIN_SRC Turtle
 @prefix quty: <http://www.telegraphis.net/ontology/measurement/quantity#>
@@ -239,57 +278,18 @@ Discussion:
   : aeo:Plot < aeo:CultivatedLand < aeo:Area < aeo:AgriEntity < aeo:AgriEntity
   (the last reflexive subclass is totally useless)
 
-** INRA_Variables.ttl [6/6]
-Variable definitions
-*** DONE Namespace hijacking
-Don't define terms of other ontologies
-#+BEGIN_SRC Turtle
-CO:variable_of  rdfs:subProperty_of  skos:related ;
-	rdf:type		owl:ObjectProperty .
-#+END_SRC
-*** DONE Use English class names
-If you want to be more easily understood, please use English (or else I'll comment in Bulgarian ;-)
-: inra_onto:Poidsvendangegpesee # weight as measured at vine picking
-*** DONE Define labels
-Eg inra_onto:Glucose.fructoseg.lsequentiel.enzymatique needs a label such as "Glucose/fructose g/l sequential enzymatic"
-*** DONE Conform to Property Naming Convention
-- Start with lowercase
-- Use camelCase or underscore_separated names
-So for the example above, use this name: ~glucose_fructose_g_l_sequential_enzymatic~
-*** DONE Can't use CO_UO "gram"
-Checking whether ~inra_onto:Poidsvendangegpesee~ defines everything required to interpret the number.
-#+BEGIN_SRC Turtle
-inra_onto:Poidsvendangegpesee CO:variable_of CO_356:2000168 , CO_UO:0000021 , MMO:0000157 .
-CO_356:2000168 rdfs:label "Yield"@en .
-CO_UO:0000021 rdfs:label "g"@en; CO:scale_of CO_357:2000105 .
-CO_357:2000105 rdfs:label "Ratio shoot root protocol"@en .
-MMO:0000157 rdfs:label "digital scale post excision weight measurement" .
-#+END_SRC
-- I can't get the whole CO_UO from neither [[http://www.cropontology.org/rdf/UO:]] nor http://www.cropontology.org/rdf/UO.
-  But individual terms are returned, eg http://www.cropontology.org/rdf/UO:0000021 returns Turtle.
-- Unfortunately ~CO_UO:0000021~ defines "grams" relative to some Woody Plant feature.
-  This is crazy because a gram is a gram, no matter what it's used to measure.
-- It means you cannot use this "gram" for grapes. 
-  Better use UO; or even better QUDT, which also defines relations/conversions of "gram" to other units.
-*** DONE Missing CO_UO Term
-#+BEGIN_SRC Turtle
-inra_onto:Glucose.fructoseg.lsequentiel.enzymatique CO:variable_of CO_356:2000057, CO_UO:0000175, MMO:0000388 .
-#+END_SRC
-However, http://www.cropontology.org/rdf/UO:0000175 is missing: unlike the above UO:0000021, this one returns nothing.
+* DONE end_of_alcoholic_fermentation.ttl
 
-** DONE EndOfAlcoholicfermentation.ttl
+# * TODO Maturite_transf_parsed.ttl
 
-** TODO Maturite_transf_parsed.ttl
-Vladimir to check it out
+# * TODO MaturiteAnthocyanes_transf_parsed.ttl
 
-** TODO MaturiteAnthocyanes_transf_parsed.ttl
-Vladimir to check it out
+# * TODO MaturiteJus_transf_parsed.ttl
 
-** TODO MaturiteJus_transf_parsed.ttl
-Vladimir to check it out
+# * TODO MaturiteSunAgri2B_transf_parsed.ttl
 
-** TODO MaturiteSunAgri2B_transf_parsed.ttl
-Vladimir to check it out
+# * TODO MaturiteSunAgri2B_transf_parsed.ttl
+
 
 ** must_transf_parsed.ttl [0/1]
 Observations: ~inra_onto:Sucrestotaux.brixrefractometrie~ Total sugars (BRIX refractometry)

@@ -1,0 +1,34 @@
+
+bdg:concentration a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Concentration";
+  rdfs:notation "Concentration";
+  sdmx-attribute:unitMeasure ops:GramPerLiter;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:harvestWeight a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Harvest weight";
+  rdfs:notation "HarvestWeight";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  sdmx-attribute:unitMeasure unit:mass;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:tastingResult a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Tasting Result";
+  rdfs:notation "TastingResult";
+  sosa:hasFeatureOfInterest <feature/FinishedWine>;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:grapeClusterWeight a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Grape Cluster Weight";
+  rdfs:notation "GrapeClusterWeight";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  sdmx-attribute:unitMeasure unit:Kilogram;
+  qb:concept  sdmx-concept:obsValue.
+
+bdg:grapeClusterNumber a qb:MeasureProperty, sosa:ObservableProperty;
+  rdfs:label "Grape Cluster Number";
+  rdfs:notation "GrapeClusterNumber";
+  sosa:hasFeatureOfInterest <feature/GrapeCluster>;
+  sdmx-attribute:unitMeasure unit:NUM;
+  qb:concept  sdmx-concept:obsValue.

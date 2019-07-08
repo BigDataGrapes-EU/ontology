@@ -1,0 +1,13 @@
+
+
+bdg-unit:DegreeBrix a qudt:Unit;
+  rdfs:label "Degree Brix";
+  skos:prefLabel "Degree-brix" ;
+  qudt:abbreviation "°Brix";
+  qudt:conversionMultiplier 1.0e0 ;
+  qudt:conversionOffset "0.0"^^xsd:double ;
+  qudt:description "A Brix degree equals 1 gram of sucrose per 100 grams of solution." .
+
+
+
+

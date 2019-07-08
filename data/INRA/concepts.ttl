@@ -1,0 +1,35 @@
+bdg:sensorialAnalysis a qb:AttributeProperty, qb:CodedProperty;
+  qb:codeList <sensorialAnalysis>;
+  rdfs:range bdg:SensorialAnalysis.
+
+bdg:SensorialAnalysis a rdfs:Class;
+  rdfs:subClassOf skos:Concept;
+  rdfs:label "Sensorial analysis codelist class".
+  dct:description "Sensorial analysis are human subjective evaluations done by judges (experts, panel...). It consists in tasting the product of interest (wine before or after bottling) and giving aromas composition, fealings…".
+
+<sensorialAnalysis> a skos:conceptScheme;
+  rdfs:label "Sensorial analysis codelist scheme".
+
+<sensorialAnalysis/sulfur> a skos:Concept, bdg:SensorialAnalysis; 
+  skos:inScheme <sensorialAnalysis>; skos:topConceptOf <sensorialAnalysis>; 
+  skos:notation "sulfur"; skos:prefLabel "taste of sulfur". 
+
+<sensorialAnalysis/animal> a skos:Concept, bdg:SensorialAnalysis; 
+  skos:inScheme <sensorialAnalysis>; skos:topConceptOf <sensorialAnalysis>; 
+  skos:notation "animal"; skos:prefLabel "it smells like an animal".
+
+
+bdg:Variety a rdf:Class, skos:Concept;
+  rdfs:label "Variety";
+  skos:exactMatch agrovoc:c_8157;
+  rdfs:seeAlso agrovoc:c_8157;
+  dct:description "Genetic resource that identify vinestock specific set of characteristic".
+
+bdg:FermentationTank a rdf:Class, skos:Concept;
+  rdfs:label "Fermentation Tank";
+  dct:description "Tank used to do the fermentation".
+
+bdg:WinemakingExperiment a rdf:Class, skos:Concept;
+  rdfs:label "Winemaking experiment";
+  rdfs:seeAlso aeo:AgriExperiment;
+  dct:description "An experiment carried out by the researchers".
