@@ -35,8 +35,8 @@ bdg:antioxidantActivityDPPHTrolox a qb:MeasureProperty, sosa:ObservableProperty;
   skos:description           "Antioxidant activity: Spectrophotometric method of antioxidant capacity using DPPH assay measuring density of trolox equivalent" ;
   sdmx-attribute:unitMeasure bdg-unit:UG-PER-ML ;
   bdg:assayMethod            <assayCompound/DPPH> ;
-  bdg:comparisonBaseline   <assayCompound/Trolox> ;
-  bdg:assessedCompound       <assayCompound/Trolox> ;
+  bgd:comparisonBaseline   <assayCompound/Trolox> ;
+  bgd:assessedCompound       <assayCompound/Trolox> ;
 .
 
 bdg:antioxidantActivityABTSTrolox a qb:MeasureProperty, sosa:ObservableProperty;

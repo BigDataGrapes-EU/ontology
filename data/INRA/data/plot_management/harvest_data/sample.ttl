@@ -1,0 +1,15 @@
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/Harvest/2017/FV_2017_055a>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/HarvestData/2017> ;
+        bdg:berry          <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055a> ;
+        bdg:date           "2017-09-04T11:00:00"^^xsd:dateTime ;
+        bdg:weight         "65"^^xsd:double ;
+        bdg:harvestMethod  "manual" .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/Harvest/2017/FV_2017_055b>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/HarvestData/2017> ;
+        bdg:berry          <http://data.bigdatagrapes.eu/resource/berry/FV_2017_055b> ;
+        bdg:date           "2017-09-04T12:00:00"^^xsd:dateTime ;
+        bdg:weight         "90"^^xsd:double ;
+        bdg:harvestMethod  "manual" .

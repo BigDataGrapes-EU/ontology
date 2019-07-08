@@ -1,0 +1,36 @@
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_INERTIS_MAC_01_T5A/INRA/person/1286/sensoryFlavor/citrusFruit/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine2017_INERTIS_MAC_01_T5A> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1286> ;
+        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/citrusFruit> ;
+        bdg:iteration      1 ;
+        bdg:score          "0.7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_INERTIS_MAC_01_T5A/INRA/person/1286/sensoryFlavor/fruits_exotique/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine2017_INERTIS_MAC_01_T5A> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1286> ;
+        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/fruits_exotique> ;
+        bdg:iteration      1 ;
+        bdg:score          "0"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_INERTIS_MAC_01_T5A/INRA/person/1286/sensoryFlavor/fermentedApple/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine2017_INERTIS_MAC_01_T5A> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1286> ;
+        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/fermentedApple> ;
+        bdg:iteration      1 ;
+        bdg:score          "0.1"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_INERTIS_MAC_01_T5A/INRA/person/1286/sensoryFlavor/amylic/1>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine2017_INERTIS_MAC_01_T5A> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1286> ;
+        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/amylic> ;
+        bdg:iteration      1 ;
+        bdg:score          "9.2"^^xsd:double .

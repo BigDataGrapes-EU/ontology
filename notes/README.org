@@ -590,3 +590,27 @@ Take this observation from [[https://drive.google.com/open?id=1_wTOuwYJSyt9yG6CP
 |   37 | 0.2252 | 0.7376 | 20.836 | 33.084 | 5.132 | 37.81713 |  22.58971 |     291.5 |  2.8 | GPS     | 5/23/2018 | 10:12:50 | ... |
 
 * TODO Using W3C CUBE
+
+* Geo Data Precision
+
+Looking into combining Soil conductivity measurements (EM38) and canopy measurements (SpectroSense, RapidScan). Looking at spacial separation of consecutive measurements
+
+[[https://gps-coordinates.org/distance-between-coordinates.php]]
+
+** EM38
+
+37.81672955 22.59063897
+37.81673048 22.59063783
+0.14 meters
+
+** SpectroSense
+
+37.816947 22.590692
+37.816895 22.590745
+7.42 meters
+
+** Rapid Scan
+
+37.8168466	22.5899683
+37.8169283	22.5898716
+12.44 meters

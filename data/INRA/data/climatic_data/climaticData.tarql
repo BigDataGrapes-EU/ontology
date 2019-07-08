@@ -1,0 +1,110 @@
+CONSTRUCT {
+    ?URI a qb:Observation ;
+        qb:dataSet ?DATASET ;
+        bdg:date ?DATE ;  
+        bdg:temp_RANGE ?RAN_OK ;
+        bdg:direction_wind_MAX ?MWD_OK ;
+        bdg:daily_wetness_duration ?WD_OK ;
+        bdg:insolation_duration_calculated ?CID_OK ;
+        bdg:evapotranspiration_penman ?PETP_OK ;
+        bdg:evapotranspiration_piche_corrected ?CPETP_OK ;
+        bdg:insolation_fraction ?FRAC_OK ;
+        bdg:precipitation_height ?PH_OK ;
+        bdg:humidity_air_MAX ?XH_OK ;
+        bdg:humidity_air_MIN ?NH_OK ;
+        bdg:humidity_air_MEAN ?MH_OK ;
+        bdg:actinothermic_index_10cm ?I1N_OK ;
+        bdg:actinothermic_index_10cm_MAX ?I1X_OK ;
+        bdg:actinothermic_index_50cm ?I5N_OK ;
+        bdg:actinothermic_index_50cm_MAX ?I5X_OK ;
+        bdg:temperature_instant_MAX ?XTI_OK ;
+        bdg:temperature_instant_MIN ?NTI_OK ;
+        bdg:humidity_instant_MAX ?XHI_OK ;
+        bdg:humidity_instant_MIN ?IUN_OK ;
+        bdg:wind_instant_MAX ?XWI_OK ;
+        bdg:precipitation_intensity_instant_MAX ?XPII_OK ;
+        bdg:rainfall_MAX ?XPI_OK ;
+        bdg:radiation_global ?GR_OK ;
+        bdg:radiation_global_calculated ?CGR_OK ;
+        bdg:radiation_active_photosynthetic ?PAR_OK ;
+        bdg:temp_MAX ?XT_OK ;
+        bdg:temp_soil_10cm_MAX ?X1S_OK ;
+        bdg:temp_soil_10cm_MIN ?NT_OK ;
+        bdg:temp_soil_10cm_MIN ?N1S_OK ;
+        bdg:temp_MEAN ?MT_OK ;
+        bdg:temp_MEAN_caclulated ?CMT_OK ;
+        bdg:temp_soil_50cm_MEAN ?S5M_OK ;
+        bdg:dewPoint_temp ?DT_OK ;
+        bdg:humidity_air_period_lt40pc ?H4_OK ;
+        bdg:humidity_air_period_gt80pc ?H8_OK ;
+        bdg:humidity_air_period_gt90pc ?H9_OK ;
+        bdg:pressure_vapour_MEAN ?MVP_OK ;
+        bdg:total_wind_E ?TEW_OK ;
+        bdg:total_wind_N ?TNW_OK ;
+        bdg:total_wind_NE ?TNEW_OK ;
+        bdg:total_wind_NW ?TNWW_OK ;
+        bdg:total_wind_W ?TWW_OK ;
+        bdg:total_wind_S ?TSW_OK ;
+        bdg:total_wind_SE ?TSEW_OK ;
+        bdg:total_wind_SW ?TSWW_OK ;
+        bdg:speed_wind_MAX ?SP_OK ;
+        bdg:speed_wind_MEAN ?S_OK ;
+.
+} WHERE {
+  BIND(xsd:decimal(?MWD) as ?MWD_OK)
+  BIND(xsd:decimal(?WD) as ?WD_OK)
+  BIND(xsd:decimal(?CID) as ?CID_OK)
+  BIND(xsd:decimal(?PETP) as ?PETP_OK)
+  BIND(xsd:decimal(?CPETP) as ?CPETP_OK)
+  BIND(xsd:decimal(?FRAC) as ?FRAC_OK)
+  BIND(xsd:decimal(?PH) as ?PH_OK)
+  BIND(xsd:decimal(?XH) as ?XH_OK)
+  BIND(xsd:decimal(?NH) as ?NH_OK)
+  BIND(xsd:decimal(?MH) as ?MH_OK)
+  BIND(xsd:decimal(?I1N) as ?I1N_OK)
+  BIND(xsd:decimal(?I1X) as ?I1X_OK)
+  BIND(xsd:decimal(?I5N) as ?I5N_OK)
+  BIND(xsd:decimal(?I5X) as ?I5X_OK)
+  BIND(xsd:decimal(?XTI) as ?XTI_OK)
+  BIND(xsd:decimal(?NTI) as ?NTI_OK)
+  BIND(xsd:decimal(?XHI) as ?XHI_OK)
+  BIND(xsd:decimal(?IUN) as ?IUN_OK)
+  BIND(xsd:decimal(?XWI) as ?XWI_OK)
+  BIND(xsd:decimal(?XPII) as ?XPII_OK)
+  BIND(xsd:decimal(?XPI) as ?XPI_OK)
+  BIND(xsd:decimal(?GR) as ?GR_OK)
+  BIND(xsd:decimal(?CGR) as ?CGR_OK)
+  BIND(xsd:decimal(?PAR) as ?PAR_OK)
+  BIND(xsd:decimal(?XT) as ?XT_OK)
+  BIND(xsd:decimal(?X1S) as ?X1S_OK)
+  BIND(xsd:decimal(?NT) as ?NT_OK)
+  BIND(xsd:decimal(?N1S) as ?N1S_OK)
+  BIND(xsd:decimal(?MT) as ?MT_OK)
+  BIND(xsd:decimal(?CMT) as ?CMT_OK)
+  BIND(xsd:decimal(?S5M) as ?S5M_OK)
+  BIND(xsd:decimal(?DT) as ?DT_OK)
+  BIND(xsd:decimal(?H4) as ?H4_OK)
+  BIND(xsd:decimal(?H8) as ?H8_OK)
+  BIND(xsd:decimal(?H9) as ?H9_OK)
+  BIND(xsd:decimal(?MVP) as ?MVP_OK)
+  BIND(xsd:decimal(?TEW) as ?TEW_OK)
+  BIND(xsd:decimal(?TNW) as ?TNW_OK)
+  BIND(xsd:decimal(?TNEW) as ?TNEW_OK)
+  BIND(xsd:decimal(?TNWW) as ?TNWW_OK)
+  BIND(xsd:decimal(?TWW) as ?TWW_OK)
+  BIND(xsd:decimal(?TSW) as ?TSW_OK)
+  BIND(xsd:decimal(?TSEW) as ?TSEW_OK)
+  BIND(xsd:decimal(?TSWW) as ?TSWW_OK)
+  BIND(xsd:decimal(?SP) as ?SP_OK)
+  BIND(xsd:decimal(?S) as ?S_OK)
+  BIND(<data/wineMaking/PechRouge/climaticData/11170004> as ?DATASET)
+  BIND(IF(STRLEN(?DAY) = 1,CONCAT("0",?DAY),?DAY) as ?FORMATED_DAY)
+  BIND(IF(STRLEN(?MONTH) = 1,CONCAT("0",?MONTH),?MONTH) as ?FORMATED_MONTH)
+  BIND(STRDT(CONCAT(?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY),xsd:date) AS ?DATE)
+  BIND(URI(CONCAT("wineMaking/PechRouge/climaticData/11170004/",?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY)) AS ?URI)
+}
+
+
+
+
+
