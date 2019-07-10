@@ -105,6 +105,7 @@ The inner query does most the work:
 * Calculates the cumulated wind using simple arithmetics
 * Groups by date and aggregates the results for each day
 * Converys bearing to direction
+
 The outer query selects the relevant `qb:measureProperty`
 
 
