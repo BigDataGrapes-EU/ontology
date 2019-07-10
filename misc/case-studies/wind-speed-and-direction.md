@@ -113,17 +113,20 @@ PREFIX bdg: <http://data.bigdatagrapes.eu/resource/ontology/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX qb: <http://purl.org/linked-data/cube#>
 select * {
-    ?var a qb:MeasureProperty ;
+    ?var a qb:MeasureProperty ; 
          bdg:derivedFrom bdg:total_wind ;
          bdg:measurementContext ?compass .
-    {select ?date (sum(?wind_km) as ?total_wind_km) ?compass where {
+    {
+        select ?date (sum(?wind_km) as ?total_wind_km) ?compass where {
             ?s bdg:direction_wind_MEAN ?dir ;
                bdg:speed_wind_MEAN ?speed ;
                bdg:dateTime ?dateTime  .
+            
             ?compass a bdg:Compass ;
                      bdg:compassFrom ?from ;
                      bdg:compassTo ?to ;
-                     filter(?dir >= ?from && ?dir < ?to )
+            filter(?dir >= ?from && ?dir < ?to )
+            
             bind(?speed * 1.8 as ?wind_km) #speed in m/sec, 30 min interval, 1800 sec  
             bind(strdt(replace(str(?dateTime),"T.*$",""),xsd:date) as ?date)   
         } group by ?date ?compass order by desc(?date)
