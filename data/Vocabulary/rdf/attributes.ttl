@@ -33,6 +33,7 @@
 @prefix dbo:  <http://dbpedia.org/ontology/> .
 @prefix unit:  <http://qudt.org/vocab/unit/> .
 @prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix ops:  <http://www.openphacts.org/units/> .
 @prefix at:  <http://data.ifpri.org/lod/at/resource/> .
 @prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
 @prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
@@ -124,3 +125,11 @@ bdg:ndreVersion  rdf:type  qb:AttributeProperty ;
         rdfs:label   "NDRE Version" ;
         qb:codeList  <http://data.bigdatagrapes.eu/resource/ndreVersion> ;
         rdfs:range   bdg:NdreVersion .
+
+bdg:compassFrom  rdf:type           qb:AttributeProperty ;
+        rdfs:label                  "Compass From" ;
+        sdmx-attribute:unitMeasure  unit:DEG .
+
+bdg:compassTo  rdf:type             qb:AttributeProperty ;
+        rdfs:label                  "Compass To" ;
+        sdmx-attribute:unitMeasure  unit:DEG .
