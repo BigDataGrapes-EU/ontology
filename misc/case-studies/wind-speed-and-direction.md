@@ -1,9 +1,9 @@
 # Wind speed and direction data transformation
 
 
-This case compares two datasets containg meteorological information, but recording it in diffrent manners. Both the Climate data from INRA's Pech Rouge weather station and data from a Pessl Weather station at Casato Prime Donne estate contain information about the wind speed and direction. However they differ in several aspects at the same time:
-* *Granularity*: Abaco's data is a series of observations every 30 seconds, INRA's data is a summary by day
-* *Nature of the measurments*: abaco measure the speed of the wind in metres per second and the direction. INRA report the total wind (in KM) for the day
+This case compares two datasets containg similar meteorological information, but recording it in diffrent manners. The Climate data from INRA's Pech Rouge weather station and data from a Pessl Weather station at Casato Prime Donne estate (from Abaco) contain information about the wind speed and direction. They differ in several aspects at the same time:
+* *Granularity*: Abaco's data is a series of observations every 30 seconds, INRA's data is a daily summary.
+* *Nature of the measurments*: Abaco measure the speed of the wind in metres per second and the direction. INRA report the total wind (in KM) for the day
 * *Discretisation of the directions:* Abaco use the magnetic bearing (in degrees) to represent win direction INRA use the 8 main compasss directions (N,NE,E etc..)
 
 The objective is to demonstrate how semantic technology allows conversion between the two representaions in a 100% declarative manner. 
@@ -14,7 +14,7 @@ The objective is to demonstrate how semantic technology allows conversion betwee
  
 `curl "https://docs.google.com/spreadsheets/d/1e3KHXUCC6jwM7tTQURYPWi5OEkXRvyTH6J3orL8btlA/gviz/tq?tqx=out:csv" | csvcut -c "YEAR,MONTH,DAY,TNW,TNEW,TEW,TSEW,TSW,TSWW,TWW,TNWW" | head -n 10 | csvtomd`
 
-We can see in the table that on new year's day 2012, at Pech Rouge a total of 16km wind blew from the north (TNW). This is can be the of (for example) 4 hours of 4km/h north wind. 
+We can see in the table that on new year's day 2012, at Pech Rouge a total of 16km wind blew from the north (TNW). This can be the result of (for example) 4 hours of 4km/h north wind. 
 
 YEAR  |  MONTH  |  DAY  |  TNW  |  TNEW  |  TEW  |  TSEW  |  TSW  |  TSWW  |  TWW  |  TNWW
 ------|---------|-------|-------|--------|-------|--------|-------|--------|-------|------
@@ -28,7 +28,7 @@ YEAR  |  MONTH  |  DAY  |  TNW  |  TNEW  |  TEW  |  TSEW  |  TSW  |  TSWW  |  TW
 2012  |  1      |  8    |  19   |  1     |  0    |  0     |  1    |  26    |  105  |  155
 2012  |  1      |  9    |  13   |  1     |  0    |  0     |  0    |  12    |  149  |  257
 
-And the RDF resulting from the first line
+This is the RDF resulting from the first line
 ```ttl
 <wineMaking/PechRouge/climaticData/11170004/2012-01-01>
         rdf:type                        qb:Observation ;
@@ -101,11 +101,11 @@ bdg:total_wind_SW  rdf:type         qb:MeasureProperty ;
 ## Coversion query 
 
 The following query coverts between the two representations. 
-The inner query does modt the work:
+The inner query does most the work:
 * Calculates the cumulated wind using simple arithmetics
 * Groups by date and aggregates the results for each day
-* convertys bearing to direction
-Then the outer query selects the relevant `qb:measureProperty`
+* Converys bearing to direction
+The outer query selects the relevant `qb:measureProperty`
 
 
 ```sparql
