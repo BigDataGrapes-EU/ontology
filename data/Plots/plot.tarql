@@ -23,6 +23,6 @@ WHERE {
     bind(uri(concat(?broader,"/",?uri,"/geo")) as ?GEOURI)
     bind(uri(concat(?broader,"/",?uri,"/centroid")) as ?CENTRURI)
 
-    bind(strdt(?geometry,geo:wktLiteral) as ?GEOMETRY)
-    bind(strdt(?centroid,geo:wktLiteral) as ?CENTROID)
+    bind(strdt(concat("<http://www.opengis.net/def/crs/OGC/1.3/CRS84> ",?geometry),geo:wktLiteral) as ?GEOMETRY)
+    bind(strdt(concat("<http://www.opengis.net/def/crs/OGC/1.3/CRS84> ",?centroid),geo:wktLiteral) as ?CENTROID)
 }
