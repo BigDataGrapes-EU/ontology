@@ -98,7 +98,7 @@ bdg:total_wind_SW  rdf:type         qb:MeasureProperty ;
         qb:concept                  sdmx-concept:obsValue ;
         skos:notation               "TSWW" .
 ```
-## Coversion query 
+## Conversion query 
 
 The following query coverts between the two representations. 
 The inner query does most the work:
