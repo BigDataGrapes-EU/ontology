@@ -1,0 +1,35 @@
+
+CONSTRUCT {
+  ?OBS_URI a qb:Observation ;
+    qb:dataSet ?DATASET;
+    bdg:experiment ?EXPERIMENT_URI; # it will change
+    bdg:must  ?MUST_URI;  
+    bdg:pressingTank  ?TANK_URI;  
+    bdg:date ?DATE_OK ;
+    bdg:press_juice_volume ?RUN_JUICE_VOLUME;   
+    bdg:run_juice_volume ?RUN_JUICE_VOLUME;       
+    bdg:total_volume_pressing ?TOTAL_VOLUME_PRESSING; 
+  .
+} WHERE {
+
+  BIND(<data/winemaking/PechRouge/pressingData/2017> as ?DATASET)
+
+  BIND(REPLACE(REPLACE(REPLACE(?PRcode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?PRCODE)
+  BIND(uri(concat("pressing/",?PRCODE)) as ?EXPERIMENT_URI) # it will change
+
+  BIND(uri(concat("mustAF/",?PRCODE)) as ?MUST_URI)
+  BIND(REPLACE(?pressingDate,"(\\d{2})/(\\d{2})/(\\d{4})","$3-$2-$1")  as ?DATE)
+  BIND(xsd:date(?DATE)  as ?DATE_OK)
+
+  BIND(REPLACE(REPLACE(REPLACE(?tank, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?TANK)
+
+  BIND(uri(concat("pressingTank/",?TANK)) as ?TANK_URI)
+
+  BIND(xsd:double(REPLACE(REPLACE(?runJuiceVolume,"[^\\.0-9]",""),"L","")) as ?RUN_JUICE_VOLUME)
+  
+  BIND(xsd:double(REPLACE(REPLACE(?pressJuiceVolume,"[^\\.0-9]",""),"L","")) as ?PRESS_JUICE_VOLUME)
+  BIND(xsd:double(REPLACE(REPLACE(?totalVolume,"[^\\.0-9]",""),"L","")) as ?TOTAL_VOLUME_PRESSING)
+
+
+  BIND(uri(CONCAT("data/winemaking/PechRouge/pressingData/2017/",?DATE,"/",?PRCODE)) as ?OBS_URI)
+}

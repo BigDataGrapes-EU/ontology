@@ -1,0 +1,21 @@
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017/2017-09-29/PR038_2017R>
+        rdf:type                   qb:Observation ;
+        qb:dataSet                 <http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017> ;
+        bdg:experiment             <http://data.bigdatagrapes.eu/resource/pressing/PR038_2017R> ;
+        bdg:must                   <http://data.bigdatagrapes.eu/resource/mustAF/PR038_2017R> ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
+        bdg:date                   "2017-09-29"^^xsd:date ;
+        bdg:press_juice_volume     "77"^^xsd:double ;
+        bdg:run_juice_volume       "77"^^xsd:double ;
+        bdg:total_volume_pressing  "815"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017/2017-09-29/PR039_2017R>
+        rdf:type                   qb:Observation ;
+        qb:dataSet                 <http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017> ;
+        bdg:experiment             <http://data.bigdatagrapes.eu/resource/pressing/PR039_2017R> ;
+        bdg:must                   <http://data.bigdatagrapes.eu/resource/mustAF/PR039_2017R> ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
+        bdg:date                   "2017-09-29"^^xsd:date ;
+        bdg:press_juice_volume     "83"^^xsd:double ;
+        bdg:run_juice_volume       "83"^^xsd:double ;
+        bdg:total_volume_pressing  "89"^^xsd:double .
