@@ -1516,3 +1516,39 @@
         rdf:type   geo:Geometry ;
         qb4st:crs  crs-ogc:CRS84 ;
         geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(3.11713647659983 43.1570766341716)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/1>
+        rdf:type             bdg:Plot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra> ;
+        rdfs:label           "Hellenic Agricultural Organization \"DIMITRA\" 1" ;
+        bdg:idGeocledian     "143363" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/1/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/1/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/1/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.77563 38.069805,23.775844 38.070099,23.776179 38.069951,23.775963 38.069653,23.77563 38.069805)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/1/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.7759043106737 38.0698767936096)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/2>
+        rdf:type             bdg:Plot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra> ;
+        rdfs:label           "Hellenic Agricultural Organization \"DIMITRA\" 2" ;
+        bdg:idGeocledian     "143364" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/2/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/2/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/2/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.773882 38.069621,23.774071 38.069822,23.774298 38.069719,23.774233 38.069646,23.773882 38.069621)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra/2/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.7740982122151 38.0697048640955)"^^geo:wktLiteral .
