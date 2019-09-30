@@ -33,6 +33,7 @@
 @prefix dbo:  <http://dbpedia.org/ontology/> .
 @prefix unit:  <http://qudt.org/vocab/unit/> .
 @prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix ops:  <http://www.openphacts.org/units/> .
 @prefix at:  <http://data.ifpri.org/lod/at/resource/> .
 @prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
 @prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
@@ -523,10 +524,17 @@
 <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88>
         rdf:type      bdg:PlotCluster ;
         skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> ;
-        rdfs:label    "88" ;
+        rdfs:label    "88" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89>
         rdf:type      bdg:PlotCluster ;
         skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> ;
-        rdfs:label    "88" .
+        rdfs:label    "89" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89bis>
+        rdf:type      bdg:PlotCluster ;
+        skos:broader  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> ;
+        rdfs:label    "89bis" .
 
 <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/90>
         rdf:type      bdg:PlotCluster ;

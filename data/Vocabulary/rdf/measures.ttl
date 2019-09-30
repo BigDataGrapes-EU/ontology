@@ -33,6 +33,7 @@
 @prefix dbo:  <http://dbpedia.org/ontology/> .
 @prefix unit:  <http://qudt.org/vocab/unit/> .
 @prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix ops:  <http://www.openphacts.org/units/> .
 @prefix at:  <http://data.ifpri.org/lod/at/resource/> .
 @prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
 @prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
@@ -257,6 +258,36 @@ bdg:temp_air  rdf:type              qb:MeasureProperty ;
         bdg:derivedFrom             bdg:temp ;
         qb:concept                  sdmx-concept:obsValue .
 
+bdg:temp_air_MIN  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Temperature Minimum" ;
+        rdfs:comment                "Air Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:temp_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_air_MAX  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Temperature Maximum" ;
+        rdfs:comment                "Air Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:temp_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_air_MEAN  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Temperature Mean" ;
+        rdfs:comment                "Air Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:temp_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
 bdg:temp_system  rdf:type           qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "System Temperature" ;
@@ -291,6 +322,17 @@ bdg:moisture_soil  rdf:type         qb:MeasureProperty ;
         bdg:derivedFrom             bdg:moisture ;
         qb:concept                  sdmx-concept:obsValue .
 
+bdg:moisture_soil_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Moisture Mean" ;
+        rdfs:comment                "Soil Moisture in percent" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:derivedFrom             bdg:moisture ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
 bdg:moisture_soil_30cm
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -321,13 +363,45 @@ bdg:humidity_air  rdf:type          qb:MeasureProperty ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         qb:concept                  sdmx-concept:obsValue .
 
+bdg:humidity_air_MIN  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Humidity Min" ;
+        rdfs:comment                "Air Humidity in percent" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_MAX  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Humidity Max" ;
+        rdfs:comment                "Air Humidity in percent" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:humidity_air_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Air Humidity Mean" ;
+        rdfs:comment                "Air Humidity in percent" ;
+        sdmx-attribute:unitMeasure  unit:PERCENT ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
+        bdg:derivedFrom             bdg:humidity_air ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
 bdg:direction_wind_MAX
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Maximal wind direction" ;
         sdmx-attribute:unitMeasure  unit:DEG ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               <http://data.bigdatagrapes.eu/resource/MWD> .
 
 bdg:current  rdf:type               qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -349,8 +423,47 @@ bdg:voltage_system  rdf:type        qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "System voltage " ;
         rdfs:comment                "System voltage " ;
-        sdmx-attribute:unitMeasure  unit:Volt ;
+        sdmx-attribute:unitMeasure  unit:V ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:voltage_solarPanel
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "System voltage " ;
+        rdfs:comment                "System voltage " ;
+        sdmx-attribute:unitMeasure  unit:MilliV ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:voltage_solarPanel_LAST
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "System voltage " ;
+        rdfs:comment                "System voltage " ;
+        sdmx-attribute:unitMeasure  unit:MilliV ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        bdg:derivedFrom             bdg:voltage_solarPanel ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Last> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:voltage_battery  rdf:type       qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "System voltage " ;
+        rdfs:comment                "System voltage " ;
+        sdmx-attribute:unitMeasure  unit:MIlliV ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:voltage_battery_LAST
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "System voltage " ;
+        rdfs:comment                "System voltage " ;
+        sdmx-attribute:unitMeasure  unit:MIlliV ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
+        bdg:derivedFrom             bdg:voltage_battery ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Last> ;
         qb:concept                  sdmx-concept:obsValue .
 
 bdg:weight  rdf:type                qb:MeasureProperty ;
@@ -1078,7 +1191,7 @@ bdg:press_juice_volume
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/PressJuice> ;
         qb:concept                  sdmx-concept:obsValue .
 
-bdg:totalVolumePressing
+bdg:total_volume_pressing
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Total Volume Pressing" ;
@@ -1086,7 +1199,7 @@ bdg:totalVolumePressing
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/PressJuice> ;
         qb:concept                  sdmx-concept:obsValue .
 
-bdg:total_volume_pressing
+<http://data.bigdatagrapes.eu/resource/ontology/weight_alcoholic_fermentation%20>
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Weight Alcoholic Fermentation " ;
@@ -1283,55 +1396,63 @@ bdg:temp_RANGE  rdf:type            qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:DEGC ;
         bdg:derivedFrom             bdg:temp ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Range> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "RAN" .
 
 bdg:daily_wetness_duration
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Daily Wetness Duration" ;
         sdmx-attribute:unitMeasure  unit:HR ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "WD" .
 
 bdg:insolation_duration
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Insolation Duration" ;
         sdmx-attribute:unitMeasure  unit:HR ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "ID" .
 
 bdg:insolation_duration_calculated
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Calculated Insolation Duration" ;
         sdmx-attribute:unitMeasure  unit:HR ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "CID" .
 
 bdg:evaporation_tray  rdf:type      qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Evaporation Tray" ;
         sdmx-attribute:unitMeasure  unit:MM ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "ET" .
 
 bdg:evapotranspiration_piche
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Piche Evapotranspiration" ;
         sdmx-attribute:unitMeasure  unit:MM ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "PE" .
 
 bdg:evapotranspiration_measured
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Measured Evapotranspiration" ;
         sdmx-attribute:unitMeasure  unit:MM ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "ETP" .
 
 bdg:evapotranspiration_penman
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Penman Evapotranspiration" ;
         sdmx-attribute:unitMeasure  unit:MM ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "PETP" .
 
 bdg:evapotranspiration_piche_corrected
         rdf:type                    qb:MeasureProperty ;
@@ -1339,28 +1460,32 @@ bdg:evapotranspiration_piche_corrected
         rdfs:label                  "Corrected Piche Evapotranspiration" ;
         sdmx-attribute:unitMeasure  unit:MM ;
         bdg:derivedFrom             bdg:evapotranspiration_piche ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "CPETP" .
 
 bdg:insolation_fraction
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Insolation Fraction" ;
         sdmx-attribute:unitMeasure  unit:PERCENT ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "FRAC" .
 
 bdg:height_water_MAX  rdf:type      qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Maximal Water Height" ;
         sdmx-attribute:unitMeasure  unit:MM ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XWH" .
 
 bdg:height_water_MIN  rdf:type      qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Minimal Water Height" ;
         sdmx-attribute:unitMeasure  unit:MM ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "NWH" .
 
 bdg:height_water_MEAN
         rdf:type                    qb:MeasureProperty ;
@@ -1368,14 +1493,26 @@ bdg:height_water_MEAN
         rdfs:label                  "Mean Water Height" ;
         sdmx-attribute:unitMeasure  unit:MM ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean%20> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "MWH" .
 
 bdg:precipitation_height
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Precipitation Height" ;
         sdmx-attribute:unitMeasure  unit:MM ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "PH" .
+
+bdg:precipitation_height_SUM
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Precipitation Height" ;
+        sdmx-attribute:unitMeasure  unit:MM ;
+        bdg:derivedFrom             bdg:precipitation_height ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "PH" .
 
 bdg:humidity_air_MAX  rdf:type      qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1384,7 +1521,8 @@ bdg:humidity_air_MAX  rdf:type      qb:MeasureProperty ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         bdg:derivedFrom             bdg:humidity_air ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XH" .
 
 bdg:humidity_air_MIN  rdf:type      qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1393,7 +1531,8 @@ bdg:humidity_air_MIN  rdf:type      qb:MeasureProperty ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         bdg:derivedFrom             bdg:humidity_air ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "NH" .
 
 bdg:humidity_air_MEAN
         rdf:type                    qb:MeasureProperty ;
@@ -1403,14 +1542,16 @@ bdg:humidity_air_MEAN
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         bdg:derivedFrom             bdg:humidity_air ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "MH" .
 
 bdg:actinothermic_index_10cm
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Actinothermic Index +10cm" ;
         sdmx-attribute:unitMeasure  unit:DEGC ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "I1N" .
 
 bdg:actinothermic_index_10cm_MAX
         rdf:type                    qb:MeasureProperty ;
@@ -1419,14 +1560,16 @@ bdg:actinothermic_index_10cm_MAX
         sdmx-attribute:unitMeasure  unit:DEGC ;
         bdg:derivedFrom             bdg:actinothermic_index_10cm ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "I1X" .
 
 bdg:actinothermic_index_50cm
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Actinothermic Index +50cm" ;
         sdmx-attribute:unitMeasure  unit:DEGC ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "I5N" .
 
 bdg:actinothermic_index_50cm_MAX
         rdf:type                    qb:MeasureProperty ;
@@ -1435,14 +1578,16 @@ bdg:actinothermic_index_50cm_MAX
         sdmx-attribute:unitMeasure  unit:DEGC ;
         bdg:derivedFrom             bdg:actinothermic_index_50cm ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "I5X" .
 
 bdg:wind_instant_MAX  rdf:type      qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Maximal Wind Instant" ;
         sdmx-attribute:unitMeasure  unit:HR ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XWI" .
 
 bdg:temperature_instant_MAX
         rdf:type                    qb:MeasureProperty ;
@@ -1450,7 +1595,8 @@ bdg:temperature_instant_MAX
         rdfs:label                  "Maximal Temperature Instant" ;
         sdmx-attribute:unitMeasure  unit:HR ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XTI" .
 
 bdg:temperature_instant_MIN
         rdf:type                    qb:MeasureProperty ;
@@ -1458,7 +1604,8 @@ bdg:temperature_instant_MIN
         rdfs:label                  "Minimal Temperature Instant" ;
         sdmx-attribute:unitMeasure  unit:HR ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "NTI" .
 
 bdg:humidity_instant_MAX
         rdf:type                    qb:MeasureProperty ;
@@ -1466,7 +1613,8 @@ bdg:humidity_instant_MAX
         rdfs:label                  "Maximal Humidity Instant" ;
         sdmx-attribute:unitMeasure  unit:HR ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XHI" .
 
 bdg:humidity_instant_MIN
         rdf:type                    qb:MeasureProperty ;
@@ -1474,7 +1622,8 @@ bdg:humidity_instant_MIN
         rdfs:label                  "Minimal Humidity Instant" ;
         sdmx-attribute:unitMeasure  unit:HR ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "NHI" .
 
 bdg:speed_wind  rdf:type            qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1489,7 +1638,8 @@ bdg:precipitation_intensity_instant_MAX
         rdfs:label                  "Maximal Precipitation Intensity Instant" ;
         sdmx-attribute:unitMeasure  unit:HR ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XPII" .
 
 bdg:rainfall_MAX  rdf:type          qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1497,26 +1647,65 @@ bdg:rainfall_MAX  rdf:type          qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:MM ;
         bdg:derivedFrom             bdg:rainfall ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XPI" .
 
 bdg:radiation_global  rdf:type      qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Global Radiation" ;
         sdmx-attribute:unitMeasure  bdg-unit:J-PER-CM2 ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "GR" .
 
 bdg:radiation_global_calculated
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Calculated Global Radiation" ;
         sdmx-attribute:unitMeasure  bdg-unit:J-PER-CM2 ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "CGR" .
 
 bdg:radiation_active_photosynthetic
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Photosynthetic Active Radiation" ;
         sdmx-attribute:unitMeasure  bdg-unit:J-PER-CM2 ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "PAR" .
+
+bdg:temp_soil  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil tempertaure" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:derivedFrom             bdg:temp ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_soil_MEAN  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil tempertaure Mean" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:derivedFrom             bdg:temp_soil ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_soil_MIN  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil tempertaure Min" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:derivedFrom             bdg:temp_soil ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_soil_MAX  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil tempertaure Max" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
+        bdg:derivedFrom             bdg:temp_soil ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
         qb:concept                  sdmx-concept:obsValue .
 
 bdg:temp_soil_10cm_MAX
@@ -1526,9 +1715,10 @@ bdg:temp_soil_10cm_MAX
         sdmx-attribute:unitMeasure  unit:DEGC ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-10cm> ;
-        bdg:derivedFrom             bdg:temp ;
+        bdg:derivedFrom             bdg:temp_soil ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "X1S" .
 
 bdg:temp_soil_10cm_MIN
         rdf:type                    qb:MeasureProperty ;
@@ -1537,9 +1727,10 @@ bdg:temp_soil_10cm_MIN
         sdmx-attribute:unitMeasure  unit:DEGC ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-10cm> ;
-        bdg:derivedFrom             bdg:temp ;
+        bdg:derivedFrom             bdg:temp_soil ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "N1S" .
 
 bdg:temp_MEAN  rdf:type             qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1547,7 +1738,8 @@ bdg:temp_MEAN  rdf:type             qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:DEGC ;
         bdg:derivedFrom             bdg:temp ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "MT" .
 
 bdg:temp_MEAN_caclulated
         rdf:type                    qb:MeasureProperty ;
@@ -1556,7 +1748,8 @@ bdg:temp_MEAN_caclulated
         sdmx-attribute:unitMeasure  unit:DEGC ;
         bdg:derivedFrom             bdg:temp_MEAN ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "CMT" .
 
 bdg:temp_soil_50cm_MEAN
         rdf:type                    qb:MeasureProperty ;
@@ -1567,14 +1760,36 @@ bdg:temp_soil_50cm_MEAN
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/feature/Soil/depth-50cm> ;
         bdg:derivedFrom             bdg:temp ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "S5M" .
 
 bdg:dewPoint_temp  rdf:type         qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
         rdfs:label                  "Dew Point Temperature" ;
         sdmx-attribute:unitMeasure  unit:DEGC ;
         bdg:derivedFrom             bdg:temp ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "DT" .
+
+bdg:dewPoint_temp_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Dew Point Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:dewPoint_temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "DT" .
+
+bdg:dewPoint_temp_MIN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Dew Point Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:dewPoint_temp ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "DT" .
 
 bdg:humidity_air_period_lt40pc
         rdf:type                    qb:MeasureProperty ;
@@ -1583,7 +1798,8 @@ bdg:humidity_air_period_lt40pc
         sdmx-attribute:unitMeasure  unit:HR ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         bdg:derivedFrom             bdg:humidity_air ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "H4" .
 
 bdg:humidity_air_period_gt80pc
         rdf:type                    qb:MeasureProperty ;
@@ -1592,7 +1808,8 @@ bdg:humidity_air_period_gt80pc
         sdmx-attribute:unitMeasure  unit:HR ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         bdg:derivedFrom             bdg:humidity_air ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "H8" .
 
 bdg:humidity_air_period_gt90pc
         rdf:type                    qb:MeasureProperty ;
@@ -1601,7 +1818,8 @@ bdg:humidity_air_period_gt90pc
         sdmx-attribute:unitMeasure  unit:HR ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Air> ;
         bdg:derivedFrom             bdg:humidity_air ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "H9" .
 
 bdg:pressure_vapour_MEAN
         rdf:type                    qb:MeasureProperty ;
@@ -1609,6 +1827,14 @@ bdg:pressure_vapour_MEAN
         rdfs:label                  "Mean Vapor Pressure" ;
         sdmx-attribute:unitMeasure  unit:BAR ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "MVP" .
+
+bdg:total_wind  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Total Wind " ;
+        sdmx-attribute:unitMeasure  unit:KM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         qb:concept                  sdmx-concept:obsValue .
 
 bdg:total_wind_N  rdf:type          qb:MeasureProperty ;
@@ -1617,7 +1843,9 @@ bdg:total_wind_N  rdf:type          qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/north> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TNW" .
 
 bdg:total_wind_NE  rdf:type         qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1625,7 +1853,9 @@ bdg:total_wind_NE  rdf:type         qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/northeast> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TNEW" .
 
 bdg:total_wind_E  rdf:type          qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1633,7 +1863,9 @@ bdg:total_wind_E  rdf:type          qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/east> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TEW" .
 
 bdg:total_wind_SE  rdf:type         qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1641,7 +1873,9 @@ bdg:total_wind_SE  rdf:type         qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/southeast> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TSEW" .
 
 bdg:total_wind_S  rdf:type          qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1649,7 +1883,9 @@ bdg:total_wind_S  rdf:type          qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/south> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TSW" .
 
 bdg:total_wind_SW  rdf:type         qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1657,7 +1893,9 @@ bdg:total_wind_SW  rdf:type         qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/southwest> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TSWW" .
 
 bdg:total_wind_W  rdf:type          qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1665,7 +1903,9 @@ bdg:total_wind_W  rdf:type          qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/west> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TWW" .
 
 bdg:total_wind_NW  rdf:type         qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1673,7 +1913,9 @@ bdg:total_wind_NW  rdf:type         qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:KM ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:measurementContext      <http://data.bigdatagrapes.eu/resource/compass/northwest> ;
-        qb:concept                  sdmx-concept:obsValue .
+        bdg:derivedFrom             bdg:total_wind ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "TNWW" .
 
 bdg:speed_wind_MAX  rdf:type        qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1681,7 +1923,8 @@ bdg:speed_wind_MAX  rdf:type        qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:M-PER-SEC ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
-        qb:concept                  sdmx-concept:obsValue .
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "SP" .
 
 bdg:speed_wind_MEAN  rdf:type       qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1689,7 +1932,54 @@ bdg:speed_wind_MEAN  rdf:type       qb:MeasureProperty ;
         sdmx-attribute:unitMeasure  unit:M-PER-SEC ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "S" .
+
+bdg:direction_wind  rdf:type        qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Wind direction" ;
+        sdmx-attribute:unitMeasure  unit:DEG ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
         qb:concept                  sdmx-concept:obsValue .
+
+bdg:direction_wind_MAX
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Wind direction" ;
+        sdmx-attribute:unitMeasure  unit:DEG ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:derivedFrom             bdg:direction_wind ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "MWD" .
+
+bdg:direction_wind_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Mean Wind direction" ;
+        sdmx-attribute:unitMeasure  unit:DEG ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:derivedFrom             bdg:direction_wind ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:direction_wind_LAST
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Wind Direction Last " ;
+        sdmx-attribute:unitMeasure  unit:DEG ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wind> ;
+        bdg:derivedFrom             bdg:direction_wind ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Last> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_MAX  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Maximal Temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue ;
+        skos:notation               "XT" .
 
 bdg:vitality  rdf:type              qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
@@ -1793,4 +2083,164 @@ bdg:variations_STD  rdf:type        qb:MeasureProperty ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Canopy> ;
         bdg:derivedFrom             bdg:Variations ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/StandardDeviation> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:radiation_solar_wm2
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Solar Radiation  " ;
+        sdmx-attribute:unitMeasure  unit:W-PER-M2 ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:radiation_solar_wm2_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Solar Radiation  Mean" ;
+        sdmx-attribute:unitMeasure  unit:W-PER-M2 ;
+        bdg:derivedFrom             bdg:radiation_solar_wm2 ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_wetbulb  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Wetbulb temperature" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_wetbulb_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Wetbulb temperature Mean" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp_wetbulb ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_wetbulb_MIN  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Wetbulb temperature Min" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp_wetbulb ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_wetbulb_MAX  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Wetbulb temperature Max" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:temp_wetbulb ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:VPD  rdf:type                   qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vapor pressure deficit " ;
+        sdmx-attribute:unitMeasure  unit:MilliBAR ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:VPD_MEAN  rdf:type              qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vapor pressure deficit Mean" ;
+        sdmx-attribute:unitMeasure  unit:MilliBAR ;
+        bdg:derivedFrom             bdg:VPD ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:VPD_MIN  rdf:type               qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Vapor pressure deficit Minimum" ;
+        sdmx-attribute:unitMeasure  unit:MilliBAR ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:deltaT  rdf:type                qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Delta T" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:deltaT_MEAN  rdf:type           qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Delta T Mean" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:DeltaT ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:deltaT_MIN  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Delta T Min" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:DeltaT ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:deltaT_MAX  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Delta T Max" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        bdg:derivedFrom             bdg:DeltaT ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_leaf_ir  rdf:type          qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Leaf Temperature (IR)" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Leaf> ;
+        bdg:derivedFrom             bdg:temp ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_leaf_ir_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Leaf Temperature (IR) Mean" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Leaf> ;
+        bdg:derivedFrom             bdg:temp_leaf_ir ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_leaf_ir_MIN  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Leaf Temperature (IR) Min" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Leaf> ;
+        bdg:derivedFrom             bdg:temp_leaf_ir ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Minimum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:temp_leaf_ir_MAX  rdf:type      qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Leaf Temperature (IR) Max" ;
+        sdmx-attribute:unitMeasure  unit:DEGC ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Leaf> ;
+        bdg:derivedFrom             bdg:temp_leaf_ir ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Maximum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:wetness_duration_leaf
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Wetness Duration Leaf" ;
+        sdmx-attribute:unitMeasure  unit:MIN ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Leaf> ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Sum> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:salinity_soil  rdf:type         qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Salinity" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil%20> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:salinity_soil_MEAN
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Soil Salinity Mean" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil%20> ;
+        bdg:derivedFrom             bdg:salinity_soil ;
+        bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
         qb:concept                  sdmx-concept:obsValue .
