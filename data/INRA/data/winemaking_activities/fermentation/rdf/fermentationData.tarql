@@ -3,12 +3,19 @@ CONSTRUCT {
   ?OBS_URI a qb:Observation ;
     qb:dataSet ?DATASET;
     bdg:experiment ?EXPERIMENT_URI; # it will change
-    bdg:must  ?MUST_URI;  
-    bdg:pressingTank  ?TANK_URI;  
+    bdg:must-AF  ?MUST_URI;  
     bdg:date ?DATE_OK ;
-    bdg:press_juice_volume ?RUN_JUICE_VOLUME;   
-    bdg:run_juice_volume ?RUN_JUICE_VOLUME;       
-    bdg:total_volume_pressing ?TOTAL_VOLUME_PRESSING; 
+    bdg:weight_alcoholic_fermentation  ?WEIGHT_ALCOHOLIC_FERMENTATION ;
+    bdg:fermentationTank  ?TANK_URI;  #pas sure  variable
+   #yeast pas défini! dans google sheet Nicolas
+   #dose?
+   #operateur?
+    bdg:temp_MIN ?TEMP_MIN;#pas sure variable
+    bdg:temp_MAX ?TEMP_MAX;#pas sure variable
+    bdg:density_MIN ?DENSITY_MIN;#pas sure variable
+    bdg:density_MAX ?DENSITY_MAX;#pas sure variable
+    #date de fin pas défini?
+    #numéro de fiche?
   .
 } WHERE {
 

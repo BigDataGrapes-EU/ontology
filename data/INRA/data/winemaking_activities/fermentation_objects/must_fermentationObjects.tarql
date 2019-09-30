@@ -1,0 +1,20 @@
+
+CONSTRUCT {
+  ?URI a afeo:Alcoholic-Fermentation ;
+    afeo:hasInput ?MUST_URI;
+    bdg:experiment ?EXPERIMENT_URI; # it will change
+    #bdg:must  ?MUST_URI;  #attention au terme must!
+    
+.
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?code_lot, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?CODELOT)
+  BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
+  BIND(uri(concat("fermentation/",?FERMENTATION_CODE)) as ?URI)
+  # bdg:fermentation/PR021-2017B
+  BIND(uri(CONCAT("must/",?CODELOT)) as ?MUST_URI)
+  # bdg:must/FV-2017-001
+  BIND(REPLACE(REPLACE(REPLACE(?experiment_code, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EXPERIMENT)
+  BIND(uri(CONCAT("experiment/",?EXPERIMENT)) as ?EXPERIMENT_URI)
+
+}

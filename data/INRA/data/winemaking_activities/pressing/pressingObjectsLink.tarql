@@ -1,0 +1,31 @@
+
+CONSTRUCT {
+  ?URI afeo:hasOutput ?PRESS_JUICE_URI;
+  .
+  ?FERMENTATION_URI afeo:hasOutput ?RUN_JUICE_URI;
+  .
+
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?PRcode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?PRCODE)
+  BIND(uri(concat("pressing/",?PRCODE)) as ?URI) 
+  BIND(uri(concat("fermentation/",?PRCODE)) as ?FERMENTATION_URI) 
+  BIND(uri(concat("runJuice/",?PRCODE)) as ?RUN_JUICE_URI) 
+  BIND(uri(concat("pressJuice/",?PRCODE)) as ?PRESS_JUICE_URI) 
+
+  BIND(IF(REPLACE(REPLACE(REPLACE(?operator, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")!= "", ?operator, "Unknown operator") as ?OPERATOR)
+
+  BIND(IF( strlen(?OPERATOR)>0, ?OPERATOR, "Unknown operator") as ?OPERATOR_VALID)
+
+  BIND(REPLACE(?pressingDate,"(\\d{2})/(\\d{2})/(\\d{4})","$3-$2-$1")  as ?DATE)
+  BIND(xsd:date(?DATE)  as ?DATE_OK)
+
+  BIND(REPLACE(REPLACE(REPLACE(?tank, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?TANK)
+
+  BIND(uri(concat("pressingTank/",?TANK)) as ?TANK_URI)
+  
+  BIND(IF(REPLACE(?pressJuiceVolume,"[^\\.0-9]","")!= "", xsd:double(?pressJuiceVolume), xsd:double("NaN")) as ?PRESS_JUICE_VOLUME)
+  BIND(IF(REPLACE(?totalVolume,"[^\\.0-9]","")!= "", xsd:double(?totalVolume), xsd:double("NaN")) as ?TOTAL_VOLUME_PRESSING)
+  BIND(IF(REPLACE(?runJuiceVolume,"[^\\.0-9]","")!= "", xsd:double(?runJuiceVolume), xsd:double("NaN")) as ?RUN_JUICE_VOLUME)
+
+} 

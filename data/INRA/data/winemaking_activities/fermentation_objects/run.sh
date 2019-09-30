@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+curl "https://docs.google.com/spreadsheets/d/1lWEwwonC0Dg8MAWDSVm7GV184N7jGt-IhjXmdE4Y-oo/gviz/tq?tqx=out:csv&gid=2017_Harvest_Forms" | ../../../../bin/my-tarql "-d , --stdin" ../../../../../model/prefixes.ttl crushingObject.tarql > rdf/crushing_objects.ttl
+curl "https://docs.google.com/spreadsheets/d/1nhBnoWhDfDakL-ucY-STdRbDzhgH0yZSEeebwYR88M0/gviz/tq?tqx=out:csv&gid=fermentations" | ../../../../bin/my-tarql "-d , --stdin" ../../../../../model/prefixes.ttl fermentationObjects.tarql > rdf/fermentation_objects.ttl
+curl "https://docs.google.com/spreadsheets/d/17j93MM2hb2kI6oaU-CanktISlSyHBk8pz3jsnApQEzs/gviz/tq?tqx=out:csv&gid=linkCodePRCodeLot" | ../../../../bin/my-tarql "-d , --stdin" ../../../../../model/prefixes.ttl must_fermentationObjects.tarql > rdf/must_fermentation_objects.ttl

@@ -1,0 +1,15 @@
+
+<http://data.bigdatagrapes.eu/resource/harvesting/FV_2017_001>
+        rdf:type        afeo:Harvesting ;
+        rdfs:label      "FV_2017_001" ;
+        bdg:plot        <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22_FLOT_ROUGE> ;
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/berry/FV_2017_001> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_001>
+        rdf:type  afeo:Berry .
+
+<http://data.bigdatagrapes.eu/resource/harvesting/FV_2017_001>
+        rdf:type        afeo:Harvesting ;
+        rdfs:label      "FV_2017_001" ;
+        bdg:plot        <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22_PATRICIA> ;
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/berry/FV_2017_001> .

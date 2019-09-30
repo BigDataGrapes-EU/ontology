@@ -3,17 +3,16 @@ CONSTRUCT {
   ?URI a afeo:Harvesting ;
     rdfs:label ?SAMPLECODE ; 
     bdg:plot ?OBJECTCODE_URI ;
-    afeo:hasOutput ?BERRY;
+    afeo:hasOutput ?BERRY_URI;
   .
-  ?BERRY a afeo:Berry ;
+  ?BERRY_URI a afeo:Berry ;
 .
 } WHERE {
-
 
   BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
   BIND(uri(concat("harvesting/",?SAMPLECODE)) as ?URI)
 
-  BIND(uri(CONCAT("berry/",?SAMPLECODE)) as ?BERRY)
+  BIND(uri(CONCAT("berry/",?SAMPLECODE)) as ?BERRY_URI)
 
   BIND(REPLACE(REPLACE(REPLACE(?harvestMethod, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?HARVESTMETHOD)
 

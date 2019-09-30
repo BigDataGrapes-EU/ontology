@@ -1,0 +1,15 @@
+
+CONSTRUCT {
+  ?URI a afeo:Crushing ;
+    rdfs:label ?SAMPLECODE ;
+    afeo:hasOutput ?MUST_URI;
+  .
+  ?MUST_URI a afeo:Must-AF;
+.
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
+  BIND(uri(concat("crushing/",?SAMPLECODE)) as ?URI)
+  # bdg:crushing/FV_2017_002
+  BIND(uri(CONCAT("must/",?SAMPLECODE)) as ?MUST_URI)
+}

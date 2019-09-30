@@ -1,0 +1,1263 @@
+@prefix qb4st:  <http://www.w3.org/ns/qb4st/> .
+@prefix obo_rel:  <http://purl.obolibrary.org/obo/OBO_REL#> .
+@prefix qudt:  <http://qudt.org/1.1/schema/qudt#> .
+@prefix ENVO:  <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix CO_320:  <http://www.cropontology.org/rdf/CO_320:> .
+@prefix crs-epsg:  <http://www.opengis.net/def/crs/EPSG/0/> .
+@prefix sdmx:  <http://purl.org/linked-data/sdmx#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix PATO:  <http://purl.obolibrary.org/obo/PATO_> .
+@prefix BFO:  <http://purl.obolibrary.org/obo/BFO_> .
+@prefix geom:  <http://data.ordnancesurvey.co.uk/ontology/geometry/> .
+@prefix envo:  <http://purl.obolibrary.org/obo/envo#> .
+@prefix ssn:  <http://www.w3.org/ns/ssn/> .
+@prefix qb:  <http://purl.org/linked-data/cube#> .
+@prefix xml:  <http://www.w3.org/XML/1998/namespace> .
+@prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
+@prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
+@prefix CO_UO:  <http://www.cropontology.org/rdf/UO:> .
+@prefix inra_obj:  <http://vinnotec.supagro.inra.fr/public/Pr/> .
+@prefix uo:  <http://purl.obolibrary.org/obo/uo#> .
+@prefix UO:  <http://purl.obolibrary.org/obo/UO_> .
+@prefix CO_357:  <http://www.cropontology.org/rdf/CO_357:> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix sosa:  <http://www.w3.org/ns/sosa/> .
+@prefix afeo:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v1/afeo#> .
+@prefix inra_wineTaste:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/> .
+@prefix inra_onto:  <http://vinnotec.supagro.inra.fr/public/Pr/onto/> .
+@prefix MMO:  <http://purl.obolibrary.org/obo/MMO_> .
+@prefix dbo:  <http://dbpedia.org/ontology/> .
+@prefix unit:  <http://qudt.org/vocab/unit/> .
+@prefix sdmx-measure:  <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix ops:  <http://www.openphacts.org/units/> .
+@prefix at:  <http://data.ifpri.org/lod/at/resource/> .
+@prefix IAO:  <http://purl.obolibrary.org/obo/IAO_> .
+@prefix inra_agent:  <http://vinnotec.supagro.inra.fr/public/Pr/agent/> .
+@prefix ofpe:  <http://www.mistea.supagro.inra.fr/ontologies/2016/v4/ontofp#> .
+@prefix SIO:  <http://semanticscience.org/resource/SIO_> .
+@prefix CO_322:  <http://www.cropontology.org/rdf/CO_322:> .
+@prefix RO:  <http://purl.obolibrary.org/obo/RO_> .
+@prefix inra_data:  <http://vinnotec.supagro.inra.fr/public/Pr/data/> .
+@prefix crop:  <http://data.ifpri.org/lod/crop/> .
+@prefix pubchem:  <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID> .
+@prefix schema:  <http://schema.org/> .
+@prefix STATO:  <http://purl.obolibrary.org/obo/STATO_> .
+@prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
+@prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd:  <http://www.wikidata.org/entity/> .
+@prefix cito:  <http://purl.org/spar/cito/> .
+@prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
+@prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
+@prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix inra_observations:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/> .
+@prefix OBI:  <http://purl.obolibrary.org/obo/OBI_> .
+@prefix CHMO:  <http://purl.obolibrary.org/obo/CHMO_> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix crs-ogc:  <http://www.opengis.net/def/crs/OGC/1.3/> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix cc:  <http://creativecommons.org/ns#> .
+@prefix bdg:  <http://data.bigdatagrapes.eu/resource/ontology/> .
+@prefix oepo:  <http://www.phenome-fppn.fr/vocabulary/2018/oepo#> .
+@prefix fao-geo:  <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix CO:  <http://www.cropontology.org/rdf/> .
+@prefix NCBITaxon:  <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix quantitykind:  <http://qudt.org/vocab/quantitykind/> .
+@prefix inra_code:  <http://vinnotec.supagro.inra.fr/public/Pr/code/> .
+@prefix inra_gis:  <http://vinnotec.supagro.inra.fr/public/Pr/GIS/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sdmx-code:  <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix ncbiTaxon:  <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix bdg-unit:  <http://data.bigdatagrapes.eu/resource/unit/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix to:  <http://purl.obolibrary.org/obo/to#> .
+@prefix AGRO:  <http://purl.obolibrary.org/obo/AGRO_> .
+@prefix agrovoc:  <http://aims.fao.org/aos/agrovoc/> .
+@prefix obo:  <http://purl.obolibrary.org/obo/> .
+@prefix dc:  <http://purl.org/dc/elements/1.1/> .
+@prefix po:  <http://purl.obolibrary.org/obo/po#> .
+@prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR001_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-08"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P1> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P1> ;
+        bdg:operator               "CF" ;
+        bdg:total_volume_pressing  "128"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR001_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "25"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR001_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "33"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR002_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-07"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P8> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P8> ;
+        bdg:operator               "CF" ;
+        bdg:total_volume_pressing  "119"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR002_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "88"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR002_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "31"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR003_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-08"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P20> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P20> ;
+        bdg:operator               "CF" ;
+        bdg:total_volume_pressing  "139"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR003_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "102"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR003_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "37"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR004_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-14"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A108> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A108> ;
+        bdg:total_volume_pressing  "48"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR004_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "35"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR004_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "13"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR005_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-14"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A83> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A83> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "90"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR005_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "55"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR005_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "35"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR006_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-15"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P18> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P18> ;
+        bdg:operator               "CF" ;
+        bdg:total_volume_pressing  "150"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR006_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "130"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR006_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "20"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR007_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-18"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P39> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P39> ;
+        bdg:operator               "CF" ;
+        bdg:total_volume_pressing  "145"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR007_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "125"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR007_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "20"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR008_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-14"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Z12> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Z12> ;
+        bdg:operator               "FJ-M" ;
+        bdg:total_volume_pressing  "13"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR008_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "6"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR008_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR009_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-20"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne> ;
+        bdg:operator               "RCA" ;
+        bdg:total_volume_pressing  "5.7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR009_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR009_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR010_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-14"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Z29> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Z29> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "11"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR010_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "8"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR010_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR011_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-14"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P26_P17> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P26_P17> ;
+        bdg:operator               "FJ-MB" ;
+        bdg:total_volume_pressing  "245"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR011_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "160"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR011_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "85"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR012_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-19"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
+        bdg:operator               "RG-FJ-MLA" ;
+        bdg:total_volume_pressing  "200"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR012_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "190"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR012_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "10"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR013_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-19"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
+        bdg:operator               "MG-FJ-MLA" ;
+        bdg:total_volume_pressing  "200"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR013_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "190"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR013_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "10"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR014_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-19"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
+        bdg:operator               "MG-MLA" ;
+        bdg:total_volume_pressing  "190"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR014_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "161"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR014_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "29"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR015_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-18"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
+        bdg:operator               "MG-MLA" ;
+        bdg:total_volume_pressing  "190"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR015_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "161"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR015_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "29"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR016_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-18"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B148> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B148> ;
+        bdg:operator               "MG-MLA" ;
+        bdg:total_volume_pressing  "29"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR016_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "20"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR016_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "9"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR017_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-05"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/40_12> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/40_12> ;
+        bdg:operator      "CF" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR017_2017R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR017_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR018_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-20"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne_52_16> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne_52_16> ;
+        bdg:operator               "MLA" ;
+        bdg:total_volume_pressing  "7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR018_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "5.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR018_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "1.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR019_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-19"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/B75> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/B75> ;
+        bdg:operator      "MG-FJ" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR019_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "32"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR019_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "2.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR020_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-19"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B130> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B130> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "44"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR020_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "41"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR020_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR021_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-19"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P2> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P2> ;
+        bdg:operator               "MC" ;
+        bdg:total_volume_pressing  "280"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR021_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "220"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR021_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "60"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR022_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-20"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
+        bdg:operator               "MLA" ;
+        bdg:total_volume_pressing  "27.2"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR022_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "25.7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR022_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "1.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR023_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-21"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
+        bdg:operator      "FJ-MG-MLA-PA" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR023_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "70"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR023_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "1.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR024_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-21"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
+        bdg:operator      "FJ-MG-MLA-PA" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR024_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "65"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR024_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "35"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR025_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-21"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
+        bdg:operator               "MG-PA" ;
+        bdg:total_volume_pressing  "42"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR025_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR025_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "2"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR026_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-21"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
+        bdg:operator               "FJ-MG-MLA-PA" ;
+        bdg:total_volume_pressing  "81"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR026_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "78"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR026_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR027_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-19"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
+        bdg:operator               "MC" ;
+        bdg:total_volume_pressing  "210"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR027_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "140"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR027_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "70"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR028_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-10-03"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
+        bdg:operator               "FJ-MB" ;
+        bdg:total_volume_pressing  "43"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR028_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR028_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR029_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:operator               "MG" ;
+        bdg:total_volume_pressing  "70"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR029_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "30"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR029_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR030_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:operator               "MG" ;
+        bdg:total_volume_pressing  "82"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR030_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "38"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR030_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "43"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR031_2017R>
+        rdf:type  afeo:Pressing ;
+        bdg:date  "2017-09-11"^^xsd:date .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR031_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "80"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR031_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "18.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR032_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:total_volume_pressing  "107"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR032_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "80"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR032_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "27"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR035_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR035_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "38"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR035_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "2"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR036_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
+        bdg:operator               "FJ-MG" ;
+        bdg:total_volume_pressing  "47"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR036_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "42"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR036_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR037_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
+        bdg:operator               "FJ-MG" ;
+        bdg:total_volume_pressing  "47"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR037_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "43"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR037_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "4"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR038_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-29"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
+        bdg:operator      "MG-FJ" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR038_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "77"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR038_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "4.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR039_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-29"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "89"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR039_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "83"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR039_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "6"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR040_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-13"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
+        bdg:operator      "CF" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR040_2017R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR040_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR041_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "113"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR041_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "106"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR041_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR042_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-28"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
+        bdg:operator               "MB" ;
+        bdg:total_volume_pressing  "475"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR042_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "380"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR042_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "95"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR043_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-10-02"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
+        bdg:operator               "MB" ;
+        bdg:total_volume_pressing  "176"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR043_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "124"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR043_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "52"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR045_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-10-02"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
+        bdg:operator               "MB" ;
+        bdg:total_volume_pressing  "230"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR045_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "155"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR045_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "75"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR047_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-29"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
+        bdg:operator               "MB-FG" ;
+        bdg:total_volume_pressing  "330"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR047_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "80"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR047_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "250"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR022_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-20"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
+        bdg:operator               "MLA" ;
+        bdg:total_volume_pressing  "27.2"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR022_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "25.7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR022_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "1.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR023_2016R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2016-10-03"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
+        bdg:operator               "OO-JM" ;
+        bdg:total_volume_pressing  "4.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR023_2016R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR023_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "1.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR023_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-21"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
+        bdg:operator      "FJ-MG-MLA-PA" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR023_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "70"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR023_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "1.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR024_2016R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2016-09-30"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Z23> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Z23> ;
+        bdg:operator               "OO-JM" ;
+        bdg:total_volume_pressing  "13"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR024_2016R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "8.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR024_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "4.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR024_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-21"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
+        bdg:operator      "FJ-MG-MLA-PA" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR024_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "65"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR024_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "35"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR025_2016R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2016-09-30"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/B167_Z25> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/B167_Z25> ;
+        bdg:operator      "OO-JM" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR025_2016R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "29"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR025_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "11.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR025_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-21"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
+        bdg:operator               "MG-PA" ;
+        bdg:total_volume_pressing  "42"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR025_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR025_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "2"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR026_2016R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2016-10-05"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
+        bdg:operator               "OO-JM" ;
+        bdg:total_volume_pressing  "4.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR026_2016R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "2.8"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR026_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "1.7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR026_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-21"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
+        bdg:operator               "FJ-MG-MLA-PA" ;
+        bdg:total_volume_pressing  "81"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR026_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "78"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR026_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR027_2016R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2016-10-03"^^xsd:date ;
+        bdg:operator               "GO" ;
+        bdg:total_volume_pressing  "305"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR027_2016R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "190"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR027_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "115"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR027_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-19"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
+        bdg:operator               "MC" ;
+        bdg:total_volume_pressing  "210"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR027_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "140"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR027_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "70"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR028_2016R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2016-10-03"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P29_P28> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P29_P28> ;
+        bdg:operator               "OG" ;
+        bdg:total_volume_pressing  "270"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR028_2016R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "190"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR028_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "80"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR028_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-10-03"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
+        bdg:operator               "FJ-MB" ;
+        bdg:total_volume_pressing  "43"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR028_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR028_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "3"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR029_2016R>
+        rdf:type                   afeo:Pressing ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/100_5> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/100_5> ;
+        bdg:total_volume_pressing  "61"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR029_2016R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR029_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "18.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR029_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:operator               "MG" ;
+        bdg:total_volume_pressing  "70"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR029_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "30"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR029_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR030_2016R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2016-09-23"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB15_60> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB15_60> ;
+        bdg:operator               "OO-JM" ;
+        bdg:total_volume_pressing  "74"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR030_2016R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR030_2016R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "18.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR030_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:operator               "MG" ;
+        bdg:total_volume_pressing  "82"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR030_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "38"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR030_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "43"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR031_2017R>
+        rdf:type  afeo:Pressing ;
+        bdg:date  "2017-09-11"^^xsd:date .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR031_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "80"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR031_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "18.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR032_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:total_volume_pressing  "107"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR032_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "80"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR032_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "27"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR033_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:operator      "NULL" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR033_2017R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR033_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR034_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:operator      "NULL" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR034_2017R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR034_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR035_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "40"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR035_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "38"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR035_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "2"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR036_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
+        bdg:operator               "FJ-MG" ;
+        bdg:total_volume_pressing  "47"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR036_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "42"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR036_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR037_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
+        bdg:operator               "FJ-MG" ;
+        bdg:total_volume_pressing  "47"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR037_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "43"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR037_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "4"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR038_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-29"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
+        bdg:operator      "MG-FJ" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR038_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "77"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR038_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "4.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR039_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-29"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "89"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR039_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "83"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR039_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "6"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR040_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:date          "2017-09-13"^^xsd:date ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
+        bdg:operator      "CF" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR040_2017R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR040_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR041_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-27"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
+        bdg:operator               "MG-FJ" ;
+        bdg:total_volume_pressing  "113"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR041_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "106"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR041_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "7"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR042_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-28"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
+        bdg:operator               "MB" ;
+        bdg:total_volume_pressing  "475"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR042_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "380"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR042_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "95"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR043_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-10-02"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
+        bdg:operator               "MB" ;
+        bdg:total_volume_pressing  "176"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR043_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "124"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR043_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "52"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR044_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:operator      "NULL" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR044_2017R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR044_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR045_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-10-02"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
+        bdg:operator               "MB" ;
+        bdg:total_volume_pressing  "230"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR045_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "155"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR045_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "75"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR046_2017R>
+        rdf:type          afeo:Pressing ;
+        bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:operator      "NULL" .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR046_2017R>
+        rdf:type  afeo:FreeRunJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR046_2017R>
+        rdf:type  afeo:PressJuice .
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR047_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-29"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
+        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
+        bdg:operator               "MB-FG" ;
+        bdg:total_volume_pressing  "330"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR047_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "80"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR047_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "250"^^xsd:double .
