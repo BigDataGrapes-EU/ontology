@@ -4,7 +4,7 @@ CONSTRUCT {
     rdfs:label ?SAMPLECODE ;
     afeo:hasOutput ?MUST_URI;
   .
-  ?MUST_URI a afeo:Must-AF;
+  ?MUST_URI a afeo:Must;
 .
 } WHERE {
 

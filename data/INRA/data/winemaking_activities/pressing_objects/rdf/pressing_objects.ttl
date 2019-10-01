@@ -89,7 +89,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-08"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P1> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P1> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "CF" ;
         bdg:total_volume_pressing  "128"^^xsd:double .
 
@@ -105,7 +105,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-07"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P8> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P8> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "CF" ;
         bdg:total_volume_pressing  "119"^^xsd:double .
 
@@ -121,7 +121,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-08"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P20> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P20> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "CF" ;
         bdg:total_volume_pressing  "139"^^xsd:double .
 
@@ -137,7 +137,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-14"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A108> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A108> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:total_volume_pressing  "48"^^xsd:double .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR004_2017R>
@@ -152,7 +152,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-14"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A83> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A83> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "90"^^xsd:double .
 
@@ -168,7 +168,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-15"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P18> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P18> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "CF" ;
         bdg:total_volume_pressing  "150"^^xsd:double .
 
@@ -184,7 +184,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-18"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P39> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P39> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "CF" ;
         bdg:total_volume_pressing  "145"^^xsd:double .
 
@@ -200,7 +200,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-14"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Z12> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Z12> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-M" ;
         bdg:total_volume_pressing  "13"^^xsd:double .
 
@@ -216,7 +216,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-20"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "RCA" ;
         bdg:total_volume_pressing  "5.7"^^xsd:double .
 
@@ -231,7 +231,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-14"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Z29> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Z29> ;
+        bdg:equipment              "Petit_Préssoire" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "11"^^xsd:double .
 
@@ -247,7 +247,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-14"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P26_P17> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P26_P17> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MB" ;
         bdg:total_volume_pressing  "245"^^xsd:double .
 
@@ -263,7 +263,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-19"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "RG-FJ-MLA" ;
         bdg:total_volume_pressing  "200"^^xsd:double .
 
@@ -279,7 +279,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-19"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A21> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ-MLA" ;
         bdg:total_volume_pressing  "200"^^xsd:double .
 
@@ -295,7 +295,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-19"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
+        bdg:equipment              "Préssoire" ;
         bdg:operator               "MG-MLA" ;
         bdg:total_volume_pressing  "190"^^xsd:double .
 
@@ -311,7 +311,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-18"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P12> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-MLA" ;
         bdg:total_volume_pressing  "190"^^xsd:double .
 
@@ -327,7 +327,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-18"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B148> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B148> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-MLA" ;
         bdg:total_volume_pressing  "29"^^xsd:double .
 
@@ -343,7 +343,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-05"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/40_12> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/40_12> ;
+        bdg:equipment     "Pneumatique" ;
         bdg:operator      "CF" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR017_2017R>
@@ -356,7 +356,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-20"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne_52_16> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Marie_Jeanne_52_16> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MLA" ;
         bdg:total_volume_pressing  "7"^^xsd:double .
 
@@ -372,7 +372,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-19"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/B75> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/B75> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "MG-FJ" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR019_2017R>
@@ -387,7 +387,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-19"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B130> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B130> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "44"^^xsd:double .
 
@@ -403,7 +403,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-19"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P2> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P2> ;
+        bdg:equipment              "RPF10" ;
         bdg:operator               "MC" ;
         bdg:total_volume_pressing  "280"^^xsd:double .
 
@@ -419,7 +419,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-20"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
+        bdg:equipment              "SEIDEL" ;
         bdg:operator               "MLA" ;
         bdg:total_volume_pressing  "27.2"^^xsd:double .
 
@@ -435,7 +435,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-21"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "FJ-MG-MLA-PA" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR023_2017R>
@@ -450,7 +450,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-21"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "FJ-MG-MLA-PA" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR024_2017R>
@@ -465,7 +465,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-21"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-PA" ;
         bdg:total_volume_pressing  "42"^^xsd:double .
 
@@ -481,7 +481,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-21"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MG-MLA-PA" ;
         bdg:total_volume_pressing  "81"^^xsd:double .
 
@@ -497,7 +497,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-19"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MC" ;
         bdg:total_volume_pressing  "210"^^xsd:double .
 
@@ -513,7 +513,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-10-03"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MB" ;
         bdg:total_volume_pressing  "43"^^xsd:double .
 
@@ -529,7 +529,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-11"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              "Pressoire" ;
         bdg:operator               "MG" ;
         bdg:total_volume_pressing  "70"^^xsd:double .
 
@@ -545,7 +545,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-11"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              "Préssoire" ;
         bdg:operator               "MG" ;
         bdg:total_volume_pressing  "82"^^xsd:double .
 
@@ -558,8 +558,9 @@
         bdg:press_juice_volume  "43"^^xsd:double .
 
 <http://data.bigdatagrapes.eu/resource/pressing/PR031_2017R>
-        rdf:type  afeo:Pressing ;
-        bdg:date  "2017-09-11"^^xsd:date .
+        rdf:type       afeo:Pressing ;
+        bdg:date       "2017-09-11"^^xsd:date ;
+        bdg:equipment  "Micro_préssoire" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR031_2017R>
         rdf:type              afeo:FreeRunJuice ;
@@ -572,6 +573,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR032_2017R>
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:equipment              "Micro_préssoire" ;
         bdg:total_volume_pressing  "107"^^xsd:double .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR032_2017R>
@@ -586,7 +588,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "40"^^xsd:double .
 
@@ -602,7 +604,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MG" ;
         bdg:total_volume_pressing  "47"^^xsd:double .
 
@@ -618,7 +620,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MG" ;
         bdg:total_volume_pressing  "47"^^xsd:double .
 
@@ -634,7 +636,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-29"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "MG-FJ" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR038_2017R>
@@ -649,7 +651,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-29"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "89"^^xsd:double .
 
@@ -665,7 +667,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-13"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "CF" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR040_2017R>
@@ -678,7 +680,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "113"^^xsd:double .
 
@@ -694,7 +696,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-28"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
+        bdg:equipment              "RPF10" ;
         bdg:operator               "MB" ;
         bdg:total_volume_pressing  "475"^^xsd:double .
 
@@ -710,7 +712,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-10-02"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MB" ;
         bdg:total_volume_pressing  "176"^^xsd:double .
 
@@ -726,7 +728,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-10-02"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MB" ;
         bdg:total_volume_pressing  "230"^^xsd:double .
 
@@ -742,7 +744,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-29"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
+        bdg:equipment              "RPF10" ;
         bdg:operator               "MB-FG" ;
         bdg:total_volume_pressing  "330"^^xsd:double .
 
@@ -758,7 +760,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-20"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C23> ;
+        bdg:equipment              "SEIDEL" ;
         bdg:operator               "MLA" ;
         bdg:total_volume_pressing  "27.2"^^xsd:double .
 
@@ -774,7 +776,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2016-10-03"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
+        bdg:equipment              "NULL" ;
         bdg:operator               "OO-JM" ;
         bdg:total_volume_pressing  "4.5"^^xsd:double .
 
@@ -790,7 +792,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-21"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A53> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "FJ-MG-MLA-PA" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR023_2017R>
@@ -805,7 +807,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2016-09-30"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Z23> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Z23> ;
+        bdg:equipment              "NULL" ;
         bdg:operator               "OO-JM" ;
         bdg:total_volume_pressing  "13"^^xsd:double .
 
@@ -821,7 +823,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-21"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A18> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "FJ-MG-MLA-PA" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR024_2017R>
@@ -836,7 +838,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2016-09-30"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/B167_Z25> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/B167_Z25> ;
+        bdg:equipment     "NULL" ;
         bdg:operator      "OO-JM" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR025_2016R>
@@ -851,7 +853,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-21"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B176> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-PA" ;
         bdg:total_volume_pressing  "42"^^xsd:double .
 
@@ -867,7 +869,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2016-10-05"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/Cruches_x2> ;
+        bdg:equipment              "NULL" ;
         bdg:operator               "OO-JM" ;
         bdg:total_volume_pressing  "4.5"^^xsd:double .
 
@@ -883,7 +885,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-21"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A41> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MG-MLA-PA" ;
         bdg:total_volume_pressing  "81"^^xsd:double .
 
@@ -898,6 +900,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR027_2016R>
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2016-10-03"^^xsd:date ;
+        bdg:equipment              "PHP10" ;
         bdg:operator               "GO" ;
         bdg:total_volume_pressing  "305"^^xsd:double .
 
@@ -913,7 +916,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-19"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P16> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MC" ;
         bdg:total_volume_pressing  "210"^^xsd:double .
 
@@ -929,7 +932,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2016-10-03"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P29_P28> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P29_P28> ;
+        bdg:equipment              "PHP10" ;
         bdg:operator               "OG" ;
         bdg:total_volume_pressing  "270"^^xsd:double .
 
@@ -945,7 +948,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-10-03"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/C16_C14> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MB" ;
         bdg:total_volume_pressing  "43"^^xsd:double .
 
@@ -960,7 +963,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR029_2016R>
         rdf:type                   afeo:Pressing ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/100_5> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/100_5> ;
+        bdg:equipment              "NULL" ;
         bdg:total_volume_pressing  "61"^^xsd:double .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR029_2016R>
@@ -974,7 +977,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-11"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              "Pressoire" ;
         bdg:operator               "MG" ;
         bdg:total_volume_pressing  "70"^^xsd:double .
 
@@ -990,7 +993,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2016-09-23"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB15_60> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB15_60> ;
+        bdg:equipment              "NULL" ;
         bdg:operator               "OO-JM" ;
         bdg:total_volume_pressing  "74"^^xsd:double .
 
@@ -1005,7 +1008,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-11"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/BB200L> ;
+        bdg:equipment              "Préssoire" ;
         bdg:operator               "MG" ;
         bdg:total_volume_pressing  "82"^^xsd:double .
 
@@ -1018,8 +1021,9 @@
         bdg:press_juice_volume  "43"^^xsd:double .
 
 <http://data.bigdatagrapes.eu/resource/pressing/PR031_2017R>
-        rdf:type  afeo:Pressing ;
-        bdg:date  "2017-09-11"^^xsd:date .
+        rdf:type       afeo:Pressing ;
+        bdg:date       "2017-09-11"^^xsd:date ;
+        bdg:equipment  "Micro_préssoire" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR031_2017R>
         rdf:type              afeo:FreeRunJuice ;
@@ -1032,6 +1036,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR032_2017R>
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-11"^^xsd:date ;
+        bdg:equipment              "Micro_préssoire" ;
         bdg:total_volume_pressing  "107"^^xsd:double .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR032_2017R>
@@ -1045,7 +1050,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR033_2017R>
         rdf:type          afeo:Pressing ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     "NULL" ;
         bdg:operator      "NULL" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR033_2017R>
@@ -1057,7 +1062,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR034_2017R>
         rdf:type          afeo:Pressing ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     "NULL" ;
         bdg:operator      "NULL" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR034_2017R>
@@ -1070,7 +1075,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B99> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "40"^^xsd:double .
 
@@ -1086,7 +1091,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B7> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MG" ;
         bdg:total_volume_pressing  "47"^^xsd:double .
 
@@ -1102,7 +1107,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/B179> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "FJ-MG" ;
         bdg:total_volume_pressing  "47"^^xsd:double .
 
@@ -1118,7 +1123,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-29"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "MG-FJ" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR038_2017R>
@@ -1133,7 +1138,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-29"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "89"^^xsd:double .
 
@@ -1149,7 +1154,7 @@
         rdf:type          afeo:Pressing ;
         bdg:date          "2017-09-13"^^xsd:date ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/BB225> ;
+        bdg:equipment     "SPEIDEL" ;
         bdg:operator      "CF" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR040_2017R>
@@ -1162,7 +1167,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-27"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P42> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MG-FJ" ;
         bdg:total_volume_pressing  "113"^^xsd:double .
 
@@ -1178,7 +1183,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-28"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I13_P20> ;
+        bdg:equipment              "RPF10" ;
         bdg:operator               "MB" ;
         bdg:total_volume_pressing  "475"^^xsd:double .
 
@@ -1194,7 +1199,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-10-02"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P38> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MB" ;
         bdg:total_volume_pressing  "176"^^xsd:double .
 
@@ -1209,7 +1214,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR044_2017R>
         rdf:type          afeo:Pressing ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     "NULL" ;
         bdg:operator      "NULL" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR044_2017R>
@@ -1222,7 +1227,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-10-02"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/P41_P49> ;
+        bdg:equipment              "SPEIDEL" ;
         bdg:operator               "MB" ;
         bdg:total_volume_pressing  "230"^^xsd:double .
 
@@ -1237,7 +1242,7 @@
 <http://data.bigdatagrapes.eu/resource/pressing/PR046_2017R>
         rdf:type          afeo:Pressing ;
         bdg:pressingTank  <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
-        bdg:equipment     <http://data.bigdatagrapes.eu/resource/pressingTank/NULL> ;
+        bdg:equipment     "NULL" ;
         bdg:operator      "NULL" .
 
 <http://data.bigdatagrapes.eu/resource/runJuice/PR046_2017R>
@@ -1250,7 +1255,7 @@
         rdf:type                   afeo:Pressing ;
         bdg:date                   "2017-09-29"^^xsd:date ;
         bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
-        bdg:equipment              <http://data.bigdatagrapes.eu/resource/pressingTank/I24> ;
+        bdg:equipment              "RPF10" ;
         bdg:operator               "MB-FG" ;
         bdg:total_volume_pressing  "330"^^xsd:double .
 

@@ -2,7 +2,7 @@
 CONSTRUCT {
   ?URI a qb:Observation;
      qb:dataSet <data/winemaking/sensoryAnalysis/BeforeBottling/2017> ;
-     bdg:wine ?WINE_URI ; 
+     bdg:wine ?WINE_URI ;
      bdg:sensoryFlavor ?FLAVOR_URI ;
      bdg:judgeNumber  ?JUDGENUMBER ;
      bdg:flavorJudgeRatio ?RATIO;

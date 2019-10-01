@@ -3,7 +3,7 @@ CONSTRUCT {
   ?URI a afeo:Pressing;
     bdg:date ?DATE_OK ;
     bdg:pressingTank  ?TANK_URI;  
-    bdg:equipment  ?TANK_URI;  
+    bdg:equipment  ?EQUIPMENT;  
     bdg:operator  ?OPERATOR_VALID;
     bdg:total_volume_pressing ?TOTAL_VOLUME_PRESSING; 
   .
@@ -33,8 +33,10 @@ CONSTRUCT {
   BIND(xsd:date(?DATE)  as ?DATE_OK)
 
   BIND(REPLACE(REPLACE(REPLACE(?tank, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?TANK)
-
   BIND(uri(concat("pressingTank/",?TANK)) as ?TANK_URI)
+
+  BIND(REPLACE(REPLACE(REPLACE(?equipment, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EQUIPMENT)
+  BIND(uri(concat("equipment/",?EQUIPMENT)) as ?EQUIPMENT_URI)
   
   BIND(IF(REPLACE(?pressJuiceVolume,"[^\\.0-9]","")!= "", xsd:double(?pressJuiceVolume), xsd:double("NaN")) as ?PRESS_JUICE_VOLUME)
   BIND(IF(REPLACE(?totalVolume,"[^\\.0-9]","")!= "", xsd:double(?totalVolume), xsd:double("NaN")) as ?TOTAL_VOLUME_PRESSING)
