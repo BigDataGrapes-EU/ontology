@@ -1,0 +1,8 @@
+#CONSTRUCT {
+# ?OBS_URI a qb:Observation ;
+#    qb:dataSet ?DATASET;
+#    bdg:date ?DATE ;
+#    bdg:berry  ?BERRY;
+#    bdg:
+
+# à terminer avec l'aide d'Arnaud!
