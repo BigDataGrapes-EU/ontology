@@ -1,8 +1,24 @@
-#CONSTRUCT {
-# ?OBS_URI a qb:Observation ;
-#    qb:dataSet ?DATASET;
-#    bdg:date ?DATE ;
-#    bdg:berry  ?BERRY;
-#    bdg:
+#entêtes de colonnes
+CONSTRUCT {
+  ?OBS_URI a qb:Observation ;
+    qb:dataSet ?DATASET ;
+    bdg:Vinestock ?VINESTOCK ;
+    bdg:probable_alcohol ?PROBABLEALCOHOL ;
+    bdg:total_acidity ?TOTALACIDITY ;
+    bdg:date ?DATE ;
+.
+} WHERE {
+#comment construire URI , variables utilisées
 
-# à terminer avec l'aide d'Arnaud!
+  BIND(<data/wineMaking/PechRouge/grapeMaturation/2017> as ?DATASET)
+
+  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK)
+
+  BIND(IF(REPLACE(?ProbableAlcohol,"[^\\.0-9]","")!= "", xsd:double(?ProbableAlcohol), xsd:double("NaN")) as ?PROBABLEALCOHOL)
+
+  BIND(IF(REPLACE(?TotalAcidity,"[^\\.0-9]","")!= "", xsd:double(?TotalAcidity), xsd:double("NaN")) as ?TOTALACIDITY)
+
+  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/2017/",?date,?VINESTOCK, STR(?ROWNUM))) as ?OBS_URI)
+
+  BIND(xsd:date(?date) as ?DATE)
+}
