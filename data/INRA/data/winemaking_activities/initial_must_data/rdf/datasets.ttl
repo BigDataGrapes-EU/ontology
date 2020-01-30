@@ -1,14 +1,17 @@
-<DSD/harvestWeight> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:berry          ]; # it's subPLot in table grape data model
-  qb:component [qb:dimension bdg:dateTime       ]; # date time some times we have the time , some time not
- # qb:component [qb:attribute bdg:operator   ]; # not constant
-  qb:component [qb:attribute bdg:harvestMethod  ];
-  qb:component [qb:measure   bdg:weight         ];
+<DSD/intialMust> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:must               ]; # it's subPLot in table grape data model
+  qb:component [qb:dimension bdg:date               ]; # date time some times we have the time , some time not
+  qb:component [qb:dimension bdg:experiment         ]; # experiment 
+  qb:component [qb:measure   bdg:totalSugar         ];
+  qb:component [qb:measure   bdg:sugars             ];
+  qb:component [qb:measure   bdg:probableAlcohol    ];
+  qb:component [qb:measure   bdg:pH                 ];
+  qb:component [qb:measure   bdg:totalAcidity       ];
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
-<data/wineMaking/PechRouge/intialMustData/2017> a qb:DataSet;
+<data/wineMaking/PechRouge/intialMust/2017> a qb:DataSet;
   rdfs:label "Data about must initial done on Pech Rouge in 2017";
-  sosa:FeatureOfInterest afeo:Berry;
+  sosa:FeatureOfInterest afeo:Must;
   bdg:date "2017-01-01"^^xsd:date ;
-  qb:structure <DSD/harvestWeight> . 
+  qb:structure <DSD/intialMust> . 

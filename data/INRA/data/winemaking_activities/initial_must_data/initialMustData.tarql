@@ -2,41 +2,34 @@
 CONSTRUCT {
   ?OBS_URI a qb:Observation ;
     qb:dataSet ?DATASET;
-    bdg:experiment ?EXPERIMENT_URI; # it will change
-    bdg:must  ?BERRY;  
+    bdg:experiment ?EXPERIMENT_URI; 
+    bdg:must  ?MUST_URI;  # it will change
     bdg:date ?DATE ;
-    bdg:laboratory ?WEIGHT;
-   # bdg:operator ?OPERATOR_VALID;
-    bdg:harvestMethod ?HARVESTMETHOD;
+    bdg:laboratory ?LABORATORY_ID;
+    bdg:totalSugar ?TOTALSUGAR;
+    bdg:sugars ?SUGARS;
+    bdg:probableAlcohol ?PROBABLEALCOHOL;
+    bdg:pH ?PH;
+    bdg:totalAcidity ?TOTALACIDITY;
+
   .
 } WHERE {
 
-  BIND(<data/wineMaking/PechRouge/InitialMustData/2017> as ?DATASET)
 
-  BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
-  BIND(uri(concat("harvesting/",?SAMPLECODE)) as ?URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/intialMust/2017/",?DATE,?LABORATORY_ID,?DATE,?EXPERIMENT_URI)) as ?OBS_URI)
 
-  BIND(uri(CONCAT("berry/",?SAMPLECODE)) as ?BERRY)
+  BIND(<data/wineMaking/PechRouge/intialMust/2017> as ?DATASET)
 
-  BIND(REPLACE(REPLACE(REPLACE(?harvestMethod, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?HARVESTMETHOD)
+  BIND(uri(CONCAT("experiment/",?experiment_code)) as ?EXPERIMENT_URI)
 
-  BIND(IF(REPLACE(REPLACE(REPLACE(?operator, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")!= "", ?operator, "Unknown operator") as ?OPERATOR)
+  BIND(CONCAT(REPLACE(?date,"(\\d{2})/(\\d{2})/\\d{0,2}(\\d{2})","$3-$1-$2"))  as ?DATE)
 
-  BIND(IF( strlen(?OPERATOR)>0, ?OPERATOR, "Unknown operator") as ?OPERATOR_VALID)
+  BIND(uri(CONCAT("laboratory/",?laboratoryNumber)) as ?LABORATORY_ID)
 
+  BIND(IF(REPLACE(?totalSugar,"[^\\.0-9]","")!= "", xsd:double(?totalSugar), xsd:double("NaN")) as ?TOTALSUGAR)
+  BIND(IF(REPLACE(?sugars,"[^\\.0-9]","")!= "", xsd:double(?sugars), xsd:double("NaN")) as ?SUGARS)
+  BIND(IF(REPLACE(?probableAlcohol,"[^\\.0-9]","")!= "", xsd:double(?probableAlcohol), xsd:double("NaN")) as ?PROBABLEALCOHOL)
+  BIND(IF(REPLACE(?pH,"[^\\.0-9]","")!= "", xsd:double(?pH), xsd:double("NaN")) as ?PH)
+  BIND(IF(REPLACE(?totalAcidity,"[^\\.0-9]","")!= "", xsd:double(?totalAcidity), xsd:double("NaN")) as ?TOTALACIDITY)
 
-  # BIND(IF(REPLACE(?vinestockNumber,"[^\\.0-9]","")!= "", xsd:double(?vinestockNumber), xsd:string("NaN")) as ?VINESTOCKNUMBER)
-
-  BIND(CONCAT(REPLACE(?date,"(\\d{2})/(\\d{2})/\\d{0,2}(\\d{2})","20$3-$1-$2"))  as ?DATE)
-    
- 
- 
-  #?uniqueObjectCode apf:strSplit (?objectCode "\\+")
-  BIND(REPLACE(REPLACE(REPLACE(?objectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?OBJECTCODE)
-
-  BIND(uri(CONCAT("INRA/estate/PechRouge/",REPLACE(?OBJECTCODE, " " ,""))) as ?OBJECTCODE_URI)
-
-  BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
-
-  BIND(uri(CONCAT("data/winemaking/PechRouge/harvestData/2017/",?SAMPLECODE)) as ?OBS_URI)
 }
