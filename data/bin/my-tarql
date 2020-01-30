@@ -5,6 +5,5 @@
 #cd ./TRR/tarql
 
 sed -r "s/^\@(.*>)\s*\./\1/g" $2 $3 > $$.tarql
-#tarql --encoding utf8 $1 $$.tarql $4
-/home/coraline/Documents/autre-general/tarql-1.2/bin/tarql --encoding utf8 $1 $$.tarql $4
-# rm $$.tarql
+tarql --encoding utf8 $1 $$.tarql $4
+rm $$.tarql
