@@ -1,0 +1,21 @@
+#entêtes de colonnes
+CONSTRUCT {
+  ?OBS_URI a qb:Observation ;
+    qb:dataSet ?DATASET ;
+    bdg:Vinestock ?VINESTOCK ;
+    bdg:sugars ?SUGARS ;
+    bdg:date ?DATE ;
+.
+} WHERE {
+#comment construire URI , variables utilisées
+
+  BIND(<data/wineMaking/PechRouge/grapeMaturation/2017/Sugars> as ?DATASET)
+
+  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK)
+
+  BIND(IF(REPLACE(?sugars,"[^\\.0-9]","")!= "", xsd:double(?sugars), xsd:double("NaN")) as ?SUGARS)
+
+  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/2017/Sugars",?date,?VINESTOCK, STR(?ROWNUM))) as ?OBS_URI)
+
+  BIND(xsd:date(?date) as ?DATE)
+}
