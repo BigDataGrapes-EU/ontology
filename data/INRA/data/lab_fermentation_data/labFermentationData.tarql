@@ -16,9 +16,9 @@ CONSTRUCT {
 
   BIND(REPLACE(REPLACE(REPLACE(?fermentationTank, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATIONTANK)
 
-  BIND(IF(REPLACE(?acidity_volatile_H2SO4,"[^\\.0-9]","")!= "", xsd:double(?brix), xsd:double("NaN")) as ?VOLATILEACIDITY)
+  BIND(IF(REPLACE(?acidity_volatile_H2SO4,"[^\\.0-9]","")!= "", xsd:double(?acidity_volatile_H2SO4), xsd:double("NaN")) as ?VOLATILEACIDITY)
   
-  BIND(IF(REPLACE(?sugars,"[^\\.0-9]","")!= "", xsd:double(?brix), xsd:double("NaN")) as ?SUGARS)
+  BIND(IF(REPLACE(?sugars,"[^\\.0-9]","")!= "", xsd:double(?sugars), xsd:double("NaN")) as ?SUGARS)
 
   BIND(uri(CONCAT("data/wineMaking/PechRouge/labFermentation/2017",?date,?winemakingFormNumber)) as ?OBS_URI)
 
