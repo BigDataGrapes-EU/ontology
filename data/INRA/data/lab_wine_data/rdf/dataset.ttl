@@ -1,0 +1,31 @@
+<DSD/wineAnalysis> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:wine               ]; 
+  qb:component [qb:dimension bdg:date               ]; 
+  qb:component [qb:dimension bdg:experiment         ]; # experiment 
+  qb:component [qb:measure   bdg:alcohol         ];
+  qb:component [qb:measure   bdg:acidity_volatile_H2SO4             ];
+  qb:component [qb:measure   bdg:pH    ];
+  qb:component [qb:measure   bdg:acidity_total                 ];
+  qb:component [qb:measure   bdg:free_SO2       ];
+  qb:component [qb:measure   bdg:total_SO2       ];
+  qb:component [qb:measure   bdg:free_SO2       ];
+  qb:component [qb:measure   bdg:density_optical_420       ];
+  qb:component [qb:measure   bdg:density_optical_520       ];
+  qb:component [qb:measure   bdg:density_optical_620       ];
+  qb:component [qb:measure   bdg:lightness       ];
+  qb:component [qb:measure   bdg:green_red_component       ];
+  qb:component [qb:measure   bdg:blue_yellow_component       ];
+  qb:component [qb:measure   bdg:anthocyanins       ];
+  qb:component [qb:measure   bdg:total_polyphenol_index       ];
+
+
+
+
+  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
+  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
+
+<data/wineMaking/PechRouge/laboratoryAnalysisWine/2017> a qb:DataSet;
+  rdfs:label "laboratory analysis on wine at the end of the winemaking process in 2017";
+  sosa:FeatureOfInterest afeo:Wine;
+  bdg:date "2017-01-01"^^xsd:date ;
+  qb:structure <wineAnalysis> . 

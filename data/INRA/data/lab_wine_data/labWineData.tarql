@@ -1,0 +1,60 @@
+#entêtes de colonnes
+CONSTRUCT {
+  ?OBS_URI a qb:Observation ;
+    qb:dataSet ?DATASET ;
+    bdg:experiment ?EXPERIMENT ; 
+    bdg:laboratory ?LABORATORY ;
+    bdg:date ?DATE ;
+    bdg:alcohol ?ALCOHOL;
+    bdg:acidity_volatile_H2SO4 ?VOLATILEACIDITY;
+    bdg:pH ?PH;
+    bdg:acidity_total ?TOTALACIDITY;
+    bdg:free_SO2 ?FREESO2;
+    bdg:total_SO2 ?TOTALSO2;
+    bdg:total_polyphenol_index ?TOTALPOLYPHENOLINDEX;
+    bdg:anthocyanins ?ANTHOCYANINS;
+    bdg:density_optical_420 ?OPTICALDESNITY420;
+    bdg:density_optical_520 ?OPTICALDENSITY520;
+    bdg:density_optical_620 ?OPTICALDENSITY620;
+    bdg:lightness ?LIGHTNESS;
+    bdg:green_red_component ?GREENREDCOMPONENT;
+    bdg:blue_yellow_component ?BLUEYELLOWCOMPONENT;
+
+
+
+
+.
+} WHERE {
+#comment construire URI , variables utilisées
+
+  BIND(<data/wineMaking/PechRouge/laboratoryAnalysisWine/2017> as ?DATASET)
+  
+  BIND(IF(REPLACE(?alcohol,"[^\\.0-9]","")!= "", xsd:double(?alcohol), xsd:double("NaN")) as ?ALCOHOL)
+
+  BIND(IF(REPLACE(?acidity_volatile_H2SO4,"[^\\.0-9]","")!= "", xsd:double(?acidity_volatile_H2SO4), xsd:double("NaN")) as ?VOLATILEACIDITY)
+  
+  BIND(IF(REPLACE(?pH,"[^\\.0-9]","")!= "", xsd:double(?pH), xsd:double("NaN")) as ?PH)
+  
+  BIND(IF(REPLACE(?acidity_total,"[^\\.0-9]","")!= "", xsd:double(?acidity_total), xsd:double("NaN")) as ?TOTALACIDITY)
+
+  BIND(IF(REPLACE(?free_SO2,"[^\\.0-9]","")!= "", xsd:double(?free_SO2), xsd:double("NaN")) as ?FREESO2)
+  
+  BIND(IF(REPLACE(?total_SO2,"[^\\.0-9]","")!= "", xsd:double(?total_SO2), xsd:double("NaN")) as ?TOTALSO2)
+  
+  BIND(IF(REPLACE(?total_polyphenol_index,"[^\\.0-9]","")!= "", xsd:double(?total_polyphenol_index), xsd:double("NaN")) as ?TOTALPOLYPHENOLINDEX)
+  
+  BIND(IF(REPLACE(?anthocyanins,"[^\\.0-9]","")!= "", xsd:double(?anthocyanins), xsd:double("NaN")) as ?ANTHOCYANINS)
+  
+  BIND(IF(REPLACE(?density_optical_420,"[^\\.0-9]","")!= "", xsd:double(?density_optical_420), xsd:double("NaN")) as ?OPTICALDESNITY420)
+  BIND(IF(REPLACE(?density_optical_520,"[^\\.0-9]","")!= "", xsd:double(?density_optical_520), xsd:double("NaN")) as ?OPTICALDESNITY520)
+  BIND(IF(REPLACE(?density_optical_620,"[^\\.0-9]","")!= "", xsd:double(?density_optical_620), xsd:double("NaN")) as ?OPTICALDESNITY620)
+  
+  BIND(IF(REPLACE(?lightness,"[^\\.0-9]","")!= "", xsd:double(?lightness), xsd:double("NaN")) as ?LIGHTNESS)
+  BIND(IF(REPLACE(?green_red_component,"[^\\.0-9]","")!= "", xsd:double(?green_red_component), xsd:double("NaN")) as ?GREENREDCOMPONENT)
+  BIND(IF(REPLACE(?blue_yellow_component,"[^\\.0-9]","")!= "", xsd:double(?blue_yellow_component), xsd:double("NaN")) as ?BLUEYELLOWCOMPONENT)
+
+
+  BIND(uri(CONCAT("data/wineMaking/PechRouge/laboratoryAnalysisWine/2017",?date,?experiment)) as ?OBS_URI)
+
+  BIND(xsd:date(?date) as ?DATE)
+}
