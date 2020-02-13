@@ -22,7 +22,7 @@ CONSTRUCT {
 
   BIND(IF(?acidity_volatile_H2SO4 != "",  strdt( REPLACE(?acidity_volatile_H2SO4,",","."),xsd:double), strdt( "NaN",xsd:double )) as ?VOLATILEACIDITY)
 
-  BIND(uri(CONCAT("data/wineMaking/PechRouge/mustDuringFermentation/2017",?date,?winemakingFormNumber)) as ?OBS_URI)
+  BIND(uri(CONCAT("data/wineMaking/PechRouge/mustDuringFermentation/2017",?date,"/",?winemakingFormNumber)) as ?OBS_URI)
 
   BIND(xsd:date(?date) as ?DATE)
 }

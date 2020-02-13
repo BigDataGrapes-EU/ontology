@@ -1,9 +1,9 @@
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/intialMust/2017/2017_PREVOX_0117-18-0817-1057>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/intialMust/2017/2017-08-18/2017_PREVOX_01/17-1057>
         rdf:type             qb:Observation ;
         qb:dataSet           <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/intialMust/2017> ;
         bdg:experiment       <http://data.bigdatagrapes.eu/resource/experiment/2017_PREVOX_01> ;
-        bdg:date             "17-18-08" ;
+        bdg:must             <http://data.bigdatagrapes.eu/resource/must/FV_2017_001> ;
+        bdg:date             "2017-08-18"^^xsd:date ;
         bdg:laboratory       <http://data.bigdatagrapes.eu/resource/laboratory/17-1057> ;
         bdg:totalSugar       "23.6"^^xsd:double ;
         bdg:sugars           "233.4"^^xsd:double ;
@@ -11,11 +11,12 @@
         bdg:pH               "3.62"^^xsd:double ;
         bdg:totalAcidity     "3.17"^^xsd:double .
 
-<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/intialMust/2017/2017_PREVOX_0217-18-0817-1058>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/intialMust/2017/2017-08-18/2017_PREVOX_02/17-1058>
         rdf:type             qb:Observation ;
         qb:dataSet           <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/intialMust/2017> ;
         bdg:experiment       <http://data.bigdatagrapes.eu/resource/experiment/2017_PREVOX_02> ;
-        bdg:date             "17-18-08" ;
+        bdg:must             <http://data.bigdatagrapes.eu/resource/must/FV_2017_002> ;
+        bdg:date             "2017-08-18"^^xsd:date ;
         bdg:laboratory       <http://data.bigdatagrapes.eu/resource/laboratory/17-1058> ;
         bdg:totalSugar       "22.2"^^xsd:double ;
         bdg:sugars           "217.2"^^xsd:double ;
