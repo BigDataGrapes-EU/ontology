@@ -2,7 +2,7 @@ CONSTRUCT {
   ?OBS_URI a qb:Observation ;
     qb:dataSet ?DATASET;
     bdg:experiment ?EXPERIMENT_URI; 
-    bdg:must  ?MUST_URI;  # it will change
+    bdg:must  ?MUST_URI; 
     bdg:date ?FORMATTED_DATE ;
     bdg:laboratory ?LABORATORY_ID;
     bdg:totalSugar ?TOTALSUGAR;
