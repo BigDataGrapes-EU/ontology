@@ -2,6 +2,9 @@
   qb:component [qb:dimension bdg:must               ]; 
   qb:component [qb:dimension bdg:date               ];  
   qb:component [qb:dimension bdg:harvestFormNumber         ]; # on l'ajoute dans la google sheet?
+
+
+  
   qb:component [qb:measure   bdg:sugars                 ];
   qb:component [qb:measure   bdg:acidity_volatile_H2SO4       ];
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
