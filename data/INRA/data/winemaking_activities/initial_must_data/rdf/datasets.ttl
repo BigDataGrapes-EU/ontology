@@ -1,7 +1,8 @@
 <DSD/intialMust> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:must               ]; # it's subPLot in table grape data model
-  qb:component [qb:dimension bdg:date               ]; # date time some times we have the time , some time not
+  qb:component [qb:dimension bdg:must               ]; 
+  qb:component [qb:dimension bdg:date               ];
   qb:component [qb:dimension bdg:experiment         ]; # experiment 
+  qb:component [qb:dimension bdg:laboratory         ]; # experiment 
   qb:component [qb:measure   bdg:totalSugar         ];
   qb:component [qb:measure   bdg:sugars             ];
   qb:component [qb:measure   bdg:probableAlcohol    ];

@@ -7,7 +7,7 @@
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
-<data/wineMaking/PechRouge/labFermentation/2017> a qb:DataSet;
+<data/wineMaking/PechRouge/mustDuringFermentation/2017> a qb:DataSet;
   rdfs:label "laboratory analysis on must during the process of fermentation in 2017";
   sosa:FeatureOfInterest afeo:Must;
   bdg:date "2017-01-01"^^xsd:date ;

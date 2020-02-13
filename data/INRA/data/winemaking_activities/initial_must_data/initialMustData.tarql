@@ -1,10 +1,9 @@
-
 CONSTRUCT {
   ?OBS_URI a qb:Observation ;
     qb:dataSet ?DATASET;
     bdg:experiment ?EXPERIMENT_URI; 
     bdg:must  ?MUST_URI;  # it will change
-    bdg:date ?DATE ;
+    bdg:date ?FORMATTED_DATE ;
     bdg:laboratory ?LABORATORY_ID;
     bdg:totalSugar ?TOTALSUGAR;
     bdg:sugars ?SUGARS;
@@ -15,21 +14,24 @@ CONSTRUCT {
   .
 } WHERE {
 
-
-  BIND(uri(CONCAT("data/winemaking/PechRouge/intialMust/2017/",?DATE,?LABORATORY_ID,?DATE,?EXPERIMENT_URI)) as ?OBS_URI)
-
   BIND(<data/wineMaking/PechRouge/intialMust/2017> as ?DATASET)
 
   BIND(uri(CONCAT("experiment/",?experiment_code)) as ?EXPERIMENT_URI)
 
-  BIND(CONCAT(REPLACE(?date,"(\\d{2})/(\\d{2})/\\d{0,2}(\\d{2})","$3-$1-$2"))  as ?DATE)
+  BIND(CONCAT(REPLACE(?date,"(\\d{2})/(\\d{2})/(\\d{4})","$3-$2-$1"))  as ?DATE)
+  BIND(strdt(?DATE,xsd:date)  as ?FORMATTED_DATE)
 
   BIND(uri(CONCAT("laboratory/",?laboratoryNumber)) as ?LABORATORY_ID)
-
+  BIND(REPLACE(REPLACE(REPLACE(?code_lot, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?CODELOT)
+  
+  # bdg:must/FV-2017-001
+  BIND(uri(CONCAT("must/",?CODELOT)) as ?MUST_URI)
+  # variables
   BIND(IF(REPLACE(?totalSugar,"[^\\.0-9]","")!= "", xsd:double(?totalSugar), xsd:double("NaN")) as ?TOTALSUGAR)
   BIND(IF(REPLACE(?sugars,"[^\\.0-9]","")!= "", xsd:double(?sugars), xsd:double("NaN")) as ?SUGARS)
   BIND(IF(REPLACE(?probableAlcohol,"[^\\.0-9]","")!= "", xsd:double(?probableAlcohol), xsd:double("NaN")) as ?PROBABLEALCOHOL)
   BIND(IF(REPLACE(?pH,"[^\\.0-9]","")!= "", xsd:double(?pH), xsd:double("NaN")) as ?PH)
   BIND(IF(REPLACE(?totalAcidity,"[^\\.0-9]","")!= "", xsd:double(?totalAcidity), xsd:double("NaN")) as ?TOTALACIDITY)
 
+  BIND(uri(CONCAT("data/winemaking/PechRouge/intialMust/2017/",?experiment_code,?DATE,?laboratoryNumber)) as ?OBS_URI)
 }
