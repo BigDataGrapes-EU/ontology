@@ -9,6 +9,7 @@
   qb:component [qb:measure   bdg:free_SO2       ];
   qb:component [qb:measure   bdg:total_SO2       ];
   qb:component [qb:measure   bdg:free_SO2       ];
+  # qb:component [qb:measure   bdg:density_optical_320       ];
   qb:component [qb:measure   bdg:density_optical_420       ];
   qb:component [qb:measure   bdg:density_optical_520       ];
   qb:component [qb:measure   bdg:density_optical_620       ];
@@ -28,4 +29,4 @@
   rdfs:label "laboratory analysis on wine at the end of the winemaking process in 2017";
   sosa:FeatureOfInterest afeo:Wine;
   bdg:date "2017-01-01"^^xsd:date ;
-  qb:structure <wineAnalysis> . 
+  qb:structure <DSD/wineAnalysis> . 

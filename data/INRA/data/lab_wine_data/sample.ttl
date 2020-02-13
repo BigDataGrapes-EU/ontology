@@ -1,0 +1,33 @@
+<http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/laboratoryAnalysisWine/20172018-01-302017_RESDUR_B>
+        rdf:type                    qb:Observation ;
+        qb:dataSet                  <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/laboratoryAnalysisWine/2017> ;
+        bdg:experiment              <http://data.bigdatagrapes.eu/resource/experiment/2017_RESDUR_B> ;
+        bdg:wine                    <http://data.bigdatagrapes.eu/resource/wine/2017_RESDUR_B> ;
+        bdg:date                    "2018-01-30"^^xsd:date ;
+        bdg:alcohol                 "13.5"^^xsd:double ;
+        bdg:acidity_volatile_H2SO4  "0.22"^^xsd:double ;
+        bdg:pH                      "3.05"^^xsd:double ;
+        bdg:acidity_total           "3.815"^^xsd:double ;
+        bdg:free_SO2                "15"^^xsd:double ;
+        bdg:total_SO2               "92"^^xsd:double ;
+        bdg:density_optical_420     "0.071"^^xsd:double ;
+        bdg:lightness               "99.1"^^xsd:double ;
+        bdg:green_red_component     "-0.73"^^xsd:double ;
+        bdg:blue_yellow_component   "5.2"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/laboratoryAnalysisWine/20172018-01-302017_RUN_ST2_21_B>
+        rdf:type                    qb:Observation ;
+        qb:dataSet                  <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/laboratoryAnalysisWine/2017> ;
+        bdg:experiment              <http://data.bigdatagrapes.eu/resource/experiment/2017_RUN_ST2_21_B> ;
+        bdg:wine                    <http://data.bigdatagrapes.eu/resource/wine/2017_RUN_ST2_21_B> ;
+        bdg:date                    "2018-01-30"^^xsd:date ;
+        bdg:alcohol                 "13.65"^^xsd:double ;
+        bdg:acidity_volatile_H2SO4  "0.28"^^xsd:double ;
+        bdg:pH                      "3.28"^^xsd:double ;
+        bdg:acidity_total           "3.658"^^xsd:double ;
+        bdg:free_SO2                "14"^^xsd:double ;
+        bdg:total_SO2               "86"^^xsd:double ;
+        bdg:density_optical_420     "0.068"^^xsd:double ;
+        bdg:lightness               "99.3"^^xsd:double ;
+        bdg:green_red_component     "-0.86"^^xsd:double ;
+        bdg:blue_yellow_component   "5.31"^^xsd:double .
