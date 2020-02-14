@@ -1,0 +1,26 @@
+#entêtes de colonnes
+CONSTRUCT {
+  ?OBS_URI a qb:Observation ;
+    qb:dataSet ?DATASET ;
+    bdg:plot ?OBJECTCODE_URI ; #pas sur pas que plot!
+    bdg:irrigation ?BRIX ; 
+    bdg:date ?DATE ;
+
+  .
+} WHERE {
+
+  BIND(<data/wineMaking/PechRouge/plotData/irrigation> as ?DATASET)
+  
+  BIND(IF(REPLACE(?probable_alcohol,"[^\\.0-9]","")!= "", xsd:double(?probable_alcohol), xsd:double("NaN")) as ?PROBABLEALCOHOL)
+  
+  BIND(REPLACE(REPLACE(REPLACE(?objectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?OBJECTCODE)
+
+  BIND(xsd:date(?date) as ?DATE)
+
+  BIND(uri(CONCAT("INRA/estate/PechRouge/",REPLACE(?OBJECTCODE, " " ,""))) as ?OBJECTCODE_URI) # pas sur pas que plot
+  
+  BIND( STRLEN(?value) > 0 as ?VALUE_EXIST)
+  BIND( IF(?VALUE_EXIST, uri(CONCAT("data/winemaking/PechRouge/plotData/irrigation/",?DATE,"/",?OBJECTCODE)),?value) as ?OBS_URI)
+
+
+}
