@@ -10,7 +10,7 @@ CONSTRUCT {
   .
 } WHERE {
 
-  BIND(<data/wineMaking/PechRouge/HarvestData/2017> as ?DATASET)
+  BIND(<data/wineMaking/PechRouge/HarvestData> as ?DATASET)
 
   BIND(REPLACE(REPLACE(REPLACE(?sampleCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?SAMPLECODE)
   BIND(uri(concat("harvesting/",?SAMPLECODE)) as ?URI)
@@ -40,5 +40,5 @@ CONSTRUCT {
 
   BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
 
-  BIND(uri(CONCAT("data/winemaking/PechRouge/harvestData/2017/",?SAMPLECODE)) as ?OBS_URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/harvestData/",?SAMPLECODE)) as ?OBS_URI)
 }

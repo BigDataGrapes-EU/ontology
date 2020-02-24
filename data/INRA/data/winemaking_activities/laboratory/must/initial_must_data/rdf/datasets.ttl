@@ -11,8 +11,7 @@
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
-<data/wineMaking/PechRouge/intialMust/2017> a qb:DataSet;
-  rdfs:label "Data about must initial done on Pech Rouge in 2017";
+<data/wineMaking/PechRouge/intialMust> a qb:DataSet;
+  rdfs:label "Data about must initial done on Pech Rouge";
   sosa:FeatureOfInterest afeo:Must;
-  bdg:date "2017-01-01"^^xsd:date ;
   qb:structure <DSD/intialMust> . 

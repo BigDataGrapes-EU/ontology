@@ -14,7 +14,7 @@ CONSTRUCT {
   .
 } WHERE {
 
-  BIND(<data/wineMaking/PechRouge/intialMust/2017> as ?DATASET)
+  BIND(<data/wineMaking/PechRouge/intialMust> as ?DATASET)
 
   BIND(uri(CONCAT("experiment/",?experiment_code)) as ?EXPERIMENT_URI)
 
@@ -33,5 +33,5 @@ CONSTRUCT {
   BIND(IF(REPLACE(?pH,"[^\\.0-9]","")!= "", xsd:double(?pH), xsd:double("NaN")) as ?PH)
   BIND(IF(REPLACE(?totalAcidity,"[^\\.0-9]","")!= "", xsd:double(?totalAcidity), xsd:double("NaN")) as ?TOTALACIDITY)
 
-  BIND(uri(CONCAT("data/winemaking/PechRouge/intialMust/2017/",?DATE,"/",?experiment_code,"/",?laboratoryNumber)) as ?OBS_URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/intialMust/",?DATE,"/",?experiment_code,"/",?laboratoryNumber)) as ?OBS_URI)
 }

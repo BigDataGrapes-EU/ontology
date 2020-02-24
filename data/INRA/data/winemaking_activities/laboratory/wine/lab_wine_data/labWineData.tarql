@@ -23,7 +23,7 @@ CONSTRUCT {
     bdg:blue_yellow_component ?BLUEYELLOWCOMPONENT; 
 .
 } WHERE { 
-  BIND(<data/wineMaking/PechRouge/laboratoryAnalysisWine/2017> as ?DATASET)
+  BIND(<data/wineMaking/PechRouge/laboratoryAnalysisWine> as ?DATASET)
   
 # Several issues with NaN
 
@@ -59,6 +59,6 @@ CONSTRUCT {
 
   BIND(strdt(?date,xsd:date) as ?DATE)
 
-  BIND(uri(CONCAT("data/wineMaking/PechRouge/laboratoryAnalysisWine/2017/",?date,"/",?experiment)) as ?OBS_URI)
+  BIND(uri(CONCAT("data/wineMaking/PechRouge/laboratoryAnalysisWine/",?date,"/",?experiment)) as ?OBS_URI)
 
 }

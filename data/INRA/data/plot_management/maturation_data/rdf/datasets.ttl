@@ -8,8 +8,7 @@
 
 <data/wineMaking/PechRouge/grapeMaturation/Brix> a qb:DataSet;
   rdfs:label "Data about grape maturation laboratory analysis of brix measures before harvest done at Pech Rouge";
-  sosa:FeatureOfInterest afeo:Vinestock;
-  bdg:date "2017-01-01"^^xsd:date ;
+  sosa:FeatureOfInterest afeo:Vinestock; # add a period attribute
   qb:structure <DSD/grapeMaturation/Brix> . 
 
 <DSD/grapeMaturation/PH> a qb:DataStructureDefinition;
@@ -22,7 +21,6 @@
 <data/wineMaking/PechRouge/grapeMaturation/PH> a qb:DataSet;
   rdfs:label "Data about grape maturation laboratory analysis of ph before harvest done at Pech Rouge";
   sosa:FeatureOfInterest afeo:Vinestock;
-  bdg:date "2017-01-01"^^xsd:date ;
   qb:structure <DSD/grapeMaturation/PH> . 
 
   <DSD/grapeMaturation/ProbableAlcohol> a qb:DataStructureDefinition;
@@ -35,7 +33,6 @@
 <data/wineMaking/PechRouge/grapeMaturation/ProbableAlcohol> a qb:DataSet;
   rdfs:label "Data about grape maturation laboratory analysis of probable alcohol before harvest done at Pech Rouge";
   sosa:FeatureOfInterest afeo:Vinestock;
-  bdg:date "2017-01-01"^^xsd:date ;
   qb:structure <DSD/grapeMaturation/ProbableAlcohol> . 
 
 <DSD/grapeMaturation/Sugars> a qb:DataStructureDefinition;
@@ -48,7 +45,6 @@
 <data/wineMaking/PechRouge/grapeMaturation/Sugars> a qb:DataSet;
   rdfs:label "Data about grape maturation laboratory analysis of sugars before harvest done at Pech Rouge";
   sosa:FeatureOfInterest afeo:Vinestock;
-  bdg:date "2017-01-01"^^xsd:date ;
   qb:structure <DSD/grapeMaturation/Sugars> . 
 
 <DSD/grapeMaturation/TotalAcidity> a qb:DataStructureDefinition;
@@ -61,5 +57,4 @@
 <data/wineMaking/PechRouge/grapeMaturation/TotalAcidity> a qb:DataSet;
   rdfs:label "Data about grape maturation laboratory analysis of total acidity before harvest done at Pech Rouge";
   sosa:FeatureOfInterest afeo:Vinestock;
-  bdg:date "2017-01-01"^^xsd:date ;
   qb:structure <DSD/grapeMaturation/TotalAcidity> . 

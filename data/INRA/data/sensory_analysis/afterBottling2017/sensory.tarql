@@ -10,6 +10,9 @@ CONSTRUCT {
      bdg:score ?SCORE;
 .
 } WHERE {
+  bind(SUBSTR(?wine,1,4) as ?YEAR)
+
+  BIND(<data/winemaking/sensoryAnalysis/AfterBottling/2017> as ?YEAR)
 
   bind(concat("wine/",replace(replace(replace(?wine, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")) as ?WINE)
   bind(uri(?WINE) as ?WINE_URI)
