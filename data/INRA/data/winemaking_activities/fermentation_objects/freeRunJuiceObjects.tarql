@@ -1,0 +1,18 @@
+
+CONSTRUCT {
+  ?FERMENTATION_URI a afeo:AlcoholicFermentation ;
+     afeo:hasOutput ?FREERUNJUICE_URI;
+  .
+
+  ?FREERUNJUICE_URI a afeo:FreeRunJuice;
+     rdfs:label ?FREERUNJUICE
+  .
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
+  BIND(uri(concat("fermentation/",?FERMENTATION_CODE)) as ?FERMENTATION_URI)
+  BIND(concat("freeRunJuice/",?FERMENTATION_CODE) as ?FREERUNJUICE)
+  BIND(uri(concat("freeRunJuice/",?FERMENTATION_CODE)) as ?FREERUNJUICE_URI)
+
+ 
+} 

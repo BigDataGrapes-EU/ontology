@@ -1,0 +1,26 @@
+
+CONSTRUCT {
+  ?URI a qb:Observation;
+     qb:dataSet ?DATASET ;
+     bdg:wine ?WINE_URI ;
+     bdg:sensoryFlavor ?FLAVOR_URI ;
+     bdg:judgeNumber  ?JUDGE_NUMBER ;
+     bdg:flavorJudgeRatio ?RATIO;
+.
+} WHERE {
+  BIND(<data/winemaking/sensoryAnalysis/BeforeBottling> as ?DATASET)
+
+  bind(IF(?code_pr = "NA", concat("unknown/",?code_pr,STR(?ROWNUM)) ,concat("wine/",?code_pr)) as ?WINE)
+  bind(uri(?WINE) as ?WINE_URI)
+
+  bind(strdt(?judgeNumber,xsd:integer) as ?JUDGE_NUMBER)
+
+  bind(concat("sensoryFlavor/",replace(replace(replace(?sensoryFlavor, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "")) as ?FLAVOR)
+  bind(uri(?FLAVOR) as ?FLAVOR_URI)
+
+  bind(uri(concat("data/winemaking/sensoryAnalysis/",?WINE,"/",?FLAVOR,"/")) as ?URI)
+
+  BIND(REPLACE(?ratioFlavorJudge,",",".") as ?RATIO_CLEAN)
+
+  bind(IF(?RATIO_CLEAN != "", xsd:double(?RATIO_CLEAN), xsd:double("NaN")) as ?RATIO)
+}

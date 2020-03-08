@@ -1,0 +1,26 @@
+
+CONSTRUCT {
+  ?MALOLACTIC_FERMENTATION_URI a afeo:MalolacticFermentation ;
+     afeo:hasOutput ?WINE_URI;
+  .
+
+  ?WINE_URI a afeo:Wine ;
+    rdfs:label ?BOTTLING
+ . 
+
+  ?BOTTLING_URI a afeo:Bottling ;
+    rdfs:label ?BOTTLING
+ . 
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
+  BIND(uri(concat("wine/",?FERMENTATION_CODE)) as ?WINE_URI)
+  BIND(uri(concat("bottling/",?FERMENTATION_CODE)) as ?BOTTLING_URI)
+
+  BIND(concat("wine/",?FERMENTATION_CODE) as ?WINE)
+  BIND(concat("bottling/",?FERMENTATION_CODE) as ?BOTTLING)
+
+  BIND(uri(concat("malolacticFermentation/",?FERMENTATION_CODE)) as ?MALOLACTIC_FERMENTATION_URI)
+
+ 
+} 

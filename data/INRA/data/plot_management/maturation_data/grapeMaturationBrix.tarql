@@ -11,11 +11,12 @@ CONSTRUCT {
 
   BIND(CONCAT("<data/wineMaking/PechRouge/grapeMaturation/Brix>") as ?DATASET)
 
-  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK)
+  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK_CLEAN)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/vinestock/",?VINESTOCK_CLEAN))  as ?VINESTOCK)
 
   BIND(IF(REPLACE(?brix,"[^\\.0-9]","")!= "", xsd:double(?brix), xsd:double("NaN")) as ?BRIX)
 
-  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/Brix",?date,?VINESTOCK, STR(?ROWNUM))) as ?OBS_URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/Brix", ?date, ?VINESTOCK, STR(?ROWNUM))) as ?OBS_URI)
 
   BIND(xsd:date(?date) as ?DATE)
 }

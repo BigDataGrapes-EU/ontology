@@ -1,28 +1,15 @@
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_1/sensoryFlavor/veryLightYellowWithGreenSparkles/>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine/2017_VITIDUR_3159_B/sensoryFlavor/mushroom/>
         rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_1> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/veryLightYellowWithGreenSparkles> ;
-        bdg:flavorJudgeRatio  "0.17"^^xsd:double .
+        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/BeforeBottling> ;
+        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine/2017_VITIDUR_3159_B> ;
+        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/mushroom> ;
+        bdg:judgeNumber       1 ;
+        bdg:flavorJudgeRatio  "1"^^xsd:double .
 
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_2/sensoryFlavor/veryLightYellowWithGreenSparkles/>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine/2017_INERTIS_MAC_02_T0/sensoryFlavor/alsmostColourless/>
         rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_2> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/veryLightYellowWithGreenSparkles> ;
-        bdg:flavorJudgeRatio  "1.00"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_3/sensoryFlavor/veryLightYellowWithGreenSparkles/>
-        rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_3> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/veryLightYellowWithGreenSparkles> ;
-        bdg:flavorJudgeRatio  "0.17"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine2017_ALF_ALT_4/sensoryFlavor/veryLightYellowWithGreenSparkles/>
-        rdf:type              qb:Observation ;
-        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine2017_ALF_ALT_4> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/veryLightYellowWithGreenSparkles> ;
-        bdg:flavorJudgeRatio  "NaN"^^xsd:double .
+        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/BeforeBottling> ;
+        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine/2017_INERTIS_MAC_02_T0> ;
+        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/alsmostColourless> ;
+        bdg:judgeNumber       6 ;
+        bdg:flavorJudgeRatio  "0.83"^^xsd:double .

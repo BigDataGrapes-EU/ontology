@@ -10,9 +10,8 @@
   qb:component [ qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment  qb:MeasureProperty];
 .
 
-<data/winemaking/sensoryAnalysis/AfterBottling/2017> a qb:DataSet ;
-  rdfs:label "Data about different wines, tasted after fermentation and bottling in 2017";
+<data/winemaking/sensoryAnalysis/AfterBottling> a qb:DataSet ;
+  rdfs:label "Data about different wines, tasted after fermentation and bottling";
   qb:structure <DSD/sensoryAnalysis/AfterBottling> ;
-  bdg:dateTime "2017-01-01T00:00:00"^^xsd:dateTime ;
 .
 

@@ -1,0 +1,18 @@
+
+CONSTRUCT {
+  ?FERMENTATION_URI a afeo:AlcoholicFermentation ;
+     afeo:hasOutput ?PRESSJUICE_URI;
+  .
+
+  ?PRESSJUICE_URI a afeo:PressJuice;
+     rdfs:label ?PRESSJUICE
+  .
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
+  BIND(uri(concat("fermentation/",?FERMENTATION_CODE)) as ?FERMENTATION_URI)
+  BIND(concat("pressJuice/",?FERMENTATION_CODE) as ?PRESSJUICE)
+  BIND(uri(concat("pressJuice/",?FERMENTATION_CODE)) as ?PRESSJUICE_URI)
+
+ 
+} 

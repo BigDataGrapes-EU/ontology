@@ -2,8 +2,8 @@
 CONSTRUCT {
   ?URI a afeo:AlcoholicFermentation ;
     bdg:experiment ?EXPERIMENT_URI; # it will change
-    bdg:date ?START_DATE;
-    bdg:date ?END_DATE;
+    bdg:startDate ?START_DATE;
+    bdg:endDate ?END_DATE;
     bdg:weight_alcoholic_fermentation  ?WEIGHT_ALCOHOLIC_FERMENTATION;
     bdg:fermentationTank ?TANK_URI;  #pas sure  variable
     bdg:yeast ?YEAST_URI; # Need to be defined as dimension in bdg Ontology

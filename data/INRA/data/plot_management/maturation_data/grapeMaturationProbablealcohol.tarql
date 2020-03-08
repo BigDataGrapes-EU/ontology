@@ -10,8 +10,9 @@ CONSTRUCT {
 #comment construire URI , variables utilisées
 
   BIND(<data/wineMaking/PechRouge/grapeMaturation/Probablealcohol> as ?DATASET)
-
-  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK)
+  
+  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK_CLEAN)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/vinestock/",?VINESTOCK_CLEAN))  as ?VINESTOCK)
 
   BIND(IF(REPLACE(?probable_alcohol,"[^\\.0-9]","")!= "", xsd:double(?probable_alcohol), xsd:double("NaN")) as ?PROBABLEALCOHOL)
 

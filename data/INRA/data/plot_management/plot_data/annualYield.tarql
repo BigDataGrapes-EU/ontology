@@ -3,7 +3,7 @@ CONSTRUCT {
   ?OBS_URI a qb:Observation ;
     qb:dataSet ?DATASET;
     bdg:dateTime ?DATETIME ;
-    bdg:plot ?OBJECTCODE_URI ;
+    qb4st:RefArea ?OBJECTCODE_URI ;
     bdg:annualYield ?VALUE ;
   .
 } WHERE {

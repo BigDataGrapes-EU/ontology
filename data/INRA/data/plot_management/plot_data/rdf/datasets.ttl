@@ -1,6 +1,6 @@
 <DSD/plotData/annualProduction> a qb:DataStructureDefinition;
   qb:component [qb:dimension bdg:dateTime                 ]; # date time some times we have the time , some time not
-  qb:component [qb:dimension bdg:plot                     ];
+  qb:component [qb:dimension qb4st:RefArea                ];
   qb:component [qb:measure   bdg:annualProduction         ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
@@ -11,8 +11,8 @@
 
 <DSD/plotData/annualYield> a qb:DataStructureDefinition;
   qb:component [qb:dimension bdg:dateTime                 ]; # date time some times we have the time , some time not
-  qb:component [qb:dimension bdg:plot                     ];
-  qb:component [qb:measure   bdg:annualYield         ];
+  qb:component [qb:dimension qb4st:RefArea                ];
+  qb:component [qb:measure   bdg:annualYield              ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
 <data/wineMaking/PechRouge/plotData/annualYield> a qb:DataSet;

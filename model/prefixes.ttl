@@ -86,6 +86,7 @@
 @prefix uo:                <http://purl.obolibrary.org/obo/uo#>.
 @prefix UO:                <http://purl.obolibrary.org/obo/UO_>.
 @prefix XCO:               <http://purl.obolibrary.org/obo/XCO_>.
+@prefix oeev:             <http://www.phenome-fppn.fr/vocabulary/2018/oeev#>.
 
 # INRA Namespaces
 @prefix inra_observations: <http://vinnotec.supagro.inra.fr/public/Pr/inra_observations/>.

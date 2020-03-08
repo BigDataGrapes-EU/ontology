@@ -11,8 +11,8 @@ CONSTRUCT {
 
   BIND(<data/wineMaking/PechRouge/grapeMaturation/Totalacidity> as ?DATASET)
 
-  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK)
-
+  BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK_CLEAN)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/vinestock/",?VINESTOCK_CLEAN))  as ?VINESTOCK)
 
   BIND(IF(REPLACE(?total_acidity,"[^\\.0-9]","")!= "", xsd:double(?total_acidity), xsd:double("NaN")) as ?TOTALACIDITY)
 

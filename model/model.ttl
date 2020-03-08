@@ -8,6 +8,17 @@ bdg:dateTime a qb:DimensionProperty;
   qb:concept sdmx-concept:timePeriod;
   rdfs:range xsd:dateTime.
 
+bdg:date a qb:DimensionProperty;
+  rdfs:label "Date"; rdfs:comment "Date of the observation";
+  qb:concept sdmx-concept:timePeriod;
+  rdfs:range xsd:date.
+
+bdg:startDate a bdg:date;
+  rdfs:label "Start Date"; rdfs:comment "Date of the beginning of a process".
+ 
+bdg:endDate a bdg:date;
+  rdfs:label "End Date"; rdfs:comment "Date of the ending of a process" .
+ 
 bdg:sensor a qb:DimensionProperty;
   rdfs:label "Sensor"; rdfs:comment "Sensor/Instrument that took the observation";
   qb:concept sdmx-concept:collMethod;

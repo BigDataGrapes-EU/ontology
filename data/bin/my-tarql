@@ -5,5 +5,5 @@
 #cd ./TRR/tarql
 
 sed -r "s/^\@(.*>)\s*\./\1/g" $2 $3 > $$.tarql
-tarql --encoding utf8 $1 $$.tarql $4
+/home/charlero/GIT/GITHUB/ontology/data/bin/tarql --verbose --encoding utf8 $1 $$.tarql $4
 rm $$.tarql

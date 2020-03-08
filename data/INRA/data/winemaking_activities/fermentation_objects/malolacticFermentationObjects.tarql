@@ -1,0 +1,15 @@
+
+CONSTRUCT {
+  ?MALOLACTIC_FERMENTATION_URI a afeo:MalolacticFermentation ;
+     afeo:hasInput ?FREERUNJUICE_URI;
+     afeo:hasInput ?PRESSJUICE_URI;
+ . 
+} WHERE {
+
+  BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
+  BIND(uri(concat("malolacticFermentation/",?FERMENTATION_CODE)) as ?MALOLACTIC_FERMENTATION_URI)
+  BIND(uri(concat("pressJuice/",?FERMENTATION_CODE)) as ?PRESSJUICE_URI)
+  BIND(uri(concat("freeRunJuice/",?FERMENTATION_CODE)) as ?FREERUNJUICE_URI)
+
+ 
+} 
