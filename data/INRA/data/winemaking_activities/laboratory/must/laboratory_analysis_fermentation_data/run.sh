@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-curl "https://docs.google.com/spreadsheets/d/1hOI1eKADaKe7lHwiV7QQ4dYMS8eObbZa/gviz/tq?tqx=out:csv&gid=84986158" | ../../../../../../bin/my-tarql "-d , --stdin" ../../../../../../model/prefixes.ttl mustDuringFermentationData.tarql > mustDuringFermentationData.ttl
+curl "https://docs.google.com/spreadsheets/d/18HKM-wMLxko53LR9UMUPeOUjfHRhcE20S8Bpb6GdCIE/gviz/tq?tqx=out:csv&gid=84986158" | ../../../../../../bin/my-tarql "-d , --stdin" ../../../../../../model/prefixes.ttl mustDuringFermentationData.tarql > mustDuringFermentationData.ttl
