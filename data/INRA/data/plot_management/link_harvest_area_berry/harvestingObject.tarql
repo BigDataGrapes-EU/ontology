@@ -21,7 +21,8 @@ CONSTRUCT {
   ?uniqueObjectCode apf:strSplit (?objectCode "\\+")
   BIND(REPLACE(REPLACE(REPLACE(?uniqueObjectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?UNIQUEOBJECTCODE)
 
-  BIND(uri(CONCAT("INRA/estate/PechRouge/",REPLACE(?UNIQUEOBJECTCODE, " " ,""))) as ?OBJECTCODE_URI)
+  BIND(REPLACE(?UNIQUEOBJECTCODE,"(\\d{2,3})(-|_).+","$1") as ?BROADER_PLOT)
+  BIND(uri(CONCAT("INRA/estate/PechRouge/",?BROADER_PLOT,"/",REPLACE(?UNIQUEOBJECTCODE, " " ,""))) as ?OBJECTCODE_URI)
 
   BIND(IF(REPLACE(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT)
 

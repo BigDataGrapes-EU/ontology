@@ -16,7 +16,7 @@ CONSTRUCT {
 
   BIND(IF(REPLACE(?total_acidity,"[^\\.0-9]","")!= "", xsd:double(?total_acidity), xsd:double("NaN")) as ?TOTALACIDITY)
 
-  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/Totalacidity",?date,?VINESTOCK, STR(?ROWNUM))) as ?OBS_URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/Totalacidity",?date,?VINESTOCK_CLEAN, STR(?ROWNUM))) as ?OBS_URI)
 
   BIND(xsd:date(?date) as ?DATE)
 }

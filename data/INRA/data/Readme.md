@@ -3,6 +3,8 @@ Plan :
 - [File structure](#file-structure)
   - [Notes/Remarks:](#notesremarks)
   - [Errors/Issues:](#errorsissues)
+    - [Not fixed](#not-fixed)
+    - [Fixed](#fixed)
 
 # File structure
 
@@ -105,16 +107,7 @@ bdg:endDate a bdg:date;
 
 ## Errors/Issues:
 
-- [grapeMaturationProbablealcohol.tarql](plot_management/maturation_data/grapeMaturationProbablealcohol.tarql)
-When getting csv file from google api, why the first two lines are merged ?
-
-```bash
-curl "https://docs.google.com/spreadsheets/d/103zwveRlsPy890GfJKqwlJnUOgfgwdOH/gviz/tq?tqx=out:csv&gid=2010910138"
-# Results example
-"Vinestock 2017-SUNAGRI-L2-1","brix 9.8","date 2017-07-19" > first line is merge
-"2017-SUNAGRI-L2-3","8","2017-07-19"
-"2017-SUNAGRI-L1-1","11.8","2017-07-19"
-```
+### Not fixed
 
 - Duplicate statements when creating fermentation objects from[malolacticFermentationObjects.tarql](winemaking_activities/fermentation_objects/malolacticFermentationObjects.tarql)
 
@@ -127,3 +120,18 @@ curl "https://docs.google.com/spreadsheets/d/103zwveRlsPy890GfJKqwlJnUOgfgwdOH/g
         afeo:hasInput   <http://data.bigdatagrapes.eu/resource/must/FV_2017_057> ;
         bdg:experiment  <http://data.bigdatagrapes.eu/resource/experiment/2017_QUALIVINBIO_3160> .
 ```
+
+### Fixed
+
+- [grapeMaturationProbablealcohol.tarql](plot_management/maturation_data/grapeMaturationProbablealcohol.tarql)
+When getting csv file from google api, why the first two lines are merged ?
+
+```bash
+curl "https://docs.google.com/spreadsheets/d/103zwveRlsPy890GfJKqwlJnUOgfgwdOH/gviz/tq?tqx=out:csv&gid=2010910138"
+# Results example
+"Vinestock 2017-SUNAGRI-L2-1","brix 9.8","date 2017-07-19" > first line is merge
+"2017-SUNAGRI-L2-3","8","2017-07-19"
+"2017-SUNAGRI-L1-1","11.8","2017-07-19"
+```
+
+**Answer : change data format to text**

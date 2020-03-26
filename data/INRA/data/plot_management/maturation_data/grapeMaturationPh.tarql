@@ -16,7 +16,7 @@ CONSTRUCT {
 
   BIND(IF(REPLACE(?ph,"[^\\.0-9]","")!= "", xsd:double(?ph), xsd:double("NaN")) as ?PH)
 
-  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/Ph",?date,?VINESTOCK, STR(?ROWNUM))) as ?OBS_URI)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/grapeMaturation/Ph",?date,?VINESTOCK_CLEAN, STR(?ROWNUM))) as ?OBS_URI)
 
   BIND(xsd:date(?date) as ?DATE)
 }

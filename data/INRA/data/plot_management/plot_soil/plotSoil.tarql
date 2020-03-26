@@ -2,9 +2,9 @@
 CONSTRUCT {
   ?OBJECTCODE_URI a bdg:plotCluster ;
     rdfs:label ?OBJECTCODE ; 
-    bdg:soilType ?SOILTYPE ;
-    ?BERRY a afeo:Berry ;
-.
+    bdg:soilType ?SOILTYPE .
+  
+  ?BERRY rdf:type afeo:Berry .
 } WHERE {
 
   BIND(REPLACE(REPLACE(REPLACE(?objectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?OBJECTCODE)
