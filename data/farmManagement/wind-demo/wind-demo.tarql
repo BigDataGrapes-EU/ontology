@@ -1,0 +1,14 @@
+CONSTRUCT {
+   ?URI a qb:Observation ;
+   qb:dataSet              <data/farmManagement/WindDemo> ;
+   bdg:dateTime            ?DATETIME ;
+   bdg:speed_wind_MEAN ?SPEED_WIND ;
+   bdg:direction_wind_MEAN ?DIRECTION_WIND ;
+
+   .
+} WHERE {
+    bind(strdt(replace(?Date," ","T"),xsd:dateTime) as ?DATETIME) #8/1/2018 0:19"
+    bind(uri(concat("data/farmManagement/windDemo/",str(?DATETIME))) as ?URI)
+    bind(strdt(?dir,xsd:float) as ?DIRECTION_WIND)
+    bind(strdt(?speed,xsd:float) as ?SPEED_WIND)
+}

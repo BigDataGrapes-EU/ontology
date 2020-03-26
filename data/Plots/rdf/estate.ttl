@@ -86,124 +86,22 @@
 @prefix po:  <http://purl.obolibrary.org/obo/po#> .
 @prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Vassaltis>
         rdf:type             bdg:Estate ;
-        rdfs:label           "Semeli winery" ;
-        bdg:idGeocledian     "142327" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/centroid> .
+        rdfs:label           "Vassaltis Estate" ;
+        bdg:idGeocledian     "143373" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Vassaltis/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Vassaltis/centroid> .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/geo>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Vassaltis/geo>
         rdf:type   geo:Geometry ;
         qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.678619 37.871637,22.679364 37.871375,22.679573 37.871819,22.679497 37.87213,22.67917 37.872226,22.678619 37.871637)))"^^geo:wktLiteral .
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((25.437209 36.442938,25.437247 36.443162,25.437309 36.443397,25.437507 36.443298,25.437633 36.443169,25.43788 36.442901,25.437614 36.442806,25.437314 36.442714,25.43714 36.442702,25.437209 36.442938)))"^^geo:wktLiteral .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/centroid>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Vassaltis/centroid>
         rdf:type   geo:Geometry ;
         qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.6791764881925 37.8717943241968)"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis>
-        rdf:type             bdg:Estate ;
-        rdfs:label           "Pavlidis estate" ;
-        bdg:idGeocledian     "142329" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/centroid> .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/geo>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.94455 41.095562,23.944725 41.094485,23.948411 41.094772,23.948282 41.095449,23.94727 41.095681,23.94455 41.095562)))"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/centroid>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.9463873441109 41.0951149054017)"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA>
-        rdf:type             bdg:Estate ;
-        rdfs:label           "RIRA Vineyards" ;
-        bdg:idGeocledian     "142330" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/centroid> .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/geo>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.004519 38.271557,22.005678 38.271568,22.005599 38.27056,22.005209 38.270556,22.00482 38.270422,22.004519 38.271557)))"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/centroid>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.0051370962703 38.2710729616762)"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia>
-        rdf:type             bdg:Estate ;
-        rdfs:label           "Strofilia Estate Winery" ;
-        bdg:idGeocledian     "142332" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/centroid> .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/geo>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.560135 37.906823,22.560458 37.905932,22.560806 37.905914,22.561609 37.906195,22.561837 37.906377,22.561608 37.906725,22.561271 37.906903,22.560852 37.906773,22.560135 37.906823)))"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/centroid>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.5609569573621 37.906424751921)"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis>
-        rdf:type             bdg:Estate ;
-        rdfs:label           "Papagiannoulis Winery" ;
-        bdg:idGeocledian     "142335" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/centroid> .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/geo>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.488661 40.291111,22.489565 40.29159,22.489283 40.291894,22.4884 40.291464,22.488661 40.291111)))"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/centroid>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.4889722317654 40.2915103131924)"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras>
-        rdf:type             bdg:Estate ;
-        rdfs:label           "Skouras winery" ;
-        bdg:idGeocledian     "142336" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/centroid> .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/geo>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.594471 37.76004,22.594542 37.759994,22.594353 37.759805,22.594912 37.759467,22.595567 37.759162,22.595937 37.759598,22.595274 37.759857,22.594741 37.760216,22.594471 37.76004)))"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/centroid>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.5951250154439 37.7596779605666)"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis>
-        rdf:type             bdg:Estate ;
-        rdfs:label           "Moraitis winery" ;
-        bdg:idGeocledian     "142337" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/centroid> .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/geo>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((25.239022 37.091085,25.239417 37.091187,25.239827 37.091125,25.240244 37.092693,25.239326 37.092606,25.239087 37.09245,25.238776 37.092406,25.239022 37.091085)))"^^geo:wktLiteral .
-
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/centroid>
-        rdf:type   geo:Geometry ;
-        qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(25.2394860599199 37.0919342762966)"^^geo:wktLiteral .
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(25.4374558816349 36.4430047136776)"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Toplou>
         rdf:type             bdg:Estate ;
@@ -222,22 +120,149 @@
         qb4st:crs  crs-ogc:CRS84 ;
         geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(26.2203006767409 35.2088960921486)"^^geo:wktLiteral .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Tetramythos>
+        rdf:type    bdg:Estate ;
+        rdfs:label  "Tetramythos Estate" .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia>
         rdf:type             bdg:Estate ;
-        rdfs:label           "Aoton winery" ;
-        bdg:idGeocledian     "142339" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/centroid> .
+        rdfs:label           "Strofilia Estate Winery" ;
+        bdg:idGeocledian     "142332" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/centroid> .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/geo>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/geo>
         rdf:type   geo:Geometry ;
         qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.892897 37.934915,23.891909 37.932837,23.894253 37.934066,23.895109 37.934416,23.892897 37.934915)))"^^geo:wktLiteral .
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.560135 37.906823,22.560458 37.905932,22.560806 37.905914,22.561609 37.906195,22.561837 37.906377,22.561608 37.906725,22.561271 37.906903,22.560852 37.906773,22.560135 37.906823)))"^^geo:wktLiteral .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/centroid>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Strofilia/centroid>
         rdf:type   geo:Geometry ;
         qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.893283448809 37.9340694933342)"^^geo:wktLiteral .
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.5609569573621 37.906424751921)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras>
+        rdf:type             bdg:Estate ;
+        rdfs:label           "Skouras winery" ;
+        bdg:idGeocledian     "142336" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.594471 37.76004,22.594542 37.759994,22.594353 37.759805,22.594912 37.759467,22.595567 37.759162,22.595937 37.759598,22.595274 37.759857,22.594741 37.760216,22.594471 37.76004)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Skouras/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.5951250154439 37.7596779605666)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli>
+        rdf:type             bdg:Estate ;
+        rdfs:label           "Semeli winery" ;
+        bdg:idGeocledian     "142327" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.678619 37.871637,22.679364 37.871375,22.679573 37.871819,22.679497 37.87213,22.67917 37.872226,22.678619 37.871637)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Semeli/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.6791764881925 37.8717943241968)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA>
+        rdf:type             bdg:Estate ;
+        rdfs:label           "RIRA Vineyards" ;
+        bdg:idGeocledian     "142330" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.004519 38.271557,22.005678 38.271568,22.005599 38.27056,22.005209 38.270556,22.00482 38.270422,22.004519 38.271557)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/RIRA/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.0051370962703 38.2710729616762)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis>
+        rdf:type             bdg:Estate ;
+        rdfs:label           "Pavlidis estate" ;
+        bdg:idGeocledian     "142329" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.94455 41.095562,23.944725 41.094485,23.948411 41.094772,23.948282 41.095449,23.94727 41.095681,23.94455 41.095562)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Pavlidis/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.9463873441109 41.0951149054017)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis>
+        rdf:type             bdg:Estate ;
+        rdfs:label           "Papagiannoulis Winery" ;
+        bdg:idGeocledian     "142335" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((22.488661 40.291111,22.489565 40.29159,22.489283 40.291894,22.4884 40.291464,22.488661 40.291111)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannoulis/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.4889722317654 40.2915103131924)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos>
+        rdf:type             bdg:Estate ;
+        rdfs:label           "Papagiannakos domaine" ;
+        bdg:idGeocledian     "142341" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.965674 37.918652,23.965371 37.918229,23.966341 37.917859,23.966286 37.917734,23.967189 37.917277,23.967643 37.918046,23.965674 37.918652)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.9665798702346 37.9180153185594)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis>
+        rdf:type             bdg:Estate ;
+        rdfs:label           "Moraitis winery" ;
+        bdg:idGeocledian     "142337" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/centroid> .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((25.239022 37.091085,25.239417 37.091187,25.239827 37.091125,25.240244 37.092693,25.239326 37.092606,25.239087 37.09245,25.238776 37.092406,25.239022 37.091085)))"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Moraitis/centroid>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(25.2394860599199 37.0919342762966)"^^geo:wktLiteral .
+
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Dimitra>
+        rdf:type    bdg:Estate ;
+        rdfs:label  "Dimitra Estate" .
 
 <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Biblia>
         rdf:type             bdg:Estate ;
@@ -256,22 +281,22 @@
         qb4st:crs  crs-ogc:CRS84 ;
         geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.9896002780056 40.8106668095359)"^^geo:wktLiteral .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton>
         rdf:type             bdg:Estate ;
-        rdfs:label           "Papagiannakos domaine" ;
-        bdg:idGeocledian     "142341" ;
-        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/geo> ;
-        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/centroid> .
+        rdfs:label           "Aoton winery" ;
+        bdg:idGeocledian     "142339" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/geo> ;
+        geo:hasGeometry      <http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/centroid> .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/geo>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/geo>
         rdf:type   geo:Geometry ;
         qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.965674 37.918652,23.965371 37.918229,23.966341 37.917859,23.966286 37.917734,23.967189 37.917277,23.967643 37.918046,23.965674 37.918652)))"^^geo:wktLiteral .
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> MULTIPOLYGON(((23.892897 37.934915,23.891909 37.932837,23.894253 37.934066,23.895109 37.934416,23.892897 37.934915)))"^^geo:wktLiteral .
 
-<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Papagiannakos/centroid>
+<http://data.bigdatagrapes.eu/resource/Symbeeosis/estate/Aoton/centroid>
         rdf:type   geo:Geometry ;
         qb4st:crs  crs-ogc:CRS84 ;
-        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.9665798702346 37.9180153185594)"^^geo:wktLiteral .
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(23.893283448809 37.9340694933342)"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge>
         rdf:type    bdg:Estate ;
@@ -302,10 +327,10 @@
         qb4st:crs  crs-ogc:CRS84 ;
         geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(22.5903408599695 37.8171707360723)"^^geo:wktLiteral .
 
-<http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato>
-        rdf:type    bdg:Estate ;
-        rdfs:label  "Casato Primedonne" .
-
 <http://data.bigdatagrapes.eu/resource/Abaco/estate/Palazzo>
         rdf:type    bdg:Estate ;
         rdfs:label  "Tenuta il Palazzo" .
+
+<http://data.bigdatagrapes.eu/resource/Abaco/estate/Casato>
+        rdf:type    bdg:Estate ;
+        rdfs:label  "Casato Primedonne" .

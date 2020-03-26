@@ -14,7 +14,6 @@
 @prefix ssn:  <http://www.w3.org/ns/ssn/> .
 @prefix qb:  <http://purl.org/linked-data/cube#> .
 @prefix xml:  <http://www.w3.org/XML/1998/namespace> .
-@prefix apf:  <http://jena.apache.org/ARQ/property#> .
 @prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
 @prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
@@ -49,12 +48,12 @@
 @prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
 @prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wd:  <http://www.wikidata.org/entity/> .
 @prefix cito:  <http://purl.org/spar/cito/> .
-@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
 @prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
 @prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
 @prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
 @prefix dct:  <http://purl.org/dc/terms/> .
@@ -87,501 +86,1101 @@
 @prefix PO:  <http://purl.obolibrary.org/obo/PO_> .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943093100498 37.8039854236681,22.6943817892979 37.8039587207873,22.6942578116368 37.8038519092638,22.6941853323887 37.8038747974474,22.6943093100498 37.8039854236681))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943817892979 37.8039587207873,22.6944542685459 37.8039320179064,22.6943302908848 37.803825206383,22.6942578116368 37.8038519092638,22.6943817892979 37.8039587207873))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6944542685459 37.8039320179064,22.694526747794 37.8039091297228,22.6944027701329 37.8038023181994,22.6943302908848 37.803825206383,22.6944542685459 37.8039320179064))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.694526747794 37.8039091297228,22.694599227042 37.803882426842,22.6944752493809 37.8037756153185,22.6944027701329 37.8038023181994,22.694526747794 37.8039091297228))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.694599227042 37.803882426842,22.6946717062901 37.8038595386584,22.694547728629 37.8037527271349,22.6944752493809 37.8037756153185,22.694599227042 37.803882426842))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6946717062901 37.8038595386584,22.6947441855381 37.8038328357775,22.694620207877 37.8037260242541,22.694547728629 37.8037527271349,22.6946717062901 37.8038595386584))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6947441855381 37.8038328357775,22.6948166647862 37.8038099475939,22.694692687125 37.8036993213732,22.694620207877 37.8037260242541,22.6947441855381 37.8038328357775))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6948166647862 37.8038099475939,22.6948891440342 37.8037832447131,22.6947651663731 37.8036764331896,22.694692687125 37.8036993213732,22.6948166647862 37.8038099475939))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6948891440342 37.8037832447131,22.6949616232823 37.8037565418322,22.6948376456211 37.8036497303088,22.6947651663731 37.8036764331896,22.6948891440342 37.8037832447131))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "A10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "A10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/A10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6949616232823 37.8037565418322,22.6950342747014 37.8037331753081,22.6949101248692 37.8036268421252,22.6948376456211 37.8036497303088,22.6949616232823 37.8037565418322))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6941853323887 37.8038747974474,22.6942578116368 37.8038519092638,22.6941357413243 37.8037450977404,22.6940632620762 37.803767985924,22.6941853323887 37.8038747974474))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942578116368 37.8038519092638,22.6943302908848 37.803825206383,22.6942082205723 37.8037183948595,22.6941357413243 37.8037450977404,22.6942578116368 37.8038519092638))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943302908848 37.803825206383,22.6944027701329 37.8038023181994,22.6942806998204 37.803695506676,22.6942082205723 37.8037183948595,22.6943302908848 37.803825206383))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6944027701329 37.8038023181994,22.6944752493809 37.8037756153185,22.6943531790684 37.8036688037951,22.6942806998204 37.803695506676,22.6944027701329 37.8038023181994))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6944752493809 37.8037756153185,22.694547728629 37.8037527271349,22.6944256583165 37.8036421009142,22.6943531790684 37.8036688037951,22.6944752493809 37.8037756153185))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.694547728629 37.8037527271349,22.694620207877 37.8037260242541,22.6944981375645 37.8036192127306,22.6944256583165 37.8036421009142,22.694547728629 37.8037527271349))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.694620207877 37.8037260242541,22.694692687125 37.8036993213732,22.6945706168125 37.8035925098498,22.6944981375645 37.8036192127306,22.694620207877 37.8037260242541))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.694692687125 37.8036993213732,22.6947651663731 37.8036764331896,22.6946430960606 37.8035696216662,22.6945706168125 37.8035925098498,22.694692687125 37.8036993213732))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6947651663731 37.8036764331896,22.6948376456211 37.8036497303088,22.6947155753086 37.8035429187853,22.6946430960606 37.8035696216662,22.6947651663731 37.8036764331896))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "B10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "B10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/B10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6948376456211 37.8036497303088,22.6949101248692 37.8036268421252,22.6947880545567 37.8035200306017,22.6947155753086 37.8035429187853,22.6948376456211 37.8036497303088))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940632620762 37.803767985924,22.6941357413243 37.8037450977404,22.6940117636631 37.803638286217,22.6939392844151 37.8036611744006,22.6940632620762 37.803767985924))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6941357413243 37.8037450977404,22.6942082205723 37.8037183948595,22.6940842429112 37.8036115833361,22.6940117636631 37.803638286217,22.6941357413243 37.8037450977404))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942082205723 37.8037183948595,22.6942806998204 37.803695506676,22.6941567221592 37.8035848804552,22.6940842429112 37.8036115833361,22.6942082205723 37.8037183948595))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942806998204 37.803695506676,22.6943531790684 37.8036688037951,22.6942292014073 37.8035619922717,22.6941567221592 37.8035848804552,22.6942806998204 37.803695506676))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943531790684 37.8036688037951,22.6944256583165 37.8036421009142,22.6943016806553 37.8035352893908,22.6942292014073 37.8035619922717,22.6943531790684 37.8036688037951))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6944256583165 37.8036421009142,22.6944981375645 37.8036192127306,22.6943741599034 37.8035124012072,22.6943016806553 37.8035352893908,22.6944256583165 37.8036421009142))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6944981375645 37.8036192127306,22.6945706168125 37.8035925098498,22.6944466391514 37.8034856983263,22.6943741599034 37.8035124012072,22.6944981375645 37.8036192127306))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6945706168125 37.8035925098498,22.6946430960606 37.8035696216662,22.6945191183995 37.8034589954455,22.6944466391514 37.8034856983263,22.6945706168125 37.8035925098498))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6946430960606 37.8035696216662,22.6947155753086 37.8035429187853,22.6945915976475 37.8034361072619,22.6945191183995 37.8034589954455,22.6946430960606 37.8035696216662))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "C10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "C10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/C10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6947155753086 37.8035429187853,22.6947880545567 37.8035200306017,22.6946640768956 37.803409404381,22.6945915976475 37.8034361072619,22.6947155753086 37.8035429187853))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939392844151 37.8036611744006,22.6940117636631 37.803638286217,22.6938896933506 37.8035276599963,22.6938172141026 37.8035543628771,22.6939392844151 37.8036611744006))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940117636631 37.803638286217,22.6940842429112 37.8036115833361,22.6939621725987 37.8035047718127,22.6938896933506 37.8035276599963,22.6940117636631 37.803638286217))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940842429112 37.8036115833361,22.6941567221592 37.8035848804552,22.6940346518467 37.8034780689318,22.6939621725987 37.8035047718127,22.6940842429112 37.8036115833361))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6941567221592 37.8035848804552,22.6942292014073 37.8035619922717,22.6941071310948 37.8034551807482,22.6940346518467 37.8034780689318,22.6941567221592 37.8035848804552))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942292014073 37.8035619922717,22.6943016806553 37.8035352893908,22.6941796103428 37.8034284778674,22.6941071310948 37.8034551807482,22.6942292014073 37.8035619922717))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943016806553 37.8035352893908,22.6943741599034 37.8035124012072,22.6942520895909 37.8034017749865,22.6941796103428 37.8034284778674,22.6943016806553 37.8035352893908))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943741599034 37.8035124012072,22.6944466391514 37.8034856983263,22.6943245688389 37.8033788868029,22.6942520895909 37.8034017749865,22.6943741599034 37.8035124012072))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6944466391514 37.8034856983263,22.6945191183995 37.8034589954455,22.694397048087 37.803352183922,22.6943245688389 37.8033788868029,22.6944466391514 37.8034856983263))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6945191183995 37.8034589954455,22.6945915976475 37.8034361072619,22.694469527335 37.8033292957385,22.694397048087 37.803352183922,22.6945191183995 37.8034589954455))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "D10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "D10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/D10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6945915976475 37.8034361072619,22.6946640768956 37.803409404381,22.6945420065831 37.8033025928576,22.694469527335 37.8033292957385,22.6945915976475 37.8034361072619))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6938172141026 37.8035543628771,22.6938896933506 37.8035276599963,22.6937657156895 37.8034208484728,22.6936932364415 37.8034475513537,22.6938172141026 37.8035543628771))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6938896933506 37.8035276599963,22.6939621725987 37.8035047718127,22.6938381949375 37.8033979602892,22.6937657156895 37.8034208484728,22.6938896933506 37.8035276599963))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939621725987 37.8035047718127,22.6940346518467 37.8034780689318,22.6939106741856 37.8033712574084,22.6938381949375 37.8033979602892,22.6939621725987 37.8035047718127))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940346518467 37.8034780689318,22.6941071310948 37.8034551807482,22.6939831534336 37.8033445545275,22.6939106741856 37.8033712574084,22.6940346518467 37.8034780689318))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6941071310948 37.8034551807482,22.6941796103428 37.8034284778674,22.6940556326817 37.8033216663439,22.6939831534336 37.8033445545275,22.6941071310948 37.8034551807482))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6941796103428 37.8034284778674,22.6942520895909 37.8034017749865,22.6941281119297 37.8032949634631,22.6940556326817 37.8033216663439,22.6941796103428 37.8034284778674))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942520895909 37.8034017749865,22.6943245688389 37.8033788868029,22.6942005911778 37.8032720752795,22.6941281119297 37.8032949634631,22.6942520895909 37.8034017749865))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943245688389 37.8033788868029,22.694397048087 37.803352183922,22.6942730704258 37.8032453723986,22.6942005911778 37.8032720752795,22.6943245688389 37.8033788868029))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.694397048087 37.803352183922,22.694469527335 37.8033292957385,22.6943455496739 37.803222484215,22.6942730704258 37.8032453723986,22.694397048087 37.803352183922))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "E10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "E10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/E10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.694469527335 37.8033292957385,22.6945420065831 37.8033025928576,22.6944180289219 37.8031957813342,22.6943455496739 37.803222484215,22.694469527335 37.8033292957385))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6936932364415 37.8034475513537,22.6937657156895 37.8034208484728,22.6936417380284 37.8033140369494,22.6935692587803 37.8033407398302,22.6936932364415 37.8034475513537))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6937657156895 37.8034208484728,22.6938381949375 37.8033979602892,22.6937142172764 37.8032873340685,22.6936417380284 37.8033140369494,22.6937657156895 37.8034208484728))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6938381949375 37.8033979602892,22.6939106741856 37.8033712574084,22.6937866965245 37.8032644458849,22.6937142172764 37.8032873340685,22.6938381949375 37.8033979602892))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939106741856 37.8033712574084,22.6939831534336 37.8033445545275,22.6938591757725 37.8032377430041,22.6937866965245 37.8032644458849,22.6939106741856 37.8033712574084))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939831534336 37.8033445545275,22.6940556326817 37.8033216663439,22.6939316550206 37.8032148548205,22.6938591757725 37.8032377430041,22.6939831534336 37.8033445545275))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940556326817 37.8033216663439,22.6941281119297 37.8032949634631,22.6940041342686 37.8031881519396,22.6939316550206 37.8032148548205,22.6940556326817 37.8033216663439))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6941281119297 37.8032949634631,22.6942005911778 37.8032720752795,22.6940766135166 37.803165263756,22.6940041342686 37.8031881519396,22.6941281119297 37.8032949634631))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942005911778 37.8032720752795,22.6942730704258 37.8032453723986,22.6941490927647 37.8031385608752,22.6940766135166 37.803165263756,22.6942005911778 37.8032720752795))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942730704258 37.8032453723986,22.6943455496739 37.803222484215,22.6942215720127 37.8031118579943,22.6941490927647 37.8031385608752,22.6942730704258 37.8032453723986))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "F10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "F10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/F10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6943455496739 37.803222484215,22.6944180289219 37.8031957813342,22.6942940512608 37.8030889698107,22.6942215720127 37.8031118579943,22.6943455496739 37.803222484215))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6935692587803 37.8033407398302,22.6936417380284 37.8033140369494,22.6935196677159 37.803207225426,22.6934471884678 37.8032301136095,22.6935692587803 37.8033407398302))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6936417380284 37.8033140369494,22.6937142172764 37.8032873340685,22.6935921469639 37.8031805225451,22.6935196677159 37.803207225426,22.6936417380284 37.8033140369494))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6937142172764 37.8032873340685,22.6937866965245 37.8032644458849,22.693664626212 37.8031576343615,22.6935921469639 37.8031805225451,22.6937142172764 37.8032873340685))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6937866965245 37.8032644458849,22.6938591757725 37.8032377430041,22.69373710546 37.8031309314806,22.693664626212 37.8031576343615,22.6937866965245 37.8032644458849))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6938591757725 37.8032377430041,22.6939316550206 37.8032148548205,22.6938095847081 37.803108043297,22.69373710546 37.8031309314806,22.6938591757725 37.8032377430041))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939316550206 37.8032148548205,22.6940041342686 37.8031881519396,22.6938820639561 37.8030813404162,22.6938095847081 37.803108043297,22.6939316550206 37.8032148548205))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940041342686 37.8031881519396,22.6940766135166 37.803165263756,22.6939545432041 37.8030546375353,22.6938820639561 37.8030813404162,22.6940041342686 37.8031881519396))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940766135166 37.803165263756,22.6941490927647 37.8031385608752,22.6940270224522 37.8030317493517,22.6939545432041 37.8030546375353,22.6940766135166 37.803165263756))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6941490927647 37.8031385608752,22.6942215720127 37.8031118579943,22.6940995017002 37.8030050464709,22.6940270224522 37.8030317493517,22.6941490927647 37.8031385608752))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "G10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "G10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/G10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6942215720127 37.8031118579943,22.6942940512608 37.8030889698107,22.6941719809483 37.8029821582873,22.6940995017002 37.8030050464709,22.6942215720127 37.8031118579943))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6934471884678 37.8032301136095,22.6935196677159 37.803207225426,22.6933956900547 37.8031004139025,22.6933232108067 37.8031233020861,22.6934471884678 37.8032301136095))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6935196677159 37.803207225426,22.6935921469639 37.8031805225451,22.6934681693028 37.8030737110217,22.6933956900547 37.8031004139025,22.6935196677159 37.803207225426))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6935921469639 37.8031805225451,22.693664626212 37.8031576343615,22.6935406485508 37.8030470081408,22.6934681693028 37.8030737110217,22.6935921469639 37.8031805225451))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.693664626212 37.8031576343615,22.69373710546 37.8031309314806,22.6936131277989 37.8030241199572,22.6935406485508 37.8030470081408,22.693664626212 37.8031576343615))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.69373710546 37.8031309314806,22.6938095847081 37.803108043297,22.6936856070469 37.8029974170763,22.6936131277989 37.8030241199572,22.69373710546 37.8031309314806))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6938095847081 37.803108043297,22.6938820639561 37.8030813404162,22.693758086295 37.8029745288927,22.6936856070469 37.8029974170763,22.6938095847081 37.803108043297))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6938820639561 37.8030813404162,22.6939545432041 37.8030546375353,22.693830565543 37.8029478260119,22.693758086295 37.8029745288927,22.6938820639561 37.8030813404162))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939545432041 37.8030546375353,22.6940270224522 37.8030317493517,22.6939030447911 37.8029249378283,22.693830565543 37.8029478260119,22.6939545432041 37.8030546375353))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940270224522 37.8030317493517,22.6940995017002 37.8030050464709,22.6939755240391 37.8028982349474,22.6939030447911 37.8029249378283,22.6940270224522 37.8030317493517))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "H10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "H10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/H10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6940995017002 37.8030050464709,22.6941719809483 37.8029821582873,22.6940480032872 37.8028715320666,22.6939755240391 37.8028982349474,22.6940995017002 37.8030050464709))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6933232108067 37.8031233020861,22.6933956900547 37.8031004139025,22.6932736197422 37.8029897876818,22.6932011404942 37.8030164905627,22.6933232108067 37.8031233020861))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6933956900547 37.8031004139025,22.6934681693028 37.8030737110217,22.6933460989903 37.8029668994982,22.6932736197422 37.8029897876818,22.6933956900547 37.8031004139025))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6934681693028 37.8030737110217,22.6935406485508 37.8030470081408,22.6934185782383 37.8029401966174,22.6933460989903 37.8029668994982,22.6934681693028 37.8030737110217))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6935406485508 37.8030470081408,22.6936131277989 37.8030241199572,22.6934910574864 37.8029173084338,22.6934185782383 37.8029401966174,22.6935406485508 37.8030470081408))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6936131277989 37.8030241199572,22.6936856070469 37.8029974170763,22.6935635367344 37.8028906055529,22.6934910574864 37.8029173084338,22.6936131277989 37.8030241199572))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6936856070469 37.8029974170763,22.693758086295 37.8029745288927,22.6936360159825 37.8028677173693,22.6935635367344 37.8028906055529,22.6936856070469 37.8029974170763))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.693758086295 37.8029745288927,22.693830565543 37.8029478260119,22.6937084952305 37.8028410144885,22.6936360159825 37.8028677173693,22.693758086295 37.8029745288927))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.693830565543 37.8029478260119,22.6939030447911 37.8029249378283,22.6937809744786 37.8028143116076,22.6937084952305 37.8028410144885,22.693830565543 37.8029478260119))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939030447911 37.8029249378283,22.6939755240391 37.8028982349474,22.6938534537266 37.802791423424,22.6937809744786 37.8028143116076,22.6939030447911 37.8029249378283))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "I10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "I10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/I10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6939755240391 37.8028982349474,22.6940480032872 37.8028715320666,22.6939259329747 37.8027647205431,22.6938534537266 37.802791423424,22.6939755240391 37.8028982349474))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J01>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J01" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J01" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J01/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J01/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6932011404942 37.8030164905627,22.6932736197422 37.8029897876818,22.6931496420811 37.8028829761584,22.6930771628331 37.8029096790392,22.6932011404942 37.8030164905627))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J02>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J02" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J02" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J02/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J02/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6932736197422 37.8029897876818,22.6933460989903 37.8029668994982,22.6932221213291 37.8028600879748,22.6931496420811 37.8028829761584,22.6932736197422 37.8029897876818))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J03>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J03" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J03" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J03/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J03/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6933460989903 37.8029668994982,22.6934185782383 37.8029401966174,22.6932946005772 37.8028333850939,22.6932221213291 37.8028600879748,22.6933460989903 37.8029668994982))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J04>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J04" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J04" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J04/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J04/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6934185782383 37.8029401966174,22.6934910574864 37.8029173084338,22.6933670798252 37.8028104969103,22.6932946005772 37.8028333850939,22.6934185782383 37.8029401966174))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J05>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J05" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J05" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J05/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J05/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6934910574864 37.8029173084338,22.6935635367344 37.8028906055529,22.6934395590733 37.8027837940295,22.6933670798252 37.8028104969103,22.6934910574864 37.8029173084338))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J06>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J06" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J06" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J06/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J06/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6935635367344 37.8028906055529,22.6936360159825 37.8028677173693,22.6935120383213 37.8027570911486,22.6934395590733 37.8027837940295,22.6935635367344 37.8028906055529))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J07>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J07" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J07" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J07/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J07/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6936360159825 37.8028677173693,22.6937084952305 37.8028410144885,22.6935845175694 37.802734202965,22.6935120383213 37.8027570911486,22.6936360159825 37.8028677173693))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J08>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J08" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J08" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J08/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J08/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6937084952305 37.8028410144885,22.6937809744786 37.8028143116076,22.6936569968174 37.8027075000842,22.6935845175694 37.802734202965,22.6937084952305 37.8028410144885))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J09>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J09" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J09" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J09/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J09/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6937809744786 37.8028143116076,22.6938534537266 37.802791423424,22.6937294760655 37.8026846119006,22.6936569968174 37.8027075000842,22.6937809744786 37.8028143116076))"^^geo:wktLiteral .
 
 <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J10>
-        rdf:type      bdg:SubPlot ;
-        skos:broader  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
-        rdfs:label    "J10" .
+        rdf:type             bdg:SubPlot ;
+        skos:broader         <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi> ;
+        rdfs:label           "J10" ;
+        geo:defaultGeometry  <http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J10/geo> .
+
+<http://data.bigdatagrapes.eu/resource/AUA/estate/Palivou/Mesi/J10/geo>
+        rdf:type   geo:Geometry ;
+        qb4st:crs  crs-ogc:CRS84 ;
+        geo:asWKT  "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((22.6938534537266 37.802791423424,22.6939259329747 37.8027647205431,22.6938018920664 37.8026582308638,22.6937294760655 37.8026846119006,22.6938534537266 37.802791423424))"^^geo:wktLiteral .

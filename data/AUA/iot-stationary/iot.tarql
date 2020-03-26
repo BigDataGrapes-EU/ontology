@@ -15,8 +15,8 @@ CONSTRUCT {
    bdg:voltage_system      ?VOLATGE_SYSTEM ;
    .
 } WHERE {
-    bind(str(replace(?Timestamp,"[^0-9]","")) as ?DATETIME)
-    bind(uri(concat("http://data.bigdatagrapes.eu/resource/data/tableGrape/Palivou_IoT_2018/",?DATETIME)) as ?URI)  #TODO fix, obviously
+    bind(strdt(replace(replace(replace(?Timestamp,"(\\d+)/(\\d+)/(\\d+)\\s(\\d+:\\d+)","$3-$1-$2T$4:00"),"([\\-T])(\\d)([T\\-:])","$10$2$3"),"([\\-T])(\\d)([T\\-:])","$10$2$3"),xsd:dateTime) as ?DATETIME) #8/1/2018 0:19"
+    bind(uri(concat("data/tableGrape/Palivou_IoT_2018/",str(?DATETIME))) as ?URI)  #TODO fix, obviously
     bind(strdt(?Rain__mm_,xsd:float) as ?RAINFALL)
     bind(strdt(?Air_temperature__C_,xsd:float) as ?TEMP_AIR)
     bind(strdt(?System_temperature__C_,xsd:float) as ?TEMP_SYS)
