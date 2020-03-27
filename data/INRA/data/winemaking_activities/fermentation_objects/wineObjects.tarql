@@ -5,7 +5,7 @@ CONSTRUCT {
   .
 
   ?WINE_URI a afeo:Wine ;
-    rdfs:label ?BOTTLING
+    rdfs:label ?WINE
  . 
 
   ?BOTTLING_URI a afeo:Bottling ;
