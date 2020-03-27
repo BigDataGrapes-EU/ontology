@@ -92,6 +92,7 @@ Plan :
 
 - Soiltextures => http://imash.leeds.ac.uk/ontologies/atu/SoilPhysics.owl
   - http://archive.researchdata.leeds.ac.uk/42/
+  - **Update class plotSoil to [plotTexture](https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/edit#gid=248064775)**
 
 - Add to [model.ttl](../../../../ontology/model/model.ttl)
 ```sparql
@@ -109,6 +110,9 @@ bdg:endDate a bdg:date;
 
 ### Not fixed
 
+
+### Fixed
+
 - Duplicate statements when creating fermentation objects from[malolacticFermentationObjects.tarql](winemaking_activities/fermentation_objects/malolacticFermentationObjects.tarql)
 
 ```sparql
@@ -120,8 +124,6 @@ bdg:endDate a bdg:date;
         afeo:hasInput   <http://data.bigdatagrapes.eu/resource/must/FV_2017_057> ;
         bdg:experiment  <http://data.bigdatagrapes.eu/resource/experiment/2017_QUALIVINBIO_3160> .
 ```
-
-### Fixed
 
 - [grapeMaturationProbablealcohol.tarql](plot_management/maturation_data/grapeMaturationProbablealcohol.tarql)
 When getting csv file from google api, why the first two lines are merged ?
