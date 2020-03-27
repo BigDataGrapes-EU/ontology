@@ -1,15 +1,15 @@
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine/2017_VITIDUR_3159_B/sensoryFlavor/mushroom/>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/unknown/NA2/sensoryFlavor/turbid/>
         rdf:type              qb:Observation ;
         qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/BeforeBottling> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine/2017_VITIDUR_3159_B> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/mushroom> ;
-        bdg:judgeNumber       1 ;
-        bdg:flavorJudgeRatio  "1"^^xsd:double .
+        bdg:wine              <http://data.bigdatagrapes.eu/resource/unknown/NA2> ;
+        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/turbid> ;
+        bdg:judgeNumber       4 ;
+        bdg:flavorJudgeRatio  "0.25"^^xsd:double .
 
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/2017-01-01/wine/2017_INERTIS_MAC_02_T0/sensoryFlavor/alsmostColourless/>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/unknown/NA3/sensoryFlavor/oxidised_brunissement/>
         rdf:type              qb:Observation ;
         qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/BeforeBottling> ;
-        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine/2017_INERTIS_MAC_02_T0> ;
-        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/alsmostColourless> ;
-        bdg:judgeNumber       6 ;
-        bdg:flavorJudgeRatio  "0.83"^^xsd:double .
+        bdg:wine              <http://data.bigdatagrapes.eu/resource/unknown/NA3> ;
+        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/oxidised_brunissement> ;
+        bdg:judgeNumber       4 ;
+        bdg:flavorJudgeRatio  "0.25"^^xsd:double .

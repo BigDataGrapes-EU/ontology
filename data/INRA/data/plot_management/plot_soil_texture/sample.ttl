@@ -1,0 +1,10 @@
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/30>
+        rdf:type         bdg:plotCluster ;
+        rdfs:label       "30" ;
+        bdg:soilTexture  "sandySilty" .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/31>
+        rdf:type         bdg:plotCluster ;
+        rdfs:label       "31" ;
+        bdg:soilTexture  "sandySilty" .

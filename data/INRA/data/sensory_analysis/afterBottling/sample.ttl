@@ -1,17 +1,17 @@
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/AfterBottling/2017-01-01/wine/2016_INERTIS_MACC_1_T5A/INRA/person/2196/sensoryFlavor/astringent/2>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/AfterBottling/2017-01-01/wine/2016_ALF_SYR_01_DEB/INRA/person/1669/sensoryFlavor/bitterness/2>
         rdf:type           qb:Observation ;
         qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/AfterBottling> ;
-        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine/2016_INERTIS_MACC_1_T5A> ;
-        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/2196> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine/2016_ALF_SYR_01_DEB> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1669> ;
+        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/bitterness> ;
+        bdg:iteration      2 ;
+        bdg:score          "9.5"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/AfterBottling/2017-01-01/wine/2016_ALF_SYR_01_DEB/INRA/person/1669/sensoryFlavor/astringent/2>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/AfterBottling> ;
+        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine/2016_ALF_SYR_01_DEB> ;
+        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/1669> ;
         bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/astringent> ;
         bdg:iteration      2 ;
-        bdg:score          "1.5"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/AfterBottling/2017-01-01/wine/2016_INERTIS_MACC_1_T5A/INRA/person/2200/sensoryFlavor/sulphur/2>
-        rdf:type           qb:Observation ;
-        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/AfterBottling> ;
-        bdg:wine           <http://data.bigdatagrapes.eu/resource/wine/2016_INERTIS_MACC_1_T5A> ;
-        bdg:sensor         <http://data.bigdatagrapes.eu/resource/INRA/person/2200> ;
-        bdg:sensoryFlavor  <http://data.bigdatagrapes.eu/resource/sensoryFlavor/sulphur> ;
-        bdg:iteration      2 ;
-        bdg:score          "1.4"^^xsd:double .
+        bdg:score          "7.3"^^xsd:double .

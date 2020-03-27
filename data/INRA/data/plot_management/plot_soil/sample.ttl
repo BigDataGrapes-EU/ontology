@@ -1,9 +1,0 @@
-<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/105>
-        rdf:type      bdg:plotCluster ;
-        rdfs:label    "105" ;
-        bdg:soilType  "siltyClay" .
-
-<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106>
-        rdf:type      bdg:plotCluster ;
-        rdfs:label    "106" ;
-        bdg:soilType  "siltyClay" .

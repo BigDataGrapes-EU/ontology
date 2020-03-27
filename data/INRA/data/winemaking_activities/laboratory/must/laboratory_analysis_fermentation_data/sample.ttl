@@ -1,15 +1,7 @@
-<http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/mustDuringFermentation/2017/2017-08-28/4>
+<http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/mustDuringFermentation/20172016-09-05/2>
         rdf:type                    qb:Observation ;
         qb:dataSet                  <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/mustDuringFermentation/2017> ;
-        bdg:must                    <http://data.bigdatagrapes.eu/resource/must/FV_2017_004> ;
-        bdg:fermentationTank        "pressingTank/P19" ;
-        bdg:sugars                  "11.54"^^xsd:double ;
-        bdg:acidity_volatile_H2SO4  "0.46"^^xsd:double .
-
-<http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/mustDuringFermentation/2017/2017-08-28/1>
-        rdf:type                    qb:Observation ;
-        qb:dataSet                  <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/mustDuringFermentation/2017> ;
-        bdg:must                    <http://data.bigdatagrapes.eu/resource/must/FV_2017_001> ;
-        bdg:fermentationTank        "pressingTank/P8" ;
-        bdg:sugars                  "6.31"^^xsd:double ;
-        bdg:acidity_volatile_H2SO4  "0.27"^^xsd:double .
+        bdg:must                    <http://data.bigdatagrapes.eu/resource/must/FV_2016_001> ;
+        bdg:fermentationTank        "pressingTank/P23" ;
+        bdg:sugars                  "1.32"^^xsd:double ;
+        bdg:acidity_volatile_H2SO4  "0.2"^^xsd:double .

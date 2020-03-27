@@ -1,8 +1,17 @@
-<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/harvestData/FV_2017_090a>
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/harvestData/FV_2017_001>
         rdf:type           qb:Observation ;
         qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/HarvestData> ;
-        bdg:berry          <http://data.bigdatagrapes.eu/resource/berry/FV_2017_090a> ;
-        bdg:date           "2017-09-13T16:00:00"^^xsd:dateTime ;
-        bdg:weight         "1037"^^xsd:double ;
-        bdg:plot           <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH> ;
+        bdg:berry          <http://data.bigdatagrapes.eu/resource/berry/FV_2017_001> ;
+        bdg:date           "2017-08-16T00:00:00"^^xsd:dateTime ;
+        bdg:weight         "2750"^^xsd:double ;
+        bdg:plot           <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_FLOT_ROUGE_22_PATRICIA> ;
+        bdg:harvestMethod  "mecanical" .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/harvestData/FV_2016_010>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/HarvestData> ;
+        bdg:berry          <http://data.bigdatagrapes.eu/resource/berry/FV_2016_010> ;
+        bdg:date           "2016-08-29T00:00:00"^^xsd:dateTime ;
+        bdg:weight         "16"^^xsd:double ;
+        bdg:plot           <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82/82_SYRAH> ;
         bdg:harvestMethod  "manual" .

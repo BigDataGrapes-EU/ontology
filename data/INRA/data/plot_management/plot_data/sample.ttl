@@ -1,0 +1,32 @@
+# annualProduction
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/plotData/annualProduction/2016-12-31T00:00:00/59_MARSELAN>
+        rdf:type              qb:Observation ;
+        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/plotData/annualProduction> ;
+        bdg:dateTime          "2016-12-31T00:00:00"^^xsd:dateTime ;
+        qb4st:RefArea         <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN> ;
+        bdg:annualProduction  "2212"^^xsd:decimal .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/plotData/annualProduction/2016-12-31T00:00:00/61_MERLOT>
+        rdf:type              qb:Observation ;
+        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/plotData/annualProduction> ;
+        bdg:dateTime          "2016-12-31T00:00:00"^^xsd:dateTime ;
+        qb4st:RefArea         <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61/61_MERLOT> ;
+        bdg:annualProduction  "3725"^^xsd:decimal .
+
+
+# annualYield
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/plotData/annualYield/2016-12-31T00:00:00/106_RV_BOUQUET>
+        rdf:type         qb:Observation ;
+        qb:dataSet       <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/plotData/annualYield> ;
+        bdg:dateTime     "2016-12-31T00:00:00"^^xsd:dateTime ;
+        qb4st:RefArea    <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_RV_BOUQUET> ;
+        bdg:annualYield  "3169"^^xsd:decimal .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/plotData/annualYield/2016-12-31T00:00:00/22_SYRAH>
+        rdf:type         qb:Observation ;
+        qb:dataSet       <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/plotData/annualYield> ;
+        bdg:dateTime     "2016-12-31T00:00:00"^^xsd:dateTime ;
+        qb4st:RefArea    <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_SYRAH> ;
+        bdg:annualYield  "4100"^^xsd:decimal .

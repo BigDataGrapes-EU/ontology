@@ -1,21 +1,23 @@
-<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017/2017-09-29/PR038_2017R>
-        rdf:type                   qb:Observation ;
-        qb:dataSet                 <http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017> ;
-        bdg:experiment             <http://data.bigdatagrapes.eu/resource/pressing/PR038_2017R> ;
-        bdg:must                   <http://data.bigdatagrapes.eu/resource/mustAF/PR038_2017R> ;
-        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A36> ;
-        bdg:date                   "2017-09-29"^^xsd:date ;
-        bdg:press_juice_volume     "77"^^xsd:double ;
-        bdg:run_juice_volume       "77"^^xsd:double ;
-        bdg:total_volume_pressing  "815"^^xsd:double .
 
-<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017/2017-09-29/PR039_2017R>
-        rdf:type                   qb:Observation ;
-        qb:dataSet                 <http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/pressingData/2017> ;
-        bdg:experiment             <http://data.bigdatagrapes.eu/resource/pressing/PR039_2017R> ;
-        bdg:must                   <http://data.bigdatagrapes.eu/resource/mustAF/PR039_2017R> ;
-        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/A44> ;
-        bdg:date                   "2017-09-29"^^xsd:date ;
-        bdg:press_juice_volume     "83"^^xsd:double ;
-        bdg:run_juice_volume       "83"^^xsd:double ;
-        bdg:total_volume_pressing  "89"^^xsd:double .
+# pressing_objects
+<http://data.bigdatagrapes.eu/resource/pressing/PR001_2017R>
+        rdf:type                   afeo:Pressing ;
+        bdg:date                   "2017-09-08"^^xsd:date ;
+        bdg:pressingTank           <http://data.bigdatagrapes.eu/resource/pressingTank/P1> ;
+        bdg:equipment              "SPEIDEL" ;
+        bdg:operator               "CF" ;
+        bdg:total_volume_pressing  "128"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/runJuice/PR001_2017R>
+        rdf:type              afeo:FreeRunJuice ;
+        bdg:run_juice_volume  "25"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR001_2017R>
+        rdf:type                afeo:PressJuice ;
+        bdg:press_juice_volume  "33"^^xsd:double .
+
+
+# pressingObjectsLink
+
+<http://data.bigdatagrapes.eu/resource/pressing/PR001_2017R>
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/pressJuice/PR001_2017R> .
