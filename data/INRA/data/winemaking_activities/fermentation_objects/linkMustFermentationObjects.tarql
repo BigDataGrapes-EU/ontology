@@ -1,8 +1,8 @@
 
 CONSTRUCT {
-  ?URI a afeo:AlcoholicFermentation ;
-    afeo:hasInput ?MUST_URI;
-    bdg:experiment ?EXPERIMENT_URI; # it will change
+   # ?URI a afeo:AlcoholicFermentation ;
+  ?URI afeo:hasInput ?MUST_URI;
+  # bdg:experiment ?EXPERIMENT_URI; # it will change
     #bdg:must  ?MUST_URI;  #attention au terme must!
     
 .
