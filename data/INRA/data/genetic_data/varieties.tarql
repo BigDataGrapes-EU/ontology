@@ -1,0 +1,15 @@
+
+CONSTRUCT {
+  ?VARIETY_URI a bdg:Variety, skos:Concept ;
+    rdfs:label ?varietyName;
+    skos:prefLabel ?varietyName;
+    rdfs:seeAlso ?seeAlso ;
+    bdg:hasSpecies ?SPECIES_URI;
+  .
+} WHERE {
+
+  BIND(uri(concat("variety/",?varietyCode)) as ?VARIETY_URI)
+  BIND(uri(concat("species/",?speciesCode)) as ?SPECIES_URI)
+  
+  BIND(concat("http://www.vivc.de/index.php?r=passport%2Fview&id=",?VIVC) as ?seeAlso)
+}

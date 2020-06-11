@@ -2,7 +2,7 @@
 CONSTRUCT {
   ?URI a afeo:Harvesting ;
     rdfs:label ?SAMPLECODE ; 
-    ?OBJECT_TYPE ?OBJECTCODE_URI ;
+    afeo:appliedTo ?OBJECTCODE_URI ;
     afeo:hasOutput ?BERRY_URI;
   .
   ?BERRY_URI a afeo:Berry ;

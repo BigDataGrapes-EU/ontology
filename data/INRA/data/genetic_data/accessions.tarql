@@ -1,0 +1,17 @@
+
+CONSTRUCT {
+  ?ACCESSION_URI a bdg:Accession, skos:Concept ;
+    rdfs:label ?introductionName;
+    skos:prefLabel ?introductionName;
+    rdfs:seeAlso ?seeAlso ;
+    rdfs:seeAlso ?seeAlsoSireGal ;
+    bdg:hasVariety ?VARIETY_URI;
+  .
+} WHERE {
+
+  BIND(uri(concat("Accession/",?introductionCode)) as ?ACCESSION_URI)
+  BIND(uri(concat("variety/",?varietyCode)) as ?VARIETY_URI)
+  BIND(concat("https://doi.org/",?SiregalDOI) as ?seeAlsoSireGal)
+
+  BIND(?ACCEURL as ?seeAlso)
+}
