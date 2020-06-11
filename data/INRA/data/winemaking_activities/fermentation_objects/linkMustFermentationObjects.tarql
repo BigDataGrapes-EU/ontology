@@ -15,6 +15,6 @@ CONSTRUCT {
   BIND(uri(CONCAT("must/",?CODELOT)) as ?MUST_URI)
   # bdg:must/FV-2017-001
   BIND(REPLACE(REPLACE(REPLACE(?experiment_code, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EXPERIMENT)
-  BIND(uri(CONCAT("experiment/",?EXPERIMENT)) as ?EXPERIMENT_URI)
+  BIND(uri(CONCAT("experiment/",UCASE(?EXPERIMENT))) as ?EXPERIMENT_URI)
 
 }

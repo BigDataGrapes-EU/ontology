@@ -15,8 +15,8 @@ CONSTRUCT {
 } WHERE {
 
   BIND(<data/wineMaking/PechRouge/intialMust> as ?DATASET)
-
-  BIND(uri(CONCAT("experiment/",?experiment_code)) as ?EXPERIMENT_URI)
+  BIND(REPLACE(REPLACE(REPLACE(?experiment_code, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EXPERIMENT)
+  BIND(uri(CONCAT("experiment/",UCASE(?EXPERIMENT))) as ?EXPERIMENT_URI)
 
   BIND(CONCAT(REPLACE(?date,"(\\d{2})/(\\d{2})/(\\d{4})","$3-$2-$1"))  as ?DATE)
   BIND(strdt(?DATE,xsd:date)  as ?FORMATTED_DATE)

@@ -21,7 +21,7 @@ CONSTRUCT {
   # bdg:fermentation/PR021-2017B
   # bdg:must/FV-2017-001
   BIND(REPLACE(REPLACE(REPLACE(?experiment_code, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EXPERIMENT)
-  BIND(uri(CONCAT("experiment/",?EXPERIMENT)) as ?EXPERIMENT_URI)
+  BIND(uri(CONCAT("experiment/",UCASE(?EXPERIMENT))) as ?EXPERIMENT_URI)
   
   BIND(xsd:date(?start_date) as ?START_DATE)
   BIND(xsd:date(?end_date) as ?END_DATE)
