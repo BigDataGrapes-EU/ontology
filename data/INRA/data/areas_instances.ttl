@@ -1,0 +1,1369 @@
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> a bdg:Estate .
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22> a bdg:PlotCluster;
+  rdfs:label "22";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68> a bdg:PlotCluster;
+  rdfs:label "68";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA> a bdg:PlotCluster;
+  rdfs:label "JA";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/18> a bdg:PlotCluster;
+  rdfs:label "18";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35> a bdg:PlotCluster;
+  rdfs:label "35";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/98> a bdg:PlotCluster;
+  rdfs:label "98";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89> a bdg:PlotCluster;
+  rdfs:label "89";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89b> a bdg:PlotCluster;
+  rdfs:label "89b";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/87> a bdg:PlotCluster;
+  rdfs:label "87";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> a bdg:PlotCluster;
+  rdfs:label "85";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/83> a bdg:PlotCluster;
+  rdfs:label "83";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79> a bdg:PlotCluster;
+  rdfs:label "79";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/2> a bdg:PlotCluster;
+  rdfs:label "2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10> a bdg:PlotCluster;
+  rdfs:label "10";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40> a bdg:PlotCluster;
+  rdfs:label "40";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> a bdg:PlotCluster;
+  rdfs:label "39";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/23> a bdg:PlotCluster;
+  rdfs:label "23";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55> a bdg:PlotCluster;
+  rdfs:label "55";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57> a bdg:PlotCluster;
+  rdfs:label "57";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51> a bdg:PlotCluster;
+  rdfs:label "51";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72> a bdg:PlotCluster;
+  rdfs:label "72";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73> a bdg:PlotCluster;
+  rdfs:label "73";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/74> a bdg:PlotCluster;
+  rdfs:label "74";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75> a bdg:PlotCluster;
+  rdfs:label "75";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76> a bdg:PlotCluster;
+  rdfs:label "76";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64> a bdg:PlotCluster;
+  rdfs:label "64";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82> a bdg:PlotCluster;
+  rdfs:label "82";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11> a bdg:PlotCluster;
+  rdfs:label "11";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81> a bdg:PlotCluster;
+  rdfs:label "81";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/63> a bdg:PlotCluster;
+  rdfs:label "63";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66> a bdg:PlotCluster;
+  rdfs:label "66";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66> a bdg:PlotCluster;
+  rdfs:label "66";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/65> a bdg:PlotCluster;
+  rdfs:label "65";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71> a bdg:PlotCluster;
+  rdfs:label "71";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/77> a bdg:PlotCluster;
+  rdfs:label "77";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75> a bdg:PlotCluster;
+  rdfs:label "75";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/90> a bdg:PlotCluster;
+  rdfs:label "90";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/91> a bdg:PlotCluster;
+  rdfs:label "91";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/92> a bdg:PlotCluster;
+  rdfs:label "92";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/95> a bdg:PlotCluster;
+  rdfs:label "95";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102> a bdg:PlotCluster;
+  rdfs:label "102";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106> a bdg:PlotCluster;
+  rdfs:label "106";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102> a bdg:PlotCluster;
+  rdfs:label "102";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61> a bdg:PlotCluster;
+  rdfs:label "61";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> a bdg:PlotCluster;
+  rdfs:label "39";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> a bdg:PlotCluster;
+  rdfs:label "39";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/97> a bdg:PlotCluster;
+  rdfs:label "97";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/100> a bdg:PlotCluster;
+  rdfs:label "100";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/99> a bdg:PlotCluster;
+  rdfs:label "99";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/101> a bdg:PlotCluster;
+  rdfs:label "101";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/53> a bdg:PlotCluster;
+  rdfs:label "53";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103> a bdg:PlotCluster;
+  rdfs:label "103";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/94> a bdg:PlotCluster;
+  rdfs:label "94";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/84> a bdg:PlotCluster;
+  rdfs:label "84";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58> a bdg:PlotCluster;
+  rdfs:label "58";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> a bdg:PlotCluster;
+  rdfs:label "85";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_SYRAH> a bdg:Plot;
+  rdfs:label "22_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_COLLECTION_BLANCS> a bdg:Plot;
+  rdfs:label "68_COLLECTION_BLANCS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JARDIN_AMPELO> a bdg:Plot;
+  rdfs:label "JARDIN_AMPELO";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/18/18_MERLOT_2016> a bdg:Plot;
+  rdfs:label "18_MERLOT_2016";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/18> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35/35_CABERNET_FRANC_2016> a bdg:Plot;
+  rdfs:label "35_CABERNET_FRANC_2016";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/35> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/98/98_MUSCAT_PETIT_GRAIN> a bdg:Plot;
+  rdfs:label "98_MUSCAT_PETIT_GRAIN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/98> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89/89_SYRAH> a bdg:Plot;
+  rdfs:label "89_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89b/89bis_SYRAH> a bdg:Plot;
+  rdfs:label "89bis_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/89b> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/87/87_SYRAH> a bdg:Plot;
+  rdfs:label "87_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/87> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85/85_RUN> a bdg:Plot;
+  rdfs:label "85_RUN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85/85_RESDUR> a bdg:Plot;
+  rdfs:label "85_RESDUR";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/83/83_MARSELAN> a bdg:Plot;
+  rdfs:label "83_MARSELAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/83> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79/79_GRENACHE> a bdg:Plot;
+  rdfs:label "79_GRENACHE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79/79_CARIGNAN> a bdg:Plot;
+  rdfs:label "79_CARIGNAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/79> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/2/02_SYRAH> a bdg:Plot;
+  rdfs:label "02_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_2016> a bdg:Plot;
+  rdfs:label "10_SAUVIGNON_2016";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_GAMAY> a bdg:Plot;
+  rdfs:label "40_GAMAY";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_CABERNET_SAUVIGNON> a bdg:Plot;
+  rdfs:label "39_CABERNET_SAUVIGNON";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/23/23_SYRAH> a bdg:Plot;
+  rdfs:label "23_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/23> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55/55_VIOGNIER> a bdg:Plot;
+  rdfs:label "55_VIOGNIER";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MERLOT> a bdg:Plot;
+  rdfs:label "57_MERLOT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51_MUSCAT_ALEXANDRIE_2> a bdg:Plot;
+  rdfs:label "51_MUSCAT_ALEXANDRIE_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE> a bdg:Plot;
+  rdfs:label "72_MOURVEDRE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73/73_MACCABEU> a bdg:Plot;
+  rdfs:label "73_MACCABEU";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/73> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/74/74_CONS_CARIGNAN> a bdg:Plot;
+  rdfs:label "74_CONS_CARIGNAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/74> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_NVLLES_OBTENTIONS_INRA> a bdg:Plot;
+  rdfs:label "75_NVLLES_OBTENTIONS_INRA";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76_SYRAH> a bdg:Plot;
+  rdfs:label "76_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64_GRENACHE_2017> a bdg:Plot;
+  rdfs:label "64_GRENACHE_2017";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82/82_SYRAH> a bdg:Plot;
+  rdfs:label "82_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/82> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11/11_PETIT_VERDOT> a bdg:Plot;
+  rdfs:label "11_PETIT_VERDOT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81/81_CHARDONNAY> a bdg:Plot;
+  rdfs:label "81_CHARDONNAY";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/81> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/63/63_SYRAH> a bdg:Plot;
+  rdfs:label "63_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/63> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66/66_ARAMON> a bdg:Plot;
+  rdfs:label "66_ARAMON";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66/66_MACCABEU> a bdg:Plot;
+  rdfs:label "66_MACCABEU";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/66> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/65/65_CARIGNAN> a bdg:Plot;
+  rdfs:label "65_CARIGNAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/65> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71/71_GRENACHE_2015> a bdg:Plot;
+  rdfs:label "71_GRENACHE_2015";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/77/77_SYRAH> a bdg:Plot;
+  rdfs:label "77_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/77> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/78_MUSCAT_PETIT_GRAIN> a bdg:Plot;
+  rdfs:label "78_MUSCAT_PETIT_GRAIN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/90/90_MUSCAT_PETIT_GRAIN> a bdg:Plot;
+  rdfs:label "90_MUSCAT_PETIT_GRAIN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/90> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/91/91_MUSCAT_PETIT_GRAIN> a bdg:Plot;
+  rdfs:label "91_MUSCAT_PETIT_GRAIN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/91> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/92/92_GRENACHE_GRIS_BLANC> a bdg:Plot;
+  rdfs:label "92_GRENACHE_GRIS_BLANC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/92> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/95/95_CARIGNAN> a bdg:Plot;
+  rdfs:label "95_CARIGNAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/95> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH> a bdg:Plot;
+  rdfs:label "102_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_RV_BOUQUET> a bdg:Plot;
+  rdfs:label "106_RV_BOUQUET";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_PIQUEPOUL_BLANC> a bdg:Plot;
+  rdfs:label "102_PIQUEPOUL_BLANC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61/61_MERLOT> a bdg:Plot;
+  rdfs:label "61_MERLOT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/61> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_PATRICIA> a bdg:Plot;
+  rdfs:label "39_PATRICIA";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_FLOT_ROUGE> a bdg:Plot;
+  rdfs:label "39_FLOT_ROUGE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/97/97_VDQA_G14_N> a bdg:Plot;
+  rdfs:label "97_VDQA_G14_N";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/97> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/100/100_FLOREAL> a bdg:Plot;
+  rdfs:label "100_FLOREAL";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/100> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/99/99_VDQA_G5_B> a bdg:Plot;
+  rdfs:label "99_VDQA_G5_B";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/99> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/101/101_VDQA_G5_B> a bdg:Plot;
+  rdfs:label "101_VDQA_G5_B";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/101> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/53/53_CHARDONNAY> a bdg:Plot;
+  rdfs:label "53_CHARDONNAY";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/53> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103/103_ARTABAN> a bdg:Plot;
+  rdfs:label "103_ARTABAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/94/94_GRENACHE> a bdg:Plot;
+  rdfs:label "94_GRENACHE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/94> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/84/84_GRENACHE> a bdg:Plot;
+  rdfs:label "84_GRENACHE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/84> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES> a bdg:Plot;
+  rdfs:label "58_ANTARES";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85/85_UDINE> a bdg:Plot;
+  rdfs:label "85_UDINE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/85> . 
+
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_ESP> a bdg:Plot;
+  rdfs:label "10_SAUVIGNON_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_ESP_2016> a bdg:Plot;
+  rdfs:label "10_SAUVIGNON_ESP_2016";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_ESP_2016> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_TM> a bdg:Plot;
+  rdfs:label "10_SAUVIGNON_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_TM_2016> a bdg:Plot;
+  rdfs:label "10_SAUVIGNON_TM_2016";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/10/10_SAUVIGNON_TM_2016> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_PIQUEPOUL_BLANC_ESP> a bdg:Plot;
+  rdfs:label "102_PIQUEPOUL_BLANC_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_PIQUEPOUL_BLANC_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_PIQUEPOUL_BLANC_LP> a bdg:Plot;
+  rdfs:label "102_PIQUEPOUL_BLANC_LP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_PIQUEPOUL_BLANC_LP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_PIQUEPOUL_BLANC_TM> a bdg:Plot;
+  rdfs:label "102_PIQUEPOUL_BLANC_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_PIQUEPOUL_BLANC_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH_ESP> a bdg:Plot;
+  rdfs:label "102_SYRAH_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH_LP> a bdg:Plot;
+  rdfs:label "102_SYRAH_LP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH_LP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH_TM> a bdg:Plot;
+  rdfs:label "102_SYRAH_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/102/102_SYRAH_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103/103_MALBEC> a bdg:Plot;
+  rdfs:label "103_MALBEC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103/103_MALBEC> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103/103_SYRAH> a bdg:Plot;
+  rdfs:label "103_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/103/103_SYRAH> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B> a bdg:Plot;
+  rdfs:label "106_3159B";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_ESP> a bdg:Plot;
+  rdfs:label "106_3159B_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_ESP_BAS> a bdg:Plot;
+  rdfs:label "106_3159B_ESP_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_ESP_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_ESP_HAUT> a bdg:Plot;
+  rdfs:label "106_3159B_ESP_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_ESP_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_LP> a bdg:Plot;
+  rdfs:label "106_3159B_LP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_LP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_LP_BAS> a bdg:Plot;
+  rdfs:label "106_3159B_LP_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_LP_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_LP_HAUT> a bdg:Plot;
+  rdfs:label "106_3159B_LP_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_LP_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_TM> a bdg:Plot;
+  rdfs:label "106_3159B_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_TM_BAS> a bdg:Plot;
+  rdfs:label "106_3159B_TM_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_TM_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_TM_HAUT> a bdg:Plot;
+  rdfs:label "106_3159B_TM_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3159B_TM_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N> a bdg:Plot;
+  rdfs:label "106_3160N";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_ESP> a bdg:Plot;
+  rdfs:label "106_3160N_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_ESP_HAUT> a bdg:Plot;
+  rdfs:label "106_3160N_ESP_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_ESP_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_LP> a bdg:Plot;
+  rdfs:label "106_3160N_LP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_LP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_LP_BAS> a bdg:Plot;
+  rdfs:label "106_3160N_LP_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_LP_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_LP_HAUT> a bdg:Plot;
+  rdfs:label "106_3160N_LP_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_LP_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_TM> a bdg:Plot;
+  rdfs:label "106_3160N_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_TM_BAS> a bdg:Plot;
+  rdfs:label "106_3160N_TM_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_TM_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_TM_HAUT> a bdg:Plot;
+  rdfs:label "106_3160N_TM_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3160N_TM_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N> a bdg:Plot;
+  rdfs:label "106_3176N";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_ESP> a bdg:Plot;
+  rdfs:label "106_3176N_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_ESP_BAS> a bdg:Plot;
+  rdfs:label "106_3176N_ESP_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_ESP_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_ESP_HAUT> a bdg:Plot;
+  rdfs:label "106_3176N_ESP_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_ESP_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_LP> a bdg:Plot;
+  rdfs:label "106_3176N_LP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_LP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_LP_BAS> a bdg:Plot;
+  rdfs:label "106_3176N_LP_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_LP_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_LP_HAUT> a bdg:Plot;
+  rdfs:label "106_3176N_LP_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_LP_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_TM> a bdg:Plot;
+  rdfs:label "106_3176N_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_TM_BAS> a bdg:Plot;
+  rdfs:label "106_3176N_TM_BAS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_TM_BAS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_TM_HAUT> a bdg:Plot;
+  rdfs:label "106_3176N_TM_HAUT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N_TM_HAUT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11/11_PETIT_VERDOT_ESP> a bdg:Plot;
+  rdfs:label "11_PETIT_VERDOT_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11/11_PETIT_VERDOT_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11/11_PETIT_VERDOT_TM> a bdg:Plot;
+  rdfs:label "11_PETIT_VERDOT_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/11/11_PETIT_VERDOT_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_FLOT_ROUGE> a bdg:Plot;
+  rdfs:label "22_FLOT_ROUGE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_FLOT_ROUGE> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_PATRICIA> a bdg:Plot;
+  rdfs:label "22_PATRICIA";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_PATRICIA> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_SYRAH_sp> a bdg:Plot;
+  rdfs:label "22_SYRAH_sp";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/22/22_SYRAH_sp> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_CABERNET_SAUVIGNON_1> a bdg:Plot;
+  rdfs:label "39_CABERNET_SAUVIGNON_1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_CABERNET_SAUVIGNON_1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_CABERNET_SAUVIGNON_2> a bdg:Plot;
+  rdfs:label "39_CABERNET_SAUVIGNON_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_CABERNET_SAUVIGNON_2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_PATRICIA_1> a bdg:Plot;
+  rdfs:label "39_PATRICIA_1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_PATRICIA_1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_PATRICIA_2> a bdg:Plot;
+  rdfs:label "39_PATRICIA_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/39/39_PATRICIA_2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_GAMAY_sp> a bdg:Plot;
+  rdfs:label "40_GAMAY_sp";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_GAMAY_sp> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_MERLOT> a bdg:Plot;
+  rdfs:label "40_MERLOT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_MERLOT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_PROSECCO> a bdg:Plot;
+  rdfs:label "40_PROSECCO";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_PROSECCO> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G01> a bdg:Plot;
+  rdfs:label "40_VDQA_G01";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G01> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G02> a bdg:Plot;
+  rdfs:label "40_VDQA_G02";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G02> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G03> a bdg:Plot;
+  rdfs:label "40_VDQA_G03";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G03> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G04> a bdg:Plot;
+  rdfs:label "40_VDQA_G04";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G04> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G05> a bdg:Plot;
+  rdfs:label "40_VDQA_G05";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G05> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G06> a bdg:Plot;
+  rdfs:label "40_VDQA_G06";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G06> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G07> a bdg:Plot;
+  rdfs:label "40_VDQA_G07";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G07> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G09> a bdg:Plot;
+  rdfs:label "40_VDQA_G09";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G09> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G14> a bdg:Plot;
+  rdfs:label "40_VDQA_G14";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G14> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G15> a bdg:Plot;
+  rdfs:label "40_VDQA_G15";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G15> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G16> a bdg:Plot;
+  rdfs:label "40_VDQA_G16";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G16> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G17> a bdg:Plot;
+  rdfs:label "40_VDQA_G17";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/40/40_VDQA_G17> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51/51_MUSCAT_ALEXANDRIE_1> a bdg:Plot;
+  rdfs:label "51_MUSCAT_ALEXANDRIE_1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51/51_MUSCAT_ALEXANDRIE_1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51/51_MUSCAT_ALEXANDRIE_2> a bdg:Plot;
+  rdfs:label "51_MUSCAT_ALEXANDRIE_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/51/51_MUSCAT_ALEXANDRIE_2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55/55_VIOGNIER_ESP> a bdg:Plot;
+  rdfs:label "55_VIOGNIER_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55/55_VIOGNIER_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55/55_VIOGNIER_TM> a bdg:Plot;
+  rdfs:label "55_VIOGNIER_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/55/55_VIOGNIER_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MERLOT_sp> a bdg:Plot;
+  rdfs:label "57_MERLOT_sp";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MERLOT_sp> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR> a bdg:Plot;
+  rdfs:label "57_MORASTEL_NOIR";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR_R10B2> a bdg:Plot;
+  rdfs:label "57_MORASTEL_NOIR_R10B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR_R10B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR_R4B1> a bdg:Plot;
+  rdfs:label "57_MORASTEL_NOIR_R4B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR_R4B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR_R7B2> a bdg:Plot;
+  rdfs:label "57_MORASTEL_NOIR_R7B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_MORASTEL_NOIR_R7B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC> a bdg:Plot;
+  rdfs:label "57_PIQUEPOUL_BLANC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC_R3B1> a bdg:Plot;
+  rdfs:label "57_PIQUEPOUL_BLANC_R3B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC_R3B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC_R6B2> a bdg:Plot;
+  rdfs:label "57_PIQUEPOUL_BLANC_R6B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC_R6B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC_R8B1> a bdg:Plot;
+  rdfs:label "57_PIQUEPOUL_BLANC_R8B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_PIQUEPOUL_BLANC_R8B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N> a bdg:Plot;
+  rdfs:label "57_VDQA_G01_N";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N_R1B1> a bdg:Plot;
+  rdfs:label "57_VDQA_G01_N_R1B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N_R1B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N_R4B2> a bdg:Plot;
+  rdfs:label "57_VDQA_G01_N_R4B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N_R4B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N_R7B1> a bdg:Plot;
+  rdfs:label "57_VDQA_G01_N_R7B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G01_N_R7B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N> a bdg:Plot;
+  rdfs:label "57_VDQA_G02_N";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N_R1B2> a bdg:Plot;
+  rdfs:label "57_VDQA_G02_N_R1B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N_R1B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N_R5B1> a bdg:Plot;
+  rdfs:label "57_VDQA_G02_N_R5B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N_R5B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N_R8B2> a bdg:Plot;
+  rdfs:label "57_VDQA_G02_N_R8B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G02_N_R8B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N> a bdg:Plot;
+  rdfs:label "57_VDQA_G07_N";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N_R2B1> a bdg:Plot;
+  rdfs:label "57_VDQA_G07_N_R2B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N_R2B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N_R5B2> a bdg:Plot;
+  rdfs:label "57_VDQA_G07_N_R5B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N_R5B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N_R9B2> a bdg:Plot;
+  rdfs:label "57_VDQA_G07_N_R9B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/57/57_VDQA_G07_N_R9B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_COL134> a bdg:Plot;
+  rdfs:label "58_ANTARES_COL134";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_COL134> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_COL134_ESP> a bdg:Plot;
+  rdfs:label "58_ANTARES_COL134_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_COL134_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_COL134_TM> a bdg:Plot;
+  rdfs:label "58_ANTARES_COL134_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_COL134_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_PRIOR> a bdg:Plot;
+  rdfs:label "58_ANTARES_PRIOR";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_PRIOR> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_PRIOR_ESP> a bdg:Plot;
+  rdfs:label "58_ANTARES_PRIOR_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_PRIOR_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_PRIOR_TM> a bdg:Plot;
+  rdfs:label "58_ANTARES_PRIOR_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/58/58_ANTARES_PRIOR_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_ESP> a bdg:Plot;
+  rdfs:label "59_MARSELAN_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_LP> a bdg:Plot;
+  rdfs:label "59_MARSELAN_LP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_LP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_LYS> a bdg:Plot;
+  rdfs:label "59_MARSELAN_LYS";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_LYS> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_TM> a bdg:Plot;
+  rdfs:label "59_MARSELAN_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/59/59_MARSELAN_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64_GRENACHE_ESP> a bdg:Plot;
+  rdfs:label "64_GRENACHE_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64_GRENACHE_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64_GRENACHE_LP> a bdg:Plot;
+  rdfs:label "64_GRENACHE_LP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64_GRENACHE_LP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64_GRENACHE_TM> a bdg:Plot;
+  rdfs:label "64_GRENACHE_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/64/64_GRENACHE_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/67/67_MOURVEDRE_ESP> a bdg:Plot;
+  rdfs:label "67_MOURVEDRE_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/67/67_MOURVEDRE_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/67/67_MOURVEDRE_TM> a bdg:Plot;
+  rdfs:label "67_MOURVEDRE_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/67/67_MOURVEDRE_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ARRILOBA> a bdg:Plot;
+  rdfs:label "68_ARRILOBA";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ARRILOBA> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_BOURBOULENC> a bdg:Plot;
+  rdfs:label "68_BOURBOULENC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_BOURBOULENC> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_BOURBOULENC_1> a bdg:Plot;
+  rdfs:label "68_BOURBOULENC_1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_BOURBOULENC_1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_BOURBOULENC_2> a bdg:Plot;
+  rdfs:label "68_BOURBOULENC_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_BOURBOULENC_2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_CHENIN> a bdg:Plot;
+  rdfs:label "68_CHENIN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_CHENIN> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_MUSCAT_PETIT_GRAIN> a bdg:Plot;
+  rdfs:label "68_MUSCAT_PETIT_GRAIN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_MUSCAT_PETIT_GRAIN> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ROUSSANNE> a bdg:Plot;
+  rdfs:label "68_ROUSSANNE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ROUSSANNE> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ROUSSANNE_1> a bdg:Plot;
+  rdfs:label "68_ROUSSANNE_1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ROUSSANNE_1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ROUSSANNE_2> a bdg:Plot;
+  rdfs:label "68_ROUSSANNE_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_ROUSSANNE_2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_VERMENTINO> a bdg:Plot;
+  rdfs:label "68_VERMENTINO";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_VERMENTINO> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_VERMENTINO_1> a bdg:Plot;
+  rdfs:label "68_VERMENTINO_1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_VERMENTINO_1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_VERMENTINO_2> a bdg:Plot;
+  rdfs:label "68_VERMENTINO_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/68/68_VERMENTINO_2> . 
+
+ 
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71/71_GRENACHE_GRIS_BLANC> a bdg:Plot;
+  rdfs:label "71_GRENACHE_GRIS_BLANC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71/71_GRENACHE_GRIS_BLANC> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71/71_GRENACHE_NOIR> a bdg:Plot;
+  rdfs:label "71_GRENACHE_NOIR";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/71/71_GRENACHE_NOIR> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_CA11> a bdg:Plot;
+  rdfs:label "72_MOURVEDRE_CA11";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_CA11> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_ESP> a bdg:Plot;
+  rdfs:label "72_MOURVEDRE_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_TM> a bdg:Plot;
+  rdfs:label "72_MOURVEDRE_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_sp> a bdg:Plot;
+  rdfs:label "72_MOURVEDRE_sp";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MOURVEDRE_sp> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MUSCAT_PETIT_GRAIN_CA11> a bdg:Plot;
+  rdfs:label "72_MUSCAT_PETIT_GRAIN_CA11";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_MUSCAT_PETIT_GRAIN_CA11> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_10_7> a bdg:Plot;
+  rdfs:label "72_NV_10_7";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_10_7> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_111_9> a bdg:Plot;
+  rdfs:label "72_NV_111_9";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_111_9> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_68_11_CABESTREL> a bdg:Plot;
+  rdfs:label "72_NV_68_11_CABESTREL";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_68_11_CABESTREL> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_MARSELAN> a bdg:Plot;
+  rdfs:label "72_NV_MARSELAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_NV_MARSELAN> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_SYRAH> a bdg:Plot;
+  rdfs:label "72_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/72/72_SYRAH> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_ARINARNOA> a bdg:Plot;
+  rdfs:label "75_ARINARNOA";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_ARINARNOA> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_CALADOC> a bdg:Plot;
+  rdfs:label "75_CALADOC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_CALADOC> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_EKIGAINA> a bdg:Plot;
+  rdfs:label "75_EKIGAINA";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_EKIGAINA> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_GRENACHE> a bdg:Plot;
+  rdfs:label "75_GRENACHE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_GRENACHE> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_GRENACHE_BLANC> a bdg:Plot;
+  rdfs:label "75_GRENACHE_BLANC";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_GRENACHE_BLANC> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN> a bdg:Plot;
+  rdfs:label "75_MARSELAN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_1> a bdg:Plot;
+  rdfs:label "75_MARSELAN_1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_2> a bdg:Plot;
+  rdfs:label "75_MARSELAN_2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_3> a bdg:Plot;
+  rdfs:label "75_MARSELAN_3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_4> a bdg:Plot;
+  rdfs:label "75_MARSELAN_4";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MARSELAN_4> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MERLOT> a bdg:Plot;
+  rdfs:label "75_MERLOT";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/75/75_MERLOT> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76_SYRAH_ESP> a bdg:Plot;
+  rdfs:label "76_SYRAH_ESP";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76_SYRAH_ESP> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76_SYRAH_LYRE> a bdg:Plot;
+  rdfs:label "76_SYRAH_LYRE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76_SYRAH_LYRE> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76_SYRAH_TM> a bdg:Plot;
+  rdfs:label "76_SYRAH_TM";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/76/76_SYRAH_TM> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac> a bdg:Plot;
+  rdfs:label "88_JUS_Albignac";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac_R17B2> a bdg:Plot;
+  rdfs:label "88_JUS_Albignac_R17B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac_R17B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac_R26B1> a bdg:Plot;
+  rdfs:label "88_JUS_Albignac_R26B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac_R26B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac_R39B2> a bdg:Plot;
+  rdfs:label "88_JUS_Albignac_R39B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Albignac_R39B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa> a bdg:Plot;
+  rdfs:label "88_JUS_Arinarnoa";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa_R07B1> a bdg:Plot;
+  rdfs:label "88_JUS_Arinarnoa_R07B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa_R07B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa_R23B1> a bdg:Plot;
+  rdfs:label "88_JUS_Arinarnoa_R23B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa_R23B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa_R36B2> a bdg:Plot;
+  rdfs:label "88_JUS_Arinarnoa_R36B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Arinarnoa_R36B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R09B1> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante_R09B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R09B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R10B1> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante_R10B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R10B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R25B2> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante_R25B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R25B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R26B2> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante_R26B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R26B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R27B2> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante_R27B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R27B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R39B1> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante_R39B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R39B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R40B1> a bdg:Plot;
+  rdfs:label "88_JUS_Caralicante_R40B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Caralicante_R40B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis> a bdg:Plot;
+  rdfs:label "88_JUS_Carubis";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis_R16B2> a bdg:Plot;
+  rdfs:label "88_JUS_Carubis_R16B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis_R16B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis_R25B3> a bdg:Plot;
+  rdfs:label "88_JUS_Carubis_R25B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis_R25B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis_R43B1> a bdg:Plot;
+  rdfs:label "88_JUS_Carubis_R43B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Carubis_R43B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge> a bdg:Plot;
+  rdfs:label "88_JUS_FlotRouge";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge_R18B2> a bdg:Plot;
+  rdfs:label "88_JUS_FlotRouge_R18B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge_R18B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge_R26B3> a bdg:Plot;
+  rdfs:label "88_JUS_FlotRouge_R26B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge_R26B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge_R33B3> a bdg:Plot;
+  rdfs:label "88_JUS_FlotRouge_R33B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_FlotRouge_R33B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03> a bdg:Plot;
+  rdfs:label "88_JUS_G03";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03_R14B1> a bdg:Plot;
+  rdfs:label "88_JUS_G03_R14B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03_R14B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03_R22B1> a bdg:Plot;
+  rdfs:label "88_JUS_G03_R22B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03_R22B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03_R32B3> a bdg:Plot;
+  rdfs:label "88_JUS_G03_R32B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G03_R32B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04> a bdg:Plot;
+  rdfs:label "88_JUS_G04";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04_R11B1> a bdg:Plot;
+  rdfs:label "88_JUS_G04_R11B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04_R11B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04_R20B3> a bdg:Plot;
+  rdfs:label "88_JUS_G04_R20B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04_R20B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04_R38B1> a bdg:Plot;
+  rdfs:label "88_JUS_G04_R38B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G04_R38B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18> a bdg:Plot;
+  rdfs:label "88_JUS_G18";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18_R13B1> a bdg:Plot;
+  rdfs:label "88_JUS_G18_R13B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18_R13B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18_R17B1> a bdg:Plot;
+  rdfs:label "88_JUS_G18_R17B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18_R17B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18_R24B2> a bdg:Plot;
+  rdfs:label "88_JUS_G18_R24B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_G18_R24B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5> a bdg:Plot;
+  rdfs:label "88_JUS_Galiber14_5";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5_R10B2> a bdg:Plot;
+  rdfs:label "88_JUS_Galiber14_5_R10B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5_R10B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5_R29B1> a bdg:Plot;
+  rdfs:label "88_JUS_Galiber14_5_R29B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5_R29B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5_R35B1> a bdg:Plot;
+  rdfs:label "88_JUS_Galiber14_5_R35B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Galiber14_5_R35B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia> a bdg:Plot;
+  rdfs:label "88_JUS_Patricia";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia_R19B2> a bdg:Plot;
+  rdfs:label "88_JUS_Patricia_R19B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia_R19B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia_R27B3> a bdg:Plot;
+  rdfs:label "88_JUS_Patricia_R27B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia_R27B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia_R34B3> a bdg:Plot;
+  rdfs:label "88_JUS_Patricia_R34B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Patricia_R34B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413> a bdg:Plot;
+  rdfs:label "88_JUS_SV12_413";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413_R12B1> a bdg:Plot;
+  rdfs:label "88_JUS_SV12_413_R12B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413_R12B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413_R31B3> a bdg:Plot;
+  rdfs:label "88_JUS_SV12_413_R31B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413_R31B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413_R36B1> a bdg:Plot;
+  rdfs:label "88_JUS_SV12_413_R36B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_SV12_413_R36B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R09B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096_R09B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R09B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R18B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096_R18B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R18B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R20B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096_R20B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R20B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R24B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096_R24B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R24B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R32B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096_R32B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R32B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R34B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096_R34B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R34B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R42B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10096_R42B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10096_R42B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10796";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796_R03B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10796_R03B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796_R03B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796_R29B3> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10796_R29B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796_R29B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796_R31B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel10796_R31B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel10796_R31B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R01B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681_R01B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R01B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R07B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681_R07B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R07B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R08B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681_R08B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R08B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R21B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681_R21B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R21B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R23B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681_R23B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R23B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R30B3> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681_R30B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R30B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R32B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel4681_R32B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel4681_R32B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel5586";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R12B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel5586_R12B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R12B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R31B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel5586_R31B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R31B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R37B3> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel5586_R37B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R37B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R38B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel5586_R38B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel5586_R38B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel8704";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704_R13B2> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel8704_R13B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704_R13B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704_R21B3> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel8704_R21B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704_R21B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704_R41B1> a bdg:Plot;
+  rdfs:label "88_JUS_Seibel8704_R41B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_Seibel8704_R41B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc> a bdg:Plot;
+  rdfs:label "88_JUS_UgniBlanc";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc_R08B1> a bdg:Plot;
+  rdfs:label "88_JUS_UgniBlanc_R08B1";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc_R08B1> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc_R28B3> a bdg:Plot;
+  rdfs:label "88_JUS_UgniBlanc_R28B3";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc_R28B3> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc_R40B2> a bdg:Plot;
+  rdfs:label "88_JUS_UgniBlanc_R40B2";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/88/88_JUS_UgniBlanc_R40B2> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA/JA_GRENACHE> a bdg:Plot;
+  rdfs:label "JA_GRENACHE";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA/JA_GRENACHE> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA/JA_MUSCAT_PETIT_GRAIN> a bdg:Plot;
+  rdfs:label "JA_MUSCAT_PETIT_GRAIN";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA/JA_MUSCAT_PETIT_GRAIN> . 
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA/JA_SYRAH> a bdg:Plot;
+  rdfs:label "JA_SYRAH";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/JA/JA_SYRAH> . 
+
+
