@@ -9,8 +9,9 @@ CONSTRUCT {
 .
 } WHERE {
   BIND(<data/winemaking/sensoryAnalysis/BeforeBottling> as ?DATASET)
+  BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
 
-  bind(IF(?code_pr = "NA", concat("unknown/",?code_pr,STR(?ROWNUM)) ,concat("wine/",?code_pr)) as ?WINE)
+  bind(IF(?code_pr = "NA", concat("unknown/",?code_pr,STR(?ROWNUM)) ,concat("wine/",?FERMENTATION_CODE)) as ?WINE)
   bind(uri(?WINE) as ?WINE_URI)
 
   bind(strdt(?judgeNumber,xsd:integer) as ?JUDGE_NUMBER)

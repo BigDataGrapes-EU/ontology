@@ -1,11 +1,10 @@
 
 CONSTRUCT {
-  ?FERMENTATION_URI a afeo:AlcoholicFermentation ;
-     afeo:hasOutput ?PRESSJUICE_URI;
+  ?FERMENTATION_URI afeo:hasOutput ?PRESSJUICE_URI;
   .
 
   ?PRESSJUICE_URI a afeo:PressJuice;
-     rdfs:label ?PRESSJUICE
+     rdfs:label ?PRESSJUICE ;
   .
 } WHERE {
 

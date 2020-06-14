@@ -33,7 +33,7 @@ CONSTRUCT {
    
   BIND(CONCAT(REPLACE(?time,"(\\d{2}):(\\d{2}):\\d{0,2}","$1:$2")) as ?TIME)
 
-  BIND(IF(?CHECKTIME, STRDT(CONCAT(?DATE,"T",?TIME,":00"),xsd:dateTime),STRDT(CONCAT(?DATE,"T","00:00:00"),xsd:dateTime)) as ?DATETIME)
+  BIND(IF(?CHECKTIME, STRDT(CONCAT(?DATE,"T",?TIME,":00"),xsd:dateTime),STRDT(CONCAT(?DATE,"T","12:00:00"),xsd:dateTime)) as ?DATETIME)
 
   #?uniqueObjectCode apf:strSplit (?objectCode "\\+")
   BIND(REPLACE(REPLACE(REPLACE(?objectCode, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?OBJECTCODE)

@@ -2,7 +2,7 @@
 CONSTRUCT {
   ?OBS_URI a qb:Observation ;
     qb:dataSet ?DATASET ;
-    bdg:Vinestock ?VINESTOCK ;
+    bdg:Plot ?SUBPLOT ;
     bdg:probable_alcohol ?PROBABLEALCOHOL ;
     bdg:date ?DATE ;
 .
@@ -12,7 +12,8 @@ CONSTRUCT {
   BIND(<data/wineMaking/PechRouge/grapeMaturation/Probablealcohol> as ?DATASET)
   
   BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK_CLEAN)
-  BIND(uri(CONCAT("data/winemaking/PechRouge/vinestock/",?VINESTOCK_CLEAN))  as ?VINESTOCK)
+  BIND(REPLACE(?Vinestock,"(\\d{2,3})(-|_).+","$1") as ?BROADER_PLOT)
+  BIND(uri(CONCAT("data/winemaking/PechRouge/",?BROADER_PLOT,"/",?VINESTOCK_CLEAN))  as ?SUBPLOT)
 
   BIND(IF(REPLACE(?probable_alcohol,"[^\\.0-9]","")!= "", xsd:double(?probable_alcohol), xsd:double("NaN")) as ?PROBABLEALCOHOL)
 
