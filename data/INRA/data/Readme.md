@@ -1,6 +1,7 @@
 
 Plan :
 - [File structure](#file-structure)
+- [Updated (15-05-2020)](#updated-15-05-2020)
   - [Notes/Remarks:](#notesremarks)
   - [Errors/Issues:](#errorsissues)
     - [Not fixed](#not-fixed)
@@ -85,6 +86,8 @@ Plan :
 
 ```
 
+# Updated (15-05-2020)
+
 ## Notes/Remarks:
 
 - [Plot data.tarql](plot_management/plot_data/annualYield.tarql)
@@ -105,6 +108,7 @@ bdg:endDate a bdg:date;
 
 - Add in this directory `` winemaking_activities/fermentation_objects `` some fermentation objects generated from fermentation objects base file
 
+- Add an schema example [sample.png](sample.png) and the file use to generate this schema.
 
 ## Errors/Issues:
 
