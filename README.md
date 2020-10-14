@@ -11,3 +11,13 @@ If you omit prefixes from your Turtle files and use a global `prefixes.ttl` file
 ```sh
   perl -S riotval.pl <file.ttl>
 ```
+
+
+## D3.1 notes
+
+input on section 4
+
+## Refs
+
+<https://doi.org/10.1371/journal.pbio.2001414> Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data
+

@@ -14,7 +14,6 @@
 @prefix ssn:  <http://www.w3.org/ns/ssn/> .
 @prefix qb:  <http://purl.org/linked-data/cube#> .
 @prefix xml:  <http://www.w3.org/XML/1998/namespace> .
-@prefix apf:  <http://jena.apache.org/ARQ/property#> .
 @prefix CHEBI:  <http://purl.obolibrary.org/obo/CHEBI_> .
 @prefix sdmx-concept:  <http://purl.org/linked-data/sdmx/2009/concept#> .
 @prefix CO_356:  <http://www.cropontology.org/rdf/CO_356:> .
@@ -49,12 +48,12 @@
 @prefix chebi:  <http://purl.obolibrary.org/obo/chebi#> .
 @prefix XCO:  <http://purl.obolibrary.org/obo/XCO_> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix aeo:  <http://www.mistea.supagro.inra.fr/ontologies/2015/aeo#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wd:  <http://www.wikidata.org/entity/> .
 @prefix cito:  <http://purl.org/spar/cito/> .
-@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
 @prefix puml:  <http://plantuml.com/ontology#> .
+@prefix geo:  <http://www.opengis.net/ont/geosparql#> .
 @prefix oae:  <http://www.mistea.supagro.inra.fr/ontologies/2015/oae#> .
 @prefix inra_variables:  <http://vinnotec.supagro.inra.fr/public/Pr/inra_variables/> .
 @prefix dct:  <http://purl.org/dc/terms/> .
@@ -202,10 +201,10 @@ bdg:refractiveIndex  rdf:type  qb:MeasureProperty ;
         qb:concept    sdmx-concept:obsValue ;
         rdfs:seeAlso  bdg:brix .
 
-<http://data.bigdatagrapes.eu/resource/ontology/concentration_sugar%20>
+bdg:concentration_sugar
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "Sugar Concentration " ;
+        rdfs:label                  "Sugar Concentration" ;
         sdmx-attribute:unitMeasure  bdg-unit:G-PER-LT ;
         qb:concept                  sdmx-concept:obsValue .
 
@@ -2243,4 +2242,64 @@ bdg:salinity_soil_MEAN
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Soil%20> ;
         bdg:derivedFrom             bdg:salinity_soil ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Mean> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:density_optical_420
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Optical Density" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:density_optical_520
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Optical Density" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:density_optical_620
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Optical Density" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:lightness  rdf:type             qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Lightness Value L*" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:green_red_component
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Green Red Component a*" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:blue_yellow_component
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Blue Yellow Component b*" ;
+        sdmx-attribute:unitMeasure  unit:NUM ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Wine> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:irrigation  rdf:type            qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        sdmx-attribute:unitMeasure  unit:CubicMeter ;
+        sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Plot/subplot> ;
+        qb:concept                  sdmx-concept:obsValue .
+
+bdg:pressure_atmospheric
+        rdf:type                    qb:MeasureProperty ;
+        rdf:type                    sosa:ObservableProperty ;
+        rdfs:label                  "Atmospheric Pressure" ;
+        sdmx-attribute:unitMeasure  unit:BAR ;
         qb:concept                  sdmx-concept:obsValue .

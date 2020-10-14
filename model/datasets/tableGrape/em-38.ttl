@@ -21,9 +21,9 @@
   bdg:plot <AUA/estate/Fasoulis/Geotrisi>;
   qb:structure <DSD/EM38-mk2>.
 
-<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/1> a qb:Observation;
+<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30> a qb:Observation;
   qb:dataSet          <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2>;
-  bdg:position        "Point Z(22.590 37.816 299.612)"^^geo:wktLiteral;
+  bdg:position        <data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/pos> ;
   bdg:dateTime        "2018-05-23T12:26:30"^^xsd:dateTime;
   bdg:positionQuality <positionQuality-1>;
   bdg:satellites      12;
@@ -31,5 +31,6 @@
   bdg:CV1m            144.699;
   bdg:CV05m           106.74.
 
-
+<data/tableGrape/Fasoulis/Geotrisi/EM38-mk2/2018-05-23T12:26:30/pos> a geo:Geometry;
+  geo:asWKT "Point Z(22.590 37.816 299.612)"^^geo:wktLiteral.
 
