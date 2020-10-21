@@ -1,54 +1,54 @@
 CONSTRUCT {
-    ?URI a qb:Observation ;
-        qb:dataSet ?DATASET ;
-        bdg:date ?DATE ;  
-        bdg:temp_RANGE ?RAN_OK ;
-        bdg:direction_wind_MAX ?MWD_OK ;
-        bdg:daily_wetness_duration ?WD_OK ;
-        bdg:insolation_duration_calculated ?CID_OK ;
-        bdg:evapotranspiration_penman ?PETP_OK ;
-        bdg:evapotranspiration_piche_corrected ?CPETP_OK ;
-        bdg:insolation_fraction ?FRAC_OK ;
-        bdg:precipitation_height ?PH_OK ;
-        bdg:humidity_air_MAX ?XH_OK ;
-        bdg:humidity_air_MIN ?NH_OK ;
-        bdg:humidity_air_MEAN ?MH_OK ;
-        bdg:actinothermic_index_10cm ?I1N_OK ;
-        bdg:actinothermic_index_10cm_MAX ?I1X_OK ;
-        bdg:actinothermic_index_50cm ?I5N_OK ;
-        bdg:actinothermic_index_50cm_MAX ?I5X_OK ;
-        bdg:temperature_instant_MAX ?XTI_OK ;
-        bdg:temperature_instant_MIN ?NTI_OK ;
-        bdg:humidity_instant_MAX ?XHI_OK ;
-        bdg:humidity_instant_MIN ?IUN_OK ;
-        bdg:wind_instant_MAX ?XWI_OK ;
-        bdg:precipitation_intensity_instant_MAX ?XPII_OK ;
-        bdg:rainfall_MAX ?XPI_OK ;
-        bdg:radiation_global ?GR_OK ;
-        bdg:radiation_global_calculated ?CGR_OK ;
-        bdg:radiation_active_photosynthetic ?PAR_OK ;
-        bdg:temp_MAX ?XT_OK ;
-        bdg:temp_soil_10cm_MAX ?X1S_OK ;
-        bdg:temp_soil_10cm_MIN ?NT_OK ;
-        bdg:temp_soil_10cm_MIN ?N1S_OK ;
-        bdg:temp_MEAN ?MT_OK ;
-        bdg:temp_MEAN_caclulated ?CMT_OK ;
-        bdg:temp_soil_50cm_MEAN ?S5M_OK ;
-        bdg:dewPoint_temp ?DT_OK ;
-        bdg:humidity_air_period_lt40pc ?H4_OK ;
-        bdg:humidity_air_period_gt80pc ?H8_OK ;
-        bdg:humidity_air_period_gt90pc ?H9_OK ;
-        bdg:pressure_vapour_MEAN ?MVP_OK ;
-        bdg:total_wind_E ?TEW_OK ;
-        bdg:total_wind_N ?TNW_OK ;
-        bdg:total_wind_NE ?TNEW_OK ;
-        bdg:total_wind_NW ?TNWW_OK ;
-        bdg:total_wind_W ?TWW_OK ;
-        bdg:total_wind_S ?TSW_OK ;
-        bdg:total_wind_SE ?TSEW_OK ;
-        bdg:total_wind_SW ?TSWW_OK ;
-        bdg:speed_wind_MAX ?SP_OK ;
-        bdg:speed_wind_MEAN ?S_OK ;
+?URI a qb:Observation ;
+  qb:dataSet ?DATASET ;
+  bdg:date ?DATE ;
+  bdg:temp_RANGE ?RAN_OK ;
+  bdg:direction_wind_MAX ?MWD_OK ;
+  bdg:daily_wetness_duration ?WD_OK ;
+  bdg:insolation_duration_calculated ?CID_OK ;
+  bdg:evapotranspiration_penman ?PETP_OK ;
+  bdg:evapotranspiration_piche_corrected ?CPETP_OK ;
+  bdg:insolation_fraction ?FRAC_OK ;
+  bdg:precipitation_height ?PH_OK ;
+  bdg:humidity_air_MAX ?XH_OK ;
+  bdg:humidity_air_MIN ?NH_OK ;
+  bdg:humidity_air_MEAN ?MH_OK ;
+  bdg:actinothermic_index_10cm ?I1N_OK ;
+  bdg:actinothermic_index_10cm_MAX ?I1X_OK ;
+  bdg:actinothermic_index_50cm ?I5N_OK ;
+  bdg:actinothermic_index_50cm_MAX ?I5X_OK ;
+  bdg:temperature_instant_MAX ?XTI_OK ;
+  bdg:temperature_instant_MIN ?NTI_OK ;
+  bdg:humidity_instant_MAX ?XHI_OK ;
+  bdg:humidity_instant_MIN ?IUN_OK ;
+  bdg:wind_instant_MAX ?XWI_OK ;
+  bdg:precipitation_intensity_instant_MAX ?XPII_OK ;
+  bdg:rainfall_MAX ?XPI_OK ;
+  bdg:radiation_global ?GR_OK ;
+  bdg:radiation_global_calculated ?CGR_OK ;
+  bdg:radiation_active_photosynthetic ?PAR_OK ;
+  bdg:temp_MAX ?XT_OK ;
+  bdg:temp_soil_10cm_MAX ?X1S_OK ;
+  bdg:temp_soil_10cm_MIN ?NT_OK ;
+  bdg:temp_soil_10cm_MIN ?N1S_OK ;
+  bdg:temp_MEAN ?MT_OK ;
+  bdg:temp_MEAN_caclulated ?CMT_OK ;
+  bdg:temp_soil_50cm_MEAN ?S5M_OK ;
+  bdg:dewPoint_temp ?DT_OK ;
+  bdg:humidity_air_period_lt40pc ?H4_OK ;
+  bdg:humidity_air_period_gt80pc ?H8_OK ;
+  bdg:humidity_air_period_gt90pc ?H9_OK ;
+  bdg:pressure_vapour_MEAN ?MVP_OK ;
+  bdg:total_wind_E ?TEW_OK ;
+  bdg:total_wind_N ?TNW_OK ;
+  bdg:total_wind_NE ?TNEW_OK ;
+  bdg:total_wind_NW ?TNWW_OK ;
+  bdg:total_wind_W ?TWW_OK ;
+  bdg:total_wind_S ?TSW_OK ;
+  bdg:total_wind_SE ?TSEW_OK ;
+  bdg:total_wind_SW ?TSWW_OK ;
+  bdg:speed_wind_MAX ?SP_OK ;
+  bdg:speed_wind_MEAN ?S_OK ;
 .
 } WHERE {
   BIND(xsd:decimal(?MWD) as ?MWD_OK)
@@ -103,8 +103,3 @@ CONSTRUCT {
   BIND(STRDT(CONCAT(?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY),xsd:date) AS ?DATE)
   BIND(URI(CONCAT("wineMaking/PechRouge/climaticData/11170004/",?YEAR,"-",?FORMATED_MONTH,"-",?FORMATED_DAY)) AS ?URI)
 }
-
-
-
-
-

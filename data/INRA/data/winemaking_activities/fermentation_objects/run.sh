@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+cd $(dirname $0)
 curl "https://docs.google.com/spreadsheets/d/1lWEwwonC0Dg8MAWDSVm7GV184N7jGt-IhjXmdE4Y-oo/gviz/tq?tqx=out:csv&gid=623977456" | ../../../../bin/my-tarql "-d , --stdin" ../../../../../model/prefixes.ttl crushingObject.tarql > rdf/crushingObject.ttl
 curl "https://docs.google.com/spreadsheets/d/1nhBnoWhDfDakL-ucY-STdRbDzhgH0yZSEeebwYR88M0/gviz/tq?tqx=out:csv&gid=0" | ../../../../bin/my-tarql "-d , --stdin" ../../../../../model/prefixes.ttl fermentationObjects.tarql > rdf/fermentationObjects.ttl
 

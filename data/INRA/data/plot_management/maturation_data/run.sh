@@ -4,7 +4,7 @@
 #!/usr/bin/env bash
 #bien regarder ce qui est avant gviz, après gid et à la fin fichier tarql
 #curl "https://docs.google.com/spreadsheets/d/148EpAaJ_5ytkA5Cl676K9nx1k5AuEKJrtoCPottSSwY/gviz/tq?tqx=out:csv&gid=grape_maturation_silex_v1" | ../../../../bin/my-tarql "-d , --stdin" ../../../../../model/prefixes.ttl grapeMaturationData.tarql > rdf/grapeMaturationData.ttl
-
+cd $(dirname $0)
 
 curl "https://docs.google.com/spreadsheets/d/148EpAaJ_5ytkA5Cl676K9nx1k5AuEKJrtoCPottSSwY/gviz/tq?tqx=out:csv&gid=2010910138" | ../../../../bin/my-tarql "-d , --stdin" ../../../../../model/prefixes.ttl grapeMaturationBrix.tarql > rdf/grapeMaturationBrix.ttl
 
