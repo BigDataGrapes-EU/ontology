@@ -1,0 +1,114 @@
+<harvesting/FV_2017_088>
+        rdf:type        afeo:Harvesting ;
+        rdfs:label      "FV_2017_088" ;
+#        afeo:appliedTo  <INRA/estate/PechRouge/106/106_3176N> ;
+        afeo:hasOutput  <berry/FV_2017_088> .
+
+<berry/FV_2017_088>
+        rdf:type  afeo:Berry .
+
+# Crushing
+<crushing/FV_2017_088>
+        rdf:type        afeo:Crushing ;
+        rdfs:label      "FV_2017_088" ;
+        afeo:hasOutput  <must/FV_2017_088> ;
+        afeo:hasInput   <berry/FV_2017_088> .
+
+<must/FV_2017_088>
+        rdf:type  afeo:Must .
+
+<fermentation/PR041_2017R>
+        rdf:type                      afeo:AlcoholicFermentation ;
+        afeo:hasInput  <must/FV_2017_088> ;
+        afeo:hasOutput  <freeRunJuice/PR041_2017R> ;
+        afeo:hasOutput  <pressJuice/PR041_2017R> ;
+#        bdg:experiment                <experiment/2017_VITIDUR_3176_R> ;
+        bdg:startDate                 "2017-09-13"^^xsd:date ;
+        bdg:endDate                   "2017-09-19"^^xsd:date ;
+        bdg:weight_alcoholic_fermentation  "195"^^xsd:double ;
+#        bdg:fermentationTank          <fermentationTank/BB228> ;
+#        bdg:yeast                     <yeast/NT202> ;
+        bdg:fermentation_temp_MIN     "20"^^xsd:double ;
+        bdg:fermentation_temp_MAX     "22"^^xsd:double ;
+        bdg:fermentation_density_MIN  "988"^^xsd:double ;
+        bdg:fermentation_density_MAX  "1087"^^xsd:double .
+
+<freeRunJuice/PR041_2017R>
+        rdf:type    afeo:FreeRunJuice ;
+        rdfs:label  "freeRunJuice/PR041_2017R"  .
+
+<pressJuice/PR041_2017R>
+        rdf:type    afeo:PressJuice ;
+        rdfs:label  "pressJuice/PR041_2017R" .
+
+# malolactic fermentation
+
+<malolacticFermentation/PR041_2017R>
+        rdf:type       afeo:MalolacticFermentation ;
+        afeo:hasInput  <freeRunJuice/PR041_2017R> ;
+        afeo:hasInput  <pressJuice/PR041_2017R> .
+
+
+<malolacticFermentation/PR041_2017R>
+        rdf:type     afeo:MalolacticFermentation ;
+        afeo:before  <ageing/PR041_2017R> .
+
+<wine/PR041_2017R>
+        rdf:type    afeo:Wine ;
+        rdfs:label  "wine/PR041_2017R" .
+
+<ageing/PR041_2017R>
+        rdf:type     afeo:Ageing ;
+        afeo:before  <bottling/PR041_2017R> ;
+        rdfs:label   "ageing/PR041_2017R" .
+
+<bottling/PR041_2017R>
+        rdf:type        afeo:Bottling ;
+        rdfs:label      "bottling/PR041_2017R" ;
+        afeo:hasOutput  <wine/PR041_2017R> .
+
+
+#Observations
+
+<data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/>
+        rdf:type              qb:Observation ;
+        qb:dataSet            <data/winemaking/sensoryAnalysis/BeforeBottling> ;
+        bdg:wine              <wine/PR041_2017R> ;
+        #bdg:sensoryFlavor     <sensoryFlavor/pureRed_cherry> ;
+        bdg:judgeNumber       2 ;
+        bdg:flavorJudgeRatio  "1.00"^^xsd:double .
+
+
+<data/winemaking/PechRouge/harvestData/FV_2017_088>
+        rdf:type           qb:Observation ;
+        bdg:berry          <berry/FV_2017_088> ;
+        bdg:date           "2017-09-13T16:00:00"^^xsd:dateTime ;
+        bdg:harvestMethod  "manual" .
+
+#PUML layout
+
+<harvesting/FV_2017_088>
+    puml:down <berry/FV_2017_088> ;
+    puml:right-hidden <crushing/FV_2017_088> .
+
+<crushing/FV_2017_088>
+    puml:down <berry/FV_2017_088> , <must/FV_2017_088> ;
+    puml:right-hidden <fermentation/PR041_2017R> .
+
+
+<fermentation/PR041_2017R>  
+    puml:down <must/FV_2017_088> , <freeRunJuice/PR041_2017R> ;
+    puml:right-hidden <malolacticFermentation/PR041_2017R> .
+
+<malolacticFermentation/PR041_2017R>
+    puml:down <freeRunJuice/PR041_2017R> ;
+    puml:right <ageing/PR041_2017R> .
+
+<ageing/PR041_2017R> puml:right <bottling/PR041_2017R> .
+
+<bottling/PR041_2017R> puml:down <wine/PR041_2017R> .
+
+<data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/> puml:up <wine/PR041_2017R> .
+
+<data/winemaking/PechRouge/harvestData/FV_2017_088> puml:up
+  <berry/FV_2017_088> .

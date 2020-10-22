@@ -1,4 +1,3 @@
-
 # Plot and subloplot hierarchy given by Ontotext
 <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> a bdg:Estate; rdfs:label "PechRouge".
 
@@ -158,8 +157,14 @@
         bdg:judgeNumber       5 ;
         bdg:flavorJudgeRatio  "0.40"^^xsd:double .
 
-afeo:AlcoholicFermentation a puml:Inline . 
-afeo:Wine a puml:Inline . 
-afeo:AlcoholicFermentation a puml:Inline . 
 
- 
+
+#PUML layout
+
+<http://data.bigdatagrapes.eu/resource/harvesting/FV_2017_088>  puml:right <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> .
+<http://data.bigdatagrapes.eu/resource/crushing/FV_2017_088> puml:right <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> , <http://data.bigdatagrapes.eu/resource/must/FV_2017_088> .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/harvestData/FV_2017_088>
+    puml:left <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> .
+
+

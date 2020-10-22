@@ -119,4 +119,3 @@ afeo:Bottling puml:stereotype "(O,orange)".
 afeo:AlcoholicFermentation puml:stereotype "(O,orange)".
 afeo:MalolacticFermentation puml:stereotype "(O,orange)".
 afeo:Ageing puml:stereotype "(O,orange)".
-
