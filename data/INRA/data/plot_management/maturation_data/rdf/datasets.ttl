@@ -1,55 +1,37 @@
+<data/wineMaking/PechRouge/grapeMaturation/2017> a qb:DataSet;
+  rdfs:label "Data about laboratory analysis of grape maturation before harvest done at Pech Rouge in 2017";
+  sosa:FeatureOfInterest afeo:Vinestock;
+  bdg:date "2017-01-01"^^xsd:date ;
+  qb:slice <data/wineMaking/PechRouge/grapeMaturation/2017/Brix>;
+  # qb:slice eg:slice2;
+  # qb:slice eg:slice2;
+  # qb:slice eg:slice2;
+  # qb:slice eg:slice2 
+  . 
 
-<DSD/grapeMaturation/Brix> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:Plot          ];
+<DSD/grapeMaturation> a qb:DataStructureDefinition;
+  qb:component [qb:dimension bdg:vinestock          ];
   qb:component [qb:dimension bdg:date               ]; 
   qb:component [qb:measure   bdg:brix               ];
   qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
   qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
-<data/wineMaking/PechRouge/grapeMaturation/Brix> a qb:DataSet;
-  rdfs:label "Data about laboratory analysis of brix measures before harvest done at Pech Rouge";
-  qb:structure <DSD/grapeMaturation/Brix> . 
+<data/wineMaking/PechRouge/grapeMaturation/2017/Brix> a qb:Slice;
+    qb:sliceStructure  <sliceByVariable> ;
+    qb:measure              bdg:brix  ;
+    qb:observation ... .
 
-<DSD/grapeMaturation/PH> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:Plot                                                              ]; # area in general
-  qb:component [qb:dimension bdg:date                                                              ]; 
-  qb:component [qb:measure   bdg:ph                                                                ];
-  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
-  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
 
-<data/wineMaking/PechRouge/grapeMaturation/PH> a qb:DataSet;
-  rdfs:label "Data about laboratory analysis of ph before harvest done at Pech Rouge";
-  qb:structure <DSD/grapeMaturation/PH> . 
-
-  <DSD/grapeMaturation/ProbableAlcohol> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:Plot                                                              ]; # area in general
-  qb:component [qb:dimension bdg:date                                                              ]; 
-  qb:component [qb:measure   bdg:probable_alcohol                                                  ];
-  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
-  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
-
-<data/wineMaking/PechRouge/grapeMaturation/ProbableAlcohol> a qb:DataSet;
-  rdfs:label "Data about laboratory analysis of probable alcohol before harvest done at Pech Rouge";
-  qb:structure <DSD/grapeMaturation/ProbableAlcohol> . 
-
-<DSD/grapeMaturation/Sugars> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:Plot                                                              ]; # area in general
-  qb:component [qb:dimension bdg:date                                                              ]; 
-  qb:component [qb:measure   bdg:sugars                                                            ];
-  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
-  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
-
-<data/wineMaking/PechRouge/grapeMaturation/Sugars> a qb:DataSet;
-  rdfs:label "Data about laboratory analysis of sugars before harvest done at Pech Rouge";
-  qb:structure <DSD/grapeMaturation/Sugars> . 
-
-<DSD/grapeMaturation/TotalAcidity> a qb:DataStructureDefinition;
-  qb:component [qb:dimension bdg:Plot                                                              ]; # area in general
-  qb:component [qb:dimension bdg:date                                                              ]; 
-  qb:component [qb:measure   bdg:total_acidity                                                     ];
-  qb:component [qb:attribute sosa:hasFeatureOfInterest ; qb:componentAttachment qb:DataSet         ];
-  qb:component [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:MeasureProperty ].
-
-<data/wineMaking/PechRouge/grapeMaturation/TotalAcidity> a qb:DataSet;
-  rdfs:label "Data about laboratory analysis of total acidity before harvest done at Pech Rouge";
-  qb:structure <DSD/grapeMaturation/TotalAcidity> . 
+<sliceByVariable> a qb:SliceKey;
+    rdfs:label "slice by variable"@en;
+    rdfs:comment "Slice by grouping variable together"@en;
+    qb:componentProperty  qb:measure .
+    
+<DSD/Brix> a qb:DataSyRegion .tructureDefinition;
+    qb:component
+        [ qb:dimension eg:refArea;         qb:order 1 ],
+        [ qb:dimension eg:refPeriod;       qb:order 2 ],
+        [ qb:dimension sdmx-dimension:sex; qb:order 3 ],
+        [ qb:measure eg:lifeExpectancy];
+        [qb:attribute sdmx-attribute:unitMeasure; qb:componentAttachment qb:DataSet; ] ;
+    qb:sliceKey eg:sliceB
