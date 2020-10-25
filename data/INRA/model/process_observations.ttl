@@ -1,9 +1,19 @@
+# <harvesting/FV_2017_088>
+#         rdf:type        afeo:Harvesting ;
+#         rdfs:label      "FV_2017_088" ;
+# #        afeo:appliedTo  <INRA/estate/PechRouge/106/106_3176N> ;
+#         afeo:hasOutput  <berry/FV_2017_088> .
 <harvesting/FV_2017_088>
-        rdf:type        afeo:Harvesting ;
-        rdfs:label      "FV_2017_088" ;
-#        afeo:appliedTo  <INRA/estate/PechRouge/106/106_3176N> ;
-        afeo:hasOutput  <berry/FV_2017_088> .
-
+        rdf:type           afeo:Harvesting ;
+        rdfs:label         "FV_2017_088" ;
+        afeo:appliedTo     <INRA/estate/PechRouge/106/106_3176N> ;
+        afeo:hasOutput     <berry/FV_2017_088> ;
+        bdg:harvestMethod  "manual" ;
+        bdg:plot           <INRA/estate/PechRouge/106/106_3176N> ;
+        bdg:date           "2017-09-13T16:00:00"^^xsd:dateTime ;
+        bdg:weight         "816.1"^^xsd:double ;
+        bdg:harvestMethod  "manual" .
+        
 <berry/FV_2017_088>
         rdf:type  afeo:Berry .
 
@@ -32,6 +42,18 @@
         bdg:fermentation_temp_MAX     "22"^^xsd:double ;
         bdg:fermentation_density_MIN  "988"^^xsd:double ;
         bdg:fermentation_density_MAX  "1087"^^xsd:double .
+ 
+
+<data/fermentation/PR041_2017R2017-09-13_2017-09-19>
+        rdf:type                      qb:Observation ;
+        qb:dataSet                    <data/winemaking/wineMaking/AlcoholicFermentation> ;
+        bdg:date                      "2017-09-19"^^xsd:date ;
+        bdg:weight_alcoholic_fermentation  "195"^^xsd:double ;
+        bdg:fermentation_temp_MIN     "20"^^xsd:double ;
+        bdg:fermentation_temp_MAX     "22"^^xsd:double ;
+        bdg:fermentation_density_MIN  "988"^^xsd:double ;
+        bdg:fermentation_density_MAX  "1087"^^xsd:double .
+
 
 <freeRunJuice/PR041_2017R>
         rdf:type    afeo:FreeRunJuice ;

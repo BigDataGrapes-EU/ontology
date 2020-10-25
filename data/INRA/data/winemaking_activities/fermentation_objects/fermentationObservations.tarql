@@ -1,0 +1,44 @@
+
+CONSTRUCT {
+  ?URI a qb:Observation ;
+    # bdg:experiment ?EXPERIMENT_URI; # it will change
+    # bdg:startDate ?START_DATE;
+    qb:dataSet ?DATASET;
+    bdg:date ?END_DATE;
+    bdg:weight_alcoholic_fermentation  ?WEIGHT_ALCOHOLIC_FERMENTATION;
+    # bdg:fermentationTank ?TANK_URI;  #pas sure  variable
+    # bdg:yeast ?YEAST_URI; # Need to be defined as dimension in bdg Ontology
+    #dose?
+    #operator?
+    bdg:fermentation_temp_MIN ?TEMP_MIN; 
+    bdg:fermentation_temp_MAX ?TEMP_MAX; 
+    bdg:fermentation_density_MIN ?DENSITY_MIN; 
+    bdg:fermentation_density_MAX ?DENSITY_MAX;
+.
+} WHERE {
+ BIND(<data/winemaking/wineMaking/AlcoholicFermentation>  as ?DATASET)
+
+  BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
+  BIND(uri(concat("data/fermentation/",?FERMENTATION_CODE,?start_date,"_",?end_date)) as ?URI)
+  # bdg:fermentation/PR021-2017B
+  # bdg:must/FV-2017-001
+  BIND(REPLACE(REPLACE(REPLACE(?experiment_code, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EXPERIMENT)
+  BIND(uri(CONCAT("experiment/",UCASE(?EXPERIMENT))) as ?EXPERIMENT_URI)
+  
+  BIND(xsd:date(?start_date) as ?START_DATE)
+  BIND(xsd:date(?end_date) as ?END_DATE)
+
+  bind(IF(replace(?weight,"[^\\.0-9]","")!= "", xsd:double(?weight), xsd:double("NaN")) as ?WEIGHT_ALCOHOLIC_FERMENTATION)
+
+  BIND(REPLACE(REPLACE(REPLACE(?fermentationTank, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?TANK)
+  BIND(uri(CONCAT("fermentationTank/",?TANK)) as ?TANK_URI)
+  
+  BIND(REPLACE(REPLACE(REPLACE(?yeast, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?YEAST)
+  BIND(uri(CONCAT("yeast/",?YEAST)) as ?YEAST_URI)
+
+  bind(IF(replace(?temperature_max,"[^\\.0-9]","")!= "", xsd:double(?temperature_max), xsd:double("NaN")) as ?TEMP_MAX)
+  bind(IF(replace(?temperature_min,"[^\\.0-9]","")!= "", xsd:double(?temperature_min), xsd:double("NaN")) as ?TEMP_MIN)
+  bind(IF(replace(?density_min,"[^\\.0-9]","")!= "", xsd:double(?density_min), xsd:double("NaN")) as ?DENSITY_MIN)
+  bind(IF(replace(?density_max,"[^\\.0-9]","")!= "", xsd:double(?density_max), xsd:double("NaN")) as ?DENSITY_MAX)
+
+} 
