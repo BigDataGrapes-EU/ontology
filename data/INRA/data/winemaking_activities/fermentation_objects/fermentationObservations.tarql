@@ -1,6 +1,7 @@
 
 CONSTRUCT {
   ?URI a qb:Observation ;
+    bdg:AlcoholicFermentation   ?FERMENTATION_URI;
     # bdg:experiment ?EXPERIMENT_URI; # it will change
     # bdg:startDate ?START_DATE;
     qb:dataSet ?DATASET;
@@ -20,6 +21,8 @@ CONSTRUCT {
 
   BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
   BIND(uri(concat("data/fermentation/",?FERMENTATION_CODE,?start_date,"_",?end_date)) as ?URI)
+  BIND(uri(concat("fermentation/",?FERMENTATION_CODE)) as ?FERMENTATION_URI)
+
   # bdg:fermentation/PR021-2017B
   # bdg:must/FV-2017-001
   BIND(REPLACE(REPLACE(REPLACE(?experiment_code, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EXPERIMENT)
