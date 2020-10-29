@@ -6,8 +6,8 @@ CONSTRUCT {
     bdg:date ?DATETIME ;
     bdg:weight ?WEIGHT;
    # bdg:operator ?OPERATOR_VALID;
-    bdg:plot ?OBJECTCODE_URI;
-    bdg:harvestMethod ?HARVESTMETHOD;
+   #  bdg:plot ?OBJECTCODE_URI;
+   #  bdg:harvestMethod ?HARVESTMETHOD;
 
   .
 } WHERE {

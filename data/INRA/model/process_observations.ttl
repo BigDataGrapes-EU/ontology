@@ -3,16 +3,21 @@
 #         rdfs:label      "FV_2017_088" ;
 # #        afeo:appliedTo  <INRA/estate/PechRouge/106/106_3176N> ;
 #         afeo:hasOutput  <berry/FV_2017_088> .
+
+<INRA/estate/PechRouge/106/106_3176N> a bdg:Plot;
+  rdfs:label "106_3176N" .
+
 <harvesting/FV_2017_088>
         rdf:type           afeo:Harvesting ;
         rdfs:label         "FV_2017_088" ;
         afeo:appliedTo     <INRA/estate/PechRouge/106/106_3176N> ;
         afeo:hasOutput     <berry/FV_2017_088> ;
-        bdg:harvestMethod  "manual" ;
+        # bdg:harvestMethod  "manual" ;
         bdg:plot           <INRA/estate/PechRouge/106/106_3176N> ;
         bdg:date           "2017-09-13T16:00:00"^^xsd:dateTime ;
-        bdg:weight         "816.1"^^xsd:double ;
+        # bdg:weight         "816.1"^^xsd:double ;
         bdg:harvestMethod  "manual" .
+
         
 <berry/FV_2017_088>
         rdf:type  afeo:Berry .
@@ -38,15 +43,17 @@
         bdg:weight_alcoholic_fermentation  "195"^^xsd:double ;
 #        bdg:fermentationTank          <fermentationTank/BB228> ;
 #        bdg:yeast                     <yeast/NT202> ;
-        bdg:fermentation_temp_MIN     "20"^^xsd:double ;
-        bdg:fermentation_temp_MAX     "22"^^xsd:double ;
-        bdg:fermentation_density_MIN  "988"^^xsd:double ;
-        bdg:fermentation_density_MAX  "1087"^^xsd:double .
+        # bdg:fermentation_temp_MIN     "20"^^xsd:double ;
+        # bdg:fermentation_temp_MAX     "22"^^xsd:double ;
+        # bdg:fermentation_density_MIN  "988"^^xsd:double ;
+        # bdg:fermentation_density_MAX  "1087"^^xsd:double .
+        .
  
 
 <data/fermentation/PR041_2017R2017-09-13_2017-09-19>
         rdf:type                      qb:Observation ;
         qb:dataSet                    <data/winemaking/wineMaking/AlcoholicFermentation> ;
+        bdg:AlcoholicFermentation     <fermentation/PR041_2017R>;
         bdg:date                      "2017-09-19"^^xsd:date ;
         bdg:weight_alcoholic_fermentation  "195"^^xsd:double ;
         bdg:fermentation_temp_MIN     "20"^^xsd:double ;
@@ -96,16 +103,48 @@
         rdf:type              qb:Observation ;
         qb:dataSet            <data/winemaking/sensoryAnalysis/BeforeBottling> ;
         bdg:wine              <wine/PR041_2017R> ;
-        #bdg:sensoryFlavor     <sensoryFlavor/pureRed_cherry> ;
+        bdg:sensoryFlavor     <sensoryFlavor/pureRed_cherry> ;
         bdg:judgeNumber       2 ;
         bdg:flavorJudgeRatio  "1.00"^^xsd:double .
 
-
 <data/winemaking/PechRouge/harvestData/FV_2017_088>
-        rdf:type           qb:Observation ;
-        bdg:berry          <berry/FV_2017_088> ;
-        bdg:date           "2017-09-13T16:00:00"^^xsd:dateTime ;
-        bdg:harvestMethod  "manual" .
+        rdf:type    qb:Observation ;
+        qb:dataSet  <data/wineMaking/PechRouge/HarvestData> ;
+        bdg:berry   <berry/FV_2017_088> ;
+        bdg:date    "2017-09-13T16:00:00"^^xsd:dateTime ;
+        bdg:weight  "816.1"^^xsd:double .
+
+<data/winemaking/PechRouge/grapeMaturation/Ph2018-08-24106_3176N214>
+        rdf:type    qb:Observation ;
+        qb:dataSet  <data/wineMaking/PechRouge/grapeMaturation/Ph> ;
+        bdg:plot    <INRA/estate/PechRouge/106/106_3176N> ;
+        bdg:ph      "3.04"^^xsd:double ;
+        bdg:date    "2018-08-24"^^xsd:date .
+
+<data/winemaking/PechRouge/plotData/annualYield/2017-12-31T00:00:00/106_3176N>
+        rdf:type         qb:Observation ;
+        qb:dataSet       <data/wineMaking/PechRouge/plotData/annualYield> ;
+        bdg:dateTime     "2017-12-31T00:00:00"^^xsd:dateTime ;
+        qb4st:RefArea    <INRA/estate/PechRouge/106/106_3176N> ;
+        bdg:annualYield  "4469"^^xsd:decimal .
+
+<data/wineMaking/PechRouge/laboratoryAnalysisWine/2018-01-30/PR041_2017R>
+        rdf:type                    qb:Observation ;
+        qb:dataSet                  <data/wineMaking/PechRouge/laboratoryAnalysisWine> ;
+        # bdg:experiment              <experiment/2017_VITIDUR_3176_R> ;
+        bdg:wine                    <wine/PR041_2017R> ;
+        bdg:date                    "2018-01-30"^^xsd:date ;
+        bdg:alcohol                 "13.3"^^xsd:double ;
+        bdg:acidity_volatile_H2SO4  "0.48"^^xsd:double ;
+        bdg:pH                      "3.71"^^xsd:double ;
+        bdg:acidity_total           "2.902"^^xsd:double ;
+        bdg:free_SO2                "40"^^xsd:double ;
+        bdg:total_SO2               "73"^^xsd:double ;
+        bdg:total_polyphenol_index  "86.94"^^xsd:double ;
+        bdg:density_optical_420     "4.654"^^xsd:double ;
+        bdg:lightness               "9.7"^^xsd:double ;
+        bdg:green_red_component     "38.825"^^xsd:double ;
+        bdg:blue_yellow_component   "16.664"^^xsd:double .
 
 #PUML layout
 
@@ -134,3 +173,17 @@
 
 <data/winemaking/PechRouge/harvestData/FV_2017_088> puml:up
   <berry/FV_2017_088> .
+
+# <fermentation/PR041_2017R> puml:up <data/fermentation/PR041_2017R2017-09-13_2017-09-19> .
+
+<INRA/estate/PechRouge/106/106_3176N> puml:down-hidden <data/winemaking/PechRouge/grapeMaturation/Ph2018-08-24106_3176N214> .
+
+# <INRA/estate/PechRouge/106/106_3176N> puml:right <harvesting/FV_2017_088> .
+
+<wine/PR041_2017R> puml:down-hidden  <data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/>.
+
+<data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/> puml:down  <sensoryFlavor/pureRed_cherry> .
+
+<wine/PR041_2017R> puml:down-hidden  <data/wineMaking/PechRouge/laboratoryAnalysisWine/2018-01-30/PR041_2017R> .
+
+ 

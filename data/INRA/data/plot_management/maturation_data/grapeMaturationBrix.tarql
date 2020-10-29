@@ -2,7 +2,7 @@
 CONSTRUCT {
   ?OBS_URI a qb:Observation ;
     qb:dataSet ?DATASET ;
-    bdg:Plot ?SUBPLOT ;
+    bdg:plot ?SUBPLOT ;
     bdg:brix ?BRIX ;
     bdg:date ?DATE ;
 .
@@ -13,7 +13,7 @@ CONSTRUCT {
 
   BIND(REPLACE(REPLACE(REPLACE(?Vinestock, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?VINESTOCK_CLEAN)
   BIND(REPLACE(?Vinestock,"(\\d{2,3})(-|_).+","$1") as ?BROADER_PLOT)
-  BIND(uri(CONCAT("data/winemaking/PechRouge/",?BROADER_PLOT,"/",?VINESTOCK_CLEAN))  as ?SUBPLOT)
+  BIND(uri(CONCAT("INRA/estate/PechRouge/",?BROADER_PLOT,"/",?VINESTOCK_CLEAN))  as ?SUBPLOT)
 
   BIND(?brix as ?BRIX)
 
