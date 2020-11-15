@@ -55,7 +55,9 @@ CONSTRUCT {
 
   BIND(REPLACE(REPLACE(REPLACE(?experiment, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?EXPERIMENT)
   BIND(uri(CONCAT("experiment/", ?EXPERIMENT)) as ?EXPERIMENT_URI)
-  BIND(uri(CONCAT("wine/", ?EXPERIMENT)) as ?WINE_URI)
+  BIND(?code_pr as ?CODE_PR)
+  
+  BIND(uri(CONCAT("wine/", ?CODE_PR)) as ?WINE_URI)
 
   BIND(strdt(?date,xsd:date) as ?DATE)
 

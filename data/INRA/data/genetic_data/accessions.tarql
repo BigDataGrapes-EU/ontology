@@ -9,7 +9,7 @@ CONSTRUCT {
   .
 } WHERE {
 
-  BIND(uri(concat("Accession/",?introductionCode)) as ?ACCESSION_URI)
+  BIND(uri(concat("accession/",?introductionCode)) as ?ACCESSION_URI)
   BIND(uri(concat("variety/",?varietyCode)) as ?VARIETY_URI)
   BIND(concat("https://doi.org/",?SiregalDOI) as ?seeAlsoSireGal)
 

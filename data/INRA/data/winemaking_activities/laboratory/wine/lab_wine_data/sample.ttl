@@ -2,7 +2,7 @@
         rdf:type                    qb:Observation ;
         qb:dataSet                  <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/laboratoryAnalysisWine> ;
         bdg:experiment              <http://data.bigdatagrapes.eu/resource/experiment/2016_ALF_CHARD_01_DEB> ;
-        bdg:wine                    <http://data.bigdatagrapes.eu/resource/wine/2016_ALF_CHARD_01_DEB> ;
+        bdg:wine                    <http://data.bigdatagrapes.eu/resource/wine/PR002-2016B> ;
         bdg:date                    "2016-11-21"^^xsd:date ;
         bdg:alcohol                 "13.4"^^xsd:double ;
         bdg:acidity_volatile_H2SO4  "0.19"^^xsd:double ;
