@@ -4,8 +4,15 @@
 # #        afeo:appliedTo  <INRA/estate/PechRouge/106/106_3176N> ;
 #         afeo:hasOutput  <berry/FV_2017_088> .
 
+<INRA/estate/PechRouge> a bdg:Estate .
+
+<INRA/estate/PechRouge/106> a bdg:PlotCluster;
+  rdfs:label "106"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge> .
+
 <INRA/estate/PechRouge/106/106_3176N> a bdg:Plot;
-  rdfs:label "106_3176N" .
+  rdfs:label "106_3176N"^^xsd:string;
+  geo:sfWithin <INRA/estate/PechRouge/106> . 
 
 <harvesting/FV_2017_088>
         rdf:type           afeo:Harvesting ;
