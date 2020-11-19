@@ -1,6 +1,7 @@
 
 CONSTRUCT {
-  ?FERMENTATION_URI afeo:hasOutput ?PRESSJUICE_URI;
+  
+  ?PRESSING_URI afeo:hasOutput ?PRESSJUICE_URI;
   .
 
   ?PRESSJUICE_URI a afeo:PressJuice;
@@ -10,6 +11,8 @@ CONSTRUCT {
 
   BIND(REPLACE(REPLACE(REPLACE(?code_pr, "[^\\p{L}0-9]", "_"), "_+", "_"), "^_|_$", "") as ?FERMENTATION_CODE)
   BIND(uri(concat("fermentation/",?FERMENTATION_CODE)) as ?FERMENTATION_URI)
+  BIND(uri(concat("pressing/",?FERMENTATION_CODE)) as ?PRESSING_URI) 
+
   BIND(concat("pressJuice/",?FERMENTATION_CODE) as ?PRESSJUICE)
   BIND(uri(concat("pressJuice/",?FERMENTATION_CODE)) as ?PRESSJUICE_URI)
 

@@ -1,8 +1,10 @@
 
 CONSTRUCT {
   ?URI afeo:hasOutput ?PRESS_JUICE_URI;
+ 
   .
   ?FERMENTATION_URI afeo:hasOutput ?RUN_JUICE_URI;
+    afeo:before ?URI;
   .
 
 } WHERE {
