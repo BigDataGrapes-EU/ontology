@@ -1,0 +1,170 @@
+# Plot and subloplot hierarchy given by Ontotext
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge> a bdg:Estate; rdfs:label "PechRouge".
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106> a bdg:PlotCluster; rdfs:label "106";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge>.
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N> a bdg:SubPlot;
+  rdfs:label "106-3176N";
+  geo:sfWithin <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106> . 
+
+# harvest Data
+
+<http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106>
+        rdf:type         bdg:PlotCluster ;
+        rdfs:label       "106" ;
+        bdg:soilTexture  "siltyClay" .
+
+<http://data.bigdatagrapes.eu/resource/harvesting/FV_2017_088>
+        rdf:type        afeo:Harvesting ;
+        rdfs:label      "FV_2017_088" ;
+        afeo:appliedTo  <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N> ;
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> .
+
+<http://data.bigdatagrapes.eu/resource/berry/FV_2017_088>
+        rdf:type  afeo:Berry .
+
+# Plot data
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/harvestData/FV_2017_088>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/HarvestData> ;
+        bdg:berry          <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> ;
+        bdg:date           "2017-09-13T16:00:00"^^xsd:dateTime ;
+        bdg:plot           <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N> ;
+        bdg:harvestMethod  "manual" .
+
+# BRIX data
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/grapeMaturation/Sugars2018-08-24106_3176N241>
+        rdf:type     qb:Observation ;
+        qb:dataSet   <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/grapeMaturation/Sugars> ;
+        bdg:subPlot  <http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/106/106_3176N> ;
+        bdg:sugars   "201.1"^^xsd:double ;
+        bdg:date     "2018-08-24"^^xsd:date .
+
+# grapeMaturation Data
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/grapeMaturation/Totalacidity2018-08-24106_3176N214>
+        rdf:type           qb:Observation ;
+        qb:dataSet         <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/grapeMaturation/Totalacidity> ;
+        bdg:subPlot        <http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/106/106_3176N> ;
+        bdg:total_acidity  "6.087"^^xsd:double ;
+        bdg:date           "2018-08-24"^^xsd:date .
+
+# Crushing
+<http://data.bigdatagrapes.eu/resource/crushing/FV_2017_088>
+        rdf:type        afeo:Crushing ;
+        rdfs:label      "FV_2017_088" ;
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/must/FV_2017_088> ;
+        afeo:hasInput   <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> .
+
+<http://data.bigdatagrapes.eu/resource/must/FV_2017_088>
+        rdf:type  afeo:Must .
+
+# Fermentation
+
+<http://data.bigdatagrapes.eu/resource/fermentation/PR041_2017R>
+        rdf:type                      afeo:AlcoholicFermentation ;
+        bdg:experiment                <http://data.bigdatagrapes.eu/resource/experiment/2017_VITIDUR_3176_R> ;
+        bdg:startDate                 "2017-09-13"^^xsd:date ;
+        bdg:endDate                   "2017-09-19"^^xsd:date ;
+        bdg:weight_alcoholic_fermentation  "195"^^xsd:double ;
+        bdg:fermentationTank          <http://data.bigdatagrapes.eu/resource/fermentationTank/BB228> ;
+        bdg:yeast                     <http://data.bigdatagrapes.eu/resource/yeast/NT202> ;
+        bdg:fermentation_temp_MIN     "20"^^xsd:double ;
+        bdg:fermentation_temp_MAX     "22"^^xsd:double ;
+        bdg:fermentation_density_MIN  "988"^^xsd:double ;
+        bdg:fermentation_density_MAX  "1087"^^xsd:double .
+
+#  alcoholic fermentation input
+
+<http://data.bigdatagrapes.eu/resource/fermentation/PR041_2017R>
+        afeo:hasInput  <http://data.bigdatagrapes.eu/resource/must/FV_2017_088> .
+
+# fermentation output
+
+<http://data.bigdatagrapes.eu/resource/fermentation/PR041_2017R> 
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/freeRunJuice/PR041_2017R> .
+
+<http://data.bigdatagrapes.eu/resource/freeRunJuice/PR041_2017R> 
+        rdf:type    afeo:FreeRunJuice ;
+        rdfs:label  "freeRunJuice/PR041_2017R"  .
+
+<http://data.bigdatagrapes.eu/resource/fermentation/PR041_2017R>
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/pressJuice/PR041_2017R> .
+
+<http://data.bigdatagrapes.eu/resource/pressJuice/PR041_2017R>
+        rdf:type    afeo:PressJuice ;
+        rdfs:label  "pressJuice/PR041_2017R" .
+
+# malolactic fermentation
+
+<http://data.bigdatagrapes.eu/resource/malolacticFermentation/PR041_2017R>
+        rdf:type       afeo:MalolacticFermentation ;
+        afeo:hasInput  <http://data.bigdatagrapes.eu/resource/freeRunJuice/PR041_2017R> ;
+        afeo:hasInput  <http://data.bigdatagrapes.eu/resource/pressJuice/PR041_2017R> .
+
+# Annual production
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/plotData/annualProduction/2017-12-31T00:00:00/106_3176N>
+        rdf:type              qb:Observation ;
+        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/plotData/annualProduction> ;
+        bdg:dateTime          "2017-12-31T00:00:00"^^xsd:dateTime ;
+        qb4st:RefArea         <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N> ;
+        bdg:annualProduction  2024.5 .
+
+# Annual yield
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/plotData/annualYield/2017-12-31T00:00:00/106_3176N>
+        rdf:type         qb:Observation ;
+        qb:dataSet       <http://data.bigdatagrapes.eu/resource/data/wineMaking/PechRouge/plotData/annualYield> ;
+        bdg:dateTime     "2017-12-31T00:00:00"^^xsd:dateTime ;
+        qb4st:RefArea    <http://data.bigdatagrapes.eu/resource/INRA/estate/PechRouge/106/106_3176N> ;
+        bdg:annualYield  "4469"^^xsd:decimal .
+
+
+# after Alcoholic fermentation 
+
+<http://data.bigdatagrapes.eu/resource/malolacticFermentation/PR041_2017R>
+        rdf:type     afeo:MalolacticFermentation ;
+        afeo:before  <http://data.bigdatagrapes.eu/resource/ageing/PR041_2017R> .
+
+<http://data.bigdatagrapes.eu/resource/wine/PR041_2017R>
+        rdf:type    afeo:Wine ;
+        rdfs:label  "wine/PR041_2017R" .
+
+<http://data.bigdatagrapes.eu/resource/ageing/PR041_2017R>
+        rdf:type     afeo:Ageing ;
+        afeo:before  <http://data.bigdatagrapes.eu/resource/bottling/PR041_2017R> ;
+        rdfs:label   "ageing/PR041_2017R" .
+
+<http://data.bigdatagrapes.eu/resource/bottling/PR041_2017R>
+        rdf:type        afeo:Bottling ;
+        rdfs:label      "bottling/PR041_2017R" ;
+        afeo:hasOutput  <http://data.bigdatagrapes.eu/resource/wine/PR041_2017R> .
+
+# Sensory analysis
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/>
+        rdf:type              qb:Observation ;
+        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/BeforeBottling> ;
+        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine/PR041_2017R> ;
+        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/pureRed_cherry> ;
+        bdg:judgeNumber       2 ;
+        bdg:flavorJudgeRatio  "1.00"^^xsd:double .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/empyreumatic/>
+        rdf:type              qb:Observation ;
+        qb:dataSet            <http://data.bigdatagrapes.eu/resource/data/winemaking/sensoryAnalysis/BeforeBottling> ;
+        bdg:wine              <http://data.bigdatagrapes.eu/resource/wine/PR041_2017R> ;
+        bdg:sensoryFlavor     <http://data.bigdatagrapes.eu/resource/sensoryFlavor/empyreumatic> ;
+        bdg:judgeNumber       5 ;
+        bdg:flavorJudgeRatio  "0.40"^^xsd:double .
+
+
+
+#PUML layout
+
+<http://data.bigdatagrapes.eu/resource/harvesting/FV_2017_088>  puml:right <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> .
+<http://data.bigdatagrapes.eu/resource/crushing/FV_2017_088> puml:right <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> , <http://data.bigdatagrapes.eu/resource/must/FV_2017_088> .
+
+<http://data.bigdatagrapes.eu/resource/data/winemaking/PechRouge/harvestData/FV_2017_088>
+    puml:left <http://data.bigdatagrapes.eu/resource/berry/FV_2017_088> .
+
+
