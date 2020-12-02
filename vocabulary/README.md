@@ -1,8 +1,11 @@
 # Vocabulary generation form google sheets 
 
+This folder contains the tools to generate the BDG vocabulary from shared google sheets.
+
 ## Prerequisites 
 
 * [Tarql](http://tarql.github.io/) - converts tabular data to *RDF* following a pattern expresssed as *SPARQL* - it must be installed so that it's binary is added to the path 
+* [Riot](https://jena.apache.org/documentation/io/#command-line-tools) - script form apache jena for validation and RDF converisons. 
 * *curl* - to fetch csv data over http 
 * *sed*  - for basic string manipulation 
 
