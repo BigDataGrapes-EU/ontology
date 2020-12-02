@@ -29,6 +29,7 @@
 @prefix inra_onto: <http://vinnotec.supagro.inra.fr/public/Pr/onto/> .
 @prefix inra_wineTaste: <http://vinnotec.supagro.inra.fr/public/Pr/inra_wineTaste/> .
 @prefix MMO:   <http://purl.obolibrary.org/obo/MMO_> .
+@prefix graph: <http://data.bigdatagrapes.eu/resource/graph/> .
 @prefix dbo:   <http://dbpedia.org/ontology/> .
 @prefix unit:  <http://qudt.org/vocab/unit/> .
 @prefix at:    <http://data.ifpri.org/lod/at/resource/> .
