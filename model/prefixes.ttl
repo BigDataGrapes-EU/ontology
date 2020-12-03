@@ -2,7 +2,11 @@
 @prefix bdg:               <http://data.bigdatagrapes.eu/resource/ontology/>.
 @prefix bdg-unit:           <http://data.bigdatagrapes.eu/resource/unit/>.
 
+#entity prefixes
+@prefix graph:  <http://data.bigdatagrapes.eu/resource/graph/> .
+
 # Common Namespaces
+@prefix oeev:              <http://www.phenome-fppn.fr/vocabulary/2018/oeev#> .
 @prefix cc:                <http://creativecommons.org/ns#>.
 @prefix cito:              <http://purl.org/spar/cito/>.
 @prefix crs-epsg:          <http://www.opengis.net/def/crs/EPSG/0/> .
