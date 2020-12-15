@@ -11,6 +11,7 @@ CONSTRUCT {
         qb:concept                  sdmx-concept:obsValue ;
         rdfs:range                  ?CODEDCLASS ;
         ?EXTRA_P                    ?EXTRA_O ;
+        rdfs:isDefinedBy            bdg: ;
 .
 
 }

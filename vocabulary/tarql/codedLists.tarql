@@ -7,6 +7,7 @@ CONSTRUCT {
  ?CLASS  a rdfs:Class; rdfs:subClassOf skos:Concept ;
     rdfs:label ?CLASS_LABEL ;
     rdfs:seeAlso  ?SCHEME ;
+    rdfs:isDefinedBy            bdg: ;
 .
 }
 

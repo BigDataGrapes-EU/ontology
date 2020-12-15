@@ -5,6 +5,7 @@ CONSTRUCT {
     skos:inScheme ?SCHEME ;
     skos:exactMatch ?EXACT_MATCH ;
     skos:definition ?description ;
+    rdfs:isDefinedBy            bdg: ;
 .
 }
 

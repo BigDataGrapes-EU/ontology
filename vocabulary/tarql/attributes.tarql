@@ -5,6 +5,7 @@ CONSTRUCT {
         qb:codeList                 ?CODEDLIST ;
         rdfs:range                  ?CODEDCLASS;
         ?EXTRA_P                    ?EXTRA_O ;
+        rdfs:isDefinedBy            bdg:
 .
 
 }
