@@ -40,4 +40,4 @@ curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IId
 curl "https://docs.google.com/spreadsheets/d/19fdrdisQqihUN68_lb-VEGVgxxEock-IIdDWUPfVUMA/gviz/tq?tqx=out:csv&sheet=satellite" | ../bin/my-tarql "-d , --stdin" ../model/prefixes.ttl  tarql/codedValues.tarql > rdf/satellite.ttl
 
 #Concatenate vocabulary
-cat rdf/* | riot --syntax=ttl --formatted=ttl> bdg_vocabulary.ttl
+cat rdf/* | riot --syntax=ttl --formatted=ttl> bdg.ttl
