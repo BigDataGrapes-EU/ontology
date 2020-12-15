@@ -1,0 +1,35 @@
+bdg: a owl:Ontology;
+  rdfs:label "BigDataGrapes ontology" ;
+  rdfs:comment "EU BigDataGrapes ontology for representing observations about soil, weather, agriculture, viticulture, wine making, etc";
+  dct:created  "2020-12-11"^^xsd:date;
+  dct:modified "2020-12-11"^^xsd:date;
+  dct:issued   "2020-12-18"^^xsd:date;
+  dct:creator <http://www.ontotext.com>, <http://inrae.fr>;
+  dc:contributor "Nikola Tulechki", "Vladimir Alexiev", "Arnaud Charleroy";
+  dc:format "meta/rdf-schema";
+  rdfs:seeAlso <https://github.com/BigDataGrapes-EU/ontology> ;
+    #TODO portal URL
+    #TODO <http://lov.okfn.org/dataset/lov/details/vocabulary_bdg.html>
+
+
+  vann:preferredNamespacePrefix "bdg";
+  vann:preferredNamespaceUri "http://data.bigdatagrapes.eu/resource/ontology/" ;
+  owl:imports  qb: , qudt: ;
+  owl:versionInfo "1.0".
+
+bdg-unit: a owl:Ontology;
+  rdfs:label "BigDataGrapes Units ontology" ;
+  rdfs:comment "Extra Units of Measure for EU BigDataGrapes, based on QUDT 2.0";
+  dct:created  "2020-12-11"^^xsd:date;
+  dct:modified "2020-12-11"^^xsd:date;
+  dct:issued   "2020-12-18"^^xsd:date;
+  dct:creator <http://www.ontotext.com>, <http://inrae.fr>;
+  dc:contributor "Nikola Tulechki", "Vladimir Alexiev", "Arnaud Charleroy";
+  dc:format "meta/rdf-schema";
+  vann:preferredNamespacePrefix "bdg-unit";
+  vann:preferredNamespaceUri "http://data.bigdatagrapes.eu/resource/unit/" ;
+  owl:imports qudt: ;
+  owl:versionInfo "1.0".
+
+<http://www.ontotext.com> a foaf:Organization; foaf:name "Ontotext Corp (Sirma AI)".
+<http://inrae.fr> a foaf:Organization; foaf:name "Institut National de Recherche pour l’Agriculture".

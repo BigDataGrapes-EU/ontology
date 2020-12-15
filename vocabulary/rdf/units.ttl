@@ -75,13 +75,13 @@ bdg-unit:Milli-S-PER-CM a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:Conduct
   skos:prefLabel "milli-siemens-per-centimeter" ;
 .
 
-bdg-unit:KG-PER-HA a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:Unit, qudt:MassPerAreaUnit;
+bdg-unit:KiloGM-PER-HA a qudt:DecimalScaledUnit, qudt:DerivedUnit, qudt:Unit, qudt:MassPerAreaUnit;
   qudt:hasQuantityKind quantitykind:MassPerArea ;
   qudt:conversionMultiplier 1.0e4 ;
   qudt:conversionOffset "0.0"^^xsd:double ;
   qudt:abbreviation "kg/ha" ;
-  prov:wasDerivedFrom unit:KG-PER-M2 ;
-  qudt:isScalingOf unit:KG-PER-M2 ;
+  prov:wasDerivedFrom unit:KiloGM-PER-M2 ;
+  qudt:isScalingOf unit:KiloGM-PER-M2 ;
   rdfs:label "Kilogram per Hectare" ;
   skos:prefLabel "kilogram-per-hectare" ;
 .
