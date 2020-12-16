@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:void="http://rdfs.org/ns/void#"
+	xmlns:pav="http://purl.org/pav/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<rdf:Description rdf:about="http://opendata.inrae.fr/nom_resource/titre_ressource">
+<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/> <!-- à changer en fonction du type de ressource -->
+	<!-- <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>  -->
+ <!-- laisser les champs vides si non renseignés --> 
+		<dc:title xml:lang="en">Ontology for the management of Wine Sensory analysis Descriptors (OWSD)</dc:title>
+		<dc:title xml:lang="fr">Le nom de ma ressource</dc:title>
+		<dct:alternative>Par exemple l'acronyme de ma ressource</dct:alternative>   
+		<dct:description xml:lang="en">Description textuelle en anglais de ma ressource </dct:description>
+		<dct:description xml:lang="fr">Description textuelle en français de ma ressource </dct:description>
+		<dc:creator> Coraline DAMASIO</dc:creator>
+        		<dc:creator> Coraline DAMASIO, Min Young YANG, Soline Caille, Alain Samson, Arnaud CHARLEROY, Pascal NEVEU</dc:creator>
+
+		<dc:creator> Coraline DAMASIO, Min Young YANG, Soline Caille, Alain Samson, Arnaud CHARLEROY, Pascal NEVEU</dc:creator>
+
+		<dc:creator> Coraline DAMASIO, Min Young YANG, Soline Caille, Alain Samson, Arnaud CHARLEROY, Pascal NEVEU</dc:creator>
+
+		<dc:creator> Coraline DAMASIO, Min Young YANG, Soline Caille, Alain Samson, Arnaud CHARLEROY, Pascal NEVEU</dc:creator>
+
+
+        <dc:creator>Prénom Nom2</dc:creator>
+        <dc:creator>Prénom Nom3</dc:creator>
+		<dc:contributor>Prénom Nom4</dc:contributor>
+		<dc:contributor>Prénom Nom5</dc:contributor>
+		<dcat:contactPoint>email</dcat:contactPoint>
+		<omv:creationDate>2017 ou June 2017 ou 2017/03/04</omv:creationDate>
+		<omv:modificationDate>2017 ou June 2017 ou 2017/03/04</omv:modificationDate>
+		<pav:version>1.0</pav:version>
+		<omv:hasFormalityLevel>une valeur parmi Ontology, Thesaurus, Metadata element set, Application profile, Classification scheme, Glossary, Name authority list, Terminology, List, Taxonomy si possible sous la forme d'une URI nkos http://w3id.org/nkos/nkostype#xxx par exemple http://w3id.org/nkos/nkostype#application_profile </omv:hasFormalityLevel>  Classification scheme
+		<omv:isOfType>une valeur parmi celles listées sur la page https://lovinra.inra.fr/2018/11/08/info-metadonnee-nature-of-the-semantic-resource/</omv:isOfType> Application Ontology ???
+		<omv:designedForOntologyTask>une valeur parmi celles listées sur la page https://lovinra.inra.fr/2018/11/09/focus-metadonnee-designed-for/</omv:designedForOntologyTask> Indexing Task 
+		<dc:format>http://www.w3.org/ns/formats/OWL_XML, à choisir dans la liste http://www.iana.org/assignments/media-types/media-types.xhtml</dc:format> application/rdf+xml
+
+		<omv:keywords>sensory analysis</omv:keywords>
+		<omv:keywords>terme 2 représentatif de la ressource</omv:keywords>
+		<dct:subject>URI 1, d'un concept Agrovoc par exemple, éventuellement correspondant au litéral indiqué dans omv:keywords</dct:subject>
+		<dct:subject>URI 2, d'un concept Agrovoc par exemple, éventuellement correspondant au litéral indiqué dans omv:keywords</dct:subject>
+		<dct:language>fra</dct:language>
+		<dct:language>en</dct:language>
+
+		<dc:publisher>INRAE (http://www.inrae.fr/)</dc:publisher>
+		<foaf:fundedBy>INRAE (http://www.inrae.fr/)</foaf:fundedBy>
+		<dct:license>https://www.etalab.gouv.fr/licence-ouverte-open-licence</dct:license>
+ <!-- 		<dct:license>https://creativecommons.org/licenses/by/4.0/</dct:license>  -->
+		<dct:identifier>identifiant DOI de la ressource	(généré automatiquement par DataINRAE lors du dépôt)</dct:identifier>
+		<void:sparqlEndpoint>URL du sparql endpoint de la ressource s'il existe</void:sparqlEndpoint> Agroportal ?
+		<dcat:downloadURL>Le lien vers le fichier téléchargeable. Par exemple, le lien du fichier dans Data Inra</dcat:downloadURL> ??
+		<foaf:homepage>La page de description de ma ressource, par exemple https://data.inra.fr/dataset.xhtml?persistentId=doi:10.15454/1.4894016754286177E12</foaf:homepage>
+		<omv:URI rdf:resource="http://opendata.inrae.fr/NOM_RESSOURCE/"/>
+		<omv:reference>Référence bibliographique d'un article décrivant la ressource, de préférence son DOI si elle en a un</omv:reference>
+
+</rdf:Description>
+   </rdf:RDF>

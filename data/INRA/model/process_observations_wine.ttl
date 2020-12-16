@@ -1,0 +1,65 @@
+
+<malolacticFermentation/PR041_2017R>
+        rdf:type     afeo:MalolacticFermentation ;
+        afeo:before  <ageing/PR041_2017R> .
+
+<wine/PR041_2017R>
+        rdf:type    afeo:Wine ;
+        rdfs:label  "wine/PR041_2017R" .
+
+<ageing/PR041_2017R>
+        rdf:type     afeo:Ageing ;
+        afeo:before  <bottling/PR041_2017R> ;
+        rdfs:label   "ageing/PR041_2017R" .
+
+<bottling/PR041_2017R>
+        rdf:type        afeo:Bottling ;
+        rdfs:label      "bottling/PR041_2017R" ;
+        afeo:hasOutput  <wine/PR041_2017R> .
+
+
+#Observations
+
+<data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/>
+        rdf:type              qb:Observation ;
+        qb:dataSet            <data/winemaking/sensoryAnalysis/BeforeBottling> ;
+        bdg:wine              <wine/PR041_2017R> ;
+        bdg:sensoryFlavor     <sensoryFlavor/pureRed_cherry> ;
+        bdg:judgeNumber       2 ;
+        bdg:flavorJudgeRatio  "1.00"^^xsd:double .
+
+<data/wineMaking/PechRouge/laboratoryAnalysisWine/2018-01-30/PR041_2017R>
+        rdf:type                    qb:Observation ;
+        qb:dataSet                  <data/wineMaking/PechRouge/laboratoryAnalysisWine> ;
+        # bdg:experiment              <experiment/2017_VITIDUR_3176_R> ;
+        bdg:wine                    <wine/PR041_2017R> ;
+        bdg:date                    "2018-01-30"^^xsd:date ;
+        bdg:alcohol                 "13.3"^^xsd:double ;
+        bdg:acidity_volatile_H2SO4  "0.48"^^xsd:double ;
+        bdg:pH                      "3.71"^^xsd:double ;
+        bdg:acidity_total           "2.902"^^xsd:double ;
+        bdg:free_SO2                "40"^^xsd:double ;
+        bdg:total_SO2               "73"^^xsd:double ;
+        bdg:total_polyphenol_index  "86.94"^^xsd:double ;
+        bdg:density_optical_420     "4.654"^^xsd:double ;
+        bdg:lightness               "9.7"^^xsd:double ;
+        bdg:green_red_component     "38.825"^^xsd:double ;
+        bdg:blue_yellow_component   "16.664"^^xsd:double .
+
+#PUML layout
+
+
+<ageing/PR041_2017R> puml:right <bottling/PR041_2017R> .
+
+<bottling/PR041_2017R> puml:down <wine/PR041_2017R> .
+
+<data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/> puml:up <wine/PR041_2017R> .
+
+
+<wine/PR041_2017R> puml:down-hidden  <data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/>.
+
+<data/winemaking/sensoryAnalysis/wine/PR041_2017R/sensoryFlavor/pureRed_cherry/> puml:down  <sensoryFlavor/pureRed_cherry> .
+
+<wine/PR041_2017R> puml:down-hidden  <data/wineMaking/PechRouge/laboratoryAnalysisWine/2018-01-30/PR041_2017R> .
+
+ 

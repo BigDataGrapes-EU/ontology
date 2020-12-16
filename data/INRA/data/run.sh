@@ -1,1 +1,0 @@
-curl "https://docs.google.com/spreadsheets/d/1uK77WFwUZCoGP0zrGVZ9RgTZvJQ2motGrbI6E6cxXts/gviz/tq?tqx=out:csv&gid=1724640354" | tail -n +3 | ../../bin/my-tarql "-d , --stdin"  ../../../model/prefixes.ttl organs.tarql >organs.ttl

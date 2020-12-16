@@ -1,0 +1,3937 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://opendata.inrae.fr/owsd#"
+     xml:base="http://opendata.inrae.fr/owsd"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:omv="http://omv.ontoware.org/2005/05/ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owsd="http://opendata.inrae.fr/owsd#"
+     xmlns:rdf1="http://www.w3.org/2000/01/rdf#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:void="http://rdfs.org/ns/void#">
+    <owl:Ontology rdf:about="http://opendata.inrae.fr/owsd">
+        <owl:versionIRI rdf:resource="http://opendata.inrae.fr/owsd/1.0"/>
+        <omv:URI rdf:resource="http://opendata.inrae.fr/owsd"/>
+        <omv:creationDate>2020/09/01</omv:creationDate>
+        <omv:designedForOntologyTask>Application Task</omv:designedForOntologyTask>
+        <omv:designedForOntologyTask>Integration Task</omv:designedForOntologyTask>
+        <omv:hasFormalityLevel>Ontology</omv:hasFormalityLevel>
+        <omv:isOfType>Ontology Metadata Vocabulary</omv:isOfType>
+        <omv:keywords>aromas</omv:keywords>
+        <omv:keywords>sensory analysis</omv:keywords>
+        <omv:keywords>wine</omv:keywords>
+        <dc:creator>Alain SAMSON</dc:creator>
+        <dc:creator>Arnaud CHARLEROY</dc:creator>
+        <dc:creator>Coraline DAMASIO</dc:creator>
+        <dc:creator>Min Young YANG</dc:creator>
+        <dc:creator>Pascal NEVEU</dc:creator>
+        <dc:creator>Soline CAILLE</dc:creator>
+        <dc:format>application/rdf+xml</dc:format>
+        <dc:publisher>INRAE (http://www.inrae.fr/)</dc:publisher>
+        <dc:title xml:lang="fr">Ontologie pour la gestion des descripteurs d&apos;analyse sensorielle du vin</dc:title>
+        <dc:title xml:lang="en">Ontology for the management of Wine Sensory analysis Descriptors</dc:title>
+        <dct:alternative>OWSD</dct:alternative>
+        <dct:description xml:lang="fr">Les descripteurs d&apos;analyse sensorielle du vin, une nouvelle ontologie, décrit une liste de classes utilisées pour classer les descripteurs sensoriels (instances).</dct:description>
+        <dct:description xml:lang="en">The Wine Sensory analysis Descriptors, a new ontology   describes a list of classes used to classify sensorial descriptors (instances).</dct:description>
+        <dct:language>eng</dct:language>
+        <dct:language>fra</dct:language>
+        <dct:license>https://www.etalab.gouv.fr/licence-ouverte-open-licence</dct:license>
+        <pav:version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</pav:version>
+        <void:sparqlEndpoint>http://sparql.agroportal.lirmm.fr</void:sparqlEndpoint>
+        <dcat:contactPoint>arnaud.charleroy@inrae.fr</dcat:contactPoint>
+        <foaf:fundedBy>INRAE (http://www.inrae.fr/)</foaf:fundedBy>
+        <foaf:maker>INRAE MISTEA (https://www6.montpellier.inrae.fr/mistea/)</foaf:maker>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#URI -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#URI"/>
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#creationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#creationDate"/>
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#designedForOntologyTask -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#designedForOntologyTask"/>
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#hasFormalityLevel"/>
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#isOfType -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#isOfType"/>
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#keywords -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#keywords"/>
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#modificationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#modificationDate"/>
+    
+
+
+    <!-- http://omv.ontoware.org/2005/05/ontology#reference -->
+
+    <owl:AnnotationProperty rdf:about="http://omv.ontoware.org/2005/05/ontology#reference"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/pav/version -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/version"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#sparqlEndpoint -->
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#sparqlEndpoint"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf#type"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/fundedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/fundedBy"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#isPerceivedAs -->
+
+    <owl:ObjectProperty rdf:about="http://opendata.inrae.fr/owsd#isPerceivedAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdfs:domain rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdfs:domain rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdfs:domain rdf:resource="http://opendata.inrae.fr/owsd#visual"/>
+        <rdfs:range rdf:resource="http://opendata.inrae.fr/owsd#perception"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#acid_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#acid_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">acid</rdfs:label>
+        <rdfs:label xml:lang="fr">acide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#acid_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#acid_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#acid_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">acid</rdfs:label>
+        <rdfs:label xml:lang="fr">acide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#agrumes_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#agrumes_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">agrume</rdfs:label>
+        <rdfs:label xml:lang="en">citrus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#alcohol_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#alcohol_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">alcohol</rdfs:label>
+        <rdfs:label xml:lang="fr">alcool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#alcohol_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#alcohol_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">alcohol</rdfs:label>
+        <rdfs:label xml:lang="fr">alcool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#alcohol_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#alcohol_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#alcohol_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">alcohol</rdfs:label>
+        <rdfs:label xml:lang="fr">alcool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#alcohol_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#alcohol_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#alcohol_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">alcohol</rdfs:label>
+        <rdfs:label xml:lang="fr">alcool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#amylic_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#amylic_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#chemical_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">amylic</rdfs:label>
+        <rdfs:label xml:lang="fr">amylique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#animal_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#animal_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">animal</rdfs:label>
+        <rdfs:label xml:lang="fr">animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#animal_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#animal_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#animal_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">animal</rdfs:label>
+        <rdfs:label xml:lang="fr">animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#aqueous_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#aqueous_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">aqueous</rdfs:label>
+        <rdfs:label xml:lang="fr">aqueux</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#aqueous_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#aqueous_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#aqueous_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">aqueux</rdfs:label>
+        <rdfs:label xml:lang="en">watery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#aromaticPlants_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#spicy_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamliy</rdf1:type>
+        <rdfs:label xml:lang="en">aromatic plants</rdfs:label>
+        <rdfs:label xml:lang="fr">plantes aromatiques</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#astringent_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#astringent_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">astringent</rdfs:label>
+        <rdfs:label xml:lang="fr">astringent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#astringent_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#astringent_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#astringent_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">astringent</rdfs:label>
+        <rdfs:label xml:lang="fr">astringent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#bitter_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#bitter_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="fr">amer</rdfs:label>
+        <rdfs:label xml:lang="en">bitter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#bitter_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#bitter_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#bitter_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">amer</rdfs:label>
+        <rdfs:label xml:lang="en">bitter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#chemical_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#chemical_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">chemical</rdfs:label>
+        <rdfs:label xml:lang="fr">chimique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#chemical_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#chemical_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#chemical_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">chemical</rdfs:label>
+        <rdfs:label xml:lang="fr">chimique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#color_f -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#color_f">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#visual"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">color</rdfs:label>
+        <rdfs:label xml:lang="fr">couleur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cookedFruits_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#cookedFruits_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">cookedFruits</rdfs:label>
+        <rdfs:label xml:lang="fr">fruitsCuits</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#driedFruits_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#driedFruits_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">dried fruits</rdfs:label>
+        <rdfs:label xml:lang="fr">fruits secs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dryPlants_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#dryPlants_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#vegetal_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">dry plants</rdfs:label>
+        <rdfs:label xml:lang="fr">végétaux secs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#empyreumatic_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#empyreumatic_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">empyreumatic</rdfs:label>
+        <rdfs:label xml:lang="fr">empyreumatique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#empyreumatic_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#empyreumatic_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">empyreumatic</rdfs:label>
+        <rdfs:label xml:lang="fr">empyreumatique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#exoticFruits_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#exoticFruits_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">exotic fruits</rdfs:label>
+        <rdfs:label xml:lang="fr">fruits exotiques</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fat_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#fat_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">fat</rdfs:label>
+        <rdfs:label xml:lang="fr">gras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fat_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#fat_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fat_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">fat</rdfs:label>
+        <rdfs:label xml:lang="fr">gras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#floral_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#floral_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">floral</rdfs:label>
+        <rdfs:label xml:lang="fr">floral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#freshVegetables_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#freshVegetables_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#vegetal_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">fresh vegetables</rdfs:label>
+        <rdfs:label xml:lang="fr">végétaux frais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fruitAlcohol_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#fruitAlcohol_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#alcohol_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">alcool de fruits</rdfs:label>
+        <rdfs:label xml:lang="en">fruit alcohol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fruity_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#fruity_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">fruity</rdfs:label>
+        <rdfs:label xml:lang="fr">fruité</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#gardenFlowers_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#gardenFlowers_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#floral_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">fleurs du jardin</rdfs:label>
+        <rdfs:label xml:lang="en">garden flowers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#gustatory -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#gustatory">
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flavortype</rdf1:type>
+        <rdfs:label xml:lang="fr">gustatif</rdfs:label>
+        <rdfs:label xml:lang="en">gustatory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lactic_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#lactic_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">lactic</rdfs:label>
+        <rdfs:label xml:lang="fr">lactique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lactic_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#lactic_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#lactic_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">lactic</rdfs:label>
+        <rdfs:label xml:lang="fr">lactique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#mineral_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#mineral_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">mineral</rdfs:label>
+        <rdfs:label xml:lang="fr">minéral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#minerals_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#minerals_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#mineral_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfmaily</rdf1:type>
+        <rdfs:label xml:lang="en">minerals</rdfs:label>
+        <rdfs:label xml:lang="fr">minéraux</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#nuts_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#nuts_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">fruits à coque</rdfs:label>
+        <rdfs:label xml:lang="en">nuts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#olfactory -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#olfactory">
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flavorType</rdf1:type>
+        <rdfs:label xml:lang="fr">olfactif</rdfs:label>
+        <rdfs:label xml:lang="en">olfactory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#otherFruits_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#otherFruits_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">autres fruits</rdfs:label>
+        <rdfs:label xml:lang="en">other fruits</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#oxidation_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#oxidation_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#chemical_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">oxidation</rdfs:label>
+        <rdfs:label xml:lang="fr">oxydation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#packaging_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#packaging_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#chemical_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">emballage</rdfs:label>
+        <rdfs:label xml:lang="en">packaging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pastry_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#pastry_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">pastry</rdfs:label>
+        <rdfs:label xml:lang="fr">pâtisserie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pastry_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#pastry_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#pastry_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">pastry</rdfs:label>
+        <rdfs:label xml:lang="fr">pâtisserie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#perception -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#perception"/>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#redFruits_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#redFruits_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">fruits rouges</rdfs:label>
+        <rdfs:label xml:lang="en">red fruits</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#salinity_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#salinity_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">salinity</rdfs:label>
+        <rdfs:label xml:lang="fr">salinité</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#salinity_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#salinity_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#salinity_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">salinity</rdfs:label>
+        <rdfs:label xml:lang="fr">salinité</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#shrubFlowers_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#shrubFlowers_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#floral_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">fleurs d&apos;arbustes</rdfs:label>
+        <rdfs:label xml:lang="en">shrub flowers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sparkling_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#sparkling_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="fr">pétillant</rdfs:label>
+        <rdfs:label xml:lang="en">sparkling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sparkling_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#sparkling_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#sparkling_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">pétillant</rdfs:label>
+        <rdfs:label xml:lang="en">sparkling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#spices_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#spices_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#spicy_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">epices</rdfs:label>
+        <rdfs:label xml:lang="en">spices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#spicy_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#spicy_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="fr">epicé</rdfs:label>
+        <rdfs:label xml:lang="en">spicy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sulphides_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#sulphides_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#chemical_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">sulfures</rdfs:label>
+        <rdfs:label xml:lang="en">sulphides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sweetness_f_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#sweetness_f_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#gustatory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="fr">sucrosité</rdfs:label>
+        <rdfs:label xml:lang="en">sweetness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sweetness_sf_g -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#sweetness_sf_g">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#sweetness_f_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">sucrosité</rdfs:label>
+        <rdfs:label xml:lang="en">sweetness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#treeFlowers_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#treeFlowers_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#floral_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">fleurs d&apos;arbres</rdfs:label>
+        <rdfs:label xml:lang="en">tree flowers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#unclassified -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#unclassified">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#undergrowth_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#undergrowth_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#vegetal_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">sous-bois</rdfs:label>
+        <rdfs:label xml:lang="en">undergrowth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#vegetables_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#vegetables_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#vegetal_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">légumes</rdfs:label>
+        <rdfs:label xml:lang="en">vegetables</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#vegetal_f_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#vegetal_f_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#olfactory"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">family</rdf1:type>
+        <rdfs:label xml:lang="en">vegetal</rdfs:label>
+        <rdfs:label xml:lang="fr">végétal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#visual -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#visual">
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flavorType</rdf1:type>
+        <rdfs:label xml:lang="en">visual</rdfs:label>
+        <rdfs:label xml:lang="fr">visuel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#visual_red_sf_v -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#visual_red_sf_v">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#color_f"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">visual red</rdfs:label>
+        <rdfs:label xml:lang="fr">visuel rouge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#visual_rose_sf_v -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#visual_rose_sf_v">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#color_f"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">visual rosé</rdfs:label>
+        <rdfs:label xml:lang="fr">visuel rosé</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#visual_white_sf_v -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#visual_white_sf_v">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#color_f"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="en">visual white</rdfs:label>
+        <rdfs:label xml:lang="fr">visuel blanc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#volatileAcidity_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#volatileAcidity_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#chemical_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">acidité volatile</rdfs:label>
+        <rdfs:label xml:lang="en">volatile acidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#whiteFlowers_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#whiteFlowers_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#floral_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">fleurs blanches</rdfs:label>
+        <rdfs:label xml:lang="en">white flowers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#yeast_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#yeast_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#pastry_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">levure</rdfs:label>
+        <rdfs:label xml:lang="en">yeast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#yellowFruits_sf_o -->
+
+    <owl:Class rdf:about="http://opendata.inrae.fr/owsd#yellowFruits_sf_o">
+        <rdfs:subClassOf rdf:resource="http://opendata.inrae.fr/owsd#fruity_f_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subfamily</rdf1:type>
+        <rdfs:label xml:lang="fr">fruits jaunes</rdfs:label>
+        <rdfs:label xml:lang="en">yellow fruits</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#acacia_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#acacia_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#whiteFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">acacia</rdfs:label>
+        <rdfs:label xml:lang="fr">acacia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#acetone_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#acetone_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">acetone</rdfs:label>
+        <rdfs:label xml:lang="fr">acétone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#acid_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#acid_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#acid_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">acid</rdfs:label>
+        <rdfs:label xml:lang="fr">acide</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#acre_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#acre_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#astringent_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">acre</rdfs:label>
+        <rdfs:label xml:lang="fr">âcre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#alcohol_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#alcohol_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#alcohol_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">alcohol</rdfs:label>
+        <rdfs:label xml:lang="fr">alcool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#alcohol_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#alcohol_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#alcohol_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">alcohol</rdfs:label>
+        <rdfs:label xml:lang="fr">alcool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#alcoholic_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#alcoholic_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#alcohol_sf_g"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">alcoholic</rdfs:label>
+        <rdfs:label xml:lang="fr">alcooleux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#almond_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#almond_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#nuts_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">almond</rdfs:label>
+        <rdfs:label xml:lang="fr">amande</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#almostColourless_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#almostColourless_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_white_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">alsmostColourless</rdfs:label>
+        <rdfs:label xml:lang="fr">presqueIncolore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#ammonia_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#ammonia_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">ammonia</rdfs:label>
+        <rdfs:label xml:lang="fr">ammoniaque</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#anise_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#anise_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#spices_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">anis</rdfs:label>
+        <rdfs:label xml:lang="en">anise</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#apple_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#apple_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#otherFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">apple</rdfs:label>
+        <rdfs:label xml:lang="fr">pomme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#apricot_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#apricot_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#yellowFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">abricot</rdfs:label>
+        <rdfs:label xml:lang="en">apricot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#aromatic_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#aromatic_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">aromatic</rdfs:label>
+        <rdfs:label xml:lang="fr">aromatique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#artichocke_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#artichocke_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">artichaut</rdfs:label>
+        <rdfs:label xml:lang="en">artichoke</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#asparagus_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#asparagus_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">asparagus</rdfs:label>
+        <rdfs:label xml:lang="fr">asperge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#astringent_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#astringent_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#astringent_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">astringent</rdfs:label>
+        <rdfs:label xml:lang="fr">astringent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#badSmell_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#badSmell_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">badSmell</rdfs:label>
+        <rdfs:label xml:lang="fr">mauvaiseOdeur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#balanced_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#balanced_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">balanced</rdfs:label>
+        <rdfs:label xml:lang="fr">équilibré</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#banana_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#banana_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">banana</rdfs:label>
+        <rdfs:label xml:lang="fr">banane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#basil_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#basil_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">basil</rdfs:label>
+        <rdfs:label xml:lang="fr">basilic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#beading_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#beading_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sparkling_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">beading</rdfs:label>
+        <rdfs:label xml:lang="fr">perlant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#beer_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#beer_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#yeast_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">beer</rdfs:label>
+        <rdfs:label xml:lang="fr">bière</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#bergamot_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#bergamot_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#agrumes_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">bergamot</rdfs:label>
+        <rdfs:label xml:lang="fr">bergamote</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#bitter_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#bitter_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#bitter_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">amer</rdfs:label>
+        <rdfs:label xml:lang="en">bitter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#blackFruits_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#blackFruits_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">blackFruits</rdfs:label>
+        <rdfs:label xml:lang="fr">fruitsNoirs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#blackTea_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#blackTea_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">blackTea</rdfs:label>
+        <rdfs:label xml:lang="fr">théNoir</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#blackberry_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#blackberry_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">blackberry</rdfs:label>
+        <rdfs:label xml:lang="fr">mûre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#blackcurrantBud_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#blackcurrantBud_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#freshVegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">blackcurrantBud</rdfs:label>
+        <rdfs:label xml:lang="fr">bourgeonDeCassis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#blackcurrantLeaf_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#blackcurrantLeaf_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#freshVegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">blackcurrantLeaf</rdfs:label>
+        <rdfs:label xml:lang="fr">feuilleDeCassis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#bland_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#bland_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aqueous_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">bland</rdfs:label>
+        <rdfs:label xml:lang="fr">fade</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#blondTobacco_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#blondTobacco_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">blondTobacco</rdfs:label>
+        <rdfs:label xml:lang="fr">tabacBlond</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#blueberry_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#blueberry_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">blueberry</rdfs:label>
+        <rdfs:label xml:lang="fr">myrtille</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#board_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#board_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">board</rdfs:label>
+        <rdfs:label xml:lang="fr">planche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#boxwood_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#boxwood_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#freshVegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">boxwood</rdfs:label>
+        <rdfs:label xml:lang="fr">buis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#bread_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#bread_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#yeast_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">bread</rdfs:label>
+        <rdfs:label xml:lang="fr">pain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#brownRed_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#brownRed_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_red_sf_v"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">brownRed</rdfs:label>
+        <rdfs:label xml:lang="fr">rougeBrun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#brownTobacco_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#brownTobacco_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">brownTobacco</rdfs:label>
+        <rdfs:label xml:lang="fr">tabacBrun</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#burning_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#burning_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#alcohol_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">brulant</rdfs:label>
+        <rdfs:label xml:lang="en">burning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#burntAlcohol_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#burntAlcohol_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#chemical_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">alcoolBrûlé</rdfs:label>
+        <rdfs:label xml:lang="en">burntAlcohol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#burntWood_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#burntWood_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">BoisBrûlé</rdfs:label>
+        <rdfs:label xml:lang="en">burntWood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#burnt_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#burnt_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">brûlé</rdfs:label>
+        <rdfs:label xml:lang="en">burnt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#butter_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#butter_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#lactic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">beurre</rdfs:label>
+        <rdfs:label xml:lang="en">butter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cabbage_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cabbage_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cabbage</rdfs:label>
+        <rdfs:label xml:lang="fr">chou</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#candiedFruits_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#candiedFruits_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#cookedFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">candiedFruits</rdfs:label>
+        <rdfs:label xml:lang="fr">fruitsConfits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#caramel_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#caramel_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">caramel</rdfs:label>
+        <rdfs:label xml:lang="fr">caramel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#carbonDioxyde_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#carbonDioxyde_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">carbonDioxyde</rdfs:label>
+        <rdfs:label xml:lang="fr">dioxydeDeCarbonne</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cardboard_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cardboard_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#packaging_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cardboard</rdfs:label>
+        <rdfs:label xml:lang="fr">carton</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cashew_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cashew_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#nuts_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">cajou</rdfs:label>
+        <rdfs:label xml:lang="en">cashew</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cassis_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cassis_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cassis</rdfs:label>
+        <rdfs:label xml:lang="fr">cassis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#catPee_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#catPee_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">catPee</rdfs:label>
+        <rdfs:label xml:lang="fr">pipiDeChat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cauliflower_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cauliflower_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cauliflower</rdfs:label>
+        <rdfs:label xml:lang="fr">chou-fleur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#celery_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#celery_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">celery</rdfs:label>
+        <rdfs:label xml:lang="fr">céleri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cellar_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cellar_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">cave</rdfs:label>
+        <rdfs:label xml:lang="en">cellar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#chalk_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#chalk_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#minerals_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">chalk</rdfs:label>
+        <rdfs:label xml:lang="fr">craie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#chardApple_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#chardApple_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">chardApple</rdfs:label>
+        <rdfs:label xml:lang="fr">pommeBlette</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cheese_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cheese_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#lactic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cheese</rdfs:label>
+        <rdfs:label xml:lang="fr">fromage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cherry_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cherry_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">cerise</rdfs:label>
+        <rdfs:label xml:lang="en">cherry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#chewingGum_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#chewingGum_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">chewingGum</rdfs:label>
+        <rdfs:label xml:lang="fr">chewingGum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#chicory_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#chicory_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">chicory</rdfs:label>
+        <rdfs:label xml:lang="fr">chicoré</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#chocolate_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#chocolate_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">chocolat</rdfs:label>
+        <rdfs:label xml:lang="en">chocolate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cinnamon_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cinnamon_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#pastry_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">cannelle</rdfs:label>
+        <rdfs:label xml:lang="en">cinnamon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#citronella_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#citronella_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#agrumes_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">citronella</rdfs:label>
+        <rdfs:label xml:lang="fr">citronnelle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#citrus_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#citrus_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#agrumes_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">agrume</rdfs:label>
+        <rdfs:label xml:lang="en">citrus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#clear_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#clear_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_rose_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">clair</rdfs:label>
+        <rdfs:label xml:lang="en">clear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#closed_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#closed_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">closed</rdfs:label>
+        <rdfs:label xml:lang="fr">fermé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#clove_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#clove_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#spices_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">clouDeGirofle</rdfs:label>
+        <rdfs:label xml:lang="en">clove</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cocoa_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cocoa_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cocoa</rdfs:label>
+        <rdfs:label xml:lang="fr">cocoa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#coconut_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#coconut_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#nuts_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">coconut</rdfs:label>
+        <rdfs:label xml:lang="fr">noixDeCoco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#coffee_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#coffee_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">café</rdfs:label>
+        <rdfs:label xml:lang="en">coffee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cookedFruits_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cookedFruits_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#cookedFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cookedFruits</rdfs:label>
+        <rdfs:label xml:lang="fr">fruitsCuits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cookedMeat_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cookedMeat_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cookedMeat</rdfs:label>
+        <rdfs:label xml:lang="fr">viandeCuite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cookedVegetables_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cookedVegetables_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cookedVegetables</rdfs:label>
+        <rdfs:label xml:lang="fr">légumesCuits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cookedWine_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cookedWine_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cookedWine</rdfs:label>
+        <rdfs:label xml:lang="fr">vinCuit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cooked_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cooked_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cooked</rdfs:label>
+        <rdfs:label xml:lang="fr">cuit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#coriander_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#coriander_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#spices_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">coriander</rdfs:label>
+        <rdfs:label xml:lang="fr">coriandre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cork_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cork_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#packaging_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cork</rdfs:label>
+        <rdfs:label xml:lang="fr">liège</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#corked_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#corked_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#packaging_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">bouchonné</rdfs:label>
+        <rdfs:label xml:lang="en">corked</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cream_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cream_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#lactic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cream</rdfs:label>
+        <rdfs:label xml:lang="fr">crème</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#creams_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#creams_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fruitAlcohol_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">creams</rdfs:label>
+        <rdfs:label xml:lang="fr">crèmes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#cumin_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#cumin_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#spices_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">cumin</rdfs:label>
+        <rdfs:label xml:lang="fr">cumin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#curdledMilk_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#curdledMilk_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#lactic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">curdledMilk</rdfs:label>
+        <rdfs:label xml:lang="fr">laitCaillé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#currant_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#currant_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">currant</rdfs:label>
+        <rdfs:label xml:lang="fr">groseille</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#curry_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#curry_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">curry</rdfs:label>
+        <rdfs:label xml:lang="fr">curry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dark_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#dark_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_rose_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">dark</rdfs:label>
+        <rdfs:label xml:lang="fr">foncé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dark_red_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#dark_red_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_red_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">darkRed</rdfs:label>
+        <rdfs:label xml:lang="fr">rougeFoncé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#default -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#default">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#perception"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dilute_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#dilute_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">dilute</rdfs:label>
+        <rdfs:label xml:lang="fr">dilué</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dish_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#dish_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aqueous_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">dish</rdfs:label>
+        <rdfs:label xml:lang="fr">plat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#driedApricot_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#driedApricot_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#driedFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">abricotSec</rdfs:label>
+        <rdfs:label xml:lang="en">driedApricot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dryWood_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#dryWood_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">boisSec</rdfs:label>
+        <rdfs:label xml:lang="en">dryWood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dryingUp_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#dryingUp_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#astringent_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">asséchant</rdfs:label>
+        <rdfs:label xml:lang="en">dryingUp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#dust_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#dust_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#minerals_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">dust</rdfs:label>
+        <rdfs:label xml:lang="fr">poussière</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#earthy_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#earthy_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">earthy</rdfs:label>
+        <rdfs:label xml:lang="fr">terreux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#ethanol_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#ethanol_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#alcohol_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">ethanol</rdfs:label>
+        <rdfs:label xml:lang="fr">éthanol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#eucalyptus_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#eucalyptus_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">eucalyptus</rdfs:label>
+        <rdfs:label xml:lang="fr">eucalyptus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fat_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#fat_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fat_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">fat</rdfs:label>
+        <rdfs:label xml:lang="fr">gras</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fennel_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#fennel_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">fennel</rdfs:label>
+        <rdfs:label xml:lang="fr">fenouil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fermentationAroma_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#fermentationAroma_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fermentaireLevure</rdfs:label>
+        <rdfs:label xml:lang="en">fermentationAroma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fig_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#fig_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#otherFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">fig</rdfs:label>
+        <rdfs:label xml:lang="fr">figue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#fluid_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#fluid_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aqueous_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">fluid</rdfs:label>
+        <rdfs:label xml:lang="fr">fluide</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#garlic_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#garlic_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">ail</rdfs:label>
+        <rdfs:label xml:lang="en">garlic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#geranium_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#geranium_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#gardenFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">geranium</rdfs:label>
+        <rdfs:label xml:lang="fr">géranium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#ginger_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#ginger_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#spices_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">gingembre</rdfs:label>
+        <rdfs:label xml:lang="en">ginger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#gingerbread_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#gingerbread_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#pastry_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">gingerbread</rdfs:label>
+        <rdfs:label xml:lang="fr">paind&apos;Epices</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#goat_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#goat_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">bouc</rdfs:label>
+        <rdfs:label xml:lang="en">goat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#grapefruit_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#grapefruit_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#agrumes_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">grapefruit</rdfs:label>
+        <rdfs:label xml:lang="fr">pamplemousse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#grass_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#grass_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#freshVegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">grass</rdfs:label>
+        <rdfs:label xml:lang="fr">herbe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#greenApple_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#greenApple_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#otherFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">greenApple</rdfs:label>
+        <rdfs:label xml:lang="fr">pommeVerte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#greenBean_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#greenBean_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">greenBean</rdfs:label>
+        <rdfs:label xml:lang="fr">haricotVert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#greenTea_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#greenTea_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">greenTea</rdfs:label>
+        <rdfs:label xml:lang="fr">théVert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#greenWood_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#greenWood_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#freshVegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">boisVert</rdfs:label>
+        <rdfs:label xml:lang="en">greenWood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#hariboCandy_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#hariboCandy_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">bonbonHaribo</rdfs:label>
+        <rdfs:label xml:lang="en">hariboCandy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#harsh_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#harsh_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#astringent_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">harsh</rdfs:label>
+        <rdfs:label xml:lang="fr">âpre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#hawthorn_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#hawthorn_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#shrubFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">aubépine</rdfs:label>
+        <rdfs:label xml:lang="en">hawthorn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#hay_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#hay_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">foin</rdfs:label>
+        <rdfs:label xml:lang="en">hay</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#hazelnut_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#hazelnut_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#nuts_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">hazelnut</rdfs:label>
+        <rdfs:label xml:lang="fr">noisette</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#honey_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#honey_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#pastry_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">honey</rdfs:label>
+        <rdfs:label xml:lang="fr">miel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#honeysuckle_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#honeysuckle_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#whiteFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">chèvrefeuille</rdfs:label>
+        <rdfs:label xml:lang="en">honeysuckle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#horse_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#horse_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">cheval</rdfs:label>
+        <rdfs:label xml:lang="en">horse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#hot_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#hot_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#alcohol_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">chaud</rdfs:label>
+        <rdfs:label xml:lang="en">hot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#humus_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#humus_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">humus</rdfs:label>
+        <rdfs:label xml:lang="fr">humus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#hyacinth_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#hyacinth_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#gardenFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">hyacinth</rdfs:label>
+        <rdfs:label xml:lang="fr">jacinthe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#intensity_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#intensity_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_white_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">intensity</rdfs:label>
+        <rdfs:label xml:lang="fr">intensité</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#iodine_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#iodine_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#minerals_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">iode</rdfs:label>
+        <rdfs:label xml:lang="en">iodine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#iris_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#iris_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#gardenFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">iris</rdfs:label>
+        <rdfs:label xml:lang="fr">iris</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#iron_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#iron_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#minerals_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fer</rdfs:label>
+        <rdfs:label xml:lang="en">iron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#irritating_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#irritating_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">irritant</rdfs:label>
+        <rdfs:label xml:lang="en">irritating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#ivy_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#ivy_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#freshVegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">ivy</rdfs:label>
+        <rdfs:label xml:lang="fr">lierre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#jam_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#jam_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#cookedFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">confiture</rdfs:label>
+        <rdfs:label xml:lang="en">jam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#jasmine_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#jasmine_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#whiteFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">jasmin</rdfs:label>
+        <rdfs:label xml:lang="en">jasmine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#juniper_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#juniper_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">genièvre</rdfs:label>
+        <rdfs:label xml:lang="en">juniper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#kirsch_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#kirsch_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fruitAlcohol_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">kirsch</rdfs:label>
+        <rdfs:label xml:lang="fr">kirsh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#laurel_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#laurel_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">laurel</rdfs:label>
+        <rdfs:label xml:lang="fr">laurier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lavender_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lavender_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#shrubFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">lavande</rdfs:label>
+        <rdfs:label xml:lang="en">lavender</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#leather_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#leather_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">cuir</rdfs:label>
+        <rdfs:label xml:lang="en">leather</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#leeks_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#leeks_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">leeks</rdfs:label>
+        <rdfs:label xml:lang="fr">poireaux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lemon_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lemon_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#agrumes_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">citron</rdfs:label>
+        <rdfs:label xml:lang="en">lemon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lessIntense_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lessIntense_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">lessIntense</rdfs:label>
+        <rdfs:label xml:lang="fr">moinsIntense</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lilac_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lilac_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#shrubFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">lilac</rdfs:label>
+        <rdfs:label xml:lang="fr">lilas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lilyOfTheValley_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lilyOfTheValley_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#whiteFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">lilyOfTheValley</rdfs:label>
+        <rdfs:label xml:lang="fr">muguet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lily_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lily_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#gardenFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">lily</rdfs:label>
+        <rdfs:label xml:lang="fr">lys</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#limeTree_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#limeTree_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#treeFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">limeTree</rdfs:label>
+        <rdfs:label xml:lang="fr">tilleul</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#liqueurs_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#liqueurs_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fruitAlcohol_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">liqueurs</rdfs:label>
+        <rdfs:label xml:lang="fr">liqueurs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#liquorice_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#liquorice_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">liquorice</rdfs:label>
+        <rdfs:label xml:lang="fr">réglisse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#litchi_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#litchi_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#exoticFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">litchi</rdfs:label>
+        <rdfs:label xml:lang="fr">litchi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lively_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lively_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#acid_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">lively</rdfs:label>
+        <rdfs:label xml:lang="fr">vif</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#lovage_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#lovage_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">livèche</rdfs:label>
+        <rdfs:label xml:lang="en">lovage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#maderized_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#maderized_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">maderized</rdfs:label>
+        <rdfs:label xml:lang="fr">madère</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#magnolia_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#magnolia_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#treeFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">magnolia</rdfs:label>
+        <rdfs:label xml:lang="fr">magnolia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#malt_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#malt_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">malt</rdfs:label>
+        <rdfs:label xml:lang="fr">malt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#mandarin_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#mandarin_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#agrumes_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">mandarin</rdfs:label>
+        <rdfs:label xml:lang="fr">mandarine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#mango_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#mango_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#exoticFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">mango</rdfs:label>
+        <rdfs:label xml:lang="fr">mango</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#melon_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#melon_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#yellowFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">melon</rdfs:label>
+        <rdfs:label xml:lang="fr">melon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#metalic_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#metalic_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">metalic</rdfs:label>
+        <rdfs:label xml:lang="fr">métallique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#milk_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#milk_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#lactic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">lait</rdfs:label>
+        <rdfs:label xml:lang="en">milk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#milky_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#milky_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#lactic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">lacté</rdfs:label>
+        <rdfs:label xml:lang="en">milky</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#mint_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#mint_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">menthe</rdfs:label>
+        <rdfs:label xml:lang="en">mint</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#mouldy_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#mouldy_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">moisi</rdfs:label>
+        <rdfs:label xml:lang="en">mouldy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#muscatGrape_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#muscatGrape_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#otherFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">muscatGrape</rdfs:label>
+        <rdfs:label xml:lang="fr">raisinMuscat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#muscat_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#muscat_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">muscat</rdfs:label>
+        <rdfs:label xml:lang="fr">muscat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#mushroom_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#mushroom_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">champignon</rdfs:label>
+        <rdfs:label xml:lang="en">mushroom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#musk_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#musk_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">musc</rdfs:label>
+        <rdfs:label xml:lang="en">musk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#mustySmell_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#mustySmell_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">mustySmell</rdfs:label>
+        <rdfs:label xml:lang="fr">renfermé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#nailPolish_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#nailPolish_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">nailPolish</rdfs:label>
+        <rdfs:label xml:lang="fr">vernis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#nutmeg_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#nutmeg_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#spices_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">muscade</rdfs:label>
+        <rdfs:label xml:lang="en">nutmeg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#nuts_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#nuts_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#nuts_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">noix</rdfs:label>
+        <rdfs:label xml:lang="en">nuts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#olive_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#olive_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">olive</rdfs:label>
+        <rdfs:label xml:lang="fr">olive</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#onion_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#onion_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">oignon</rdfs:label>
+        <rdfs:label xml:lang="en">onion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#orangeBlossom_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#orangeBlossom_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#treeFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fleurOranger</rdfs:label>
+        <rdfs:label xml:lang="en">orangeBlossom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#orange_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#orange_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#agrumes_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">orange</rdfs:label>
+        <rdfs:label xml:lang="fr">orange</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#oxidised_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#oxidised_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_white_sf_v"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">oxidized</rdfs:label>
+        <rdfs:label xml:lang="fr">oxydé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#oxydised_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#oxydised_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">oxidised</rdfs:label>
+        <rdfs:label xml:lang="fr">oxydé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#paper_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#paper_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">paper</rdfs:label>
+        <rdfs:label xml:lang="fr">papier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#parisMushroom_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#parisMushroom_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">champignonDeParis</rdfs:label>
+        <rdfs:label xml:lang="en">parisMushroom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#passionFruit_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#passionFruit_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#exoticFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fruitPassion</rdfs:label>
+        <rdfs:label xml:lang="en">passionFruit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#peach_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#peach_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#yellowFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">peach</rdfs:label>
+        <rdfs:label xml:lang="fr">pêche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pear_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#pear_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#otherFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">pear</rdfs:label>
+        <rdfs:label xml:lang="fr">poire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#peony_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#peony_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#shrubFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">peony</rdfs:label>
+        <rdfs:label xml:lang="fr">pivoine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pepper_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#pepper_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">pepper</rdfs:label>
+        <rdfs:label xml:lang="fr">poivron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#persistent_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#persistent_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">persistant</rdfs:label>
+        <rdfs:label xml:lang="en">persistent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#petroleum_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#petroleum_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#minerals_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">petroleum</rdfs:label>
+        <rdfs:label xml:lang="fr">pétrole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pineapple_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#pineapple_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#exoticFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">ananas</rdfs:label>
+        <rdfs:label xml:lang="en">pineapple</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pinkyWithYellowSparkles_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#pinkyWithYellowSparkles_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_rose_sf_v"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">pinkyWithYellowSparkles</rdfs:label>
+        <rdfs:label xml:lang="fr">roséNuanceJaune</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#plastic_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#plastic_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#packaging_sf_o"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">plastic</rdfs:label>
+        <rdfs:label xml:lang="fr">plastique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#plumAlcohol_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#plumAlcohol_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fruitAlcohol_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">alcoolPrune</rdfs:label>
+        <rdfs:label xml:lang="en">plumAlcohol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#plum_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#plum_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#otherFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">plum</rdfs:label>
+        <rdfs:label xml:lang="fr">prune</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#port_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#port_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">port</rdfs:label>
+        <rdfs:label xml:lang="fr">porto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#potato_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#potato_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">pommeDeTerre</rdfs:label>
+        <rdfs:label xml:lang="en">potato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#prunes_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#prunes_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#cookedFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">pruneaux</rdfs:label>
+        <rdfs:label xml:lang="en">prunes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#purePink_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#purePink_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_rose_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">purePink</rdfs:label>
+        <rdfs:label xml:lang="fr">roseFranc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#purplish_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#purplish_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_red_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">purplish</rdfs:label>
+        <rdfs:label xml:lang="fr">violacé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pyrazine_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#pyrazine_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">pyrazine</rdfs:label>
+        <rdfs:label xml:lang="fr">pyrazine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#quality -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#quality">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#perception"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#quince_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#quince_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#otherFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">coing</rdfs:label>
+        <rdfs:label xml:lang="en">quince</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#raisin_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#raisin_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#driedFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">raisin</rdfs:label>
+        <rdfs:label xml:lang="fr">raisinSec</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#rancid_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#rancid_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">rance</rdfs:label>
+        <rdfs:label xml:lang="en">rancid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#raspberry_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#raspberry_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">framboise</rdfs:label>
+        <rdfs:label xml:lang="en">raspberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#redFruits_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#redFruits_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">fruitsRouges</rdfs:label>
+        <rdfs:label xml:lang="en">redFruits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#redWithOrangeFringes_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#redWithOrangeFringes_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_red_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">redWithOrangeFringes</rdfs:label>
+        <rdfs:label xml:lang="fr">rougeFrangeOrangé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#reduced_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#reduced_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">reduced</rdfs:label>
+        <rdfs:label xml:lang="fr">réduit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#remover_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#remover_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">dissolvant</rdfs:label>
+        <rdfs:label xml:lang="en">remover</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#rhubarb_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#rhubarb_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">rhubarb</rdfs:label>
+        <rdfs:label xml:lang="fr">rhubarbe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#roasted_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#roasted_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">grillé</rdfs:label>
+        <rdfs:label xml:lang="en">roasted</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#rose_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#rose_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#shrubFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">rose</rdfs:label>
+        <rdfs:label xml:lang="fr">rose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#rosemary_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#rosemary_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">romarin</rdfs:label>
+        <rdfs:label xml:lang="en">rosemary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#rottenEgg_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#rottenEgg_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">oeufPourri</rdfs:label>
+        <rdfs:label xml:lang="en">rottenEgg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#rough_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#rough_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#astringent_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">rapeux</rdfs:label>
+        <rdfs:label xml:lang="en">rough</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#round_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#round_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fat_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">rond</rdfs:label>
+        <rdfs:label xml:lang="en">round</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#rubber_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#rubber_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">caoutchouc</rdfs:label>
+        <rdfs:label xml:lang="en">rubber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#saffron_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#saffron_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#spices_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">saffron</rdfs:label>
+        <rdfs:label xml:lang="fr">safran</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sage_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sage_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">sage</rdfs:label>
+        <rdfs:label xml:lang="fr">sauge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#salmonPink_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#salmonPink_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_rose_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">roseSaumon</rdfs:label>
+        <rdfs:label xml:lang="en">salmonPink</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#salted_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#salted_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#salinity_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">salted</rdfs:label>
+        <rdfs:label xml:lang="fr">salé</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sawdust_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sawdust_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">sawdust</rdfs:label>
+        <rdfs:label xml:lang="fr">sciure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sherry_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sherry_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fruitAlcohol_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">sherry</rdfs:label>
+        <rdfs:label xml:lang="fr">sherry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#smoke_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#smoke_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fumée</rdfs:label>
+        <rdfs:label xml:lang="en">smoke</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#soap_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#soap_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">savon</rdfs:label>
+        <rdfs:label xml:lang="en">soap</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#solvent_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#solvent_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">solvant</rdfs:label>
+        <rdfs:label xml:lang="en">solvent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sparkling_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sparkling_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sparkling_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">pétillant</rdfs:label>
+        <rdfs:label xml:lang="en">sparkling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#spicy_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#spicy_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sparkling_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">piquant</rdfs:label>
+        <rdfs:label xml:lang="en">spicy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#spicy_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#spicy_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#volatileAcidity_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">piquant</rdfs:label>
+        <rdfs:label xml:lang="en">spicy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#stable_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#stable_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">stable</rdfs:label>
+        <rdfs:label xml:lang="fr">écurie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#stagnant_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#stagnant_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">croupi</rdfs:label>
+        <rdfs:label xml:lang="en">stagnant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#strawYellowGoldYellow_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#strawYellowGoldYellow_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_white_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">jaunePailleOr</rdfs:label>
+        <rdfs:label xml:lang="en">strawYellowGoldYellow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#straw_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#straw_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">paille</rdfs:label>
+        <rdfs:label xml:lang="en">straw</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#strawberry_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#strawberry_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#redFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fraise</rdfs:label>
+        <rdfs:label xml:lang="en">strawberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sugar_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sugar_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sweetness_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">sucré</rdfs:label>
+        <rdfs:label xml:lang="en">sugar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sulfur_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sulfur_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sulphides_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">soufre</rdfs:label>
+        <rdfs:label xml:lang="en">sulfur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sulphurousAnhydric_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sulphurousAnhydric_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">anhydrideSulfureux</rdfs:label>
+        <rdfs:label xml:lang="en">sulphurousAnhydric</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sweat_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sweat_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">sueur</rdfs:label>
+        <rdfs:label xml:lang="en">sweat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#sweetness_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#sweetness_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#sweetness_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">sucrosité</rdfs:label>
+        <rdfs:label xml:lang="en">sweetness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#tarragon_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#tarragon_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">estragon</rdfs:label>
+        <rdfs:label xml:lang="en">tarragon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#thiols_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#thiols_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">thiols</rdfs:label>
+        <rdfs:label xml:lang="fr">thiols</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#thyme_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#thyme_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aromaticPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">thym</rdfs:label>
+        <rdfs:label xml:lang="en">thyme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#toast_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#toast_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">painGrillé</rdfs:label>
+        <rdfs:label xml:lang="en">toast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#toastedAlmond_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#toastedAlmond_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#empyreumatic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">amandeGrillée</rdfs:label>
+        <rdfs:label xml:lang="en">toastedAlmond</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#tomato_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#tomato_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#vegetables_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">tomate</rdfs:label>
+        <rdfs:label xml:lang="en">tomato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#tooAcid -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#tooAcid">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#acid_sf_g"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">tooAcid</rdfs:label>
+        <rdfs:label xml:lang="fr">tropAcide</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#tooAstringent_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#tooAstringent_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#astringent_sf_g"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">tooAstringent</rdfs:label>
+        <rdfs:label xml:lang="fr">tropAstringent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#tooBitter_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#tooBitter_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#bitter_sf_g"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">tooBitter</rdfs:label>
+        <rdfs:label xml:lang="fr">tropAmer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#treeMoss_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#treeMoss_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">mousseD&apos;arbre</rdfs:label>
+        <rdfs:label xml:lang="en">treeMoss</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#truffle_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#truffle_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">truffe</rdfs:label>
+        <rdfs:label xml:lang="en">truffle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#turbid_d_v_r -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#turbid_d_v_r">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_rose_sf_v"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">trouble</rdfs:label>
+        <rdfs:label xml:lang="en">turbid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#turbid_d_v_red -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#turbid_d_v_red">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_red_sf_v"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">trouble</rdfs:label>
+        <rdfs:label xml:lang="en">turbid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#turbid_d_v_w -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#turbid_d_v_w">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_white_sf_v"/>
+        <isPerceivedAs rdf:resource="http://opendata.inrae.fr/owsd#default"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">trouble</rdfs:label>
+        <rdfs:label xml:lang="en">turbid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#vanilla_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#vanilla_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#pastry_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">vanilla</rdfs:label>
+        <rdfs:label xml:lang="fr">vanille</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#vdn_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#vdn_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#oxidation_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">VDN</rdfs:label>
+        <rdfs:label xml:lang="fr">VDN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#veledaFelt_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#veledaFelt_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#amylic_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">feutreVeleda</rdfs:label>
+        <rdfs:label xml:lang="en">veledaFelt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#velvety_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#velvety_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#fat_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">velouté</rdfs:label>
+        <rdfs:label xml:lang="en">velvety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#venison_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#venison_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#animal_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">venaison</rdfs:label>
+        <rdfs:label xml:lang="en">venison</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#veryClear_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#veryClear_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_rose_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">trèsClair</rdfs:label>
+        <rdfs:label xml:lang="en">veryClear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#veryLightYellowWithGreenSparkles_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#veryLightYellowWithGreenSparkles_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_white_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">jauneTrèsClairRefletsVerts</rdfs:label>
+        <rdfs:label xml:lang="en">veryLightYellowWithGreenSparkles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#vinegar_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#vinegar_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#volatileAcidity_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">vinaigre</rdfs:label>
+        <rdfs:label xml:lang="en">vinegar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#violet_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#violet_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#gardenFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">violet</rdfs:label>
+        <rdfs:label xml:lang="fr">violette</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#watery_d_g -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#watery_d_g">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#aqueous_sf_g"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">aqueux</rdfs:label>
+        <rdfs:label xml:lang="en">watery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#wetWoood_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#wetWoood_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#undergrowth_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">boisHumide</rdfs:label>
+        <rdfs:label xml:lang="en">wetWood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#whiteFlowers_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#whiteFlowers_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#whiteFlowers_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fleursBlanches</rdfs:label>
+        <rdfs:label xml:lang="en">whiteFlowers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#wrack_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#wrack_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#dryPlants_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fucus</rdfs:label>
+        <rdfs:label xml:lang="en">wrack</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#yeast_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#yeast_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#yeast_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">levure</rdfs:label>
+        <rdfs:label xml:lang="en">yeast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#yellowFruits_d_o -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#yellowFruits_d_o">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#yellowFruits_sf_o"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="fr">fruitsJaunes</rdfs:label>
+        <rdfs:label xml:lang="en">yellowFruits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#pureRed(cherry)_d_v -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#pureRed(cherry)_d_v">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#visual_red_sf_v"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">pureRed(cherry)</rdfs:label>
+        <rdfs:label xml:lang="fr">rougePurCerise</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://opendata.inrae.fr/owsd#ventilated(oxidised)_d -->
+
+    <owl:NamedIndividual rdf:about="http://opendata.inrae.fr/owsd#ventilated(oxidised)_d">
+        <rdf:type rdf:resource="http://opendata.inrae.fr/owsd#unclassified"/>
+        <rdf1:type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">descriptor</rdf1:type>
+        <rdfs:label xml:lang="en">ventilated(oxidised)</rdfs:label>
+        <rdfs:label xml:lang="fr">éventéOxydé</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
