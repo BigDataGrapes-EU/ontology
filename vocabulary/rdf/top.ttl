@@ -14,7 +14,7 @@ bdg: a owl:Ontology;
 
   vann:preferredNamespacePrefix "bdg";
   vann:preferredNamespaceUri "http://data.bigdatagrapes.eu/resource/ontology/" ;
-  owl:imports  qb: , qudt: ;
+  owl:imports  qb: , qudt: , skos: ;
   owl:versionInfo "1.0".
 
 bdg-unit: a owl:Ontology;

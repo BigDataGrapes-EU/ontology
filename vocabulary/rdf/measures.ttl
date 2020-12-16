@@ -408,7 +408,7 @@ bdg:voltage_system  rdf:type        qb:MeasureProperty ;
 bdg:voltage_solarPanel
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "System voltage at solar panel" ;
         rdfs:comment                "System voltage " ;
         sdmx-attribute:unitMeasure  unit:MilliV ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
@@ -418,7 +418,7 @@ bdg:voltage_solarPanel
 bdg:voltage_solarPanel_LAST
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "System voltage at solar panel - last" ;
         rdfs:comment                "System voltage " ;
         sdmx-attribute:unitMeasure  unit:MilliV ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
@@ -429,7 +429,7 @@ bdg:voltage_solarPanel_LAST
 
 bdg:voltage_battery  rdf:type       qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "Battery voltage " ;
         rdfs:comment                "System voltage " ;
         sdmx-attribute:unitMeasure  unit:MIlliV ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;
@@ -439,7 +439,7 @@ bdg:voltage_battery  rdf:type       qb:MeasureProperty ;
 bdg:voltage_battery_LAST
         rdf:type                    qb:MeasureProperty ;
         rdf:type                    sosa:ObservableProperty ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "Battery voltage - last " ;
         rdfs:comment                "System voltage " ;
         sdmx-attribute:unitMeasure  unit:MIlliV ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> ;

@@ -1756,7 +1756,7 @@ bdg:voltage_solarPanel
         a                           sosa:ObservableProperty , qb:MeasureProperty ;
         rdfs:comment                "System voltage " ;
         rdfs:isDefinedBy            bdg: ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "System voltage at solar panel" ;
         qb:concept                  sdmx-concept:obsValue ;
         sdmx-attribute:unitMeasure  unit:MilliV ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> .
@@ -1849,7 +1849,7 @@ bdg:voltage_battery_LAST
         a                           qb:MeasureProperty , sosa:ObservableProperty ;
         rdfs:comment                "System voltage " ;
         rdfs:isDefinedBy            bdg: ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "Battery voltage - last " ;
         bdg:derivedFrom             bdg:voltage_battery ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Last> ;
         qb:concept                  sdmx-concept:obsValue ;
@@ -2832,7 +2832,7 @@ bdg:temp_soil_MAX  a                sosa:ObservableProperty , qb:MeasureProperty
 bdg:voltage_battery  a              sosa:ObservableProperty , qb:MeasureProperty ;
         rdfs:comment                "System voltage " ;
         rdfs:isDefinedBy            bdg: ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "Battery voltage " ;
         qb:concept                  sdmx-concept:obsValue ;
         sdmx-attribute:unitMeasure  unit:MIlliV ;
         sosa:hasFeatureOfInterest   <http://data.bigdatagrapes.eu/resource/feature/Sensor> .
@@ -3012,7 +3012,7 @@ bdg:    a                              owl:Ontology ;
         dct:modified                   "2020-12-11"^^xsd:date ;
         vann:preferredNamespacePrefix  "bdg" ;
         vann:preferredNamespaceUri     "http://data.bigdatagrapes.eu/resource/ontology/" ;
-        owl:imports                    <http://www.qudt.org/2.0/schema/qudt/> , qb: ;
+        owl:imports                    <http://www.qudt.org/2.0/schema/qudt/> , skos: , qb: ;
         owl:versionInfo                "1.0" .
 
 <http://data.bigdatagrapes.eu/resource/sensoryFlavor/liquorice>
@@ -3231,7 +3231,7 @@ bdg:voltage_solarPanel_LAST
         a                           sosa:ObservableProperty , qb:MeasureProperty ;
         rdfs:comment                "System voltage " ;
         rdfs:isDefinedBy            bdg: ;
-        rdfs:label                  "System voltage " ;
+        rdfs:label                  "System voltage at solar panel - last" ;
         bdg:derivedFrom             bdg:voltage_solarPanel ;
         bdg:statisticalSummary      <http://data.bigdatagrapes.eu/resource/statisticalSummary/Last> ;
         qb:concept                  sdmx-concept:obsValue ;
